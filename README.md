@@ -1,6 +1,6 @@
 # CEF-WMF-AM
 
-Code, data, and paper source for:
+Code and data for:
 
 **Beyond Completion: Probing Cumulative State Tracking to Predict LLM Agent Performance**
 
@@ -15,10 +15,8 @@ WMF-AM, a calibrated no-scratchpad probe of cumulative arithmetic state tracking
 ## Repository Structure
 
 ```
-paper/              LaTeX source and figures
 code/               Experiment scripts (WMF-AM probes, agent battery, ablations)
 data/               Per-model JSON result files
-docs/               Review logs and novelty checks
 PREREGISTRATION.md  Pre-registered analysis plan
 ```
 
@@ -27,9 +25,6 @@ PREREGISTRATION.md  Pre-registered analysis plan
 ```bash
 # Run WMF-AM probe on a model
 conda run -n py311 python code/wmf_am_multiseed_expansion.py
-
-# Compile paper
-cd paper && tectonic cef_paper_v7.tex
 ```
 
 ## License

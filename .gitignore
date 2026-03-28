@@ -27,5 +27,12 @@ __pycache__/
 REVIEW_STATE.json
 AUTO_REVIEW.md
 
+# Paper source (on arXiv, not in repo)
+paper/
+
+# Internal docs and project config
+docs/
+CLAUDE.md
+
 # Overleaf zip (regenerable)
 overleaf/
