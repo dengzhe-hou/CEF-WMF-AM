@@ -6,7 +6,7 @@ Code, data, and paper source for:
 
 Dengzhe Hou, Lingyu Jiang, Deng Li, Zirui Li, Fangzhou Lin, Kazunori D Yamada
 
-*NeurIPS 2026 (submitted)*
+*arXiv preprint, 2026*
 
 ## Key Result
 
