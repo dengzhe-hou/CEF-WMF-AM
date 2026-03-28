@@ -1,0 +1,41 @@
+{
+  "model": "ollama:qwen2.5:3b",
+  "timestamp": "2026-03-17T03:53:48.271643+00:00",
+  "outcome_correctness": {
+    "score": 0.75,
+    "n_correct": 15,
+    "n_total": 20
+  },
+  "wmf_am": {
+    "mean": 0.3111,
+    "by_depth": {
+      "3": 0.5333,
+      "5": 0.2667,
+      "7": 0.1333
+    },
+    "by_seed": {
+      "42": 0.4167,
+      "137": 0.25,
+      "256": 0.4167,
+      "999": 0.1111
+    },
+    "n_probes": 45
+  },
+  "mcc_ma": {
+    "monitoring_r": 0.0,
+    "n_correct": 15,
+    "n_wrong": 5,
+    "predicted_wrong": []
+  },
+  "yoked_control": {
+    "mean": 0.97,
+    "by_depth": {
+      "2": 0.95,
+      "4": 1.0,
+      "6": 0.95,
+      "8": 0.95,
+      "12": 1.0
+    },
+    "n_trials": 100
+  }
+}

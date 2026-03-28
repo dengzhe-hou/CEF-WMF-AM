@@ -1,0 +1,41 @@
+{
+  "model": "ollama:yi:34b",
+  "timestamp": "2026-03-17T04:11:51.373665+00:00",
+  "outcome_correctness": {
+    "score": 0.75,
+    "n_correct": 15,
+    "n_total": 20
+  },
+  "wmf_am": {
+    "mean": 0.2667,
+    "by_depth": {
+      "3": 0.6,
+      "5": 0.1333,
+      "7": 0.0667
+    },
+    "by_seed": {
+      "42": 0.4167,
+      "137": 0.0833,
+      "256": 0.3333,
+      "999": 0.2222
+    },
+    "n_probes": 45
+  },
+  "mcc_ma": {
+    "monitoring_r": 0.0,
+    "n_correct": 15,
+    "n_wrong": 5,
+    "predicted_wrong": []
+  },
+  "yoked_control": {
+    "mean": 1.0,
+    "by_depth": {
+      "2": 1.0,
+      "4": 1.0,
+      "6": 1.0,
+      "8": 1.0,
+      "12": 1.0
+    },
+    "n_trials": 100
+  }
+}

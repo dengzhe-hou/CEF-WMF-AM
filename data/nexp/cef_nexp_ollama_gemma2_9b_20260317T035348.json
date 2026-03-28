@@ -1,0 +1,43 @@
+{
+  "model": "ollama:gemma2:9b",
+  "timestamp": "2026-03-17T03:52:31.292403+00:00",
+  "outcome_correctness": {
+    "score": 0.75,
+    "n_correct": 15,
+    "n_total": 20
+  },
+  "wmf_am": {
+    "mean": 0.3556,
+    "by_depth": {
+      "3": 0.7333,
+      "5": 0.3333,
+      "7": 0.0
+    },
+    "by_seed": {
+      "42": 0.5833,
+      "137": 0.3333,
+      "256": 0.25,
+      "999": 0.2222
+    },
+    "n_probes": 45
+  },
+  "mcc_ma": {
+    "monitoring_r": 0.3974,
+    "n_correct": 15,
+    "n_wrong": 5,
+    "predicted_wrong": [
+      7
+    ]
+  },
+  "yoked_control": {
+    "mean": 0.96,
+    "by_depth": {
+      "2": 0.95,
+      "4": 0.95,
+      "6": 1.0,
+      "8": 1.0,
+      "12": 0.9
+    },
+    "n_trials": 100
+  }
+}

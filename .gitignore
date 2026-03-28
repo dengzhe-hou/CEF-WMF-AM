@@ -1,0 +1,31 @@
+# Literature PDFs (too large, copyrighted)
+literature/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# LaTeX build artifacts
+*.aux
+*.bbl
+*.blg
+*.log
+*.out
+*.synctex.gz
+*.fls
+*.fdb_latexmk
+
+# SLURM logs
+*.err
+*.log
+
+# Editor
+.vscode/
+*.swp
+
+# Internal review state
+REVIEW_STATE.json
+AUTO_REVIEW.md
+
+# Overleaf zip (regenerable)
+overleaf/

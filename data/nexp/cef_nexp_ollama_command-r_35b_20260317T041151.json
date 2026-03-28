@@ -1,0 +1,41 @@
+{
+  "model": "ollama:command-r:35b",
+  "timestamp": "2026-03-17T04:09:56.565565+00:00",
+  "outcome_correctness": {
+    "score": 0.7,
+    "n_correct": 14,
+    "n_total": 20
+  },
+  "wmf_am": {
+    "mean": 0.4,
+    "by_depth": {
+      "3": 0.6667,
+      "5": 0.3333,
+      "7": 0.2
+    },
+    "by_seed": {
+      "42": 0.5,
+      "137": 0.5,
+      "256": 0.25,
+      "999": 0.3333
+    },
+    "n_probes": 45
+  },
+  "mcc_ma": {
+    "monitoring_r": 0.0,
+    "n_correct": 14,
+    "n_wrong": 6,
+    "predicted_wrong": []
+  },
+  "yoked_control": {
+    "mean": 0.92,
+    "by_depth": {
+      "2": 0.85,
+      "4": 0.85,
+      "6": 0.95,
+      "8": 1.0,
+      "12": 0.95
+    },
+    "n_trials": 100
+  }
+}

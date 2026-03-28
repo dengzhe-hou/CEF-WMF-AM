@@ -1,0 +1,43 @@
+{
+  "model": "ollama:deepseek-r1:7b",
+  "timestamp": "2026-03-17T03:55:24.790979+00:00",
+  "outcome_correctness": {
+    "score": 0.75,
+    "n_correct": 15,
+    "n_total": 20
+  },
+  "wmf_am": {
+    "mean": 0.1111,
+    "by_depth": {
+      "3": 0.1333,
+      "5": 0.1333,
+      "7": 0.0667
+    },
+    "by_seed": {
+      "42": 0.25,
+      "137": 0.1667,
+      "256": 0.0,
+      "999": 0.0
+    },
+    "n_probes": 45
+  },
+  "mcc_ma": {
+    "monitoring_r": -0.1325,
+    "n_correct": 15,
+    "n_wrong": 5,
+    "predicted_wrong": [
+      14
+    ]
+  },
+  "yoked_control": {
+    "mean": 0.94,
+    "by_depth": {
+      "2": 1.0,
+      "4": 1.0,
+      "6": 1.0,
+      "8": 0.95,
+      "12": 0.75
+    },
+    "n_trials": 100
+  }
+}

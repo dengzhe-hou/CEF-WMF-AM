@@ -1,0 +1,41 @@
+{
+  "model": "ollama:phi3:14b",
+  "timestamp": "2026-03-17T03:51:14.364935+00:00",
+  "outcome_correctness": {
+    "score": 0.7,
+    "n_correct": 14,
+    "n_total": 20
+  },
+  "wmf_am": {
+    "mean": 0.4222,
+    "by_depth": {
+      "3": 0.7333,
+      "5": 0.2667,
+      "7": 0.2667
+    },
+    "by_seed": {
+      "42": 0.5833,
+      "137": 0.3333,
+      "256": 0.4167,
+      "999": 0.3333
+    },
+    "n_probes": 45
+  },
+  "mcc_ma": {
+    "monitoring_r": 0.0,
+    "n_correct": 14,
+    "n_wrong": 6,
+    "predicted_wrong": []
+  },
+  "yoked_control": {
+    "mean": 0.95,
+    "by_depth": {
+      "2": 0.85,
+      "4": 0.95,
+      "6": 1.0,
+      "8": 0.95,
+      "12": 1.0
+    },
+    "n_trials": 100
+  }
+}

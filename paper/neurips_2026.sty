@@ -1,0 +1,210 @@
+%%
+%% neurips_2026.sty  —  Style file for NeurIPS 2026
+%%
+%% Based on the public NeurIPS 2024/2025 style files.
+%% Key changes vs. 2025: conference year strings updated only.
+%%
+%% Usage:
+%%   \usepackage{neurips_2026}           % anonymous preprint (default)
+%%   \usepackage[final]{neurips_2026}    % camera-ready (adds author block)
+%%   \usepackage[preprint]{neurips_2026} % arXiv preprint (non-anonymous)
+%%   \usepackage[nonatbib]{neurips_2026} % omit natbib load
+%%
+
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{neurips_2026}[2026/01/01 NeurIPS 2026 Style]
+
+% ── Options ──────────────────────────────────────────────────────────────────
+\newif\if@neurips@final       \@neurips@finalfalse
+\newif\if@neurips@preprint    \@neurips@preprintfalse
+\newif\if@neurips@nonatbib    \@neurips@nonatbibfalse
+
+\DeclareOption{final}    {\@neurips@finaltrue}
+\DeclareOption{preprint} {\@neurips@preprinttrue}
+\DeclareOption{nonatbib} {\@neurips@nonatbibtrue}
+\ProcessOptions\relax
+
+% ── Required packages ────────────────────────────────────────────────────────
+\RequirePackage{times}
+\RequirePackage{helvet}
+\RequirePackage{courier}
+\RequirePackage{amsmath}
+\RequirePackage{url}
+\if@neurips@nonatbib\else
+  \RequirePackage{natbib}
+\fi
+
+% ── Page geometry ─────────────────────────────────────────────────────────────
+\RequirePackage{geometry}
+\geometry{
+  paperwidth  = 8.5in,
+  paperheight = 11in,
+  textwidth   = 5.5in,
+  textheight  = 9.0in,
+  top         = 1.0in,
+  left        = 1.5in,
+  headheight  = 14pt,
+  headsep     = 10pt,
+  footskip    = 0.3in,
+}
+
+% ── Font size: 10pt ──────────────────────────────────────────────────────────
+\renewcommand{\normalsize}{%
+  \@setfontsize\normalsize{10}{12}%
+  \abovedisplayskip      6\p@ \@plus2\p@ \@minus1\p@
+  \belowdisplayskip      \abovedisplayskip
+  \abovedisplayshortskip \z@ \@plus2\p@
+  \belowdisplayshortskip 4\p@ \@plus2\p@ \@minus1\p@
+  \let\@listi\@listI}
+\normalsize
+\renewcommand{\small}      {\@setfontsize\small      {9}{11}}
+\renewcommand{\footnotesize}{\@setfontsize\footnotesize{8}{10}}
+\renewcommand{\scriptsize} {\@setfontsize\scriptsize {7}{8}}
+\renewcommand{\tiny}       {\@setfontsize\tiny       {5}{6}}
+\renewcommand{\large}      {\@setfontsize\large     {12}{14}}
+\renewcommand{\Large}      {\@setfontsize\Large     {14}{16}}
+\renewcommand{\LARGE}      {\@setfontsize\LARGE     {17}{20}}
+\renewcommand{\huge}       {\@setfontsize\huge      {20}{24}}
+\renewcommand{\Huge}       {\@setfontsize\Huge      {25}{28}}
+
+% ── Paragraph spacing ────────────────────────────────────────────────────────
+\setlength{\parindent}{1em}
+\setlength{\parskip}{0pt plus 1pt}
+
+% ── Float spacing ────────────────────────────────────────────────────────────
+\setlength{\floatsep}{8pt plus 2pt minus 2pt}
+\setlength{\textfloatsep}{8pt plus 2pt minus 2pt}
+\setlength{\intextsep}{8pt plus 2pt minus 2pt}
+\setlength{\abovecaptionskip}{4pt}
+\setlength{\belowcaptionskip}{2pt}
+
+% ── Section formatting ───────────────────────────────────────────────────────
+\setcounter{secnumdepth}{2}
+
+\renewcommand\section{\@startsection{section}{1}{\z@}%
+  {-10\p@ \@plus -4\p@ \@minus -2\p@}%
+  { 4\p@ \@plus 2\p@}%
+  {\large\bf\raggedright}}
+
+\renewcommand\subsection{\@startsection{subsection}{2}{\z@}%
+  {-8\p@ \@plus -2\p@ \@minus -1\p@}%
+  { 3\p@ \@plus 1\p@}%
+  {\normalsize\bf\raggedright}}
+
+\renewcommand\subsubsection{\@startsection{subsubsection}{3}{\z@}%
+  {-6\p@ \@plus -2\p@ \@minus -1\p@}%
+  {-0.5em}%
+  {\normalsize\it\raggedright}}
+
+\renewcommand\paragraph{\@startsection{paragraph}{4}{\z@}%
+  {4\p@ \@plus 2\p@ \@minus 1\p@}%
+  {-0.5em}%
+  {\normalsize\bf}}
+
+% ── Footnotes ────────────────────────────────────────────────────────────────
+\setlength{\footnotesep}{6.65\p@}
+\setlength{\skip\footins}{9\p@ \@plus 4\p@ \@minus 2\p@}
+\renewcommand{\footnoterule}{%
+  \kern-3\p@\hrule width 0.8in \kern 2.6\p@}
+
+% ── Header/Footer ────────────────────────────────────────────────────────────
+\RequirePackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+
+\if@neurips@final
+  \fancyhead[C]{\small\it Thirty-Ninth Conference on Neural Information Processing Systems (NeurIPS 2026)}
+\else\if@neurips@preprint
+  \fancyhead[C]{\small\it Preprint. Under review.}
+\else
+  % anonymous
+  \fancyhead[C]{\small\it Thirty-Ninth Conference on Neural Information Processing Systems (NeurIPS 2026)}
+\fi\fi
+
+\fancyfoot[C]{\small\thepage}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% ── Title block ──────────────────────────────────────────────────────────────
+\newlength\titlebox
+\setlength\titlebox{2.5in}
+
+\def\And{%
+  \end{tabular}\hfil\linebreak[0]\hfil%
+  \begin{tabular}[t]{c}\bf\rule{\z@}{24\p@}\ignorespaces}
+
+\def\AND{%
+  \end{tabular}\hfil\linebreak[4]\hfil%
+  \begin{tabular}[t]{c}\bf\rule{\z@}{24\p@}\ignorespaces}
+
+\renewcommand{\maketitle}{\par
+  \begingroup
+  \renewcommand\thefootnote{\@fnsymbol\c@footnote}
+  \def\@makefnmark{\rlap{\@textsuperscript{\normalfont\@thefnmark}}}
+  \long\def\@makefntext##1{\parindent 1em\noindent
+    \hb@xt@1.8em{\hss\@textsuperscript{\normalfont\@thefnmark}}##1}
+  \thispagestyle{fancy}
+  \@maketitle
+  \@thanks
+  \endgroup
+  \setcounter{footnote}{0}
+  \global\let\thanks\relax
+  \global\let\maketitle\relax
+  \global\let\@maketitle\relax
+  \global\let\@thanks\@empty
+  \global\let\@author\@empty
+  \global\let\@date\@empty
+  \global\let\@title\@empty
+  \global\let\title\relax
+  \global\let\author\relax
+  \global\let\date\relax
+  \global\let\and\relax}
+
+\def\@maketitle{%
+  \newpage
+  \vspace*{-\headsep}\vspace*{-\headheight}\vspace*{0.1in}
+  \begin{center}%
+    {\LARGE\bf \@title \par}%
+    \vskip 0.2in
+    \if@neurips@final
+      {\large\lineskip .5em\begin{tabular}[t]{c}\bf\rule{\z@}{24\p@}\ignorespaces\@author\end{tabular}\par}%
+    \else\if@neurips@preprint
+      {\large\lineskip .5em\begin{tabular}[t]{c}\bf\rule{\z@}{24\p@}\ignorespaces\@author\end{tabular}\par}%
+    \else
+      {\large\lineskip .5em\begin{tabular}[t]{c}%
+        \textbf{Anonymous Authors}\\
+        Affiliation withheld for blind review%
+      \end{tabular}\par}%
+    \fi\fi
+    \vskip 0.1in
+  \end{center}\par
+  \vskip 0.2in}
+
+% ── Abstract ─────────────────────────────────────────────────────────────────
+\renewenvironment{abstract}{%
+  \centerline{\large\bf Abstract}%
+  \vspace{0.5ex}%
+  \begin{quote}}%
+  {\end{quote}\vspace{1ex}}
+
+% ── Caption ──────────────────────────────────────────────────────────────────
+\long\def\@makecaption#1#2{%
+  \vskip\abovecaptionskip
+  \sbox\@tempboxa{{\small\bf #1.} \small #2}%
+  \ifdim \wd\@tempboxa >\hsize
+    {\small\bf #1.} \small #2\par
+  \else
+    \global \@minipagefalse
+    \hb@xt@\hsize{\hfil\box\@tempboxa\hfil}%
+  \fi
+  \vskip\belowcaptionskip}
+
+% ── Biblio spacing ───────────────────────────────────────────────────────────
+\if@neurips@nonatbib\else
+  \setlength{\bibsep}{0.0pt}
+\fi
+
+% ── Hyperref (load last in preamble via \AtBeginDocument) ────────────────────
+% Users should load hyperref in their preamble after this sty.
+
+\endinput

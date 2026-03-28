@@ -1,0 +1,43 @@
+{
+  "model": "ollama:mixtral:8x7b",
+  "timestamp": "2026-03-17T04:06:42.984738+00:00",
+  "outcome_correctness": {
+    "score": 0.8,
+    "n_correct": 16,
+    "n_total": 20
+  },
+  "wmf_am": {
+    "mean": 0.3778,
+    "by_depth": {
+      "3": 0.6667,
+      "5": 0.4,
+      "7": 0.0667
+    },
+    "by_seed": {
+      "42": 0.5,
+      "137": 0.3333,
+      "256": 0.3333,
+      "999": 0.3333
+    },
+    "n_probes": 45
+  },
+  "mcc_ma": {
+    "monitoring_r": -0.1147,
+    "n_correct": 16,
+    "n_wrong": 4,
+    "predicted_wrong": [
+      6
+    ]
+  },
+  "yoked_control": {
+    "mean": 1.0,
+    "by_depth": {
+      "2": 1.0,
+      "4": 1.0,
+      "6": 1.0,
+      "8": 1.0,
+      "12": 1.0
+    },
+    "n_trials": 100
+  }
+}
