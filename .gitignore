@@ -34,5 +34,11 @@ paper/
 docs/
 CLAUDE.md
 
+# Utility / display-only scripts
+code/show_*.py
+
+# Post-hoc results (not in paper)
+data/results/
+
 # Overleaf zip (regenerable)
 overleaf/
