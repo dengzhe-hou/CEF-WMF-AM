@@ -2,8 +2,6 @@
 
 **Beyond Completion: Probing Cumulative Arithmetic State Tracking to Predict LLM Agent Performance**
 
-*Under review at NeurIPS 2026 Evaluations & Datasets Track*
-
 ## Overview
 
 WMF-AM is a calibrated no-scratchpad probe of cumulative arithmetic state tracking for evaluating LLM process-level capabilities. Given K sequential additive/subtractive operations on an initial numeric state, the model must report the final state without external scratchpad.
