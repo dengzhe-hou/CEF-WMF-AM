@@ -1,0 +1,565 @@
+{
+  "results": [
+    {
+      "model": "ollama:qwen2.5:0.5b",
+      "supported_score": 0.1,
+      "unsupported_score": 0.1,
+      "load_shift_delta": 0.0
+    },
+    {
+      "model": "ollama:qwen2.5:1.5b",
+      "timestamp": "2026-04-15T16:37:36.438763",
+      "supported_score": 0.3,
+      "unsupported_score": 0.2,
+      "load_shift_delta": 0.09999999999999998,
+      "conditions": {
+        "supported": {
+          "score": 0.3,
+          "n_correct": 3,
+          "n_tasks": 10,
+          "history_window": null,
+          "task_results": [
+            {
+              "task_id": "multi_step_calc",
+              "correct": false,
+              "final_answer": "140",
+              "n_steps": 3,
+              "errors": 2,
+              "elapsed_s": 3.0
+            },
+            {
+              "task_id": "entity_tracking",
+              "correct": true,
+              "final_answer": "David",
+              "n_steps": 2,
+              "errors": 0,
+              "elapsed_s": 3.0
+            },
+            {
+              "task_id": "sequential_search",
+              "correct": false,
+              "final_answer": "file_005",
+              "n_steps": 2,
+              "errors": 0,
+              "elapsed_s": 0.9
+            },
+            {
+              "task_id": "uncertain_lookup",
+              "correct": false,
+              "final_answer": null,
+              "n_steps": 15,
+              "errors": 0,
+              "elapsed_s": 22.0
+            },
+            {
+              "task_id": "multi_source_conflict",
+              "correct": false,
+              "final_answer": "average",
+              "n_steps": 2,
+              "errors": 0,
+              "elapsed_s": 1.8
+            },
+            {
+              "task_id": "conversation_recall",
+              "correct": true,
+              "final_answer": "Senso-ji",
+              "n_steps": 5,
+              "errors": 0,
+              "elapsed_s": 2.4
+            },
+            {
+              "task_id": "source_attribution",
+              "correct": false,
+              "final_answer": "paper_id",
+              "n_steps": 2,
+              "errors": 0,
+              "elapsed_s": 2.8
+            },
+            {
+              "task_id": "shopping_assistant",
+              "correct": true,
+              "final_answer": "list(\"mouse\", \"keyboard\")",
+              "n_steps": 2,
+              "errors": 0,
+              "elapsed_s": 1.8
+            },
+            {
+              "task_id": "schedule_coordination",
+              "correct": false,
+              "final_answer": "answer",
+              "n_steps": 2,
+              "errors": 1,
+              "elapsed_s": 1.1
+            },
+            {
+              "task_id": "data_pipeline",
+              "correct": false,
+              "final_answer": "mean=20.0, max=30, sum=125",
+              "n_steps": 3,
+              "errors": 0,
+              "elapsed_s": 3.0
+            }
+          ]
+        },
+        "unsupported": {
+          "score": 0.2,
+          "n_correct": 2,
+          "n_tasks": 10,
+          "history_window": 1,
+          "task_results": [
+            {
+              "task_id": "multi_step_calc",
+              "correct": false,
+              "final_answer": "CALCULATOR(\"3 * 100 - 50 / 5 + 20\")",
+              "n_steps": 3,
+              "errors": 2,
+              "elapsed_s": 2.7
+            },
+            {
+              "task_id": "entity_tracking",
+              "correct": true,
+              "final_answer": "David",
+              "n_steps": 2,
+              "errors": 0,
+              "elapsed_s": 3.0
+            },
+            {
+              "task_id": "sequential_search",
+              "correct": false,
+              "final_answer": "file_005",
+              "n_steps": 2,
+              "errors": 0,
+              "elapsed_s": 0.9
+            },
+            {
+              "task_id": "uncertain_lookup",
+              "correct": false,
+              "final_answer": null,
+              "n_steps": 15,
+              "errors": 0,
+              "elapsed_s": 18.7
+            },
+            {
+              "task_id": "multi_source_conflict",
+              "correct": false,
+              "final_answer": "average",
+              "n_steps": 2,
+              "errors": 0,
+              "elapsed_s": 1.7
+            },
+            {
+              "task_id": "conversation_recall",
+              "correct": false,
+              "final_answer": "GETTING_STARTED()",
+              "n_steps": 3,
+              "errors": 0,
+              "elapsed_s": 1.5
+            },
+            {
+              "task_id": "source_attribution",
+              "correct": false,
+              "final_answer": "paper_id",
+              "n_steps": 2,
+              "errors": 0,
+              "elapsed_s": 2.7
+            },
+            {
+              "task_id": "shopping_assistant",
+              "correct": true,
+              "final_answer": "list(\"mouse\", \"keyboard\")",
+              "n_steps": 2,
+              "errors": 0,
+              "elapsed_s": 1.8
+            },
+            {
+              "task_id": "schedule_coordination",
+              "correct": false,
+              "final_answer": "answer",
+              "n_steps": 2,
+              "errors": 1,
+              "elapsed_s": 1.2
+            },
+            {
+              "task_id": "data_pipeline",
+              "correct": false,
+              "final_answer": "mean=20.0, max=30, sum=125)\n\nTHOUGHT: The mean is 20.0, which matches the median and max we calculated earlier.\nACTION: report_results(mean=20.0, max=30, sum=125",
+              "n_steps": 5,
+              "errors": 1,
+              "elapsed_s": 6.1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "model": "ollama:qwen2.5:3b",
+      "timestamp": "2026-04-15T16:48:35.234735",
+      "supported_score": 0.5,
+      "unsupported_score": 0.3,
+      "load_shift_delta": 0.2,
+      "conditions": {
+        "supported": {
+          "score": 0.5,
+          "n_correct": 5,
+          "n_tasks": 10,
+          "history_window": null,
+          "task_results": [
+            {
+              "task_id": "multi_step_calc",
+              "correct": false,
+              "final_answer": null,
+              "n_steps": 15,
+              "errors": 0,
+              "elapsed_s": 115.9
+            },
+            {
+              "task_id": "entity_tracking",
+              "correct": true,
+              "final_answer": "David",
+              "n_steps": 10,
+              "errors": 0,
+              "elapsed_s": 94.3
+            },
+            {
+              "task_id": "sequential_search",
+              "correct": false,
+              "final_answer": "1200-800",
+              "n_steps": 4,
+              "errors": 0,
+              "elapsed_s": 10.7
+            },
+            {
+              "task_id": "uncertain_lookup",
+              "correct": true,
+              "final_answer": "Canberra",
+              "n_steps": 2,
+              "errors": 0,
+              "elapsed_s": 3.4
+            },
+            {
+              "task_id": "multi_source_conflict",
+              "correct": false,
+              "final_answer": "(temperature_A + temperature_B + temperature_C) / 3",
+              "n_steps": 3,
+              "errors": 1,
+              "elapsed_s": 8.2
+            },
+            {
+              "task_id": "conversation_recall",
+              "correct": true,
+              "final_answer": "Senso-ji",
+              "n_steps": 2,
+              "errors": 0,
+              "elapsed_s": 4.9
+            },
+            {
+              "task_id": "source_attribution",
+              "correct": false,
+              "final_answer": "paper_A_D",
+              "n_steps": 4,
+              "errors": 0,
+              "elapsed_s": 11.7
+            },
+            {
+              "task_id": "shopping_assistant",
+              "correct": false,
+              "final_answer": null,
+              "n_steps": 15,
+              "errors": 0,
+              "elapsed_s": 92.8
+            },
+            {
+              "task_id": "schedule_coordination",
+              "correct": true,
+              "final_answer": "I cannot determine if they are all busy on Monday",
+              "n_steps": 5,
+              "errors": 0,
+              "elapsed_s": 32.2
+            },
+            {
+              "task_id": "data_pipeline",
+              "correct": true,
+              "final_answer": "mean=20.0, max=30, sum=100",
+              "n_steps": 5,
+              "errors": 0,
+              "elapsed_s": 27.6
+            }
+          ]
+        },
+        "unsupported": {
+          "score": 0.3,
+          "n_correct": 3,
+          "n_tasks": 10,
+          "history_window": 1,
+          "task_results": [
+            {
+              "task_id": "multi_step_calc",
+              "correct": false,
+              "final_answer": null,
+              "n_steps": 15,
+              "errors": 0,
+              "elapsed_s": 24.9
+            },
+            {
+              "task_id": "entity_tracking",
+              "correct": false,
+              "final_answer": null,
+              "n_steps": 15,
+              "errors": 0,
+              "elapsed_s": 81.0
+            },
+            {
+              "task_id": "sequential_search",
+              "correct": false,
+              "final_answer": null,
+              "n_steps": 15,
+              "errors": 12,
+              "elapsed_s": 23.0
+            },
+            {
+              "task_id": "uncertain_lookup",
+              "correct": true,
+              "final_answer": "Canberra",
+              "n_steps": 2,
+              "errors": 0,
+              "elapsed_s": 2.1
+            },
+            {
+              "task_id": "multi_source_conflict",
+              "correct": false,
+              "final_answer": "The average temperature cannot be calculated with the given information.",
+              "n_steps": 6,
+              "errors": 4,
+              "elapsed_s": 11.9
+            },
+            {
+              "task_id": "conversation_recall",
+              "correct": true,
+              "final_answer": "Senso-ji",
+              "n_steps": 2,
+              "errors": 0,
+              "elapsed_s": 2.8
+            },
+            {
+              "task_id": "source_attribution",
+              "correct": false,
+              "final_answer": "I'm unable to find relevant information about attention mechanisms in transformer architectures based on the searches conducted.",
+              "n_steps": 5,
+              "errors": 0,
+              "elapsed_s": 8.9
+            },
+            {
+              "task_id": "shopping_assistant",
+              "correct": false,
+              "final_answer": null,
+              "n_steps": 15,
+              "errors": 0,
+              "elapsed_s": 31.5
+            },
+            {
+              "task_id": "schedule_coordination",
+              "correct": true,
+              "final_answer": "All three individuals are busy on Monday",
+              "n_steps": 3,
+              "errors": 0,
+              "elapsed_s": 9.8
+            },
+            {
+              "task_id": "data_pipeline",
+              "correct": false,
+              "final_answer": null,
+              "n_steps": 15,
+              "errors": 11,
+              "elapsed_s": 61.1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "model": "ollama:qwen2.5:7b",
+      "timestamp": "2026-04-15T16:57:24.252496",
+      "supported_score": 0.7,
+      "unsupported_score": 0.2,
+      "load_shift_delta": 0.49999999999999994,
+      "conditions": {
+        "supported": {
+          "score": 0.7,
+          "n_correct": 7,
+          "n_tasks": 10,
+          "history_window": null,
+          "task_results": [
+            {
+              "task_id": "multi_step_calc",
+              "correct": false,
+              "final_answer": "310",
+              "n_steps": 2,
+              "errors": 0,
+              "elapsed_s": 7.5
+            },
+            {
+              "task_id": "entity_tracking",
+              "correct": false,
+              "final_answer": null,
+              "n_steps": 15,
+              "errors": 0,
+              "elapsed_s": 227.8
+            },
+            {
+              "task_id": "sequential_search",
+              "correct": true,
+              "final_answer": "320",
+              "n_steps": 7,
+              "errors": 0,
+              "elapsed_s": 34.6
+            },
+            {
+              "task_id": "uncertain_lookup",
+              "correct": true,
+              "final_answer": "Canberra",
+              "n_steps": 3,
+              "errors": 0,
+              "elapsed_s": 10.3
+            },
+            {
+              "task_id": "multi_source_conflict",
+              "correct": true,
+              "final_answer": "(22 + 24 + 21) / 3",
+              "n_steps": 4,
+              "errors": 0,
+              "elapsed_s": 14.8
+            },
+            {
+              "task_id": "conversation_recall",
+              "correct": true,
+              "final_answer": "Senso-ji temple",
+              "n_steps": 2,
+              "errors": 0,
+              "elapsed_s": 6.9
+            },
+            {
+              "task_id": "source_attribution",
+              "correct": true,
+              "final_answer": "paper_B",
+              "n_steps": 5,
+              "errors": 0,
+              "elapsed_s": 18.2
+            },
+            {
+              "task_id": "shopping_assistant",
+              "correct": true,
+              "final_answer": "['mouse', 'keyboard']",
+              "n_steps": 2,
+              "errors": 0,
+              "elapsed_s": 6.4
+            },
+            {
+              "task_id": "schedule_coordination",
+              "correct": false,
+              "final_answer": "None",
+              "n_steps": 5,
+              "errors": 0,
+              "elapsed_s": 9.3
+            },
+            {
+              "task_id": "data_pipeline",
+              "correct": true,
+              "final_answer": "mean=20.0, max=30, sum=100",
+              "n_steps": 5,
+              "errors": 0,
+              "elapsed_s": 6.8
+            }
+          ]
+        },
+        "unsupported": {
+          "score": 0.2,
+          "n_correct": 2,
+          "n_tasks": 10,
+          "history_window": 1,
+          "task_results": [
+            {
+              "task_id": "multi_step_calc",
+              "correct": false,
+              "final_answer": "310",
+              "n_steps": 2,
+              "errors": 0,
+              "elapsed_s": 2.9
+            },
+            {
+              "task_id": "entity_tracking",
+              "correct": false,
+              "final_answer": "Alice now has 10 points",
+              "n_steps": 11,
+              "errors": 1,
+              "elapsed_s": 37.1
+            },
+            {
+              "task_id": "sequential_search",
+              "correct": false,
+              "final_answer": "400",
+              "n_steps": 6,
+              "errors": 2,
+              "elapsed_s": 14.6
+            },
+            {
+              "task_id": "uncertain_lookup",
+              "correct": false,
+              "final_answer": null,
+              "n_steps": 15,
+              "errors": 0,
+              "elapsed_s": 32.8
+            },
+            {
+              "task_id": "multi_source_conflict",
+              "correct": false,
+              "final_answer": "(21 - 9) / 63",
+              "n_steps": 8,
+              "errors": 3,
+              "elapsed_s": 27.8
+            },
+            {
+              "task_id": "conversation_recall",
+              "correct": true,
+              "final_answer": "Senso-ji temple",
+              "n_steps": 2,
+              "errors": 0,
+              "elapsed_s": 5.3
+            },
+            {
+              "task_id": "source_attribution",
+              "correct": false,
+              "final_answer": "Transformers use attention mechanisms to model long-range dependencies, which is different from the hierarchical feature learning in neural networks.",
+              "n_steps": 4,
+              "errors": 0,
+              "elapsed_s": 12.2
+            },
+            {
+              "task_id": "shopping_assistant",
+              "correct": true,
+              "final_answer": "['mouse', 'keyboard']",
+              "n_steps": 2,
+              "errors": 0,
+              "elapsed_s": 4.3
+            },
+            {
+              "task_id": "schedule_coordination",
+              "correct": false,
+              "final_answer": "('10am-12pm', '2pm-4pm')",
+              "n_steps": 13,
+              "errors": 9,
+              "elapsed_s": 41.4
+            },
+            {
+              "task_id": "data_pipeline",
+              "correct": false,
+              "final_answer": "20.0",
+              "n_steps": 3,
+              "errors": 0,
+              "elapsed_s": 7.7
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

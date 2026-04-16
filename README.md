@@ -1,43 +1,124 @@
-# CEF-WMF-AM
+# WMF-AM: Cumulative Arithmetic State Tracking Probe
 
-Code and data for:
+**Beyond Completion: Probing Cumulative Arithmetic State Tracking to Predict LLM Agent Performance**
 
-**Beyond Completion: Probing Cumulative State Tracking to Predict LLM Agent Performance**
+*Under review at NeurIPS 2026 Evaluations & Datasets Track*
 
-Dengzhe Hou, Lingyu Jiang, Deng Li, Zirui Li, Fangzhou Lin, Kazunori D Yamada
+## Overview
 
-[[arXiv]](https://arxiv.org/abs/2603.27343) [[PDF]](https://arxiv.org/pdf/2603.27343)
+WMF-AM is a calibrated no-scratchpad probe of cumulative arithmetic state tracking for evaluating LLM process-level capabilities. Given K sequential additive/subtractive operations on an initial numeric state, the model must report the final state without external scratchpad.
 
-## Key Result
-
-WMF-AM, a calibrated no-scratchpad probe of cumulative arithmetic state tracking, predicts downstream agent performance across 20 open-weight models (0.5B–35B, 13 families) with Kendall's τ = 0.612 (p < 0.001, pre-specified, Bonferroni-corrected).
+**Key features:**
+- **K-calibrated difficulty**: Adjustable depth parameter K maintains discriminability across the full capability spectrum (0.5B to frontier models)
+- **Construct isolation**: Three ablation controls (K=1, non-arithmetic ceiling, yoked cancellation) isolate cumulative arithmetic tracking as the difficulty source
+- **Downstream prediction**: WMF-AM is associated with agent performance on a 10-task deterministic battery (τ=0.595, p<0.001, N=28)
+- **Extended K-sweep**: K=3 to 100 reveals sigmoid-cliff collapse dynamics with model-specific critical depths
+- **Load-shift intervention**: History removal diagnostic separates models that internalize state from those that rely on external context
 
 ## Repository Structure
 
 ```
-code/               Experiment scripts (WMF-AM probes, agent battery, ablations)
-data/               Per-model JSON result files
-PREREGISTRATION.md  Pre-registered analysis plan
+code/
+├── config.py                    # Model registry + call_model() utility
+├── wmf_am_multiseed_expansion.py # Core WMF-AM probe (multi-seed)
+├── wmf_am_extended_k.py         # Extended K-sweep (K=3..100)
+├── wmf_am_control.py            # K=1 single-step control
+├── wmf_am_nonarithmetic.py      # Non-arithmetic ceiling ablation
+├── wmf_am_yoked_control.py      # Yoked cancellation control
+├── wmf_am_template_harmonization.py # Template stability check
+├── wmf_am_paraphrase.py         # Paraphrase robustness
+├── oos_validation.py            # Agent battery + WMF-AM validation
+├── api_held_out_validation.py   # API model held-out validation
+├── agent_load_shift.py          # Load-shift intervention
+├── baseline_mmlu_gsm8k.py       # MMLU/GSM8K baseline comparison
+├── wmf_am_extended_k.py         # Extended K-sweep
+└── analysis/
+    ├── beta1_slope_analysis.py  # Manipulation slope analysis
+    └── gen_neurips_figures.py   # Figure generation
+
+data/
+├── master_28models.csv          # All 28 models × all metrics
+├── wmf_am_item_level_consolidated.csv  # 1500 item-level WMF-AM trials
+├── cef_agent_validation_all.json       # 10-task agent battery (20 models)
+├── cef_phase1_full.json               # Phase 1 item-level data (7 models)
+├── nexp/                              # Per-model expansion data (8 models)
+└── results/
+    ├── extended_k_*.json              # Extended K-sweep results
+    ├── load_shift_*.json              # Load-shift intervention results
+    ├── baseline_*.json                # MMLU/GSM8K results
+    ├── api_held_out_*.json            # API model validation results
+    └── wmf_am_*_control_*.json        # Ablation results
+
+PREREGISTRATION.md   # Pre-registered analysis plan (GitHub-committed)
 ```
 
 ## Quick Start
 
+### Install dependencies
 ```bash
-# Run WMF-AM probe on a model
-conda run -n py311 python code/wmf_am_multiseed_expansion.py
+pip install openai python-dotenv scipy scikit-learn
 ```
 
-## Citation
-
-```bibtex
-@article{hou2026beyond,
-  title={Beyond Completion: Probing Cumulative State Tracking to Predict LLM Agent Performance},
-  author={Hou, Dengzhe and Jiang, Lingyu and Li, Deng and Li, Zirui and Lin, Fangzhou and Yamada, Kazunori D},
-  journal={arXiv preprint arXiv:2603.27343},
-  year={2026}
-}
+### Configure API keys (for closed models)
+```bash
+cp .env.example .env
+# Edit .env with your OpenRouter API key and Google AI Studio key
 ```
+
+### Run WMF-AM probe on a model
+```bash
+# Open-weight model via Ollama
+python code/wmf_am_multiseed_expansion.py --models ollama:qwen2.5:7b
+
+# API model via OpenRouter
+python code/api_held_out_validation.py --models openrouter:gpt-4o --wmf-only
+```
+
+### Run agent battery
+```bash
+python code/oos_validation.py  # Runs WMF-AM + 10-task agent battery
+```
+
+### Run extended K-sweep
+```bash
+python code/wmf_am_extended_k.py --models ollama:qwen2.5:7b --k-values 3 5 7 10 15 20 30 50
+```
+
+### Run load-shift intervention
+```bash
+python code/agent_load_shift.py --models openrouter:gpt-4o
+```
+
+### Run ablation controls
+```bash
+python code/wmf_am_control.py --model ollama:qwen2.5:7b          # K=1 control
+python code/wmf_am_nonarithmetic.py --models ollama:qwen2.5:7b   # Non-arithmetic
+python code/wmf_am_yoked_control.py --model ollama:qwen2.5:7b    # Yoked cancellation
+```
+
+### Generate figures
+```bash
+python code/analysis/gen_neurips_figures.py
+```
+
+## Models Evaluated (N=28)
+
+**Open-weight (20 models, 13 families):** Qwen 2.5 (0.5B–32B), Llama 3.x (1B–70B), Gemma 2 (2B–27B), DeepSeek-R1 distill (7B/14B), Mistral 7B, Mixtral 8×7B, Phi-3 14B, Command-R 35B, Yi 34B, TinyLlama 1.1B
+
+**Closed API (8 models):** GPT-4o, GPT-4o-mini, o3-mini (LRM), Claude Sonnet 4, Gemini 2.5 Flash, DeepSeek-V3, DeepSeek-R1 full (LRM)
+
+## Key Results
+
+| Analysis | N | Key Statistic |
+|----------|---|--------------|
+| WMF-AM → Agent | 28 | τ=0.595, CI [0.377, 0.783] |
+| Partial τ(WMF-AM \| MMLU) | 28 | 0.284 (p=0.039) |
+| K=1 control | 27 | 25/27 ceiling |
+| Non-arithmetic | 27 | mean 0.98 |
+| Yoked cancellation | 27 | τ≈0 |
+| K-sweep K_crit | 28 | 0.5–55.3 (does NOT predict agent) |
+| Load-shift | 28 | mean Δ=−0.30 |
 
 ## License
 
-MIT
+CC-BY-4.0

@@ -1,0 +1,1002 @@
+[
+  {
+    "sub_dim": "WMF-AM-CONTROL",
+    "model": "ollama:phi3:14b",
+    "k_operations": 2,
+    "correct_answer": 13,
+    "predicted": 13,
+    "accurate": 1,
+    "query_entity": "Kate",
+    "prompt_length_chars": 380
+  },
+  {
+    "sub_dim": "WMF-AM-CONTROL",
+    "model": "ollama:phi3:14b",
+    "k_operations": 2,
+    "correct_answer": 11,
+    "predicted": 11,
+    "accurate": 1,
+    "query_entity": "David",
+    "prompt_length_chars": 381
+  },
+  {
+    "sub_dim": "WMF-AM-CONTROL",
+    "model": "ollama:phi3:14b",
+    "k_operations": 2,
+    "correct_answer": 8,
+    "predicted": 8,
+    "accurate": 1,
+    "query_entity": "Carol",
+    "prompt_length_chars": 388
+  },
+  {
+    "sub_dim": "WMF-AM-CONTROL",
+    "model": "ollama:phi3:14b",
+    "k_operations": 2,
+    "correct_answer": 14,
+    "predicted": 14,
+    "accurate": 1,
+    "query_entity": "Bob",
+    "prompt_length_chars": 382
+  },
+  {
+    "sub_dim": "WMF-AM-CONTROL",
+    "model": "ollama:phi3:14b",
+    "k_operations": 2,
+    "correct_answer": 8,
+    "predicted": 8,
+    "accurate": 1,
+    "query_entity": "Emma",
+    "prompt_length_chars": 381
+  },
+  {
+    "sub_dim": "WMF-AM-CONTROL",
+    "model": "ollama:phi3:14b",
+    "k_operations": 2,
+    "correct_answer": 10,
+    "predicted": 10,
+    "accurate": 1,
+    "query_entity": "Leo",
+    "prompt_length_chars": 381
+  },
+  {
+    "sub_dim": "WMF-AM-CONTROL",
+    "model": "ollama:phi3:14b",
+    "k_operations": 2,
+    "correct_answer": 15,
+    "predicted": 15,
+    "accurate": 1,
+    "query_entity": "Alice",
+    "prompt_length_chars": 383
+  },
+  {
+    "sub_dim": "WMF-AM-CONTROL",
+    "model": "ollama:phi3:14b",
+    "k_operations": 2,
+    "correct_answer": 9,
+    "predicted": 9,
+    "accurate": 1,
+    "query_entity": "Grace",
+    "prompt_length_chars": 388
+  },
+  {
+    "sub_dim": "WMF-AM-CONTROL",
+    "model": "ollama:phi3:14b",
+    "k_operations": 2,
+    "correct_answer": 20,
+    "predicted": 2,
+    "accurate": 0,
+    "query_entity": "Frank",
+    "prompt_length_chars": 383
+  },
+  {
+    "sub_dim": "WMF-AM-CONTROL",
+    "model": "ollama:phi3:14b",
+    "k_operations": 2,
+    "correct_answer": 13,
+    "predicted": 13,
+    "accurate": 1,
+    "query_entity": "Grace",
+    "prompt_length_chars": 381
+  },
+  {
+    "sub_dim": "WMF-AM-CONTROL",
+    "model": "ollama:phi3:14b",
+    "k_operations": 2,
+    "correct_answer": 13,
+    "predicted": 13,
+    "accurate": 1,
+    "query_entity": "Carol",
+    "prompt_length_chars": 390
+  },
+  {
+    "sub_dim": "WMF-AM-CONTROL",
+    "model": "ollama:phi3:14b",
+    "k_operations": 2,
+    "correct_answer": 5,
+    "predicted": 5,
+    "accurate": 1,
+    "query_entity": "Mia",
+    "prompt_length_chars": 384
+  },
+  {
+    "sub_dim": "WMF-AM-CONTROL",
+    "model": "ollama:phi3:14b",
+    "k_operations": 2,
+    "correct_answer": 7,
+    "predicted": 7,
+    "accurate": 1,
+    "query_entity": "Bob",
+    "prompt_length_chars": 378
+  },
+  {
+    "sub_dim": "WMF-AM-CONTROL",
+    "model": "ollama:phi3:14b",
+    "k_operations": 2,
+    "correct_answer": 11,
+    "predicted": 11,
+    "accurate": 1,
+    "query_entity": "Iris",
+    "prompt_length_chars": 382
+  },
+  {
+    "sub_dim": "WMF-AM-CONTROL",
+    "model": "ollama:phi3:14b",
+    "k_operations": 2,
+    "correct_answer": 12,
+    "predicted": 12,
+    "accurate": 1,
+    "query_entity": "Bob",
+    "prompt_length_chars": 381
+  },
+  {
+    "sub_dim": "WMF-AM-CONTROL",
+    "model": "ollama:phi3:14b",
+    "k_operations": 2,
+    "correct_answer": 20,
+    "predicted": 20,
+    "accurate": 1,
+    "query_entity": "Iris",
+    "prompt_length_chars": 384
+  },
+  {
+    "sub_dim": "WMF-AM-CONTROL",
+    "model": "ollama:phi3:14b",
+    "k_operations": 2,
+    "correct_answer": 18,
+    "predicted": 18,
+    "accurate": 1,
+    "query_entity": "Kate",
+    "prompt_length_chars": 381
+  },
+  {
+    "sub_dim": "WMF-AM-CONTROL",
+    "model": "ollama:phi3:14b",
+    "k_operations": 2,
+    "correct_answer": 19,
+    "predicted": 19,
+    "accurate": 1,
+    "query_entity": "David",
+    "prompt_length_chars": 389
+  },
+  {
+    "sub_dim": "WMF-AM-CONTROL",
+    "model": "ollama:phi3:14b",
+    "k_operations": 2,
+    "correct_answer": 5,
+    "predicted": 5,
+    "accurate": 1,
+    "query_entity": "Alice",
+    "prompt_length_chars": 382
+  },
+  {
+    "sub_dim": "WMF-AM-CONTROL",
+    "model": "ollama:phi3:14b",
+    "k_operations": 2,
+    "correct_answer": 13,
+    "predicted": 13,
+    "accurate": 1,
+    "query_entity": "Grace",
+    "prompt_length_chars": 386
+  },
+  {
+    "sub_dim": "WMF-AM-CONTROL",
+    "model": "ollama:phi3:14b",
+    "k_operations": 4,
+    "correct_answer": 15,
+    "predicted": 15,
+    "accurate": 1,
+    "query_entity": "David",
+    "prompt_length_chars": 473
+  },
+  {
+    "sub_dim": "WMF-AM-CONTROL",
+    "model": "ollama:phi3:14b",
+    "k_operations": 4,
+    "correct_answer": 7,
+    "predicted": 7,
+    "accurate": 1,
+    "query_entity": "James",
+    "prompt_length_chars": 473
+  },
+  {
+    "sub_dim": "WMF-AM-CONTROL",
+    "model": "ollama:phi3:14b",
+    "k_operations": 4,
+    "correct_answer": 8,
+    "predicted": 8,
+    "accurate": 1,
+    "query_entity": "Bob",
+    "prompt_length_chars": 459
+  },
+  {
+    "sub_dim": "WMF-AM-CONTROL",
+    "model": "ollama:phi3:14b",
+    "k_operations": 4,
+    "correct_answer": 8,
+    "predicted": 8,
+    "accurate": 1,
+    "query_entity": "Iris",
+    "prompt_length_chars": 465
+  },
+  {
+    "sub_dim": "WMF-AM-CONTROL",
+    "model": "ollama:phi3:14b",
+    "k_operations": 4,
+    "correct_answer": 13,
+    "predicted": 13,
+    "accurate": 1,
+    "query_entity": "Alice",
+    "prompt_length_chars": 471
+  },
+  {
+    "sub_dim": "WMF-AM-CONTROL",
+    "model": "ollama:phi3:14b",
+    "k_operations": 4,
+    "correct_answer": 9,
+    "predicted": 9,
+    "accurate": 1,
+    "query_entity": "Alice",
+    "prompt_length_chars": 475
+  },
+  {
+    "sub_dim": "WMF-AM-CONTROL",
+    "model": "ollama:phi3:14b",
+    "k_operations": 4,
+    "correct_answer": 5,
+    "predicted": 5,
+    "accurate": 1,
+    "query_entity": "Noah",
+    "prompt_length_chars": 471
+  },
+  {
+    "sub_dim": "WMF-AM-CONTROL",
+    "model": "ollama:phi3:14b",
+    "k_operations": 4,
+    "correct_answer": 5,
+    "predicted": 5,
+    "accurate": 1,
+    "query_entity": "Mia",
+    "prompt_length_chars": 459
+  },
+  {
+    "sub_dim": "WMF-AM-CONTROL",
+    "model": "ollama:phi3:14b",
+    "k_operations": 4,
+    "correct_answer": 6,
+    "predicted": 6,
+    "accurate": 1,
+    "query_entity": "Carol",
+    "prompt_length_chars": 466
+  },
+  {
+    "sub_dim": "WMF-AM-CONTROL",
+    "model": "ollama:phi3:14b",
+    "k_operations": 4,
+    "correct_answer": 18,
+    "predicted": 18,
+    "accurate": 1,
+    "query_entity": "Noah",
+    "prompt_length_chars": 465
+  },
+  {
+    "sub_dim": "WMF-AM-CONTROL",
+    "model": "ollama:phi3:14b",
+    "k_operations": 4,
+    "correct_answer": 14,
+    "predicted": 14,
+    "accurate": 1,
+    "query_entity": "Grace",
+    "prompt_length_chars": 482
+  },
+  {
+    "sub_dim": "WMF-AM-CONTROL",
+    "model": "ollama:phi3:14b",
+    "k_operations": 4,
+    "correct_answer": 14,
+    "predicted": 14,
+    "accurate": 1,
+    "query_entity": "Leo",
+    "prompt_length_chars": 471
+  },
+  {
+    "sub_dim": "WMF-AM-CONTROL",
+    "model": "ollama:phi3:14b",
+    "k_operations": 4,
+    "correct_answer": 18,
+    "predicted": 18,
+    "accurate": 1,
+    "query_entity": "Mia",
+    "prompt_length_chars": 463
+  },
+  {
+    "sub_dim": "WMF-AM-CONTROL",
+    "model": "ollama:phi3:14b",
+    "k_operations": 4,
+    "correct_answer": 19,
+    "predicted": 19,
+    "accurate": 1,
+    "query_entity": "Iris",
+    "prompt_length_chars": 484
+  },
+  {
+    "sub_dim": "WMF-AM-CONTROL",
+    "model": "ollama:phi3:14b",
+    "k_operations": 4,
+    "correct_answer": 12,
+    "predicted": 12,
+    "accurate": 1,
+    "query_entity": "Kate",
+    "prompt_length_chars": 469
+  },
+  {
+    "sub_dim": "WMF-AM-CONTROL",
+    "model": "ollama:phi3:14b",
+    "k_operations": 4,
+    "correct_answer": 15,
+    "predicted": 15,
+    "accurate": 1,
+    "query_entity": "Bob",
+    "prompt_length_chars": 472
+  },
+  {
+    "sub_dim": "WMF-AM-CONTROL",
+    "model": "ollama:phi3:14b",
+    "k_operations": 4,
+    "correct_answer": 12,
+    "predicted": 12,
+    "accurate": 1,
+    "query_entity": "Iris",
+    "prompt_length_chars": 476
+  },
+  {
+    "sub_dim": "WMF-AM-CONTROL",
+    "model": "ollama:phi3:14b",
+    "k_operations": 4,
+    "correct_answer": 9,
+    "predicted": 9,
+    "accurate": 1,
+    "query_entity": "Alice",
+    "prompt_length_chars": 474
+  },
+  {
+    "sub_dim": "WMF-AM-CONTROL",
+    "model": "ollama:phi3:14b",
+    "k_operations": 4,
+    "correct_answer": 6,
+    "predicted": 6,
+    "accurate": 1,
+    "query_entity": "Alice",
+    "prompt_length_chars": 468
+  },
+  {
+    "sub_dim": "WMF-AM-CONTROL",
+    "model": "ollama:phi3:14b",
+    "k_operations": 4,
+    "correct_answer": 8,
+    "predicted": 8,
+    "accurate": 1,
+    "query_entity": "Emma",
+    "prompt_length_chars": 472
+  },
+  {
+    "sub_dim": "WMF-AM-CONTROL",
+    "model": "ollama:phi3:14b",
+    "k_operations": 6,
+    "correct_answer": 8,
+    "predicted": 8,
+    "accurate": 1,
+    "query_entity": "David",
+    "prompt_length_chars": 567
+  },
+  {
+    "sub_dim": "WMF-AM-CONTROL",
+    "model": "ollama:phi3:14b",
+    "k_operations": 6,
+    "correct_answer": 19,
+    "predicted": 19,
+    "accurate": 1,
+    "query_entity": "Emma",
+    "prompt_length_chars": 564
+  },
+  {
+    "sub_dim": "WMF-AM-CONTROL",
+    "model": "ollama:phi3:14b",
+    "k_operations": 6,
+    "correct_answer": 11,
+    "predicted": 11,
+    "accurate": 1,
+    "query_entity": "Leo",
+    "prompt_length_chars": 562
+  },
+  {
+    "sub_dim": "WMF-AM-CONTROL",
+    "model": "ollama:phi3:14b",
+    "k_operations": 6,
+    "correct_answer": 16,
+    "predicted": 16,
+    "accurate": 1,
+    "query_entity": "Frank",
+    "prompt_length_chars": 565
+  },
+  {
+    "sub_dim": "WMF-AM-CONTROL",
+    "model": "ollama:phi3:14b",
+    "k_operations": 6,
+    "correct_answer": 5,
+    "predicted": 5,
+    "accurate": 1,
+    "query_entity": "Frank",
+    "prompt_length_chars": 571
+  },
+  {
+    "sub_dim": "WMF-AM-CONTROL",
+    "model": "ollama:phi3:14b",
+    "k_operations": 6,
+    "correct_answer": 9,
+    "predicted": 9,
+    "accurate": 1,
+    "query_entity": "James",
+    "prompt_length_chars": 559
+  },
+  {
+    "sub_dim": "WMF-AM-CONTROL",
+    "model": "ollama:phi3:14b",
+    "k_operations": 6,
+    "correct_answer": 7,
+    "predicted": 7,
+    "accurate": 1,
+    "query_entity": "David",
+    "prompt_length_chars": 556
+  },
+  {
+    "sub_dim": "WMF-AM-CONTROL",
+    "model": "ollama:phi3:14b",
+    "k_operations": 6,
+    "correct_answer": 9,
+    "predicted": 9,
+    "accurate": 1,
+    "query_entity": "Grace",
+    "prompt_length_chars": 563
+  },
+  {
+    "sub_dim": "WMF-AM-CONTROL",
+    "model": "ollama:phi3:14b",
+    "k_operations": 6,
+    "correct_answer": 13,
+    "predicted": 13,
+    "accurate": 1,
+    "query_entity": "Grace",
+    "prompt_length_chars": 559
+  },
+  {
+    "sub_dim": "WMF-AM-CONTROL",
+    "model": "ollama:phi3:14b",
+    "k_operations": 6,
+    "correct_answer": 10,
+    "predicted": 10,
+    "accurate": 1,
+    "query_entity": "Noah",
+    "prompt_length_chars": 572
+  },
+  {
+    "sub_dim": "WMF-AM-CONTROL",
+    "model": "ollama:phi3:14b",
+    "k_operations": 6,
+    "correct_answer": 19,
+    "predicted": 19,
+    "accurate": 1,
+    "query_entity": "Mia",
+    "prompt_length_chars": 557
+  },
+  {
+    "sub_dim": "WMF-AM-CONTROL",
+    "model": "ollama:phi3:14b",
+    "k_operations": 6,
+    "correct_answer": 18,
+    "predicted": 18,
+    "accurate": 1,
+    "query_entity": "Henry",
+    "prompt_length_chars": 571
+  },
+  {
+    "sub_dim": "WMF-AM-CONTROL",
+    "model": "ollama:phi3:14b",
+    "k_operations": 6,
+    "correct_answer": 19,
+    "predicted": 19,
+    "accurate": 1,
+    "query_entity": "Kate",
+    "prompt_length_chars": 572
+  },
+  {
+    "sub_dim": "WMF-AM-CONTROL",
+    "model": "ollama:phi3:14b",
+    "k_operations": 6,
+    "correct_answer": 15,
+    "predicted": 15,
+    "accurate": 1,
+    "query_entity": "Carol",
+    "prompt_length_chars": 553
+  },
+  {
+    "sub_dim": "WMF-AM-CONTROL",
+    "model": "ollama:phi3:14b",
+    "k_operations": 6,
+    "correct_answer": 14,
+    "predicted": 14,
+    "accurate": 1,
+    "query_entity": "James",
+    "prompt_length_chars": 552
+  },
+  {
+    "sub_dim": "WMF-AM-CONTROL",
+    "model": "ollama:phi3:14b",
+    "k_operations": 6,
+    "correct_answer": 20,
+    "predicted": 20,
+    "accurate": 1,
+    "query_entity": "James",
+    "prompt_length_chars": 569
+  },
+  {
+    "sub_dim": "WMF-AM-CONTROL",
+    "model": "ollama:phi3:14b",
+    "k_operations": 6,
+    "correct_answer": 12,
+    "predicted": 12,
+    "accurate": 1,
+    "query_entity": "Grace",
+    "prompt_length_chars": 584
+  },
+  {
+    "sub_dim": "WMF-AM-CONTROL",
+    "model": "ollama:phi3:14b",
+    "k_operations": 6,
+    "correct_answer": 6,
+    "predicted": 6,
+    "accurate": 1,
+    "query_entity": "Leo",
+    "prompt_length_chars": 540
+  },
+  {
+    "sub_dim": "WMF-AM-CONTROL",
+    "model": "ollama:phi3:14b",
+    "k_operations": 6,
+    "correct_answer": 19,
+    "predicted": 19,
+    "accurate": 1,
+    "query_entity": "Noah",
+    "prompt_length_chars": 561
+  },
+  {
+    "sub_dim": "WMF-AM-CONTROL",
+    "model": "ollama:phi3:14b",
+    "k_operations": 6,
+    "correct_answer": 7,
+    "predicted": 7,
+    "accurate": 1,
+    "query_entity": "Iris",
+    "prompt_length_chars": 566
+  },
+  {
+    "sub_dim": "WMF-AM-CONTROL",
+    "model": "ollama:phi3:14b",
+    "k_operations": 8,
+    "correct_answer": 18,
+    "predicted": 18,
+    "accurate": 1,
+    "query_entity": "Kate",
+    "prompt_length_chars": 651
+  },
+  {
+    "sub_dim": "WMF-AM-CONTROL",
+    "model": "ollama:phi3:14b",
+    "k_operations": 8,
+    "correct_answer": 11,
+    "predicted": 11,
+    "accurate": 1,
+    "query_entity": "David",
+    "prompt_length_chars": 639
+  },
+  {
+    "sub_dim": "WMF-AM-CONTROL",
+    "model": "ollama:phi3:14b",
+    "k_operations": 8,
+    "correct_answer": 19,
+    "predicted": 19,
+    "accurate": 1,
+    "query_entity": "Leo",
+    "prompt_length_chars": 635
+  },
+  {
+    "sub_dim": "WMF-AM-CONTROL",
+    "model": "ollama:phi3:14b",
+    "k_operations": 8,
+    "correct_answer": 15,
+    "predicted": 15,
+    "accurate": 1,
+    "query_entity": "James",
+    "prompt_length_chars": 651
+  },
+  {
+    "sub_dim": "WMF-AM-CONTROL",
+    "model": "ollama:phi3:14b",
+    "k_operations": 8,
+    "correct_answer": 18,
+    "predicted": 18,
+    "accurate": 1,
+    "query_entity": "Bob",
+    "prompt_length_chars": 624
+  },
+  {
+    "sub_dim": "WMF-AM-CONTROL",
+    "model": "ollama:phi3:14b",
+    "k_operations": 8,
+    "correct_answer": 5,
+    "predicted": 5,
+    "accurate": 1,
+    "query_entity": "James",
+    "prompt_length_chars": 646
+  },
+  {
+    "sub_dim": "WMF-AM-CONTROL",
+    "model": "ollama:phi3:14b",
+    "k_operations": 8,
+    "correct_answer": 9,
+    "predicted": 9,
+    "accurate": 1,
+    "query_entity": "James",
+    "prompt_length_chars": 654
+  },
+  {
+    "sub_dim": "WMF-AM-CONTROL",
+    "model": "ollama:phi3:14b",
+    "k_operations": 8,
+    "correct_answer": 15,
+    "predicted": 15,
+    "accurate": 1,
+    "query_entity": "Carol",
+    "prompt_length_chars": 639
+  },
+  {
+    "sub_dim": "WMF-AM-CONTROL",
+    "model": "ollama:phi3:14b",
+    "k_operations": 8,
+    "correct_answer": 19,
+    "predicted": 19,
+    "accurate": 1,
+    "query_entity": "Carol",
+    "prompt_length_chars": 644
+  },
+  {
+    "sub_dim": "WMF-AM-CONTROL",
+    "model": "ollama:phi3:14b",
+    "k_operations": 8,
+    "correct_answer": 7,
+    "predicted": 7,
+    "accurate": 1,
+    "query_entity": "James",
+    "prompt_length_chars": 661
+  },
+  {
+    "sub_dim": "WMF-AM-CONTROL",
+    "model": "ollama:phi3:14b",
+    "k_operations": 8,
+    "correct_answer": 19,
+    "predicted": 19,
+    "accurate": 1,
+    "query_entity": "Bob",
+    "prompt_length_chars": 632
+  },
+  {
+    "sub_dim": "WMF-AM-CONTROL",
+    "model": "ollama:phi3:14b",
+    "k_operations": 8,
+    "correct_answer": 7,
+    "predicted": 7,
+    "accurate": 1,
+    "query_entity": "Kate",
+    "prompt_length_chars": 650
+  },
+  {
+    "sub_dim": "WMF-AM-CONTROL",
+    "model": "ollama:phi3:14b",
+    "k_operations": 8,
+    "correct_answer": 16,
+    "predicted": 16,
+    "accurate": 1,
+    "query_entity": "Iris",
+    "prompt_length_chars": 652
+  },
+  {
+    "sub_dim": "WMF-AM-CONTROL",
+    "model": "ollama:phi3:14b",
+    "k_operations": 8,
+    "correct_answer": 12,
+    "predicted": 12,
+    "accurate": 1,
+    "query_entity": "Frank",
+    "prompt_length_chars": 650
+  },
+  {
+    "sub_dim": "WMF-AM-CONTROL",
+    "model": "ollama:phi3:14b",
+    "k_operations": 8,
+    "correct_answer": 19,
+    "predicted": 19,
+    "accurate": 1,
+    "query_entity": "Bob",
+    "prompt_length_chars": 640
+  },
+  {
+    "sub_dim": "WMF-AM-CONTROL",
+    "model": "ollama:phi3:14b",
+    "k_operations": 8,
+    "correct_answer": 5,
+    "predicted": 5,
+    "accurate": 1,
+    "query_entity": "James",
+    "prompt_length_chars": 649
+  },
+  {
+    "sub_dim": "WMF-AM-CONTROL",
+    "model": "ollama:phi3:14b",
+    "k_operations": 8,
+    "correct_answer": 16,
+    "predicted": 16,
+    "accurate": 1,
+    "query_entity": "Kate",
+    "prompt_length_chars": 629
+  },
+  {
+    "sub_dim": "WMF-AM-CONTROL",
+    "model": "ollama:phi3:14b",
+    "k_operations": 8,
+    "correct_answer": 11,
+    "predicted": 14,
+    "accurate": 0,
+    "query_entity": "Henry",
+    "prompt_length_chars": 645
+  },
+  {
+    "sub_dim": "WMF-AM-CONTROL",
+    "model": "ollama:phi3:14b",
+    "k_operations": 8,
+    "correct_answer": 18,
+    "predicted": 18,
+    "accurate": 1,
+    "query_entity": "Iris",
+    "prompt_length_chars": 640
+  },
+  {
+    "sub_dim": "WMF-AM-CONTROL",
+    "model": "ollama:phi3:14b",
+    "k_operations": 8,
+    "correct_answer": 9,
+    "predicted": 9,
+    "accurate": 1,
+    "query_entity": "Frank",
+    "prompt_length_chars": 649
+  },
+  {
+    "sub_dim": "WMF-AM-CONTROL",
+    "model": "ollama:phi3:14b",
+    "k_operations": 12,
+    "correct_answer": 13,
+    "predicted": 13,
+    "accurate": 1,
+    "query_entity": "Iris",
+    "prompt_length_chars": 830
+  },
+  {
+    "sub_dim": "WMF-AM-CONTROL",
+    "model": "ollama:phi3:14b",
+    "k_operations": 12,
+    "correct_answer": 18,
+    "predicted": 18,
+    "accurate": 1,
+    "query_entity": "Emma",
+    "prompt_length_chars": 808
+  },
+  {
+    "sub_dim": "WMF-AM-CONTROL",
+    "model": "ollama:phi3:14b",
+    "k_operations": 12,
+    "correct_answer": 10,
+    "predicted": 10,
+    "accurate": 1,
+    "query_entity": "Carol",
+    "prompt_length_chars": 835
+  },
+  {
+    "sub_dim": "WMF-AM-CONTROL",
+    "model": "ollama:phi3:14b",
+    "k_operations": 12,
+    "correct_answer": 12,
+    "predicted": 12,
+    "accurate": 1,
+    "query_entity": "Noah",
+    "prompt_length_chars": 816
+  },
+  {
+    "sub_dim": "WMF-AM-CONTROL",
+    "model": "ollama:phi3:14b",
+    "k_operations": 12,
+    "correct_answer": 16,
+    "predicted": 16,
+    "accurate": 1,
+    "query_entity": "Grace",
+    "prompt_length_chars": 845
+  },
+  {
+    "sub_dim": "WMF-AM-CONTROL",
+    "model": "ollama:phi3:14b",
+    "k_operations": 12,
+    "correct_answer": 5,
+    "predicted": 5,
+    "accurate": 1,
+    "query_entity": "Leo",
+    "prompt_length_chars": 807
+  },
+  {
+    "sub_dim": "WMF-AM-CONTROL",
+    "model": "ollama:phi3:14b",
+    "k_operations": 12,
+    "correct_answer": 11,
+    "predicted": 11,
+    "accurate": 1,
+    "query_entity": "Alice",
+    "prompt_length_chars": 833
+  },
+  {
+    "sub_dim": "WMF-AM-CONTROL",
+    "model": "ollama:phi3:14b",
+    "k_operations": 12,
+    "correct_answer": 20,
+    "predicted": 20,
+    "accurate": 1,
+    "query_entity": "Frank",
+    "prompt_length_chars": 809
+  },
+  {
+    "sub_dim": "WMF-AM-CONTROL",
+    "model": "ollama:phi3:14b",
+    "k_operations": 12,
+    "correct_answer": 10,
+    "predicted": 10,
+    "accurate": 1,
+    "query_entity": "Alice",
+    "prompt_length_chars": 825
+  },
+  {
+    "sub_dim": "WMF-AM-CONTROL",
+    "model": "ollama:phi3:14b",
+    "k_operations": 12,
+    "correct_answer": 15,
+    "predicted": 30,
+    "accurate": 0,
+    "query_entity": "Carol",
+    "prompt_length_chars": 831
+  },
+  {
+    "sub_dim": "WMF-AM-CONTROL",
+    "model": "ollama:phi3:14b",
+    "k_operations": 12,
+    "correct_answer": 16,
+    "predicted": 16,
+    "accurate": 1,
+    "query_entity": "James",
+    "prompt_length_chars": 802
+  },
+  {
+    "sub_dim": "WMF-AM-CONTROL",
+    "model": "ollama:phi3:14b",
+    "k_operations": 12,
+    "correct_answer": 18,
+    "predicted": 18,
+    "accurate": 1,
+    "query_entity": "Grace",
+    "prompt_length_chars": 825
+  },
+  {
+    "sub_dim": "WMF-AM-CONTROL",
+    "model": "ollama:phi3:14b",
+    "k_operations": 12,
+    "correct_answer": 8,
+    "predicted": 8,
+    "accurate": 1,
+    "query_entity": "David",
+    "prompt_length_chars": 831
+  },
+  {
+    "sub_dim": "WMF-AM-CONTROL",
+    "model": "ollama:phi3:14b",
+    "k_operations": 12,
+    "correct_answer": 18,
+    "predicted": 18,
+    "accurate": 1,
+    "query_entity": "Frank",
+    "prompt_length_chars": 830
+  },
+  {
+    "sub_dim": "WMF-AM-CONTROL",
+    "model": "ollama:phi3:14b",
+    "k_operations": 12,
+    "correct_answer": 20,
+    "predicted": 30,
+    "accurate": 0,
+    "query_entity": "Noah",
+    "prompt_length_chars": 818
+  },
+  {
+    "sub_dim": "WMF-AM-CONTROL",
+    "model": "ollama:phi3:14b",
+    "k_operations": 12,
+    "correct_answer": 20,
+    "predicted": 20,
+    "accurate": 1,
+    "query_entity": "Henry",
+    "prompt_length_chars": 836
+  },
+  {
+    "sub_dim": "WMF-AM-CONTROL",
+    "model": "ollama:phi3:14b",
+    "k_operations": 12,
+    "correct_answer": 10,
+    "predicted": 10,
+    "accurate": 1,
+    "query_entity": "Alice",
+    "prompt_length_chars": 826
+  },
+  {
+    "sub_dim": "WMF-AM-CONTROL",
+    "model": "ollama:phi3:14b",
+    "k_operations": 12,
+    "correct_answer": 6,
+    "predicted": 6,
+    "accurate": 1,
+    "query_entity": "Alice",
+    "prompt_length_chars": 826
+  },
+  {
+    "sub_dim": "WMF-AM-CONTROL",
+    "model": "ollama:phi3:14b",
+    "k_operations": 12,
+    "correct_answer": 14,
+    "predicted": 14,
+    "accurate": 1,
+    "query_entity": "James",
+    "prompt_length_chars": 822
+  },
+  {
+    "sub_dim": "WMF-AM-CONTROL",
+    "model": "ollama:phi3:14b",
+    "k_operations": 12,
+    "correct_answer": 13,
+    "predicted": 13,
+    "accurate": 1,
+    "query_entity": "Grace",
+    "prompt_length_chars": 826
+  }
+]

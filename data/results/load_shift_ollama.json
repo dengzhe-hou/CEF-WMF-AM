@@ -1,0 +1,929 @@
+{
+  "results": [
+    {
+      "model": "ollama:qwen2.5:0.5b",
+      "timestamp": "2026-04-15T16:33:19.314564",
+      "supported_score": 0.1,
+      "unsupported_score": 0.1,
+      "load_shift_delta": 0.0,
+      "conditions": {
+        "supported": {
+          "score": 0.1,
+          "n_correct": 1,
+          "n_tasks": 10,
+          "history_window": null,
+          "task_results": [
+            {
+              "task_id": "multi_step_calc",
+              "correct": false,
+              "final_answer": null,
+              "n_steps": 15,
+              "errors": 1,
+              "elapsed_s": 7.8
+            },
+            {
+              "task_id": "entity_tracking",
+              "correct": false,
+              "final_answer": null,
+              "n_steps": 15,
+              "errors": 1,
+              "elapsed_s": 19.0
+            },
+            {
+              "task_id": "sequential_search",
+              "correct": false,
+              "final_answer": null,
+              "n_steps": 15,
+              "errors": 0,
+              "elapsed_s": 6.9
+            },
+            {
+              "task_id": "uncertain_lookup",
+              "correct": false,
+              "final_answer": null,
+              "n_steps": 15,
+              "errors": 0,
+              "elapsed_s": 5.0
+            },
+            {
+              "task_id": "multi_source_conflict",
+              "correct": false,
+              "final_answer": null,
+              "n_steps": 15,
+              "errors": 14,
+              "elapsed_s": 3.4
+            },
+            {
+              "task_id": "conversation_recall",
+              "correct": false,
+              "final_answer": "",
+              "n_steps": 2,
+              "errors": 0,
+              "elapsed_s": 0.4
+            },
+            {
+              "task_id": "source_attribution",
+              "correct": false,
+              "final_answer": "",
+              "n_steps": 2,
+              "errors": 0,
+              "elapsed_s": 0.7
+            },
+            {
+              "task_id": "shopping_assistant",
+              "correct": true,
+              "final_answer": "[mouse, keyboard]",
+              "n_steps": 2,
+              "errors": 0,
+              "elapsed_s": 0.6
+            },
+            {
+              "task_id": "schedule_coordination",
+              "correct": false,
+              "final_answer": null,
+              "n_steps": 15,
+              "errors": 0,
+              "elapsed_s": 7.2
+            },
+            {
+              "task_id": "data_pipeline",
+              "correct": false,
+              "final_answer": "mean=7.5, max=30, sum=180",
+              "n_steps": 2,
+              "errors": 0,
+              "elapsed_s": 0.6
+            }
+          ]
+        },
+        "unsupported": {
+          "score": 0.1,
+          "n_correct": 1,
+          "n_tasks": 10,
+          "history_window": 1,
+          "task_results": [
+            {
+              "task_id": "multi_step_calc",
+              "correct": false,
+              "final_answer": null,
+              "n_steps": 15,
+              "errors": 14,
+              "elapsed_s": 4.1
+            },
+            {
+              "task_id": "entity_tracking",
+              "correct": false,
+              "final_answer": "max_score(",
+              "n_steps": 10,
+              "errors": 4,
+              "elapsed_s": 5.8
+            },
+            {
+              "task_id": "sequential_search",
+              "correct": false,
+              "final_answer": "0",
+              "n_steps": 4,
+              "errors": 1,
+              "elapsed_s": 1.3
+            },
+            {
+              "task_id": "uncertain_lookup",
+              "correct": false,
+              "final_answer": null,
+              "n_steps": 15,
+              "errors": 0,
+              "elapsed_s": 4.5
+            },
+            {
+              "task_id": "multi_source_conflict",
+              "correct": false,
+              "final_answer": null,
+              "n_steps": 15,
+              "errors": 14,
+              "elapsed_s": 4.2
+            },
+            {
+              "task_id": "conversation_recall",
+              "correct": false,
+              "final_answer": "",
+              "n_steps": 2,
+              "errors": 0,
+              "elapsed_s": 0.4
+            },
+            {
+              "task_id": "source_attribution",
+              "correct": false,
+              "final_answer": "",
+              "n_steps": 2,
+              "errors": 0,
+              "elapsed_s": 0.7
+            },
+            {
+              "task_id": "shopping_assistant",
+              "correct": true,
+              "final_answer": "[mouse, keyboard]",
+              "n_steps": 2,
+              "errors": 0,
+              "elapsed_s": 0.6
+            },
+            {
+              "task_id": "schedule_coordination",
+              "correct": false,
+              "final_answer": null,
+              "n_steps": 15,
+              "errors": 12,
+              "elapsed_s": 3.1
+            },
+            {
+              "task_id": "data_pipeline",
+              "correct": false,
+              "final_answer": "mean=7.5, max=30, sum=180",
+              "n_steps": 2,
+              "errors": 0,
+              "elapsed_s": 0.6
+            }
+          ]
+        }
+      }
+    },
+    {
+      "model": "ollama:qwen2.5:1.5b",
+      "timestamp": "2026-04-15T16:34:06.947019",
+      "supported_score": 0.3,
+      "unsupported_score": 0.2,
+      "load_shift_delta": 0.09999999999999998,
+      "conditions": {
+        "supported": {
+          "score": 0.3,
+          "n_correct": 3,
+          "n_tasks": 10,
+          "history_window": null,
+          "task_results": [
+            {
+              "task_id": "multi_step_calc",
+              "correct": false,
+              "final_answer": "140",
+              "n_steps": 3,
+              "errors": 2,
+              "elapsed_s": 7.5
+            },
+            {
+              "task_id": "entity_tracking",
+              "correct": true,
+              "final_answer": "David",
+              "n_steps": 2,
+              "errors": 0,
+              "elapsed_s": 1.6
+            },
+            {
+              "task_id": "sequential_search",
+              "correct": false,
+              "final_answer": "file_005",
+              "n_steps": 2,
+              "errors": 0,
+              "elapsed_s": 0.5
+            },
+            {
+              "task_id": "uncertain_lookup",
+              "correct": false,
+              "final_answer": null,
+              "n_steps": 15,
+              "errors": 0,
+              "elapsed_s": 10.6
+            },
+            {
+              "task_id": "multi_source_conflict",
+              "correct": false,
+              "final_answer": "average",
+              "n_steps": 2,
+              "errors": 0,
+              "elapsed_s": 0.9
+            },
+            {
+              "task_id": "conversation_recall",
+              "correct": true,
+              "final_answer": "Senso-ji",
+              "n_steps": 5,
+              "errors": 0,
+              "elapsed_s": 1.4
+            },
+            {
+              "task_id": "source_attribution",
+              "correct": false,
+              "final_answer": "paper_id",
+              "n_steps": 2,
+              "errors": 0,
+              "elapsed_s": 1.5
+            },
+            {
+              "task_id": "shopping_assistant",
+              "correct": true,
+              "final_answer": "list(\"mouse\", \"keyboard\")",
+              "n_steps": 2,
+              "errors": 0,
+              "elapsed_s": 0.9
+            },
+            {
+              "task_id": "schedule_coordination",
+              "correct": false,
+              "final_answer": "answer",
+              "n_steps": 2,
+              "errors": 1,
+              "elapsed_s": 0.6
+            },
+            {
+              "task_id": "data_pipeline",
+              "correct": false,
+              "final_answer": "mean=20.0, max=30, sum=125",
+              "n_steps": 3,
+              "errors": 0,
+              "elapsed_s": 1.5
+            }
+          ]
+        },
+        "unsupported": {
+          "score": 0.2,
+          "n_correct": 2,
+          "n_tasks": 10,
+          "history_window": 1,
+          "task_results": [
+            {
+              "task_id": "multi_step_calc",
+              "correct": false,
+              "final_answer": "CALCULATOR(\"3 * 100 - 50 / 5 + 20\")",
+              "n_steps": 3,
+              "errors": 2,
+              "elapsed_s": 1.5
+            },
+            {
+              "task_id": "entity_tracking",
+              "correct": true,
+              "final_answer": "David",
+              "n_steps": 2,
+              "errors": 0,
+              "elapsed_s": 1.6
+            },
+            {
+              "task_id": "sequential_search",
+              "correct": false,
+              "final_answer": "file_005",
+              "n_steps": 2,
+              "errors": 0,
+              "elapsed_s": 0.5
+            },
+            {
+              "task_id": "uncertain_lookup",
+              "correct": false,
+              "final_answer": null,
+              "n_steps": 15,
+              "errors": 0,
+              "elapsed_s": 9.1
+            },
+            {
+              "task_id": "multi_source_conflict",
+              "correct": false,
+              "final_answer": "average",
+              "n_steps": 2,
+              "errors": 0,
+              "elapsed_s": 0.9
+            },
+            {
+              "task_id": "conversation_recall",
+              "correct": false,
+              "final_answer": "GETTING_STARTED()",
+              "n_steps": 3,
+              "errors": 0,
+              "elapsed_s": 0.9
+            },
+            {
+              "task_id": "source_attribution",
+              "correct": false,
+              "final_answer": "paper_id",
+              "n_steps": 2,
+              "errors": 0,
+              "elapsed_s": 1.4
+            },
+            {
+              "task_id": "shopping_assistant",
+              "correct": true,
+              "final_answer": "list(\"mouse\", \"keyboard\")",
+              "n_steps": 2,
+              "errors": 0,
+              "elapsed_s": 0.9
+            },
+            {
+              "task_id": "schedule_coordination",
+              "correct": false,
+              "final_answer": "answer",
+              "n_steps": 2,
+              "errors": 1,
+              "elapsed_s": 0.6
+            },
+            {
+              "task_id": "data_pipeline",
+              "correct": false,
+              "final_answer": "mean=20.0, max=30, sum=125)\n\nTHOUGHT: The mean is 20.0, which matches the median and max we calculated earlier.\nACTION: report_results(mean=20.0, max=30, sum=125",
+              "n_steps": 5,
+              "errors": 1,
+              "elapsed_s": 3.1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "model": "ollama:qwen2.5:3b",
+      "timestamp": "2026-04-15T16:44:26.028828",
+      "supported_score": 0.5,
+      "unsupported_score": 0.3,
+      "load_shift_delta": 0.2,
+      "conditions": {
+        "supported": {
+          "score": 0.5,
+          "n_correct": 5,
+          "n_tasks": 10,
+          "history_window": null,
+          "task_results": [
+            {
+              "task_id": "multi_step_calc",
+              "correct": false,
+              "final_answer": null,
+              "n_steps": 15,
+              "errors": 0,
+              "elapsed_s": 42.3
+            },
+            {
+              "task_id": "entity_tracking",
+              "correct": true,
+              "final_answer": "David",
+              "n_steps": 10,
+              "errors": 0,
+              "elapsed_s": 33.9
+            },
+            {
+              "task_id": "sequential_search",
+              "correct": false,
+              "final_answer": "1200-800",
+              "n_steps": 4,
+              "errors": 0,
+              "elapsed_s": 3.4
+            },
+            {
+              "task_id": "uncertain_lookup",
+              "correct": true,
+              "final_answer": "Canberra",
+              "n_steps": 2,
+              "errors": 0,
+              "elapsed_s": 1.1
+            },
+            {
+              "task_id": "multi_source_conflict",
+              "correct": false,
+              "final_answer": "(temperature_A + temperature_B + temperature_C) / 3",
+              "n_steps": 3,
+              "errors": 1,
+              "elapsed_s": 2.9
+            },
+            {
+              "task_id": "conversation_recall",
+              "correct": true,
+              "final_answer": "Senso-ji",
+              "n_steps": 2,
+              "errors": 0,
+              "elapsed_s": 1.5
+            },
+            {
+              "task_id": "source_attribution",
+              "correct": false,
+              "final_answer": "paper_A_D",
+              "n_steps": 4,
+              "errors": 0,
+              "elapsed_s": 3.2
+            },
+            {
+              "task_id": "shopping_assistant",
+              "correct": false,
+              "final_answer": null,
+              "n_steps": 15,
+              "errors": 0,
+              "elapsed_s": 17.4
+            },
+            {
+              "task_id": "schedule_coordination",
+              "correct": true,
+              "final_answer": "I cannot determine if they are all busy on Monday",
+              "n_steps": 5,
+              "errors": 0,
+              "elapsed_s": 10.0
+            },
+            {
+              "task_id": "data_pipeline",
+              "correct": true,
+              "final_answer": "mean=20.0, max=30, sum=100",
+              "n_steps": 5,
+              "errors": 0,
+              "elapsed_s": 7.6
+            }
+          ]
+        },
+        "unsupported": {
+          "score": 0.3,
+          "n_correct": 3,
+          "n_tasks": 10,
+          "history_window": 1,
+          "task_results": [
+            {
+              "task_id": "multi_step_calc",
+              "correct": false,
+              "final_answer": null,
+              "n_steps": 15,
+              "errors": 0,
+              "elapsed_s": 28.7
+            },
+            {
+              "task_id": "entity_tracking",
+              "correct": false,
+              "final_answer": null,
+              "n_steps": 15,
+              "errors": 0,
+              "elapsed_s": 79.6
+            },
+            {
+              "task_id": "sequential_search",
+              "correct": false,
+              "final_answer": null,
+              "n_steps": 15,
+              "errors": 12,
+              "elapsed_s": 112.0
+            },
+            {
+              "task_id": "uncertain_lookup",
+              "correct": true,
+              "final_answer": "Canberra",
+              "n_steps": 2,
+              "errors": 0,
+              "elapsed_s": 15.4
+            },
+            {
+              "task_id": "multi_source_conflict",
+              "correct": false,
+              "final_answer": "The average temperature cannot be calculated with the given information.",
+              "n_steps": 6,
+              "errors": 4,
+              "elapsed_s": 64.3
+            },
+            {
+              "task_id": "conversation_recall",
+              "correct": true,
+              "final_answer": "Senso-ji",
+              "n_steps": 2,
+              "errors": 0,
+              "elapsed_s": 5.2
+            },
+            {
+              "task_id": "source_attribution",
+              "correct": false,
+              "final_answer": "I'm unable to find relevant information about attention mechanisms in transformer architectures based on the searches conducted.",
+              "n_steps": 5,
+              "errors": 0,
+              "elapsed_s": 11.8
+            },
+            {
+              "task_id": "shopping_assistant",
+              "correct": false,
+              "final_answer": null,
+              "n_steps": 15,
+              "errors": 0,
+              "elapsed_s": 55.2
+            },
+            {
+              "task_id": "schedule_coordination",
+              "correct": true,
+              "final_answer": "All three individuals are busy on Monday",
+              "n_steps": 3,
+              "errors": 0,
+              "elapsed_s": 21.6
+            },
+            {
+              "task_id": "data_pipeline",
+              "correct": false,
+              "final_answer": null,
+              "n_steps": 15,
+              "errors": 11,
+              "elapsed_s": 101.9
+            }
+          ]
+        }
+      }
+    },
+    {
+      "model": "ollama:qwen2.5:7b",
+      "timestamp": "2026-04-15T16:54:03.677596",
+      "supported_score": 0.7,
+      "unsupported_score": 0.2,
+      "load_shift_delta": 0.49999999999999994,
+      "conditions": {
+        "supported": {
+          "score": 0.7,
+          "n_correct": 7,
+          "n_tasks": 10,
+          "history_window": null,
+          "task_results": [
+            {
+              "task_id": "multi_step_calc",
+              "correct": false,
+              "final_answer": "310",
+              "n_steps": 2,
+              "errors": 0,
+              "elapsed_s": 26.1
+            },
+            {
+              "task_id": "entity_tracking",
+              "correct": false,
+              "final_answer": null,
+              "n_steps": 15,
+              "errors": 0,
+              "elapsed_s": 79.3
+            },
+            {
+              "task_id": "sequential_search",
+              "correct": true,
+              "final_answer": "320",
+              "n_steps": 7,
+              "errors": 0,
+              "elapsed_s": 15.1
+            },
+            {
+              "task_id": "uncertain_lookup",
+              "correct": true,
+              "final_answer": "Canberra",
+              "n_steps": 3,
+              "errors": 0,
+              "elapsed_s": 5.1
+            },
+            {
+              "task_id": "multi_source_conflict",
+              "correct": true,
+              "final_answer": "(22 + 24 + 21) / 3",
+              "n_steps": 4,
+              "errors": 0,
+              "elapsed_s": 6.6
+            },
+            {
+              "task_id": "conversation_recall",
+              "correct": true,
+              "final_answer": "Senso-ji temple",
+              "n_steps": 2,
+              "errors": 0,
+              "elapsed_s": 4.1
+            },
+            {
+              "task_id": "source_attribution",
+              "correct": true,
+              "final_answer": "paper_B",
+              "n_steps": 5,
+              "errors": 0,
+              "elapsed_s": 7.1
+            },
+            {
+              "task_id": "shopping_assistant",
+              "correct": true,
+              "final_answer": "['mouse', 'keyboard']",
+              "n_steps": 2,
+              "errors": 0,
+              "elapsed_s": 4.1
+            },
+            {
+              "task_id": "schedule_coordination",
+              "correct": false,
+              "final_answer": "None",
+              "n_steps": 5,
+              "errors": 0,
+              "elapsed_s": 12.8
+            },
+            {
+              "task_id": "data_pipeline",
+              "correct": true,
+              "final_answer": "mean=20.0, max=30, sum=100",
+              "n_steps": 5,
+              "errors": 0,
+              "elapsed_s": 11.1
+            }
+          ]
+        },
+        "unsupported": {
+          "score": 0.2,
+          "n_correct": 2,
+          "n_tasks": 10,
+          "history_window": 1,
+          "task_results": [
+            {
+              "task_id": "multi_step_calc",
+              "correct": false,
+              "final_answer": "310",
+              "n_steps": 2,
+              "errors": 0,
+              "elapsed_s": 4.8
+            },
+            {
+              "task_id": "entity_tracking",
+              "correct": false,
+              "final_answer": "Alice now has 10 points",
+              "n_steps": 11,
+              "errors": 1,
+              "elapsed_s": 47.7
+            },
+            {
+              "task_id": "sequential_search",
+              "correct": false,
+              "final_answer": "400",
+              "n_steps": 6,
+              "errors": 2,
+              "elapsed_s": 13.5
+            },
+            {
+              "task_id": "uncertain_lookup",
+              "correct": false,
+              "final_answer": null,
+              "n_steps": 15,
+              "errors": 0,
+              "elapsed_s": 74.0
+            },
+            {
+              "task_id": "multi_source_conflict",
+              "correct": false,
+              "final_answer": "(21 - 9) / 63",
+              "n_steps": 8,
+              "errors": 3,
+              "elapsed_s": 148.7
+            },
+            {
+              "task_id": "conversation_recall",
+              "correct": true,
+              "final_answer": "Senso-ji temple",
+              "n_steps": 2,
+              "errors": 0,
+              "elapsed_s": 29.1
+            },
+            {
+              "task_id": "source_attribution",
+              "correct": false,
+              "final_answer": "Transformers use attention mechanisms to model long-range dependencies, which is different from the hierarchical feature learning in neural networks.",
+              "n_steps": 4,
+              "errors": 0,
+              "elapsed_s": 18.9
+            },
+            {
+              "task_id": "shopping_assistant",
+              "correct": true,
+              "final_answer": "['mouse', 'keyboard']",
+              "n_steps": 2,
+              "errors": 0,
+              "elapsed_s": 13.1
+            },
+            {
+              "task_id": "schedule_coordination",
+              "correct": false,
+              "final_answer": "('10am-12pm', '2pm-4pm')",
+              "n_steps": 13,
+              "errors": 9,
+              "elapsed_s": 45.6
+            },
+            {
+              "task_id": "data_pipeline",
+              "correct": false,
+              "final_answer": "20.0",
+              "n_steps": 3,
+              "errors": 0,
+              "elapsed_s": 10.8
+            }
+          ]
+        }
+      }
+    },
+    {
+      "model": "ollama:qwen2.5:14b",
+      "timestamp": "2026-04-15T17:26:09.564433",
+      "supported_score": 0.9,
+      "unsupported_score": 0.5,
+      "load_shift_delta": 0.4,
+      "conditions": {
+        "supported": {
+          "score": 0.9,
+          "n_correct": 9,
+          "n_tasks": 10,
+          "history_window": null,
+          "task_results": [
+            {
+              "task_id": "multi_step_calc",
+              "correct": false,
+              "final_answer": "70",
+              "n_steps": 4,
+              "errors": 0,
+              "elapsed_s": 82.7
+            },
+            {
+              "task_id": "entity_tracking",
+              "correct": true,
+              "final_answer": "David",
+              "n_steps": 2,
+              "errors": 0,
+              "elapsed_s": 52.8
+            },
+            {
+              "task_id": "sequential_search",
+              "correct": true,
+              "final_answer": "320",
+              "n_steps": 7,
+              "errors": 0,
+              "elapsed_s": 27.5
+            },
+            {
+              "task_id": "uncertain_lookup",
+              "correct": true,
+              "final_answer": "Canberra",
+              "n_steps": 4,
+              "errors": 0,
+              "elapsed_s": 18.9
+            },
+            {
+              "task_id": "multi_source_conflict",
+              "correct": true,
+              "final_answer": "(22 + 24 + 21) / 3",
+              "n_steps": 4,
+              "errors": 0,
+              "elapsed_s": 16.2
+            },
+            {
+              "task_id": "conversation_recall",
+              "correct": true,
+              "final_answer": "Senso-ji",
+              "n_steps": 2,
+              "errors": 0,
+              "elapsed_s": 16.2
+            },
+            {
+              "task_id": "source_attribution",
+              "correct": true,
+              "final_answer": "paper_B",
+              "n_steps": 3,
+              "errors": 0,
+              "elapsed_s": 50.0
+            },
+            {
+              "task_id": "shopping_assistant",
+              "correct": true,
+              "final_answer": "mouse, keyboard",
+              "n_steps": 2,
+              "errors": 0,
+              "elapsed_s": 45.3
+            },
+            {
+              "task_id": "schedule_coordination",
+              "correct": true,
+              "final_answer": "\"There is no common slot when Alice, Bob, and Carol are all busy on Monday.\"",
+              "n_steps": 6,
+              "errors": 0,
+              "elapsed_s": 80.5
+            },
+            {
+              "task_id": "data_pipeline",
+              "correct": true,
+              "final_answer": "mean=20.0, max=30, sum=100",
+              "n_steps": 5,
+              "errors": 0,
+              "elapsed_s": 75.6
+            }
+          ]
+        },
+        "unsupported": {
+          "score": 0.5,
+          "n_correct": 5,
+          "n_tasks": 10,
+          "history_window": 1,
+          "task_results": [
+            {
+              "task_id": "multi_step_calc",
+              "correct": false,
+              "final_answer": "70",
+              "n_steps": 5,
+              "errors": 0,
+              "elapsed_s": 57.4
+            },
+            {
+              "task_id": "entity_tracking",
+              "correct": true,
+              "final_answer": "David",
+              "n_steps": 2,
+              "errors": 0,
+              "elapsed_s": 46.3
+            },
+            {
+              "task_id": "sequential_search",
+              "correct": false,
+              "final_answer": "-400",
+              "n_steps": 8,
+              "errors": 4,
+              "elapsed_s": 59.4
+            },
+            {
+              "task_id": "uncertain_lookup",
+              "correct": true,
+              "final_answer": "Canberra",
+              "n_steps": 5,
+              "errors": 2,
+              "elapsed_s": 63.0
+            },
+            {
+              "task_id": "multi_source_conflict",
+              "correct": true,
+              "final_answer": "(22 + 24) / 2",
+              "n_steps": 4,
+              "errors": 1,
+              "elapsed_s": 55.4
+            },
+            {
+              "task_id": "conversation_recall",
+              "correct": true,
+              "final_answer": "Senso-ji",
+              "n_steps": 2,
+              "errors": 0,
+              "elapsed_s": 21.1
+            },
+            {
+              "task_id": "source_attribution",
+              "correct": false,
+              "final_answer": "Transformer models typically use techniques like relative position embeddings or factorized dot-product attention to handle long-range dependencies efficiently, rather than increasing sequence length limits.",
+              "n_steps": 11,
+              "errors": 5,
+              "elapsed_s": 149.5
+            },
+            {
+              "task_id": "shopping_assistant",
+              "correct": true,
+              "final_answer": "mouse, keyboard",
+              "n_steps": 2,
+              "errors": 0,
+              "elapsed_s": 22.9
+            },
+            {
+              "task_id": "schedule_coordination",
+              "correct": false,
+              "final_answer": "\"To determine a suitable time for both Bob and Alice, please provide their availability or any specific times that work for them.\"",
+              "n_steps": 14,
+              "errors": 9,
+              "elapsed_s": 174.2
+            },
+            {
+              "task_id": "data_pipeline",
+              "correct": false,
+              "final_answer": null,
+              "n_steps": 15,
+              "errors": 12,
+              "elapsed_s": 810.9
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

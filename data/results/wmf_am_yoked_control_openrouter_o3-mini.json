@@ -1,0 +1,2567 @@
+{
+  "metadata": {
+    "task": "WMF-AM-YOKED-CONTROL",
+    "model": "openrouter:o3-mini",
+    "n_problems_per_depth": 20,
+    "seed": 42,
+    "depths": [
+      2,
+      4,
+      6,
+      8,
+      12
+    ]
+  },
+  "summary": {
+    "per_depth_accuracy": {
+      "2": 1.0,
+      "4": 1.0,
+      "6": 1.0,
+      "8": 1.0,
+      "12": 1.0
+    },
+    "overall_accuracy": 1.0
+  },
+  "trials": [
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:o3-mini",
+      "k_operations": 2,
+      "n_ops_actual": 2,
+      "correct_answer": 12,
+      "predicted": 12,
+      "accurate": 1,
+      "query_entity": "Alice",
+      "initial_state": {
+        "Kate": 13,
+        "Bob": 12,
+        "Alice": 12
+      },
+      "operations": [
+        "Alice gains 2 points.",
+        "Alice loses 2 points."
+      ],
+      "prompt_length_chars": 352,
+      "raw_response": "12"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:o3-mini",
+      "k_operations": 2,
+      "n_ops_actual": 2,
+      "correct_answer": 5,
+      "predicted": 5,
+      "accurate": 1,
+      "query_entity": "Bob",
+      "initial_state": {
+        "Leo": 18,
+        "Iris": 6,
+        "Bob": 5
+      },
+      "operations": [
+        "Leo gains 4 points.",
+        "Leo loses 4 points."
+      ],
+      "prompt_length_chars": 342,
+      "raw_response": "5"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:o3-mini",
+      "k_operations": 2,
+      "n_ops_actual": 2,
+      "correct_answer": 11,
+      "predicted": 11,
+      "accurate": 1,
+      "query_entity": "James",
+      "initial_state": {
+        "James": 11,
+        "Alice": 18,
+        "Iris": 12
+      },
+      "operations": [
+        "Iris loses 3 points.",
+        "Iris gains 3 points."
+      ],
+      "prompt_length_chars": 352,
+      "raw_response": "11"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:o3-mini",
+      "k_operations": 2,
+      "n_ops_actual": 2,
+      "correct_answer": 18,
+      "predicted": 18,
+      "accurate": 1,
+      "query_entity": "Mia",
+      "initial_state": {
+        "Mia": 18,
+        "Noah": 15,
+        "Carol": 13
+      },
+      "operations": [
+        "Mia gains 6 points.",
+        "Mia loses 6 points."
+      ],
+      "prompt_length_chars": 346,
+      "raw_response": "18"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:o3-mini",
+      "k_operations": 2,
+      "n_ops_actual": 2,
+      "correct_answer": 13,
+      "predicted": 13,
+      "accurate": 1,
+      "query_entity": "Noah",
+      "initial_state": {
+        "Bob": 16,
+        "Grace": 16,
+        "Noah": 13
+      },
+      "operations": [
+        "Noah gains 8 points.",
+        "Noah loses 8 points."
+      ],
+      "prompt_length_chars": 349,
+      "raw_response": "13"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:o3-mini",
+      "k_operations": 2,
+      "n_ops_actual": 2,
+      "correct_answer": 14,
+      "predicted": 14,
+      "accurate": 1,
+      "query_entity": "Bob",
+      "initial_state": {
+        "Bob": 14,
+        "Grace": 16,
+        "Noah": 11
+      },
+      "operations": [
+        "Bob gives 3 points to Noah.",
+        "Noah gives 3 points to Bob."
+      ],
+      "prompt_length_chars": 362,
+      "raw_response": "14"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:o3-mini",
+      "k_operations": 2,
+      "n_ops_actual": 2,
+      "correct_answer": 12,
+      "predicted": 12,
+      "accurate": 1,
+      "query_entity": "Mia",
+      "initial_state": {
+        "Mia": 12,
+        "Emma": 8,
+        "Bob": 17
+      },
+      "operations": [
+        "Emma loses 3 points.",
+        "Emma gains 3 points."
+      ],
+      "prompt_length_chars": 345,
+      "raw_response": "12"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:o3-mini",
+      "k_operations": 2,
+      "n_ops_actual": 2,
+      "correct_answer": 7,
+      "predicted": 7,
+      "accurate": 1,
+      "query_entity": "Noah",
+      "initial_state": {
+        "Frank": 13,
+        "Noah": 7,
+        "David": 10
+      },
+      "operations": [
+        "David gives 1 points to Frank.",
+        "Frank gives 1 points to David."
+      ],
+      "prompt_length_chars": 370,
+      "raw_response": "7"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:o3-mini",
+      "k_operations": 2,
+      "n_ops_actual": 2,
+      "correct_answer": 15,
+      "predicted": 15,
+      "accurate": 1,
+      "query_entity": "Emma",
+      "initial_state": {
+        "Grace": 12,
+        "Emma": 15,
+        "Kate": 6
+      },
+      "operations": [
+        "Grace gains 6 points.",
+        "Grace loses 6 points."
+      ],
+      "prompt_length_chars": 351,
+      "raw_response": "15"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:o3-mini",
+      "k_operations": 2,
+      "n_ops_actual": 2,
+      "correct_answer": 15,
+      "predicted": 15,
+      "accurate": 1,
+      "query_entity": "Emma",
+      "initial_state": {
+        "Emma": 15,
+        "Bob": 11,
+        "David": 20
+      },
+      "operations": [
+        "David loses 4 points.",
+        "David gains 4 points."
+      ],
+      "prompt_length_chars": 351,
+      "raw_response": "15"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:o3-mini",
+      "k_operations": 2,
+      "n_ops_actual": 2,
+      "correct_answer": 17,
+      "predicted": 17,
+      "accurate": 1,
+      "query_entity": "David",
+      "initial_state": {
+        "Emma": 13,
+        "Carol": 18,
+        "David": 17
+      },
+      "operations": [
+        "Emma loses 2 points.",
+        "Emma gains 2 points."
+      ],
+      "prompt_length_chars": 352,
+      "raw_response": "17"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:o3-mini",
+      "k_operations": 2,
+      "n_ops_actual": 2,
+      "correct_answer": 9,
+      "predicted": 9,
+      "accurate": 1,
+      "query_entity": "Bob",
+      "initial_state": {
+        "Henry": 8,
+        "Bob": 9,
+        "Alice": 10
+      },
+      "operations": [
+        "Bob gives 2 points to Henry.",
+        "Henry gives 2 points to Bob."
+      ],
+      "prompt_length_chars": 363,
+      "raw_response": "9"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:o3-mini",
+      "k_operations": 2,
+      "n_ops_actual": 2,
+      "correct_answer": 5,
+      "predicted": 5,
+      "accurate": 1,
+      "query_entity": "Henry",
+      "initial_state": {
+        "James": 13,
+        "Henry": 5,
+        "Iris": 8
+      },
+      "operations": [
+        "Iris gives 3 points to Henry.",
+        "Henry gives 3 points to Iris."
+      ],
+      "prompt_length_chars": 368,
+      "raw_response": "5"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:o3-mini",
+      "k_operations": 2,
+      "n_ops_actual": 2,
+      "correct_answer": 10,
+      "predicted": 10,
+      "accurate": 1,
+      "query_entity": "Bob",
+      "initial_state": {
+        "Bob": 10,
+        "Emma": 19,
+        "Grace": 5
+      },
+      "operations": [
+        "Grace gives 3 points to Emma.",
+        "Emma gives 3 points to Grace."
+      ],
+      "prompt_length_chars": 365,
+      "raw_response": "10"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:o3-mini",
+      "k_operations": 2,
+      "n_ops_actual": 2,
+      "correct_answer": 9,
+      "predicted": 9,
+      "accurate": 1,
+      "query_entity": "Kate",
+      "initial_state": {
+        "Iris": 14,
+        "Bob": 11,
+        "Kate": 9
+      },
+      "operations": [
+        "Iris loses 5 points.",
+        "Iris gains 5 points."
+      ],
+      "prompt_length_chars": 347,
+      "raw_response": "9"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:o3-mini",
+      "k_operations": 2,
+      "n_ops_actual": 2,
+      "correct_answer": 20,
+      "predicted": 20,
+      "accurate": 1,
+      "query_entity": "Alice",
+      "initial_state": {
+        "Alice": 20,
+        "James": 5,
+        "Frank": 8
+      },
+      "operations": [
+        "James loses 2 points.",
+        "James gains 2 points."
+      ],
+      "prompt_length_chars": 353,
+      "raw_response": "20"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:o3-mini",
+      "k_operations": 2,
+      "n_ops_actual": 2,
+      "correct_answer": 20,
+      "predicted": 20,
+      "accurate": 1,
+      "query_entity": "James",
+      "initial_state": {
+        "David": 7,
+        "James": 20,
+        "Bob": 7
+      },
+      "operations": [
+        "David gives 3 points to Bob.",
+        "Bob gives 3 points to David."
+      ],
+      "prompt_length_chars": 365,
+      "raw_response": "20"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:o3-mini",
+      "k_operations": 2,
+      "n_ops_actual": 2,
+      "correct_answer": 11,
+      "predicted": 11,
+      "accurate": 1,
+      "query_entity": "Emma",
+      "initial_state": {
+        "Iris": 18,
+        "Carol": 11,
+        "Emma": 11
+      },
+      "operations": [
+        "Carol gives 3 points to Emma.",
+        "Emma gives 3 points to Carol."
+      ],
+      "prompt_length_chars": 368,
+      "raw_response": "11"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:o3-mini",
+      "k_operations": 2,
+      "n_ops_actual": 2,
+      "correct_answer": 19,
+      "predicted": 19,
+      "accurate": 1,
+      "query_entity": "Frank",
+      "initial_state": {
+        "Frank": 19,
+        "Henry": 8,
+        "Iris": 12
+      },
+      "operations": [
+        "Frank gains 6 points.",
+        "Frank loses 6 points."
+      ],
+      "prompt_length_chars": 353,
+      "raw_response": "19"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:o3-mini",
+      "k_operations": 2,
+      "n_ops_actual": 2,
+      "correct_answer": 12,
+      "predicted": 12,
+      "accurate": 1,
+      "query_entity": "James",
+      "initial_state": {
+        "James": 12,
+        "Iris": 5,
+        "David": 7
+      },
+      "operations": [
+        "David gives 1 points to James.",
+        "James gives 1 points to David."
+      ],
+      "prompt_length_chars": 370,
+      "raw_response": "12"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:o3-mini",
+      "k_operations": 4,
+      "n_ops_actual": 4,
+      "correct_answer": 13,
+      "predicted": 13,
+      "accurate": 1,
+      "query_entity": "Frank",
+      "initial_state": {
+        "Alice": 12,
+        "Frank": 13,
+        "Bob": 20
+      },
+      "operations": [
+        "Bob gains 3 points.",
+        "Bob loses 3 points.",
+        "Bob gives 1 points to Frank.",
+        "Frank gives 1 points to Bob."
+      ],
+      "prompt_length_chars": 417,
+      "raw_response": "13"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:o3-mini",
+      "k_operations": 4,
+      "n_ops_actual": 4,
+      "correct_answer": 18,
+      "predicted": 18,
+      "accurate": 1,
+      "query_entity": "David",
+      "initial_state": {
+        "Mia": 8,
+        "Grace": 8,
+        "David": 18
+      },
+      "operations": [
+        "Grace loses 4 points.",
+        "Grace gains 4 points.",
+        "David loses 1 points.",
+        "David gains 1 points."
+      ],
+      "prompt_length_chars": 405,
+      "raw_response": "18"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:o3-mini",
+      "k_operations": 4,
+      "n_ops_actual": 4,
+      "correct_answer": 6,
+      "predicted": 6,
+      "accurate": 1,
+      "query_entity": "Kate",
+      "initial_state": {
+        "Kate": 6,
+        "Noah": 17,
+        "Bob": 15
+      },
+      "operations": [
+        "Kate gains 4 points.",
+        "Kate loses 4 points.",
+        "Bob gains 8 points.",
+        "Bob loses 8 points."
+      ],
+      "prompt_length_chars": 397,
+      "raw_response": "6"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:o3-mini",
+      "k_operations": 4,
+      "n_ops_actual": 4,
+      "correct_answer": 19,
+      "predicted": 19,
+      "accurate": 1,
+      "query_entity": "Grace",
+      "initial_state": {
+        "Grace": 19,
+        "Carol": 12,
+        "Emma": 7
+      },
+      "operations": [
+        "Emma loses 1 points.",
+        "Emma gains 1 points.",
+        "Emma gains 9 points.",
+        "Emma loses 9 points."
+      ],
+      "prompt_length_chars": 403,
+      "raw_response": "19"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:o3-mini",
+      "k_operations": 4,
+      "n_ops_actual": 4,
+      "correct_answer": 10,
+      "predicted": 10,
+      "accurate": 1,
+      "query_entity": "Bob",
+      "initial_state": {
+        "Bob": 10,
+        "Mia": 18,
+        "David": 20
+      },
+      "operations": [
+        "Bob loses 4 points.",
+        "Bob gains 4 points.",
+        "Bob gains 7 points.",
+        "Bob loses 7 points."
+      ],
+      "prompt_length_chars": 395,
+      "raw_response": "10"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:o3-mini",
+      "k_operations": 4,
+      "n_ops_actual": 4,
+      "correct_answer": 20,
+      "predicted": 20,
+      "accurate": 1,
+      "query_entity": "Henry",
+      "initial_state": {
+        "Grace": 14,
+        "Emma": 18,
+        "Henry": 20
+      },
+      "operations": [
+        "Grace gains 5 points.",
+        "Grace loses 5 points.",
+        "Grace gains 10 points.",
+        "Grace loses 10 points."
+      ],
+      "prompt_length_chars": 410,
+      "raw_response": "20"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:o3-mini",
+      "k_operations": 4,
+      "n_ops_actual": 4,
+      "correct_answer": 6,
+      "predicted": 6,
+      "accurate": 1,
+      "query_entity": "Leo",
+      "initial_state": {
+        "Iris": 15,
+        "Alice": 6,
+        "Leo": 6
+      },
+      "operations": [
+        "Alice gives 1 points to Iris.",
+        "Iris gives 1 points to Alice.",
+        "Iris gives 1 points to Leo.",
+        "Leo gives 1 points to Iris."
+      ],
+      "prompt_length_chars": 430,
+      "raw_response": "6"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:o3-mini",
+      "k_operations": 4,
+      "n_ops_actual": 4,
+      "correct_answer": 12,
+      "predicted": 12,
+      "accurate": 1,
+      "query_entity": "David",
+      "initial_state": {
+        "Bob": 17,
+        "Kate": 8,
+        "David": 12
+      },
+      "operations": [
+        "David gives 3 points to Bob.",
+        "Bob gives 3 points to David.",
+        "Kate gains 10 points.",
+        "Kate loses 10 points."
+      ],
+      "prompt_length_chars": 419,
+      "raw_response": "12"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:o3-mini",
+      "k_operations": 4,
+      "n_ops_actual": 4,
+      "correct_answer": 15,
+      "predicted": 15,
+      "accurate": 1,
+      "query_entity": "Frank",
+      "initial_state": {
+        "Iris": 11,
+        "Frank": 15,
+        "Emma": 12
+      },
+      "operations": [
+        "Frank loses 2 points.",
+        "Frank gains 2 points.",
+        "Emma gives 2 points to Frank.",
+        "Frank gives 2 points to Emma."
+      ],
+      "prompt_length_chars": 423,
+      "raw_response": "15"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:o3-mini",
+      "k_operations": 4,
+      "n_ops_actual": 4,
+      "correct_answer": 8,
+      "predicted": 8,
+      "accurate": 1,
+      "query_entity": "Bob",
+      "initial_state": {
+        "Mia": 19,
+        "Bob": 8,
+        "Alice": 7
+      },
+      "operations": [
+        "Mia gives 1 points to Bob.",
+        "Bob gives 1 points to Mia.",
+        "Mia loses 2 points.",
+        "Mia gains 2 points."
+      ],
+      "prompt_length_chars": 407,
+      "raw_response": "8"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:o3-mini",
+      "k_operations": 4,
+      "n_ops_actual": 4,
+      "correct_answer": 14,
+      "predicted": 14,
+      "accurate": 1,
+      "query_entity": "Emma",
+      "initial_state": {
+        "Emma": 14,
+        "Carol": 5,
+        "Henry": 14
+      },
+      "operations": [
+        "Emma gives 2 points to Henry.",
+        "Henry gives 2 points to Emma.",
+        "Emma gains 9 points.",
+        "Emma loses 9 points."
+      ],
+      "prompt_length_chars": 420,
+      "raw_response": "14"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:o3-mini",
+      "k_operations": 4,
+      "n_ops_actual": 4,
+      "correct_answer": 11,
+      "predicted": 11,
+      "accurate": 1,
+      "query_entity": "Emma",
+      "initial_state": {
+        "Emma": 11,
+        "Noah": 15,
+        "James": 11
+      },
+      "operations": [
+        "James gives 3 points to Noah.",
+        "Noah gives 3 points to James.",
+        "Noah loses 1 points.",
+        "Noah gains 1 points."
+      ],
+      "prompt_length_chars": 420,
+      "raw_response": "11"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:o3-mini",
+      "k_operations": 4,
+      "n_ops_actual": 4,
+      "correct_answer": 15,
+      "predicted": 15,
+      "accurate": 1,
+      "query_entity": "Emma",
+      "initial_state": {
+        "Kate": 6,
+        "Grace": 5,
+        "Emma": 15
+      },
+      "operations": [
+        "Emma gains 5 points.",
+        "Emma loses 5 points.",
+        "Emma gains 8 points.",
+        "Emma loses 8 points."
+      ],
+      "prompt_length_chars": 400,
+      "raw_response": "15"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:o3-mini",
+      "k_operations": 4,
+      "n_ops_actual": 4,
+      "correct_answer": 5,
+      "predicted": 5,
+      "accurate": 1,
+      "query_entity": "Leo",
+      "initial_state": {
+        "Leo": 5,
+        "Grace": 8,
+        "Iris": 7
+      },
+      "operations": [
+        "Leo gives 2 points to Iris.",
+        "Iris gives 2 points to Leo.",
+        "Iris gives 2 points to Leo.",
+        "Leo gives 2 points to Iris."
+      ],
+      "prompt_length_chars": 425,
+      "raw_response": "5"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:o3-mini",
+      "k_operations": 4,
+      "n_ops_actual": 4,
+      "correct_answer": 6,
+      "predicted": 6,
+      "accurate": 1,
+      "query_entity": "Alice",
+      "initial_state": {
+        "Alice": 6,
+        "Emma": 16,
+        "Frank": 11
+      },
+      "operations": [
+        "Alice gives 2 points to Frank.",
+        "Frank gives 2 points to Alice.",
+        "Emma gives 1 points to Alice.",
+        "Alice gives 1 points to Emma."
+      ],
+      "prompt_length_chars": 441,
+      "raw_response": "6"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:o3-mini",
+      "k_operations": 4,
+      "n_ops_actual": 4,
+      "correct_answer": 10,
+      "predicted": 10,
+      "accurate": 1,
+      "query_entity": "Carol",
+      "initial_state": {
+        "Mia": 18,
+        "Noah": 5,
+        "Carol": 10
+      },
+      "operations": [
+        "Noah gives 3 points to Carol.",
+        "Carol gives 3 points to Noah.",
+        "Mia gives 1 points to Noah.",
+        "Noah gives 1 points to Mia."
+      ],
+      "prompt_length_chars": 433,
+      "raw_response": "10"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:o3-mini",
+      "k_operations": 4,
+      "n_ops_actual": 4,
+      "correct_answer": 11,
+      "predicted": 11,
+      "accurate": 1,
+      "query_entity": "Alice",
+      "initial_state": {
+        "Bob": 20,
+        "Grace": 12,
+        "Alice": 11
+      },
+      "operations": [
+        "Grace loses 3 points.",
+        "Grace gains 3 points.",
+        "Bob gains 1 points.",
+        "Bob loses 1 points."
+      ],
+      "prompt_length_chars": 403,
+      "raw_response": "11"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:o3-mini",
+      "k_operations": 4,
+      "n_ops_actual": 4,
+      "correct_answer": 7,
+      "predicted": 7,
+      "accurate": 1,
+      "query_entity": "Grace",
+      "initial_state": {
+        "David": 13,
+        "Grace": 7,
+        "Frank": 13
+      },
+      "operations": [
+        "Frank loses 5 points.",
+        "Frank gains 5 points.",
+        "Frank loses 5 points.",
+        "Frank gains 5 points."
+      ],
+      "prompt_length_chars": 408,
+      "raw_response": "7"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:o3-mini",
+      "k_operations": 4,
+      "n_ops_actual": 4,
+      "correct_answer": 13,
+      "predicted": 13,
+      "accurate": 1,
+      "query_entity": "Bob",
+      "initial_state": {
+        "Alice": 10,
+        "Bob": 13,
+        "Emma": 6
+      },
+      "operations": [
+        "Emma gains 7 points.",
+        "Emma loses 7 points.",
+        "Emma loses 3 points.",
+        "Emma gains 3 points."
+      ],
+      "prompt_length_chars": 399,
+      "raw_response": "13"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:o3-mini",
+      "k_operations": 4,
+      "n_ops_actual": 4,
+      "correct_answer": 13,
+      "predicted": 13,
+      "accurate": 1,
+      "query_entity": "Bob",
+      "initial_state": {
+        "James": 17,
+        "Iris": 11,
+        "Bob": 13
+      },
+      "operations": [
+        "Bob gains 7 points.",
+        "Bob loses 7 points.",
+        "Bob gains 9 points.",
+        "Bob loses 9 points."
+      ],
+      "prompt_length_chars": 396,
+      "raw_response": "13"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:o3-mini",
+      "k_operations": 6,
+      "n_ops_actual": 6,
+      "correct_answer": 18,
+      "predicted": 18,
+      "accurate": 1,
+      "query_entity": "Mia",
+      "initial_state": {
+        "Leo": 11,
+        "Noah": 16,
+        "Mia": 18
+      },
+      "operations": [
+        "Mia gains 6 points.",
+        "Mia loses 6 points.",
+        "Noah gives 3 points to Leo.",
+        "Leo gives 3 points to Noah.",
+        "Mia loses 3 points.",
+        "Mia gains 3 points."
+      ],
+      "prompt_length_chars": 460,
+      "raw_response": "18"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:o3-mini",
+      "k_operations": 6,
+      "n_ops_actual": 6,
+      "correct_answer": 14,
+      "predicted": 14,
+      "accurate": 1,
+      "query_entity": "Grace",
+      "initial_state": {
+        "Grace": 14,
+        "Frank": 9,
+        "Noah": 11
+      },
+      "operations": [
+        "Noah loses 4 points.",
+        "Noah gains 4 points.",
+        "Noah gives 3 points to Grace.",
+        "Grace gives 3 points to Noah.",
+        "Frank gives 3 points to Noah.",
+        "Noah gives 3 points to Frank."
+      ],
+      "prompt_length_chars": 491,
+      "raw_response": "14"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:o3-mini",
+      "k_operations": 6,
+      "n_ops_actual": 6,
+      "correct_answer": 19,
+      "predicted": 19,
+      "accurate": 1,
+      "query_entity": "David",
+      "initial_state": {
+        "Emma": 18,
+        "Noah": 15,
+        "David": 19
+      },
+      "operations": [
+        "Noah loses 2 points.",
+        "Noah gains 2 points.",
+        "Noah gives 3 points to Emma.",
+        "Emma gives 3 points to Noah.",
+        "Noah gains 9 points.",
+        "Noah loses 9 points."
+      ],
+      "prompt_length_chars": 471,
+      "raw_response": "19"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:o3-mini",
+      "k_operations": 6,
+      "n_ops_actual": 6,
+      "correct_answer": 12,
+      "predicted": 12,
+      "accurate": 1,
+      "query_entity": "James",
+      "initial_state": {
+        "Kate": 7,
+        "James": 12,
+        "Frank": 14
+      },
+      "operations": [
+        "Kate gains 3 points.",
+        "Kate loses 3 points.",
+        "Kate gains 4 points.",
+        "Kate loses 4 points.",
+        "Frank loses 1 points.",
+        "Frank gains 1 points."
+      ],
+      "prompt_length_chars": 457,
+      "raw_response": "12"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:o3-mini",
+      "k_operations": 6,
+      "n_ops_actual": 6,
+      "correct_answer": 20,
+      "predicted": 20,
+      "accurate": 1,
+      "query_entity": "James",
+      "initial_state": {
+        "Grace": 11,
+        "Kate": 17,
+        "James": 20
+      },
+      "operations": [
+        "Grace loses 2 points.",
+        "Grace gains 2 points.",
+        "James gives 1 points to Grace.",
+        "Grace gives 1 points to James.",
+        "Grace loses 2 points.",
+        "Grace gains 2 points."
+      ],
+      "prompt_length_chars": 480,
+      "raw_response": "20"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:o3-mini",
+      "k_operations": 6,
+      "n_ops_actual": 6,
+      "correct_answer": 8,
+      "predicted": 8,
+      "accurate": 1,
+      "query_entity": "Henry",
+      "initial_state": {
+        "Iris": 12,
+        "Henry": 8,
+        "Alice": 19
+      },
+      "operations": [
+        "Henry gains 9 points.",
+        "Henry loses 9 points.",
+        "Alice gives 2 points to Henry.",
+        "Henry gives 2 points to Alice.",
+        "Alice gives 3 points to Henry.",
+        "Henry gives 3 points to Alice."
+      ],
+      "prompt_length_chars": 497,
+      "raw_response": "8"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:o3-mini",
+      "k_operations": 6,
+      "n_ops_actual": 6,
+      "correct_answer": 19,
+      "predicted": 19,
+      "accurate": 1,
+      "query_entity": "Carol",
+      "initial_state": {
+        "Carol": 19,
+        "Leo": 13,
+        "Henry": 12
+      },
+      "operations": [
+        "Leo gives 3 points to Henry.",
+        "Henry gives 3 points to Leo.",
+        "Leo gains 8 points.",
+        "Leo loses 8 points.",
+        "Henry gains 5 points.",
+        "Henry loses 5 points."
+      ],
+      "prompt_length_chars": 471,
+      "raw_response": "19"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:o3-mini",
+      "k_operations": 6,
+      "n_ops_actual": 6,
+      "correct_answer": 9,
+      "predicted": 9,
+      "accurate": 1,
+      "query_entity": "Frank",
+      "initial_state": {
+        "Emma": 7,
+        "Frank": 9,
+        "Mia": 9
+      },
+      "operations": [
+        "Frank gains 3 points.",
+        "Frank loses 3 points.",
+        "Emma gives 2 points to Mia.",
+        "Mia gives 2 points to Emma.",
+        "Frank loses 5 points.",
+        "Frank gains 5 points."
+      ],
+      "prompt_length_chars": 469,
+      "raw_response": "9"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:o3-mini",
+      "k_operations": 6,
+      "n_ops_actual": 6,
+      "correct_answer": 5,
+      "predicted": 5,
+      "accurate": 1,
+      "query_entity": "David",
+      "initial_state": {
+        "Grace": 18,
+        "Alice": 17,
+        "David": 5
+      },
+      "operations": [
+        "Alice gives 1 points to David.",
+        "David gives 1 points to Alice.",
+        "Alice loses 4 points.",
+        "Alice gains 4 points.",
+        "David loses 5 points.",
+        "David gains 5 points."
+      ],
+      "prompt_length_chars": 480,
+      "raw_response": "5"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:o3-mini",
+      "k_operations": 6,
+      "n_ops_actual": 6,
+      "correct_answer": 20,
+      "predicted": 20,
+      "accurate": 1,
+      "query_entity": "Noah",
+      "initial_state": {
+        "David": 13,
+        "Henry": 18,
+        "Noah": 20
+      },
+      "operations": [
+        "Henry gains 6 points.",
+        "Henry loses 6 points.",
+        "Noah gives 3 points to Henry.",
+        "Henry gives 3 points to Noah.",
+        "Henry gains 3 points.",
+        "Henry loses 3 points."
+      ],
+      "prompt_length_chars": 477,
+      "raw_response": "20"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:o3-mini",
+      "k_operations": 6,
+      "n_ops_actual": 6,
+      "correct_answer": 7,
+      "predicted": 7,
+      "accurate": 1,
+      "query_entity": "Alice",
+      "initial_state": {
+        "Iris": 5,
+        "Alice": 7,
+        "Grace": 18
+      },
+      "operations": [
+        "Alice gains 3 points.",
+        "Alice loses 3 points.",
+        "Alice gains 7 points.",
+        "Alice loses 7 points.",
+        "Iris loses 4 points.",
+        "Iris gains 4 points."
+      ],
+      "prompt_length_chars": 458,
+      "raw_response": "7"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:o3-mini",
+      "k_operations": 6,
+      "n_ops_actual": 6,
+      "correct_answer": 13,
+      "predicted": 13,
+      "accurate": 1,
+      "query_entity": "Grace",
+      "initial_state": {
+        "Frank": 13,
+        "Mia": 18,
+        "Grace": 13
+      },
+      "operations": [
+        "Mia gains 1 points.",
+        "Mia loses 1 points.",
+        "Grace gives 2 points to Frank.",
+        "Frank gives 2 points to Grace.",
+        "Grace gains 2 points.",
+        "Grace loses 2 points."
+      ],
+      "prompt_length_chars": 475,
+      "raw_response": "13"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:o3-mini",
+      "k_operations": 6,
+      "n_ops_actual": 6,
+      "correct_answer": 11,
+      "predicted": 11,
+      "accurate": 1,
+      "query_entity": "Mia",
+      "initial_state": {
+        "Alice": 12,
+        "Mia": 11,
+        "Noah": 5
+      },
+      "operations": [
+        "Alice gives 1 points to Noah.",
+        "Noah gives 1 points to Alice.",
+        "Noah loses 1 points.",
+        "Noah gains 1 points.",
+        "Alice gives 3 points to Mia.",
+        "Mia gives 3 points to Alice."
+      ],
+      "prompt_length_chars": 485,
+      "raw_response": "11"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:o3-mini",
+      "k_operations": 6,
+      "n_ops_actual": 6,
+      "correct_answer": 8,
+      "predicted": 8,
+      "accurate": 1,
+      "query_entity": "Mia",
+      "initial_state": {
+        "Mia": 8,
+        "Frank": 10,
+        "Carol": 14
+      },
+      "operations": [
+        "Carol gains 1 points.",
+        "Carol loses 1 points.",
+        "Carol loses 4 points.",
+        "Carol gains 4 points.",
+        "Carol loses 2 points.",
+        "Carol gains 2 points."
+      ],
+      "prompt_length_chars": 458,
+      "raw_response": "8"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:o3-mini",
+      "k_operations": 6,
+      "n_ops_actual": 6,
+      "correct_answer": 12,
+      "predicted": 12,
+      "accurate": 1,
+      "query_entity": "James",
+      "initial_state": {
+        "James": 12,
+        "Leo": 8,
+        "Kate": 14
+      },
+      "operations": [
+        "Kate gives 3 points to James.",
+        "James gives 3 points to Kate.",
+        "Leo gains 9 points.",
+        "Leo loses 9 points.",
+        "Kate loses 3 points.",
+        "Kate gains 3 points."
+      ],
+      "prompt_length_chars": 469,
+      "raw_response": "12"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:o3-mini",
+      "k_operations": 6,
+      "n_ops_actual": 6,
+      "correct_answer": 20,
+      "predicted": 20,
+      "accurate": 1,
+      "query_entity": "Frank",
+      "initial_state": {
+        "Iris": 5,
+        "Kate": 18,
+        "Frank": 20
+      },
+      "operations": [
+        "Kate gains 6 points.",
+        "Kate loses 6 points.",
+        "Kate gives 2 points to Iris.",
+        "Iris gives 2 points to Kate.",
+        "Frank gains 9 points.",
+        "Frank loses 9 points."
+      ],
+      "prompt_length_chars": 472,
+      "raw_response": "20"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:o3-mini",
+      "k_operations": 6,
+      "n_ops_actual": 6,
+      "correct_answer": 18,
+      "predicted": 18,
+      "accurate": 1,
+      "query_entity": "Iris",
+      "initial_state": {
+        "Emma": 20,
+        "James": 19,
+        "Iris": 18
+      },
+      "operations": [
+        "Iris gives 2 points to James.",
+        "James gives 2 points to Iris.",
+        "Emma gains 5 points.",
+        "Emma loses 5 points.",
+        "Emma loses 4 points.",
+        "Emma gains 4 points."
+      ],
+      "prompt_length_chars": 472,
+      "raw_response": "18"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:o3-mini",
+      "k_operations": 6,
+      "n_ops_actual": 6,
+      "correct_answer": 20,
+      "predicted": 20,
+      "accurate": 1,
+      "query_entity": "Grace",
+      "initial_state": {
+        "James": 15,
+        "Kate": 5,
+        "Grace": 20
+      },
+      "operations": [
+        "James loses 4 points.",
+        "James gains 4 points.",
+        "Kate gains 5 points.",
+        "Kate loses 5 points.",
+        "Kate loses 5 points.",
+        "Kate gains 5 points."
+      ],
+      "prompt_length_chars": 457,
+      "raw_response": "20"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:o3-mini",
+      "k_operations": 6,
+      "n_ops_actual": 6,
+      "correct_answer": 11,
+      "predicted": 11,
+      "accurate": 1,
+      "query_entity": "Emma",
+      "initial_state": {
+        "Emma": 11,
+        "Iris": 7,
+        "Alice": 12
+      },
+      "operations": [
+        "Iris gives 3 points to Alice.",
+        "Alice gives 3 points to Iris.",
+        "Alice gains 8 points.",
+        "Alice loses 8 points.",
+        "Alice gives 2 points to Iris.",
+        "Iris gives 2 points to Alice."
+      ],
+      "prompt_length_chars": 491,
+      "raw_response": "11"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:o3-mini",
+      "k_operations": 6,
+      "n_ops_actual": 6,
+      "correct_answer": 14,
+      "predicted": 14,
+      "accurate": 1,
+      "query_entity": "David",
+      "initial_state": {
+        "Bob": 17,
+        "Emma": 12,
+        "David": 14
+      },
+      "operations": [
+        "David gives 2 points to Emma.",
+        "Emma gives 2 points to David.",
+        "David gives 2 points to Emma.",
+        "Emma gives 2 points to David.",
+        "David gives 2 points to Emma.",
+        "Emma gives 2 points to David."
+      ],
+      "prompt_length_chars": 508,
+      "raw_response": "14"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:o3-mini",
+      "k_operations": 8,
+      "n_ops_actual": 8,
+      "correct_answer": 8,
+      "predicted": 8,
+      "accurate": 1,
+      "query_entity": "Mia",
+      "initial_state": {
+        "Henry": 13,
+        "Emma": 12,
+        "Mia": 8
+      },
+      "operations": [
+        "Henry gives 1 points to Emma.",
+        "Emma gives 1 points to Henry.",
+        "Mia gives 1 points to Henry.",
+        "Henry gives 1 points to Mia.",
+        "Mia gains 8 points.",
+        "Mia loses 8 points.",
+        "Mia loses 5 points.",
+        "Mia gains 5 points."
+      ],
+      "prompt_length_chars": 533,
+      "raw_response": "8"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:o3-mini",
+      "k_operations": 8,
+      "n_ops_actual": 8,
+      "correct_answer": 12,
+      "predicted": 12,
+      "accurate": 1,
+      "query_entity": "Bob",
+      "initial_state": {
+        "James": 11,
+        "Emma": 14,
+        "Bob": 12
+      },
+      "operations": [
+        "James loses 3 points.",
+        "James gains 3 points.",
+        "Bob gains 9 points.",
+        "Bob loses 9 points.",
+        "Emma gains 1 points.",
+        "Emma loses 1 points.",
+        "Bob gains 5 points.",
+        "Bob loses 5 points."
+      ],
+      "prompt_length_chars": 502,
+      "raw_response": "12"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:o3-mini",
+      "k_operations": 8,
+      "n_ops_actual": 8,
+      "correct_answer": 8,
+      "predicted": 8,
+      "accurate": 1,
+      "query_entity": "Carol",
+      "initial_state": {
+        "Carol": 8,
+        "Kate": 5,
+        "Henry": 14
+      },
+      "operations": [
+        "Kate loses 4 points.",
+        "Kate gains 4 points.",
+        "Carol loses 1 points.",
+        "Carol gains 1 points.",
+        "Kate loses 1 points.",
+        "Kate gains 1 points.",
+        "Kate gains 8 points.",
+        "Kate loses 8 points."
+      ],
+      "prompt_length_chars": 508,
+      "raw_response": "8"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:o3-mini",
+      "k_operations": 8,
+      "n_ops_actual": 8,
+      "correct_answer": 9,
+      "predicted": 9,
+      "accurate": 1,
+      "query_entity": "Kate",
+      "initial_state": {
+        "James": 6,
+        "Kate": 9,
+        "Mia": 9
+      },
+      "operations": [
+        "Kate gives 1 points to James.",
+        "James gives 1 points to Kate.",
+        "Mia gains 7 points.",
+        "Mia loses 7 points.",
+        "Mia gives 3 points to James.",
+        "James gives 3 points to Mia.",
+        "Kate loses 4 points.",
+        "Kate gains 4 points."
+      ],
+      "prompt_length_chars": 534,
+      "raw_response": "9"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:o3-mini",
+      "k_operations": 8,
+      "n_ops_actual": 8,
+      "correct_answer": 6,
+      "predicted": 6,
+      "accurate": 1,
+      "query_entity": "James",
+      "initial_state": {
+        "Noah": 14,
+        "James": 6,
+        "Grace": 8
+      },
+      "operations": [
+        "Grace gains 4 points.",
+        "Grace loses 4 points.",
+        "Grace loses 1 points.",
+        "Grace gains 1 points.",
+        "Noah gains 3 points.",
+        "Noah loses 3 points.",
+        "Noah gives 1 points to Grace.",
+        "Grace gives 1 points to Noah."
+      ],
+      "prompt_length_chars": 528,
+      "raw_response": "6"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:o3-mini",
+      "k_operations": 8,
+      "n_ops_actual": 8,
+      "correct_answer": 6,
+      "predicted": 6,
+      "accurate": 1,
+      "query_entity": "James",
+      "initial_state": {
+        "Henry": 20,
+        "Leo": 14,
+        "James": 6
+      },
+      "operations": [
+        "Leo gains 5 points.",
+        "Leo loses 5 points.",
+        "Leo gives 3 points to Henry.",
+        "Henry gives 3 points to Leo.",
+        "Leo gains 10 points.",
+        "Leo loses 10 points.",
+        "Henry gives 1 points to Leo.",
+        "Leo gives 1 points to Henry."
+      ],
+      "prompt_length_chars": 536,
+      "raw_response": "6"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:o3-mini",
+      "k_operations": 8,
+      "n_ops_actual": 8,
+      "correct_answer": 7,
+      "predicted": 7,
+      "accurate": 1,
+      "query_entity": "Carol",
+      "initial_state": {
+        "David": 13,
+        "Kate": 9,
+        "Carol": 7
+      },
+      "operations": [
+        "David gains 5 points.",
+        "David loses 5 points.",
+        "Carol gives 2 points to Kate.",
+        "Kate gives 2 points to Carol.",
+        "Kate gains 5 points.",
+        "Kate loses 5 points.",
+        "Kate gives 3 points to Carol.",
+        "Carol gives 3 points to Kate."
+      ],
+      "prompt_length_chars": 544,
+      "raw_response": "7"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:o3-mini",
+      "k_operations": 8,
+      "n_ops_actual": 8,
+      "correct_answer": 15,
+      "predicted": 15,
+      "accurate": 1,
+      "query_entity": "Bob",
+      "initial_state": {
+        "Henry": 6,
+        "Noah": 18,
+        "Bob": 15
+      },
+      "operations": [
+        "Noah gives 1 points to Henry.",
+        "Henry gives 1 points to Noah.",
+        "Bob gains 10 points.",
+        "Bob loses 10 points.",
+        "Henry gives 3 points to Noah.",
+        "Noah gives 3 points to Henry.",
+        "Henry gains 8 points.",
+        "Henry loses 8 points."
+      ],
+      "prompt_length_chars": 541,
+      "raw_response": "15"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:o3-mini",
+      "k_operations": 8,
+      "n_ops_actual": 8,
+      "correct_answer": 18,
+      "predicted": 18,
+      "accurate": 1,
+      "query_entity": "Henry",
+      "initial_state": {
+        "Kate": 10,
+        "Henry": 18,
+        "Emma": 20
+      },
+      "operations": [
+        "Henry gains 6 points.",
+        "Henry loses 6 points.",
+        "Henry loses 3 points.",
+        "Henry gains 3 points.",
+        "Kate gives 2 points to Emma.",
+        "Emma gives 2 points to Kate.",
+        "Emma loses 4 points.",
+        "Emma gains 4 points."
+      ],
+      "prompt_length_chars": 527,
+      "raw_response": "18"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:o3-mini",
+      "k_operations": 8,
+      "n_ops_actual": 8,
+      "correct_answer": 6,
+      "predicted": 6,
+      "accurate": 1,
+      "query_entity": "Kate",
+      "initial_state": {
+        "Kate": 6,
+        "Grace": 19,
+        "Iris": 7
+      },
+      "operations": [
+        "Grace loses 3 points.",
+        "Grace gains 3 points.",
+        "Grace gains 9 points.",
+        "Grace loses 9 points.",
+        "Iris gains 9 points.",
+        "Iris loses 9 points.",
+        "Grace loses 1 points.",
+        "Grace gains 1 points."
+      ],
+      "prompt_length_chars": 510,
+      "raw_response": "6"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:o3-mini",
+      "k_operations": 8,
+      "n_ops_actual": 8,
+      "correct_answer": 20,
+      "predicted": 20,
+      "accurate": 1,
+      "query_entity": "Iris",
+      "initial_state": {
+        "Iris": 20,
+        "Frank": 19,
+        "James": 6
+      },
+      "operations": [
+        "Frank gains 9 points.",
+        "Frank loses 9 points.",
+        "Frank gains 8 points.",
+        "Frank loses 8 points.",
+        "Frank gives 1 points to Iris.",
+        "Iris gives 1 points to Frank.",
+        "James gives 3 points to Iris.",
+        "Iris gives 3 points to James."
+      ],
+      "prompt_length_chars": 546,
+      "raw_response": "20"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:o3-mini",
+      "k_operations": 8,
+      "n_ops_actual": 8,
+      "correct_answer": 18,
+      "predicted": 18,
+      "accurate": 1,
+      "query_entity": "Emma",
+      "initial_state": {
+        "Emma": 18,
+        "Iris": 7,
+        "Alice": 12
+      },
+      "operations": [
+        "Iris gains 2 points.",
+        "Iris loses 2 points.",
+        "Emma gives 3 points to Iris.",
+        "Iris gives 3 points to Emma.",
+        "Alice loses 3 points.",
+        "Alice gains 3 points.",
+        "Iris loses 4 points.",
+        "Iris gains 4 points."
+      ],
+      "prompt_length_chars": 523,
+      "raw_response": "18"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:o3-mini",
+      "k_operations": 8,
+      "n_ops_actual": 8,
+      "correct_answer": 11,
+      "predicted": 11,
+      "accurate": 1,
+      "query_entity": "Iris",
+      "initial_state": {
+        "Henry": 17,
+        "Iris": 11,
+        "Carol": 9
+      },
+      "operations": [
+        "Iris gains 7 points.",
+        "Iris loses 7 points.",
+        "Carol loses 3 points.",
+        "Carol gains 3 points.",
+        "Iris gains 5 points.",
+        "Iris loses 5 points.",
+        "Carol gives 1 points to Iris.",
+        "Iris gives 1 points to Carol."
+      ],
+      "prompt_length_chars": 526,
+      "raw_response": "11"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:o3-mini",
+      "k_operations": 8,
+      "n_ops_actual": 8,
+      "correct_answer": 19,
+      "predicted": 19,
+      "accurate": 1,
+      "query_entity": "Frank",
+      "initial_state": {
+        "Iris": 15,
+        "Henry": 17,
+        "Frank": 19
+      },
+      "operations": [
+        "Iris loses 2 points.",
+        "Iris gains 2 points.",
+        "Henry gives 2 points to Iris.",
+        "Iris gives 2 points to Henry.",
+        "Henry gains 8 points.",
+        "Henry loses 8 points.",
+        "Henry gives 3 points to Frank.",
+        "Frank gives 3 points to Henry."
+      ],
+      "prompt_length_chars": 548,
+      "raw_response": "19"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:o3-mini",
+      "k_operations": 8,
+      "n_ops_actual": 8,
+      "correct_answer": 15,
+      "predicted": 15,
+      "accurate": 1,
+      "query_entity": "Henry",
+      "initial_state": {
+        "Carol": 9,
+        "Henry": 15,
+        "Alice": 8
+      },
+      "operations": [
+        "Carol loses 5 points.",
+        "Carol gains 5 points.",
+        "Carol loses 2 points.",
+        "Carol gains 2 points.",
+        "Alice loses 2 points.",
+        "Alice gains 2 points.",
+        "Henry gains 5 points.",
+        "Henry loses 5 points."
+      ],
+      "prompt_length_chars": 515,
+      "raw_response": "15"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:o3-mini",
+      "k_operations": 8,
+      "n_ops_actual": 8,
+      "correct_answer": 17,
+      "predicted": 17,
+      "accurate": 1,
+      "query_entity": "Grace",
+      "initial_state": {
+        "James": 7,
+        "Leo": 15,
+        "Grace": 17
+      },
+      "operations": [
+        "Grace loses 4 points.",
+        "Grace gains 4 points.",
+        "James gives 1 points to Grace.",
+        "Grace gives 1 points to James.",
+        "Grace gives 1 points to Leo.",
+        "Leo gives 1 points to Grace.",
+        "James gives 1 points to Leo.",
+        "Leo gives 1 points to James."
+      ],
+      "prompt_length_chars": 560,
+      "raw_response": "17"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:o3-mini",
+      "k_operations": 8,
+      "n_ops_actual": 8,
+      "correct_answer": 10,
+      "predicted": 10,
+      "accurate": 1,
+      "query_entity": "Leo",
+      "initial_state": {
+        "Leo": 10,
+        "Bob": 14,
+        "Henry": 5
+      },
+      "operations": [
+        "Bob gains 1 points.",
+        "Bob loses 1 points.",
+        "Bob loses 3 points.",
+        "Bob gains 3 points.",
+        "Leo loses 2 points.",
+        "Leo gains 2 points.",
+        "Bob gives 1 points to Leo.",
+        "Leo gives 1 points to Bob."
+      ],
+      "prompt_length_chars": 508,
+      "raw_response": "10"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:o3-mini",
+      "k_operations": 8,
+      "n_ops_actual": 8,
+      "correct_answer": 20,
+      "predicted": 20,
+      "accurate": 1,
+      "query_entity": "James",
+      "initial_state": {
+        "Bob": 12,
+        "James": 20,
+        "Grace": 9
+      },
+      "operations": [
+        "James gains 5 points.",
+        "James loses 5 points.",
+        "James loses 1 points.",
+        "James gains 1 points.",
+        "James loses 5 points.",
+        "James gains 5 points.",
+        "Bob gains 8 points.",
+        "Bob loses 8 points."
+      ],
+      "prompt_length_chars": 510,
+      "raw_response": "20"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:o3-mini",
+      "k_operations": 8,
+      "n_ops_actual": 8,
+      "correct_answer": 19,
+      "predicted": 19,
+      "accurate": 1,
+      "query_entity": "Kate",
+      "initial_state": {
+        "James": 18,
+        "Emma": 13,
+        "Kate": 19
+      },
+      "operations": [
+        "James loses 4 points.",
+        "James gains 4 points.",
+        "James loses 2 points.",
+        "James gains 2 points.",
+        "Kate loses 3 points.",
+        "Kate gains 3 points.",
+        "Emma gives 1 points to Kate.",
+        "Kate gives 1 points to Emma."
+      ],
+      "prompt_length_chars": 526,
+      "raw_response": "19"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:o3-mini",
+      "k_operations": 8,
+      "n_ops_actual": 8,
+      "correct_answer": 20,
+      "predicted": 20,
+      "accurate": 1,
+      "query_entity": "Emma",
+      "initial_state": {
+        "Grace": 6,
+        "Emma": 20,
+        "Alice": 14
+      },
+      "operations": [
+        "Alice gains 6 points.",
+        "Alice loses 6 points.",
+        "Alice gains 4 points.",
+        "Alice loses 4 points.",
+        "Emma gives 3 points to Grace.",
+        "Grace gives 3 points to Emma.",
+        "Alice gains 1 points.",
+        "Alice loses 1 points."
+      ],
+      "prompt_length_chars": 530,
+      "raw_response": "20"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:o3-mini",
+      "k_operations": 12,
+      "n_ops_actual": 12,
+      "correct_answer": 7,
+      "predicted": 7,
+      "accurate": 1,
+      "query_entity": "Alice",
+      "initial_state": {
+        "Mia": 16,
+        "Henry": 9,
+        "Alice": 7
+      },
+      "operations": [
+        "Henry loses 4 points.",
+        "Henry gains 4 points.",
+        "Mia gains 3 points.",
+        "Mia loses 3 points.",
+        "Henry gives 1 points to Alice.",
+        "Alice gives 1 points to Henry.",
+        "Henry loses 3 points.",
+        "Henry gains 3 points.",
+        "Henry gives 2 points to Mia.",
+        "Mia gives 2 points to Henry.",
+        "Mia gains 4 points.",
+        "Mia loses 4 points."
+      ],
+      "prompt_length_chars": 648,
+      "raw_response": "7"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:o3-mini",
+      "k_operations": 12,
+      "n_ops_actual": 12,
+      "correct_answer": 17,
+      "predicted": 17,
+      "accurate": 1,
+      "query_entity": "Grace",
+      "initial_state": {
+        "Leo": 16,
+        "Kate": 7,
+        "Grace": 17
+      },
+      "operations": [
+        "Kate gains 9 points.",
+        "Kate loses 9 points.",
+        "Kate gains 6 points.",
+        "Kate loses 6 points.",
+        "Grace gives 3 points to Kate.",
+        "Kate gives 3 points to Grace.",
+        "Grace loses 3 points.",
+        "Grace gains 3 points.",
+        "Grace gains 4 points.",
+        "Grace loses 4 points.",
+        "Leo loses 5 points.",
+        "Leo gains 5 points."
+      ],
+      "prompt_length_chars": 632,
+      "raw_response": "17"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:o3-mini",
+      "k_operations": 12,
+      "n_ops_actual": 12,
+      "correct_answer": 14,
+      "predicted": 14,
+      "accurate": 1,
+      "query_entity": "David",
+      "initial_state": {
+        "Frank": 7,
+        "James": 19,
+        "David": 14
+      },
+      "operations": [
+        "James gives 1 points to Frank.",
+        "Frank gives 1 points to James.",
+        "Frank gains 5 points.",
+        "Frank loses 5 points.",
+        "Frank loses 1 points.",
+        "Frank gains 1 points.",
+        "David gains 3 points.",
+        "David loses 3 points.",
+        "James loses 3 points.",
+        "James gains 3 points.",
+        "David gives 3 points to James.",
+        "James gives 3 points to David."
+      ],
+      "prompt_length_chars": 663,
+      "raw_response": "14"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:o3-mini",
+      "k_operations": 12,
+      "n_ops_actual": 12,
+      "correct_answer": 18,
+      "predicted": 18,
+      "accurate": 1,
+      "query_entity": "Grace",
+      "initial_state": {
+        "Leo": 8,
+        "Carol": 20,
+        "Grace": 18
+      },
+      "operations": [
+        "Leo loses 3 points.",
+        "Leo gains 3 points.",
+        "Carol gains 8 points.",
+        "Carol loses 8 points.",
+        "Carol gains 2 points.",
+        "Carol loses 2 points.",
+        "Carol gives 1 points to Grace.",
+        "Grace gives 1 points to Carol.",
+        "Carol loses 2 points.",
+        "Carol gains 2 points.",
+        "Carol gains 2 points.",
+        "Carol loses 2 points."
+      ],
+      "prompt_length_chars": 639,
+      "raw_response": "18"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:o3-mini",
+      "k_operations": 12,
+      "n_ops_actual": 12,
+      "correct_answer": 5,
+      "predicted": 5,
+      "accurate": 1,
+      "query_entity": "David",
+      "initial_state": {
+        "David": 5,
+        "Kate": 6,
+        "Mia": 15
+      },
+      "operations": [
+        "David gains 10 points.",
+        "David loses 10 points.",
+        "David gains 9 points.",
+        "David loses 9 points.",
+        "Mia gains 4 points.",
+        "Mia loses 4 points.",
+        "Kate gains 3 points.",
+        "Kate loses 3 points.",
+        "David gives 1 points to Kate.",
+        "Kate gives 1 points to David.",
+        "Mia gains 5 points.",
+        "Mia loses 5 points."
+      ],
+      "prompt_length_chars": 631,
+      "raw_response": "5"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:o3-mini",
+      "k_operations": 12,
+      "n_ops_actual": 12,
+      "correct_answer": 9,
+      "predicted": 9,
+      "accurate": 1,
+      "query_entity": "Bob",
+      "initial_state": {
+        "Bob": 9,
+        "Kate": 5,
+        "Alice": 16
+      },
+      "operations": [
+        "Alice gains 6 points.",
+        "Alice loses 6 points.",
+        "Bob gains 5 points.",
+        "Bob loses 5 points.",
+        "Bob gains 7 points.",
+        "Bob loses 7 points.",
+        "Bob gives 2 points to Alice.",
+        "Alice gives 2 points to Bob.",
+        "Kate loses 5 points.",
+        "Kate gains 5 points.",
+        "Bob gives 3 points to Kate.",
+        "Kate gives 3 points to Bob."
+      ],
+      "prompt_length_chars": 637,
+      "raw_response": "9"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:o3-mini",
+      "k_operations": 12,
+      "n_ops_actual": 12,
+      "correct_answer": 5,
+      "predicted": 5,
+      "accurate": 1,
+      "query_entity": "Leo",
+      "initial_state": {
+        "James": 14,
+        "Alice": 19,
+        "Leo": 5
+      },
+      "operations": [
+        "Alice gains 7 points.",
+        "Alice loses 7 points.",
+        "Leo loses 1 points.",
+        "Leo gains 1 points.",
+        "Leo loses 4 points.",
+        "Leo gains 4 points.",
+        "James gains 6 points.",
+        "James loses 6 points.",
+        "James gives 1 points to Leo.",
+        "Leo gives 1 points to James.",
+        "Leo loses 5 points.",
+        "Leo gains 5 points."
+      ],
+      "prompt_length_chars": 625,
+      "raw_response": "5"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:o3-mini",
+      "k_operations": 12,
+      "n_ops_actual": 12,
+      "correct_answer": 18,
+      "predicted": 18,
+      "accurate": 1,
+      "query_entity": "Grace",
+      "initial_state": {
+        "Leo": 14,
+        "Frank": 19,
+        "Grace": 18
+      },
+      "operations": [
+        "Grace gains 2 points.",
+        "Grace loses 2 points.",
+        "Grace gives 2 points to Leo.",
+        "Leo gives 2 points to Grace.",
+        "Leo loses 4 points.",
+        "Leo gains 4 points.",
+        "Frank loses 4 points.",
+        "Frank gains 4 points.",
+        "Grace loses 1 points.",
+        "Grace gains 1 points.",
+        "Frank loses 3 points.",
+        "Frank gains 3 points."
+      ],
+      "prompt_length_chars": 636,
+      "raw_response": "18"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:o3-mini",
+      "k_operations": 12,
+      "n_ops_actual": 12,
+      "correct_answer": 7,
+      "predicted": 7,
+      "accurate": 1,
+      "query_entity": "Carol",
+      "initial_state": {
+        "Emma": 20,
+        "Frank": 7,
+        "Carol": 7
+      },
+      "operations": [
+        "Emma gains 7 points.",
+        "Emma loses 7 points.",
+        "Carol gains 6 points.",
+        "Carol loses 6 points.",
+        "Carol gains 1 points.",
+        "Carol loses 1 points.",
+        "Carol gives 3 points to Frank.",
+        "Frank gives 3 points to Carol.",
+        "Frank gains 6 points.",
+        "Frank loses 6 points.",
+        "Frank gives 2 points to Emma.",
+        "Emma gives 2 points to Frank."
+      ],
+      "prompt_length_chars": 657,
+      "raw_response": "7"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:o3-mini",
+      "k_operations": 12,
+      "n_ops_actual": 12,
+      "correct_answer": 9,
+      "predicted": 9,
+      "accurate": 1,
+      "query_entity": "Frank",
+      "initial_state": {
+        "Emma": 11,
+        "Frank": 9,
+        "Bob": 20
+      },
+      "operations": [
+        "Emma gains 6 points.",
+        "Emma loses 6 points.",
+        "Frank gives 2 points to Emma.",
+        "Emma gives 2 points to Frank.",
+        "Emma gives 3 points to Frank.",
+        "Frank gives 3 points to Emma.",
+        "Bob gives 3 points to Emma.",
+        "Emma gives 3 points to Bob.",
+        "Bob gives 1 points to Frank.",
+        "Frank gives 1 points to Bob.",
+        "Frank gains 5 points.",
+        "Frank loses 5 points."
+      ],
+      "prompt_length_chars": 680,
+      "raw_response": "9"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:o3-mini",
+      "k_operations": 12,
+      "n_ops_actual": 12,
+      "correct_answer": 9,
+      "predicted": 9,
+      "accurate": 1,
+      "query_entity": "Frank",
+      "initial_state": {
+        "Frank": 9,
+        "Alice": 17,
+        "Carol": 7
+      },
+      "operations": [
+        "Carol gains 1 points.",
+        "Carol loses 1 points.",
+        "Carol gains 9 points.",
+        "Carol loses 9 points.",
+        "Alice gains 7 points.",
+        "Alice loses 7 points.",
+        "Alice loses 2 points.",
+        "Alice gains 2 points.",
+        "Alice loses 3 points.",
+        "Alice gains 3 points.",
+        "Carol gives 1 points to Frank.",
+        "Frank gives 1 points to Carol."
+      ],
+      "prompt_length_chars": 644,
+      "raw_response": "9"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:o3-mini",
+      "k_operations": 12,
+      "n_ops_actual": 12,
+      "correct_answer": 6,
+      "predicted": 6,
+      "accurate": 1,
+      "query_entity": "Carol",
+      "initial_state": {
+        "Carol": 6,
+        "Mia": 7,
+        "James": 13
+      },
+      "operations": [
+        "James loses 4 points.",
+        "James gains 4 points.",
+        "James loses 4 points.",
+        "James gains 4 points.",
+        "Mia loses 2 points.",
+        "Mia gains 2 points.",
+        "Carol gives 2 points to Mia.",
+        "Mia gives 2 points to Carol.",
+        "Mia gains 10 points.",
+        "Mia loses 10 points.",
+        "James loses 3 points.",
+        "James gains 3 points."
+      ],
+      "prompt_length_chars": 632,
+      "raw_response": "6"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:o3-mini",
+      "k_operations": 12,
+      "n_ops_actual": 12,
+      "correct_answer": 5,
+      "predicted": 5,
+      "accurate": 1,
+      "query_entity": "Grace",
+      "initial_state": {
+        "David": 6,
+        "Grace": 5,
+        "James": 11
+      },
+      "operations": [
+        "David loses 2 points.",
+        "David gains 2 points.",
+        "Grace loses 3 points.",
+        "Grace gains 3 points.",
+        "David gains 8 points.",
+        "David loses 8 points.",
+        "Grace gives 1 points to David.",
+        "David gives 1 points to Grace.",
+        "James loses 2 points.",
+        "James gains 2 points.",
+        "James gives 1 points to Grace.",
+        "Grace gives 1 points to James."
+      ],
+      "prompt_length_chars": 662,
+      "raw_response": "5"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:o3-mini",
+      "k_operations": 12,
+      "n_ops_actual": 12,
+      "correct_answer": 18,
+      "predicted": 18,
+      "accurate": 1,
+      "query_entity": "Noah",
+      "initial_state": {
+        "Noah": 18,
+        "Leo": 5,
+        "Alice": 19
+      },
+      "operations": [
+        "Leo gains 10 points.",
+        "Leo loses 10 points.",
+        "Alice loses 4 points.",
+        "Alice gains 4 points.",
+        "Alice gives 2 points to Leo.",
+        "Leo gives 2 points to Alice.",
+        "Leo gains 1 points.",
+        "Leo loses 1 points.",
+        "Noah loses 5 points.",
+        "Noah gains 5 points.",
+        "Alice loses 3 points.",
+        "Alice gains 3 points."
+      ],
+      "prompt_length_chars": 629,
+      "raw_response": "18"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:o3-mini",
+      "k_operations": 12,
+      "n_ops_actual": 12,
+      "correct_answer": 17,
+      "predicted": 17,
+      "accurate": 1,
+      "query_entity": "Bob",
+      "initial_state": {
+        "Grace": 18,
+        "Bob": 17,
+        "David": 7
+      },
+      "operations": [
+        "Bob loses 3 points.",
+        "Bob gains 3 points.",
+        "Bob gains 3 points.",
+        "Bob loses 3 points.",
+        "David gains 2 points.",
+        "David loses 2 points.",
+        "David gives 2 points to Grace.",
+        "Grace gives 2 points to David.",
+        "David loses 2 points.",
+        "David gains 2 points.",
+        "Grace gains 3 points.",
+        "Grace loses 3 points."
+      ],
+      "prompt_length_chars": 633,
+      "raw_response": "17"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:o3-mini",
+      "k_operations": 12,
+      "n_ops_actual": 12,
+      "correct_answer": 9,
+      "predicted": 9,
+      "accurate": 1,
+      "query_entity": "David",
+      "initial_state": {
+        "David": 9,
+        "Carol": 7,
+        "James": 10
+      },
+      "operations": [
+        "Carol gives 3 points to James.",
+        "James gives 3 points to Carol.",
+        "Carol gives 3 points to James.",
+        "James gives 3 points to Carol.",
+        "David loses 4 points.",
+        "David gains 4 points.",
+        "Carol gains 8 points.",
+        "Carol loses 8 points.",
+        "Carol gives 3 points to James.",
+        "James gives 3 points to Carol.",
+        "Carol gains 9 points.",
+        "Carol loses 9 points."
+      ],
+      "prompt_length_chars": 680,
+      "raw_response": "9"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:o3-mini",
+      "k_operations": 12,
+      "n_ops_actual": 12,
+      "correct_answer": 16,
+      "predicted": 16,
+      "accurate": 1,
+      "query_entity": "Mia",
+      "initial_state": {
+        "Emma": 6,
+        "Henry": 6,
+        "Mia": 16
+      },
+      "operations": [
+        "Emma loses 1 points.",
+        "Emma gains 1 points.",
+        "Mia gives 2 points to Henry.",
+        "Henry gives 2 points to Mia.",
+        "Mia gives 2 points to Emma.",
+        "Emma gives 2 points to Mia.",
+        "Mia gives 2 points to Emma.",
+        "Emma gives 2 points to Mia.",
+        "Henry gives 1 points to Emma.",
+        "Emma gives 1 points to Henry.",
+        "Emma loses 3 points.",
+        "Emma gains 3 points."
+      ],
+      "prompt_length_chars": 671,
+      "raw_response": "16"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:o3-mini",
+      "k_operations": 12,
+      "n_ops_actual": 12,
+      "correct_answer": 12,
+      "predicted": 12,
+      "accurate": 1,
+      "query_entity": "Kate",
+      "initial_state": {
+        "Bob": 10,
+        "Iris": 6,
+        "Kate": 12
+      },
+      "operations": [
+        "Iris gives 3 points to Kate.",
+        "Kate gives 3 points to Iris.",
+        "Kate gives 2 points to Bob.",
+        "Bob gives 2 points to Kate.",
+        "Iris loses 4 points.",
+        "Iris gains 4 points.",
+        "Iris loses 5 points.",
+        "Iris gains 5 points.",
+        "Kate gains 6 points.",
+        "Kate loses 6 points.",
+        "Iris gains 2 points.",
+        "Iris loses 2 points."
+      ],
+      "prompt_length_chars": 640,
+      "raw_response": "12"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:o3-mini",
+      "k_operations": 12,
+      "n_ops_actual": 12,
+      "correct_answer": 15,
+      "predicted": 15,
+      "accurate": 1,
+      "query_entity": "Emma",
+      "initial_state": {
+        "Kate": 13,
+        "Grace": 9,
+        "Emma": 15
+      },
+      "operations": [
+        "Emma gains 3 points.",
+        "Emma loses 3 points.",
+        "Grace loses 4 points.",
+        "Grace gains 4 points.",
+        "Emma gains 2 points.",
+        "Emma loses 2 points.",
+        "Emma loses 4 points.",
+        "Emma gains 4 points.",
+        "Grace gives 3 points to Kate.",
+        "Kate gives 3 points to Grace.",
+        "Emma gives 3 points to Kate.",
+        "Kate gives 3 points to Emma."
+      ],
+      "prompt_length_chars": 648,
+      "raw_response": "15"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:o3-mini",
+      "k_operations": 12,
+      "n_ops_actual": 12,
+      "correct_answer": 14,
+      "predicted": 14,
+      "accurate": 1,
+      "query_entity": "Frank",
+      "initial_state": {
+        "Grace": 5,
+        "Iris": 16,
+        "Frank": 14
+      },
+      "operations": [
+        "Grace gains 6 points.",
+        "Grace loses 6 points.",
+        "Grace loses 2 points.",
+        "Grace gains 2 points.",
+        "Grace gains 2 points.",
+        "Grace loses 2 points.",
+        "Grace loses 5 points.",
+        "Grace gains 5 points.",
+        "Frank gives 3 points to Grace.",
+        "Grace gives 3 points to Frank.",
+        "Frank loses 2 points.",
+        "Frank gains 2 points."
+      ],
+      "prompt_length_chars": 644,
+      "raw_response": "14"
+    }
+  ]
+}

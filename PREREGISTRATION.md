@@ -75,7 +75,7 @@ regardless of performance level.
 
 ## Pre-Specified Downstream Battery
 
-10-task deterministic agent battery (released at https://github.com/dengzhehou/CEF-battery):
+10-task deterministic agent battery:
 - T1: State-tracking (3 tasks: multi-step inventory, sequential booking, resource allocation)
 - T2: Multi-step reasoning (3 tasks: deductive inference, algebraic word problems, constraint propagation)
 - T3: General problem-solving (2 tasks: combinatorial planning, conditional execution)

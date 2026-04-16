@@ -1,0 +1,189 @@
+{
+  "results": [
+    {
+      "model": "openrouter:gpt-4o-mini",
+      "timestamp": "2026-04-13T18:37:51.729205",
+      "supported_score": 0.8,
+      "unsupported_score": 0.2,
+      "load_shift_delta": 0.6000000000000001,
+      "conditions": {
+        "supported": {
+          "score": 0.8,
+          "n_correct": 8,
+          "n_tasks": 10,
+          "history_window": null,
+          "task_results": [
+            {
+              "task_id": "multi_step_calc",
+              "correct": false,
+              "final_answer": "70",
+              "n_steps": 5,
+              "errors": 0,
+              "elapsed_s": 11.8
+            },
+            {
+              "task_id": "entity_tracking",
+              "correct": true,
+              "final_answer": "\"David\"",
+              "n_steps": 6,
+              "errors": 0,
+              "elapsed_s": 7.5
+            },
+            {
+              "task_id": "sequential_search",
+              "correct": false,
+              "final_answer": "1200 - 800",
+              "n_steps": 4,
+              "errors": 0,
+              "elapsed_s": 4.9
+            },
+            {
+              "task_id": "uncertain_lookup",
+              "correct": true,
+              "final_answer": "\"Canberra is the capital of Australia.\"",
+              "n_steps": 4,
+              "errors": 0,
+              "elapsed_s": 5.6
+            },
+            {
+              "task_id": "multi_source_conflict",
+              "correct": true,
+              "final_answer": "(22 + 24 + 21) / 3",
+              "n_steps": 4,
+              "errors": 0,
+              "elapsed_s": 5.4
+            },
+            {
+              "task_id": "conversation_recall",
+              "correct": true,
+              "final_answer": "Senso-ji",
+              "n_steps": 2,
+              "errors": 0,
+              "elapsed_s": 2.3
+            },
+            {
+              "task_id": "source_attribution",
+              "correct": true,
+              "final_answer": "\"paper_B\"",
+              "n_steps": 3,
+              "errors": 0,
+              "elapsed_s": 3.2
+            },
+            {
+              "task_id": "shopping_assistant",
+              "correct": true,
+              "final_answer": "[\"mouse\", \"keyboard\"]",
+              "n_steps": 2,
+              "errors": 0,
+              "elapsed_s": 2.6
+            },
+            {
+              "task_id": "schedule_coordination",
+              "correct": true,
+              "final_answer": "\"Alice is busy from 9-10 and Bob is busy from 10-11 on Monday, but they are not all busy at the same time.\"",
+              "n_steps": 4,
+              "errors": 0,
+              "elapsed_s": 5.3
+            },
+            {
+              "task_id": "data_pipeline",
+              "correct": true,
+              "final_answer": "mean=20.0, max=30, sum=100",
+              "n_steps": 5,
+              "errors": 0,
+              "elapsed_s": 5.8
+            }
+          ]
+        },
+        "unsupported": {
+          "score": 0.2,
+          "n_correct": 2,
+          "n_tasks": 10,
+          "history_window": 1,
+          "task_results": [
+            {
+              "task_id": "multi_step_calc",
+              "correct": false,
+              "final_answer": null,
+              "n_steps": 15,
+              "errors": 0,
+              "elapsed_s": 18.7
+            },
+            {
+              "task_id": "entity_tracking",
+              "correct": false,
+              "final_answer": null,
+              "n_steps": 15,
+              "errors": 13,
+              "elapsed_s": 20.6
+            },
+            {
+              "task_id": "sequential_search",
+              "correct": false,
+              "final_answer": "400",
+              "n_steps": 6,
+              "errors": 2,
+              "elapsed_s": 8.5
+            },
+            {
+              "task_id": "uncertain_lookup",
+              "correct": false,
+              "final_answer": null,
+              "n_steps": 15,
+              "errors": 0,
+              "elapsed_s": 18.9
+            },
+            {
+              "task_id": "multi_source_conflict",
+              "correct": false,
+              "final_answer": "23",
+              "n_steps": 4,
+              "errors": 1,
+              "elapsed_s": 5.2
+            },
+            {
+              "task_id": "conversation_recall",
+              "correct": true,
+              "final_answer": "Senso-ji",
+              "n_steps": 2,
+              "errors": 0,
+              "elapsed_s": 2.3
+            },
+            {
+              "task_id": "source_attribution",
+              "correct": false,
+              "final_answer": null,
+              "n_steps": 15,
+              "errors": 0,
+              "elapsed_s": 18.8
+            },
+            {
+              "task_id": "shopping_assistant",
+              "correct": true,
+              "final_answer": "[\"mouse\", \"keyboard\"]",
+              "n_steps": 2,
+              "errors": 0,
+              "elapsed_s": 2.4
+            },
+            {
+              "task_id": "schedule_coordination",
+              "correct": false,
+              "final_answer": null,
+              "n_steps": 15,
+              "errors": 13,
+              "elapsed_s": 23.5
+            },
+            {
+              "task_id": "data_pipeline",
+              "correct": false,
+              "final_answer": "\"I cannot proceed without the necessary tools to complete the task.\"",
+              "n_steps": 13,
+              "errors": 10,
+              "elapsed_s": 18.2
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

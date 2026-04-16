@@ -1,0 +1,2567 @@
+{
+  "metadata": {
+    "task": "WMF-AM-YOKED-CONTROL",
+    "model": "openrouter:deepseek-v3",
+    "n_problems_per_depth": 20,
+    "seed": 42,
+    "depths": [
+      2,
+      4,
+      6,
+      8,
+      12
+    ]
+  },
+  "summary": {
+    "per_depth_accuracy": {
+      "2": 0.8,
+      "4": 0.65,
+      "6": 0.7,
+      "8": 0.7,
+      "12": 0.75
+    },
+    "overall_accuracy": 0.72
+  },
+  "trials": [
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:deepseek-v3",
+      "k_operations": 2,
+      "n_ops_actual": 2,
+      "correct_answer": 12,
+      "predicted": 12,
+      "accurate": 1,
+      "query_entity": "Alice",
+      "initial_state": {
+        "Kate": 13,
+        "Bob": 12,
+        "Alice": 12
+      },
+      "operations": [
+        "Alice gains 2 points.",
+        "Alice loses 2 points."
+      ],
+      "prompt_length_chars": 352,
+      "raw_response": "12"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:deepseek-v3",
+      "k_operations": 2,
+      "n_ops_actual": 2,
+      "correct_answer": 5,
+      "predicted": 5,
+      "accurate": 1,
+      "query_entity": "Bob",
+      "initial_state": {
+        "Leo": 18,
+        "Iris": 6,
+        "Bob": 5
+      },
+      "operations": [
+        "Leo gains 4 points.",
+        "Leo loses 4 points."
+      ],
+      "prompt_length_chars": 342,
+      "raw_response": "5"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:deepseek-v3",
+      "k_operations": 2,
+      "n_ops_actual": 2,
+      "correct_answer": 11,
+      "predicted": 11,
+      "accurate": 1,
+      "query_entity": "James",
+      "initial_state": {
+        "James": 11,
+        "Alice": 18,
+        "Iris": 12
+      },
+      "operations": [
+        "Iris loses 3 points.",
+        "Iris gains 3 points."
+      ],
+      "prompt_length_chars": 352,
+      "raw_response": "11"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:deepseek-v3",
+      "k_operations": 2,
+      "n_ops_actual": 2,
+      "correct_answer": 18,
+      "predicted": 18,
+      "accurate": 1,
+      "query_entity": "Mia",
+      "initial_state": {
+        "Mia": 18,
+        "Noah": 15,
+        "Carol": 13
+      },
+      "operations": [
+        "Mia gains 6 points.",
+        "Mia loses 6 points."
+      ],
+      "prompt_length_chars": 346,
+      "raw_response": "18"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:deepseek-v3",
+      "k_operations": 2,
+      "n_ops_actual": 2,
+      "correct_answer": 13,
+      "predicted": 13,
+      "accurate": 1,
+      "query_entity": "Noah",
+      "initial_state": {
+        "Bob": 16,
+        "Grace": 16,
+        "Noah": 13
+      },
+      "operations": [
+        "Noah gains 8 points.",
+        "Noah loses 8 points."
+      ],
+      "prompt_length_chars": 349,
+      "raw_response": "Let's track Noah's points step by step:\n\nInitial state: Noah has 13 points.\n\n1. Noah gains 8 points: 13 + 8 = 21 points\n2. Noah loses 8 points: 21 - 8 = 13 points\n\nFinal number: 13"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:deepseek-v3",
+      "k_operations": 2,
+      "n_ops_actual": 2,
+      "correct_answer": 14,
+      "predicted": 14,
+      "accurate": 1,
+      "query_entity": "Bob",
+      "initial_state": {
+        "Bob": 14,
+        "Grace": 16,
+        "Noah": 11
+      },
+      "operations": [
+        "Bob gives 3 points to Noah.",
+        "Noah gives 3 points to Bob."
+      ],
+      "prompt_length_chars": 362,
+      "raw_response": "14"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:deepseek-v3",
+      "k_operations": 2,
+      "n_ops_actual": 2,
+      "correct_answer": 12,
+      "predicted": 12,
+      "accurate": 1,
+      "query_entity": "Mia",
+      "initial_state": {
+        "Mia": 12,
+        "Emma": 8,
+        "Bob": 17
+      },
+      "operations": [
+        "Emma loses 3 points.",
+        "Emma gains 3 points."
+      ],
+      "prompt_length_chars": 345,
+      "raw_response": "12"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:deepseek-v3",
+      "k_operations": 2,
+      "n_ops_actual": 2,
+      "correct_answer": 7,
+      "predicted": 13,
+      "accurate": 0,
+      "query_entity": "Noah",
+      "initial_state": {
+        "Frank": 13,
+        "Noah": 7,
+        "David": 10
+      },
+      "operations": [
+        "David gives 1 points to Frank.",
+        "Frank gives 1 points to David."
+      ],
+      "prompt_length_chars": 370,
+      "raw_response": "Let's track the points step by step based on the operations:\n\n**Initial state:**\n- Frank: 13\n- Noah: 7\n- David: 10\n\n**Operation 1: David gives 1 point to Frank.**\n- Frank: 13 + 1 = 14\n- David: 10 - 1 = 9\n- Noah: 7 (unchanged)\n\n**Operation 2: Frank gives 1 point to David.**\n- Frank: 14 - 1 = 13\n- David: 9 + 1 = 10\n- Noah: 7 (unchanged)\n\nAfter all operations, Noah's points remain **7**.\n\n7"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:deepseek-v3",
+      "k_operations": 2,
+      "n_ops_actual": 2,
+      "correct_answer": 15,
+      "predicted": 15,
+      "accurate": 1,
+      "query_entity": "Emma",
+      "initial_state": {
+        "Grace": 12,
+        "Emma": 15,
+        "Kate": 6
+      },
+      "operations": [
+        "Grace gains 6 points.",
+        "Grace loses 6 points."
+      ],
+      "prompt_length_chars": 351,
+      "raw_response": "15"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:deepseek-v3",
+      "k_operations": 2,
+      "n_ops_actual": 2,
+      "correct_answer": 15,
+      "predicted": 15,
+      "accurate": 1,
+      "query_entity": "Emma",
+      "initial_state": {
+        "Emma": 15,
+        "Bob": 11,
+        "David": 20
+      },
+      "operations": [
+        "David loses 4 points.",
+        "David gains 4 points."
+      ],
+      "prompt_length_chars": 351,
+      "raw_response": "15"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:deepseek-v3",
+      "k_operations": 2,
+      "n_ops_actual": 2,
+      "correct_answer": 17,
+      "predicted": 17,
+      "accurate": 1,
+      "query_entity": "David",
+      "initial_state": {
+        "Emma": 13,
+        "Carol": 18,
+        "David": 17
+      },
+      "operations": [
+        "Emma loses 2 points.",
+        "Emma gains 2 points."
+      ],
+      "prompt_length_chars": 352,
+      "raw_response": "17"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:deepseek-v3",
+      "k_operations": 2,
+      "n_ops_actual": 2,
+      "correct_answer": 9,
+      "predicted": 8,
+      "accurate": 0,
+      "query_entity": "Bob",
+      "initial_state": {
+        "Henry": 8,
+        "Bob": 9,
+        "Alice": 10
+      },
+      "operations": [
+        "Bob gives 2 points to Henry.",
+        "Henry gives 2 points to Bob."
+      ],
+      "prompt_length_chars": 363,
+      "raw_response": "Let's track the points step by step:\n\nInitial state:\n- Henry: 8\n- Bob: 9\n- Alice: 10\n\n1. Bob gives 2 points to Henry:\n   - Bob: 9 - 2 = 7\n   - Henry: 8 + 2 = 10\n\n2. Henry gives 2 points to Bob:\n   - Henry: 10 - 2 = 8\n   - Bob: 7 + 2 = 9\n\nFinal points for Bob: 9"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:deepseek-v3",
+      "k_operations": 2,
+      "n_ops_actual": 2,
+      "correct_answer": 5,
+      "predicted": 13,
+      "accurate": 0,
+      "query_entity": "Henry",
+      "initial_state": {
+        "James": 13,
+        "Henry": 5,
+        "Iris": 8
+      },
+      "operations": [
+        "Iris gives 3 points to Henry.",
+        "Henry gives 3 points to Iris."
+      ],
+      "prompt_length_chars": 368,
+      "raw_response": "Let's track the points step by step:\n\nInitial state:\n- James: 13\n- Henry: 5\n- Iris: 8\n\nOperation 1: Iris gives 3 points to Henry\n- Iris: 8 - 3 = 5\n- Henry: 5 + 3 = 8\n\nOperation 2: Henry gives 3 points to Iris\n- Henry: 8 - 3 = 5\n- Iris: 5 + 3 = 8\n\nFinal points for Henry: 5"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:deepseek-v3",
+      "k_operations": 2,
+      "n_ops_actual": 2,
+      "correct_answer": 10,
+      "predicted": 10,
+      "accurate": 1,
+      "query_entity": "Bob",
+      "initial_state": {
+        "Bob": 10,
+        "Emma": 19,
+        "Grace": 5
+      },
+      "operations": [
+        "Grace gives 3 points to Emma.",
+        "Emma gives 3 points to Grace."
+      ],
+      "prompt_length_chars": 365,
+      "raw_response": "10"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:deepseek-v3",
+      "k_operations": 2,
+      "n_ops_actual": 2,
+      "correct_answer": 9,
+      "predicted": 9,
+      "accurate": 1,
+      "query_entity": "Kate",
+      "initial_state": {
+        "Iris": 14,
+        "Bob": 11,
+        "Kate": 9
+      },
+      "operations": [
+        "Iris loses 5 points.",
+        "Iris gains 5 points."
+      ],
+      "prompt_length_chars": 347,
+      "raw_response": "9"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:deepseek-v3",
+      "k_operations": 2,
+      "n_ops_actual": 2,
+      "correct_answer": 20,
+      "predicted": 20,
+      "accurate": 1,
+      "query_entity": "Alice",
+      "initial_state": {
+        "Alice": 20,
+        "James": 5,
+        "Frank": 8
+      },
+      "operations": [
+        "James loses 2 points.",
+        "James gains 2 points."
+      ],
+      "prompt_length_chars": 353,
+      "raw_response": "20"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:deepseek-v3",
+      "k_operations": 2,
+      "n_ops_actual": 2,
+      "correct_answer": 20,
+      "predicted": 20,
+      "accurate": 1,
+      "query_entity": "James",
+      "initial_state": {
+        "David": 7,
+        "James": 20,
+        "Bob": 7
+      },
+      "operations": [
+        "David gives 3 points to Bob.",
+        "Bob gives 3 points to David."
+      ],
+      "prompt_length_chars": 365,
+      "raw_response": "20"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:deepseek-v3",
+      "k_operations": 2,
+      "n_ops_actual": 2,
+      "correct_answer": 11,
+      "predicted": 11,
+      "accurate": 1,
+      "query_entity": "Emma",
+      "initial_state": {
+        "Iris": 18,
+        "Carol": 11,
+        "Emma": 11
+      },
+      "operations": [
+        "Carol gives 3 points to Emma.",
+        "Emma gives 3 points to Carol."
+      ],
+      "prompt_length_chars": 368,
+      "raw_response": "11"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:deepseek-v3",
+      "k_operations": 2,
+      "n_ops_actual": 2,
+      "correct_answer": 19,
+      "predicted": 19,
+      "accurate": 1,
+      "query_entity": "Frank",
+      "initial_state": {
+        "Frank": 19,
+        "Henry": 8,
+        "Iris": 12
+      },
+      "operations": [
+        "Frank gains 6 points.",
+        "Frank loses 6 points."
+      ],
+      "prompt_length_chars": 353,
+      "raw_response": "19"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:deepseek-v3",
+      "k_operations": 2,
+      "n_ops_actual": 2,
+      "correct_answer": 12,
+      "predicted": 11,
+      "accurate": 0,
+      "query_entity": "James",
+      "initial_state": {
+        "James": 12,
+        "Iris": 5,
+        "David": 7
+      },
+      "operations": [
+        "David gives 1 points to James.",
+        "James gives 1 points to David."
+      ],
+      "prompt_length_chars": 370,
+      "raw_response": "11"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:deepseek-v3",
+      "k_operations": 4,
+      "n_ops_actual": 4,
+      "correct_answer": 13,
+      "predicted": 12,
+      "accurate": 0,
+      "query_entity": "Frank",
+      "initial_state": {
+        "Alice": 12,
+        "Frank": 13,
+        "Bob": 20
+      },
+      "operations": [
+        "Bob gains 3 points.",
+        "Bob loses 3 points.",
+        "Bob gives 1 points to Frank.",
+        "Frank gives 1 points to Bob."
+      ],
+      "prompt_length_chars": 417,
+      "raw_response": "Let's track the points step by step:\n\nInitial state:\n- Alice: 12\n- Frank: 13\n- Bob: 20\n\n1. Bob gains 3 points:\n   - Bob: 20 + 3 = 23\n   - Others unchanged\n\n2. Bob loses 3 points:\n   - Bob: 23 - 3 = 20\n   - Others unchanged\n\n3. Bob gives 1 point to Frank:\n   - Bob: 20 - 1 = 19\n   - Frank: 13 + 1 = 14\n\n4. Frank gives 1 point to Bob:\n   - Frank: 14 - 1 = 13\n   - Bob: 19 + 1 = 20\n\nFinal points for Frank: 13"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:deepseek-v3",
+      "k_operations": 4,
+      "n_ops_actual": 4,
+      "correct_answer": 18,
+      "predicted": 18,
+      "accurate": 1,
+      "query_entity": "David",
+      "initial_state": {
+        "Mia": 8,
+        "Grace": 8,
+        "David": 18
+      },
+      "operations": [
+        "Grace loses 4 points.",
+        "Grace gains 4 points.",
+        "David loses 1 points.",
+        "David gains 1 points."
+      ],
+      "prompt_length_chars": 405,
+      "raw_response": "18"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:deepseek-v3",
+      "k_operations": 4,
+      "n_ops_actual": 4,
+      "correct_answer": 6,
+      "predicted": 6,
+      "accurate": 1,
+      "query_entity": "Kate",
+      "initial_state": {
+        "Kate": 6,
+        "Noah": 17,
+        "Bob": 15
+      },
+      "operations": [
+        "Kate gains 4 points.",
+        "Kate loses 4 points.",
+        "Bob gains 8 points.",
+        "Bob loses 8 points."
+      ],
+      "prompt_length_chars": 397,
+      "raw_response": "Let's track the points for Kate step by step:\n\nInitial state: Kate has 6 points.\n\n1. Kate gains 4 points: 6 + 4 = 10 points\n2. Kate loses 4 points: 10 - 4 = 6 points\n\nThe operations involving Bob do not affect Kate's points.\n\nFinal number: 6"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:deepseek-v3",
+      "k_operations": 4,
+      "n_ops_actual": 4,
+      "correct_answer": 19,
+      "predicted": 19,
+      "accurate": 1,
+      "query_entity": "Grace",
+      "initial_state": {
+        "Grace": 19,
+        "Carol": 12,
+        "Emma": 7
+      },
+      "operations": [
+        "Emma loses 1 points.",
+        "Emma gains 1 points.",
+        "Emma gains 9 points.",
+        "Emma loses 9 points."
+      ],
+      "prompt_length_chars": 403,
+      "raw_response": "19"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:deepseek-v3",
+      "k_operations": 4,
+      "n_ops_actual": 4,
+      "correct_answer": 10,
+      "predicted": 10,
+      "accurate": 1,
+      "query_entity": "Bob",
+      "initial_state": {
+        "Bob": 10,
+        "Mia": 18,
+        "David": 20
+      },
+      "operations": [
+        "Bob loses 4 points.",
+        "Bob gains 4 points.",
+        "Bob gains 7 points.",
+        "Bob loses 7 points."
+      ],
+      "prompt_length_chars": 395,
+      "raw_response": "10"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:deepseek-v3",
+      "k_operations": 4,
+      "n_ops_actual": 4,
+      "correct_answer": 20,
+      "predicted": 20,
+      "accurate": 1,
+      "query_entity": "Henry",
+      "initial_state": {
+        "Grace": 14,
+        "Emma": 18,
+        "Henry": 20
+      },
+      "operations": [
+        "Grace gains 5 points.",
+        "Grace loses 5 points.",
+        "Grace gains 10 points.",
+        "Grace loses 10 points."
+      ],
+      "prompt_length_chars": 410,
+      "raw_response": "20"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:deepseek-v3",
+      "k_operations": 4,
+      "n_ops_actual": 4,
+      "correct_answer": 6,
+      "predicted": 15,
+      "accurate": 0,
+      "query_entity": "Leo",
+      "initial_state": {
+        "Iris": 15,
+        "Alice": 6,
+        "Leo": 6
+      },
+      "operations": [
+        "Alice gives 1 points to Iris.",
+        "Iris gives 1 points to Alice.",
+        "Iris gives 1 points to Leo.",
+        "Leo gives 1 points to Iris."
+      ],
+      "prompt_length_chars": 430,
+      "raw_response": "Let's track the points step by step:\n\nInitial:\n- Iris: 15, Alice: 6, Leo: 6\n\n1. Alice gives 1 to Iris:\n   - Iris: 15 + 1 = 16\n   - Alice: 6 - 1 = 5\n   - Leo: 6\n\n2. Iris gives 1 to Alice:\n   - Iris: 16 - 1 = 15\n   - Alice: 5 + 1 = 6\n   - Leo: 6\n\n3. Iris gives 1 to Leo:\n   - Iris: 15 - 1 = 14\n   - Alice: 6\n   - Leo: 6 + 1 = 7\n\n4. Leo gives 1 to Iris:\n   - Iris: 14 + 1 = 15\n   - Alice: 6\n   - Leo: 7 - 1 = 6\n\nFinal points for Leo: 6"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:deepseek-v3",
+      "k_operations": 4,
+      "n_ops_actual": 4,
+      "correct_answer": 12,
+      "predicted": 17,
+      "accurate": 0,
+      "query_entity": "David",
+      "initial_state": {
+        "Bob": 17,
+        "Kate": 8,
+        "David": 12
+      },
+      "operations": [
+        "David gives 3 points to Bob.",
+        "Bob gives 3 points to David.",
+        "Kate gains 10 points.",
+        "Kate loses 10 points."
+      ],
+      "prompt_length_chars": 419,
+      "raw_response": "Let's track the points step by step:\n\nInitial state:\n- Bob: 17\n- Kate: 8\n- David: 12\n\n1. David gives 3 points to Bob:\n   - Bob: 17 + 3 = 20\n   - David: 12 - 3 = 9\n\n2. Bob gives 3 points to David:\n   - Bob: 20 - 3 = 17\n   - David: 9 + 3 = 12\n\n3. Kate gains 10 points:\n   - Kate: 8 + 10 = 18\n\n4. Kate loses 10 points:\n   - Kate: 18 - 10 = 8\n\nAfter all operations, David has 12 points.\n\n12"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:deepseek-v3",
+      "k_operations": 4,
+      "n_ops_actual": 4,
+      "correct_answer": 15,
+      "predicted": 1,
+      "accurate": 0,
+      "query_entity": "Frank",
+      "initial_state": {
+        "Iris": 11,
+        "Frank": 15,
+        "Emma": 12
+      },
+      "operations": [
+        "Frank loses 2 points.",
+        "Frank gains 2 points.",
+        "Emma gives 2 points to Frank.",
+        "Frank gives 2 points to Emma."
+      ],
+      "prompt_length_chars": 423,
+      "raw_response": "Let's track Frank's points step by step:\n\n1. Initial: Frank has 15 points.\n2. After operation 1 (loses 2): 15 - 2 = 13\n3. After operation 2 (gains 2): 13 + 2 = 15\n4. After operation 3 (Emma gives 2): 15 + 2 = 17\n5. After operation 4 (gives 2 to Emma): 17 - 2 = 15\n\nFinal number: 15"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:deepseek-v3",
+      "k_operations": 4,
+      "n_ops_actual": 4,
+      "correct_answer": 8,
+      "predicted": 7,
+      "accurate": 0,
+      "query_entity": "Bob",
+      "initial_state": {
+        "Mia": 19,
+        "Bob": 8,
+        "Alice": 7
+      },
+      "operations": [
+        "Mia gives 1 points to Bob.",
+        "Bob gives 1 points to Mia.",
+        "Mia loses 2 points.",
+        "Mia gains 2 points."
+      ],
+      "prompt_length_chars": 407,
+      "raw_response": "7"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:deepseek-v3",
+      "k_operations": 4,
+      "n_ops_actual": 4,
+      "correct_answer": 14,
+      "predicted": 1,
+      "accurate": 0,
+      "query_entity": "Emma",
+      "initial_state": {
+        "Emma": 14,
+        "Carol": 5,
+        "Henry": 14
+      },
+      "operations": [
+        "Emma gives 2 points to Henry.",
+        "Henry gives 2 points to Emma.",
+        "Emma gains 9 points.",
+        "Emma loses 9 points."
+      ],
+      "prompt_length_chars": 420,
+      "raw_response": "Let's track Emma's points step by step:\n\n1. Initial points: 14\n2. Gives 2 to Henry: 14 - 2 = 12\n3. Receives 2 from Henry: 12 + 2 = 14\n4. Gains 9 points: 14 + 9 = 23\n5. Loses 9 points: 23 - 9 = 14\n\nFinal answer: 14"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:deepseek-v3",
+      "k_operations": 4,
+      "n_ops_actual": 4,
+      "correct_answer": 11,
+      "predicted": 11,
+      "accurate": 1,
+      "query_entity": "Emma",
+      "initial_state": {
+        "Emma": 11,
+        "Noah": 15,
+        "James": 11
+      },
+      "operations": [
+        "James gives 3 points to Noah.",
+        "Noah gives 3 points to James.",
+        "Noah loses 1 points.",
+        "Noah gains 1 points."
+      ],
+      "prompt_length_chars": 420,
+      "raw_response": "11"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:deepseek-v3",
+      "k_operations": 4,
+      "n_ops_actual": 4,
+      "correct_answer": 15,
+      "predicted": 15,
+      "accurate": 1,
+      "query_entity": "Emma",
+      "initial_state": {
+        "Kate": 6,
+        "Grace": 5,
+        "Emma": 15
+      },
+      "operations": [
+        "Emma gains 5 points.",
+        "Emma loses 5 points.",
+        "Emma gains 8 points.",
+        "Emma loses 8 points."
+      ],
+      "prompt_length_chars": 400,
+      "raw_response": "15"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:deepseek-v3",
+      "k_operations": 4,
+      "n_ops_actual": 4,
+      "correct_answer": 5,
+      "predicted": 5,
+      "accurate": 1,
+      "query_entity": "Leo",
+      "initial_state": {
+        "Leo": 5,
+        "Grace": 8,
+        "Iris": 7
+      },
+      "operations": [
+        "Leo gives 2 points to Iris.",
+        "Iris gives 2 points to Leo.",
+        "Iris gives 2 points to Leo.",
+        "Leo gives 2 points to Iris."
+      ],
+      "prompt_length_chars": 425,
+      "raw_response": "Let's track the points step by step:\n\nInitial state:\n- Leo: 5\n- Grace: 8\n- Iris: 7\n\n1. Leo gives 2 points to Iris:\n   - Leo: 5 - 2 = 3\n   - Iris: 7 + 2 = 9\n\n2. Iris gives 2 points to Leo:\n   - Iris: 9 - 2 = 7\n   - Leo: 3 + 2 = 5\n\n3. Iris gives 2 points to Leo:\n   - Iris: 7 - 2 = 5\n   - Leo: 5 + 2 = 7\n\n4. Leo gives 2 points to Iris:\n   - Leo: 7 - 2 = 5\n   - Iris: 5 + 2 = 7\n\nFinal points for Leo: 5"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:deepseek-v3",
+      "k_operations": 4,
+      "n_ops_actual": 4,
+      "correct_answer": 6,
+      "predicted": 6,
+      "accurate": 1,
+      "query_entity": "Alice",
+      "initial_state": {
+        "Alice": 6,
+        "Emma": 16,
+        "Frank": 11
+      },
+      "operations": [
+        "Alice gives 2 points to Frank.",
+        "Frank gives 2 points to Alice.",
+        "Emma gives 1 points to Alice.",
+        "Alice gives 1 points to Emma."
+      ],
+      "prompt_length_chars": 441,
+      "raw_response": "Let's track the points step by step:\n\nInitial:\nAlice: 6, Emma: 16, Frank: 11\n\n1. Alice gives 2 to Frank:\n   Alice: 6 - 2 = 4\n   Frank: 11 + 2 = 13\n\n2. Frank gives 2 to Alice:\n   Frank: 13 - 2 = 11\n   Alice: 4 + 2 = 6\n\n3. Emma gives 1 to Alice:\n   Emma: 16 - 1 = 15\n   Alice: 6 + 1 = 7\n\n4. Alice gives 1 to Emma:\n   Alice: 7 - 1 = 6\n   Emma: 15 + 1 = 16\n\nFinal Alice points: 6"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:deepseek-v3",
+      "k_operations": 4,
+      "n_ops_actual": 4,
+      "correct_answer": 10,
+      "predicted": 18,
+      "accurate": 0,
+      "query_entity": "Carol",
+      "initial_state": {
+        "Mia": 18,
+        "Noah": 5,
+        "Carol": 10
+      },
+      "operations": [
+        "Noah gives 3 points to Carol.",
+        "Carol gives 3 points to Noah.",
+        "Mia gives 1 points to Noah.",
+        "Noah gives 1 points to Mia."
+      ],
+      "prompt_length_chars": 433,
+      "raw_response": "Let's track the points step by step:\n\nInitial state:\n- Mia: 18\n- Noah: 5\n- Carol: 10\n\n1. Noah gives 3 points to Carol:\n   - Noah: 5 - 3 = 2\n   - Carol: 10 + 3 = 13\n\n2. Carol gives 3 points to Noah:\n   - Carol: 13 - 3 = 10\n   - Noah: 2 + 3 = 5\n\n3. Mia gives 1 point to Noah:\n   - Mia: 18 - 1 = 17\n   - Noah: 5 + 1 = 6\n\n4. Noah gives 1 point to Mia:\n   - Noah: 6 - 1 = 5\n   - Mia: 17 + 1 = 18\n\nFinal points:\n- Carol: 10\n\n10"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:deepseek-v3",
+      "k_operations": 4,
+      "n_ops_actual": 4,
+      "correct_answer": 11,
+      "predicted": 11,
+      "accurate": 1,
+      "query_entity": "Alice",
+      "initial_state": {
+        "Bob": 20,
+        "Grace": 12,
+        "Alice": 11
+      },
+      "operations": [
+        "Grace loses 3 points.",
+        "Grace gains 3 points.",
+        "Bob gains 1 points.",
+        "Bob loses 1 points."
+      ],
+      "prompt_length_chars": 403,
+      "raw_response": "11"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:deepseek-v3",
+      "k_operations": 4,
+      "n_ops_actual": 4,
+      "correct_answer": 7,
+      "predicted": 7,
+      "accurate": 1,
+      "query_entity": "Grace",
+      "initial_state": {
+        "David": 13,
+        "Grace": 7,
+        "Frank": 13
+      },
+      "operations": [
+        "Frank loses 5 points.",
+        "Frank gains 5 points.",
+        "Frank loses 5 points.",
+        "Frank gains 5 points."
+      ],
+      "prompt_length_chars": 408,
+      "raw_response": "7"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:deepseek-v3",
+      "k_operations": 4,
+      "n_ops_actual": 4,
+      "correct_answer": 13,
+      "predicted": 13,
+      "accurate": 1,
+      "query_entity": "Bob",
+      "initial_state": {
+        "Alice": 10,
+        "Bob": 13,
+        "Emma": 6
+      },
+      "operations": [
+        "Emma gains 7 points.",
+        "Emma loses 7 points.",
+        "Emma loses 3 points.",
+        "Emma gains 3 points."
+      ],
+      "prompt_length_chars": 399,
+      "raw_response": "Let's track the points for each person after each operation. We'll only focus on Bob since the question asks for his final points.\n\nInitial state:\n- Bob: 13 points\n\nOperations:\n1. Emma gains 7 points. (Bob's points remain unchanged)\n2. Emma loses 7 points. (Bob's points remain unchanged)\n3. Emma loses 3 points. (Bob's points remain unchanged)\n4. Emma gains 3 points. (Bob's points remain unchanged)\n\nAfter all operations, Bob still has 13 points.\n\n13"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:deepseek-v3",
+      "k_operations": 4,
+      "n_ops_actual": 4,
+      "correct_answer": 13,
+      "predicted": 13,
+      "accurate": 1,
+      "query_entity": "Bob",
+      "initial_state": {
+        "James": 17,
+        "Iris": 11,
+        "Bob": 13
+      },
+      "operations": [
+        "Bob gains 7 points.",
+        "Bob loses 7 points.",
+        "Bob gains 9 points.",
+        "Bob loses 9 points."
+      ],
+      "prompt_length_chars": 396,
+      "raw_response": "13"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:deepseek-v3",
+      "k_operations": 6,
+      "n_ops_actual": 6,
+      "correct_answer": 18,
+      "predicted": 18,
+      "accurate": 1,
+      "query_entity": "Mia",
+      "initial_state": {
+        "Leo": 11,
+        "Noah": 16,
+        "Mia": 18
+      },
+      "operations": [
+        "Mia gains 6 points.",
+        "Mia loses 6 points.",
+        "Noah gives 3 points to Leo.",
+        "Leo gives 3 points to Noah.",
+        "Mia loses 3 points.",
+        "Mia gains 3 points."
+      ],
+      "prompt_length_chars": 460,
+      "raw_response": "18"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:deepseek-v3",
+      "k_operations": 6,
+      "n_ops_actual": 6,
+      "correct_answer": 14,
+      "predicted": 14,
+      "accurate": 1,
+      "query_entity": "Grace",
+      "initial_state": {
+        "Grace": 14,
+        "Frank": 9,
+        "Noah": 11
+      },
+      "operations": [
+        "Noah loses 4 points.",
+        "Noah gains 4 points.",
+        "Noah gives 3 points to Grace.",
+        "Grace gives 3 points to Noah.",
+        "Frank gives 3 points to Noah.",
+        "Noah gives 3 points to Frank."
+      ],
+      "prompt_length_chars": 491,
+      "raw_response": "Let's track the points step by step:\n\nInitial state:\n- Grace: 14\n- Frank: 9\n- Noah: 11\n\nOperations:\n1. Noah loses 4 points:\n   - Noah: 11 - 4 = 7\n2. Noah gains 4 points:\n   - Noah: 7 + 4 = 11\n3. Noah gives 3 points to Grace:\n   - Noah: 11 - 3 = 8\n   - Grace: 14 + 3 = 17\n4. Grace gives 3 points to Noah:\n   - Grace: 17 - 3 = 14\n   - Noah: 8 + 3 = 11\n5. Frank gives 3 points to Noah:\n   - Frank: 9 - 3 = 6\n   - Noah: 11 + 3 = 14\n6. Noah gives 3 points to Frank:\n   - Noah: 14 - 3 = 11\n   - Frank: 6 + 3 = 9\n\nFinal points for Grace: 14"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:deepseek-v3",
+      "k_operations": 6,
+      "n_ops_actual": 6,
+      "correct_answer": 19,
+      "predicted": 18,
+      "accurate": 0,
+      "query_entity": "David",
+      "initial_state": {
+        "Emma": 18,
+        "Noah": 15,
+        "David": 19
+      },
+      "operations": [
+        "Noah loses 2 points.",
+        "Noah gains 2 points.",
+        "Noah gives 3 points to Emma.",
+        "Emma gives 3 points to Noah.",
+        "Noah gains 9 points.",
+        "Noah loses 9 points."
+      ],
+      "prompt_length_chars": 471,
+      "raw_response": "Let's track the points step by step, focusing only on the necessary updates:\n\nInitial state:\n- Emma: 18\n- Noah: 15\n- David: 19\n\nOperations:\n1. Noah loses 2 points: Noah = 15 - 2 = 13\n2. Noah gains 2 points: Noah = 13 + 2 = 15\n3. Noah gives 3 points to Emma: Noah = 15 - 3 = 12, Emma = 18 + 3 = 21\n4. Emma gives 3 points to Noah: Emma = 21 - 3 = 18, Noah = 12 + 3 = 15\n5. Noah gains 9 points: Noah = 15 + 9 = 24\n6. Noah loses 9 points: Noah = 24 - 9 = 15\n\nDavid's points remain unchanged throughout all operations.\n\nFinal answer:\n19"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:deepseek-v3",
+      "k_operations": 6,
+      "n_ops_actual": 6,
+      "correct_answer": 12,
+      "predicted": 12,
+      "accurate": 1,
+      "query_entity": "James",
+      "initial_state": {
+        "Kate": 7,
+        "James": 12,
+        "Frank": 14
+      },
+      "operations": [
+        "Kate gains 3 points.",
+        "Kate loses 3 points.",
+        "Kate gains 4 points.",
+        "Kate loses 4 points.",
+        "Frank loses 1 points.",
+        "Frank gains 1 points."
+      ],
+      "prompt_length_chars": 457,
+      "raw_response": "12"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:deepseek-v3",
+      "k_operations": 6,
+      "n_ops_actual": 6,
+      "correct_answer": 20,
+      "predicted": 11,
+      "accurate": 0,
+      "query_entity": "James",
+      "initial_state": {
+        "Grace": 11,
+        "Kate": 17,
+        "James": 20
+      },
+      "operations": [
+        "Grace loses 2 points.",
+        "Grace gains 2 points.",
+        "James gives 1 points to Grace.",
+        "Grace gives 1 points to James.",
+        "Grace loses 2 points.",
+        "Grace gains 2 points."
+      ],
+      "prompt_length_chars": 480,
+      "raw_response": "Let's track the points step by step:\n\nInitial state:\n- Grace: 11\n- Kate: 17\n- James: 20\n\nOperations:\n1. Grace loses 2 points: Grace = 11 - 2 = 9\n2. Grace gains 2 points: Grace = 9 + 2 = 11\n3. James gives 1 point to Grace: James = 20 - 1 = 19, Grace = 11 + 1 = 12\n4. Grace gives 1 point to James: Grace = 12 - 1 = 11, James = 19 + 1 = 20\n5. Grace loses 2 points: Grace = 11 - 2 = 9\n6. Grace gains 2 points: Grace = 9 + 2 = 11\n\nAfter all operations, James has 20 points.\n\n20"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:deepseek-v3",
+      "k_operations": 6,
+      "n_ops_actual": 6,
+      "correct_answer": 8,
+      "predicted": 8,
+      "accurate": 1,
+      "query_entity": "Henry",
+      "initial_state": {
+        "Iris": 12,
+        "Henry": 8,
+        "Alice": 19
+      },
+      "operations": [
+        "Henry gains 9 points.",
+        "Henry loses 9 points.",
+        "Alice gives 2 points to Henry.",
+        "Henry gives 2 points to Alice.",
+        "Alice gives 3 points to Henry.",
+        "Henry gives 3 points to Alice."
+      ],
+      "prompt_length_chars": 497,
+      "raw_response": "Let's track Henry's points step by step:\n\nInitial: Henry has 8 points.\n\n1. Henry gains 9 points: 8 + 9 = 17\n2. Henry loses 9 points: 17 - 9 = 8\n3. Alice gives 2 points to Henry: 8 + 2 = 10\n4. Henry gives 2 points to Alice: 10 - 2 = 8\n5. Alice gives 3 points to Henry: 8 + 3 = 11\n6. Henry gives 3 points to Alice: 11 - 3 = 8\n\nFinal number: 8"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:deepseek-v3",
+      "k_operations": 6,
+      "n_ops_actual": 6,
+      "correct_answer": 19,
+      "predicted": 19,
+      "accurate": 1,
+      "query_entity": "Carol",
+      "initial_state": {
+        "Carol": 19,
+        "Leo": 13,
+        "Henry": 12
+      },
+      "operations": [
+        "Leo gives 3 points to Henry.",
+        "Henry gives 3 points to Leo.",
+        "Leo gains 8 points.",
+        "Leo loses 8 points.",
+        "Henry gains 5 points.",
+        "Henry loses 5 points."
+      ],
+      "prompt_length_chars": 471,
+      "raw_response": "19"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:deepseek-v3",
+      "k_operations": 6,
+      "n_ops_actual": 6,
+      "correct_answer": 9,
+      "predicted": 9,
+      "accurate": 1,
+      "query_entity": "Frank",
+      "initial_state": {
+        "Emma": 7,
+        "Frank": 9,
+        "Mia": 9
+      },
+      "operations": [
+        "Frank gains 3 points.",
+        "Frank loses 3 points.",
+        "Emma gives 2 points to Mia.",
+        "Mia gives 2 points to Emma.",
+        "Frank loses 5 points.",
+        "Frank gains 5 points."
+      ],
+      "prompt_length_chars": 469,
+      "raw_response": "Let's track Frank's points step by step:\n\nInitial: Frank has 9 points.\n\n1. Frank gains 3 points: 9 + 3 = 12\n2. Frank loses 3 points: 12 - 3 = 9\n5. Frank loses 5 points: 9 - 5 = 4\n6. Frank gains 5 points: 4 + 5 = 9\n\nFinal number: 9"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:deepseek-v3",
+      "k_operations": 6,
+      "n_ops_actual": 6,
+      "correct_answer": 5,
+      "predicted": 5,
+      "accurate": 1,
+      "query_entity": "David",
+      "initial_state": {
+        "Grace": 18,
+        "Alice": 17,
+        "David": 5
+      },
+      "operations": [
+        "Alice gives 1 points to David.",
+        "David gives 1 points to Alice.",
+        "Alice loses 4 points.",
+        "Alice gains 4 points.",
+        "David loses 5 points.",
+        "David gains 5 points."
+      ],
+      "prompt_length_chars": 480,
+      "raw_response": "5"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:deepseek-v3",
+      "k_operations": 6,
+      "n_ops_actual": 6,
+      "correct_answer": 20,
+      "predicted": 17,
+      "accurate": 0,
+      "query_entity": "Noah",
+      "initial_state": {
+        "David": 13,
+        "Henry": 18,
+        "Noah": 20
+      },
+      "operations": [
+        "Henry gains 6 points.",
+        "Henry loses 6 points.",
+        "Noah gives 3 points to Henry.",
+        "Henry gives 3 points to Noah.",
+        "Henry gains 3 points.",
+        "Henry loses 3 points."
+      ],
+      "prompt_length_chars": 477,
+      "raw_response": "17"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:deepseek-v3",
+      "k_operations": 6,
+      "n_ops_actual": 6,
+      "correct_answer": 7,
+      "predicted": 7,
+      "accurate": 1,
+      "query_entity": "Alice",
+      "initial_state": {
+        "Iris": 5,
+        "Alice": 7,
+        "Grace": 18
+      },
+      "operations": [
+        "Alice gains 3 points.",
+        "Alice loses 3 points.",
+        "Alice gains 7 points.",
+        "Alice loses 7 points.",
+        "Iris loses 4 points.",
+        "Iris gains 4 points."
+      ],
+      "prompt_length_chars": 458,
+      "raw_response": "Let's track Alice's points step by step:\n\nInitial state: Alice has 7 points.\n\n1. Alice gains 3 points: 7 + 3 = 10\n2. Alice loses 3 points: 10 - 3 = 7\n3. Alice gains 7 points: 7 + 7 = 14\n4. Alice loses 7 points: 14 - 7 = 7\n\nThe final number of points Alice has is 7. \n\n7"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:deepseek-v3",
+      "k_operations": 6,
+      "n_ops_actual": 6,
+      "correct_answer": 13,
+      "predicted": 13,
+      "accurate": 1,
+      "query_entity": "Grace",
+      "initial_state": {
+        "Frank": 13,
+        "Mia": 18,
+        "Grace": 13
+      },
+      "operations": [
+        "Mia gains 1 points.",
+        "Mia loses 1 points.",
+        "Grace gives 2 points to Frank.",
+        "Frank gives 2 points to Grace.",
+        "Grace gains 2 points.",
+        "Grace loses 2 points."
+      ],
+      "prompt_length_chars": 475,
+      "raw_response": "Alright, let's tackle this problem step by step. I'll start by listing out the initial points for each person and then go through each operation one by one to see how the points change.\n\n### Initial Points:\n- Frank: 13 points\n- Mia: 18 points\n- Grace: 13 points\n\nSo initially:\n- Frank: 13 points\n- Mia: 18 points\n- Grace: 13 points\n\nNow, let's go through each operation in order:\n\n### Operations to Apply in Order:\n\n1. **Mia gains 1 points.**\n   - Mia's points increase by 1.\n   - Previous Mia points: 18\n   - New Mia points: 18 points.\n   - So, Mia was 18 points.\n   - Previous Mia points: 18 points.\n   - Mia points.\n   - Previous Mia points.\n   - So, Mia's points: 18 points.\n   - Previous Mia points.\n   - Mia's points.\n   - Previous Mia's points.\n   - So, Mia's points.\n   - Previous Mia points.\n   - Previous Mia points.\n   - Previous Mia points.\n   - Previous Mia points.\n   - So, Mia's points.\n   - Previous Mia points.\n\n   Wait, this seems a bit repetitive. Let me simplify:\n\n   - Mia's current points: 18 points.\n   - Previous Mia points.\n\n   So, Mia points.\n\n   Okay, so Mia's points.\n\n   So, Mia's points.\n\n   So Mia's points.\n\n   So, Mia's points.\n\n   So, Mia's points.\n\n   So, Mia's points.\n\n   So, Mia's points.\n\n   So, Mia's points.\n\n   So, Mia's points.\n\n   So, Mia's points.\n\n   So, Mia's points.\n\n   So, Mia's points.\n\n   So, Mia's points.\n\n   So, Mia's points.\n\n   So, Mia's points.\n\n   So, Mia's points.\n\n   So, Mia's points.\n\n   So, Mia's points.\n\n   So, Mia's points.\n\n   So, Mia's points.\n\n   So, Mia's points.\n\n   So, Mia's points.\n\n   So, Mia's points.\n\n   So, Mia's points.\n\n   So, Mia's points.\n\n   So, Mia's points.\n\n   So, Mia's points.\n\n   So, Mia's points.\n\n   So, Mia's points.\n\n   So, Mia's points.\n\n   So, Mia's points.\n\n   So, Mia's points.\n\n   So, Mia's points.\n\n   So, Mia's points.\n\n   So, Mia's points.\n\n   So, Mia's points.\n\n   So, Mia's points.\n\n   So, Mia's points.\n\n   So, Mia's points.\n\n   So, Mia's points.\n\n   So, Mia's points.\n\n   So, Mia's points.\n\n   So, Mia's points.\n\n   So, Mia's points.\n\n   So, Mia's points.\n\n   So, Mia's points.\n\n   So, Mia's points.\n\n   So, Mia's points.\n\n   So, Mia's points.\n\n   So, Mia's points.\n\n   So, Mia's points.\n\n   So, Mia's points.\n\n   So, Mia's points.\n\n   So, Mia's points.\n\n   So, Mia's points.\n\n   So, Mia's points.\n\n   So, Mia's points.\n\n   So, Mia's points.\n\n   So, Mia's points.\n\n   So, Mia's points.\n\n   So, Mia's points.\n\n   So, Mia's points.\n\n   So, Mia's points.\n\n   So, Mia's points.\n\n   So, Mia's points.\n\n   So, Mia's points.\n\n   So, Mia's points.\n\n   So, Mia's points.\n\n   So, Mia's points.\n\n   So, Mia's points.\n\n   So, Mia's points.\n\n   So, Mia's points.\n\n   So, so, Mia's points.\n\n   So, Mia's points.\n\n   So, Mia's points.\n\n   So, Mia's points.\n\n   So, Mia's points.\n\n   So, Mia's points.\n\n   So, Mia's points.\n\n   So, Mia's points.\n\n   So, Mia's points.\n\n   So, Mia's points.\n\n   So, Mia's points.\n\n   So, Mia's points.\n\n   So, Mia's points.\n\n   So, Mia's points.\n\n   So, Mia's points.\n\n   So, Mia's points.\n\n   So, Mia's points.\n\n   So, Mia's points.\n\n   So, Mia's points.\n\n   So, Mia's points.\n\n   So, Mia's points.\n\n   So, Mia's points.\n\n   So, Mia's points.\n\n   So, Mia's points.\n\n   So, Mia's points.\n\n   So, Mia's points.\n\n   So, Mia's points.\n\n   So, Mia's points.\n\n   So, Mia's points.\n\n   So, Mia's points.\n\n   So, Mia's points.\n\n   So, Mia's points.\n\n   So, Mia"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:deepseek-v3",
+      "k_operations": 6,
+      "n_ops_actual": 6,
+      "correct_answer": 11,
+      "predicted": 12,
+      "accurate": 0,
+      "query_entity": "Mia",
+      "initial_state": {
+        "Alice": 12,
+        "Mia": 11,
+        "Noah": 5
+      },
+      "operations": [
+        "Alice gives 1 points to Noah.",
+        "Noah gives 1 points to Alice.",
+        "Noah loses 1 points.",
+        "Noah gains 1 points.",
+        "Alice gives 3 points to Mia.",
+        "Mia gives 3 points to Alice."
+      ],
+      "prompt_length_chars": 485,
+      "raw_response": "Let's track the points step by step based on the operations:\n\nInitial state:\n- Alice: 12\n- Mia: 11\n- Noah: 5\n\n1. Alice gives 1 point to Noah:\n   - Alice: 12 - 1 = 11\n   - Noah: 5 + 1 = 6\n   - Mia: 11\n\n2. Noah gives 1 point to Alice:\n   - Noah: 6 - 1 = 5\n   - Alice: 11 + 1 = 12\n   - Mia: 11\n\n3. Noah loses 1 point:\n   - Noah: 5 - 1 = 4\n   - Alice: 12\n   - Mia: 11\n\n4. Noah gains 1 point:\n   - Noah: 4 + 1 = 5\n   - Alice: 12\n   - Mia: 11\n\n5. Alice gives 3 points to Mia:\n   - Alice: 12 - 3 = 9\n   - Mia: 11 + 3 = 14\n   - Noah: 5\n\n6. Mia gives 3 points to Alice:\n   - Mia: 14 - 3 = 11\n   - Alice: 9 + 3 = 12\n   - Noah: 5\n\nFinal points for Mia: 11"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:deepseek-v3",
+      "k_operations": 6,
+      "n_ops_actual": 6,
+      "correct_answer": 8,
+      "predicted": 8,
+      "accurate": 1,
+      "query_entity": "Mia",
+      "initial_state": {
+        "Mia": 8,
+        "Frank": 10,
+        "Carol": 14
+      },
+      "operations": [
+        "Carol gains 1 points.",
+        "Carol loses 1 points.",
+        "Carol loses 4 points.",
+        "Carol gains 4 points.",
+        "Carol loses 2 points.",
+        "Carol gains 2 points."
+      ],
+      "prompt_length_chars": 458,
+      "raw_response": "Let's track the points for each person based on the operations provided. The operations only affect Carol's points, so Mia's points remain unchanged.\n\nInitial state:\n- Mia: 8 points\n- Frank: 10 points\n- Carol: 14 points\n\nOperations:\n1. Carol gains 1 point: 14 + 1 = 15\n2. Carol loses 1 point: 15 - 1 = 14\n3. Carol loses 4 points: 14 - 4 = 10\n4. Carol gains 4 points: 10 + 4 = 14\n5. Carol loses 2 points: 14 - 2 = 12\n6. Carol gains 2 points: 12 + 2 = 14\n\nAfter all operations:\n- Mia: 8 points (unchanged)\n- Frank: 10 points (unchanged)\n- Carol: 14 points\n\nThe final number of points Mia has is: 8"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:deepseek-v3",
+      "k_operations": 6,
+      "n_ops_actual": 6,
+      "correct_answer": 12,
+      "predicted": 12,
+      "accurate": 1,
+      "query_entity": "James",
+      "initial_state": {
+        "James": 12,
+        "Leo": 8,
+        "Kate": 14
+      },
+      "operations": [
+        "Kate gives 3 points to James.",
+        "James gives 3 points to Kate.",
+        "Leo gains 9 points.",
+        "Leo loses 9 points.",
+        "Kate loses 3 points.",
+        "Kate gains 3 points."
+      ],
+      "prompt_length_chars": 469,
+      "raw_response": "Let's track the points step by step:\n\nInitial:\n- James: 12\n- Leo: 8\n- Kate: 14\n\n1. Kate gives 3 to James:\n   - James: 12 + 3 = 15\n   - Kate: 14 - 3 = 11\n\n2. James gives 3 to Kate:\n   - James: 15 - 3 = 12\n   - Kate: 11 + 3 = 14\n\n3. Leo gains 9:\n   - Leo: 8 + 9 = 17\n\n4. Leo loses 9:\n   - Leo: 17 - 9 = 8\n\n5. Kate loses 3:\n   - Kate: 14 - 3 = 11\n\n6. Kate gains 3:\n   - Kate: 11 + 3 = 14\n\nJames' points after all operations: 12\n\n12"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:deepseek-v3",
+      "k_operations": 6,
+      "n_ops_actual": 6,
+      "correct_answer": 20,
+      "predicted": 20,
+      "accurate": 1,
+      "query_entity": "Frank",
+      "initial_state": {
+        "Iris": 5,
+        "Kate": 18,
+        "Frank": 20
+      },
+      "operations": [
+        "Kate gains 6 points.",
+        "Kate loses 6 points.",
+        "Kate gives 2 points to Iris.",
+        "Iris gives 2 points to Kate.",
+        "Frank gains 9 points.",
+        "Frank loses 9 points."
+      ],
+      "prompt_length_chars": 472,
+      "raw_response": "20"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:deepseek-v3",
+      "k_operations": 6,
+      "n_ops_actual": 6,
+      "correct_answer": 18,
+      "predicted": 20,
+      "accurate": 0,
+      "query_entity": "Iris",
+      "initial_state": {
+        "Emma": 20,
+        "James": 19,
+        "Iris": 18
+      },
+      "operations": [
+        "Iris gives 2 points to James.",
+        "James gives 2 points to Iris.",
+        "Emma gains 5 points.",
+        "Emma loses 5 points.",
+        "Emma loses 4 points.",
+        "Emma gains 4 points."
+      ],
+      "prompt_length_chars": 472,
+      "raw_response": "Let's track the points step by step:\n\nInitial points:\n- Emma: 20\n- James: 19\n- Iris: 18\n\nOperations:\n1. Iris gives 2 points to James:\n   - Iris: 18 - 2 = 16\n   - James: 19 + 2 = 21\n\n2. James gives 2 points to Iris:\n   - James: 21 - 2 = 19\n   - Iris: 16 + 2 = 18\n\n3. Emma gains 5 points:\n   - Emma: 20 + 5 = 25\n\n4. Emma loses 5 points:\n   - Emma: 25 - 5 = 20\n\n5. Emma loses 4 points:\n   - Emma: 20 - 4 = 16\n\n6. Emma gains 4 points:\n   - Emma: 16 + 4 = 20\n\nAfter all operations, Iris has 18 points.\n\n18"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:deepseek-v3",
+      "k_operations": 6,
+      "n_ops_actual": 6,
+      "correct_answer": 20,
+      "predicted": 20,
+      "accurate": 1,
+      "query_entity": "Grace",
+      "initial_state": {
+        "James": 15,
+        "Kate": 5,
+        "Grace": 20
+      },
+      "operations": [
+        "James loses 4 points.",
+        "James gains 4 points.",
+        "Kate gains 5 points.",
+        "Kate loses 5 points.",
+        "Kate loses 5 points.",
+        "Kate gains 5 points."
+      ],
+      "prompt_length_chars": 457,
+      "raw_response": "20"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:deepseek-v3",
+      "k_operations": 6,
+      "n_ops_actual": 6,
+      "correct_answer": 11,
+      "predicted": 11,
+      "accurate": 1,
+      "query_entity": "Emma",
+      "initial_state": {
+        "Emma": 11,
+        "Iris": 7,
+        "Alice": 12
+      },
+      "operations": [
+        "Iris gives 3 points to Alice.",
+        "Alice gives 3 points to Iris.",
+        "Alice gains 8 points.",
+        "Alice loses 8 points.",
+        "Alice gives 2 points to Iris.",
+        "Iris gives 2 points to Alice."
+      ],
+      "prompt_length_chars": 491,
+      "raw_response": "Let's track the points step by step:\n\nInitial state:\n- Emma: 11\n- Iris: 7\n- Alice: 12\n\nOperations:\n1. Iris gives 3 points to Alice:\n   - Iris: 7 - 3 = 4\n   - Alice: 12 + 3 = 15\n2. Alice gives 3 points to Iris:\n   - Alice: 15 - 3 = 12\n   - Iris: 4 + 3 = 7\n3. Alice gains 8 points:\n   - Alice: 12 + 8 = 20\n4. Alice loses 8 points:\n   - Alice: 20 - 8 = 12\n5. Alice gives 2 points to Iris:\n   - Alice: 12 - 2 = 10\n   - Iris: 7 + 2 = 9\n6. Iris gives 2 points to Alice:\n   - Iris: 9 - 2 = 7\n   - Alice: 10 + 2 = 12\n\nEmma's points never changed. Final points:\n- Emma: 11\n\nAnswer: 11"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:deepseek-v3",
+      "k_operations": 6,
+      "n_ops_actual": 6,
+      "correct_answer": 14,
+      "predicted": 12,
+      "accurate": 0,
+      "query_entity": "David",
+      "initial_state": {
+        "Bob": 17,
+        "Emma": 12,
+        "David": 14
+      },
+      "operations": [
+        "David gives 2 points to Emma.",
+        "Emma gives 2 points to David.",
+        "David gives 2 points to Emma.",
+        "Emma gives 2 points to David.",
+        "David gives 2 points to Emma.",
+        "Emma gives 2 points to David."
+      ],
+      "prompt_length_chars": 508,
+      "raw_response": "12"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:deepseek-v3",
+      "k_operations": 8,
+      "n_ops_actual": 8,
+      "correct_answer": 8,
+      "predicted": 8,
+      "accurate": 1,
+      "query_entity": "Mia",
+      "initial_state": {
+        "Henry": 13,
+        "Emma": 12,
+        "Mia": 8
+      },
+      "operations": [
+        "Henry gives 1 points to Emma.",
+        "Emma gives 1 points to Henry.",
+        "Mia gives 1 points to Henry.",
+        "Henry gives 1 points to Mia.",
+        "Mia gains 8 points.",
+        "Mia loses 8 points.",
+        "Mia loses 5 points.",
+        "Mia gains 5 points."
+      ],
+      "prompt_length_chars": 533,
+      "raw_response": "Let's track Mia's points step by step:\n\nInitial: Mia has 8 points.\n\nAfter operation 3: Mia gives 1 to Henry \u2192 8 - 1 = 7\nAfter operation 4: Henry gives 1 to Mia \u2192 7 + 1 = 8\nAfter operation 5: Mia gains 8 \u2192 8 + 8 = 16\nAfter operation 6: Mia loses 8 \u2192 16 - 8 = 8\nAfter operation 7: Mia loses 5 \u2192 8 - 5 = 3\nAfter operation 8: Mia gains 5 \u2192 3 + 5 = 8\n\nFinal answer: 8"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:deepseek-v3",
+      "k_operations": 8,
+      "n_ops_actual": 8,
+      "correct_answer": 12,
+      "predicted": 12,
+      "accurate": 1,
+      "query_entity": "Bob",
+      "initial_state": {
+        "James": 11,
+        "Emma": 14,
+        "Bob": 12
+      },
+      "operations": [
+        "James loses 3 points.",
+        "James gains 3 points.",
+        "Bob gains 9 points.",
+        "Bob loses 9 points.",
+        "Emma gains 1 points.",
+        "Emma loses 1 points.",
+        "Bob gains 5 points.",
+        "Bob loses 5 points."
+      ],
+      "prompt_length_chars": 502,
+      "raw_response": "12"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:deepseek-v3",
+      "k_operations": 8,
+      "n_ops_actual": 8,
+      "correct_answer": 8,
+      "predicted": 8,
+      "accurate": 1,
+      "query_entity": "Carol",
+      "initial_state": {
+        "Carol": 8,
+        "Kate": 5,
+        "Henry": 14
+      },
+      "operations": [
+        "Kate loses 4 points.",
+        "Kate gains 4 points.",
+        "Carol loses 1 points.",
+        "Carol gains 1 points.",
+        "Kate loses 1 points.",
+        "Kate gains 1 points.",
+        "Kate gains 8 points.",
+        "Kate loses 8 points."
+      ],
+      "prompt_length_chars": 508,
+      "raw_response": "Let's track Carol's points step by step:\n\nInitial: Carol has 8 points.\n\nOperation 3: Carol loses 1 point \u2192 8 - 1 = 7\nOperation 4: Carol gains 1 point \u2192 7 + 1 = 8\n\nNo other operations affect Carol's points.\n\nFinal number: 8"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:deepseek-v3",
+      "k_operations": 8,
+      "n_ops_actual": 8,
+      "correct_answer": 9,
+      "predicted": 9,
+      "accurate": 1,
+      "query_entity": "Kate",
+      "initial_state": {
+        "James": 6,
+        "Kate": 9,
+        "Mia": 9
+      },
+      "operations": [
+        "Kate gives 1 points to James.",
+        "James gives 1 points to Kate.",
+        "Mia gains 7 points.",
+        "Mia loses 7 points.",
+        "Mia gives 3 points to James.",
+        "James gives 3 points to Mia.",
+        "Kate loses 4 points.",
+        "Kate gains 4 points."
+      ],
+      "prompt_length_chars": 534,
+      "raw_response": "9"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:deepseek-v3",
+      "k_operations": 8,
+      "n_ops_actual": 8,
+      "correct_answer": 6,
+      "predicted": 6,
+      "accurate": 1,
+      "query_entity": "James",
+      "initial_state": {
+        "Noah": 14,
+        "James": 6,
+        "Grace": 8
+      },
+      "operations": [
+        "Grace gains 4 points.",
+        "Grace loses 4 points.",
+        "Grace loses 1 points.",
+        "Grace gains 1 points.",
+        "Noah gains 3 points.",
+        "Noah loses 3 points.",
+        "Noah gives 1 points to Grace.",
+        "Grace gives 1 points to Noah."
+      ],
+      "prompt_length_chars": 528,
+      "raw_response": "Let's track the points step by step, focusing only on James since the operations only involve Noah and Grace.\n\nInitial state:\n- James: 6 points\n\nOperations (only Noah and Grace are involved, so James' points remain unchanged):\n1. Grace gains 4 points. (James: 6)\n2. Grace loses 4 points. (James: 6)\n3. Grace loses 1 point. (James: 6)\n4. Grace gains 1 point. (James: 6)\n5. Noah gains 3 points. (James: 6)\n6. Noah loses 3 points. (James: 6)\n7. Noah gives 1 point to Grace. (James: 6)\n8. Grace gives 1 point to Noah. (James: 6)\n\nSince none of the operations affect James' points, his points remain the same.\n\nFinal answer: 6"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:deepseek-v3",
+      "k_operations": 8,
+      "n_ops_actual": 8,
+      "correct_answer": 6,
+      "predicted": 6,
+      "accurate": 1,
+      "query_entity": "James",
+      "initial_state": {
+        "Henry": 20,
+        "Leo": 14,
+        "James": 6
+      },
+      "operations": [
+        "Leo gains 5 points.",
+        "Leo loses 5 points.",
+        "Leo gives 3 points to Henry.",
+        "Henry gives 3 points to Leo.",
+        "Leo gains 10 points.",
+        "Leo loses 10 points.",
+        "Henry gives 1 points to Leo.",
+        "Leo gives 1 points to Henry."
+      ],
+      "prompt_length_chars": 536,
+      "raw_response": "6"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:deepseek-v3",
+      "k_operations": 8,
+      "n_ops_actual": 8,
+      "correct_answer": 7,
+      "predicted": 13,
+      "accurate": 0,
+      "query_entity": "Carol",
+      "initial_state": {
+        "David": 13,
+        "Kate": 9,
+        "Carol": 7
+      },
+      "operations": [
+        "David gains 5 points.",
+        "David loses 5 points.",
+        "Carol gives 2 points to Kate.",
+        "Kate gives 2 points to Carol.",
+        "Kate gains 5 points.",
+        "Kate loses 5 points.",
+        "Kate gives 3 points to Carol.",
+        "Carol gives 3 points to Kate."
+      ],
+      "prompt_length_chars": 544,
+      "raw_response": "Let's track the points step by step:\n\nInitial state:\n- David: 13\n- Kate: 9\n- Carol: 7\n\nOperations:\n1. David gains 5 points.\n   - David: 13 + 5 = 18\n   - Kate: 9\n   - Carol: 7\n\n2. David loses 5 points.\n   - David: 18 - 5 = 13\n   - Kate: 9\n   - Carol: 7\n\n3. Carol gives 2 points to Kate.\n   - Carol: 7 - 2 = 5\n   - Kate: 9 + 2 = 11\n   - David: 13\n\n4. Kate gives 2 points to Carol.\n   - Kate: 11 - 2 = 9\n   - Carol: 5 + 2 = 7\n   - David: 13\n\n5. Kate gains 5 points.\n   - Kate: 9 + 5 = 14\n   - Carol: 7\n   - David: 13\n\n6. Kate loses 5 points.\n   - Kate: 14 - 5 = 9\n   - Carol: 7\n   - David: 13\n\n7. Kate gives 3 points to Carol.\n   - Kate: 9 - 3 = 6\n   - Carol: 7 + 3 = 10\n   - David: 13\n\n8. Carol gives 3 points to Kate.\n   - Carol: 10 - 3 = 7\n   - Kate: 6 + 3 = 9\n   - David: 13\n\nFinal points for Carol: 7"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:deepseek-v3",
+      "k_operations": 8,
+      "n_ops_actual": 8,
+      "correct_answer": 15,
+      "predicted": 6,
+      "accurate": 0,
+      "query_entity": "Bob",
+      "initial_state": {
+        "Henry": 6,
+        "Noah": 18,
+        "Bob": 15
+      },
+      "operations": [
+        "Noah gives 1 points to Henry.",
+        "Henry gives 1 points to Noah.",
+        "Bob gains 10 points.",
+        "Bob loses 10 points.",
+        "Henry gives 3 points to Noah.",
+        "Noah gives 3 points to Henry.",
+        "Henry gains 8 points.",
+        "Henry loses 8 points."
+      ],
+      "prompt_length_chars": 541,
+      "raw_response": "Let's track the points step by step based on the operations:\n\nInitial state:\n- Henry: 6\n- Noah: 18\n- Bob: 15\n\nOperations:\n1. Noah gives 1 to Henry:\n   - Henry: 6 + 1 = 7\n   - Noah: 18 - 1 = 17\n   - Bob: 15\n\n2. Henry gives 1 to Noah:\n   - Henry: 7 - 1 = 6\n   - Noah: 17 + 1 = 18\n   - Bob: 15\n\n3. Bob gains 10 points:\n   - Henry: 6\n   - Noah: 18\n   - Bob: 15 + 10 = 25\n\n4. Bob loses 10 points:\n   - Henry: 6\n   - Noah: 18\n   - Bob: 25 - 10 = 15\n\n5. Henry gives 3 to Noah:\n   - Henry: 6 - 3 = 3\n   - Noah: 18 + 3 = 21\n   - Bob: 15\n\n6. Noah gives 3 to Henry:\n   - Henry: 3 + 3 = 6\n   - Noah: 21 - 3 = 18\n   - Bob: 15\n\n7. Henry gains 8 points:\n   - Henry: 6 + 8 = 14\n   - Noah: 18\n   - Bob: 15\n\n8. Henry loses 8 points:\n   - Henry: 14 - 8 = 6\n   - Noah: 18\n   - Bob: 15\n\nFinal points for Bob: 15"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:deepseek-v3",
+      "k_operations": 8,
+      "n_ops_actual": 8,
+      "correct_answer": 18,
+      "predicted": 18,
+      "accurate": 1,
+      "query_entity": "Henry",
+      "initial_state": {
+        "Kate": 10,
+        "Henry": 18,
+        "Emma": 20
+      },
+      "operations": [
+        "Henry gains 6 points.",
+        "Henry loses 6 points.",
+        "Henry loses 3 points.",
+        "Henry gains 3 points.",
+        "Kate gives 2 points to Emma.",
+        "Emma gives 2 points to Kate.",
+        "Emma loses 4 points.",
+        "Emma gains 4 points."
+      ],
+      "prompt_length_chars": 527,
+      "raw_response": "Let's track Henry's points step by step:\n\nInitial: Henry has 18 points.\n\n1. +6 \u2192 18 + 6 = 24\n2. -6 \u2192 24 - 6 = 18\n3. -3 \u2192 18 - 3 = 15\n4. +3 \u2192 15 + 3 = 18\n\nThe operations involving Kate and Emma do not affect Henry's points.\n\nFinal number: 18"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:deepseek-v3",
+      "k_operations": 8,
+      "n_ops_actual": 8,
+      "correct_answer": 6,
+      "predicted": 6,
+      "accurate": 1,
+      "query_entity": "Kate",
+      "initial_state": {
+        "Kate": 6,
+        "Grace": 19,
+        "Iris": 7
+      },
+      "operations": [
+        "Grace loses 3 points.",
+        "Grace gains 3 points.",
+        "Grace gains 9 points.",
+        "Grace loses 9 points.",
+        "Iris gains 9 points.",
+        "Iris loses 9 points.",
+        "Grace loses 1 points.",
+        "Grace gains 1 points."
+      ],
+      "prompt_length_chars": 510,
+      "raw_response": "6"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:deepseek-v3",
+      "k_operations": 8,
+      "n_ops_actual": 8,
+      "correct_answer": 20,
+      "predicted": 20,
+      "accurate": 1,
+      "query_entity": "Iris",
+      "initial_state": {
+        "Iris": 20,
+        "Frank": 19,
+        "James": 6
+      },
+      "operations": [
+        "Frank gains 9 points.",
+        "Frank loses 9 points.",
+        "Frank gains 8 points.",
+        "Frank loses 8 points.",
+        "Frank gives 1 points to Iris.",
+        "Iris gives 1 points to Frank.",
+        "James gives 3 points to Iris.",
+        "Iris gives 3 points to James."
+      ],
+      "prompt_length_chars": 546,
+      "raw_response": "Let's track the points step by step:\n\nInitial:\n- Iris: 20\n- Frank: 19\n- James: 6\n\nOperations:\n1. Frank gains 9: Frank = 19 + 9 = 28\n2. Frank loses 9: Frank = 28 - 9 = 19\n3. Frank gains 8: Frank = 19 + 8 = 27\n4. Frank loses 8: Frank = 27 - 8 = 19\n5. Frank gives 1 to Iris: Frank = 19 - 1 = 18, Iris = 20 + 1 = 21\n6. Iris gives 1 to Frank: Iris = 21 - 1 = 20, Frank = 18 + 1 = 19\n7. James gives 3 to Iris: James = 6 - 3 = 3, Iris = 20 + 3 = 23\n8. Iris gives 3 to James: Iris = 23 - 3 = 20, James = 3 + 3 = 6\n\nFinal points for Iris: 20"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:deepseek-v3",
+      "k_operations": 8,
+      "n_ops_actual": 8,
+      "correct_answer": 18,
+      "predicted": 18,
+      "accurate": 1,
+      "query_entity": "Emma",
+      "initial_state": {
+        "Emma": 18,
+        "Iris": 7,
+        "Alice": 12
+      },
+      "operations": [
+        "Iris gains 2 points.",
+        "Iris loses 2 points.",
+        "Emma gives 3 points to Iris.",
+        "Iris gives 3 points to Emma.",
+        "Alice loses 3 points.",
+        "Alice gains 3 points.",
+        "Iris loses 4 points.",
+        "Iris gains 4 points."
+      ],
+      "prompt_length_chars": 523,
+      "raw_response": "18"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:deepseek-v3",
+      "k_operations": 8,
+      "n_ops_actual": 8,
+      "correct_answer": 11,
+      "predicted": 11,
+      "accurate": 1,
+      "query_entity": "Iris",
+      "initial_state": {
+        "Henry": 17,
+        "Iris": 11,
+        "Carol": 9
+      },
+      "operations": [
+        "Iris gains 7 points.",
+        "Iris loses 7 points.",
+        "Carol loses 3 points.",
+        "Carol gains 3 points.",
+        "Iris gains 5 points.",
+        "Iris loses 5 points.",
+        "Carol gives 1 points to Iris.",
+        "Iris gives 1 points to Carol."
+      ],
+      "prompt_length_chars": 526,
+      "raw_response": "Let's track Iris's points step by step:\n\nInitial: Iris has 11 points.\n\n1. Iris gains 7 points: 11 + 7 = 18\n2. Iris loses 7 points: 18 - 7 = 11\n5. Iris gains 5 points: 11 + 5 = 16\n6. Iris loses 5 points: 16 - 5 = 11\n7. Carol gives 1 point to Iris: 11 + 1 = 12\n8. Iris gives 1 point to Carol: 12 - 1 = 11\n\nFinal points for Iris: 11"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:deepseek-v3",
+      "k_operations": 8,
+      "n_ops_actual": 8,
+      "correct_answer": 19,
+      "predicted": 15,
+      "accurate": 0,
+      "query_entity": "Frank",
+      "initial_state": {
+        "Iris": 15,
+        "Henry": 17,
+        "Frank": 19
+      },
+      "operations": [
+        "Iris loses 2 points.",
+        "Iris gains 2 points.",
+        "Henry gives 2 points to Iris.",
+        "Iris gives 2 points to Henry.",
+        "Henry gains 8 points.",
+        "Henry loses 8 points.",
+        "Henry gives 3 points to Frank.",
+        "Frank gives 3 points to Henry."
+      ],
+      "prompt_length_chars": 548,
+      "raw_response": "Let's track the points step by step:\n\nInitial state:\n- Iris: 15\n- Henry: 17\n- Frank: 19\n\n1. Iris loses 2 points: Iris = 13\n2. Iris gains 2 points: Iris = 15\n3. Henry gives 2 points to Iris: Henry = 15, Iris = 17\n4. Iris gives 2 points to Henry: Iris = 15, Henry = 17\n5. Henry gains 8 points: Henry = 25\n6. Henry loses 8 points: Henry = 17\n7. Henry gives 3 points to Frank: Henry = 14, Frank = 22\n8. Frank gives 3 points to Henry: Frank = 19, Henry = 17\n\nFinal points for Frank: 19"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:deepseek-v3",
+      "k_operations": 8,
+      "n_ops_actual": 8,
+      "correct_answer": 15,
+      "predicted": 15,
+      "accurate": 1,
+      "query_entity": "Henry",
+      "initial_state": {
+        "Carol": 9,
+        "Henry": 15,
+        "Alice": 8
+      },
+      "operations": [
+        "Carol loses 5 points.",
+        "Carol gains 5 points.",
+        "Carol loses 2 points.",
+        "Carol gains 2 points.",
+        "Alice loses 2 points.",
+        "Alice gains 2 points.",
+        "Henry gains 5 points.",
+        "Henry loses 5 points."
+      ],
+      "prompt_length_chars": 515,
+      "raw_response": "15"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:deepseek-v3",
+      "k_operations": 8,
+      "n_ops_actual": 8,
+      "correct_answer": 17,
+      "predicted": 17,
+      "accurate": 1,
+      "query_entity": "Grace",
+      "initial_state": {
+        "James": 7,
+        "Leo": 15,
+        "Grace": 17
+      },
+      "operations": [
+        "Grace loses 4 points.",
+        "Grace gains 4 points.",
+        "James gives 1 points to Grace.",
+        "Grace gives 1 points to James.",
+        "Grace gives 1 points to Leo.",
+        "Leo gives 1 points to Grace.",
+        "James gives 1 points to Leo.",
+        "Leo gives 1 points to James."
+      ],
+      "prompt_length_chars": 560,
+      "raw_response": "Let's track Grace's points step by step through each operation:\n\nInitial Grace points: 17\n\n1. Grace loses 4 points: 17 - 4 = 13\n2. Grace gains 4 points: 13 + 4 = 17\n3. James gives 1 point to Grace: 17 + 1 = 18\n4. Grace gives 1 point to James: 18 - 1 = 17\n5. Grace gives 1 point to Leo: 17 - 1 = 16\n6. Leo gives 1 point to Grace: 16 + 1 = 17\n7. James gives 1 point to Leo: Grace's points remain 17 (no change)\n8. Leo gives 1 point to James: Grace's points remain 17 (no change)\n\nFinal Grace points: 17"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:deepseek-v3",
+      "k_operations": 8,
+      "n_ops_actual": 8,
+      "correct_answer": 10,
+      "predicted": 10,
+      "accurate": 1,
+      "query_entity": "Leo",
+      "initial_state": {
+        "Leo": 10,
+        "Bob": 14,
+        "Henry": 5
+      },
+      "operations": [
+        "Bob gains 1 points.",
+        "Bob loses 1 points.",
+        "Bob loses 3 points.",
+        "Bob gains 3 points.",
+        "Leo loses 2 points.",
+        "Leo gains 2 points.",
+        "Bob gives 1 points to Leo.",
+        "Leo gives 1 points to Bob."
+      ],
+      "prompt_length_chars": 508,
+      "raw_response": "Let's track the points step by step:\n\nInitial points:\n- Leo: 10\n- Bob: 14\n- Henry: 5\n\nOperations:\n1. Bob gains 1:\n   - Bob: 14 + 1 = 15\n2. Bob loses 1:\n   - Bob: 15 - 1 = 14\n3. Bob loses 3:\n   - Bob: 14 - 3 = 11\n4. Bob gains 3:\n   - Bob: 11 + 3 = 14\n5. Leo loses 2:\n   - Leo: 10 - 2 = 8\n6. Leo gains 2:\n   - Leo: 8 + 2 = 10\n7. Bob gives 1 to Leo:\n   - Bob: 14 - 1 = 13\n   - Leo: 10 + 1 = 11\n8. Leo gives 1 to Bob:\n   - Leo: 11 - 1 = 10\n   - Bob: 13 + 1 = 14\n\nFinal points:\n- Leo: 10\n\n10"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:deepseek-v3",
+      "k_operations": 8,
+      "n_ops_actual": 8,
+      "correct_answer": 20,
+      "predicted": 1,
+      "accurate": 0,
+      "query_entity": "James",
+      "initial_state": {
+        "Bob": 12,
+        "James": 20,
+        "Grace": 9
+      },
+      "operations": [
+        "James gains 5 points.",
+        "James loses 5 points.",
+        "James loses 1 points.",
+        "James gains 1 points.",
+        "James loses 5 points.",
+        "James gains 5 points.",
+        "Bob gains 8 points.",
+        "Bob loses 8 points."
+      ],
+      "prompt_length_chars": 510,
+      "raw_response": "Let's track James's points step by step:\n\n1. Initial: 20\n2. +5: 25\n3. -5: 20\n4. -1: 19\n5. +1: 20\n6. -5: 15\n7. +5: 20\n\nFinal points for James: 20"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:deepseek-v3",
+      "k_operations": 8,
+      "n_ops_actual": 8,
+      "correct_answer": 19,
+      "predicted": 18,
+      "accurate": 0,
+      "query_entity": "Kate",
+      "initial_state": {
+        "James": 18,
+        "Emma": 13,
+        "Kate": 19
+      },
+      "operations": [
+        "James loses 4 points.",
+        "James gains 4 points.",
+        "James loses 2 points.",
+        "James gains 2 points.",
+        "Kate loses 3 points.",
+        "Kate gains 3 points.",
+        "Emma gives 1 points to Kate.",
+        "Kate gives 1 points to Emma."
+      ],
+      "prompt_length_chars": 526,
+      "raw_response": "Let's track the points step by step:\n\nInitial state:\n- James: 18\n- Emma: 13\n- Kate: 19\n\nOperations:\n1. James loses 4 points: James = 18 - 4 = 14\n2. James gains 4 points: James = 14 + 4 = 18\n3. James loses 2 points: James = 18 - 2 = 16\n4. James gains 2 points: James = 16 + 2 = 18\n5. Kate loses 3 points: Kate = 19 - 3 = 16\n6. Kate gains 3 points: Kate = 16 + 3 = 19\n7. Emma gives 1 point to Kate: Emma = 13 - 1 = 12, Kate = 19 + 1 = 20\n8. Kate gives 1 point to Emma: Kate = 20 - 1 = 19, Emma = 12 + 1 = 13\n\nFinal points for Kate: 19"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:deepseek-v3",
+      "k_operations": 8,
+      "n_ops_actual": 8,
+      "correct_answer": 20,
+      "predicted": 6,
+      "accurate": 0,
+      "query_entity": "Emma",
+      "initial_state": {
+        "Grace": 6,
+        "Emma": 20,
+        "Alice": 14
+      },
+      "operations": [
+        "Alice gains 6 points.",
+        "Alice loses 6 points.",
+        "Alice gains 4 points.",
+        "Alice loses 4 points.",
+        "Emma gives 3 points to Grace.",
+        "Grace gives 3 points to Emma.",
+        "Alice gains 1 points.",
+        "Alice loses 1 points."
+      ],
+      "prompt_length_chars": 530,
+      "raw_response": "Let's track the points step by step:\n\nInitial state:\n- Grace: 6\n- Emma: 20\n- Alice: 14\n\nOperations:\n1. Alice gains 6 points: Alice = 14 + 6 = 20\n2. Alice loses 6 points: Alice = 20 - 6 = 14\n3. Alice gains 4 points: Alice = 14 + 4 = 18\n4. Alice loses 4 points: Alice = 18 - 4 = 14\n5. Emma gives 3 points to Grace: Emma = 20 - 3 = 17, Grace = 6 + 3 = 9\n6. Grace gives 3 points to Emma: Grace = 9 - 3 = 6, Emma = 17 + 3 = 20\n7. Alice gains 1 point: Alice = 14 + 1 = 15\n8. Alice loses 1 point: Alice = 15 - 1 = 14\n\nAfter all operations, Emma has 20 points.\n\n20"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:deepseek-v3",
+      "k_operations": 12,
+      "n_ops_actual": 12,
+      "correct_answer": 7,
+      "predicted": 16,
+      "accurate": 0,
+      "query_entity": "Alice",
+      "initial_state": {
+        "Mia": 16,
+        "Henry": 9,
+        "Alice": 7
+      },
+      "operations": [
+        "Henry loses 4 points.",
+        "Henry gains 4 points.",
+        "Mia gains 3 points.",
+        "Mia loses 3 points.",
+        "Henry gives 1 points to Alice.",
+        "Alice gives 1 points to Henry.",
+        "Henry loses 3 points.",
+        "Henry gains 3 points.",
+        "Henry gives 2 points to Mia.",
+        "Mia gives 2 points to Henry.",
+        "Mia gains 4 points.",
+        "Mia loses 4 points."
+      ],
+      "prompt_length_chars": 648,
+      "raw_response": "Let's track the points step by step based on the initial state and the operations:\n\nInitial state:\n- Mia: 16\n- Henry: 9\n- Alice: 7\n\nOperations:\n1. Henry loses 4 points: Henry = 9 - 4 = 5\n2. Henry gains 4 points: Henry = 5 + 4 = 9\n3. Mia gains 3 points: Mia = 16 + 3 = 19\n4. Mia loses 3 points: Mia = 19 - 3 = 16\n5. Henry gives 1 point to Alice: Henry = 9 - 1 = 8, Alice = 7 + 1 = 8\n6. Alice gives 1 point to Henry: Alice = 8 - 1 = 7, Henry = 8 + 1 = 9\n7. Henry loses 3 points: Henry = 9 - 3 = 6\n8. Henry gains 3 points: Henry = 6 + 3 = 9\n9. Henry gives 2 points to Mia: Henry = 9 - 2 = 7, Mia = 16 + 2 = 18\n10. Mia gives 2 points to Henry: Mia = 18 - 2 = 16, Henry = 7 + 2 = 9\n11. Mia gains 4 points: Mia = 16 + 4 = 20\n12. Mia loses 4 points: Mia = 20 - 4 = 16\n\nFinal points for Alice: 7\n\n7"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:deepseek-v3",
+      "k_operations": 12,
+      "n_ops_actual": 12,
+      "correct_answer": 17,
+      "predicted": 17,
+      "accurate": 1,
+      "query_entity": "Grace",
+      "initial_state": {
+        "Leo": 16,
+        "Kate": 7,
+        "Grace": 17
+      },
+      "operations": [
+        "Kate gains 9 points.",
+        "Kate loses 9 points.",
+        "Kate gains 6 points.",
+        "Kate loses 6 points.",
+        "Grace gives 3 points to Kate.",
+        "Kate gives 3 points to Grace.",
+        "Grace loses 3 points.",
+        "Grace gains 3 points.",
+        "Grace gains 4 points.",
+        "Grace loses 4 points.",
+        "Leo loses 5 points.",
+        "Leo gains 5 points."
+      ],
+      "prompt_length_chars": 632,
+      "raw_response": "17"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:deepseek-v3",
+      "k_operations": 12,
+      "n_ops_actual": 12,
+      "correct_answer": 14,
+      "predicted": 7,
+      "accurate": 0,
+      "query_entity": "David",
+      "initial_state": {
+        "Frank": 7,
+        "James": 19,
+        "David": 14
+      },
+      "operations": [
+        "James gives 1 points to Frank.",
+        "Frank gives 1 points to James.",
+        "Frank gains 5 points.",
+        "Frank loses 5 points.",
+        "Frank loses 1 points.",
+        "Frank gains 1 points.",
+        "David gains 3 points.",
+        "David loses 3 points.",
+        "James loses 3 points.",
+        "James gains 3 points.",
+        "David gives 3 points to James.",
+        "James gives 3 points to David."
+      ],
+      "prompt_length_chars": 663,
+      "raw_response": "Let's track the points step by step:\n\nInitial state:\n- Frank: 7\n- James: 19\n- David: 14\n\nOperations:\n1. James gives 1 to Frank:\n   - Frank: 7 + 1 = 8\n   - James: 19 - 1 = 18\n\n2. Frank gives 1 to James:\n   - Frank: 8 - 1 = 7\n   - James: 18 + 1 = 19\n\n3. Frank gains 5:\n   - Frank: 7 + 5 = 12\n\n4. Frank loses 5:\n   - Frank: 12 - 5 = 7\n\n5. Frank loses 1:\n   - Frank: 7 - 1 = 6\n\n6. Frank gains 1:\n   - Frank: 6 + 1 = 7\n\n7. David gains 3:\n   - David: 14 + 3 = 17\n\n8. David loses 3:\n   - David: 17 - 3 = 14\n\n9. James loses 3:\n   - James: 19 - 3 = 16\n\n10. James gains 3:\n    - James: 16 + 3 = 19\n\n11. David gives 3 to James:\n    - David: 14 - 3 = 11\n    - James: 19 + 3 = 22\n\n12. James gives 3 to David:\n    - James: 22 - 3 = 19\n    - David: 11 + 3 = 14\n\nFinal points for David: 14"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:deepseek-v3",
+      "k_operations": 12,
+      "n_ops_actual": 12,
+      "correct_answer": 18,
+      "predicted": 18,
+      "accurate": 1,
+      "query_entity": "Grace",
+      "initial_state": {
+        "Leo": 8,
+        "Carol": 20,
+        "Grace": 18
+      },
+      "operations": [
+        "Leo loses 3 points.",
+        "Leo gains 3 points.",
+        "Carol gains 8 points.",
+        "Carol loses 8 points.",
+        "Carol gains 2 points.",
+        "Carol loses 2 points.",
+        "Carol gives 1 points to Grace.",
+        "Grace gives 1 points to Carol.",
+        "Carol loses 2 points.",
+        "Carol gains 2 points.",
+        "Carol gains 2 points.",
+        "Carol loses 2 points."
+      ],
+      "prompt_length_chars": 639,
+      "raw_response": "Let's track the points step by step:\n\nInitial points:\nGrace: 18\n\nOperations affecting Grace:\n7. Carol gives 1 point to Grace: Grace = 18 + 1 = 19  \n8. Grace gives 1 point to Carol: Grace = 19 - 1 = 18  \n\nNo other operations affect Grace's points.\n\nFinal points for Grace: 18"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:deepseek-v3",
+      "k_operations": 12,
+      "n_ops_actual": 12,
+      "correct_answer": 5,
+      "predicted": 5,
+      "accurate": 1,
+      "query_entity": "David",
+      "initial_state": {
+        "David": 5,
+        "Kate": 6,
+        "Mia": 15
+      },
+      "operations": [
+        "David gains 10 points.",
+        "David loses 10 points.",
+        "David gains 9 points.",
+        "David loses 9 points.",
+        "Mia gains 4 points.",
+        "Mia loses 4 points.",
+        "Kate gains 3 points.",
+        "Kate loses 3 points.",
+        "David gives 1 points to Kate.",
+        "Kate gives 1 points to David.",
+        "Mia gains 5 points.",
+        "Mia loses 5 points."
+      ],
+      "prompt_length_chars": 631,
+      "raw_response": "5"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:deepseek-v3",
+      "k_operations": 12,
+      "n_ops_actual": 12,
+      "correct_answer": 9,
+      "predicted": 9,
+      "accurate": 1,
+      "query_entity": "Bob",
+      "initial_state": {
+        "Bob": 9,
+        "Kate": 5,
+        "Alice": 16
+      },
+      "operations": [
+        "Alice gains 6 points.",
+        "Alice loses 6 points.",
+        "Bob gains 5 points.",
+        "Bob loses 5 points.",
+        "Bob gains 7 points.",
+        "Bob loses 7 points.",
+        "Bob gives 2 points to Alice.",
+        "Alice gives 2 points to Bob.",
+        "Kate loses 5 points.",
+        "Kate gains 5 points.",
+        "Bob gives 3 points to Kate.",
+        "Kate gives 3 points to Bob."
+      ],
+      "prompt_length_chars": 637,
+      "raw_response": "Let's track Bob's points step by step:\n\nInitial: Bob has 9 points.\n\n1. No change to Bob.\n2. No change to Bob.\n3. Bob gains 5: 9 + 5 = 14\n4. Bob loses 5: 14 - 5 = 9\n5. Bob gains 7: 9 + 7 = 16\n6. Bob loses 7: 16 - 7 = 9\n7. Bob gives 2 to Alice: 9 - 2 = 7\n8. Alice gives 2 to Bob: 7 + 2 = 9\n9. No change to Bob.\n10. No change to Bob.\n11. Bob gives 3 to Kate: 9 - 3 = 6\n12. Kate gives 3 to Bob: 6 + 3 = 9\n\nFinal answer: 9"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:deepseek-v3",
+      "k_operations": 12,
+      "n_ops_actual": 12,
+      "correct_answer": 5,
+      "predicted": 5,
+      "accurate": 1,
+      "query_entity": "Leo",
+      "initial_state": {
+        "James": 14,
+        "Alice": 19,
+        "Leo": 5
+      },
+      "operations": [
+        "Alice gains 7 points.",
+        "Alice loses 7 points.",
+        "Leo loses 1 points.",
+        "Leo gains 1 points.",
+        "Leo loses 4 points.",
+        "Leo gains 4 points.",
+        "James gains 6 points.",
+        "James loses 6 points.",
+        "James gives 1 points to Leo.",
+        "Leo gives 1 points to James.",
+        "Leo loses 5 points.",
+        "Leo gains 5 points."
+      ],
+      "prompt_length_chars": 625,
+      "raw_response": "Let's track the points for Leo step by step based on the operations:\n\nInitial state:\n- Leo: 5 points\n\nOperations affecting Leo:\n3. Leo loses 1 point: 5 - 1 = 4\n4. Leo gains 1 point: 4 + 1 = 5\n5. Leo loses 4 points: 5 - 4 = 1\n6. Leo gains 4 points: 1 + 4 = 5\n9. James gives 1 point to Leo: 5 + 1 = 6\n10. Leo gives 1 point to James: 6 - 1 = 5\n11. Leo loses 5 points: 5 - 5 = 0\n12. Leo gains 5 points: 0 + 5 = 5\n\nFinal points for Leo: 5"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:deepseek-v3",
+      "k_operations": 12,
+      "n_ops_actual": 12,
+      "correct_answer": 18,
+      "predicted": 18,
+      "accurate": 1,
+      "query_entity": "Grace",
+      "initial_state": {
+        "Leo": 14,
+        "Frank": 19,
+        "Grace": 18
+      },
+      "operations": [
+        "Grace gains 2 points.",
+        "Grace loses 2 points.",
+        "Grace gives 2 points to Leo.",
+        "Leo gives 2 points to Grace.",
+        "Leo loses 4 points.",
+        "Leo gains 4 points.",
+        "Frank loses 4 points.",
+        "Frank gains 4 points.",
+        "Grace loses 1 points.",
+        "Grace gains 1 points.",
+        "Frank loses 3 points.",
+        "Frank gains 3 points."
+      ],
+      "prompt_length_chars": 636,
+      "raw_response": "Let's track Grace's points step by step:\n\nInitial state: Grace has 18 points.\n\nOperations affecting Grace:\n1. Grace gains 2 points: 18 + 2 = 20\n2. Grace loses 2 points: 20 - 2 = 18\n3. Grace gives 2 points to Leo: 18 - 2 = 16\n4. Leo gives 2 points to Grace: 16 + 2 = 18\n9. Grace loses 1 point: 18 - 1 = 17\n10. Grace gains 1 point: 17 + 1 = 18\n\nFinal points for Grace: 18"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:deepseek-v3",
+      "k_operations": 12,
+      "n_ops_actual": 12,
+      "correct_answer": 7,
+      "predicted": 7,
+      "accurate": 1,
+      "query_entity": "Carol",
+      "initial_state": {
+        "Emma": 20,
+        "Frank": 7,
+        "Carol": 7
+      },
+      "operations": [
+        "Emma gains 7 points.",
+        "Emma loses 7 points.",
+        "Carol gains 6 points.",
+        "Carol loses 6 points.",
+        "Carol gains 1 points.",
+        "Carol loses 1 points.",
+        "Carol gives 3 points to Frank.",
+        "Frank gives 3 points to Carol.",
+        "Frank gains 6 points.",
+        "Frank loses 6 points.",
+        "Frank gives 2 points to Emma.",
+        "Emma gives 2 points to Frank."
+      ],
+      "prompt_length_chars": 657,
+      "raw_response": "Let's track Carol's points step by step:\n\nInitial: Carol has 7 points.\n\n3. Carol gains 6: 7 + 6 = 13\n4. Carol loses 6: 13 - 6 = 7\n5. Carol gains 1: 7 + 1 = 8\n6. Carol loses 1: 8 - 1 = 7\n7. Carol gives 3 to Frank: 7 - 3 = 4\n8. Frank gives 3 to Carol: 4 + 3 = 7\n11. Not relevant to Carol\n12. Not relevant to Carol\n\nFinal: 7"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:deepseek-v3",
+      "k_operations": 12,
+      "n_ops_actual": 12,
+      "correct_answer": 9,
+      "predicted": 9,
+      "accurate": 1,
+      "query_entity": "Frank",
+      "initial_state": {
+        "Emma": 11,
+        "Frank": 9,
+        "Bob": 20
+      },
+      "operations": [
+        "Emma gains 6 points.",
+        "Emma loses 6 points.",
+        "Frank gives 2 points to Emma.",
+        "Emma gives 2 points to Frank.",
+        "Emma gives 3 points to Frank.",
+        "Frank gives 3 points to Emma.",
+        "Bob gives 3 points to Emma.",
+        "Emma gives 3 points to Bob.",
+        "Bob gives 1 points to Frank.",
+        "Frank gives 1 points to Bob.",
+        "Frank gains 5 points.",
+        "Frank loses 5 points."
+      ],
+      "prompt_length_chars": 680,
+      "raw_response": "Let's track Frank's points step by step:\n\nInitial: Frank has 9 points.\n\n1. No change to Frank.\n2. No change to Frank.\n3. Frank gives 2 to Emma: 9 - 2 = 7\n4. Emma gives 2 to Frank: 7 + 2 = 9\n5. Emma gives 3 to Frank: 9 + 3 = 12\n6. Frank gives 3 to Emma: 12 - 3 = 9\n7. No change to Frank.\n8. No change to Frank.\n9. Bob gives 1 to Frank: 9 + 1 = 10\n10. Frank gives 1 to Bob: 10 - 1 = 9\n11. Frank gains 5: 9 + 5 = 14\n12. Frank loses 5: 14 - 5 = 9\n\nFinal: 9"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:deepseek-v3",
+      "k_operations": 12,
+      "n_ops_actual": 12,
+      "correct_answer": 9,
+      "predicted": 9,
+      "accurate": 1,
+      "query_entity": "Frank",
+      "initial_state": {
+        "Frank": 9,
+        "Alice": 17,
+        "Carol": 7
+      },
+      "operations": [
+        "Carol gains 1 points.",
+        "Carol loses 1 points.",
+        "Carol gains 9 points.",
+        "Carol loses 9 points.",
+        "Alice gains 7 points.",
+        "Alice loses 7 points.",
+        "Alice loses 2 points.",
+        "Alice gains 2 points.",
+        "Alice loses 3 points.",
+        "Alice gains 3 points.",
+        "Carol gives 1 points to Frank.",
+        "Frank gives 1 points to Carol."
+      ],
+      "prompt_length_chars": 644,
+      "raw_response": "Let's track the points step by step:\n\nInitial state:\n- Frank: 9\n- Alice: 17\n- Carol: 7\n\nOperations:\n1. Carol gains 1: Carol = 8\n2. Carol loses 1: Carol = 7\n3. Carol gains 9: Carol = 16\n4. Carol loses 9: Carol = 7\n5. Alice gains 7: Alice = 24\n6. Alice loses 7: Alice = 17\n7. Alice loses 2: Alice = 15\n8. Alice gains 2: Alice = 17\n9. Alice loses 3: Alice = 14\n10. Alice gains 3: Alice = 17\n11. Carol gives 1 to Frank: Carol = 6, Frank = 10\n12. Frank gives 1 to Carol: Frank = 9, Carol = 7\n\nFinal points for Frank: 9"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:deepseek-v3",
+      "k_operations": 12,
+      "n_ops_actual": 12,
+      "correct_answer": 6,
+      "predicted": 6,
+      "accurate": 1,
+      "query_entity": "Carol",
+      "initial_state": {
+        "Carol": 6,
+        "Mia": 7,
+        "James": 13
+      },
+      "operations": [
+        "James loses 4 points.",
+        "James gains 4 points.",
+        "James loses 4 points.",
+        "James gains 4 points.",
+        "Mia loses 2 points.",
+        "Mia gains 2 points.",
+        "Carol gives 2 points to Mia.",
+        "Mia gives 2 points to Carol.",
+        "Mia gains 10 points.",
+        "Mia loses 10 points.",
+        "James loses 3 points.",
+        "James gains 3 points."
+      ],
+      "prompt_length_chars": 632,
+      "raw_response": "Let's track the points step by step:\n\nInitial state:\n- Carol: 6\n- Mia: 7\n- James: 13\n\nOperations:\n1. James loses 4: James = 9\n2. James gains 4: James = 13\n3. James loses 4: James = 9\n4. James gains 4: James = 13\n5. Mia loses 2: Mia = 5\n6. Mia gains 2: Mia = 7\n7. Carol gives 2 to Mia: Carol = 4, Mia = 9\n8. Mia gives 2 to Carol: Carol = 6, Mia = 7\n9. Mia gains 10: Mia = 17\n10. Mia loses 10: Mia = 7\n11. James loses 3: James = 10\n12. James gains 3: James = 13\n\nFinal points for Carol: 6"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:deepseek-v3",
+      "k_operations": 12,
+      "n_ops_actual": 12,
+      "correct_answer": 5,
+      "predicted": 5,
+      "accurate": 1,
+      "query_entity": "Grace",
+      "initial_state": {
+        "David": 6,
+        "Grace": 5,
+        "James": 11
+      },
+      "operations": [
+        "David loses 2 points.",
+        "David gains 2 points.",
+        "Grace loses 3 points.",
+        "Grace gains 3 points.",
+        "David gains 8 points.",
+        "David loses 8 points.",
+        "Grace gives 1 points to David.",
+        "David gives 1 points to Grace.",
+        "James loses 2 points.",
+        "James gains 2 points.",
+        "James gives 1 points to Grace.",
+        "Grace gives 1 points to James."
+      ],
+      "prompt_length_chars": 662,
+      "raw_response": "5"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:deepseek-v3",
+      "k_operations": 12,
+      "n_ops_actual": 12,
+      "correct_answer": 18,
+      "predicted": 18,
+      "accurate": 1,
+      "query_entity": "Noah",
+      "initial_state": {
+        "Noah": 18,
+        "Leo": 5,
+        "Alice": 19
+      },
+      "operations": [
+        "Leo gains 10 points.",
+        "Leo loses 10 points.",
+        "Alice loses 4 points.",
+        "Alice gains 4 points.",
+        "Alice gives 2 points to Leo.",
+        "Leo gives 2 points to Alice.",
+        "Leo gains 1 points.",
+        "Leo loses 1 points.",
+        "Noah loses 5 points.",
+        "Noah gains 5 points.",
+        "Alice loses 3 points.",
+        "Alice gains 3 points."
+      ],
+      "prompt_length_chars": 629,
+      "raw_response": "18"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:deepseek-v3",
+      "k_operations": 12,
+      "n_ops_actual": 12,
+      "correct_answer": 17,
+      "predicted": 17,
+      "accurate": 1,
+      "query_entity": "Bob",
+      "initial_state": {
+        "Grace": 18,
+        "Bob": 17,
+        "David": 7
+      },
+      "operations": [
+        "Bob loses 3 points.",
+        "Bob gains 3 points.",
+        "Bob gains 3 points.",
+        "Bob loses 3 points.",
+        "David gains 2 points.",
+        "David loses 2 points.",
+        "David gives 2 points to Grace.",
+        "Grace gives 2 points to David.",
+        "David loses 2 points.",
+        "David gains 2 points.",
+        "Grace gains 3 points.",
+        "Grace loses 3 points."
+      ],
+      "prompt_length_chars": 633,
+      "raw_response": "Let's track Bob's points step by step based on the operations:\n\nInitial state: Bob has 17 points.\n\nOperations affecting Bob:\n1. Bob loses 3 points: 17 - 3 = 14\n2. Bob gains 3 points: 14 + 3 = 17\n3. Bob gains 3 points: 17 + 3 = 20\n4. Bob loses 3 points: 20 - 3 = 17\n\nNo other operations affect Bob's points. \n\nFinal points for Bob: 17"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:deepseek-v3",
+      "k_operations": 12,
+      "n_ops_actual": 12,
+      "correct_answer": 9,
+      "predicted": 9,
+      "accurate": 1,
+      "query_entity": "David",
+      "initial_state": {
+        "David": 9,
+        "Carol": 7,
+        "James": 10
+      },
+      "operations": [
+        "Carol gives 3 points to James.",
+        "James gives 3 points to Carol.",
+        "Carol gives 3 points to James.",
+        "James gives 3 points to Carol.",
+        "David loses 4 points.",
+        "David gains 4 points.",
+        "Carol gains 8 points.",
+        "Carol loses 8 points.",
+        "Carol gives 3 points to James.",
+        "James gives 3 points to Carol.",
+        "Carol gains 9 points.",
+        "Carol loses 9 points."
+      ],
+      "prompt_length_chars": 680,
+      "raw_response": "Alright, let's tackle this problem step by step. I'll start by listing out the initial points for each person and then go through each operation one by one. Here's how it works:\n\n**Initial State:**\n- David: 9 points\n- Carol: 7 points\n- James: 10 points\n\nNow, let's go through each operation in order.\n\n### Operation 1. Here's what happened:\n\n1. **Carol gives 3 points to James.**\n   - Wait, here's the sequence:\n\n   - **James is now:\n\n**Operation 1: Carol gives 3 points to James was:\n\n**Operation 2: James was:**\n\n**Operation 2: James was:\n\n**Operation 2: James was:\n\n**Operation 3: James was:\n\n**Operation 3: James was:\n\n**Operation 3: James was:\n\n**Operation 3: James was:\n\n**Operation 4: David loses 4 points.**\n   - David's current points: 9 - 4 = 5\n   - Wait, current points: \n\n**Operation 5: Current points: \n\n**Operation 5: James was:\n\n**Operation 6: David gains 4 points:\n\n**Operation 6: James was:\n\n**Operation 7: Carol gains 8 points.**\n   - Carol's points: \n\n**Operation 8: Carol loses 8 points.\n\n**Operation 9: Carol loses 8 points.\n\n**Operation 9: Carol was:\n\n**Operation 10: James was:\n\n**Operation 10: James was:\n\n**Operation 10: James was:\n\n**Operation 11: James was:\n\n**Operation 11: Carol gives 3 points:\n\n**Operation 12: James was:\n\n**Operation 12: James was:\n\n**Operation 12: James was:\n\n**Operation 13: Carol was:\n\n**Operation 13: James was:\n\n**Operation 14: James was:\n\n**Operation 14: James was:\n\n**Operation 15: James was:\n\n**Operation 15: James was:\n\n**Operation 15: James was:\n\n**Operation 16: James was:\n\n**Operation 16: James was:\n\n**Operation 17: Carol loses 9 points.\n\n**Operation 17: James was:\n\n**Operation 17: James was:\n\n**Operation 18: Carol loses 9 points.\n\n**Operation 18: James was:\n\n**Operation 19: James was:\n\n**Operation 19: James was:\n\n**Operation 20: Carol gives 3 points to James.**\n\nWait, let's summarize the current state:\n\n**Operation 21: James was:\n\n**Operation 22: James was:\n\n**Operation 22: James was:\n\n**Operation 23: James was:\n\n**Operation 23: James was:\n\n**Operation 24: James was:\n\n**Operation 24: James was:\n\n**Operation 25: James was:\n\n**Operation 25: James was:\n\n**Operation 26: James was:\n\n**Operation 26: James was:\n\n**Operation 27: James was:\n\n**Operation 27: James was:\n\n**Operation 28: James was:\n\n**Operation 28: James was:\n\n**Operation 28: James was:\n\n**Operation 28: James was:\n\n**Operation 28: James was:\n\n**Operation 28: James was:\n\n**Operation 28: James was:\n\n**Operation 29: James was:\n\n**Operation 29: James was:\n\n**Operation 29: James was:\n\n**Operation 30: James was:\n\n**Operation 30: James was:\n\n**Operation 30: James was:\n\n**Operation 30: James was:\n\n**Operation 30: James was:\n\n**Operation 30: James was:\n\n**Operation 30: James was:\n\n**Operation 30: James was:\n\n**Operation 30: James was:\n\n**Operation 30: James was:\n\n**Operation 30: James was:\n\n**Operation 30: James was:\n\n**Operation 30: James was:\n\n**Operation 30: James was:\n\n**Operation 30: James was:\n\n**Operation 30: James was:\n\n**Operation 30: James was:\n\n**Operation 30: James was:\n\n**Operation 30: James was:\n\n**Operation 31: James was:\n\n**Operation 31: James was:\n\n**Operation 31: James was:\n\n**Operation 31: James was:\n\n**Operation 32: James was:\n\n**Operation 32: James was:\n\n**Operation 32: James was:\n\n**Operation 32: James was:\n\n**Operation 32: James was:\n\n**Operation 32: James was:\n\n**Operation 33: Carol gains 8 points.\n\n**Operation 33: James was:\n\n**Operation 33: James was:\n\n**Operation 34: James was:\n\n**Operation 34: James was:\n\n**Operation 34: James was:\n\n**Operation 34: James was:\n\n**Operation 34: James was:\n\n**Operation 34: James was:\n\n**Operation 34:"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:deepseek-v3",
+      "k_operations": 12,
+      "n_ops_actual": 12,
+      "correct_answer": 16,
+      "predicted": 6,
+      "accurate": 0,
+      "query_entity": "Mia",
+      "initial_state": {
+        "Emma": 6,
+        "Henry": 6,
+        "Mia": 16
+      },
+      "operations": [
+        "Emma loses 1 points.",
+        "Emma gains 1 points.",
+        "Mia gives 2 points to Henry.",
+        "Henry gives 2 points to Mia.",
+        "Mia gives 2 points to Emma.",
+        "Emma gives 2 points to Mia.",
+        "Mia gives 2 points to Emma.",
+        "Emma gives 2 points to Mia.",
+        "Henry gives 1 points to Emma.",
+        "Emma gives 1 points to Henry.",
+        "Emma loses 3 points.",
+        "Emma gains 3 points."
+      ],
+      "prompt_length_chars": 671,
+      "raw_response": "Let's track the points step by step for each operation:\n\nInitial state:\n- Emma: 6\n- Henry: 6\n- Mia: 16\n\nOperations:\n1. Emma loses 1 point:\n   - Emma: 6 - 1 = 5\n   - Henry: 6\n   - Mia: 16\n\n2. Emma gains 1 point:\n   - Emma: 5 + 1 = 6\n   - Henry: 6\n   - Mia: 16\n\n3. Mia gives 2 points to Henry:\n   - Emma: 6\n   - Henry: 6 + 2 = 8\n   - Mia: 16 - 2 = 14\n\n4. Henry gives 2 points to Mia:\n   - Emma: 6\n   - Henry: 8 - 2 = 6\n   - Mia: 14 + 2 = 16\n\n5. Mia gives 2 points to Emma:\n   - Emma: 6 + 2 = 8\n   - Henry: 6\n   - Mia: 16 - 2 = 14\n\n6. Emma gives 2 points to Mia:\n   - Emma: 8 - 2 = 6\n   - Henry: 6\n   - Mia: 14 + 2 = 16\n\n7. Mia gives 2 points to Emma:\n   - Emma: 6 + 2 = 8\n   - Henry: 6\n   - Mia: 16 - 2 = 14\n\n8. Emma gives 2 points to Mia:\n   - Emma: 8 - 2 = 6\n   - Henry: 6\n   - Mia: 14 + 2 = 16\n\n9. Henry gives 1 point to Emma:\n   - Emma: 6 + 1 = 7\n   - Henry: 6 - 1 = 5\n   - Mia: 16\n\n10. Emma gives 1 point to Henry:\n    - Emma: 7 - 1 = 6\n    - Henry: 5 + 1 = 6\n    - Mia: 16\n\n11. Emma loses 3 points:\n    - Emma: 6 - 3 = 3\n    - Henry: 6\n    - Mia: 16\n\n12. Emma gains 3 points:\n    - Emma: 3 + 3 = 6\n    - Henry: 6\n    - Mia: 16\n\nFinal points for Mia: 16"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:deepseek-v3",
+      "k_operations": 12,
+      "n_ops_actual": 12,
+      "correct_answer": 12,
+      "predicted": 10,
+      "accurate": 0,
+      "query_entity": "Kate",
+      "initial_state": {
+        "Bob": 10,
+        "Iris": 6,
+        "Kate": 12
+      },
+      "operations": [
+        "Iris gives 3 points to Kate.",
+        "Kate gives 3 points to Iris.",
+        "Kate gives 2 points to Bob.",
+        "Bob gives 2 points to Kate.",
+        "Iris loses 4 points.",
+        "Iris gains 4 points.",
+        "Iris loses 5 points.",
+        "Iris gains 5 points.",
+        "Kate gains 6 points.",
+        "Kate loses 6 points.",
+        "Iris gains 2 points.",
+        "Iris loses 2 points."
+      ],
+      "prompt_length_chars": 640,
+      "raw_response": "Let's track the points step by step for each person after each operation.\n\nInitial state:\n- Bob: 10\n- Iris: 6\n- Kate: 12\n\nOperations:\n1. Iris gives 3 points to Kate.\n   - Iris: 6 - 3 = 3\n   - Kate: 12 + 3 = 15\n   - Bob: 10 (unchanged)\n\n2. Kate gives 3 points to Iris.\n   - Kate: 15 - 3 = 12\n   - Iris: 3 + 3 = 6\n   - Bob: 10 (unchanged)\n\n3. Kate gives 2 points to Bob.\n   - Kate: 12 - 2 = 10\n   - Bob: 10 + 2 = 12\n   - Iris: 6 (unchanged)\n\n4. Bob gives 2 points to Kate.\n   - Bob: 12 - 2 = 10\n   - Kate: 10 + 2 = 12\n   - Iris: 6 (unchanged)\n\n5. Iris loses 4 points.\n   - Iris: 6 - 4 = 2\n   - Bob: 10 (unchanged)\n   - Kate: 12 (unchanged)\n\n6. Iris gains 4 points.\n   - Iris: 2 + 4 = 6\n   - Bob: 10 (unchanged)\n   - Kate: 12 (unchanged)\n\n7. Iris loses 5 points.\n   - Iris: 6 - 5 = 1\n   - Bob: 10 (unchanged)\n   - Kate: 12 (unchanged)\n\n8. Iris gains 5 points.\n   - Iris: 1 + 5 = 6\n   - Bob: 10 (unchanged)\n   - Kate: 12 (unchanged)\n\n9. Kate gains 6 points.\n   - Kate: 12 + 6 = 18\n   - Bob: 10 (unchanged)\n   - Iris: 6 (unchanged)\n\n10. Kate loses 6 points.\n    - Kate: 18 - 6 = 12\n    - Bob: 10 (unchanged)\n    - Iris: 6 (unchanged)\n\n11. Iris gains 2 points.\n    - Iris: 6 + 2 = 8\n    - Bob: 10 (unchanged)\n    - Kate: 12 (unchanged)\n\n12. Iris loses 2 points.\n    - Iris: 8 - 2 = 6\n    - Bob: 10 (unchanged)\n    - Kate: 12 (unchanged)\n\nAfter all operations, Kate has **12** points. \n\nFinal answer: 12"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:deepseek-v3",
+      "k_operations": 12,
+      "n_ops_actual": 12,
+      "correct_answer": 15,
+      "predicted": 15,
+      "accurate": 1,
+      "query_entity": "Emma",
+      "initial_state": {
+        "Kate": 13,
+        "Grace": 9,
+        "Emma": 15
+      },
+      "operations": [
+        "Emma gains 3 points.",
+        "Emma loses 3 points.",
+        "Grace loses 4 points.",
+        "Grace gains 4 points.",
+        "Emma gains 2 points.",
+        "Emma loses 2 points.",
+        "Emma loses 4 points.",
+        "Emma gains 4 points.",
+        "Grace gives 3 points to Kate.",
+        "Kate gives 3 points to Grace.",
+        "Emma gives 3 points to Kate.",
+        "Kate gives 3 points to Emma."
+      ],
+      "prompt_length_chars": 648,
+      "raw_response": "Let's track Emma's points step by step:\n\nInitial: Emma has 15 points.\n\n1. +3 \u2192 18\n2. -3 \u2192 15\n5. +2 \u2192 17\n6. -2 \u2192 15\n7. -4 \u2192 11\n8. +4 \u2192 15\n11. -3 \u2192 12 (gives 3 to Kate)\n12. +3 \u2192 15 (receives 3 from Kate)\n\nFinal: 15"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:deepseek-v3",
+      "k_operations": 12,
+      "n_ops_actual": 12,
+      "correct_answer": 14,
+      "predicted": 5,
+      "accurate": 0,
+      "query_entity": "Frank",
+      "initial_state": {
+        "Grace": 5,
+        "Iris": 16,
+        "Frank": 14
+      },
+      "operations": [
+        "Grace gains 6 points.",
+        "Grace loses 6 points.",
+        "Grace loses 2 points.",
+        "Grace gains 2 points.",
+        "Grace gains 2 points.",
+        "Grace loses 2 points.",
+        "Grace loses 5 points.",
+        "Grace gains 5 points.",
+        "Frank gives 3 points to Grace.",
+        "Grace gives 3 points to Frank.",
+        "Frank loses 2 points.",
+        "Frank gains 2 points."
+      ],
+      "prompt_length_chars": 644,
+      "raw_response": "Let's track the points for Grace and Frank step by step based on the operations:\n\nInitial points:\n- Grace: 5\n- Frank: 14\n\nOperations:\n1. Grace gains 6 points: Grace = 5 + 6 = 11\n2. Grace loses 6 points: Grace = 11 - 6 = 5\n3. Grace loses 2 points: Grace = 5 - 2 = 3\n4. Grace gains 2 points: Grace = 3 + 2 = 5\n5. Grace gains 2 points: Grace = 5 + 2 = 7\n6. Grace loses 2 points: Grace = 7 - 2 = 5\n7. Grace loses 5 points: Grace = 5 - 5 = 0\n8. Grace gains 5 points: Grace = 0 + 5 = 5\n9. Frank gives 3 points to Grace:\n   - Grace = 5 + 3 = 8\n   - Frank = 14 - 3 = 11\n10. Grace gives 3 points to Frank:\n    - Grace = 8 - 3 = 5\n    - Frank = 11 + 3 = 14\n11. Frank loses 2 points: Frank = 14 - 2 = 12\n12. Frank gains 2 points: Frank = 12 + 2 = 14\n\nFinal points for Frank: 14"
+    }
+  ]
+}

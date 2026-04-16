@@ -1,0 +1,2567 @@
+{
+  "metadata": {
+    "task": "WMF-AM-YOKED-CONTROL",
+    "model": "ollama:mixtral:8x7b",
+    "n_problems_per_depth": 20,
+    "seed": 42,
+    "depths": [
+      2,
+      4,
+      6,
+      8,
+      12
+    ]
+  },
+  "summary": {
+    "per_depth_accuracy": {
+      "2": 0.9,
+      "4": 0.8,
+      "6": 0.75,
+      "8": 0.95,
+      "12": 0.9
+    },
+    "overall_accuracy": 0.86
+  },
+  "trials": [
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "ollama:mixtral:8x7b",
+      "k_operations": 2,
+      "n_ops_actual": 2,
+      "correct_answer": 12,
+      "predicted": 12,
+      "accurate": 1,
+      "query_entity": "Alice",
+      "initial_state": {
+        "Kate": 13,
+        "Bob": 12,
+        "Alice": 12
+      },
+      "operations": [
+        "Alice gains 2 points.",
+        "Alice loses 2 points."
+      ],
+      "prompt_length_chars": 352,
+      "raw_response": "12\n I will keep track of the state after each operation:\n\nInitial state: Kate: 13, Bob: 12, Alice: 12\n1. Alice gains 2 points: Kate: 13, Bob: 12, Alice: 14\n2. Alice loses 2 points: Kate: 13, Bob: 12, Alice: 12\nSo, after all operations, Alice has 12 points."
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "ollama:mixtral:8x7b",
+      "k_operations": 2,
+      "n_ops_actual": 2,
+      "correct_answer": 5,
+      "predicted": 5,
+      "accurate": 1,
+      "query_entity": "Bob",
+      "initial_state": {
+        "Leo": 18,
+        "Iris": 6,
+        "Bob": 5
+      },
+      "operations": [
+        "Leo gains 4 points.",
+        "Leo loses 4 points."
+      ],
+      "prompt_length_chars": 342,
+      "raw_response": "5\n\nHere's the reasoning:\n\n1. Start with the initial state: Leo has 18 points, Iris has 6 points, and Bob has 5 points.\n2. Apply the first operation: Leo gains 4 points, so he now has 18 + 4 = 22 points.\n3. Apply the second operation: Leo loses 4 points, so he now has 22 - 4 = 18 points again.\n4. The question asks only for Bob's final number of points, which remains unchanged at 5 points throughout the given operations.\n\nTherefore, after all operations, Bob still has 5 points."
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "ollama:mixtral:8x7b",
+      "k_operations": 2,
+      "n_ops_actual": 2,
+      "correct_answer": 11,
+      "predicted": 11,
+      "accurate": 1,
+      "query_entity": "James",
+      "initial_state": {
+        "James": 11,
+        "Alice": 18,
+        "Iris": 12
+      },
+      "operations": [
+        "Iris loses 3 points.",
+        "Iris gains 3 points."
+      ],
+      "prompt_length_chars": 352,
+      "raw_response": "11\n\nExplanation: The operation for James is not mentioned as losing or gaining any points, so his point total remains unchanged at 11 points."
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "ollama:mixtral:8x7b",
+      "k_operations": 2,
+      "n_ops_actual": 2,
+      "correct_answer": 18,
+      "predicted": 18,
+      "accurate": 1,
+      "query_entity": "Mia",
+      "initial_state": {
+        "Mia": 18,
+        "Noah": 15,
+        "Carol": 13
+      },
+      "operations": [
+        "Mia gains 6 points.",
+        "Mia loses 6 points."
+      ],
+      "prompt_length_chars": 346,
+      "raw_response": "18 points - Mia gained 6 points in the second operation but then lost those same 6 points in the next operation, so her total remains the same as the initial state."
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "ollama:mixtral:8x7b",
+      "k_operations": 2,
+      "n_ops_actual": 2,
+      "correct_answer": 13,
+      "predicted": 13,
+      "accurate": 1,
+      "query_entity": "Noah",
+      "initial_state": {
+        "Bob": 16,
+        "Grace": 16,
+        "Noah": 13
+      },
+      "operations": [
+        "Noah gains 8 points.",
+        "Noah loses 8 points."
+      ],
+      "prompt_length_chars": 349,
+      "raw_response": "13 points for Noah after all operations."
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "ollama:mixtral:8x7b",
+      "k_operations": 2,
+      "n_ops_actual": 2,
+      "correct_answer": 14,
+      "predicted": 14,
+      "accurate": 1,
+      "query_entity": "Bob",
+      "initial_state": {
+        "Bob": 14,
+        "Grace": 16,
+        "Noah": 11
+      },
+      "operations": [
+        "Bob gives 3 points to Noah.",
+        "Noah gives 3 points to Bob."
+      ],
+      "prompt_length_chars": 362,
+      "raw_response": "14 points (Bob's initial points were not modified by the two operations)"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "ollama:mixtral:8x7b",
+      "k_operations": 2,
+      "n_ops_actual": 2,
+      "correct_answer": 12,
+      "predicted": 12,
+      "accurate": 1,
+      "query_entity": "Mia",
+      "initial_state": {
+        "Mia": 12,
+        "Emma": 8,
+        "Bob": 17
+      },
+      "operations": [
+        "Emma loses 3 points.",
+        "Emma gains 3 points."
+      ],
+      "prompt_length_chars": 345,
+      "raw_response": "12\nExplanation: The operation for Emma losing and gaining 3 points cancels out, so her total remains at 8 points. The question asks for the final number of points that Mia has, which is 12 points as stated in the initial state and unchanged by any operations."
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "ollama:mixtral:8x7b",
+      "k_operations": 2,
+      "n_ops_actual": 2,
+      "correct_answer": 7,
+      "predicted": 7,
+      "accurate": 1,
+      "query_entity": "Noah",
+      "initial_state": {
+        "Frank": 13,
+        "Noah": 7,
+        "David": 10
+      },
+      "operations": [
+        "David gives 1 points to Frank.",
+        "Frank gives 1 points to David."
+      ],
+      "prompt_length_chars": 370,
+      "raw_response": "7 points"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "ollama:mixtral:8x7b",
+      "k_operations": 2,
+      "n_ops_actual": 2,
+      "correct_answer": 15,
+      "predicted": 15,
+      "accurate": 1,
+      "query_entity": "Emma",
+      "initial_state": {
+        "Grace": 12,
+        "Emma": 15,
+        "Kate": 6
+      },
+      "operations": [
+        "Grace gains 6 points.",
+        "Grace loses 6 points."
+      ],
+      "prompt_length_chars": 351,
+      "raw_response": "15 points"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "ollama:mixtral:8x7b",
+      "k_operations": 2,
+      "n_ops_actual": 2,
+      "correct_answer": 15,
+      "predicted": 15,
+      "accurate": 1,
+      "query_entity": "Emma",
+      "initial_state": {
+        "Emma": 15,
+        "Bob": 11,
+        "David": 20
+      },
+      "operations": [
+        "David loses 4 points.",
+        "David gains 4 points."
+      ],
+      "prompt_length_chars": 351,
+      "raw_response": "15\n</s>\nYou've correctly identified that the initial number of points for Emma is 15 and none of the given operations affect her points. Good job!"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "ollama:mixtral:8x7b",
+      "k_operations": 2,
+      "n_ops_actual": 2,
+      "correct_answer": 17,
+      "predicted": 17,
+      "accurate": 1,
+      "query_entity": "David",
+      "initial_state": {
+        "Emma": 13,
+        "Carol": 18,
+        "David": 17
+      },
+      "operations": [
+        "Emma loses 2 points.",
+        "Emma gains 2 points."
+      ],
+      "prompt_length_chars": 352,
+      "raw_response": "17\n\nHere's the reasoning:\n\n1. We start with the initial state: Emma has 13 points, Carol has 18 points, and David has 17 points.\n2. After reading operation 1 (Emma loses 2 points), we know that Emma will have 13 - 2 = 11 points.\n3. After reading operation 2 (Emma gains 2 points), we know that Emma will have 11 + 2 = 13 points again.\n4. However, since you cannot refer back to the initial state after reading it once, we can only rely on the information from the operations themselves.\n5. Therefore, based on the given operations, David's number of points does not change and remains at 17 points."
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "ollama:mixtral:8x7b",
+      "k_operations": 2,
+      "n_ops_actual": 2,
+      "correct_answer": 9,
+      "predicted": 9,
+      "accurate": 1,
+      "query_entity": "Bob",
+      "initial_state": {
+        "Henry": 8,
+        "Bob": 9,
+        "Alice": 10
+      },
+      "operations": [
+        "Bob gives 2 points to Henry.",
+        "Henry gives 2 points to Bob."
+      ],
+      "prompt_length_chars": 363,
+      "raw_response": "9 points"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "ollama:mixtral:8x7b",
+      "k_operations": 2,
+      "n_ops_actual": 2,
+      "correct_answer": 5,
+      "predicted": 5,
+      "accurate": 1,
+      "query_entity": "Henry",
+      "initial_state": {
+        "James": 13,
+        "Henry": 5,
+        "Iris": 8
+      },
+      "operations": [
+        "Iris gives 3 points to Henry.",
+        "Henry gives 3 points to Iris."
+      ],
+      "prompt_length_chars": 368,
+      "raw_response": "5 points // After the two operations, Henry has given and received 3 points, so he stays at 5 points."
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "ollama:mixtral:8x7b",
+      "k_operations": 2,
+      "n_ops_actual": 2,
+      "correct_answer": 10,
+      "predicted": 10,
+      "accurate": 1,
+      "query_entity": "Bob",
+      "initial_state": {
+        "Bob": 10,
+        "Emma": 19,
+        "Grace": 5
+      },
+      "operations": [
+        "Grace gives 3 points to Emma.",
+        "Emma gives 3 points to Grace."
+      ],
+      "prompt_length_chars": 365,
+      "raw_response": "10\nExplanation:\nEven though we can't show the step-by-step work, we can still do the calculations mentally while keeping track of only the necessary information.\n\nInitial state:\nBob: 10 points\nEmma: 19 points\nGrace: 5 points\n\nAfter operation 1 (Grace gives 3 points to Emma):\nBob: 10 points\nEmma: 22 points\nGrace: 2 points\n\nAfter operation 2 (Emma gives 3 points to Grace):\nBob: 10 points\nEmma: 19 points\nGrace: 5 points\n\nSo, after all operations, Bob still has 10 points."
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "ollama:mixtral:8x7b",
+      "k_operations": 2,
+      "n_ops_actual": 2,
+      "correct_answer": 9,
+      "predicted": 9,
+      "accurate": 1,
+      "query_entity": "Kate",
+      "initial_state": {
+        "Iris": 14,
+        "Bob": 11,
+        "Kate": 9
+      },
+      "operations": [
+        "Iris loses 5 points.",
+        "Iris gains 5 points."
+      ],
+      "prompt_length_chars": 347,
+      "raw_response": "9\n\nHere's the reasoning:\n\n1. We start with the initial state: Iris has 14 points, Bob has 11 points, and Kate has 9 points.\n2. After reading operation 1 (Iris loses 5 points), Iris now has 14 - 5 = 9 points.\n3. After reading operation 2 (Iris gains 5 points), Iris now has 9 + 5 = 14 points.\n4. However, since we cannot refer back to the initial state after reading it once, we only know that Kate had 9 points and no further changes were made to her score. Therefore, Kate still has 9 points."
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "ollama:mixtral:8x7b",
+      "k_operations": 2,
+      "n_ops_actual": 2,
+      "correct_answer": 20,
+      "predicted": 20,
+      "accurate": 1,
+      "query_entity": "Alice",
+      "initial_state": {
+        "Alice": 20,
+        "James": 5,
+        "Frank": 8
+      },
+      "operations": [
+        "James loses 2 points.",
+        "James gains 2 points."
+      ],
+      "prompt_length_chars": 353,
+      "raw_response": "20\n\nHere's the reasoning:\n\n1. We are notified that we cannot refer back to the initial state after reading it once. However, the question asks for the final number of points Alice has, which doesn't require remembering any other details about the initial state or subsequent operations.\n\n2. The operations only involve James gaining and losing points, with no mention of affecting Alice's points.\n\n3. Therefore, after all operations, Alice still has 20 points."
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "ollama:mixtral:8x7b",
+      "k_operations": 2,
+      "n_ops_actual": 2,
+      "correct_answer": 20,
+      "predicted": 20,
+      "accurate": 1,
+      "query_entity": "James",
+      "initial_state": {
+        "David": 7,
+        "James": 20,
+        "Bob": 7
+      },
+      "operations": [
+        "David gives 3 points to Bob.",
+        "Bob gives 3 points to David."
+      ],
+      "prompt_length_chars": 365,
+      "raw_response": "20\n\nHere's the reasoning:\n\n1. We start with David having 7 points, James having 20 points, and Bob also having 7 points.\n2. After David gives 3 points to Bob, David has 4 points (7-3) and Bob has 10 points (7+3).\n3. Then, when Bob gives 3 points back to David, Bob has 7 points again (10-3), and David now has 11 points (4+3).\n4. Throughout these operations, James's point total remains unchanged at 20 points.\n\nTherefore, after all operations, James still has 20 points."
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "ollama:mixtral:8x7b",
+      "k_operations": 2,
+      "n_ops_actual": 2,
+      "correct_answer": 11,
+      "predicted": 14,
+      "accurate": 0,
+      "query_entity": "Emma",
+      "initial_state": {
+        "Iris": 18,
+        "Carol": 11,
+        "Emma": 11
+      },
+      "operations": [
+        "Carol gives 3 points to Emma.",
+        "Emma gives 3 points to Carol."
+      ],
+      "prompt_length_chars": 368,
+      "raw_response": "14\n\nHere's the reasoning:\n1. Start with the initial state: Iris: 18 points, Carol: 11 points, Emma: 11 points\n2. Apply the first operation: Carol gives 3 points to Emma. So, Emma now has 11 + 3 = 14 points.\n3. Apply the second operation: Emma gives 3 points to Carol. But this doesn't affect Emma's points, so she still has 14 points.\n4. Therefore, after all operations, Emma has 14 points."
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "ollama:mixtral:8x7b",
+      "k_operations": 2,
+      "n_ops_actual": 2,
+      "correct_answer": 19,
+      "predicted": 19,
+      "accurate": 1,
+      "query_entity": "Frank",
+      "initial_state": {
+        "Frank": 19,
+        "Henry": 8,
+        "Iris": 12
+      },
+      "operations": [
+        "Frank gains 6 points.",
+        "Frank loses 6 points."
+      ],
+      "prompt_length_chars": 353,
+      "raw_response": "19 points for Frank after all operations. The gain and loss of 6 points cancel out."
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "ollama:mixtral:8x7b",
+      "k_operations": 2,
+      "n_ops_actual": 2,
+      "correct_answer": 12,
+      "predicted": 13,
+      "accurate": 0,
+      "query_entity": "James",
+      "initial_state": {
+        "James": 12,
+        "Iris": 5,
+        "David": 7
+      },
+      "operations": [
+        "David gives 1 points to James.",
+        "James gives 1 points to David."
+      ],
+      "prompt_length_chars": 370,
+      "raw_response": "13 points"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "ollama:mixtral:8x7b",
+      "k_operations": 4,
+      "n_ops_actual": 4,
+      "correct_answer": 13,
+      "predicted": 13,
+      "accurate": 1,
+      "query_entity": "Frank",
+      "initial_state": {
+        "Alice": 12,
+        "Frank": 13,
+        "Bob": 20
+      },
+      "operations": [
+        "Bob gains 3 points.",
+        "Bob loses 3 points.",
+        "Bob gives 1 points to Frank.",
+        "Frank gives 1 points to Bob."
+      ],
+      "prompt_length_chars": 417,
+      "raw_response": "13 points for Frank in the end. Even though Frank gave and received a point, his total doesn't change due to these operations."
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "ollama:mixtral:8x7b",
+      "k_operations": 4,
+      "n_ops_actual": 4,
+      "correct_answer": 18,
+      "predicted": 18,
+      "accurate": 1,
+      "query_entity": "David",
+      "initial_state": {
+        "Mia": 8,
+        "Grace": 8,
+        "David": 18
+      },
+      "operations": [
+        "Grace loses 4 points.",
+        "Grace gains 4 points.",
+        "David loses 1 points.",
+        "David gains 1 points."
+      ],
+      "prompt_length_chars": 405,
+      "raw_response": "18 points - David lost 1 point and gained 1 point back, so he still has 18 points."
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "ollama:mixtral:8x7b",
+      "k_operations": 4,
+      "n_ops_actual": 4,
+      "correct_answer": 6,
+      "predicted": 6,
+      "accurate": 1,
+      "query_entity": "Kate",
+      "initial_state": {
+        "Kate": 6,
+        "Noah": 17,
+        "Bob": 15
+      },
+      "operations": [
+        "Kate gains 4 points.",
+        "Kate loses 4 points.",
+        "Bob gains 8 points.",
+        "Bob loses 8 points."
+      ],
+      "prompt_length_chars": 397,
+      "raw_response": "6 points"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "ollama:mixtral:8x7b",
+      "k_operations": 4,
+      "n_ops_actual": 4,
+      "correct_answer": 19,
+      "predicted": 19,
+      "accurate": 1,
+      "query_entity": "Grace",
+      "initial_state": {
+        "Grace": 19,
+        "Carol": 12,
+        "Emma": 7
+      },
+      "operations": [
+        "Emma loses 1 points.",
+        "Emma gains 1 points.",
+        "Emma gains 9 points.",
+        "Emma loses 9 points."
+      ],
+      "prompt_length_chars": 403,
+      "raw_response": "19\n\nHere's the reasoning:\n\nThe operations only affect Emma's points, not Grace's. So Grace's 19 points remain unchanged throughout all the operations."
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "ollama:mixtral:8x7b",
+      "k_operations": 4,
+      "n_ops_actual": 4,
+      "correct_answer": 10,
+      "predicted": 10,
+      "accurate": 1,
+      "query_entity": "Bob",
+      "initial_state": {
+        "Bob": 10,
+        "Mia": 18,
+        "David": 20
+      },
+      "operations": [
+        "Bob loses 4 points.",
+        "Bob gains 4 points.",
+        "Bob gains 7 points.",
+        "Bob loses 7 points."
+      ],
+      "prompt_length_chars": 395,
+      "raw_response": "10\n\nHere's the explanation:\n1. Bob starts with 10 points.\n2. He loses 4 points, so he has 10 - 4 = 6 points.\n3. Then he gains 4 points back, so he has 6 + 4 = 10 points.\n4. Next, he gains 7 points, making his score 10 + 7 = 17 points.\n5. Finally, he loses 7 points, leaving him with 17 - 7 = 10 points."
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "ollama:mixtral:8x7b",
+      "k_operations": 4,
+      "n_ops_actual": 4,
+      "correct_answer": 20,
+      "predicted": 20,
+      "accurate": 1,
+      "query_entity": "Henry",
+      "initial_state": {
+        "Grace": 14,
+        "Emma": 18,
+        "Henry": 20
+      },
+      "operations": [
+        "Grace gains 5 points.",
+        "Grace loses 5 points.",
+        "Grace gains 10 points.",
+        "Grace loses 10 points."
+      ],
+      "prompt_length_chars": 410,
+      "raw_response": "20 points\n\nHere's the reasoning:\n\nWe don't need to track Grace's points since the question asks for Henry's points after all operations. Since there are no operations affecting Henry's points, he still has the initial 20 points."
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "ollama:mixtral:8x7b",
+      "k_operations": 4,
+      "n_ops_actual": 4,
+      "correct_answer": 6,
+      "predicted": 7,
+      "accurate": 0,
+      "query_entity": "Leo",
+      "initial_state": {
+        "Iris": 15,
+        "Alice": 6,
+        "Leo": 6
+      },
+      "operations": [
+        "Alice gives 1 points to Iris.",
+        "Iris gives 1 points to Alice.",
+        "Iris gives 1 points to Leo.",
+        "Leo gives 1 points to Iris."
+      ],
+      "prompt_length_chars": 430,
+      "raw_response": "7\n\nHere's the reasoning:\nWe start with the initial state of 15 points for Iris, 6 points for Alice, and 6 points for Leo.\n\n1. After Alice gives 1 point to Iris, Iris has 16 points, and Alice has 5 points.\n2. When Iris gives 1 point back to Alice, Iris has 15 points again, and Alice has 6 points.\n3. Then, when Iris gives 1 point to Leo, Iris has 14 points, and Leo has 7 points.\n4. Finally, after Leo gives 1 point to Iris, Iris has 15 points, and Leo ends up with 7 points."
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "ollama:mixtral:8x7b",
+      "k_operations": 4,
+      "n_ops_actual": 4,
+      "correct_answer": 12,
+      "predicted": 12,
+      "accurate": 1,
+      "query_entity": "David",
+      "initial_state": {
+        "Bob": 17,
+        "Kate": 8,
+        "David": 12
+      },
+      "operations": [
+        "David gives 3 points to Bob.",
+        "Bob gives 3 points to David.",
+        "Kate gains 10 points.",
+        "Kate loses 10 points."
+      ],
+      "prompt_length_chars": 419,
+      "raw_response": "12\n\nHere's the reasoning:\n\nWe apply each operation to the previous state, but we cannot refer back to the initial state after reading it once.\n\n1. David gives 3 points to Bob: Bob's new score is 17 (Bob's original score) + 3 (points from David) = 20; David's new score is 12 (David's original score) - 3 (points given to Bob) = 9.\n2. Bob gives 3 points to David: Bob's new score is 20 (Bob's score from the previous step) - 3 (points given to David) = 17; David's new score is 9 (David's score from the previous step) + 3 (points received from Bob) = 12.\n3. Kate gains 10 points: Kate's new score is 8 (Kate's original score) + 10 (points gained) = 18.\n4. Kate loses 10 points: Kate's new score is 18 (Kate's score from the previous step) - 10 (points lost) = 8.\n\nTherefore, after all operations, David has 12 points."
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "ollama:mixtral:8x7b",
+      "k_operations": 4,
+      "n_ops_actual": 4,
+      "correct_answer": 15,
+      "predicted": 15,
+      "accurate": 1,
+      "query_entity": "Frank",
+      "initial_state": {
+        "Iris": 11,
+        "Frank": 15,
+        "Emma": 12
+      },
+      "operations": [
+        "Frank loses 2 points.",
+        "Frank gains 2 points.",
+        "Emma gives 2 points to Frank.",
+        "Frank gives 2 points to Emma."
+      ],
+      "prompt_length_chars": 423,
+      "raw_response": "15 points - Frank loses 2 points then gains 2 points, and receives 2 points from Emma, so he has 15 points in total."
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "ollama:mixtral:8x7b",
+      "k_operations": 4,
+      "n_ops_actual": 4,
+      "correct_answer": 8,
+      "predicted": 9,
+      "accurate": 0,
+      "query_entity": "Bob",
+      "initial_state": {
+        "Mia": 19,
+        "Bob": 8,
+        "Alice": 7
+      },
+      "operations": [
+        "Mia gives 1 points to Bob.",
+        "Bob gives 1 points to Mia.",
+        "Mia loses 2 points.",
+        "Mia gains 2 points."
+      ],
+      "prompt_length_chars": 407,
+      "raw_response": "9 points"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "ollama:mixtral:8x7b",
+      "k_operations": 4,
+      "n_ops_actual": 4,
+      "correct_answer": 14,
+      "predicted": 14,
+      "accurate": 1,
+      "query_entity": "Emma",
+      "initial_state": {
+        "Emma": 14,
+        "Carol": 5,
+        "Henry": 14
+      },
+      "operations": [
+        "Emma gives 2 points to Henry.",
+        "Henry gives 2 points to Emma.",
+        "Emma gains 9 points.",
+        "Emma loses 9 points."
+      ],
+      "prompt_length_chars": 420,
+      "raw_response": "14\n\nHere's the reasoning:\n\n1. After first operation (Emma gives 2 points to Henry), Emma has 14 - 2 = 12 points and Henry has 14 + 2 = 16 points.\n2. After second operation (Henry gives 2 points to Emma), Emma has 12 + 2 = 14 points and Henry has 16 - 2 = 14 points.\n3. After third operation (Emma gains 9 points), Emma has 14 + 9 = 23 points.\n4. After fourth operation (Emma loses 9 points), Emma has 23 - 9 = 14 points.\n\nTherefore, after all operations, Emma has 14 points."
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "ollama:mixtral:8x7b",
+      "k_operations": 4,
+      "n_ops_actual": 4,
+      "correct_answer": 11,
+      "predicted": 11,
+      "accurate": 1,
+      "query_entity": "Emma",
+      "initial_state": {
+        "Emma": 11,
+        "Noah": 15,
+        "James": 11
+      },
+      "operations": [
+        "James gives 3 points to Noah.",
+        "Noah gives 3 points to James.",
+        "Noah loses 1 points.",
+        "Noah gains 1 points."
+      ],
+      "prompt_length_chars": 420,
+      "raw_response": "11 points\n\nHere's the reasoning:\n\nWe apply each operation to the previous state until we reach the final state.\n\nInitial state:\nEmma: 11 points, Noah: 15 points, James: 11 points\n\n1. James gives 3 points to Noah:\nEmma: 11 points, Noah: 18 points, James: 8 points\n\n2. Noah gives 3 points to James:\nEmma: 11 points, Noah: 15 points, James: 11 points\n\n3. Noah loses 1 point:\nEmma: 11 points, Noah: 14 points, James: 11 points\n\n4. Noah gains 1 point:\nEmma: 11 points, Noah: 15 points, James: 11 points\n\nSo, after all operations, Emma still has 11 points."
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "ollama:mixtral:8x7b",
+      "k_operations": 4,
+      "n_ops_actual": 4,
+      "correct_answer": 15,
+      "predicted": 15,
+      "accurate": 1,
+      "query_entity": "Emma",
+      "initial_state": {
+        "Kate": 6,
+        "Grace": 5,
+        "Emma": 15
+      },
+      "operations": [
+        "Emma gains 5 points.",
+        "Emma loses 5 points.",
+        "Emma gains 8 points.",
+        "Emma loses 8 points."
+      ],
+      "prompt_length_chars": 400,
+      "raw_response": "15 points - despite the operations, Emma's initial 15 points remain unchanged because she gained and lost an equal amount in each step."
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "ollama:mixtral:8x7b",
+      "k_operations": 4,
+      "n_ops_actual": 4,
+      "correct_answer": 5,
+      "predicted": 7,
+      "accurate": 0,
+      "query_entity": "Leo",
+      "initial_state": {
+        "Leo": 5,
+        "Grace": 8,
+        "Iris": 7
+      },
+      "operations": [
+        "Leo gives 2 points to Iris.",
+        "Iris gives 2 points to Leo.",
+        "Iris gives 2 points to Leo.",
+        "Leo gives 2 points to Iris."
+      ],
+      "prompt_length_chars": 425,
+      "raw_response": "7 points"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "ollama:mixtral:8x7b",
+      "k_operations": 4,
+      "n_ops_actual": 4,
+      "correct_answer": 6,
+      "predicted": 7,
+      "accurate": 0,
+      "query_entity": "Alice",
+      "initial_state": {
+        "Alice": 6,
+        "Emma": 16,
+        "Frank": 11
+      },
+      "operations": [
+        "Alice gives 2 points to Frank.",
+        "Frank gives 2 points to Alice.",
+        "Emma gives 1 points to Alice.",
+        "Alice gives 1 points to Emma."
+      ],
+      "prompt_length_chars": 441,
+      "raw_response": "7 points\n\nHere's the reasoning:\n1. Starting from \"Alice: 6 points,\" after she gives 2 points to Frank, she has 6 - 2 = 4 points. (Frank now has 11 + 2 = 13 points.)\n2. After Frank gives 2 points back to Alice, she has 4 + 2 = 6 points again.\n3. Then, Emma gives 1 point to Alice, making her total 6 + 1 = 7 points.\n4. Finally, after Alice gives 1 point to Emma, her balance remains at 7 points since she gave away only 1 point this time."
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "ollama:mixtral:8x7b",
+      "k_operations": 4,
+      "n_ops_actual": 4,
+      "correct_answer": 10,
+      "predicted": 10,
+      "accurate": 1,
+      "query_entity": "Carol",
+      "initial_state": {
+        "Mia": 18,
+        "Noah": 5,
+        "Carol": 10
+      },
+      "operations": [
+        "Noah gives 3 points to Carol.",
+        "Carol gives 3 points to Noah.",
+        "Mia gives 1 points to Noah.",
+        "Noah gives 1 points to Mia."
+      ],
+      "prompt_length_chars": 433,
+      "raw_response": "10 points\n\nHere's the reasoning:\n\n1. We start with the initial state: Mia has 18 points, Noah has 5 points, and Carol has 10 points.\n2. After reading operation 1 (Noah gives 3 points to Carol), we know that Noah will have 5 - 3 = 2 points and Carol will have 10 + 3 = 13 points.\n3. After reading operation 2 (Carol gives 3 points to Noah), we know that Carol will have 13 - 3 = 10 points and Noah will have 2 + 3 = 5 points again.\n4. After reading operation 3 (Mia gives 1 point to Noah), we know that Mia will have 18 - 1 = 17 points and Noah will have 5 + 1 = 6 points.\n5. After reading operation 4 (Noah gives 1 point to Mia), we know that Noah will have 6 - 1 = 5 points and Mia will have 17 + 1 = 18 points again.\n\nSo, after all operations, Carol has 10 points."
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "ollama:mixtral:8x7b",
+      "k_operations": 4,
+      "n_ops_actual": 4,
+      "correct_answer": 11,
+      "predicted": 11,
+      "accurate": 1,
+      "query_entity": "Alice",
+      "initial_state": {
+        "Bob": 20,
+        "Grace": 12,
+        "Alice": 11
+      },
+      "operations": [
+        "Grace loses 3 points.",
+        "Grace gains 3 points.",
+        "Bob gains 1 points.",
+        "Bob loses 1 points."
+      ],
+      "prompt_length_chars": 403,
+      "raw_response": "11 points\n\nHere's the reasoning:\n\nWe apply each operation to the initial state and keep track of the changes. However, we don't need to remember the exact points for Bob and Grace since the question asks only about Alice's points.\n\n1. Grace loses 3 points: The new state is B(20) G(9) A(11).\n2. Grace gains 3 points: The new state is B(20) G(12) A(11).\n3. Bob gains 1 point: The new state is B(21) G(12) A(11).\n4. Bob loses 1 point: The new state is B(20) G(12) A(11).\n\nAs we can see, Alice's points remain unchanged throughout all operations with a final value of 11 points."
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "ollama:mixtral:8x7b",
+      "k_operations": 4,
+      "n_ops_actual": 4,
+      "correct_answer": 7,
+      "predicted": 7,
+      "accurate": 1,
+      "query_entity": "Grace",
+      "initial_state": {
+        "David": 13,
+        "Grace": 7,
+        "Frank": 13
+      },
+      "operations": [
+        "Frank loses 5 points.",
+        "Frank gains 5 points.",
+        "Frank loses 5 points.",
+        "Frank gains 5 points."
+      ],
+      "prompt_length_chars": 408,
+      "raw_response": "7 points"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "ollama:mixtral:8x7b",
+      "k_operations": 4,
+      "n_ops_actual": 4,
+      "correct_answer": 13,
+      "predicted": 13,
+      "accurate": 1,
+      "query_entity": "Bob",
+      "initial_state": {
+        "Alice": 10,
+        "Bob": 13,
+        "Emma": 6
+      },
+      "operations": [
+        "Emma gains 7 points.",
+        "Emma loses 7 points.",
+        "Emma loses 3 points.",
+        "Emma gains 3 points."
+      ],
+      "prompt_length_chars": 399,
+      "raw_response": "13 points\n\nHere's the reasoning:\n\nWe don't need to track every point change since we are only asked about Bob's points, which remain constant throughout the given operations. So, after reading the initial state and the four operations, the answer is simply:\n\nAlice: not sure, Bob: 13 points, Emma: who knows, but it doesn't matter for this question."
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "ollama:mixtral:8x7b",
+      "k_operations": 4,
+      "n_ops_actual": 4,
+      "correct_answer": 13,
+      "predicted": 13,
+      "accurate": 1,
+      "query_entity": "Bob",
+      "initial_state": {
+        "James": 17,
+        "Iris": 11,
+        "Bob": 13
+      },
+      "operations": [
+        "Bob gains 7 points.",
+        "Bob loses 7 points.",
+        "Bob gains 9 points.",
+        "Bob loses 9 points."
+      ],
+      "prompt_length_chars": 396,
+      "raw_response": "13 points\n\nHere's the explanation:\nWe apply each operation to the previous state without referring back to the initial state.\n\n1. After Bob gains 7 points, he has 13 points (13 + 7 = 20).\n2. After Bob loses 7 points, he goes back to 13 points (20 - 7 = 13).\n3. After Bob gains 9 points, he now has 22 points (13 + 9 = 22).\n4. After Bob loses 9 points, he goes back to 13 points (22 - 9 = 13).\n\nTherefore, after all operations, Bob has 13 points."
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "ollama:mixtral:8x7b",
+      "k_operations": 6,
+      "n_ops_actual": 6,
+      "correct_answer": 18,
+      "predicted": 18,
+      "accurate": 1,
+      "query_entity": "Mia",
+      "initial_state": {
+        "Leo": 11,
+        "Noah": 16,
+        "Mia": 18
+      },
+      "operations": [
+        "Mia gains 6 points.",
+        "Mia loses 6 points.",
+        "Noah gives 3 points to Leo.",
+        "Leo gives 3 points to Noah.",
+        "Mia loses 3 points.",
+        "Mia gains 3 points."
+      ],
+      "prompt_length_chars": 460,
+      "raw_response": "18 points"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "ollama:mixtral:8x7b",
+      "k_operations": 6,
+      "n_ops_actual": 6,
+      "correct_answer": 14,
+      "predicted": 17,
+      "accurate": 0,
+      "query_entity": "Grace",
+      "initial_state": {
+        "Grace": 14,
+        "Frank": 9,
+        "Noah": 11
+      },
+      "operations": [
+        "Noah loses 4 points.",
+        "Noah gains 4 points.",
+        "Noah gives 3 points to Grace.",
+        "Grace gives 3 points to Noah.",
+        "Frank gives 3 points to Noah.",
+        "Noah gives 3 points to Frank."
+      ],
+      "prompt_length_chars": 491,
+      "raw_response": "17\n\nHere's the explanation:\n1. Start with the initial state: Grace=14, Frank=9, Noah=11.\n2. After operation 1, Noah has 11-4 = 7 points.\n3. After operation 2, Noah has 7+4 = 11 points.\n4. After operation 3, Grace has 14+3 = 17 points and Noah has 11-3 = 8 points.\n5. After operation 4, Grace has 17-3 = 14 points and Noah has 8+3 = 11 points.\n6. After operation 5, Noah has 11+3 = 14 points and Frank has 9-3 = 6 points.\n7. After operation 6, Noah has 14-3 = 11 points and Frank has 6+3 = 9 points.\n\nSo, after all operations, Grace has 17 points."
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "ollama:mixtral:8x7b",
+      "k_operations": 6,
+      "n_ops_actual": 6,
+      "correct_answer": 19,
+      "predicted": 19,
+      "accurate": 1,
+      "query_entity": "David",
+      "initial_state": {
+        "Emma": 18,
+        "Noah": 15,
+        "David": 19
+      },
+      "operations": [
+        "Noah loses 2 points.",
+        "Noah gains 2 points.",
+        "Noah gives 3 points to Emma.",
+        "Emma gives 3 points to Noah.",
+        "Noah gains 9 points.",
+        "Noah loses 9 points."
+      ],
+      "prompt_length_chars": 471,
+      "raw_response": "19\n\nHere's the explanation: Since you can't refer back to the initial state after reading it once, I'll provide the final points for David as well in the explanation. The operations only affect Emma and Noah's points, so David's points remain unchanged at 19.\n\nOperations 1-6:\n1. Noah loses 2 points: Noah has 15 - 2 = 13 points.\n2. Noah gains 2 points: Noah has 13 + 2 = 15 points.\n3. Noah gives 3 points to Emma: Noah has 15 - 3 = 12 points, Emma has 18 + 3 = 21 points.\n4. Emma gives 3 points to Noah: Noah has 12 + 3 = 15 points, Emma has 21 - 3 = 18 points.\n5. Noah gains 9 points: Noah has 15 + 9 = 24 points.\n6. Noah loses 9 points: Noah has 24 - 9 = 15 points.\n\nAs mentioned before, David's points remain unchanged at 19 throughout these operations."
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "ollama:mixtral:8x7b",
+      "k_operations": 6,
+      "n_ops_actual": 6,
+      "correct_answer": 12,
+      "predicted": 12,
+      "accurate": 1,
+      "query_entity": "James",
+      "initial_state": {
+        "Kate": 7,
+        "James": 12,
+        "Frank": 14
+      },
+      "operations": [
+        "Kate gains 3 points.",
+        "Kate loses 3 points.",
+        "Kate gains 4 points.",
+        "Kate loses 4 points.",
+        "Frank loses 1 points.",
+        "Frank gains 1 points."
+      ],
+      "prompt_length_chars": 457,
+      "raw_response": "12\n\nExplanation: The operations for Kate's points cancel out (gains and losses of 3 then 4), and Frank only loses and regains 1 point. So, the initial state remains unchanged for both Kate and Frank, while James keeps his original 12 points throughout the operations."
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "ollama:mixtral:8x7b",
+      "k_operations": 6,
+      "n_ops_actual": 6,
+      "correct_answer": 20,
+      "predicted": 20,
+      "accurate": 1,
+      "query_entity": "James",
+      "initial_state": {
+        "Grace": 11,
+        "Kate": 17,
+        "James": 20
+      },
+      "operations": [
+        "Grace loses 2 points.",
+        "Grace gains 2 points.",
+        "James gives 1 points to Grace.",
+        "Grace gives 1 points to James.",
+        "Grace loses 2 points.",
+        "Grace gains 2 points."
+      ],
+      "prompt_length_chars": 480,
+      "raw_response": "20 points\n\nHere's the explanation:\n1. Grace loses 2 points: Grace=9, Kate=17, James=20\n2. Grace gains 2 points: Grace=11, Kate=17, James=20\n3. James gives 1 point to Grace: Grace=12, Kate=17, James=19\n4. Grace gives 1 point to James: Grace=12, Kate=17, James=20\n5. Grace loses 2 points: Grace=10, Kate=17, James=20\n6. Grace gains 2 points: Grace=11, Kate=17, James=20\n\nSo, after all operations, James has 20 points."
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "ollama:mixtral:8x7b",
+      "k_operations": 6,
+      "n_ops_actual": 6,
+      "correct_answer": 8,
+      "predicted": 8,
+      "accurate": 1,
+      "query_entity": "Henry",
+      "initial_state": {
+        "Iris": 12,
+        "Henry": 8,
+        "Alice": 19
+      },
+      "operations": [
+        "Henry gains 9 points.",
+        "Henry loses 9 points.",
+        "Alice gives 2 points to Henry.",
+        "Henry gives 2 points to Alice.",
+        "Alice gives 3 points to Henry.",
+        "Henry gives 3 points to Alice."
+      ],
+      "prompt_length_chars": 497,
+      "raw_response": "8 points"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "ollama:mixtral:8x7b",
+      "k_operations": 6,
+      "n_ops_actual": 6,
+      "correct_answer": 19,
+      "predicted": 19,
+      "accurate": 1,
+      "query_entity": "Carol",
+      "initial_state": {
+        "Carol": 19,
+        "Leo": 13,
+        "Henry": 12
+      },
+      "operations": [
+        "Leo gives 3 points to Henry.",
+        "Henry gives 3 points to Leo.",
+        "Leo gains 8 points.",
+        "Leo loses 8 points.",
+        "Henry gains 5 points.",
+        "Henry loses 5 points."
+      ],
+      "prompt_length_chars": 471,
+      "raw_response": "19 points\n\nHere's the explanation:\n\nWe keep track of each operation and its effect on the scores without referring back to the initial state.\n\n1. Leo gives 3 points to Henry: Leo has 10 points, Henry has 15 points.\n2. Henry gives 3 points to Leo: Leo has 13 points, Henry has 12 points.\n3. Leo gains 8 points: Leo has 21 points.\n4. Leo loses 8 points: Leo has 13 points.\n5. Henry gains 5 points: Henry has 17 points.\n6. Henry loses 5 points: Henry has 12 points.\n\nSo, after all operations, Carol still has 19 points."
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "ollama:mixtral:8x7b",
+      "k_operations": 6,
+      "n_ops_actual": 6,
+      "correct_answer": 9,
+      "predicted": 9,
+      "accurate": 1,
+      "query_entity": "Frank",
+      "initial_state": {
+        "Emma": 7,
+        "Frank": 9,
+        "Mia": 9
+      },
+      "operations": [
+        "Frank gains 3 points.",
+        "Frank loses 3 points.",
+        "Emma gives 2 points to Mia.",
+        "Mia gives 2 points to Emma.",
+        "Frank loses 5 points.",
+        "Frank gains 5 points."
+      ],
+      "prompt_length_chars": 469,
+      "raw_response": "9 points"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "ollama:mixtral:8x7b",
+      "k_operations": 6,
+      "n_ops_actual": 6,
+      "correct_answer": 5,
+      "predicted": 5,
+      "accurate": 1,
+      "query_entity": "David",
+      "initial_state": {
+        "Grace": 18,
+        "Alice": 17,
+        "David": 5
+      },
+      "operations": [
+        "Alice gives 1 points to David.",
+        "David gives 1 points to Alice.",
+        "Alice loses 4 points.",
+        "Alice gains 4 points.",
+        "David loses 5 points.",
+        "David gains 5 points."
+      ],
+      "prompt_length_chars": 480,
+      "raw_response": "5 points\n\nHere's the step-by-step breakdown:\n1. Alice gives 1 point to David: Alice=17, Grace=18, David=6\n2. David gives 1 point to Alice: Alice=18, Grace=18, David=5\n3. Alice loses 4 points: Alice=14, Grace=18, David=5\n4. Alice gains 4 points: Alice=18, Grace=18, David=5\n5. David loses 5 points: Alice=18, Grace=18, David=0\n6. David gains 5 points: Alice=18, Grace=18, David=5"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "ollama:mixtral:8x7b",
+      "k_operations": 6,
+      "n_ops_actual": 6,
+      "correct_answer": 20,
+      "predicted": 20,
+      "accurate": 1,
+      "query_entity": "Noah",
+      "initial_state": {
+        "David": 13,
+        "Henry": 18,
+        "Noah": 20
+      },
+      "operations": [
+        "Henry gains 6 points.",
+        "Henry loses 6 points.",
+        "Noah gives 3 points to Henry.",
+        "Henry gives 3 points to Noah.",
+        "Henry gains 3 points.",
+        "Henry loses 3 points."
+      ],
+      "prompt_length_chars": 477,
+      "raw_response": "20 points; Henry's gains and losses cancel out, and he never actually transfers or receives any points to/from Noah."
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "ollama:mixtral:8x7b",
+      "k_operations": 6,
+      "n_ops_actual": 6,
+      "correct_answer": 7,
+      "predicted": 10,
+      "accurate": 0,
+      "query_entity": "Alice",
+      "initial_state": {
+        "Iris": 5,
+        "Alice": 7,
+        "Grace": 18
+      },
+      "operations": [
+        "Alice gains 3 points.",
+        "Alice loses 3 points.",
+        "Alice gains 7 points.",
+        "Alice loses 7 points.",
+        "Iris loses 4 points.",
+        "Iris gains 4 points."
+      ],
+      "prompt_length_chars": 458,
+      "raw_response": "10\n\nExplanation: even though we cannot refer back to the initial state, we can reason about each operation's net effect on Alice's point total. Here, Alice gains 3 points and then loses them, gaining 7 and losing 7, so her operations have a net change of 0 points. She starts with 7 points, so she still has 7 + 0 = 10 points after all the operations."
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "ollama:mixtral:8x7b",
+      "k_operations": 6,
+      "n_ops_actual": 6,
+      "correct_answer": 13,
+      "predicted": 15,
+      "accurate": 0,
+      "query_entity": "Grace",
+      "initial_state": {
+        "Frank": 13,
+        "Mia": 18,
+        "Grace": 13
+      },
+      "operations": [
+        "Mia gains 1 points.",
+        "Mia loses 1 points.",
+        "Grace gives 2 points to Frank.",
+        "Frank gives 2 points to Grace.",
+        "Grace gains 2 points.",
+        "Grace loses 2 points."
+      ],
+      "prompt_length_chars": 475,
+      "raw_response": "15\n\nHere's the reasoning:\n1. Starting points: Frank=13, Mia=18, Grace=13\n2. After operation 1 (Mia gains 1 point): Frank=13, Mia=19, Grace=13\n3. After operation 2 (Mia loses 1 point): Frank=13, Mia=18, Grace=13\n4. After operation 3 (Grace gives 2 points to Frank): Frank=15, Mia=18, Grace=11\n5. After operation 4 (Frank gives 2 points to Grace): Frank=13, Mia=18, Grace=13\n6. After operation 5 (Grace gains 2 points): Frank=13, Mia=18, Grace=15\n7. After operation 6 (Grace loses 2 points): Frank=13, Mia=18, Grace=13\n\nSo, after all operations, Grace has 15 points."
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "ollama:mixtral:8x7b",
+      "k_operations": 6,
+      "n_ops_actual": 6,
+      "correct_answer": 11,
+      "predicted": 14,
+      "accurate": 0,
+      "query_entity": "Mia",
+      "initial_state": {
+        "Alice": 12,
+        "Mia": 11,
+        "Noah": 5
+      },
+      "operations": [
+        "Alice gives 1 points to Noah.",
+        "Noah gives 1 points to Alice.",
+        "Noah loses 1 points.",
+        "Noah gains 1 points.",
+        "Alice gives 3 points to Mia.",
+        "Mia gives 3 points to Alice."
+      ],
+      "prompt_length_chars": 485,
+      "raw_response": "14 points\n\nHere's the reasoning:\n1. We start with the initial state: Alice has 12 points, Mia has 11 points, and Noah has 5 points.\n2. After reading each operation only once, we keep a running tally of the points for each person.\n3. Alice gives 1 point to Noah, so Alice now has 11 points, and Noah has 6 points.\n4. Noah gives 1 point back to Alice, so Alice now has 12 points, and Noah has 5 points again.\n5. Noah loses 1 point, so he now has 4 points.\n6. Noah gains 1 point back, so he now has 5 points.\n7. Alice gives 3 points to Mia, so Alice now has 9 points, and Mia now has 14 points.\n8. Mia gives 3 points back to Alice, but we cannot refer back to the initial state, so we assume this operation still applies (even though it would result in Alice having negative points). After this operation, Alice has 6 points, and Mia still has 14 points.\n9. Therefore, after all operations, Mia has 14 points."
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "ollama:mixtral:8x7b",
+      "k_operations": 6,
+      "n_ops_actual": 6,
+      "correct_answer": 8,
+      "predicted": 8,
+      "accurate": 1,
+      "query_entity": "Mia",
+      "initial_state": {
+        "Mia": 8,
+        "Frank": 10,
+        "Carol": 14
+      },
+      "operations": [
+        "Carol gains 1 points.",
+        "Carol loses 1 points.",
+        "Carol loses 4 points.",
+        "Carol gains 4 points.",
+        "Carol loses 2 points.",
+        "Carol gains 2 points."
+      ],
+      "prompt_length_chars": 458,
+      "raw_response": "8\n\nHere's the reasoning:\nThe problem states that you cannot refer back to the initial state after reading it once. However, the final number of points Mia has does not require tracking all the intermediate steps for Carol's points. So, we can still answer this question correctly without violating the rules given in the prompt."
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "ollama:mixtral:8x7b",
+      "k_operations": 6,
+      "n_ops_actual": 6,
+      "correct_answer": 12,
+      "predicted": 15,
+      "accurate": 0,
+      "query_entity": "James",
+      "initial_state": {
+        "James": 12,
+        "Leo": 8,
+        "Kate": 14
+      },
+      "operations": [
+        "Kate gives 3 points to James.",
+        "James gives 3 points to Kate.",
+        "Leo gains 9 points.",
+        "Leo loses 9 points.",
+        "Kate loses 3 points.",
+        "Kate gains 3 points."
+      ],
+      "prompt_length_chars": 469,
+      "raw_response": "15\nExplanation:\n1. James: 12 + 3 = 15, Leo: 8, Kate: 14 - 3 = 11\n2. James: 15 - 3 + 3 = 15, Leo: 8, Kate: 11\n3. James: 15, Leo: 8 + 9 = 17, Kate: 11\n4. James: 15, Leo: 17 - 9 = 8, Kate: 11\n5. James: 15, Leo: 8, Kate: 11 - 3 = 8\n6. James: 15, Leo: 8, Kate: 8 + 3 = 11"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "ollama:mixtral:8x7b",
+      "k_operations": 6,
+      "n_ops_actual": 6,
+      "correct_answer": 20,
+      "predicted": 20,
+      "accurate": 1,
+      "query_entity": "Frank",
+      "initial_state": {
+        "Iris": 5,
+        "Kate": 18,
+        "Frank": 20
+      },
+      "operations": [
+        "Kate gains 6 points.",
+        "Kate loses 6 points.",
+        "Kate gives 2 points to Iris.",
+        "Iris gives 2 points to Kate.",
+        "Frank gains 9 points.",
+        "Frank loses 9 points."
+      ],
+      "prompt_length_chars": 472,
+      "raw_response": "20\n\nHere's the step-by-step breakdown:\n1. Kate gains 6 points, so she has 18 + 6 = 24 points.\n2. Kate loses 6 points, bringing her back to 24 - 6 = 18 points.\n3. Kate gives 2 points to Iris, so Iris now has 5 + 2 = 7 points, and Kate has 18 - 2 = 16 points.\n4. Iris gives 2 points to Kate, so Kate now has 16 + 2 = 18 points, and Iris has 7 - 2 = 5 points.\n5. Frank gains 9 points, so he now has 20 + 9 = 29 points.\n6. Frank loses 9 points, bringing him back to 29 - 9 = 20 points."
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "ollama:mixtral:8x7b",
+      "k_operations": 6,
+      "n_ops_actual": 6,
+      "correct_answer": 18,
+      "predicted": 18,
+      "accurate": 1,
+      "query_entity": "Iris",
+      "initial_state": {
+        "Emma": 20,
+        "James": 19,
+        "Iris": 18
+      },
+      "operations": [
+        "Iris gives 2 points to James.",
+        "James gives 2 points to Iris.",
+        "Emma gains 5 points.",
+        "Emma loses 5 points.",
+        "Emma loses 4 points.",
+        "Emma gains 4 points."
+      ],
+      "prompt_length_chars": 472,
+      "raw_response": "18 points"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "ollama:mixtral:8x7b",
+      "k_operations": 6,
+      "n_ops_actual": 6,
+      "correct_answer": 20,
+      "predicted": 20,
+      "accurate": 1,
+      "query_entity": "Grace",
+      "initial_state": {
+        "James": 15,
+        "Kate": 5,
+        "Grace": 20
+      },
+      "operations": [
+        "James loses 4 points.",
+        "James gains 4 points.",
+        "Kate gains 5 points.",
+        "Kate loses 5 points.",
+        "Kate loses 5 points.",
+        "Kate gains 5 points."
+      ],
+      "prompt_length_chars": 457,
+      "raw_response": "20 points for Grace remain unchanged as no operations were applied to her points."
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "ollama:mixtral:8x7b",
+      "k_operations": 6,
+      "n_ops_actual": 6,
+      "correct_answer": 11,
+      "predicted": 11,
+      "accurate": 1,
+      "query_entity": "Emma",
+      "initial_state": {
+        "Emma": 11,
+        "Iris": 7,
+        "Alice": 12
+      },
+      "operations": [
+        "Iris gives 3 points to Alice.",
+        "Alice gives 3 points to Iris.",
+        "Alice gains 8 points.",
+        "Alice loses 8 points.",
+        "Alice gives 2 points to Iris.",
+        "Iris gives 2 points to Alice."
+      ],
+      "prompt_length_chars": 491,
+      "raw_response": "11 points\n\nHere's the explanation:\n\nWe apply each operation while keeping track of the current state. However, we are only asked to find out how many points Emma has in the end, so there is no need to keep track of Iris and Alice's points after each step.\n\nInitial state:\nEmma: 11 points, Iris: 7 points, Alice: 12 points\n\nOperations:\n1. Iris gives 3 points to Alice: Irrelevant to Emma's points\n2. Alice gives 3 points to Iris: Irrelevant to Emma's points\n3. Alice gains 8 points: Irrelevant to Emma's points\n4. Alice loses 8 points: Irrelevant to Emma's points\n5. Alice gives 2 points to Iris: Irrelevant to Emma's points\n6. Iris gives 2 points to Alice: Irrelevant to Emma's points\n\nAs you can see, none of the operations affect how many points Emma has. Therefore, Emma still has 11 points after all the operations."
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "ollama:mixtral:8x7b",
+      "k_operations": 6,
+      "n_ops_actual": 6,
+      "correct_answer": 14,
+      "predicted": 14,
+      "accurate": 1,
+      "query_entity": "David",
+      "initial_state": {
+        "Bob": 17,
+        "Emma": 12,
+        "David": 14
+      },
+      "operations": [
+        "David gives 2 points to Emma.",
+        "Emma gives 2 points to David.",
+        "David gives 2 points to Emma.",
+        "Emma gives 2 points to David.",
+        "David gives 2 points to Emma.",
+        "Emma gives 2 points to David."
+      ],
+      "prompt_length_chars": 508,
+      "raw_response": "14 points - even though points are exchanged between David and Emma throughout the operations, David's point total remains the same as the initial state since he gives and receives equal amounts."
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "ollama:mixtral:8x7b",
+      "k_operations": 8,
+      "n_ops_actual": 8,
+      "correct_answer": 8,
+      "predicted": 8,
+      "accurate": 1,
+      "query_entity": "Mia",
+      "initial_state": {
+        "Henry": 13,
+        "Emma": 12,
+        "Mia": 8
+      },
+      "operations": [
+        "Henry gives 1 points to Emma.",
+        "Emma gives 1 points to Henry.",
+        "Mia gives 1 points to Henry.",
+        "Henry gives 1 points to Mia.",
+        "Mia gains 8 points.",
+        "Mia loses 8 points.",
+        "Mia loses 5 points.",
+        "Mia gains 5 points."
+      ],
+      "prompt_length_chars": 533,
+      "raw_response": "8 points\n\nHere's the explanation:\n1. Henry has 13 points, so after giving 1 point to Emma, he will have 12 points. Emma will then have 13 points.\n2. After the second operation, both Henry and Emma will have 13 points each since they gave and received a point respectively.\n3. When Mia gives a point to Henry, she'll have 7 points while Henry will have 14 points.\n4. In the fourth operation, when Henry gives a point back to Mia, both of them will have 13 points again.\n5. The next four operations (Mia gains 8 points, then loses 8 points, loses 5 points, and finally gains 5 points) result in no net change for Mia's points because she gains and loses the same amount of points.\n6. Therefore, after all those operations, Mia still has her initial 8 points."
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "ollama:mixtral:8x7b",
+      "k_operations": 8,
+      "n_ops_actual": 8,
+      "correct_answer": 12,
+      "predicted": 12,
+      "accurate": 1,
+      "query_entity": "Bob",
+      "initial_state": {
+        "James": 11,
+        "Emma": 14,
+        "Bob": 12
+      },
+      "operations": [
+        "James loses 3 points.",
+        "James gains 3 points.",
+        "Bob gains 9 points.",
+        "Bob loses 9 points.",
+        "Emma gains 1 points.",
+        "Emma loses 1 points.",
+        "Bob gains 5 points.",
+        "Bob loses 5 points."
+      ],
+      "prompt_length_chars": 502,
+      "raw_response": "12 points (the initial number of points for Bob) because each gain or loss of points cancels out, leaving his score unchanged."
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "ollama:mixtral:8x7b",
+      "k_operations": 8,
+      "n_ops_actual": 8,
+      "correct_answer": 8,
+      "predicted": 8,
+      "accurate": 1,
+      "query_entity": "Carol",
+      "initial_state": {
+        "Carol": 8,
+        "Kate": 5,
+        "Henry": 14
+      },
+      "operations": [
+        "Kate loses 4 points.",
+        "Kate gains 4 points.",
+        "Carol loses 1 points.",
+        "Carol gains 1 points.",
+        "Kate loses 1 points.",
+        "Kate gains 1 points.",
+        "Kate gains 8 points.",
+        "Kate loses 8 points."
+      ],
+      "prompt_length_chars": 508,
+      "raw_response": "8 points"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "ollama:mixtral:8x7b",
+      "k_operations": 8,
+      "n_ops_actual": 8,
+      "correct_answer": 9,
+      "predicted": 9,
+      "accurate": 1,
+      "query_entity": "Kate",
+      "initial_state": {
+        "James": 6,
+        "Kate": 9,
+        "Mia": 9
+      },
+      "operations": [
+        "Kate gives 1 points to James.",
+        "James gives 1 points to Kate.",
+        "Mia gains 7 points.",
+        "Mia loses 7 points.",
+        "Mia gives 3 points to James.",
+        "James gives 3 points to Mia.",
+        "Kate loses 4 points.",
+        "Kate gains 4 points."
+      ],
+      "prompt_length_chars": 534,
+      "raw_response": "9 points\n\nHere's the explanation:\n1. James has 6 + 1 = 7 points, and Kate has 9 - 1 = 8 points.\n2. James has 7 - 1 = 6 points, and Kate has 8 + 1 = 9 points.\n3. Mia still has 9 points.\n4. Mia still has 9 points.\n5. James has 6 + 3 = 9 points, and Mia has 9 - 3 = 6 points.\n6. James has 9 - 3 = 6 points, and Mia has 6 + 3 = 9 points.\n7. Kate has 9 - 4 = 5 points.\n8. Kate has 5 + 4 = 9 points."
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "ollama:mixtral:8x7b",
+      "k_operations": 8,
+      "n_ops_actual": 8,
+      "correct_answer": 6,
+      "predicted": 6,
+      "accurate": 1,
+      "query_entity": "James",
+      "initial_state": {
+        "Noah": 14,
+        "James": 6,
+        "Grace": 8
+      },
+      "operations": [
+        "Grace gains 4 points.",
+        "Grace loses 4 points.",
+        "Grace loses 1 points.",
+        "Grace gains 1 points.",
+        "Noah gains 3 points.",
+        "Noah loses 3 points.",
+        "Noah gives 1 points to Grace.",
+        "Grace gives 1 points to Noah."
+      ],
+      "prompt_length_chars": 528,
+      "raw_response": "6 points\n\nHere's the explanation: Although we can't refer back to the initial state, we don't need to because the operations only affect Noah and Grace's points, not James'. So, James still has the same amount of points as in the beginning, which is 6 points."
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "ollama:mixtral:8x7b",
+      "k_operations": 8,
+      "n_ops_actual": 8,
+      "correct_answer": 6,
+      "predicted": 6,
+      "accurate": 1,
+      "query_entity": "James",
+      "initial_state": {
+        "Henry": 20,
+        "Leo": 14,
+        "James": 6
+      },
+      "operations": [
+        "Leo gains 5 points.",
+        "Leo loses 5 points.",
+        "Leo gives 3 points to Henry.",
+        "Henry gives 3 points to Leo.",
+        "Leo gains 10 points.",
+        "Leo loses 10 points.",
+        "Henry gives 1 points to Leo.",
+        "Leo gives 1 points to Henry."
+      ],
+      "prompt_length_chars": 536,
+      "raw_response": "6 points\n\nHere's the explanation: We keep track of each player's points as we apply the operations one by one.\nJames starts with 6 points and doesn't receive or lose any points throughout the operations, so he still has 6 points at the end."
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "ollama:mixtral:8x7b",
+      "k_operations": 8,
+      "n_ops_actual": 8,
+      "correct_answer": 7,
+      "predicted": 10,
+      "accurate": 0,
+      "query_entity": "Carol",
+      "initial_state": {
+        "David": 13,
+        "Kate": 9,
+        "Carol": 7
+      },
+      "operations": [
+        "David gains 5 points.",
+        "David loses 5 points.",
+        "Carol gives 2 points to Kate.",
+        "Kate gives 2 points to Carol.",
+        "Kate gains 5 points.",
+        "Kate loses 5 points.",
+        "Kate gives 3 points to Carol.",
+        "Carol gives 3 points to Kate."
+      ],
+      "prompt_length_chars": 544,
+      "raw_response": "10 points\n\nHere's the step-by-step breakdown:\n1. David starts with 13 points, gaining 5 points puts him at 18.\n2. Losing 5 points brings David back to 13.\n3. Carol has 7 points, after giving 2 points to Kate, she has 5.\n4. After receiving 2 points from Kate, Carol now has 7 points.\n5. Kate starts with 9 points, gaining 5 points puts her at 14, then losing 5 brings her back to 9.\n6. Gaining 3 points from Carol makes it 12, followed by losing 3 points which leaves her with 9.\n7. After giving 3 points to Carol, Kate now has 6 points.\n8. Receiving 3 points from Kate brings Carol up to 10 points."
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "ollama:mixtral:8x7b",
+      "k_operations": 8,
+      "n_ops_actual": 8,
+      "correct_answer": 15,
+      "predicted": 15,
+      "accurate": 1,
+      "query_entity": "Bob",
+      "initial_state": {
+        "Henry": 6,
+        "Noah": 18,
+        "Bob": 15
+      },
+      "operations": [
+        "Noah gives 1 points to Henry.",
+        "Henry gives 1 points to Noah.",
+        "Bob gains 10 points.",
+        "Bob loses 10 points.",
+        "Henry gives 3 points to Noah.",
+        "Noah gives 3 points to Henry.",
+        "Henry gains 8 points.",
+        "Henry loses 8 points."
+      ],
+      "prompt_length_chars": 541,
+      "raw_response": "15 points\n\nHere's the step-by-step breakdown:\n\nInitial state:\nHenry: 6 points, Noah: 18 points, Bob: 15 points\n\nOperations:\n1. Noah gives 1 points to Henry. (Noah: 17, Henry: 7)\n2. Henry gives 1 points to Noah. (Noah: 18, Henry: 6)\n3. Bob gains 10 points. (Noah: 18, Henry: 6, Bob: 25)\n4. Bob loses 10 points. (Noah: 18, Henry: 6, Bob: 15)\n5. Henry gives 3 points to Noah. (Noah: 21, Henry: 3)\n6. Noah gives 3 points to Henry. (Noah: 18, Henry: 6)\n7. Henry gains 8 points. (Noah: 18, Henry: 14)\n8. Henry loses 8 points. (Noah: 18, Henry: 6)\n\nSo, after all operations, Bob has 15 points."
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "ollama:mixtral:8x7b",
+      "k_operations": 8,
+      "n_ops_actual": 8,
+      "correct_answer": 18,
+      "predicted": 18,
+      "accurate": 1,
+      "query_entity": "Henry",
+      "initial_state": {
+        "Kate": 10,
+        "Henry": 18,
+        "Emma": 20
+      },
+      "operations": [
+        "Henry gains 6 points.",
+        "Henry loses 6 points.",
+        "Henry loses 3 points.",
+        "Henry gains 3 points.",
+        "Kate gives 2 points to Emma.",
+        "Emma gives 2 points to Kate.",
+        "Emma loses 4 points.",
+        "Emma gains 4 points."
+      ],
+      "prompt_length_chars": 527,
+      "raw_response": "18\nExplanation:\nWe track the points for each person after each operation.\n\nInitial state: Kate=10, Henry=18, Emma=20\n1. Henry gains 6 points. New state: Kate=10, Henry=24, Emma=20\n2. Henry loses 6 points. New state: Kate=10, Henry=18, Emma=20\n3. Henry loses 3 points. New state: Kate=10, Henry=15, Emma=20\n4. Henry gains 3 points. New state: Kate=10, Henry=18, Emma=20\n5. Kate gives 2 points to Emma. New state: Kate=8, Henry=18, Emma=22\n6. Emma gives 2 points to Kate. New state: Kate=10, Henry=18, Emma=20\n7. Emma loses 4 points. New state: Kate=10, Henry=18, Emma=16\n8. Emma gains 4 points. New state: Kate=10, Henry=18, Emma=20\n\nSo after all operations, Henry has 18 points."
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "ollama:mixtral:8x7b",
+      "k_operations": 8,
+      "n_ops_actual": 8,
+      "correct_answer": 6,
+      "predicted": 6,
+      "accurate": 1,
+      "query_entity": "Kate",
+      "initial_state": {
+        "Kate": 6,
+        "Grace": 19,
+        "Iris": 7
+      },
+      "operations": [
+        "Grace loses 3 points.",
+        "Grace gains 3 points.",
+        "Grace gains 9 points.",
+        "Grace loses 9 points.",
+        "Iris gains 9 points.",
+        "Iris loses 9 points.",
+        "Grace loses 1 points.",
+        "Grace gains 1 points."
+      ],
+      "prompt_length_chars": 510,
+      "raw_response": "6\n\nHere's the explanation:\n\nSince you can't refer back to the initial state, I'll break down the changes for each person step-by-step:\n\n1. Grace loses 3 points: Grace has 16 points now.\n2. Grace gains 3 points: Grace has 19 points again.\n3. Grace gains 9 points: Grace has 28 points now.\n4. Grace loses 9 points: Grace has 19 points again.\n5. Iris gains 9 points: Iris has 16 points now.\n6. Iris loses 9 points: Iris has 7 points again.\n7. Grace loses 1 point: Grace has 18 points now.\n8. Grace gains 1 point: Grace has 19 points again.\n\nAs you're only asking for Kate's final number of points, it remains unchanged at 6 points."
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "ollama:mixtral:8x7b",
+      "k_operations": 8,
+      "n_ops_actual": 8,
+      "correct_answer": 20,
+      "predicted": 20,
+      "accurate": 1,
+      "query_entity": "Iris",
+      "initial_state": {
+        "Iris": 20,
+        "Frank": 19,
+        "James": 6
+      },
+      "operations": [
+        "Frank gains 9 points.",
+        "Frank loses 9 points.",
+        "Frank gains 8 points.",
+        "Frank loses 8 points.",
+        "Frank gives 1 points to Iris.",
+        "Iris gives 1 points to Frank.",
+        "James gives 3 points to Iris.",
+        "Iris gives 3 points to James."
+      ],
+      "prompt_length_chars": 546,
+      "raw_response": "20 (the initial number of points Iris has remains unchanged)\n\nHere's the explanation:\n\nWe don't need to track each point change because after reading the problem, we know that for every gain or loss of points, there is an equal exchange between Frank and Iris or James. \n\nFrank neither gains nor loses any net points, as his gains and losses cancel out. Iris and James only exchange points with Frank but not among themselves, so their point totals also remain unchanged. Therefore, Iris still has her initial 20 points after all the operations."
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "ollama:mixtral:8x7b",
+      "k_operations": 8,
+      "n_ops_actual": 8,
+      "correct_answer": 18,
+      "predicted": 18,
+      "accurate": 1,
+      "query_entity": "Emma",
+      "initial_state": {
+        "Emma": 18,
+        "Iris": 7,
+        "Alice": 12
+      },
+      "operations": [
+        "Iris gains 2 points.",
+        "Iris loses 2 points.",
+        "Emma gives 3 points to Iris.",
+        "Iris gives 3 points to Emma.",
+        "Alice loses 3 points.",
+        "Alice gains 3 points.",
+        "Iris loses 4 points.",
+        "Iris gains 4 points."
+      ],
+      "prompt_length_chars": 523,
+      "raw_response": "18 points (Emma's points do not change after all the operations)."
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "ollama:mixtral:8x7b",
+      "k_operations": 8,
+      "n_ops_actual": 8,
+      "correct_answer": 11,
+      "predicted": 11,
+      "accurate": 1,
+      "query_entity": "Iris",
+      "initial_state": {
+        "Henry": 17,
+        "Iris": 11,
+        "Carol": 9
+      },
+      "operations": [
+        "Iris gains 7 points.",
+        "Iris loses 7 points.",
+        "Carol loses 3 points.",
+        "Carol gains 3 points.",
+        "Iris gains 5 points.",
+        "Iris loses 5 points.",
+        "Carol gives 1 points to Iris.",
+        "Iris gives 1 points to Carol."
+      ],
+      "prompt_length_chars": 526,
+      "raw_response": "11 points"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "ollama:mixtral:8x7b",
+      "k_operations": 8,
+      "n_ops_actual": 8,
+      "correct_answer": 19,
+      "predicted": 19,
+      "accurate": 1,
+      "query_entity": "Frank",
+      "initial_state": {
+        "Iris": 15,
+        "Henry": 17,
+        "Frank": 19
+      },
+      "operations": [
+        "Iris loses 2 points.",
+        "Iris gains 2 points.",
+        "Henry gives 2 points to Iris.",
+        "Iris gives 2 points to Henry.",
+        "Henry gains 8 points.",
+        "Henry loses 8 points.",
+        "Henry gives 3 points to Frank.",
+        "Frank gives 3 points to Henry."
+      ],
+      "prompt_length_chars": 548,
+      "raw_response": "19 points (Frank's initial points remain unchanged)"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "ollama:mixtral:8x7b",
+      "k_operations": 8,
+      "n_ops_actual": 8,
+      "correct_answer": 15,
+      "predicted": 15,
+      "accurate": 1,
+      "query_entity": "Henry",
+      "initial_state": {
+        "Carol": 9,
+        "Henry": 15,
+        "Alice": 8
+      },
+      "operations": [
+        "Carol loses 5 points.",
+        "Carol gains 5 points.",
+        "Carol loses 2 points.",
+        "Carol gains 2 points.",
+        "Alice loses 2 points.",
+        "Alice gains 2 points.",
+        "Henry gains 5 points.",
+        "Henry loses 5 points."
+      ],
+      "prompt_length_chars": 515,
+      "raw_response": "15 points\n\nHere's the reasoning:\n\nWe apply each operation to the previous state until we reach the final state. I will only provide the starting and ending states for Carol, Alice, and Henry to save space.\n\nInitial state:\nCarol: 9 points, Henry: 15 points, Alice: 8 points\n\nAfter operations 1-4 on Carol, her points are still 9 (losing and gaining cancels out).\nAfter operations 5-6 on Alice, her points are also still 8.\n\nSo the state is now:\nCarol: 9 points, Henry: 15 points, Alice: 8 points\n\nApplying operations 7-8 on Henry, his points become 15 again (gaining and losing cancels out).\n\nTherefore, after all operations, Henry has 15 points."
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "ollama:mixtral:8x7b",
+      "k_operations": 8,
+      "n_ops_actual": 8,
+      "correct_answer": 17,
+      "predicted": 17,
+      "accurate": 1,
+      "query_entity": "Grace",
+      "initial_state": {
+        "James": 7,
+        "Leo": 15,
+        "Grace": 17
+      },
+      "operations": [
+        "Grace loses 4 points.",
+        "Grace gains 4 points.",
+        "James gives 1 points to Grace.",
+        "Grace gives 1 points to James.",
+        "Grace gives 1 points to Leo.",
+        "Leo gives 1 points to Grace.",
+        "James gives 1 points to Leo.",
+        "Leo gives 1 points to James."
+      ],
+      "prompt_length_chars": 560,
+      "raw_response": "17 points"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "ollama:mixtral:8x7b",
+      "k_operations": 8,
+      "n_ops_actual": 8,
+      "correct_answer": 10,
+      "predicted": 10,
+      "accurate": 1,
+      "query_entity": "Leo",
+      "initial_state": {
+        "Leo": 10,
+        "Bob": 14,
+        "Henry": 5
+      },
+      "operations": [
+        "Bob gains 1 points.",
+        "Bob loses 1 points.",
+        "Bob loses 3 points.",
+        "Bob gains 3 points.",
+        "Leo loses 2 points.",
+        "Leo gains 2 points.",
+        "Bob gives 1 points to Leo.",
+        "Leo gives 1 points to Bob."
+      ],
+      "prompt_length_chars": 508,
+      "raw_response": "10 points (Leo's points don't change after the initial state and all the operations)"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "ollama:mixtral:8x7b",
+      "k_operations": 8,
+      "n_ops_actual": 8,
+      "correct_answer": 20,
+      "predicted": 20,
+      "accurate": 1,
+      "query_entity": "James",
+      "initial_state": {
+        "Bob": 12,
+        "James": 20,
+        "Grace": 9
+      },
+      "operations": [
+        "James gains 5 points.",
+        "James loses 5 points.",
+        "James loses 1 points.",
+        "James gains 1 points.",
+        "James loses 5 points.",
+        "James gains 5 points.",
+        "Bob gains 8 points.",
+        "Bob loses 8 points."
+      ],
+      "prompt_length_chars": 510,
+      "raw_response": "20 points\n\nHere's the explanation: We keep track of each operation's effect on James's points while reading through them.\n\n1. James has 25 points.\n2. James has 20 points.\n3. James has 19 points.\n4. James has 20 points.\n5. James has 15 points.\n6. James has 20 points.\n\nAt this point, we've gone through all the operations affecting James's points, so no further changes are needed. The question asks for Bob's points after all operations, which is not provided in the final state, but it does ask for James's points, so I will answer with that:\n\nJames has 20 points."
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "ollama:mixtral:8x7b",
+      "k_operations": 8,
+      "n_ops_actual": 8,
+      "correct_answer": 19,
+      "predicted": 19,
+      "accurate": 1,
+      "query_entity": "Kate",
+      "initial_state": {
+        "James": 18,
+        "Emma": 13,
+        "Kate": 19
+      },
+      "operations": [
+        "James loses 4 points.",
+        "James gains 4 points.",
+        "James loses 2 points.",
+        "James gains 2 points.",
+        "Kate loses 3 points.",
+        "Kate gains 3 points.",
+        "Emma gives 1 points to Kate.",
+        "Kate gives 1 points to Emma."
+      ],
+      "prompt_length_chars": 526,
+      "raw_response": "19 points\n\nHere's the explanation: We keep track of the changes as we read them since referencing back to the initial state is not allowed.\n\nInitial state:\nJames: 18 points, Emma: 13 points, Kate: 19 points\n\nOperations:\n1. James loses 4 points. (New total for James: 18 - 4 = 14 points)\n2. James gains 4 points. (New total for James: 14 + 4 = 18 points)\n3. James loses 2 points. (New total for James: 18 - 2 = 16 points)\n4. James gains 2 points. (New total for James: 16 + 2 = 18 points)\n5. Kate loses 3 points. (New total for Kate: 19 - 3 = 16 points)\n6. Kate gains 3 points. (New total for Kate: 16 + 3 = 19 points)\n7. Emma gives 1 point to Kate. (New total for Emma: 13 - 1 = 12 points; New total for Kate: 19 + 1 = 20 points)\n8. Kate gives 1 point to Emma. (New total for Emma: 12 + 1 = 13 points; New total for Kate: 20 - 1 = 19 points)\n\nSo, after all operations, Kate has 19 points."
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "ollama:mixtral:8x7b",
+      "k_operations": 8,
+      "n_ops_actual": 8,
+      "correct_answer": 20,
+      "predicted": 20,
+      "accurate": 1,
+      "query_entity": "Emma",
+      "initial_state": {
+        "Grace": 6,
+        "Emma": 20,
+        "Alice": 14
+      },
+      "operations": [
+        "Alice gains 6 points.",
+        "Alice loses 6 points.",
+        "Alice gains 4 points.",
+        "Alice loses 4 points.",
+        "Emma gives 3 points to Grace.",
+        "Grace gives 3 points to Emma.",
+        "Alice gains 1 points.",
+        "Alice loses 1 points."
+      ],
+      "prompt_length_chars": 530,
+      "raw_response": "20 points (no change as Emma neither gains nor loses any points in these operations)"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "ollama:mixtral:8x7b",
+      "k_operations": 12,
+      "n_ops_actual": 12,
+      "correct_answer": 7,
+      "predicted": 7,
+      "accurate": 1,
+      "query_entity": "Alice",
+      "initial_state": {
+        "Mia": 16,
+        "Henry": 9,
+        "Alice": 7
+      },
+      "operations": [
+        "Henry loses 4 points.",
+        "Henry gains 4 points.",
+        "Mia gains 3 points.",
+        "Mia loses 3 points.",
+        "Henry gives 1 points to Alice.",
+        "Alice gives 1 points to Henry.",
+        "Henry loses 3 points.",
+        "Henry gains 3 points.",
+        "Henry gives 2 points to Mia.",
+        "Mia gives 2 points to Henry.",
+        "Mia gains 4 points.",
+        "Mia loses 4 points."
+      ],
+      "prompt_length_chars": 648,
+      "raw_response": "7 points\n\nHere's the reasoning:\n\nLet's go through each operation and keep track of the points for each person.\n\nInitial state: Mia: 16 points, Henry: 9 points, Alice: 7 points\n\nOperations applied:\n1. Henry loses 4 points -> Henry: 5 points, others unchanged\n2. Henry gains 4 points -> Henry: 9 points, others unchanged\n3. Mia gains 3 points -> Mia: 19 points, others unchanged\n4. Mia loses 3 points -> Mia: 16 points, others unchanged\n5. Henry gives 1 point to Alice -> Henry: 8 points, Alice: 8 points\n6. Alice gives 1 point to Henry -> Henry: 9 points, Alice: 7 points\n7. Henry loses 3 points -> Henry: 6 points, others unchanged\n8. Henry gains 3 points -> Henry: 9 points, others unchanged\n9. Henry gives 2 points to Mia -> Henry: 7 points, Mia: 18 points\n10. Mia gives 2 points to Henry -> Henry: 9 points, Mia: 16 points\n11. Mia gains 4 points -> Mia: 20 points, others unchanged\n12. Mia loses 4 points -> Mia: 16 points, others unchanged\n\nSo after all operations, Alice has 7 points."
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "ollama:mixtral:8x7b",
+      "k_operations": 12,
+      "n_ops_actual": 12,
+      "correct_answer": 17,
+      "predicted": 17,
+      "accurate": 1,
+      "query_entity": "Grace",
+      "initial_state": {
+        "Leo": 16,
+        "Kate": 7,
+        "Grace": 17
+      },
+      "operations": [
+        "Kate gains 9 points.",
+        "Kate loses 9 points.",
+        "Kate gains 6 points.",
+        "Kate loses 6 points.",
+        "Grace gives 3 points to Kate.",
+        "Kate gives 3 points to Grace.",
+        "Grace loses 3 points.",
+        "Grace gains 3 points.",
+        "Grace gains 4 points.",
+        "Grace loses 4 points.",
+        "Leo loses 5 points.",
+        "Leo gains 5 points."
+      ],
+      "prompt_length_chars": 632,
+      "raw_response": "17 points - the same as the initial state, because every time Kate or Grace gained or lost points, it was an equal amount so they effectively canceled each other out, and Leo's points also remained unchanged after losing and gaining 5 points."
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "ollama:mixtral:8x7b",
+      "k_operations": 12,
+      "n_ops_actual": 12,
+      "correct_answer": 14,
+      "predicted": 14,
+      "accurate": 1,
+      "query_entity": "David",
+      "initial_state": {
+        "Frank": 7,
+        "James": 19,
+        "David": 14
+      },
+      "operations": [
+        "James gives 1 points to Frank.",
+        "Frank gives 1 points to James.",
+        "Frank gains 5 points.",
+        "Frank loses 5 points.",
+        "Frank loses 1 points.",
+        "Frank gains 1 points.",
+        "David gains 3 points.",
+        "David loses 3 points.",
+        "James loses 3 points.",
+        "James gains 3 points.",
+        "David gives 3 points to James.",
+        "James gives 3 points to David."
+      ],
+      "prompt_length_chars": 663,
+      "raw_response": "14 points\n\nHere's the step-by-step breakdown:\n\nInitial state:\nFrank: 7 points, James: 19 points, David: 14 points\n\nOperations applied in order:\n1. James gives 1 points to Frank: James now has 18 points, Frank has 8 points\n2. Frank gives 1 points to James: James now has 19 points, Frank has 7 points\n3. Frank gains 5 points: Frank now has 12 points\n4. Frank loses 5 points: Frank now has 7 points\n5. Frank loses 1 point: Frank now has 6 points\n6. Frank gains 1 point: Frank now has 7 points\n7. David gains 3 points: David now has 17 points\n8. David loses 3 points: David now has 14 points\n9. James loses 3 points: James now has 16 points\n10. James gains 3 points: James now has 19 points\n11. David gives 3 points to James: David now has 11 points, James now has 22 points\n12. James gives 3 points to David: David now has 14 points, James now has 19 points\n\nSo after all operations, David has 14 points."
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "ollama:mixtral:8x7b",
+      "k_operations": 12,
+      "n_ops_actual": 12,
+      "correct_answer": 18,
+      "predicted": 18,
+      "accurate": 1,
+      "query_entity": "Grace",
+      "initial_state": {
+        "Leo": 8,
+        "Carol": 20,
+        "Grace": 18
+      },
+      "operations": [
+        "Leo loses 3 points.",
+        "Leo gains 3 points.",
+        "Carol gains 8 points.",
+        "Carol loses 8 points.",
+        "Carol gains 2 points.",
+        "Carol loses 2 points.",
+        "Carol gives 1 points to Grace.",
+        "Grace gives 1 points to Carol.",
+        "Carol loses 2 points.",
+        "Carol gains 2 points.",
+        "Carol gains 2 points.",
+        "Carol loses 2 points."
+      ],
+      "prompt_length_chars": 639,
+      "raw_response": "18 points"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "ollama:mixtral:8x7b",
+      "k_operations": 12,
+      "n_ops_actual": 12,
+      "correct_answer": 5,
+      "predicted": 6,
+      "accurate": 0,
+      "query_entity": "David",
+      "initial_state": {
+        "David": 5,
+        "Kate": 6,
+        "Mia": 15
+      },
+      "operations": [
+        "David gains 10 points.",
+        "David loses 10 points.",
+        "David gains 9 points.",
+        "David loses 9 points.",
+        "Mia gains 4 points.",
+        "Mia loses 4 points.",
+        "Kate gains 3 points.",
+        "Kate loses 3 points.",
+        "David gives 1 points to Kate.",
+        "Kate gives 1 points to David.",
+        "Mia gains 5 points.",
+        "Mia loses 5 points."
+      ],
+      "prompt_length_chars": 631,
+      "raw_response": "6 points"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "ollama:mixtral:8x7b",
+      "k_operations": 12,
+      "n_ops_actual": 12,
+      "correct_answer": 9,
+      "predicted": 9,
+      "accurate": 1,
+      "query_entity": "Bob",
+      "initial_state": {
+        "Bob": 9,
+        "Kate": 5,
+        "Alice": 16
+      },
+      "operations": [
+        "Alice gains 6 points.",
+        "Alice loses 6 points.",
+        "Bob gains 5 points.",
+        "Bob loses 5 points.",
+        "Bob gains 7 points.",
+        "Bob loses 7 points.",
+        "Bob gives 2 points to Alice.",
+        "Alice gives 2 points to Bob.",
+        "Kate loses 5 points.",
+        "Kate gains 5 points.",
+        "Bob gives 3 points to Kate.",
+        "Kate gives 3 points to Bob."
+      ],
+      "prompt_length_chars": 637,
+      "raw_response": "9 points (do not forget to consider the points gained and lost in the transfers to/from Alice and Kate)"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "ollama:mixtral:8x7b",
+      "k_operations": 12,
+      "n_ops_actual": 12,
+      "correct_answer": 5,
+      "predicted": 5,
+      "accurate": 1,
+      "query_entity": "Leo",
+      "initial_state": {
+        "James": 14,
+        "Alice": 19,
+        "Leo": 5
+      },
+      "operations": [
+        "Alice gains 7 points.",
+        "Alice loses 7 points.",
+        "Leo loses 1 points.",
+        "Leo gains 1 points.",
+        "Leo loses 4 points.",
+        "Leo gains 4 points.",
+        "James gains 6 points.",
+        "James loses 6 points.",
+        "James gives 1 points to Leo.",
+        "Leo gives 1 points to James.",
+        "Leo loses 5 points.",
+        "Leo gains 5 points."
+      ],
+      "prompt_length_chars": 625,
+      "raw_response": "5 points\n\nHere's the explanation:\n\nInitial state: James=14, Alice=19, Leo=5\n\nOperations:\n1. Alice gains 7 points. New state: James=14, Alice=26, Leo=5\n2. Alice loses 7 points. New state: James=14, Alice=19, Leo=5\n3. Leo loses 1 point. New state: James=14, Alice=19, Leo=4\n4. Leo gains 1 point. New state: James=14, Alice=19, Leo=5\n5. Leo loses 4 points. New state: James=14, Alice=19, Leo=1\n6. Leo gains 4 points. New state: James=14, Alice=19, Leo=5\n7. James gains 6 points. New state: James=20, Alice=19, Leo=5\n8. James loses 6 points. New state: James=14, Alice=19, Leo=5\n9. James gives 1 point to Leo. New state: James=14, Alice=19, Leo=6\n10. Leo gives 1 point to James. New state: James=15, Alice=19, Leo=6\n11. Leo loses 5 points. New state: James=15, Alice=19, Leo=1\n12. Leo gains 5 points. New state: James=15, Alice=19, Leo=5\n\nSo, after all operations, Leo has 5 points."
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "ollama:mixtral:8x7b",
+      "k_operations": 12,
+      "n_ops_actual": 12,
+      "correct_answer": 18,
+      "predicted": 18,
+      "accurate": 1,
+      "query_entity": "Grace",
+      "initial_state": {
+        "Leo": 14,
+        "Frank": 19,
+        "Grace": 18
+      },
+      "operations": [
+        "Grace gains 2 points.",
+        "Grace loses 2 points.",
+        "Grace gives 2 points to Leo.",
+        "Leo gives 2 points to Grace.",
+        "Leo loses 4 points.",
+        "Leo gains 4 points.",
+        "Frank loses 4 points.",
+        "Frank gains 4 points.",
+        "Grace loses 1 points.",
+        "Grace gains 1 points.",
+        "Frank loses 3 points.",
+        "Frank gains 3 points."
+      ],
+      "prompt_length_chars": 636,
+      "raw_response": "18 points"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "ollama:mixtral:8x7b",
+      "k_operations": 12,
+      "n_ops_actual": 12,
+      "correct_answer": 7,
+      "predicted": 7,
+      "accurate": 1,
+      "query_entity": "Carol",
+      "initial_state": {
+        "Emma": 20,
+        "Frank": 7,
+        "Carol": 7
+      },
+      "operations": [
+        "Emma gains 7 points.",
+        "Emma loses 7 points.",
+        "Carol gains 6 points.",
+        "Carol loses 6 points.",
+        "Carol gains 1 points.",
+        "Carol loses 1 points.",
+        "Carol gives 3 points to Frank.",
+        "Frank gives 3 points to Carol.",
+        "Frank gains 6 points.",
+        "Frank loses 6 points.",
+        "Frank gives 2 points to Emma.",
+        "Emma gives 2 points to Frank."
+      ],
+      "prompt_length_chars": 657,
+      "raw_response": "7 points"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "ollama:mixtral:8x7b",
+      "k_operations": 12,
+      "n_ops_actual": 12,
+      "correct_answer": 9,
+      "predicted": 9,
+      "accurate": 1,
+      "query_entity": "Frank",
+      "initial_state": {
+        "Emma": 11,
+        "Frank": 9,
+        "Bob": 20
+      },
+      "operations": [
+        "Emma gains 6 points.",
+        "Emma loses 6 points.",
+        "Frank gives 2 points to Emma.",
+        "Emma gives 2 points to Frank.",
+        "Emma gives 3 points to Frank.",
+        "Frank gives 3 points to Emma.",
+        "Bob gives 3 points to Emma.",
+        "Emma gives 3 points to Bob.",
+        "Bob gives 1 points to Frank.",
+        "Frank gives 1 points to Bob.",
+        "Frank gains 5 points.",
+        "Frank loses 5 points."
+      ],
+      "prompt_length_chars": 680,
+      "raw_response": "9 points"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "ollama:mixtral:8x7b",
+      "k_operations": 12,
+      "n_ops_actual": 12,
+      "correct_answer": 9,
+      "predicted": 9,
+      "accurate": 1,
+      "query_entity": "Frank",
+      "initial_state": {
+        "Frank": 9,
+        "Alice": 17,
+        "Carol": 7
+      },
+      "operations": [
+        "Carol gains 1 points.",
+        "Carol loses 1 points.",
+        "Carol gains 9 points.",
+        "Carol loses 9 points.",
+        "Alice gains 7 points.",
+        "Alice loses 7 points.",
+        "Alice loses 2 points.",
+        "Alice gains 2 points.",
+        "Alice loses 3 points.",
+        "Alice gains 3 points.",
+        "Carol gives 1 points to Frank.",
+        "Frank gives 1 points to Carol."
+      ],
+      "prompt_length_chars": 644,
+      "raw_response": "9 points for Frank, as he only receives or gives points in the last two operations, and those actions cancel out. The other operations do not affect Frank's point total."
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "ollama:mixtral:8x7b",
+      "k_operations": 12,
+      "n_ops_actual": 12,
+      "correct_answer": 6,
+      "predicted": 6,
+      "accurate": 1,
+      "query_entity": "Carol",
+      "initial_state": {
+        "Carol": 6,
+        "Mia": 7,
+        "James": 13
+      },
+      "operations": [
+        "James loses 4 points.",
+        "James gains 4 points.",
+        "James loses 4 points.",
+        "James gains 4 points.",
+        "Mia loses 2 points.",
+        "Mia gains 2 points.",
+        "Carol gives 2 points to Mia.",
+        "Mia gives 2 points to Carol.",
+        "Mia gains 10 points.",
+        "Mia loses 10 points.",
+        "James loses 3 points.",
+        "James gains 3 points."
+      ],
+      "prompt_length_chars": 632,
+      "raw_response": "6 points"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "ollama:mixtral:8x7b",
+      "k_operations": 12,
+      "n_ops_actual": 12,
+      "correct_answer": 5,
+      "predicted": 5,
+      "accurate": 1,
+      "query_entity": "Grace",
+      "initial_state": {
+        "David": 6,
+        "Grace": 5,
+        "James": 11
+      },
+      "operations": [
+        "David loses 2 points.",
+        "David gains 2 points.",
+        "Grace loses 3 points.",
+        "Grace gains 3 points.",
+        "David gains 8 points.",
+        "David loses 8 points.",
+        "Grace gives 1 points to David.",
+        "David gives 1 points to Grace.",
+        "James loses 2 points.",
+        "James gains 2 points.",
+        "James gives 1 points to Grace.",
+        "Grace gives 1 points to James."
+      ],
+      "prompt_length_chars": 662,
+      "raw_response": "5 points\n\nHere's the explanation:\n\nInitial state: David=6, Grace=5, James=11\n\nOperations applied:\n1. David loses 2 points -> David=4\n2. David gains 2 points -> David=6\n3. Grace loses 3 points -> Grace=2\n4. Grace gains 3 points -> Grace=5\n5. David gains 8 points -> David=14\n6. David loses 8 points -> David=6\n7. Grace gives 1 point to David -> Grace=4, David=7\n8. David gives 1 point to Grace -> Grace=5, David=6\n9. James loses 2 points -> James=9\n10. James gains 2 points -> James=11\n11. James gives 1 point to Grace -> Grace=6, James=10\n12. Grace gives 1 point to James -> Grace=5, James=11\n\nSo after all operations, Grace has 5 points."
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "ollama:mixtral:8x7b",
+      "k_operations": 12,
+      "n_ops_actual": 12,
+      "correct_answer": 18,
+      "predicted": 18,
+      "accurate": 1,
+      "query_entity": "Noah",
+      "initial_state": {
+        "Noah": 18,
+        "Leo": 5,
+        "Alice": 19
+      },
+      "operations": [
+        "Leo gains 10 points.",
+        "Leo loses 10 points.",
+        "Alice loses 4 points.",
+        "Alice gains 4 points.",
+        "Alice gives 2 points to Leo.",
+        "Leo gives 2 points to Alice.",
+        "Leo gains 1 points.",
+        "Leo loses 1 points.",
+        "Noah loses 5 points.",
+        "Noah gains 5 points.",
+        "Alice loses 3 points.",
+        "Alice gains 3 points."
+      ],
+      "prompt_length_chars": 629,
+      "raw_response": "18 points for Noah, as he neither gained nor lost any points throughout the operations. The operations only affected Leo and Alice's points."
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "ollama:mixtral:8x7b",
+      "k_operations": 12,
+      "n_ops_actual": 12,
+      "correct_answer": 17,
+      "predicted": 17,
+      "accurate": 1,
+      "query_entity": "Bob",
+      "initial_state": {
+        "Grace": 18,
+        "Bob": 17,
+        "David": 7
+      },
+      "operations": [
+        "Bob loses 3 points.",
+        "Bob gains 3 points.",
+        "Bob gains 3 points.",
+        "Bob loses 3 points.",
+        "David gains 2 points.",
+        "David loses 2 points.",
+        "David gives 2 points to Grace.",
+        "Grace gives 2 points to David.",
+        "David loses 2 points.",
+        "David gains 2 points.",
+        "Grace gains 3 points.",
+        "Grace loses 3 points."
+      ],
+      "prompt_length_chars": 633,
+      "raw_response": "17 points\n\nHere's the explanation: We keep track of the changes as we read them.\n\nInitial state:\nGrace: 18 points, Bob: 17 points, David: 7 points\n\nOperations:\n1. Bob loses 3 points. New state: Grace: 18, Bob: 14, David: 7\n2. Bob gains 3 points. New state: Grace: 18, Bob: 17, David: 7\n3. Bob gains 3 points. New state: Grace: 18, Bob: 20, David: 7\n4. Bob loses 3 points. New state: Grace: 18, Bob: 17, David: 7\n5. David gains 2 points. New state: Grace: 18, Bob: 17, David: 9\n6. David loses 2 points. New state: Grace: 18, Bob: 17, David: 7\n7. David gives 2 points to Grace. New state: Grace: 20, Bob: 17, David: 5\n8. Grace gives 2 points to David. New state: Grace: 18, Bob: 17, David: 7\n9. David loses 2 points. New state: Grace: 18, Bob: 17, David: 5\n10. David gains 2 points. New state: Grace: 18, Bob: 17, David: 7\n11. Grace gains 3 points. New state: Grace: 21, Bob: 17, David: 7\n12. Grace loses 3 points. New state: Grace: 18, Bob: 17, David: 7\n\nTherefore, after all operations, Bob has 17 points."
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "ollama:mixtral:8x7b",
+      "k_operations": 12,
+      "n_ops_actual": 12,
+      "correct_answer": 9,
+      "predicted": 9,
+      "accurate": 1,
+      "query_entity": "David",
+      "initial_state": {
+        "David": 9,
+        "Carol": 7,
+        "James": 10
+      },
+      "operations": [
+        "Carol gives 3 points to James.",
+        "James gives 3 points to Carol.",
+        "Carol gives 3 points to James.",
+        "James gives 3 points to Carol.",
+        "David loses 4 points.",
+        "David gains 4 points.",
+        "Carol gains 8 points.",
+        "Carol loses 8 points.",
+        "Carol gives 3 points to James.",
+        "James gives 3 points to Carol.",
+        "Carol gains 9 points.",
+        "Carol loses 9 points."
+      ],
+      "prompt_length_chars": 680,
+      "raw_response": "9 points for David after all operations. You can keep track of each operation's effect on the scores and then calculate the final score for David."
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "ollama:mixtral:8x7b",
+      "k_operations": 12,
+      "n_ops_actual": 12,
+      "correct_answer": 16,
+      "predicted": 24,
+      "accurate": 0,
+      "query_entity": "Mia",
+      "initial_state": {
+        "Emma": 6,
+        "Henry": 6,
+        "Mia": 16
+      },
+      "operations": [
+        "Emma loses 1 points.",
+        "Emma gains 1 points.",
+        "Mia gives 2 points to Henry.",
+        "Henry gives 2 points to Mia.",
+        "Mia gives 2 points to Emma.",
+        "Emma gives 2 points to Mia.",
+        "Mia gives 2 points to Emma.",
+        "Emma gives 2 points to Mia.",
+        "Henry gives 1 points to Emma.",
+        "Emma gives 1 points to Henry.",
+        "Emma loses 3 points.",
+        "Emma gains 3 points."
+      ],
+      "prompt_length_chars": 671,
+      "raw_response": "24 points"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "ollama:mixtral:8x7b",
+      "k_operations": 12,
+      "n_ops_actual": 12,
+      "correct_answer": 12,
+      "predicted": 12,
+      "accurate": 1,
+      "query_entity": "Kate",
+      "initial_state": {
+        "Bob": 10,
+        "Iris": 6,
+        "Kate": 12
+      },
+      "operations": [
+        "Iris gives 3 points to Kate.",
+        "Kate gives 3 points to Iris.",
+        "Kate gives 2 points to Bob.",
+        "Bob gives 2 points to Kate.",
+        "Iris loses 4 points.",
+        "Iris gains 4 points.",
+        "Iris loses 5 points.",
+        "Iris gains 5 points.",
+        "Kate gains 6 points.",
+        "Kate loses 6 points.",
+        "Iris gains 2 points.",
+        "Iris loses 2 points."
+      ],
+      "prompt_length_chars": 640,
+      "raw_response": "12 points (the initial state of Kate's points remains unchanged as giving and losing 3, 2, 6, and then gaining them back leaves her at the same point total)"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "ollama:mixtral:8x7b",
+      "k_operations": 12,
+      "n_ops_actual": 12,
+      "correct_answer": 15,
+      "predicted": 15,
+      "accurate": 1,
+      "query_entity": "Emma",
+      "initial_state": {
+        "Kate": 13,
+        "Grace": 9,
+        "Emma": 15
+      },
+      "operations": [
+        "Emma gains 3 points.",
+        "Emma loses 3 points.",
+        "Grace loses 4 points.",
+        "Grace gains 4 points.",
+        "Emma gains 2 points.",
+        "Emma loses 2 points.",
+        "Emma loses 4 points.",
+        "Emma gains 4 points.",
+        "Grace gives 3 points to Kate.",
+        "Kate gives 3 points to Grace.",
+        "Emma gives 3 points to Kate.",
+        "Kate gives 3 points to Emma."
+      ],
+      "prompt_length_chars": 648,
+      "raw_response": "15 points (Emma neither gains nor loses any net points throughout the operations)"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "ollama:mixtral:8x7b",
+      "k_operations": 12,
+      "n_ops_actual": 12,
+      "correct_answer": 14,
+      "predicted": 14,
+      "accurate": 1,
+      "query_entity": "Frank",
+      "initial_state": {
+        "Grace": 5,
+        "Iris": 16,
+        "Frank": 14
+      },
+      "operations": [
+        "Grace gains 6 points.",
+        "Grace loses 6 points.",
+        "Grace loses 2 points.",
+        "Grace gains 2 points.",
+        "Grace gains 2 points.",
+        "Grace loses 2 points.",
+        "Grace loses 5 points.",
+        "Grace gains 5 points.",
+        "Frank gives 3 points to Grace.",
+        "Grace gives 3 points to Frank.",
+        "Frank loses 2 points.",
+        "Frank gains 2 points."
+      ],
+      "prompt_length_chars": 644,
+      "raw_response": "14\n\nHere's the explanation:\n1. Grace has 5 + 6 = 11 points. Iris still has 16 points, and Frank has 14 points.\n2. Grace has 11 - 6 = 5 points. The scores are now Grace 5, Iris 16, and Frank 14.\n3. Grace has 5 - 2 = 3 points. The scores remain unchanged for Iris and Frank.\n4. Grace has 3 + 2 = 5 points. Again, the other two scores don't change.\n5. Grace has 5 + 2 = 7 points. Still no change in Iris or Frank's scores.\n6. Grace has 7 - 2 = 5 points. The scores remain unchanged for Iris and Frank.\n7. Grace has 5 - 5 = 0 points. The scores are now Grace 0, Iris 16, and Frank 14.\n8. Grace has 0 + 5 = 5 points. The other two scores don't change.\n9. Grace gives 3 points to Frank, so she has 5 - 3 = 2 points, and Frank has 14 + 3 = 17 points.\n10. Grace receives 3 points from Frank, so she has 2 + 3 = 5 points, and Frank has 17 - 3 = 14 points.\n11. Frank loses 2 points, making his score 14 - 2 = 12 points.\n12. Frank gains 2 points, making his final score 12 + 2 = 14 points."
+    }
+  ]
+}

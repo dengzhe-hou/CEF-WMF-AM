@@ -1,0 +1,189 @@
+{
+  "results": [
+    {
+      "model": "openrouter:gpt-4o",
+      "timestamp": "2026-04-13T18:41:15.843878",
+      "supported_score": 0.9,
+      "unsupported_score": 0.4,
+      "load_shift_delta": 0.5,
+      "conditions": {
+        "supported": {
+          "score": 0.9,
+          "n_correct": 9,
+          "n_tasks": 10,
+          "history_window": null,
+          "task_results": [
+            {
+              "task_id": "multi_step_calc",
+              "correct": false,
+              "final_answer": "70.0",
+              "n_steps": 5,
+              "errors": 0,
+              "elapsed_s": 5.8
+            },
+            {
+              "task_id": "entity_tracking",
+              "correct": true,
+              "final_answer": "\"David\"",
+              "n_steps": 11,
+              "errors": 0,
+              "elapsed_s": 12.0
+            },
+            {
+              "task_id": "sequential_search",
+              "correct": true,
+              "final_answer": "320",
+              "n_steps": 7,
+              "errors": 0,
+              "elapsed_s": 8.2
+            },
+            {
+              "task_id": "uncertain_lookup",
+              "correct": true,
+              "final_answer": "\"Canberra\"",
+              "n_steps": 3,
+              "errors": 0,
+              "elapsed_s": 3.3
+            },
+            {
+              "task_id": "multi_source_conflict",
+              "correct": true,
+              "final_answer": "22.33",
+              "n_steps": 4,
+              "errors": 0,
+              "elapsed_s": 4.1
+            },
+            {
+              "task_id": "conversation_recall",
+              "correct": true,
+              "final_answer": "'Senso-ji temple'",
+              "n_steps": 2,
+              "errors": 0,
+              "elapsed_s": 3.7
+            },
+            {
+              "task_id": "source_attribution",
+              "correct": true,
+              "final_answer": "paper_B",
+              "n_steps": 3,
+              "errors": 0,
+              "elapsed_s": 4.5
+            },
+            {
+              "task_id": "shopping_assistant",
+              "correct": true,
+              "final_answer": "[\"mouse\", \"keyboard\"]",
+              "n_steps": 2,
+              "errors": 0,
+              "elapsed_s": 2.2
+            },
+            {
+              "task_id": "schedule_coordination",
+              "correct": true,
+              "final_answer": "\"There is no time on Monday when Alice, Bob, and Carol are all busy.\"",
+              "n_steps": 4,
+              "errors": 0,
+              "elapsed_s": 5.0
+            },
+            {
+              "task_id": "data_pipeline",
+              "correct": true,
+              "final_answer": "mean=20.0, max=30, sum=100",
+              "n_steps": 5,
+              "errors": 0,
+              "elapsed_s": 5.4
+            }
+          ]
+        },
+        "unsupported": {
+          "score": 0.4,
+          "n_correct": 4,
+          "n_tasks": 10,
+          "history_window": 1,
+          "task_results": [
+            {
+              "task_id": "multi_step_calc",
+              "correct": false,
+              "final_answer": "100",
+              "n_steps": 5,
+              "errors": 0,
+              "elapsed_s": 5.3
+            },
+            {
+              "task_id": "entity_tracking",
+              "correct": false,
+              "final_answer": "\"Unable to determine who Charlie is without additional context or tools.\"",
+              "n_steps": 6,
+              "errors": 2,
+              "elapsed_s": 7.5
+            },
+            {
+              "task_id": "sequential_search",
+              "correct": false,
+              "final_answer": "400",
+              "n_steps": 5,
+              "errors": 1,
+              "elapsed_s": 5.1
+            },
+            {
+              "task_id": "uncertain_lookup",
+              "correct": true,
+              "final_answer": "Canberra is the capital of Australia.",
+              "n_steps": 4,
+              "errors": 1,
+              "elapsed_s": 4.4
+            },
+            {
+              "task_id": "multi_source_conflict",
+              "correct": false,
+              "final_answer": "\"23C\"",
+              "n_steps": 3,
+              "errors": 0,
+              "elapsed_s": 2.6
+            },
+            {
+              "task_id": "conversation_recall",
+              "correct": true,
+              "final_answer": "Senso-ji temple",
+              "n_steps": 2,
+              "errors": 0,
+              "elapsed_s": 3.8
+            },
+            {
+              "task_id": "source_attribution",
+              "correct": false,
+              "final_answer": "Neural networks, including transformers, learn features hierarchically. Transformers specifically use attention mechanisms to model long-range dependencies, which is a part of their hierarchical feature learning process.",
+              "n_steps": 3,
+              "errors": 0,
+              "elapsed_s": 3.6
+            },
+            {
+              "task_id": "shopping_assistant",
+              "correct": true,
+              "final_answer": "[\"mouse\", \"keyboard\"]",
+              "n_steps": 2,
+              "errors": 0,
+              "elapsed_s": 2.4
+            },
+            {
+              "task_id": "schedule_coordination",
+              "correct": true,
+              "final_answer": "\"Monday 11-12\"",
+              "n_steps": 3,
+              "errors": 0,
+              "elapsed_s": 4.4
+            },
+            {
+              "task_id": "data_pipeline",
+              "correct": false,
+              "final_answer": "20.0",
+              "n_steps": 3,
+              "errors": 0,
+              "elapsed_s": 3.4
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,242 @@
+{
+  "results": [
+    {
+      "model": "openrouter:gpt-4o",
+      "mmlu_score": 1.0,
+      "gsm8k_score": 1.0,
+      "elapsed_s": 111.7,
+      "mmlu_detail": {
+        "score": 1.0,
+        "correct": 100,
+        "total": 100,
+        "by_domain": {
+          "STEM": {
+            "correct": 25,
+            "total": 25
+          },
+          "Humanities": {
+            "correct": 25,
+            "total": 25
+          },
+          "Social Science": {
+            "correct": 25,
+            "total": 25
+          },
+          "Other": {
+            "correct": 25,
+            "total": 25
+          }
+        }
+      },
+      "gsm8k_detail": {
+        "score": 1.0,
+        "correct": 50,
+        "total": 50
+      }
+    },
+    {
+      "model": "openrouter:gpt-4o-mini",
+      "mmlu_score": 0.99,
+      "gsm8k_score": 1.0,
+      "elapsed_s": 102.8,
+      "mmlu_detail": {
+        "score": 0.99,
+        "correct": 99,
+        "total": 100,
+        "by_domain": {
+          "STEM": {
+            "correct": 25,
+            "total": 25
+          },
+          "Humanities": {
+            "correct": 24,
+            "total": 25
+          },
+          "Social Science": {
+            "correct": 25,
+            "total": 25
+          },
+          "Other": {
+            "correct": 25,
+            "total": 25
+          }
+        }
+      },
+      "gsm8k_detail": {
+        "score": 1.0,
+        "correct": 50,
+        "total": 50
+      }
+    },
+    {
+      "model": "openrouter:claude-sonnet-4",
+      "mmlu_score": 1.0,
+      "gsm8k_score": 1.0,
+      "elapsed_s": 299.0,
+      "mmlu_detail": {
+        "score": 1.0,
+        "correct": 100,
+        "total": 100,
+        "by_domain": {
+          "STEM": {
+            "correct": 25,
+            "total": 25
+          },
+          "Humanities": {
+            "correct": 25,
+            "total": 25
+          },
+          "Social Science": {
+            "correct": 25,
+            "total": 25
+          },
+          "Other": {
+            "correct": 25,
+            "total": 25
+          }
+        }
+      },
+      "gsm8k_detail": {
+        "score": 1.0,
+        "correct": 50,
+        "total": 50
+      }
+    },
+    {
+      "model": "openrouter:deepseek-v3",
+      "mmlu_score": 1.0,
+      "gsm8k_score": 1.0,
+      "elapsed_s": 316.3,
+      "mmlu_detail": {
+        "score": 1.0,
+        "correct": 100,
+        "total": 100,
+        "by_domain": {
+          "STEM": {
+            "correct": 25,
+            "total": 25
+          },
+          "Humanities": {
+            "correct": 25,
+            "total": 25
+          },
+          "Social Science": {
+            "correct": 25,
+            "total": 25
+          },
+          "Other": {
+            "correct": 25,
+            "total": 25
+          }
+        }
+      },
+      "gsm8k_detail": {
+        "score": 1.0,
+        "correct": 50,
+        "total": 50
+      }
+    },
+    {
+      "model": "openrouter:gemini-2.5-flash",
+      "mmlu_score": 0.99,
+      "gsm8k_score": 1.0,
+      "elapsed_s": 117.3,
+      "mmlu_detail": {
+        "score": 0.99,
+        "correct": 99,
+        "total": 100,
+        "by_domain": {
+          "STEM": {
+            "correct": 25,
+            "total": 25
+          },
+          "Humanities": {
+            "correct": 24,
+            "total": 25
+          },
+          "Social Science": {
+            "correct": 25,
+            "total": 25
+          },
+          "Other": {
+            "correct": 25,
+            "total": 25
+          }
+        }
+      },
+      "gsm8k_detail": {
+        "score": 1.0,
+        "correct": 50,
+        "total": 50
+      }
+    },
+    {
+      "model": "openrouter:o3-mini",
+      "mmlu_score": 1.0,
+      "gsm8k_score": 1.0,
+      "elapsed_s": 342.8,
+      "mmlu_detail": {
+        "score": 1.0,
+        "correct": 100,
+        "total": 100,
+        "by_domain": {
+          "STEM": {
+            "correct": 25,
+            "total": 25
+          },
+          "Humanities": {
+            "correct": 25,
+            "total": 25
+          },
+          "Social Science": {
+            "correct": 25,
+            "total": 25
+          },
+          "Other": {
+            "correct": 25,
+            "total": 25
+          }
+        }
+      },
+      "gsm8k_detail": {
+        "score": 1.0,
+        "correct": 50,
+        "total": 50
+      }
+    },
+    {
+      "model": "openrouter:deepseek-r1",
+      "mmlu_score": 1.0,
+      "gsm8k_score": 1.0,
+      "elapsed_s": 1155.2,
+      "mmlu_detail": {
+        "score": 1.0,
+        "correct": 100,
+        "total": 100,
+        "by_domain": {
+          "STEM": {
+            "correct": 25,
+            "total": 25
+          },
+          "Humanities": {
+            "correct": 25,
+            "total": 25
+          },
+          "Social Science": {
+            "correct": 25,
+            "total": 25
+          },
+          "Other": {
+            "correct": 25,
+            "total": 25
+          }
+        }
+      },
+      "gsm8k_detail": {
+        "score": 1.0,
+        "correct": 50,
+        "total": 50
+      }
+    }
+  ]
+}

@@ -139,8 +139,11 @@ def run_wmf_am(model_key: str) -> dict:
 
                 try:
                     response = call_model(model_key, prompt)
-                    nums = re.findall(r"\d+", response)
-                    predicted = int(nums[0]) if nums else -1
+                    # Strip reasoning traces (e.g. <think>...</think> from LRMs)
+                    clean = re.sub(r"<think>.*?</think>", "", response, flags=re.DOTALL)
+                    nums = re.findall(r"-?\d+", clean)
+                    # Use LAST number — models often show work before final answer
+                    predicted = int(nums[-1]) if nums else -1
                     accurate = int(predicted == correct)
                 except Exception as e:
                     print(f"  ERROR k={k} seed={seed} i={i}: {e}")

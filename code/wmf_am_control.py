@@ -141,8 +141,9 @@ After all operations, how many points does {query_entity} have?
 Respond with ONLY the final number."""
 
             response = call_model(model_name, prompt)
-            nums = re.findall(r"\d+", response)
-            predicted = int(nums[0]) if nums else -1
+            clean = re.sub(r"<think>.*?</think>", "", response, flags=re.DOTALL)
+            nums = re.findall(r"-?\d+", clean)
+            predicted = int(nums[-1]) if nums else -1
 
             results.append({
                 "sub_dim": "WMF-AM-CONTROL",

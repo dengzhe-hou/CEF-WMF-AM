@@ -6,6 +6,7 @@ Set API keys in a .env file at the project root:
     ANTHROPIC_API_KEY=...
     GOOGLE_API_KEY=...
     TOGETHER_API_KEY=...
+    OPENROUTER_API_KEY=...
 """
 
 import os
@@ -230,6 +231,66 @@ MODELS = {
         "temperature": 0,
         "max_tokens": 1024,
     },
+    # ── Held-out API models (NeurIPS expansion, N=28) ──────────────────────
+    # Standard models via OpenRouter
+    "openrouter:gpt-4o": {
+        "provider": "openrouter",
+        "model_id": "openai/gpt-4o",
+        "temperature": 0,
+        "max_tokens": 1024,
+    },
+    "openrouter:gpt-4o-mini": {
+        "provider": "openrouter",
+        "model_id": "openai/gpt-4o-mini",
+        "temperature": 0,
+        "max_tokens": 1024,
+    },
+    "openrouter:claude-sonnet-4": {
+        "provider": "openrouter",
+        "model_id": "anthropic/claude-sonnet-4",
+        "temperature": 0,
+        "max_tokens": 1024,
+    },
+    "openrouter:deepseek-v3": {
+        "provider": "openrouter",
+        "model_id": "deepseek/deepseek-chat-v3-0324",
+        "temperature": 0,
+        "max_tokens": 1024,
+    },
+    # LRM (Long Reasoning Models) via OpenRouter
+    "openrouter:o3-mini": {
+        "provider": "openrouter",
+        "model_id": "openai/o3-mini",
+        "temperature": 0,
+        "max_tokens": 1024,
+    },
+    "openrouter:deepseek-r1": {
+        "provider": "openrouter",
+        "model_id": "deepseek/deepseek-r1",
+        "temperature": 0,
+        "max_tokens": 1024,
+    },
+    # Google via free AI Studio API
+    # Google free tier has 5 RPM limit — use OpenRouter instead ($0.30/M input)
+    "openrouter:gemini-2.5-flash": {
+        "provider": "openrouter",
+        "model_id": "google/gemini-2.5-flash",
+        "temperature": 0,
+        "max_tokens": 1024,
+    },
+    # Keep direct Google API as fallback (rate limited)
+    "google:gemini-2.5-flash": {
+        "provider": "google",
+        "model_id": "gemini-2.5-flash",
+        "temperature": 0,
+        "max_tokens": 1024,
+    },
+    "google:gemini-2.5-pro": {
+        "provider": "google",
+        "model_id": "gemini-2.5-pro",
+        "temperature": 0,
+        "max_tokens": 1024,
+    },
 }
 
 # ── Paths ────────────────────────────────────────────────────────────────────
@@ -288,10 +349,15 @@ def call_model(
         msgs.append({"role": "user", "content": prompt})
         return msgs
 
-    if provider in ("openai", "ollama"):
+    if provider in ("openai", "ollama", "openrouter"):
         import openai
         if provider == "openai":
             client = openai.OpenAI(api_key=os.environ["OPENAI_API_KEY"])
+        elif provider == "openrouter":
+            client = openai.OpenAI(
+                base_url="https://openrouter.ai/api/v1",
+                api_key=os.environ["OPENROUTER_API_KEY"],
+            )
         else:
             client = openai.OpenAI(base_url=f"{OLLAMA_BASE_URL}/v1/", api_key="ollama")
         msgs = _build_messages()

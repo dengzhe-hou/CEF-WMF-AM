@@ -1,0 +1,2567 @@
+{
+  "metadata": {
+    "task": "WMF-AM-YOKED-CONTROL",
+    "model": "openrouter:claude-sonnet-4",
+    "n_problems_per_depth": 20,
+    "seed": 42,
+    "depths": [
+      2,
+      4,
+      6,
+      8,
+      12
+    ]
+  },
+  "summary": {
+    "per_depth_accuracy": {
+      "2": 0.6,
+      "4": 0.55,
+      "6": 0.6,
+      "8": 0.6,
+      "12": 0.65
+    },
+    "overall_accuracy": 0.6
+  },
+  "trials": [
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:claude-sonnet-4",
+      "k_operations": 2,
+      "n_ops_actual": 2,
+      "correct_answer": 12,
+      "predicted": 12,
+      "accurate": 1,
+      "query_entity": "Alice",
+      "initial_state": {
+        "Kate": 13,
+        "Bob": 12,
+        "Alice": 12
+      },
+      "operations": [
+        "Alice gains 2 points.",
+        "Alice loses 2 points."
+      ],
+      "prompt_length_chars": 352,
+      "raw_response": "I'll track Alice's points through each operation:\n\nInitial: Alice has 12 points\n\nOperation 1: Alice gains 2 points\n12 + 2 = 14 points\n\nOperation 2: Alice loses 2 points\n14 - 2 = 12 points\n\n12"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:claude-sonnet-4",
+      "k_operations": 2,
+      "n_ops_actual": 2,
+      "correct_answer": 5,
+      "predicted": 5,
+      "accurate": 1,
+      "query_entity": "Bob",
+      "initial_state": {
+        "Leo": 18,
+        "Iris": 6,
+        "Bob": 5
+      },
+      "operations": [
+        "Leo gains 4 points.",
+        "Leo loses 4 points."
+      ],
+      "prompt_length_chars": 342,
+      "raw_response": "5"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:claude-sonnet-4",
+      "k_operations": 2,
+      "n_ops_actual": 2,
+      "correct_answer": 11,
+      "predicted": 11,
+      "accurate": 1,
+      "query_entity": "James",
+      "initial_state": {
+        "James": 11,
+        "Alice": 18,
+        "Iris": 12
+      },
+      "operations": [
+        "Iris loses 3 points.",
+        "Iris gains 3 points."
+      ],
+      "prompt_length_chars": 352,
+      "raw_response": "I need to track the points through each operation.\n\nInitial state:\n- James: 11 points\n- Alice: 18 points  \n- Iris: 12 points\n\nOperation 1: Iris loses 3 points\n- James: 11 points\n- Alice: 18 points\n- Iris: 9 points\n\nOperation 2: Iris gains 3 points\n- James: 11 points\n- Alice: 18 points\n- Iris: 12 points\n\nJames has 11 points after all operations.\n\n11"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:claude-sonnet-4",
+      "k_operations": 2,
+      "n_ops_actual": 2,
+      "correct_answer": 18,
+      "predicted": 18,
+      "accurate": 1,
+      "query_entity": "Mia",
+      "initial_state": {
+        "Mia": 18,
+        "Noah": 15,
+        "Carol": 13
+      },
+      "operations": [
+        "Mia gains 6 points.",
+        "Mia loses 6 points."
+      ],
+      "prompt_length_chars": 346,
+      "raw_response": "18"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:claude-sonnet-4",
+      "k_operations": 2,
+      "n_ops_actual": 2,
+      "correct_answer": 13,
+      "predicted": 13,
+      "accurate": 1,
+      "query_entity": "Noah",
+      "initial_state": {
+        "Bob": 16,
+        "Grace": 16,
+        "Noah": 13
+      },
+      "operations": [
+        "Noah gains 8 points.",
+        "Noah loses 8 points."
+      ],
+      "prompt_length_chars": 349,
+      "raw_response": "I'll track Noah's points through each operation:\n\nInitial: Noah has 13 points\n\nOperation 1: Noah gains 8 points\n13 + 8 = 21 points\n\nOperation 2: Noah loses 8 points\n21 - 8 = 13 points\n\n13"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:claude-sonnet-4",
+      "k_operations": 2,
+      "n_ops_actual": 2,
+      "correct_answer": 14,
+      "predicted": 14,
+      "accurate": 1,
+      "query_entity": "Bob",
+      "initial_state": {
+        "Bob": 14,
+        "Grace": 16,
+        "Noah": 11
+      },
+      "operations": [
+        "Bob gives 3 points to Noah.",
+        "Noah gives 3 points to Bob."
+      ],
+      "prompt_length_chars": 362,
+      "raw_response": "I'll track the points step by step.\n\nInitial state:\n- Bob: 14 points\n- Grace: 16 points  \n- Noah: 11 points\n\nOperation 1: Bob gives 3 points to Noah\n- Bob: 14 - 3 = 11 points\n- Grace: 16 points\n- Noah: 11 + 3 = 14 points\n\nOperation 2: Noah gives 3 points to Bob\n- Bob: 11 + 3 = 14 points\n- Grace: 16 points\n- Noah: 14 - 3 = 11 points\n\n14"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:claude-sonnet-4",
+      "k_operations": 2,
+      "n_ops_actual": 2,
+      "correct_answer": 12,
+      "predicted": 12,
+      "accurate": 1,
+      "query_entity": "Mia",
+      "initial_state": {
+        "Mia": 12,
+        "Emma": 8,
+        "Bob": 17
+      },
+      "operations": [
+        "Emma loses 3 points.",
+        "Emma gains 3 points."
+      ],
+      "prompt_length_chars": 345,
+      "raw_response": "I need to track the points through each operation.\n\nInitial state:\n- Mia: 12 points\n- Emma: 8 points  \n- Bob: 17 points\n\nOperation 1: Emma loses 3 points\n- Mia: 12 points\n- Emma: 5 points\n- Bob: 17 points\n\nOperation 2: Emma gains 3 points\n- Mia: 12 points\n- Emma: 8 points\n- Bob: 17 points\n\n12"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:claude-sonnet-4",
+      "k_operations": 2,
+      "n_ops_actual": 2,
+      "correct_answer": 7,
+      "predicted": 13,
+      "accurate": 0,
+      "query_entity": "Noah",
+      "initial_state": {
+        "Frank": 13,
+        "Noah": 7,
+        "David": 10
+      },
+      "operations": [
+        "David gives 1 points to Frank.",
+        "Frank gives 1 points to David."
+      ],
+      "prompt_length_chars": 370,
+      "raw_response": "I need to track the points through each operation.\n\nInitial state:\n- Frank: 13 points\n- Noah: 7 points  \n- David: 10 points\n\nOperation 1: David gives 1 point to Frank\n- Frank: 13 + 1 = 14 points\n- Noah: 7 points\n- David: 10 - 1 = 9 points\n\nOperation 2: Frank gives 1 point to David\n- Frank: 14 - 1 = 13 points\n- Noah: 7 points\n- David: 9 + 1 = 10 points\n\n7"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:claude-sonnet-4",
+      "k_operations": 2,
+      "n_ops_actual": 2,
+      "correct_answer": 15,
+      "predicted": 12,
+      "accurate": 0,
+      "query_entity": "Emma",
+      "initial_state": {
+        "Grace": 12,
+        "Emma": 15,
+        "Kate": 6
+      },
+      "operations": [
+        "Grace gains 6 points.",
+        "Grace loses 6 points."
+      ],
+      "prompt_length_chars": 351,
+      "raw_response": "I need to track the points through each operation.\n\nInitial state:\n- Grace: 12 points\n- Emma: 15 points  \n- Kate: 6 points\n\nOperation 1: Grace gains 6 points\n- Grace: 12 + 6 = 18 points\n- Emma: 15 points\n- Kate: 6 points\n\nOperation 2: Grace loses 6 points\n- Grace: 18 - 6 = 12 points\n- Emma: 15 points\n- Kate: 6 points\n\nEmma has 15 points after all operations.\n\n15"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:claude-sonnet-4",
+      "k_operations": 2,
+      "n_ops_actual": 2,
+      "correct_answer": 15,
+      "predicted": 15,
+      "accurate": 1,
+      "query_entity": "Emma",
+      "initial_state": {
+        "Emma": 15,
+        "Bob": 11,
+        "David": 20
+      },
+      "operations": [
+        "David loses 4 points.",
+        "David gains 4 points."
+      ],
+      "prompt_length_chars": 351,
+      "raw_response": "I need to track the points through each operation.\n\nInitial state:\n- Emma: 15 points\n- Bob: 11 points  \n- David: 20 points\n\nOperation 1: David loses 4 points\n- Emma: 15 points\n- Bob: 11 points\n- David: 16 points\n\nOperation 2: David gains 4 points\n- Emma: 15 points\n- Bob: 11 points\n- David: 20 points\n\n15"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:claude-sonnet-4",
+      "k_operations": 2,
+      "n_ops_actual": 2,
+      "correct_answer": 17,
+      "predicted": 13,
+      "accurate": 0,
+      "query_entity": "David",
+      "initial_state": {
+        "Emma": 13,
+        "Carol": 18,
+        "David": 17
+      },
+      "operations": [
+        "Emma loses 2 points.",
+        "Emma gains 2 points."
+      ],
+      "prompt_length_chars": 352,
+      "raw_response": "I need to track the points through each operation.\n\nInitial state:\n- Emma: 13 points\n- Carol: 18 points  \n- David: 17 points\n\nOperation 1: Emma loses 2 points\n- Emma: 13 - 2 = 11 points\n- Carol: 18 points\n- David: 17 points\n\nOperation 2: Emma gains 2 points\n- Emma: 11 + 2 = 13 points\n- Carol: 18 points\n- David: 17 points\n\nDavid's final points: 17\n\n17"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:claude-sonnet-4",
+      "k_operations": 2,
+      "n_ops_actual": 2,
+      "correct_answer": 9,
+      "predicted": 8,
+      "accurate": 0,
+      "query_entity": "Bob",
+      "initial_state": {
+        "Henry": 8,
+        "Bob": 9,
+        "Alice": 10
+      },
+      "operations": [
+        "Bob gives 2 points to Henry.",
+        "Henry gives 2 points to Bob."
+      ],
+      "prompt_length_chars": 363,
+      "raw_response": "I'll track the points through each operation.\n\nInitial state:\n- Henry: 8 points\n- Bob: 9 points  \n- Alice: 10 points\n\nOperation 1: Bob gives 2 points to Henry\n- Henry: 8 + 2 = 10 points\n- Bob: 9 - 2 = 7 points\n- Alice: 10 points\n\nOperation 2: Henry gives 2 points to Bob\n- Henry: 10 - 2 = 8 points\n- Bob: 7 + 2 = 9 points\n- Alice: 10 points\n\n9"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:claude-sonnet-4",
+      "k_operations": 2,
+      "n_ops_actual": 2,
+      "correct_answer": 5,
+      "predicted": 13,
+      "accurate": 0,
+      "query_entity": "Henry",
+      "initial_state": {
+        "James": 13,
+        "Henry": 5,
+        "Iris": 8
+      },
+      "operations": [
+        "Iris gives 3 points to Henry.",
+        "Henry gives 3 points to Iris."
+      ],
+      "prompt_length_chars": 368,
+      "raw_response": "I'll track the points through each operation:\n\nInitial state:\n- James: 13 points\n- Henry: 5 points  \n- Iris: 8 points\n\nOperation 1: Iris gives 3 points to Henry\n- James: 13 points\n- Henry: 5 + 3 = 8 points\n- Iris: 8 - 3 = 5 points\n\nOperation 2: Henry gives 3 points to Iris\n- James: 13 points\n- Henry: 8 - 3 = 5 points\n- Iris: 5 + 3 = 8 points\n\n5"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:claude-sonnet-4",
+      "k_operations": 2,
+      "n_ops_actual": 2,
+      "correct_answer": 10,
+      "predicted": 10,
+      "accurate": 1,
+      "query_entity": "Bob",
+      "initial_state": {
+        "Bob": 10,
+        "Emma": 19,
+        "Grace": 5
+      },
+      "operations": [
+        "Grace gives 3 points to Emma.",
+        "Emma gives 3 points to Grace."
+      ],
+      "prompt_length_chars": 365,
+      "raw_response": "I need to track the points through each operation.\n\nInitial state:\n- Bob: 10 points\n- Emma: 19 points  \n- Grace: 5 points\n\nOperation 1: Grace gives 3 points to Emma\n- Bob: 10 points\n- Emma: 19 + 3 = 22 points\n- Grace: 5 - 3 = 2 points\n\nOperation 2: Emma gives 3 points to Grace\n- Bob: 10 points\n- Emma: 22 - 3 = 19 points\n- Grace: 2 + 3 = 5 points\n\nBob's final points: 10"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:claude-sonnet-4",
+      "k_operations": 2,
+      "n_ops_actual": 2,
+      "correct_answer": 9,
+      "predicted": 14,
+      "accurate": 0,
+      "query_entity": "Kate",
+      "initial_state": {
+        "Iris": 14,
+        "Bob": 11,
+        "Kate": 9
+      },
+      "operations": [
+        "Iris loses 5 points.",
+        "Iris gains 5 points."
+      ],
+      "prompt_length_chars": 347,
+      "raw_response": "I need to track the points through each operation.\n\nInitial state:\n- Iris: 14 points\n- Bob: 11 points  \n- Kate: 9 points\n\nOperation 1: Iris loses 5 points\n- Iris: 14 - 5 = 9 points\n- Bob: 11 points\n- Kate: 9 points\n\nOperation 2: Iris gains 5 points\n- Iris: 9 + 5 = 14 points\n- Bob: 11 points\n- Kate: 9 points\n\n9"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:claude-sonnet-4",
+      "k_operations": 2,
+      "n_ops_actual": 2,
+      "correct_answer": 20,
+      "predicted": 20,
+      "accurate": 1,
+      "query_entity": "Alice",
+      "initial_state": {
+        "Alice": 20,
+        "James": 5,
+        "Frank": 8
+      },
+      "operations": [
+        "James loses 2 points.",
+        "James gains 2 points."
+      ],
+      "prompt_length_chars": 353,
+      "raw_response": "I need to track the points through each operation.\n\nInitial state:\n- Alice: 20 points\n- James: 5 points  \n- Frank: 8 points\n\nOperation 1: James loses 2 points\n- Alice: 20 points\n- James: 3 points\n- Frank: 8 points\n\nOperation 2: James gains 2 points\n- Alice: 20 points\n- James: 5 points\n- Frank: 8 points\n\nAlice's final points: 20\n\n20"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:claude-sonnet-4",
+      "k_operations": 2,
+      "n_ops_actual": 2,
+      "correct_answer": 20,
+      "predicted": 7,
+      "accurate": 0,
+      "query_entity": "James",
+      "initial_state": {
+        "David": 7,
+        "James": 20,
+        "Bob": 7
+      },
+      "operations": [
+        "David gives 3 points to Bob.",
+        "Bob gives 3 points to David."
+      ],
+      "prompt_length_chars": 365,
+      "raw_response": "I need to track the points through each operation.\n\nInitial state:\n- David: 7 points\n- James: 20 points  \n- Bob: 7 points\n\nOperation 1: David gives 3 points to Bob\n- David: 7 - 3 = 4 points\n- James: 20 points (unchanged)\n- Bob: 7 + 3 = 10 points\n\nOperation 2: Bob gives 3 points to David\n- David: 4 + 3 = 7 points\n- James: 20 points (unchanged)\n- Bob: 10 - 3 = 7 points\n\nJames has 20 points after all operations.\n\n20"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:claude-sonnet-4",
+      "k_operations": 2,
+      "n_ops_actual": 2,
+      "correct_answer": 11,
+      "predicted": 18,
+      "accurate": 0,
+      "query_entity": "Emma",
+      "initial_state": {
+        "Iris": 18,
+        "Carol": 11,
+        "Emma": 11
+      },
+      "operations": [
+        "Carol gives 3 points to Emma.",
+        "Emma gives 3 points to Carol."
+      ],
+      "prompt_length_chars": 368,
+      "raw_response": "I'll track the points through each operation.\n\nInitial state:\n- Iris: 18 points\n- Carol: 11 points  \n- Emma: 11 points\n\nOperation 1: Carol gives 3 points to Emma\n- Iris: 18 points\n- Carol: 11 - 3 = 8 points\n- Emma: 11 + 3 = 14 points\n\nOperation 2: Emma gives 3 points to Carol\n- Iris: 18 points\n- Carol: 8 + 3 = 11 points\n- Emma: 14 - 3 = 11 points\n\n11"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:claude-sonnet-4",
+      "k_operations": 2,
+      "n_ops_actual": 2,
+      "correct_answer": 19,
+      "predicted": 19,
+      "accurate": 1,
+      "query_entity": "Frank",
+      "initial_state": {
+        "Frank": 19,
+        "Henry": 8,
+        "Iris": 12
+      },
+      "operations": [
+        "Frank gains 6 points.",
+        "Frank loses 6 points."
+      ],
+      "prompt_length_chars": 353,
+      "raw_response": "I'll track Frank's points through each operation:\n\nInitial: Frank has 19 points\n\nOperation 1: Frank gains 6 points\n19 + 6 = 25 points\n\nOperation 2: Frank loses 6 points\n25 - 6 = 19 points\n\n19"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:claude-sonnet-4",
+      "k_operations": 2,
+      "n_ops_actual": 2,
+      "correct_answer": 12,
+      "predicted": 12,
+      "accurate": 1,
+      "query_entity": "James",
+      "initial_state": {
+        "James": 12,
+        "Iris": 5,
+        "David": 7
+      },
+      "operations": [
+        "David gives 1 points to James.",
+        "James gives 1 points to David."
+      ],
+      "prompt_length_chars": 370,
+      "raw_response": "I'll track the points through each operation:\n\nInitial state:\n- James: 12 points\n- Iris: 5 points  \n- David: 7 points\n\nOperation 1: David gives 1 point to James\n- James: 12 + 1 = 13 points\n- David: 7 - 1 = 6 points\n- Iris: 5 points (unchanged)\n\nOperation 2: James gives 1 point to David\n- James: 13 - 1 = 12 points\n- David: 6 + 1 = 7 points\n- Iris: 5 points (unchanged)\n\n12"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:claude-sonnet-4",
+      "k_operations": 4,
+      "n_ops_actual": 4,
+      "correct_answer": 13,
+      "predicted": 12,
+      "accurate": 0,
+      "query_entity": "Frank",
+      "initial_state": {
+        "Alice": 12,
+        "Frank": 13,
+        "Bob": 20
+      },
+      "operations": [
+        "Bob gains 3 points.",
+        "Bob loses 3 points.",
+        "Bob gives 1 points to Frank.",
+        "Frank gives 1 points to Bob."
+      ],
+      "prompt_length_chars": 417,
+      "raw_response": "I'll track the points step by step.\n\nInitial state:\n- Alice: 12 points\n- Frank: 13 points  \n- Bob: 20 points\n\nOperation 1: Bob gains 3 points\n- Alice: 12\n- Frank: 13\n- Bob: 23\n\nOperation 2: Bob loses 3 points\n- Alice: 12\n- Frank: 13\n- Bob: 20\n\nOperation 3: Bob gives 1 point to Frank\n- Alice: 12\n- Frank: 14\n- Bob: 19\n\nOperation 4: Frank gives 1 point to Bob\n- Alice: 12\n- Frank: 13\n- Bob: 20\n\n13"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:claude-sonnet-4",
+      "k_operations": 4,
+      "n_ops_actual": 4,
+      "correct_answer": 18,
+      "predicted": 8,
+      "accurate": 0,
+      "query_entity": "David",
+      "initial_state": {
+        "Mia": 8,
+        "Grace": 8,
+        "David": 18
+      },
+      "operations": [
+        "Grace loses 4 points.",
+        "Grace gains 4 points.",
+        "David loses 1 points.",
+        "David gains 1 points."
+      ],
+      "prompt_length_chars": 405,
+      "raw_response": "I'll track the points through each operation:\n\nInitial state:\n- Mia: 8 points\n- Grace: 8 points  \n- David: 18 points\n\nOperation 1: Grace loses 4 points\n- Mia: 8 points\n- Grace: 4 points\n- David: 18 points\n\nOperation 2: Grace gains 4 points\n- Mia: 8 points\n- Grace: 8 points\n- David: 18 points\n\nOperation 3: David loses 1 point\n- Mia: 8 points\n- Grace: 8 points\n- David: 17 points\n\nOperation 4: David gains 1 point\n- Mia: 8 points\n- Grace: 8 points\n- David: 18 points\n\n18"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:claude-sonnet-4",
+      "k_operations": 4,
+      "n_ops_actual": 4,
+      "correct_answer": 6,
+      "predicted": 6,
+      "accurate": 1,
+      "query_entity": "Kate",
+      "initial_state": {
+        "Kate": 6,
+        "Noah": 17,
+        "Bob": 15
+      },
+      "operations": [
+        "Kate gains 4 points.",
+        "Kate loses 4 points.",
+        "Bob gains 8 points.",
+        "Bob loses 8 points."
+      ],
+      "prompt_length_chars": 397,
+      "raw_response": "I'll track Kate's points through each operation:\n\nInitial: Kate has 6 points\n\n1. Kate gains 4 points: 6 + 4 = 10 points\n2. Kate loses 4 points: 10 - 4 = 6 points\n3. Bob gains 8 points: (Kate still has 6 points)\n4. Bob loses 8 points: (Kate still has 6 points)\n\n6"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:claude-sonnet-4",
+      "k_operations": 4,
+      "n_ops_actual": 4,
+      "correct_answer": 19,
+      "predicted": 19,
+      "accurate": 1,
+      "query_entity": "Grace",
+      "initial_state": {
+        "Grace": 19,
+        "Carol": 12,
+        "Emma": 7
+      },
+      "operations": [
+        "Emma loses 1 points.",
+        "Emma gains 1 points.",
+        "Emma gains 9 points.",
+        "Emma loses 9 points."
+      ],
+      "prompt_length_chars": 403,
+      "raw_response": "I need to track the points through each operation, starting with the initial state.\n\nInitial state:\n- Grace: 19 points\n- Carol: 12 points  \n- Emma: 7 points\n\nOperation 1: Emma loses 1 point\n- Grace: 19 points\n- Carol: 12 points\n- Emma: 6 points\n\nOperation 2: Emma gains 1 point\n- Grace: 19 points\n- Carol: 12 points\n- Emma: 7 points\n\nOperation 3: Emma gains 9 points\n- Grace: 19 points\n- Carol: 12 points\n- Emma: 16 points\n\nOperation 4: Emma loses 9 points\n- Grace: 19 points\n- Carol: 12 points\n- Emma: 7 points\n\nGrace's points remained unchanged throughout all operations.\n\n19"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:claude-sonnet-4",
+      "k_operations": 4,
+      "n_ops_actual": 4,
+      "correct_answer": 10,
+      "predicted": 10,
+      "accurate": 1,
+      "query_entity": "Bob",
+      "initial_state": {
+        "Bob": 10,
+        "Mia": 18,
+        "David": 20
+      },
+      "operations": [
+        "Bob loses 4 points.",
+        "Bob gains 4 points.",
+        "Bob gains 7 points.",
+        "Bob loses 7 points."
+      ],
+      "prompt_length_chars": 395,
+      "raw_response": "10"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:claude-sonnet-4",
+      "k_operations": 4,
+      "n_ops_actual": 4,
+      "correct_answer": 20,
+      "predicted": 14,
+      "accurate": 0,
+      "query_entity": "Henry",
+      "initial_state": {
+        "Grace": 14,
+        "Emma": 18,
+        "Henry": 20
+      },
+      "operations": [
+        "Grace gains 5 points.",
+        "Grace loses 5 points.",
+        "Grace gains 10 points.",
+        "Grace loses 10 points."
+      ],
+      "prompt_length_chars": 410,
+      "raw_response": "I need to track the points through each operation, starting from the initial state.\n\nInitial state:\n- Grace: 14 points\n- Emma: 18 points  \n- Henry: 20 points\n\nOperation 1: Grace gains 5 points\n- Grace: 14 + 5 = 19 points\n- Emma: 18 points\n- Henry: 20 points\n\nOperation 2: Grace loses 5 points\n- Grace: 19 - 5 = 14 points\n- Emma: 18 points\n- Henry: 20 points\n\nOperation 3: Grace gains 10 points\n- Grace: 14 + 10 = 24 points\n- Emma: 18 points\n- Henry: 20 points\n\nOperation 4: Grace loses 10 points\n- Grace: 24 - 10 = 14 points\n- Emma: 18 points\n- Henry: 20 points\n\nHenry's points never changed throughout any of the operations.\n\n20"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:claude-sonnet-4",
+      "k_operations": 4,
+      "n_ops_actual": 4,
+      "correct_answer": 6,
+      "predicted": 15,
+      "accurate": 0,
+      "query_entity": "Leo",
+      "initial_state": {
+        "Iris": 15,
+        "Alice": 6,
+        "Leo": 6
+      },
+      "operations": [
+        "Alice gives 1 points to Iris.",
+        "Iris gives 1 points to Alice.",
+        "Iris gives 1 points to Leo.",
+        "Leo gives 1 points to Iris."
+      ],
+      "prompt_length_chars": 430,
+      "raw_response": "I'll track the points through each operation:\n\nInitial state:\n- Iris: 15 points\n- Alice: 6 points  \n- Leo: 6 points\n\nOperation 1: Alice gives 1 point to Iris\n- Iris: 16 points\n- Alice: 5 points\n- Leo: 6 points\n\nOperation 2: Iris gives 1 point to Alice\n- Iris: 15 points\n- Alice: 6 points\n- Leo: 6 points\n\nOperation 3: Iris gives 1 point to Leo\n- Iris: 14 points\n- Alice: 6 points\n- Leo: 7 points\n\nOperation 4: Leo gives 1 point to Iris\n- Iris: 15 points\n- Alice: 6 points\n- Leo: 6 points\n\n6"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:claude-sonnet-4",
+      "k_operations": 4,
+      "n_ops_actual": 4,
+      "correct_answer": 12,
+      "predicted": 12,
+      "accurate": 1,
+      "query_entity": "David",
+      "initial_state": {
+        "Bob": 17,
+        "Kate": 8,
+        "David": 12
+      },
+      "operations": [
+        "David gives 3 points to Bob.",
+        "Bob gives 3 points to David.",
+        "Kate gains 10 points.",
+        "Kate loses 10 points."
+      ],
+      "prompt_length_chars": 419,
+      "raw_response": "I'll track David's points through each operation:\n\nInitial: David has 12 points\n\n1. David gives 3 points to Bob: 12 - 3 = 9 points\n2. Bob gives 3 points to David: 9 + 3 = 12 points\n3. Kate gains 10 points: David unchanged at 12 points\n4. Kate loses 10 points: David unchanged at 12 points\n\n12"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:claude-sonnet-4",
+      "k_operations": 4,
+      "n_ops_actual": 4,
+      "correct_answer": 15,
+      "predicted": 15,
+      "accurate": 1,
+      "query_entity": "Frank",
+      "initial_state": {
+        "Iris": 11,
+        "Frank": 15,
+        "Emma": 12
+      },
+      "operations": [
+        "Frank loses 2 points.",
+        "Frank gains 2 points.",
+        "Emma gives 2 points to Frank.",
+        "Frank gives 2 points to Emma."
+      ],
+      "prompt_length_chars": 423,
+      "raw_response": "I'll track Frank's points through each operation:\n\nInitial: Frank has 15 points\n\n1. Frank loses 2 points: 15 - 2 = 13 points\n2. Frank gains 2 points: 13 + 2 = 15 points\n3. Emma gives 2 points to Frank: 15 + 2 = 17 points\n4. Frank gives 2 points to Emma: 17 - 2 = 15 points\n\n15"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:claude-sonnet-4",
+      "k_operations": 4,
+      "n_ops_actual": 4,
+      "correct_answer": 8,
+      "predicted": 19,
+      "accurate": 0,
+      "query_entity": "Bob",
+      "initial_state": {
+        "Mia": 19,
+        "Bob": 8,
+        "Alice": 7
+      },
+      "operations": [
+        "Mia gives 1 points to Bob.",
+        "Bob gives 1 points to Mia.",
+        "Mia loses 2 points.",
+        "Mia gains 2 points."
+      ],
+      "prompt_length_chars": 407,
+      "raw_response": "I'll track the points step by step.\n\nInitial state:\n- Mia: 19 points\n- Bob: 8 points\n- Alice: 7 points\n\nOperation 1: Mia gives 1 point to Bob\n- Mia: 18 points\n- Bob: 9 points\n- Alice: 7 points\n\nOperation 2: Bob gives 1 point to Mia\n- Mia: 19 points\n- Bob: 8 points\n- Alice: 7 points\n\nOperation 3: Mia loses 2 points\n- Mia: 17 points\n- Bob: 8 points\n- Alice: 7 points\n\nOperation 4: Mia gains 2 points\n- Mia: 19 points\n- Bob: 8 points\n- Alice: 7 points\n\n8"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:claude-sonnet-4",
+      "k_operations": 4,
+      "n_ops_actual": 4,
+      "correct_answer": 14,
+      "predicted": 14,
+      "accurate": 1,
+      "query_entity": "Emma",
+      "initial_state": {
+        "Emma": 14,
+        "Carol": 5,
+        "Henry": 14
+      },
+      "operations": [
+        "Emma gives 2 points to Henry.",
+        "Henry gives 2 points to Emma.",
+        "Emma gains 9 points.",
+        "Emma loses 9 points."
+      ],
+      "prompt_length_chars": 420,
+      "raw_response": "I'll track Emma's points through each operation:\n\nInitial: Emma has 14 points\n\n1. Emma gives 2 points to Henry: 14 - 2 = 12 points\n2. Henry gives 2 points to Emma: 12 + 2 = 14 points\n3. Emma gains 9 points: 14 + 9 = 23 points\n4. Emma loses 9 points: 23 - 9 = 14 points\n\n14"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:claude-sonnet-4",
+      "k_operations": 4,
+      "n_ops_actual": 4,
+      "correct_answer": 11,
+      "predicted": 11,
+      "accurate": 1,
+      "query_entity": "Emma",
+      "initial_state": {
+        "Emma": 11,
+        "Noah": 15,
+        "James": 11
+      },
+      "operations": [
+        "James gives 3 points to Noah.",
+        "Noah gives 3 points to James.",
+        "Noah loses 1 points.",
+        "Noah gains 1 points."
+      ],
+      "prompt_length_chars": 420,
+      "raw_response": "I need to track the points through each operation, starting with:\nEmma: 11 points, Noah: 15 points, James: 11 points\n\nOperation 1: James gives 3 points to Noah\n- Emma: 11 points\n- Noah: 15 + 3 = 18 points  \n- James: 11 - 3 = 8 points\n\nOperation 2: Noah gives 3 points to James\n- Emma: 11 points\n- Noah: 18 - 3 = 15 points\n- James: 8 + 3 = 11 points\n\nOperation 3: Noah loses 1 point\n- Emma: 11 points\n- Noah: 15 - 1 = 14 points\n- James: 11 points\n\nOperation 4: Noah gains 1 point\n- Emma: 11 points\n- Noah: 14 + 1 = 15 points\n- James: 11 points\n\n11"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:claude-sonnet-4",
+      "k_operations": 4,
+      "n_ops_actual": 4,
+      "correct_answer": 15,
+      "predicted": 15,
+      "accurate": 1,
+      "query_entity": "Emma",
+      "initial_state": {
+        "Kate": 6,
+        "Grace": 5,
+        "Emma": 15
+      },
+      "operations": [
+        "Emma gains 5 points.",
+        "Emma loses 5 points.",
+        "Emma gains 8 points.",
+        "Emma loses 8 points."
+      ],
+      "prompt_length_chars": 400,
+      "raw_response": "I'll track Emma's points through each operation:\n\nStarting: Emma has 15 points\n\n1. Emma gains 5 points: 15 + 5 = 20 points\n2. Emma loses 5 points: 20 - 5 = 15 points\n3. Emma gains 8 points: 15 + 8 = 23 points\n4. Emma loses 8 points: 23 - 8 = 15 points\n\n15"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:claude-sonnet-4",
+      "k_operations": 4,
+      "n_ops_actual": 4,
+      "correct_answer": 5,
+      "predicted": 5,
+      "accurate": 1,
+      "query_entity": "Leo",
+      "initial_state": {
+        "Leo": 5,
+        "Grace": 8,
+        "Iris": 7
+      },
+      "operations": [
+        "Leo gives 2 points to Iris.",
+        "Iris gives 2 points to Leo.",
+        "Iris gives 2 points to Leo.",
+        "Leo gives 2 points to Iris."
+      ],
+      "prompt_length_chars": 425,
+      "raw_response": "I'll track Leo's points through each operation.\n\nInitial state: Leo has 5 points\n\nOperation 1: Leo gives 2 points to Iris\nLeo: 5 - 2 = 3 points\n\nOperation 2: Iris gives 2 points to Leo\nLeo: 3 + 2 = 5 points\n\nOperation 3: Iris gives 2 points to Leo\nLeo: 5 + 2 = 7 points\n\nOperation 4: Leo gives 2 points to Iris\nLeo: 7 - 2 = 5 points\n\n5"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:claude-sonnet-4",
+      "k_operations": 4,
+      "n_ops_actual": 4,
+      "correct_answer": 6,
+      "predicted": 6,
+      "accurate": 1,
+      "query_entity": "Alice",
+      "initial_state": {
+        "Alice": 6,
+        "Emma": 16,
+        "Frank": 11
+      },
+      "operations": [
+        "Alice gives 2 points to Frank.",
+        "Frank gives 2 points to Alice.",
+        "Emma gives 1 points to Alice.",
+        "Alice gives 1 points to Emma."
+      ],
+      "prompt_length_chars": 441,
+      "raw_response": "I'll track Alice's points through each operation:\n\nInitial: Alice has 6 points\n\n1. Alice gives 2 points to Frank: 6 - 2 = 4 points\n2. Frank gives 2 points to Alice: 4 + 2 = 6 points\n3. Emma gives 1 point to Alice: 6 + 1 = 7 points\n4. Alice gives 1 point to Emma: 7 - 1 = 6 points\n\n6"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:claude-sonnet-4",
+      "k_operations": 4,
+      "n_ops_actual": 4,
+      "correct_answer": 10,
+      "predicted": 18,
+      "accurate": 0,
+      "query_entity": "Carol",
+      "initial_state": {
+        "Mia": 18,
+        "Noah": 5,
+        "Carol": 10
+      },
+      "operations": [
+        "Noah gives 3 points to Carol.",
+        "Carol gives 3 points to Noah.",
+        "Mia gives 1 points to Noah.",
+        "Noah gives 1 points to Mia."
+      ],
+      "prompt_length_chars": 433,
+      "raw_response": "I'll track the points step by step.\n\nInitial state:\n- Mia: 18 points\n- Noah: 5 points  \n- Carol: 10 points\n\nOperation 1: Noah gives 3 points to Carol\n- Mia: 18 points\n- Noah: 2 points\n- Carol: 13 points\n\nOperation 2: Carol gives 3 points to Noah\n- Mia: 18 points\n- Noah: 5 points\n- Carol: 10 points\n\nOperation 3: Mia gives 1 point to Noah\n- Mia: 17 points\n- Noah: 6 points\n- Carol: 10 points\n\nOperation 4: Noah gives 1 point to Mia\n- Mia: 18 points\n- Noah: 5 points\n- Carol: 10 points\n\n10"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:claude-sonnet-4",
+      "k_operations": 4,
+      "n_ops_actual": 4,
+      "correct_answer": 11,
+      "predicted": 20,
+      "accurate": 0,
+      "query_entity": "Alice",
+      "initial_state": {
+        "Bob": 20,
+        "Grace": 12,
+        "Alice": 11
+      },
+      "operations": [
+        "Grace loses 3 points.",
+        "Grace gains 3 points.",
+        "Bob gains 1 points.",
+        "Bob loses 1 points."
+      ],
+      "prompt_length_chars": 403,
+      "raw_response": "I need to track the points through each operation, starting from the initial state.\n\nInitial state:\n- Bob: 20 points\n- Grace: 12 points  \n- Alice: 11 points\n\nOperation 1: Grace loses 3 points\n- Bob: 20 points\n- Grace: 9 points\n- Alice: 11 points\n\nOperation 2: Grace gains 3 points\n- Bob: 20 points\n- Grace: 12 points\n- Alice: 11 points\n\nOperation 3: Bob gains 1 point\n- Bob: 21 points\n- Grace: 12 points\n- Alice: 11 points\n\nOperation 4: Bob loses 1 point\n- Bob: 20 points\n- Grace: 12 points\n- Alice: 11 points\n\nAlice's points never changed throughout any of the operations.\n\n11"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:claude-sonnet-4",
+      "k_operations": 4,
+      "n_ops_actual": 4,
+      "correct_answer": 7,
+      "predicted": 13,
+      "accurate": 0,
+      "query_entity": "Grace",
+      "initial_state": {
+        "David": 13,
+        "Grace": 7,
+        "Frank": 13
+      },
+      "operations": [
+        "Frank loses 5 points.",
+        "Frank gains 5 points.",
+        "Frank loses 5 points.",
+        "Frank gains 5 points."
+      ],
+      "prompt_length_chars": 408,
+      "raw_response": "I need to track the points through each operation, starting from the initial state.\n\nInitial state:\n- David: 13 points\n- Grace: 7 points  \n- Frank: 13 points\n\nOperation 1: Frank loses 5 points\n- David: 13 points\n- Grace: 7 points\n- Frank: 8 points\n\nOperation 2: Frank gains 5 points\n- David: 13 points\n- Grace: 7 points\n- Frank: 13 points\n\nOperation 3: Frank loses 5 points\n- David: 13 points\n- Grace: 7 points\n- Frank: 8 points\n\nOperation 4: Frank gains 5 points\n- David: 13 points\n- Grace: 7 points\n- Frank: 13 points\n\nGrace's points never changed throughout any of the operations.\n\n7"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:claude-sonnet-4",
+      "k_operations": 4,
+      "n_ops_actual": 4,
+      "correct_answer": 13,
+      "predicted": 10,
+      "accurate": 0,
+      "query_entity": "Bob",
+      "initial_state": {
+        "Alice": 10,
+        "Bob": 13,
+        "Emma": 6
+      },
+      "operations": [
+        "Emma gains 7 points.",
+        "Emma loses 7 points.",
+        "Emma loses 3 points.",
+        "Emma gains 3 points."
+      ],
+      "prompt_length_chars": 399,
+      "raw_response": "I need to track the points through each operation, focusing on Bob's points.\n\nInitial state:\n- Alice: 10 points\n- Bob: 13 points  \n- Emma: 6 points\n\nOperations:\n1. Emma gains 7 points (Bob still has 13)\n2. Emma loses 7 points (Bob still has 13)\n3. Emma loses 3 points (Bob still has 13)\n4. Emma gains 3 points (Bob still has 13)\n\nAll operations only affected Emma's points, not Bob's.\n\n13"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:claude-sonnet-4",
+      "k_operations": 4,
+      "n_ops_actual": 4,
+      "correct_answer": 13,
+      "predicted": 13,
+      "accurate": 1,
+      "query_entity": "Bob",
+      "initial_state": {
+        "James": 17,
+        "Iris": 11,
+        "Bob": 13
+      },
+      "operations": [
+        "Bob gains 7 points.",
+        "Bob loses 7 points.",
+        "Bob gains 9 points.",
+        "Bob loses 9 points."
+      ],
+      "prompt_length_chars": 396,
+      "raw_response": "I'll track Bob's points through each operation:\n\nInitial: Bob has 13 points\n\n1. Bob gains 7 points: 13 + 7 = 20 points\n2. Bob loses 7 points: 20 - 7 = 13 points\n3. Bob gains 9 points: 13 + 9 = 22 points\n4. Bob loses 9 points: 22 - 9 = 13 points\n\n13"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:claude-sonnet-4",
+      "k_operations": 6,
+      "n_ops_actual": 6,
+      "correct_answer": 18,
+      "predicted": 18,
+      "accurate": 1,
+      "query_entity": "Mia",
+      "initial_state": {
+        "Leo": 11,
+        "Noah": 16,
+        "Mia": 18
+      },
+      "operations": [
+        "Mia gains 6 points.",
+        "Mia loses 6 points.",
+        "Noah gives 3 points to Leo.",
+        "Leo gives 3 points to Noah.",
+        "Mia loses 3 points.",
+        "Mia gains 3 points."
+      ],
+      "prompt_length_chars": 460,
+      "raw_response": "I'll track Mia's points through each operation:\n\nInitial: Mia has 18 points\n\n1. Mia gains 6 points: 18 + 6 = 24 points\n2. Mia loses 6 points: 24 - 6 = 18 points\n3. Noah gives 3 points to Leo: Mia unchanged at 18 points\n4. Leo gives 3 points to Noah: Mia unchanged at 18 points\n5. Mia loses 3 points: 18 - 3 = 15 points\n6. Mia gains 3 points: 15 + 3 = 18 points\n\n18"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:claude-sonnet-4",
+      "k_operations": 6,
+      "n_ops_actual": 6,
+      "correct_answer": 14,
+      "predicted": 14,
+      "accurate": 1,
+      "query_entity": "Grace",
+      "initial_state": {
+        "Grace": 14,
+        "Frank": 9,
+        "Noah": 11
+      },
+      "operations": [
+        "Noah loses 4 points.",
+        "Noah gains 4 points.",
+        "Noah gives 3 points to Grace.",
+        "Grace gives 3 points to Noah.",
+        "Frank gives 3 points to Noah.",
+        "Noah gives 3 points to Frank."
+      ],
+      "prompt_length_chars": 491,
+      "raw_response": "I'll track the points step by step.\n\nInitial state:\nGrace: 14 points, Frank: 9 points, Noah: 11 points\n\n1. Noah loses 4 points:\nGrace: 14, Frank: 9, Noah: 7\n\n2. Noah gains 4 points:\nGrace: 14, Frank: 9, Noah: 11\n\n3. Noah gives 3 points to Grace:\nGrace: 17, Frank: 9, Noah: 8\n\n4. Grace gives 3 points to Noah:\nGrace: 14, Frank: 9, Noah: 11\n\n5. Frank gives 3 points to Noah:\nGrace: 14, Frank: 6, Noah: 14\n\n6. Noah gives 3 points to Frank:\nGrace: 14, Frank: 9, Noah: 11\n\n14"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:claude-sonnet-4",
+      "k_operations": 6,
+      "n_ops_actual": 6,
+      "correct_answer": 19,
+      "predicted": 18,
+      "accurate": 0,
+      "query_entity": "David",
+      "initial_state": {
+        "Emma": 18,
+        "Noah": 15,
+        "David": 19
+      },
+      "operations": [
+        "Noah loses 2 points.",
+        "Noah gains 2 points.",
+        "Noah gives 3 points to Emma.",
+        "Emma gives 3 points to Noah.",
+        "Noah gains 9 points.",
+        "Noah loses 9 points."
+      ],
+      "prompt_length_chars": 471,
+      "raw_response": "I need to track the points through each operation, focusing on David's points.\n\nInitial state:\n- Emma: 18 points\n- Noah: 15 points  \n- David: 19 points\n\nOperations:\n1. Noah loses 2 points \u2192 David still has 19 points\n2. Noah gains 2 points \u2192 David still has 19 points\n3. Noah gives 3 points to Emma \u2192 David still has 19 points\n4. Emma gives 3 points to Noah \u2192 David still has 19 points\n5. Noah gains 9 points \u2192 David still has 19 points\n6. Noah loses 9 points \u2192 David still has 19 points\n\nDavid's points never change throughout any of these operations.\n\n19"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:claude-sonnet-4",
+      "k_operations": 6,
+      "n_ops_actual": 6,
+      "correct_answer": 12,
+      "predicted": 7,
+      "accurate": 0,
+      "query_entity": "James",
+      "initial_state": {
+        "Kate": 7,
+        "James": 12,
+        "Frank": 14
+      },
+      "operations": [
+        "Kate gains 3 points.",
+        "Kate loses 3 points.",
+        "Kate gains 4 points.",
+        "Kate loses 4 points.",
+        "Frank loses 1 points.",
+        "Frank gains 1 points."
+      ],
+      "prompt_length_chars": 457,
+      "raw_response": "I need to track the points through each operation.\n\nInitial state:\nKate: 7 points, James: 12 points, Frank: 14 points\n\nOperation 1: Kate gains 3 points\nKate: 7 + 3 = 10 points, James: 12 points, Frank: 14 points\n\nOperation 2: Kate loses 3 points\nKate: 10 - 3 = 7 points, James: 12 points, Frank: 14 points\n\nOperation 3: Kate gains 4 points\nKate: 7 + 4 = 11 points, James: 12 points, Frank: 14 points\n\nOperation 4: Kate loses 4 points\nKate: 11 - 4 = 7 points, James: 12 points, Frank: 14 points\n\nOperation 5: Frank loses 1 point\nKate: 7 points, James: 12 points, Frank: 14 - 1 = 13 points\n\nOperation 6: Frank gains 1 point\nKate: 7 points, James: 12 points, Frank: 13 + 1 = 14 points\n\nJames has 12 points after all operations.\n\n12"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:claude-sonnet-4",
+      "k_operations": 6,
+      "n_ops_actual": 6,
+      "correct_answer": 20,
+      "predicted": 11,
+      "accurate": 0,
+      "query_entity": "James",
+      "initial_state": {
+        "Grace": 11,
+        "Kate": 17,
+        "James": 20
+      },
+      "operations": [
+        "Grace loses 2 points.",
+        "Grace gains 2 points.",
+        "James gives 1 points to Grace.",
+        "Grace gives 1 points to James.",
+        "Grace loses 2 points.",
+        "Grace gains 2 points."
+      ],
+      "prompt_length_chars": 480,
+      "raw_response": "I'll track the points for each person through each operation.\n\nStarting state:\n- Grace: 11 points\n- Kate: 17 points  \n- James: 20 points\n\nOperation 1: Grace loses 2 points\n- Grace: 9 points\n- Kate: 17 points\n- James: 20 points\n\nOperation 2: Grace gains 2 points\n- Grace: 11 points\n- Kate: 17 points\n- James: 20 points\n\nOperation 3: James gives 1 point to Grace\n- Grace: 12 points\n- Kate: 17 points\n- James: 19 points\n\nOperation 4: Grace gives 1 point to James\n- Grace: 11 points\n- Kate: 17 points\n- James: 20 points\n\nOperation 5: Grace loses 2 points\n- Grace: 9 points\n- Kate: 17 points\n- James: 20 points\n\nOperation 6: Grace gains 2 points\n- Grace: 11 points\n- Kate: 17 points\n- James: 20 points\n\n20"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:claude-sonnet-4",
+      "k_operations": 6,
+      "n_ops_actual": 6,
+      "correct_answer": 8,
+      "predicted": 8,
+      "accurate": 1,
+      "query_entity": "Henry",
+      "initial_state": {
+        "Iris": 12,
+        "Henry": 8,
+        "Alice": 19
+      },
+      "operations": [
+        "Henry gains 9 points.",
+        "Henry loses 9 points.",
+        "Alice gives 2 points to Henry.",
+        "Henry gives 2 points to Alice.",
+        "Alice gives 3 points to Henry.",
+        "Henry gives 3 points to Alice."
+      ],
+      "prompt_length_chars": 497,
+      "raw_response": "I'll track Henry's points through each operation:\n\nStarting: Henry has 8 points\n\n1. Henry gains 9 points: 8 + 9 = 17 points\n2. Henry loses 9 points: 17 - 9 = 8 points\n3. Alice gives 2 points to Henry: 8 + 2 = 10 points\n4. Henry gives 2 points to Alice: 10 - 2 = 8 points\n5. Alice gives 3 points to Henry: 8 + 3 = 11 points\n6. Henry gives 3 points to Alice: 11 - 3 = 8 points\n\n8"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:claude-sonnet-4",
+      "k_operations": 6,
+      "n_ops_actual": 6,
+      "correct_answer": 19,
+      "predicted": 19,
+      "accurate": 1,
+      "query_entity": "Carol",
+      "initial_state": {
+        "Carol": 19,
+        "Leo": 13,
+        "Henry": 12
+      },
+      "operations": [
+        "Leo gives 3 points to Henry.",
+        "Henry gives 3 points to Leo.",
+        "Leo gains 8 points.",
+        "Leo loses 8 points.",
+        "Henry gains 5 points.",
+        "Henry loses 5 points."
+      ],
+      "prompt_length_chars": 471,
+      "raw_response": "I need to track the points through each operation, starting with Carol: 19, Leo: 13, Henry: 12.\n\n1. Leo gives 3 points to Henry:\n   - Carol: 19, Leo: 10, Henry: 15\n\n2. Henry gives 3 points to Leo:\n   - Carol: 19, Leo: 13, Henry: 12\n\n3. Leo gains 8 points:\n   - Carol: 19, Leo: 21, Henry: 12\n\n4. Leo loses 8 points:\n   - Carol: 19, Leo: 13, Henry: 12\n\n5. Henry gains 5 points:\n   - Carol: 19, Leo: 13, Henry: 17\n\n6. Henry loses 5 points:\n   - Carol: 19, Leo: 13, Henry: 12\n\nCarol's points never changed throughout any of the operations.\n\n19"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:claude-sonnet-4",
+      "k_operations": 6,
+      "n_ops_actual": 6,
+      "correct_answer": 9,
+      "predicted": 9,
+      "accurate": 1,
+      "query_entity": "Frank",
+      "initial_state": {
+        "Emma": 7,
+        "Frank": 9,
+        "Mia": 9
+      },
+      "operations": [
+        "Frank gains 3 points.",
+        "Frank loses 3 points.",
+        "Emma gives 2 points to Mia.",
+        "Mia gives 2 points to Emma.",
+        "Frank loses 5 points.",
+        "Frank gains 5 points."
+      ],
+      "prompt_length_chars": 469,
+      "raw_response": "I'll track Frank's points through each operation:\n\nInitial: Frank has 9 points\n\n1. Frank gains 3 points: 9 + 3 = 12 points\n2. Frank loses 3 points: 12 - 3 = 9 points\n3. Emma gives 2 points to Mia: Frank unchanged at 9 points\n4. Mia gives 2 points to Emma: Frank unchanged at 9 points\n5. Frank loses 5 points: 9 - 5 = 4 points\n6. Frank gains 5 points: 4 + 5 = 9 points\n\n9"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:claude-sonnet-4",
+      "k_operations": 6,
+      "n_ops_actual": 6,
+      "correct_answer": 5,
+      "predicted": 5,
+      "accurate": 1,
+      "query_entity": "David",
+      "initial_state": {
+        "Grace": 18,
+        "Alice": 17,
+        "David": 5
+      },
+      "operations": [
+        "Alice gives 1 points to David.",
+        "David gives 1 points to Alice.",
+        "Alice loses 4 points.",
+        "Alice gains 4 points.",
+        "David loses 5 points.",
+        "David gains 5 points."
+      ],
+      "prompt_length_chars": 480,
+      "raw_response": "I'll track David's points through each operation.\n\nStarting: David has 5 points\n\n1. Alice gives 1 point to David: David has 5 + 1 = 6 points\n2. David gives 1 point to Alice: David has 6 - 1 = 5 points\n3. Alice loses 4 points: David still has 5 points\n4. Alice gains 4 points: David still has 5 points\n5. David loses 5 points: David has 5 - 5 = 0 points\n6. David gains 5 points: David has 0 + 5 = 5 points\n\n5"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:claude-sonnet-4",
+      "k_operations": 6,
+      "n_ops_actual": 6,
+      "correct_answer": 20,
+      "predicted": 13,
+      "accurate": 0,
+      "query_entity": "Noah",
+      "initial_state": {
+        "David": 13,
+        "Henry": 18,
+        "Noah": 20
+      },
+      "operations": [
+        "Henry gains 6 points.",
+        "Henry loses 6 points.",
+        "Noah gives 3 points to Henry.",
+        "Henry gives 3 points to Noah.",
+        "Henry gains 3 points.",
+        "Henry loses 3 points."
+      ],
+      "prompt_length_chars": 477,
+      "raw_response": "I'll track the points step by step, starting from the initial state.\n\nInitial state:\n- David: 13 points\n- Henry: 18 points  \n- Noah: 20 points\n\nOperation 1: Henry gains 6 points\n- David: 13\n- Henry: 24\n- Noah: 20\n\nOperation 2: Henry loses 6 points\n- David: 13\n- Henry: 18\n- Noah: 20\n\nOperation 3: Noah gives 3 points to Henry\n- David: 13\n- Henry: 21\n- Noah: 17\n\nOperation 4: Henry gives 3 points to Noah\n- David: 13\n- Henry: 18\n- Noah: 20\n\nOperation 5: Henry gains 3 points\n- David: 13\n- Henry: 21\n- Noah: 20\n\nOperation 6: Henry loses 3 points\n- David: 13\n- Henry: 18\n- Noah: 20\n\n20"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:claude-sonnet-4",
+      "k_operations": 6,
+      "n_ops_actual": 6,
+      "correct_answer": 7,
+      "predicted": 7,
+      "accurate": 1,
+      "query_entity": "Alice",
+      "initial_state": {
+        "Iris": 5,
+        "Alice": 7,
+        "Grace": 18
+      },
+      "operations": [
+        "Alice gains 3 points.",
+        "Alice loses 3 points.",
+        "Alice gains 7 points.",
+        "Alice loses 7 points.",
+        "Iris loses 4 points.",
+        "Iris gains 4 points."
+      ],
+      "prompt_length_chars": 458,
+      "raw_response": "I'll track Alice's points through each operation.\n\nStarting: Alice has 7 points\n\n1. Alice gains 3 points: 7 + 3 = 10 points\n2. Alice loses 3 points: 10 - 3 = 7 points\n3. Alice gains 7 points: 7 + 7 = 14 points\n4. Alice loses 7 points: 14 - 7 = 7 points\n5. Iris loses 4 points: (doesn't affect Alice)\n6. Iris gains 4 points: (doesn't affect Alice)\n\n7"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:claude-sonnet-4",
+      "k_operations": 6,
+      "n_ops_actual": 6,
+      "correct_answer": 13,
+      "predicted": 13,
+      "accurate": 1,
+      "query_entity": "Grace",
+      "initial_state": {
+        "Frank": 13,
+        "Mia": 18,
+        "Grace": 13
+      },
+      "operations": [
+        "Mia gains 1 points.",
+        "Mia loses 1 points.",
+        "Grace gives 2 points to Frank.",
+        "Frank gives 2 points to Grace.",
+        "Grace gains 2 points.",
+        "Grace loses 2 points."
+      ],
+      "prompt_length_chars": 475,
+      "raw_response": "I'll track Grace's points through each operation:\n\nInitial: Grace has 13 points\n\n1. Mia gains 1 points \u2192 Grace: 13 (no change)\n2. Mia loses 1 points \u2192 Grace: 13 (no change)\n3. Grace gives 2 points to Frank \u2192 Grace: 13 - 2 = 11\n4. Frank gives 2 points to Grace \u2192 Grace: 11 + 2 = 13\n5. Grace gains 2 points \u2192 Grace: 13 + 2 = 15\n6. Grace loses 2 points \u2192 Grace: 15 - 2 = 13\n\n13"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:claude-sonnet-4",
+      "k_operations": 6,
+      "n_ops_actual": 6,
+      "correct_answer": 11,
+      "predicted": 12,
+      "accurate": 0,
+      "query_entity": "Mia",
+      "initial_state": {
+        "Alice": 12,
+        "Mia": 11,
+        "Noah": 5
+      },
+      "operations": [
+        "Alice gives 1 points to Noah.",
+        "Noah gives 1 points to Alice.",
+        "Noah loses 1 points.",
+        "Noah gains 1 points.",
+        "Alice gives 3 points to Mia.",
+        "Mia gives 3 points to Alice."
+      ],
+      "prompt_length_chars": 485,
+      "raw_response": "I'll track the points for each person through all operations.\n\nInitial state:\n- Alice: 12 points\n- Mia: 11 points  \n- Noah: 5 points\n\nOperation 1: Alice gives 1 point to Noah\n- Alice: 12 - 1 = 11 points\n- Mia: 11 points\n- Noah: 5 + 1 = 6 points\n\nOperation 2: Noah gives 1 point to Alice\n- Alice: 11 + 1 = 12 points\n- Mia: 11 points\n- Noah: 6 - 1 = 5 points\n\nOperation 3: Noah loses 1 point\n- Alice: 12 points\n- Mia: 11 points\n- Noah: 5 - 1 = 4 points\n\nOperation 4: Noah gains 1 point\n- Alice: 12 points\n- Mia: 11 points\n- Noah: 4 + 1 = 5 points\n\nOperation 5: Alice gives 3 points to Mia\n- Alice: 12 - 3 = 9 points\n- Mia: 11 + 3 = 14 points\n- Noah: 5 points\n\nOperation 6: Mia gives 3 points to Alice\n- Alice: 9 + 3 = 12 points\n- Mia: 14 - 3 = 11 points\n- Noah: 5 points\n\n11"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:claude-sonnet-4",
+      "k_operations": 6,
+      "n_ops_actual": 6,
+      "correct_answer": 8,
+      "predicted": 8,
+      "accurate": 1,
+      "query_entity": "Mia",
+      "initial_state": {
+        "Mia": 8,
+        "Frank": 10,
+        "Carol": 14
+      },
+      "operations": [
+        "Carol gains 1 points.",
+        "Carol loses 1 points.",
+        "Carol loses 4 points.",
+        "Carol gains 4 points.",
+        "Carol loses 2 points.",
+        "Carol gains 2 points."
+      ],
+      "prompt_length_chars": 458,
+      "raw_response": "I need to track the points through each operation, starting with the initial state.\n\nInitial state:\n- Mia: 8 points\n- Frank: 10 points  \n- Carol: 14 points\n\nNow applying operations in order:\n\n1. Carol gains 1 points \u2192 Carol: 15 points\n2. Carol loses 1 points \u2192 Carol: 14 points\n3. Carol loses 4 points \u2192 Carol: 10 points\n4. Carol gains 4 points \u2192 Carol: 14 points\n5. Carol loses 2 points \u2192 Carol: 12 points\n6. Carol gains 2 points \u2192 Carol: 14 points\n\nAll operations only affected Carol's points. Mia's points remained unchanged throughout.\n\n8"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:claude-sonnet-4",
+      "k_operations": 6,
+      "n_ops_actual": 6,
+      "correct_answer": 12,
+      "predicted": 12,
+      "accurate": 1,
+      "query_entity": "James",
+      "initial_state": {
+        "James": 12,
+        "Leo": 8,
+        "Kate": 14
+      },
+      "operations": [
+        "Kate gives 3 points to James.",
+        "James gives 3 points to Kate.",
+        "Leo gains 9 points.",
+        "Leo loses 9 points.",
+        "Kate loses 3 points.",
+        "Kate gains 3 points."
+      ],
+      "prompt_length_chars": 469,
+      "raw_response": "I'll track James's points through each operation:\n\nStarting: James has 12 points\n\n1. Kate gives 3 points to James: 12 + 3 = 15 points\n2. James gives 3 points to Kate: 15 - 3 = 12 points\n3. Leo gains 9 points: James still has 12 points\n4. Leo loses 9 points: James still has 12 points\n5. Kate loses 3 points: James still has 12 points\n6. Kate gains 3 points: James still has 12 points\n\n12"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:claude-sonnet-4",
+      "k_operations": 6,
+      "n_ops_actual": 6,
+      "correct_answer": 20,
+      "predicted": 5,
+      "accurate": 0,
+      "query_entity": "Frank",
+      "initial_state": {
+        "Iris": 5,
+        "Kate": 18,
+        "Frank": 20
+      },
+      "operations": [
+        "Kate gains 6 points.",
+        "Kate loses 6 points.",
+        "Kate gives 2 points to Iris.",
+        "Iris gives 2 points to Kate.",
+        "Frank gains 9 points.",
+        "Frank loses 9 points."
+      ],
+      "prompt_length_chars": 472,
+      "raw_response": "I'll track the points through each operation.\n\nStarting state: Iris: 5, Kate: 18, Frank: 20\n\n1. Kate gains 6 points: Iris: 5, Kate: 24, Frank: 20\n2. Kate loses 6 points: Iris: 5, Kate: 18, Frank: 20\n3. Kate gives 2 points to Iris: Iris: 7, Kate: 16, Frank: 20\n4. Iris gives 2 points to Kate: Iris: 5, Kate: 18, Frank: 20\n5. Frank gains 9 points: Iris: 5, Kate: 18, Frank: 29\n6. Frank loses 9 points: Iris: 5, Kate: 18, Frank: 20\n\n20"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:claude-sonnet-4",
+      "k_operations": 6,
+      "n_ops_actual": 6,
+      "correct_answer": 18,
+      "predicted": 20,
+      "accurate": 0,
+      "query_entity": "Iris",
+      "initial_state": {
+        "Emma": 20,
+        "James": 19,
+        "Iris": 18
+      },
+      "operations": [
+        "Iris gives 2 points to James.",
+        "James gives 2 points to Iris.",
+        "Emma gains 5 points.",
+        "Emma loses 5 points.",
+        "Emma loses 4 points.",
+        "Emma gains 4 points."
+      ],
+      "prompt_length_chars": 472,
+      "raw_response": "I'll track each person's points through the operations.\n\nStarting state:\n- Emma: 20 points\n- James: 19 points  \n- Iris: 18 points\n\nOperation 1: Iris gives 2 points to James\n- Emma: 20\n- James: 19 + 2 = 21\n- Iris: 18 - 2 = 16\n\nOperation 2: James gives 2 points to Iris\n- Emma: 20\n- James: 21 - 2 = 19\n- Iris: 16 + 2 = 18\n\nOperation 3: Emma gains 5 points\n- Emma: 20 + 5 = 25\n- James: 19\n- Iris: 18\n\nOperation 4: Emma loses 5 points\n- Emma: 25 - 5 = 20\n- James: 19\n- Iris: 18\n\nOperation 5: Emma loses 4 points\n- Emma: 20 - 4 = 16\n- James: 19\n- Iris: 18\n\nOperation 6: Emma gains 4 points\n- Emma: 16 + 4 = 20\n- James: 19\n- Iris: 18\n\n18"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:claude-sonnet-4",
+      "k_operations": 6,
+      "n_ops_actual": 6,
+      "correct_answer": 20,
+      "predicted": 15,
+      "accurate": 0,
+      "query_entity": "Grace",
+      "initial_state": {
+        "James": 15,
+        "Kate": 5,
+        "Grace": 20
+      },
+      "operations": [
+        "James loses 4 points.",
+        "James gains 4 points.",
+        "Kate gains 5 points.",
+        "Kate loses 5 points.",
+        "Kate loses 5 points.",
+        "Kate gains 5 points."
+      ],
+      "prompt_length_chars": 457,
+      "raw_response": "I need to track the points through each operation, starting from the initial state.\n\nInitial state:\n- James: 15 points\n- Kate: 5 points  \n- Grace: 20 points\n\nApplying operations in order:\n\n1. James loses 4 points: James = 15 - 4 = 11\n2. James gains 4 points: James = 11 + 4 = 15\n3. Kate gains 5 points: Kate = 5 + 5 = 10\n4. Kate loses 5 points: Kate = 10 - 5 = 5\n5. Kate loses 5 points: Kate = 5 - 5 = 0\n6. Kate gains 5 points: Kate = 0 + 5 = 5\n\nGrace's points were never modified in any of the operations, so Grace still has 20 points.\n\n20"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:claude-sonnet-4",
+      "k_operations": 6,
+      "n_ops_actual": 6,
+      "correct_answer": 11,
+      "predicted": 11,
+      "accurate": 1,
+      "query_entity": "Emma",
+      "initial_state": {
+        "Emma": 11,
+        "Iris": 7,
+        "Alice": 12
+      },
+      "operations": [
+        "Iris gives 3 points to Alice.",
+        "Alice gives 3 points to Iris.",
+        "Alice gains 8 points.",
+        "Alice loses 8 points.",
+        "Alice gives 2 points to Iris.",
+        "Iris gives 2 points to Alice."
+      ],
+      "prompt_length_chars": 491,
+      "raw_response": "I'll track the points for each person through all operations.\n\nInitial state:\nEmma: 11 points, Iris: 7 points, Alice: 12 points\n\nOperation 1: Iris gives 3 points to Alice\nEmma: 11, Iris: 4, Alice: 15\n\nOperation 2: Alice gives 3 points to Iris\nEmma: 11, Iris: 7, Alice: 12\n\nOperation 3: Alice gains 8 points\nEmma: 11, Iris: 7, Alice: 20\n\nOperation 4: Alice loses 8 points\nEmma: 11, Iris: 7, Alice: 12\n\nOperation 5: Alice gives 2 points to Iris\nEmma: 11, Iris: 9, Alice: 10\n\nOperation 6: Iris gives 2 points to Alice\nEmma: 11, Iris: 7, Alice: 12\n\n11"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:claude-sonnet-4",
+      "k_operations": 6,
+      "n_ops_actual": 6,
+      "correct_answer": 14,
+      "predicted": 14,
+      "accurate": 1,
+      "query_entity": "David",
+      "initial_state": {
+        "Bob": 17,
+        "Emma": 12,
+        "David": 14
+      },
+      "operations": [
+        "David gives 2 points to Emma.",
+        "Emma gives 2 points to David.",
+        "David gives 2 points to Emma.",
+        "Emma gives 2 points to David.",
+        "David gives 2 points to Emma.",
+        "Emma gives 2 points to David."
+      ],
+      "prompt_length_chars": 508,
+      "raw_response": "I'll track David's points through each operation, starting from 14 points.\n\n1. David gives 2 points to Emma: 14 - 2 = 12 points\n2. Emma gives 2 points to David: 12 + 2 = 14 points\n3. David gives 2 points to Emma: 14 - 2 = 12 points\n4. Emma gives 2 points to David: 12 + 2 = 14 points\n5. David gives 2 points to Emma: 14 - 2 = 12 points\n6. Emma gives 2 points to David: 12 + 2 = 14 points\n\n14"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:claude-sonnet-4",
+      "k_operations": 8,
+      "n_ops_actual": 8,
+      "correct_answer": 8,
+      "predicted": 13,
+      "accurate": 0,
+      "query_entity": "Mia",
+      "initial_state": {
+        "Henry": 13,
+        "Emma": 12,
+        "Mia": 8
+      },
+      "operations": [
+        "Henry gives 1 points to Emma.",
+        "Emma gives 1 points to Henry.",
+        "Mia gives 1 points to Henry.",
+        "Henry gives 1 points to Mia.",
+        "Mia gains 8 points.",
+        "Mia loses 8 points.",
+        "Mia loses 5 points.",
+        "Mia gains 5 points."
+      ],
+      "prompt_length_chars": 533,
+      "raw_response": "I'll track the points for each person through all operations.\n\nInitial state:\n- Henry: 13 points\n- Emma: 12 points  \n- Mia: 8 points\n\nOperation 1: Henry gives 1 point to Emma\n- Henry: 12 points\n- Emma: 13 points\n- Mia: 8 points\n\nOperation 2: Emma gives 1 point to Henry\n- Henry: 13 points\n- Emma: 12 points\n- Mia: 8 points\n\nOperation 3: Mia gives 1 point to Henry\n- Henry: 14 points\n- Emma: 12 points\n- Mia: 7 points\n\nOperation 4: Henry gives 1 point to Mia\n- Henry: 13 points\n- Emma: 12 points\n- Mia: 8 points\n\nOperation 5: Mia gains 8 points\n- Henry: 13 points\n- Emma: 12 points\n- Mia: 16 points\n\nOperation 6: Mia loses 8 points\n- Henry: 13 points\n- Emma: 12 points\n- Mia: 8 points\n\nOperation 7: Mia loses 5 points\n- Henry: 13 points\n- Emma: 12 points\n- Mia: 3 points\n\nOperation 8: Mia gains 5 points\n- Henry: 13 points\n- Emma: 12 points\n- Mia: 8 points\n\n8"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:claude-sonnet-4",
+      "k_operations": 8,
+      "n_ops_actual": 8,
+      "correct_answer": 12,
+      "predicted": 12,
+      "accurate": 1,
+      "query_entity": "Bob",
+      "initial_state": {
+        "James": 11,
+        "Emma": 14,
+        "Bob": 12
+      },
+      "operations": [
+        "James loses 3 points.",
+        "James gains 3 points.",
+        "Bob gains 9 points.",
+        "Bob loses 9 points.",
+        "Emma gains 1 points.",
+        "Emma loses 1 points.",
+        "Bob gains 5 points.",
+        "Bob loses 5 points."
+      ],
+      "prompt_length_chars": 502,
+      "raw_response": "I'll track Bob's points through each operation:\n\nInitial: Bob has 12 points\n\n1. James loses 3 points - Bob still has 12\n2. James gains 3 points - Bob still has 12\n3. Bob gains 9 points - Bob now has 21\n4. Bob loses 9 points - Bob now has 12\n5. Emma gains 1 point - Bob still has 12\n6. Emma loses 1 point - Bob still has 12\n7. Bob gains 5 points - Bob now has 17\n8. Bob loses 5 points - Bob now has 12\n\n12"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:claude-sonnet-4",
+      "k_operations": 8,
+      "n_ops_actual": 8,
+      "correct_answer": 8,
+      "predicted": 8,
+      "accurate": 1,
+      "query_entity": "Carol",
+      "initial_state": {
+        "Carol": 8,
+        "Kate": 5,
+        "Henry": 14
+      },
+      "operations": [
+        "Kate loses 4 points.",
+        "Kate gains 4 points.",
+        "Carol loses 1 points.",
+        "Carol gains 1 points.",
+        "Kate loses 1 points.",
+        "Kate gains 1 points.",
+        "Kate gains 8 points.",
+        "Kate loses 8 points."
+      ],
+      "prompt_length_chars": 508,
+      "raw_response": "I'll track the points for each person through all operations.\n\nInitial state:\n- Carol: 8 points\n- Kate: 5 points  \n- Henry: 14 points\n\nApplying operations in order:\n\n1. Kate loses 4 points: Kate = 5 - 4 = 1\n2. Kate gains 4 points: Kate = 1 + 4 = 5\n3. Carol loses 1 point: Carol = 8 - 1 = 7\n4. Carol gains 1 point: Carol = 7 + 1 = 8\n5. Kate loses 1 point: Kate = 5 - 1 = 4\n6. Kate gains 1 point: Kate = 4 + 1 = 5\n7. Kate gains 8 points: Kate = 5 + 8 = 13\n8. Kate loses 8 points: Kate = 13 - 8 = 5\n\nCarol's final points: 8\n\n8"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:claude-sonnet-4",
+      "k_operations": 8,
+      "n_ops_actual": 8,
+      "correct_answer": 9,
+      "predicted": 9,
+      "accurate": 1,
+      "query_entity": "Kate",
+      "initial_state": {
+        "James": 6,
+        "Kate": 9,
+        "Mia": 9
+      },
+      "operations": [
+        "Kate gives 1 points to James.",
+        "James gives 1 points to Kate.",
+        "Mia gains 7 points.",
+        "Mia loses 7 points.",
+        "Mia gives 3 points to James.",
+        "James gives 3 points to Mia.",
+        "Kate loses 4 points.",
+        "Kate gains 4 points."
+      ],
+      "prompt_length_chars": 534,
+      "raw_response": "I'll track Kate's points through each operation:\n\nInitial: Kate has 9 points\n\n1. Kate gives 1 point to James: 9 - 1 = 8 points\n2. James gives 1 point to Kate: 8 + 1 = 9 points\n3. Mia gains 7 points: Kate still has 9 points\n4. Mia loses 7 points: Kate still has 9 points\n5. Mia gives 3 points to James: Kate still has 9 points\n6. James gives 3 points to Mia: Kate still has 9 points\n7. Kate loses 4 points: 9 - 4 = 5 points\n8. Kate gains 4 points: 5 + 4 = 9 points\n\n9"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:claude-sonnet-4",
+      "k_operations": 8,
+      "n_ops_actual": 8,
+      "correct_answer": 6,
+      "predicted": 14,
+      "accurate": 0,
+      "query_entity": "James",
+      "initial_state": {
+        "Noah": 14,
+        "James": 6,
+        "Grace": 8
+      },
+      "operations": [
+        "Grace gains 4 points.",
+        "Grace loses 4 points.",
+        "Grace loses 1 points.",
+        "Grace gains 1 points.",
+        "Noah gains 3 points.",
+        "Noah loses 3 points.",
+        "Noah gives 1 points to Grace.",
+        "Grace gives 1 points to Noah."
+      ],
+      "prompt_length_chars": 528,
+      "raw_response": "I'll track the points through each operation.\n\nInitial state:\nNoah: 14 points, James: 6 points, Grace: 8 points\n\n1. Grace gains 4 points: Noah: 14, James: 6, Grace: 12\n2. Grace loses 4 points: Noah: 14, James: 6, Grace: 8\n3. Grace loses 1 points: Noah: 14, James: 6, Grace: 7\n4. Grace gains 1 points: Noah: 14, James: 6, Grace: 8\n5. Noah gains 3 points: Noah: 17, James: 6, Grace: 8\n6. Noah loses 3 points: Noah: 14, James: 6, Grace: 8\n7. Noah gives 1 points to Grace: Noah: 13, James: 6, Grace: 9\n8. Grace gives 1 points to Noah: Noah: 14, James: 6, Grace: 8\n\n6"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:claude-sonnet-4",
+      "k_operations": 8,
+      "n_ops_actual": 8,
+      "correct_answer": 6,
+      "predicted": 20,
+      "accurate": 0,
+      "query_entity": "James",
+      "initial_state": {
+        "Henry": 20,
+        "Leo": 14,
+        "James": 6
+      },
+      "operations": [
+        "Leo gains 5 points.",
+        "Leo loses 5 points.",
+        "Leo gives 3 points to Henry.",
+        "Henry gives 3 points to Leo.",
+        "Leo gains 10 points.",
+        "Leo loses 10 points.",
+        "Henry gives 1 points to Leo.",
+        "Leo gives 1 points to Henry."
+      ],
+      "prompt_length_chars": 536,
+      "raw_response": "I need to track the points for each person through all operations.\n\nInitial state:\n- Henry: 20 points\n- Leo: 14 points  \n- James: 6 points\n\nOperation 1: Leo gains 5 points\n- Henry: 20\n- Leo: 19\n- James: 6\n\nOperation 2: Leo loses 5 points\n- Henry: 20\n- Leo: 14\n- James: 6\n\nOperation 3: Leo gives 3 points to Henry\n- Henry: 23\n- Leo: 11\n- James: 6\n\nOperation 4: Henry gives 3 points to Leo\n- Henry: 20\n- Leo: 14\n- James: 6\n\nOperation 5: Leo gains 10 points\n- Henry: 20\n- Leo: 24\n- James: 6\n\nOperation 6: Leo loses 10 points\n- Henry: 20\n- Leo: 14\n- James: 6\n\nOperation 7: Henry gives 1 point to Leo\n- Henry: 19\n- Leo: 15\n- James: 6\n\nOperation 8: Leo gives 1 point to Henry\n- Henry: 20\n- Leo: 14\n- James: 6\n\n6"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:claude-sonnet-4",
+      "k_operations": 8,
+      "n_ops_actual": 8,
+      "correct_answer": 7,
+      "predicted": 7,
+      "accurate": 1,
+      "query_entity": "Carol",
+      "initial_state": {
+        "David": 13,
+        "Kate": 9,
+        "Carol": 7
+      },
+      "operations": [
+        "David gains 5 points.",
+        "David loses 5 points.",
+        "Carol gives 2 points to Kate.",
+        "Kate gives 2 points to Carol.",
+        "Kate gains 5 points.",
+        "Kate loses 5 points.",
+        "Kate gives 3 points to Carol.",
+        "Carol gives 3 points to Kate."
+      ],
+      "prompt_length_chars": 544,
+      "raw_response": "I'll track Carol's points through each operation:\n\nStarting: Carol has 7 points\n\n1. David gains 5 points \u2192 Carol: 7\n2. David loses 5 points \u2192 Carol: 7\n3. Carol gives 2 points to Kate \u2192 Carol: 5\n4. Kate gives 2 points to Carol \u2192 Carol: 7\n5. Kate gains 5 points \u2192 Carol: 7\n6. Kate loses 5 points \u2192 Carol: 7\n7. Kate gives 3 points to Carol \u2192 Carol: 10\n8. Carol gives 3 points to Kate \u2192 Carol: 7\n\n7"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:claude-sonnet-4",
+      "k_operations": 8,
+      "n_ops_actual": 8,
+      "correct_answer": 15,
+      "predicted": 6,
+      "accurate": 0,
+      "query_entity": "Bob",
+      "initial_state": {
+        "Henry": 6,
+        "Noah": 18,
+        "Bob": 15
+      },
+      "operations": [
+        "Noah gives 1 points to Henry.",
+        "Henry gives 1 points to Noah.",
+        "Bob gains 10 points.",
+        "Bob loses 10 points.",
+        "Henry gives 3 points to Noah.",
+        "Noah gives 3 points to Henry.",
+        "Henry gains 8 points.",
+        "Henry loses 8 points."
+      ],
+      "prompt_length_chars": 541,
+      "raw_response": "I'll track the points for each person through all operations.\n\nInitial state:\n- Henry: 6 points\n- Noah: 18 points  \n- Bob: 15 points\n\nOperation 1: Noah gives 1 point to Henry\n- Henry: 6 + 1 = 7 points\n- Noah: 18 - 1 = 17 points\n- Bob: 15 points\n\nOperation 2: Henry gives 1 point to Noah\n- Henry: 7 - 1 = 6 points\n- Noah: 17 + 1 = 18 points\n- Bob: 15 points\n\nOperation 3: Bob gains 10 points\n- Henry: 6 points\n- Noah: 18 points\n- Bob: 15 + 10 = 25 points\n\nOperation 4: Bob loses 10 points\n- Henry: 6 points\n- Noah: 18 points\n- Bob: 25 - 10 = 15 points\n\nOperation 5: Henry gives 3 points to Noah\n- Henry: 6 - 3 = 3 points\n- Noah: 18 + 3 = 21 points\n- Bob: 15 points\n\nOperation 6: Noah gives 3 points to Henry\n- Henry: 3 + 3 = 6 points\n- Noah: 21 - 3 = 18 points\n- Bob: 15 points\n\nOperation 7: Henry gains 8 points\n- Henry: 6 + 8 = 14 points\n- Noah: 18 points\n- Bob: 15 points\n\nOperation 8: Henry loses 8 points\n- Henry: 14 - 8 = 6 points\n- Noah: 18 points\n- Bob: 15 points\n\n15"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:claude-sonnet-4",
+      "k_operations": 8,
+      "n_ops_actual": 8,
+      "correct_answer": 18,
+      "predicted": 18,
+      "accurate": 1,
+      "query_entity": "Henry",
+      "initial_state": {
+        "Kate": 10,
+        "Henry": 18,
+        "Emma": 20
+      },
+      "operations": [
+        "Henry gains 6 points.",
+        "Henry loses 6 points.",
+        "Henry loses 3 points.",
+        "Henry gains 3 points.",
+        "Kate gives 2 points to Emma.",
+        "Emma gives 2 points to Kate.",
+        "Emma loses 4 points.",
+        "Emma gains 4 points."
+      ],
+      "prompt_length_chars": 527,
+      "raw_response": "I'll track Henry's points through each operation:\n\nInitial: Henry has 18 points\n\n1. Henry gains 6 points: 18 + 6 = 24 points\n2. Henry loses 6 points: 24 - 6 = 18 points\n3. Henry loses 3 points: 18 - 3 = 15 points\n4. Henry gains 3 points: 15 + 3 = 18 points\n5. Kate gives 2 points to Emma: Henry unchanged = 18 points\n6. Emma gives 2 points to Kate: Henry unchanged = 18 points\n7. Emma loses 4 points: Henry unchanged = 18 points\n8. Emma gains 4 points: Henry unchanged = 18 points\n\n18"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:claude-sonnet-4",
+      "k_operations": 8,
+      "n_ops_actual": 8,
+      "correct_answer": 6,
+      "predicted": 6,
+      "accurate": 1,
+      "query_entity": "Kate",
+      "initial_state": {
+        "Kate": 6,
+        "Grace": 19,
+        "Iris": 7
+      },
+      "operations": [
+        "Grace loses 3 points.",
+        "Grace gains 3 points.",
+        "Grace gains 9 points.",
+        "Grace loses 9 points.",
+        "Iris gains 9 points.",
+        "Iris loses 9 points.",
+        "Grace loses 1 points.",
+        "Grace gains 1 points."
+      ],
+      "prompt_length_chars": 510,
+      "raw_response": "I need to track the points for each person through the operations.\n\nStarting state:\nKate: 6 points\nGrace: 19 points  \nIris: 7 points\n\nApplying operations:\n\n1. Grace loses 3 points: Grace = 19 - 3 = 16\n2. Grace gains 3 points: Grace = 16 + 3 = 19\n3. Grace gains 9 points: Grace = 19 + 9 = 28\n4. Grace loses 9 points: Grace = 28 - 9 = 19\n5. Iris gains 9 points: Iris = 7 + 9 = 16\n6. Iris loses 9 points: Iris = 16 - 9 = 7\n7. Grace loses 1 points: Grace = 19 - 1 = 18\n8. Grace gains 1 points: Grace = 18 + 1 = 19\n\nKate's points never changed throughout any of the operations.\n\n6"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:claude-sonnet-4",
+      "k_operations": 8,
+      "n_ops_actual": 8,
+      "correct_answer": 20,
+      "predicted": 20,
+      "accurate": 1,
+      "query_entity": "Iris",
+      "initial_state": {
+        "Iris": 20,
+        "Frank": 19,
+        "James": 6
+      },
+      "operations": [
+        "Frank gains 9 points.",
+        "Frank loses 9 points.",
+        "Frank gains 8 points.",
+        "Frank loses 8 points.",
+        "Frank gives 1 points to Iris.",
+        "Iris gives 1 points to Frank.",
+        "James gives 3 points to Iris.",
+        "Iris gives 3 points to James."
+      ],
+      "prompt_length_chars": 546,
+      "raw_response": "I'll track the points step by step, starting with:\nIris: 20, Frank: 19, James: 6\n\n1. Frank gains 9 points: Iris: 20, Frank: 28, James: 6\n2. Frank loses 9 points: Iris: 20, Frank: 19, James: 6\n3. Frank gains 8 points: Iris: 20, Frank: 27, James: 6\n4. Frank loses 8 points: Iris: 20, Frank: 19, James: 6\n5. Frank gives 1 point to Iris: Iris: 21, Frank: 18, James: 6\n6. Iris gives 1 point to Frank: Iris: 20, Frank: 19, James: 6\n7. James gives 3 points to Iris: Iris: 23, Frank: 19, James: 3\n8. Iris gives 3 points to James: Iris: 20, Frank: 19, James: 6\n\n20"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:claude-sonnet-4",
+      "k_operations": 8,
+      "n_ops_actual": 8,
+      "correct_answer": 18,
+      "predicted": 18,
+      "accurate": 1,
+      "query_entity": "Emma",
+      "initial_state": {
+        "Emma": 18,
+        "Iris": 7,
+        "Alice": 12
+      },
+      "operations": [
+        "Iris gains 2 points.",
+        "Iris loses 2 points.",
+        "Emma gives 3 points to Iris.",
+        "Iris gives 3 points to Emma.",
+        "Alice loses 3 points.",
+        "Alice gains 3 points.",
+        "Iris loses 4 points.",
+        "Iris gains 4 points."
+      ],
+      "prompt_length_chars": 523,
+      "raw_response": "I'll track Emma's points through each operation.\n\nInitial: Emma has 18 points\n\n1. Iris gains 2 points \u2192 Emma still has 18\n2. Iris loses 2 points \u2192 Emma still has 18\n3. Emma gives 3 points to Iris \u2192 Emma has 18 - 3 = 15\n4. Iris gives 3 points to Emma \u2192 Emma has 15 + 3 = 18\n5. Alice loses 3 points \u2192 Emma still has 18\n6. Alice gains 3 points \u2192 Emma still has 18\n7. Iris loses 4 points \u2192 Emma still has 18\n8. Iris gains 4 points \u2192 Emma still has 18\n\n18"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:claude-sonnet-4",
+      "k_operations": 8,
+      "n_ops_actual": 8,
+      "correct_answer": 11,
+      "predicted": 11,
+      "accurate": 1,
+      "query_entity": "Iris",
+      "initial_state": {
+        "Henry": 17,
+        "Iris": 11,
+        "Carol": 9
+      },
+      "operations": [
+        "Iris gains 7 points.",
+        "Iris loses 7 points.",
+        "Carol loses 3 points.",
+        "Carol gains 3 points.",
+        "Iris gains 5 points.",
+        "Iris loses 5 points.",
+        "Carol gives 1 points to Iris.",
+        "Iris gives 1 points to Carol."
+      ],
+      "prompt_length_chars": 526,
+      "raw_response": "I'll track Iris's points through each operation:\n\nStarting: Iris has 11 points\n\n1. Iris gains 7 points: 11 + 7 = 18\n2. Iris loses 7 points: 18 - 7 = 11\n3. Carol loses 3 points: (no change to Iris) = 11\n4. Carol gains 3 points: (no change to Iris) = 11\n5. Iris gains 5 points: 11 + 5 = 16\n6. Iris loses 5 points: 16 - 5 = 11\n7. Carol gives 1 point to Iris: 11 + 1 = 12\n8. Iris gives 1 point to Carol: 12 - 1 = 11\n\n11"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:claude-sonnet-4",
+      "k_operations": 8,
+      "n_ops_actual": 8,
+      "correct_answer": 19,
+      "predicted": 15,
+      "accurate": 0,
+      "query_entity": "Frank",
+      "initial_state": {
+        "Iris": 15,
+        "Henry": 17,
+        "Frank": 19
+      },
+      "operations": [
+        "Iris loses 2 points.",
+        "Iris gains 2 points.",
+        "Henry gives 2 points to Iris.",
+        "Iris gives 2 points to Henry.",
+        "Henry gains 8 points.",
+        "Henry loses 8 points.",
+        "Henry gives 3 points to Frank.",
+        "Frank gives 3 points to Henry."
+      ],
+      "prompt_length_chars": 548,
+      "raw_response": "I'll track the points for each person through all operations.\n\nInitial state:\n- Iris: 15 points\n- Henry: 17 points  \n- Frank: 19 points\n\nOperation 1: Iris loses 2 points\n- Iris: 13 points\n- Henry: 17 points\n- Frank: 19 points\n\nOperation 2: Iris gains 2 points\n- Iris: 15 points\n- Henry: 17 points\n- Frank: 19 points\n\nOperation 3: Henry gives 2 points to Iris\n- Iris: 17 points\n- Henry: 15 points\n- Frank: 19 points\n\nOperation 4: Iris gives 2 points to Henry\n- Iris: 15 points\n- Henry: 17 points\n- Frank: 19 points\n\nOperation 5: Henry gains 8 points\n- Iris: 15 points\n- Henry: 25 points\n- Frank: 19 points\n\nOperation 6: Henry loses 8 points\n- Iris: 15 points\n- Henry: 17 points\n- Frank: 19 points\n\nOperation 7: Henry gives 3 points to Frank\n- Iris: 15 points\n- Henry: 14 points\n- Frank: 22 points\n\nOperation 8: Frank gives 3 points to Henry\n- Iris: 15 points\n- Henry: 17 points\n- Frank: 19 points\n\n19"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:claude-sonnet-4",
+      "k_operations": 8,
+      "n_ops_actual": 8,
+      "correct_answer": 15,
+      "predicted": 9,
+      "accurate": 0,
+      "query_entity": "Henry",
+      "initial_state": {
+        "Carol": 9,
+        "Henry": 15,
+        "Alice": 8
+      },
+      "operations": [
+        "Carol loses 5 points.",
+        "Carol gains 5 points.",
+        "Carol loses 2 points.",
+        "Carol gains 2 points.",
+        "Alice loses 2 points.",
+        "Alice gains 2 points.",
+        "Henry gains 5 points.",
+        "Henry loses 5 points."
+      ],
+      "prompt_length_chars": 515,
+      "raw_response": "I'll track the points through each operation.\n\nStarting state:\n- Carol: 9 points\n- Henry: 15 points  \n- Alice: 8 points\n\nApplying operations:\n\n1. Carol loses 5 points: Carol = 4\n2. Carol gains 5 points: Carol = 9\n3. Carol loses 2 points: Carol = 7\n4. Carol gains 2 points: Carol = 9\n5. Alice loses 2 points: Alice = 6\n6. Alice gains 2 points: Alice = 8\n7. Henry gains 5 points: Henry = 20\n8. Henry loses 5 points: Henry = 15\n\n15"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:claude-sonnet-4",
+      "k_operations": 8,
+      "n_ops_actual": 8,
+      "correct_answer": 17,
+      "predicted": 17,
+      "accurate": 1,
+      "query_entity": "Grace",
+      "initial_state": {
+        "James": 7,
+        "Leo": 15,
+        "Grace": 17
+      },
+      "operations": [
+        "Grace loses 4 points.",
+        "Grace gains 4 points.",
+        "James gives 1 points to Grace.",
+        "Grace gives 1 points to James.",
+        "Grace gives 1 points to Leo.",
+        "Leo gives 1 points to Grace.",
+        "James gives 1 points to Leo.",
+        "Leo gives 1 points to James."
+      ],
+      "prompt_length_chars": 560,
+      "raw_response": "I'll track Grace's points through each operation:\n\nInitial: Grace has 17 points\n\n1. Grace loses 4 points: 17 - 4 = 13 points\n2. Grace gains 4 points: 13 + 4 = 17 points\n3. James gives 1 point to Grace: 17 + 1 = 18 points\n4. Grace gives 1 point to James: 18 - 1 = 17 points\n5. Grace gives 1 point to Leo: 17 - 1 = 16 points\n6. Leo gives 1 point to Grace: 16 + 1 = 17 points\n7. James gives 1 point to Leo: Grace unchanged = 17 points\n8. Leo gives 1 point to James: Grace unchanged = 17 points\n\n17"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:claude-sonnet-4",
+      "k_operations": 8,
+      "n_ops_actual": 8,
+      "correct_answer": 10,
+      "predicted": 10,
+      "accurate": 1,
+      "query_entity": "Leo",
+      "initial_state": {
+        "Leo": 10,
+        "Bob": 14,
+        "Henry": 5
+      },
+      "operations": [
+        "Bob gains 1 points.",
+        "Bob loses 1 points.",
+        "Bob loses 3 points.",
+        "Bob gains 3 points.",
+        "Leo loses 2 points.",
+        "Leo gains 2 points.",
+        "Bob gives 1 points to Leo.",
+        "Leo gives 1 points to Bob."
+      ],
+      "prompt_length_chars": 508,
+      "raw_response": "I'll track the points step by step.\n\nInitial state:\nLeo: 10 points, Bob: 14 points, Henry: 5 points\n\n1. Bob gains 1 points: Leo: 10, Bob: 15, Henry: 5\n2. Bob loses 1 points: Leo: 10, Bob: 14, Henry: 5\n3. Bob loses 3 points: Leo: 10, Bob: 11, Henry: 5\n4. Bob gains 3 points: Leo: 10, Bob: 14, Henry: 5\n5. Leo loses 2 points: Leo: 8, Bob: 14, Henry: 5\n6. Leo gains 2 points: Leo: 10, Bob: 14, Henry: 5\n7. Bob gives 1 points to Leo: Leo: 11, Bob: 13, Henry: 5\n8. Leo gives 1 points to Bob: Leo: 10, Bob: 14, Henry: 5\n\n10"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:claude-sonnet-4",
+      "k_operations": 8,
+      "n_ops_actual": 8,
+      "correct_answer": 20,
+      "predicted": 20,
+      "accurate": 1,
+      "query_entity": "James",
+      "initial_state": {
+        "Bob": 12,
+        "James": 20,
+        "Grace": 9
+      },
+      "operations": [
+        "James gains 5 points.",
+        "James loses 5 points.",
+        "James loses 1 points.",
+        "James gains 1 points.",
+        "James loses 5 points.",
+        "James gains 5 points.",
+        "Bob gains 8 points.",
+        "Bob loses 8 points."
+      ],
+      "prompt_length_chars": 510,
+      "raw_response": "I'll track James's points through each operation, starting from his initial 20 points.\n\nStarting: James has 20 points\n\n1. James gains 5 points: 20 + 5 = 25\n2. James loses 5 points: 25 - 5 = 20\n3. James loses 1 point: 20 - 1 = 19\n4. James gains 1 point: 19 + 1 = 20\n5. James loses 5 points: 20 - 5 = 15\n6. James gains 5 points: 15 + 5 = 20\n7. Bob gains 8 points: (no change to James)\n8. Bob loses 8 points: (no change to James)\n\n20"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:claude-sonnet-4",
+      "k_operations": 8,
+      "n_ops_actual": 8,
+      "correct_answer": 19,
+      "predicted": 18,
+      "accurate": 0,
+      "query_entity": "Kate",
+      "initial_state": {
+        "James": 18,
+        "Emma": 13,
+        "Kate": 19
+      },
+      "operations": [
+        "James loses 4 points.",
+        "James gains 4 points.",
+        "James loses 2 points.",
+        "James gains 2 points.",
+        "Kate loses 3 points.",
+        "Kate gains 3 points.",
+        "Emma gives 1 points to Kate.",
+        "Kate gives 1 points to Emma."
+      ],
+      "prompt_length_chars": 526,
+      "raw_response": "I'll track the points step by step, starting with the initial state:\n\nInitial: James: 18, Emma: 13, Kate: 19\n\n1. James loses 4 points: James: 14, Emma: 13, Kate: 19\n2. James gains 4 points: James: 18, Emma: 13, Kate: 19\n3. James loses 2 points: James: 16, Emma: 13, Kate: 19\n4. James gains 2 points: James: 18, Emma: 13, Kate: 19\n5. Kate loses 3 points: James: 18, Emma: 13, Kate: 16\n6. Kate gains 3 points: James: 18, Emma: 13, Kate: 19\n7. Emma gives 1 point to Kate: James: 18, Emma: 12, Kate: 20\n8. Kate gives 1 point to Emma: James: 18, Emma: 13, Kate: 19\n\n19"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:claude-sonnet-4",
+      "k_operations": 8,
+      "n_ops_actual": 8,
+      "correct_answer": 20,
+      "predicted": 6,
+      "accurate": 0,
+      "query_entity": "Emma",
+      "initial_state": {
+        "Grace": 6,
+        "Emma": 20,
+        "Alice": 14
+      },
+      "operations": [
+        "Alice gains 6 points.",
+        "Alice loses 6 points.",
+        "Alice gains 4 points.",
+        "Alice loses 4 points.",
+        "Emma gives 3 points to Grace.",
+        "Grace gives 3 points to Emma.",
+        "Alice gains 1 points.",
+        "Alice loses 1 points."
+      ],
+      "prompt_length_chars": 530,
+      "raw_response": "I'll track the points step by step, starting from the initial state:\n\nInitial: Grace: 6, Emma: 20, Alice: 14\n\n1. Alice gains 6 points: Grace: 6, Emma: 20, Alice: 20\n2. Alice loses 6 points: Grace: 6, Emma: 20, Alice: 14\n3. Alice gains 4 points: Grace: 6, Emma: 20, Alice: 18\n4. Alice loses 4 points: Grace: 6, Emma: 20, Alice: 14\n5. Emma gives 3 points to Grace: Grace: 9, Emma: 17, Alice: 14\n6. Grace gives 3 points to Emma: Grace: 6, Emma: 20, Alice: 14\n7. Alice gains 1 point: Grace: 6, Emma: 20, Alice: 15\n8. Alice loses 1 point: Grace: 6, Emma: 20, Alice: 14\n\n20"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:claude-sonnet-4",
+      "k_operations": 12,
+      "n_ops_actual": 12,
+      "correct_answer": 7,
+      "predicted": 16,
+      "accurate": 0,
+      "query_entity": "Alice",
+      "initial_state": {
+        "Mia": 16,
+        "Henry": 9,
+        "Alice": 7
+      },
+      "operations": [
+        "Henry loses 4 points.",
+        "Henry gains 4 points.",
+        "Mia gains 3 points.",
+        "Mia loses 3 points.",
+        "Henry gives 1 points to Alice.",
+        "Alice gives 1 points to Henry.",
+        "Henry loses 3 points.",
+        "Henry gains 3 points.",
+        "Henry gives 2 points to Mia.",
+        "Mia gives 2 points to Henry.",
+        "Mia gains 4 points.",
+        "Mia loses 4 points."
+      ],
+      "prompt_length_chars": 648,
+      "raw_response": "I'll track each person's points through all operations.\n\nInitial state:\n- Mia: 16 points\n- Henry: 9 points  \n- Alice: 7 points\n\nApplying operations in order:\n\n1. Henry loses 4 points: Henry = 9 - 4 = 5\n2. Henry gains 4 points: Henry = 5 + 4 = 9\n3. Mia gains 3 points: Mia = 16 + 3 = 19\n4. Mia loses 3 points: Mia = 19 - 3 = 16\n5. Henry gives 1 point to Alice: Henry = 9 - 1 = 8, Alice = 7 + 1 = 8\n6. Alice gives 1 point to Henry: Alice = 8 - 1 = 7, Henry = 8 + 1 = 9\n7. Henry loses 3 points: Henry = 9 - 3 = 6\n8. Henry gains 3 points: Henry = 6 + 3 = 9\n9. Henry gives 2 points to Mia: Henry = 9 - 2 = 7, Mia = 16 + 2 = 18\n10. Mia gives 2 points to Henry: Mia = 18 - 2 = 16, Henry = 7 + 2 = 9\n11. Mia gains 4 points: Mia = 16 + 4 = 20\n12. Mia loses 4 points: Mia = 20 - 4 = 16\n\n7"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:claude-sonnet-4",
+      "k_operations": 12,
+      "n_ops_actual": 12,
+      "correct_answer": 17,
+      "predicted": 17,
+      "accurate": 1,
+      "query_entity": "Grace",
+      "initial_state": {
+        "Leo": 16,
+        "Kate": 7,
+        "Grace": 17
+      },
+      "operations": [
+        "Kate gains 9 points.",
+        "Kate loses 9 points.",
+        "Kate gains 6 points.",
+        "Kate loses 6 points.",
+        "Grace gives 3 points to Kate.",
+        "Kate gives 3 points to Grace.",
+        "Grace loses 3 points.",
+        "Grace gains 3 points.",
+        "Grace gains 4 points.",
+        "Grace loses 4 points.",
+        "Leo loses 5 points.",
+        "Leo gains 5 points."
+      ],
+      "prompt_length_chars": 632,
+      "raw_response": "I'll track Grace's points through each operation:\n\nInitial: Grace has 17 points\n\n1. Kate gains 9 points - Grace: 17\n2. Kate loses 9 points - Grace: 17\n3. Kate gains 6 points - Grace: 17\n4. Kate loses 6 points - Grace: 17\n5. Grace gives 3 points to Kate - Grace: 17 - 3 = 14\n6. Kate gives 3 points to Grace - Grace: 14 + 3 = 17\n7. Grace loses 3 points - Grace: 17 - 3 = 14\n8. Grace gains 3 points - Grace: 14 + 3 = 17\n9. Grace gains 4 points - Grace: 17 + 4 = 21\n10. Grace loses 4 points - Grace: 21 - 4 = 17\n11. Leo loses 5 points - Grace: 17\n12. Leo gains 5 points - Grace: 17\n\n17"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:claude-sonnet-4",
+      "k_operations": 12,
+      "n_ops_actual": 12,
+      "correct_answer": 14,
+      "predicted": 7,
+      "accurate": 0,
+      "query_entity": "David",
+      "initial_state": {
+        "Frank": 7,
+        "James": 19,
+        "David": 14
+      },
+      "operations": [
+        "James gives 1 points to Frank.",
+        "Frank gives 1 points to James.",
+        "Frank gains 5 points.",
+        "Frank loses 5 points.",
+        "Frank loses 1 points.",
+        "Frank gains 1 points.",
+        "David gains 3 points.",
+        "David loses 3 points.",
+        "James loses 3 points.",
+        "James gains 3 points.",
+        "David gives 3 points to James.",
+        "James gives 3 points to David."
+      ],
+      "prompt_length_chars": 663,
+      "raw_response": "I'll track the points for each person through all operations.\n\nInitial state:\n- Frank: 7 points\n- James: 19 points  \n- David: 14 points\n\nOperation 1: James gives 1 point to Frank\n- Frank: 8 points\n- James: 18 points\n- David: 14 points\n\nOperation 2: Frank gives 1 point to James\n- Frank: 7 points\n- James: 19 points\n- David: 14 points\n\nOperation 3: Frank gains 5 points\n- Frank: 12 points\n- James: 19 points\n- David: 14 points\n\nOperation 4: Frank loses 5 points\n- Frank: 7 points\n- James: 19 points\n- David: 14 points\n\nOperation 5: Frank loses 1 point\n- Frank: 6 points\n- James: 19 points\n- David: 14 points\n\nOperation 6: Frank gains 1 point\n- Frank: 7 points\n- James: 19 points\n- David: 14 points\n\nOperation 7: David gains 3 points\n- Frank: 7 points\n- James: 19 points\n- David: 17 points\n\nOperation 8: David loses 3 points\n- Frank: 7 points\n- James: 19 points\n- David: 14 points\n\nOperation 9: James loses 3 points\n- Frank: 7 points\n- James: 16 points\n- David: 14 points\n\nOperation 10: James gains 3 points\n- Frank: 7 points\n- James: 19 points\n- David: 14 points\n\nOperation 11: David gives 3 points to James\n- Frank: 7 points\n- James: 22 points\n- David: 11 points\n\nOperation 12: James gives 3 points to David\n- Frank: 7 points\n- James: 19 points\n- David: 14 points\n\n14"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:claude-sonnet-4",
+      "k_operations": 12,
+      "n_ops_actual": 12,
+      "correct_answer": 18,
+      "predicted": 8,
+      "accurate": 0,
+      "query_entity": "Grace",
+      "initial_state": {
+        "Leo": 8,
+        "Carol": 20,
+        "Grace": 18
+      },
+      "operations": [
+        "Leo loses 3 points.",
+        "Leo gains 3 points.",
+        "Carol gains 8 points.",
+        "Carol loses 8 points.",
+        "Carol gains 2 points.",
+        "Carol loses 2 points.",
+        "Carol gives 1 points to Grace.",
+        "Grace gives 1 points to Carol.",
+        "Carol loses 2 points.",
+        "Carol gains 2 points.",
+        "Carol gains 2 points.",
+        "Carol loses 2 points."
+      ],
+      "prompt_length_chars": 639,
+      "raw_response": "I'll track the points for each person through all operations.\n\nInitial state:\n- Leo: 8 points\n- Carol: 20 points  \n- Grace: 18 points\n\nApplying operations in order:\n\n1. Leo loses 3 points: Leo = 5, Carol = 20, Grace = 18\n2. Leo gains 3 points: Leo = 8, Carol = 20, Grace = 18\n3. Carol gains 8 points: Leo = 8, Carol = 28, Grace = 18\n4. Carol loses 8 points: Leo = 8, Carol = 20, Grace = 18\n5. Carol gains 2 points: Leo = 8, Carol = 22, Grace = 18\n6. Carol loses 2 points: Leo = 8, Carol = 20, Grace = 18\n7. Carol gives 1 point to Grace: Leo = 8, Carol = 19, Grace = 19\n8. Grace gives 1 point to Carol: Leo = 8, Carol = 20, Grace = 18\n9. Carol loses 2 points: Leo = 8, Carol = 18, Grace = 18\n10. Carol gains 2 points: Leo = 8, Carol = 20, Grace = 18\n11. Carol gains 2 points: Leo = 8, Carol = 22, Grace = 18\n12. Carol loses 2 points: Leo = 8, Carol = 20, Grace = 18\n\n18"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:claude-sonnet-4",
+      "k_operations": 12,
+      "n_ops_actual": 12,
+      "correct_answer": 5,
+      "predicted": 5,
+      "accurate": 1,
+      "query_entity": "David",
+      "initial_state": {
+        "David": 5,
+        "Kate": 6,
+        "Mia": 15
+      },
+      "operations": [
+        "David gains 10 points.",
+        "David loses 10 points.",
+        "David gains 9 points.",
+        "David loses 9 points.",
+        "Mia gains 4 points.",
+        "Mia loses 4 points.",
+        "Kate gains 3 points.",
+        "Kate loses 3 points.",
+        "David gives 1 points to Kate.",
+        "Kate gives 1 points to David.",
+        "Mia gains 5 points.",
+        "Mia loses 5 points."
+      ],
+      "prompt_length_chars": 631,
+      "raw_response": "I'll track David's points through each operation:\n\nStarting: David has 5 points\n\n1. David gains 10 points: 5 + 10 = 15\n2. David loses 10 points: 15 - 10 = 5\n3. David gains 9 points: 5 + 9 = 14\n4. David loses 9 points: 14 - 9 = 5\n5. Mia gains 4 points: (no change to David) = 5\n6. Mia loses 4 points: (no change to David) = 5\n7. Kate gains 3 points: (no change to David) = 5\n8. Kate loses 3 points: (no change to David) = 5\n9. David gives 1 point to Kate: 5 - 1 = 4\n10. Kate gives 1 point to David: 4 + 1 = 5\n11. Mia gains 5 points: (no change to David) = 5\n12. Mia loses 5 points: (no change to David) = 5\n\n5"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:claude-sonnet-4",
+      "k_operations": 12,
+      "n_ops_actual": 12,
+      "correct_answer": 9,
+      "predicted": 9,
+      "accurate": 1,
+      "query_entity": "Bob",
+      "initial_state": {
+        "Bob": 9,
+        "Kate": 5,
+        "Alice": 16
+      },
+      "operations": [
+        "Alice gains 6 points.",
+        "Alice loses 6 points.",
+        "Bob gains 5 points.",
+        "Bob loses 5 points.",
+        "Bob gains 7 points.",
+        "Bob loses 7 points.",
+        "Bob gives 2 points to Alice.",
+        "Alice gives 2 points to Bob.",
+        "Kate loses 5 points.",
+        "Kate gains 5 points.",
+        "Bob gives 3 points to Kate.",
+        "Kate gives 3 points to Bob."
+      ],
+      "prompt_length_chars": 637,
+      "raw_response": "I'll track Bob's points through each operation, starting from his initial 9 points.\n\nInitial: Bob has 9 points\n\n1. Alice gains 6 points - Bob still has 9\n2. Alice loses 6 points - Bob still has 9\n3. Bob gains 5 points - Bob has 14\n4. Bob loses 5 points - Bob has 9\n5. Bob gains 7 points - Bob has 16\n6. Bob loses 7 points - Bob has 9\n7. Bob gives 2 points to Alice - Bob has 7\n8. Alice gives 2 points to Bob - Bob has 9\n9. Kate loses 5 points - Bob still has 9\n10. Kate gains 5 points - Bob still has 9\n11. Bob gives 3 points to Kate - Bob has 6\n12. Kate gives 3 points to Bob - Bob has 9\n\n9"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:claude-sonnet-4",
+      "k_operations": 12,
+      "n_ops_actual": 12,
+      "correct_answer": 5,
+      "predicted": 5,
+      "accurate": 1,
+      "query_entity": "Leo",
+      "initial_state": {
+        "James": 14,
+        "Alice": 19,
+        "Leo": 5
+      },
+      "operations": [
+        "Alice gains 7 points.",
+        "Alice loses 7 points.",
+        "Leo loses 1 points.",
+        "Leo gains 1 points.",
+        "Leo loses 4 points.",
+        "Leo gains 4 points.",
+        "James gains 6 points.",
+        "James loses 6 points.",
+        "James gives 1 points to Leo.",
+        "Leo gives 1 points to James.",
+        "Leo loses 5 points.",
+        "Leo gains 5 points."
+      ],
+      "prompt_length_chars": 625,
+      "raw_response": "I'll track Leo's points through each operation, starting from 5 points.\n\nInitial: Leo has 5 points\n\n1. Alice gains 7 points - Leo: 5\n2. Alice loses 7 points - Leo: 5\n3. Leo loses 1 point - Leo: 4\n4. Leo gains 1 point - Leo: 5\n5. Leo loses 4 points - Leo: 1\n6. Leo gains 4 points - Leo: 5\n7. James gains 6 points - Leo: 5\n8. James loses 6 points - Leo: 5\n9. James gives 1 point to Leo - Leo: 6\n10. Leo gives 1 point to James - Leo: 5\n11. Leo loses 5 points - Leo: 0\n12. Leo gains 5 points - Leo: 5\n\n5"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:claude-sonnet-4",
+      "k_operations": 12,
+      "n_ops_actual": 12,
+      "correct_answer": 18,
+      "predicted": 18,
+      "accurate": 1,
+      "query_entity": "Grace",
+      "initial_state": {
+        "Leo": 14,
+        "Frank": 19,
+        "Grace": 18
+      },
+      "operations": [
+        "Grace gains 2 points.",
+        "Grace loses 2 points.",
+        "Grace gives 2 points to Leo.",
+        "Leo gives 2 points to Grace.",
+        "Leo loses 4 points.",
+        "Leo gains 4 points.",
+        "Frank loses 4 points.",
+        "Frank gains 4 points.",
+        "Grace loses 1 points.",
+        "Grace gains 1 points.",
+        "Frank loses 3 points.",
+        "Frank gains 3 points."
+      ],
+      "prompt_length_chars": 636,
+      "raw_response": "I'll track Grace's points through each operation:\n\nStarting: Grace has 18 points\n\n1. Grace gains 2 points: 18 + 2 = 20\n2. Grace loses 2 points: 20 - 2 = 18\n3. Grace gives 2 points to Leo: 18 - 2 = 16\n4. Leo gives 2 points to Grace: 16 + 2 = 18\n5. Leo loses 4 points: Grace still has 18\n6. Leo gains 4 points: Grace still has 18\n7. Frank loses 4 points: Grace still has 18\n8. Frank gains 4 points: Grace still has 18\n9. Grace loses 1 point: 18 - 1 = 17\n10. Grace gains 1 point: 17 + 1 = 18\n11. Frank loses 3 points: Grace still has 18\n12. Frank gains 3 points: Grace still has 18\n\n18"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:claude-sonnet-4",
+      "k_operations": 12,
+      "n_ops_actual": 12,
+      "correct_answer": 7,
+      "predicted": 20,
+      "accurate": 0,
+      "query_entity": "Carol",
+      "initial_state": {
+        "Emma": 20,
+        "Frank": 7,
+        "Carol": 7
+      },
+      "operations": [
+        "Emma gains 7 points.",
+        "Emma loses 7 points.",
+        "Carol gains 6 points.",
+        "Carol loses 6 points.",
+        "Carol gains 1 points.",
+        "Carol loses 1 points.",
+        "Carol gives 3 points to Frank.",
+        "Frank gives 3 points to Carol.",
+        "Frank gains 6 points.",
+        "Frank loses 6 points.",
+        "Frank gives 2 points to Emma.",
+        "Emma gives 2 points to Frank."
+      ],
+      "prompt_length_chars": 657,
+      "raw_response": "I'll track each person's points through all operations.\n\nInitial state:\n- Emma: 20 points\n- Frank: 7 points  \n- Carol: 7 points\n\nApplying operations in order:\n\n1. Emma gains 7 points: Emma = 27, Frank = 7, Carol = 7\n2. Emma loses 7 points: Emma = 20, Frank = 7, Carol = 7\n3. Carol gains 6 points: Emma = 20, Frank = 7, Carol = 13\n4. Carol loses 6 points: Emma = 20, Frank = 7, Carol = 7\n5. Carol gains 1 point: Emma = 20, Frank = 7, Carol = 8\n6. Carol loses 1 point: Emma = 20, Frank = 7, Carol = 7\n7. Carol gives 3 points to Frank: Emma = 20, Frank = 10, Carol = 4\n8. Frank gives 3 points to Carol: Emma = 20, Frank = 7, Carol = 7\n9. Frank gains 6 points: Emma = 20, Frank = 13, Carol = 7\n10. Frank loses 6 points: Emma = 20, Frank = 7, Carol = 7\n11. Frank gives 2 points to Emma: Emma = 22, Frank = 5, Carol = 7\n12. Emma gives 2 points to Frank: Emma = 20, Frank = 7, Carol = 7\n\n7"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:claude-sonnet-4",
+      "k_operations": 12,
+      "n_ops_actual": 12,
+      "correct_answer": 9,
+      "predicted": 9,
+      "accurate": 1,
+      "query_entity": "Frank",
+      "initial_state": {
+        "Emma": 11,
+        "Frank": 9,
+        "Bob": 20
+      },
+      "operations": [
+        "Emma gains 6 points.",
+        "Emma loses 6 points.",
+        "Frank gives 2 points to Emma.",
+        "Emma gives 2 points to Frank.",
+        "Emma gives 3 points to Frank.",
+        "Frank gives 3 points to Emma.",
+        "Bob gives 3 points to Emma.",
+        "Emma gives 3 points to Bob.",
+        "Bob gives 1 points to Frank.",
+        "Frank gives 1 points to Bob.",
+        "Frank gains 5 points.",
+        "Frank loses 5 points."
+      ],
+      "prompt_length_chars": 680,
+      "raw_response": "I'll track Frank's points through each operation, starting from 9 points.\n\nInitial: Frank has 9 points\n\n1. Emma gains 6 points \u2192 Frank: 9\n2. Emma loses 6 points \u2192 Frank: 9\n3. Frank gives 2 points to Emma \u2192 Frank: 9 - 2 = 7\n4. Emma gives 2 points to Frank \u2192 Frank: 7 + 2 = 9\n5. Emma gives 3 points to Frank \u2192 Frank: 9 + 3 = 12\n6. Frank gives 3 points to Emma \u2192 Frank: 12 - 3 = 9\n7. Bob gives 3 points to Emma \u2192 Frank: 9\n8. Emma gives 3 points to Bob \u2192 Frank: 9\n9. Bob gives 1 point to Frank \u2192 Frank: 9 + 1 = 10\n10. Frank gives 1 point to Bob \u2192 Frank: 10 - 1 = 9\n11. Frank gains 5 points \u2192 Frank: 9 + 5 = 14\n12. Frank loses 5 points \u2192 Frank: 14 - 5 = 9\n\n9"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:claude-sonnet-4",
+      "k_operations": 12,
+      "n_ops_actual": 12,
+      "correct_answer": 9,
+      "predicted": 9,
+      "accurate": 1,
+      "query_entity": "Frank",
+      "initial_state": {
+        "Frank": 9,
+        "Alice": 17,
+        "Carol": 7
+      },
+      "operations": [
+        "Carol gains 1 points.",
+        "Carol loses 1 points.",
+        "Carol gains 9 points.",
+        "Carol loses 9 points.",
+        "Alice gains 7 points.",
+        "Alice loses 7 points.",
+        "Alice loses 2 points.",
+        "Alice gains 2 points.",
+        "Alice loses 3 points.",
+        "Alice gains 3 points.",
+        "Carol gives 1 points to Frank.",
+        "Frank gives 1 points to Carol."
+      ],
+      "prompt_length_chars": 644,
+      "raw_response": "I'll track Frank's points through each operation, starting from 9 points.\n\nInitial: Frank has 9 points\n\nOperations 1-10: These only involve Carol and Alice, so Frank remains at 9 points.\n\nOperation 11: Carol gives 1 point to Frank\nFrank: 9 + 1 = 10 points\n\nOperation 12: Frank gives 1 point to Carol\nFrank: 10 - 1 = 9 points\n\n9"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:claude-sonnet-4",
+      "k_operations": 12,
+      "n_ops_actual": 12,
+      "correct_answer": 6,
+      "predicted": 6,
+      "accurate": 1,
+      "query_entity": "Carol",
+      "initial_state": {
+        "Carol": 6,
+        "Mia": 7,
+        "James": 13
+      },
+      "operations": [
+        "James loses 4 points.",
+        "James gains 4 points.",
+        "James loses 4 points.",
+        "James gains 4 points.",
+        "Mia loses 2 points.",
+        "Mia gains 2 points.",
+        "Carol gives 2 points to Mia.",
+        "Mia gives 2 points to Carol.",
+        "Mia gains 10 points.",
+        "Mia loses 10 points.",
+        "James loses 3 points.",
+        "James gains 3 points."
+      ],
+      "prompt_length_chars": 632,
+      "raw_response": "I'll track the points step by step, starting with Carol: 6, Mia: 7, James: 13.\n\n1. James loses 4 points: Carol: 6, Mia: 7, James: 9\n2. James gains 4 points: Carol: 6, Mia: 7, James: 13\n3. James loses 4 points: Carol: 6, Mia: 7, James: 9\n4. James gains 4 points: Carol: 6, Mia: 7, James: 13\n5. Mia loses 2 points: Carol: 6, Mia: 5, James: 13\n6. Mia gains 2 points: Carol: 6, Mia: 7, James: 13\n7. Carol gives 2 points to Mia: Carol: 4, Mia: 9, James: 13\n8. Mia gives 2 points to Carol: Carol: 6, Mia: 7, James: 13\n9. Mia gains 10 points: Carol: 6, Mia: 17, James: 13\n10. Mia loses 10 points: Carol: 6, Mia: 7, James: 13\n11. James loses 3 points: Carol: 6, Mia: 7, James: 10\n12. James gains 3 points: Carol: 6, Mia: 7, James: 13\n\n6"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:claude-sonnet-4",
+      "k_operations": 12,
+      "n_ops_actual": 12,
+      "correct_answer": 5,
+      "predicted": 5,
+      "accurate": 1,
+      "query_entity": "Grace",
+      "initial_state": {
+        "David": 6,
+        "Grace": 5,
+        "James": 11
+      },
+      "operations": [
+        "David loses 2 points.",
+        "David gains 2 points.",
+        "Grace loses 3 points.",
+        "Grace gains 3 points.",
+        "David gains 8 points.",
+        "David loses 8 points.",
+        "Grace gives 1 points to David.",
+        "David gives 1 points to Grace.",
+        "James loses 2 points.",
+        "James gains 2 points.",
+        "James gives 1 points to Grace.",
+        "Grace gives 1 points to James."
+      ],
+      "prompt_length_chars": 662,
+      "raw_response": "I'll track Grace's points through each operation:\n\nInitial: Grace has 5 points\n\n1. David loses 2 points - Grace: 5\n2. David gains 2 points - Grace: 5\n3. Grace loses 3 points - Grace: 2\n4. Grace gains 3 points - Grace: 5\n5. David gains 8 points - Grace: 5\n6. David loses 8 points - Grace: 5\n7. Grace gives 1 point to David - Grace: 4\n8. David gives 1 point to Grace - Grace: 5\n9. James loses 2 points - Grace: 5\n10. James gains 2 points - Grace: 5\n11. James gives 1 point to Grace - Grace: 6\n12. Grace gives 1 point to James - Grace: 5\n\n5"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:claude-sonnet-4",
+      "k_operations": 12,
+      "n_ops_actual": 12,
+      "correct_answer": 18,
+      "predicted": 18,
+      "accurate": 1,
+      "query_entity": "Noah",
+      "initial_state": {
+        "Noah": 18,
+        "Leo": 5,
+        "Alice": 19
+      },
+      "operations": [
+        "Leo gains 10 points.",
+        "Leo loses 10 points.",
+        "Alice loses 4 points.",
+        "Alice gains 4 points.",
+        "Alice gives 2 points to Leo.",
+        "Leo gives 2 points to Alice.",
+        "Leo gains 1 points.",
+        "Leo loses 1 points.",
+        "Noah loses 5 points.",
+        "Noah gains 5 points.",
+        "Alice loses 3 points.",
+        "Alice gains 3 points."
+      ],
+      "prompt_length_chars": 629,
+      "raw_response": "I'll track the points for each person through all operations.\n\nInitial state:\n- Noah: 18 points\n- Leo: 5 points  \n- Alice: 19 points\n\nApplying operations in order:\n\n1. Leo gains 10 points: Noah: 18, Leo: 15, Alice: 19\n2. Leo loses 10 points: Noah: 18, Leo: 5, Alice: 19\n3. Alice loses 4 points: Noah: 18, Leo: 5, Alice: 15\n4. Alice gains 4 points: Noah: 18, Leo: 5, Alice: 19\n5. Alice gives 2 points to Leo: Noah: 18, Leo: 7, Alice: 17\n6. Leo gives 2 points to Alice: Noah: 18, Leo: 5, Alice: 19\n7. Leo gains 1 point: Noah: 18, Leo: 6, Alice: 19\n8. Leo loses 1 point: Noah: 18, Leo: 5, Alice: 19\n9. Noah loses 5 points: Noah: 13, Leo: 5, Alice: 19\n10. Noah gains 5 points: Noah: 18, Leo: 5, Alice: 19\n11. Alice loses 3 points: Noah: 18, Leo: 5, Alice: 16\n12. Alice gains 3 points: Noah: 18, Leo: 5, Alice: 19\n\n18"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:claude-sonnet-4",
+      "k_operations": 12,
+      "n_ops_actual": 12,
+      "correct_answer": 17,
+      "predicted": 17,
+      "accurate": 1,
+      "query_entity": "Bob",
+      "initial_state": {
+        "Grace": 18,
+        "Bob": 17,
+        "David": 7
+      },
+      "operations": [
+        "Bob loses 3 points.",
+        "Bob gains 3 points.",
+        "Bob gains 3 points.",
+        "Bob loses 3 points.",
+        "David gains 2 points.",
+        "David loses 2 points.",
+        "David gives 2 points to Grace.",
+        "Grace gives 2 points to David.",
+        "David loses 2 points.",
+        "David gains 2 points.",
+        "Grace gains 3 points.",
+        "Grace loses 3 points."
+      ],
+      "prompt_length_chars": 633,
+      "raw_response": "I'll track Bob's points through each operation.\n\nStarting: Bob has 17 points\n\n1. Bob loses 3 points: 17 - 3 = 14\n2. Bob gains 3 points: 14 + 3 = 17\n3. Bob gains 3 points: 17 + 3 = 20\n4. Bob loses 3 points: 20 - 3 = 17\n5. David gains 2 points: (no change to Bob)\n6. David loses 2 points: (no change to Bob)\n7. David gives 2 points to Grace: (no change to Bob)\n8. Grace gives 2 points to David: (no change to Bob)\n9. David loses 2 points: (no change to Bob)\n10. David gains 2 points: (no change to Bob)\n11. Grace gains 3 points: (no change to Bob)\n12. Grace loses 3 points: (no change to Bob)\n\n17"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:claude-sonnet-4",
+      "k_operations": 12,
+      "n_ops_actual": 12,
+      "correct_answer": 9,
+      "predicted": 9,
+      "accurate": 1,
+      "query_entity": "David",
+      "initial_state": {
+        "David": 9,
+        "Carol": 7,
+        "James": 10
+      },
+      "operations": [
+        "Carol gives 3 points to James.",
+        "James gives 3 points to Carol.",
+        "Carol gives 3 points to James.",
+        "James gives 3 points to Carol.",
+        "David loses 4 points.",
+        "David gains 4 points.",
+        "Carol gains 8 points.",
+        "Carol loses 8 points.",
+        "Carol gives 3 points to James.",
+        "James gives 3 points to Carol.",
+        "Carol gains 9 points.",
+        "Carol loses 9 points."
+      ],
+      "prompt_length_chars": 680,
+      "raw_response": "I'll track the points for each person through all operations.\n\nInitial state:\n- David: 9 points\n- Carol: 7 points  \n- James: 10 points\n\nOperation 1: Carol gives 3 points to James\n- David: 9\n- Carol: 4\n- James: 13\n\nOperation 2: James gives 3 points to Carol\n- David: 9\n- Carol: 7\n- James: 10\n\nOperation 3: Carol gives 3 points to James\n- David: 9\n- Carol: 4\n- James: 13\n\nOperation 4: James gives 3 points to Carol\n- David: 9\n- Carol: 7\n- James: 10\n\nOperation 5: David loses 4 points\n- David: 5\n- Carol: 7\n- James: 10\n\nOperation 6: David gains 4 points\n- David: 9\n- Carol: 7\n- James: 10\n\nOperation 7: Carol gains 8 points\n- David: 9\n- Carol: 15\n- James: 10\n\nOperation 8: Carol loses 8 points\n- David: 9\n- Carol: 7\n- James: 10\n\nOperation 9: Carol gives 3 points to James\n- David: 9\n- Carol: 4\n- James: 13\n\nOperation 10: James gives 3 points to Carol\n- David: 9\n- Carol: 7\n- James: 10\n\nOperation 11: Carol gains 9 points\n- David: 9\n- Carol: 16\n- James: 10\n\nOperation 12: Carol loses 9 points\n- David: 9\n- Carol: 7\n- James: 10\n\n9"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:claude-sonnet-4",
+      "k_operations": 12,
+      "n_ops_actual": 12,
+      "correct_answer": 16,
+      "predicted": 6,
+      "accurate": 0,
+      "query_entity": "Mia",
+      "initial_state": {
+        "Emma": 6,
+        "Henry": 6,
+        "Mia": 16
+      },
+      "operations": [
+        "Emma loses 1 points.",
+        "Emma gains 1 points.",
+        "Mia gives 2 points to Henry.",
+        "Henry gives 2 points to Mia.",
+        "Mia gives 2 points to Emma.",
+        "Emma gives 2 points to Mia.",
+        "Mia gives 2 points to Emma.",
+        "Emma gives 2 points to Mia.",
+        "Henry gives 1 points to Emma.",
+        "Emma gives 1 points to Henry.",
+        "Emma loses 3 points.",
+        "Emma gains 3 points."
+      ],
+      "prompt_length_chars": 671,
+      "raw_response": "I'll track each person's points through all operations.\n\nInitial state:\nEmma: 6 points\nHenry: 6 points  \nMia: 16 points\n\n1. Emma loses 1 points: Emma: 5, Henry: 6, Mia: 16\n2. Emma gains 1 points: Emma: 6, Henry: 6, Mia: 16\n3. Mia gives 2 points to Henry: Emma: 6, Henry: 8, Mia: 14\n4. Henry gives 2 points to Mia: Emma: 6, Henry: 6, Mia: 16\n5. Mia gives 2 points to Emma: Emma: 8, Henry: 6, Mia: 14\n6. Emma gives 2 points to Mia: Emma: 6, Henry: 6, Mia: 16\n7. Mia gives 2 points to Emma: Emma: 8, Henry: 6, Mia: 14\n8. Emma gives 2 points to Mia: Emma: 6, Henry: 6, Mia: 16\n9. Henry gives 1 points to Emma: Emma: 7, Henry: 5, Mia: 16\n10. Emma gives 1 points to Henry: Emma: 6, Henry: 6, Mia: 16\n11. Emma loses 3 points: Emma: 3, Henry: 6, Mia: 16\n12. Emma gains 3 points: Emma: 6, Henry: 6, Mia: 16\n\n16"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:claude-sonnet-4",
+      "k_operations": 12,
+      "n_ops_actual": 12,
+      "correct_answer": 12,
+      "predicted": 10,
+      "accurate": 0,
+      "query_entity": "Kate",
+      "initial_state": {
+        "Bob": 10,
+        "Iris": 6,
+        "Kate": 12
+      },
+      "operations": [
+        "Iris gives 3 points to Kate.",
+        "Kate gives 3 points to Iris.",
+        "Kate gives 2 points to Bob.",
+        "Bob gives 2 points to Kate.",
+        "Iris loses 4 points.",
+        "Iris gains 4 points.",
+        "Iris loses 5 points.",
+        "Iris gains 5 points.",
+        "Kate gains 6 points.",
+        "Kate loses 6 points.",
+        "Iris gains 2 points.",
+        "Iris loses 2 points."
+      ],
+      "prompt_length_chars": 640,
+      "raw_response": "I'll track each person's points through all operations.\n\nInitial state:\n- Bob: 10 points\n- Iris: 6 points  \n- Kate: 12 points\n\nOperation 1: Iris gives 3 points to Kate\n- Bob: 10\n- Iris: 6 - 3 = 3\n- Kate: 12 + 3 = 15\n\nOperation 2: Kate gives 3 points to Iris\n- Bob: 10\n- Iris: 3 + 3 = 6\n- Kate: 15 - 3 = 12\n\nOperation 3: Kate gives 2 points to Bob\n- Bob: 10 + 2 = 12\n- Iris: 6\n- Kate: 12 - 2 = 10\n\nOperation 4: Bob gives 2 points to Kate\n- Bob: 12 - 2 = 10\n- Iris: 6\n- Kate: 10 + 2 = 12\n\nOperation 5: Iris loses 4 points\n- Bob: 10\n- Iris: 6 - 4 = 2\n- Kate: 12\n\nOperation 6: Iris gains 4 points\n- Bob: 10\n- Iris: 2 + 4 = 6\n- Kate: 12\n\nOperation 7: Iris loses 5 points\n- Bob: 10\n- Iris: 6 - 5 = 1\n- Kate: 12\n\nOperation 8: Iris gains 5 points\n- Bob: 10\n- Iris: 1 + 5 = 6\n- Kate: 12\n\nOperation 9: Kate gains 6 points\n- Bob: 10\n- Iris: 6\n- Kate: 12 + 6 = 18\n\nOperation 10: Kate loses 6 points\n- Bob: 10\n- Iris: 6\n- Kate: 18 - 6 = 12\n\nOperation 11: Iris gains 2 points\n- Bob: 10\n- Iris: 6 + 2 = 8\n- Kate: 12\n\nOperation 12: Iris loses 2 points\n- Bob: 10\n- Iris: 8 - 2 = 6\n- Kate: 12\n\n12"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:claude-sonnet-4",
+      "k_operations": 12,
+      "n_ops_actual": 12,
+      "correct_answer": 15,
+      "predicted": 15,
+      "accurate": 1,
+      "query_entity": "Emma",
+      "initial_state": {
+        "Kate": 13,
+        "Grace": 9,
+        "Emma": 15
+      },
+      "operations": [
+        "Emma gains 3 points.",
+        "Emma loses 3 points.",
+        "Grace loses 4 points.",
+        "Grace gains 4 points.",
+        "Emma gains 2 points.",
+        "Emma loses 2 points.",
+        "Emma loses 4 points.",
+        "Emma gains 4 points.",
+        "Grace gives 3 points to Kate.",
+        "Kate gives 3 points to Grace.",
+        "Emma gives 3 points to Kate.",
+        "Kate gives 3 points to Emma."
+      ],
+      "prompt_length_chars": 648,
+      "raw_response": "I'll track Emma's points through each operation, starting from 15 points.\n\nInitial: Emma has 15 points\n\n1. Emma gains 3 points: 15 + 3 = 18\n2. Emma loses 3 points: 18 - 3 = 15\n3. Grace loses 4 points: Emma still has 15\n4. Grace gains 4 points: Emma still has 15\n5. Emma gains 2 points: 15 + 2 = 17\n6. Emma loses 2 points: 17 - 2 = 15\n7. Emma loses 4 points: 15 - 4 = 11\n8. Emma gains 4 points: 11 + 4 = 15\n9. Grace gives 3 points to Kate: Emma still has 15\n10. Kate gives 3 points to Grace: Emma still has 15\n11. Emma gives 3 points to Kate: 15 - 3 = 12\n12. Kate gives 3 points to Emma: 12 + 3 = 15\n\n15"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:claude-sonnet-4",
+      "k_operations": 12,
+      "n_ops_actual": 12,
+      "correct_answer": 14,
+      "predicted": 5,
+      "accurate": 0,
+      "query_entity": "Frank",
+      "initial_state": {
+        "Grace": 5,
+        "Iris": 16,
+        "Frank": 14
+      },
+      "operations": [
+        "Grace gains 6 points.",
+        "Grace loses 6 points.",
+        "Grace loses 2 points.",
+        "Grace gains 2 points.",
+        "Grace gains 2 points.",
+        "Grace loses 2 points.",
+        "Grace loses 5 points.",
+        "Grace gains 5 points.",
+        "Frank gives 3 points to Grace.",
+        "Grace gives 3 points to Frank.",
+        "Frank loses 2 points.",
+        "Frank gains 2 points."
+      ],
+      "prompt_length_chars": 644,
+      "raw_response": "I'll track the points step by step, focusing on Frank's total.\n\nInitial state:\n- Grace: 5 points\n- Iris: 16 points  \n- Frank: 14 points\n\nApplying operations:\n\n1. Grace gains 6 points \u2192 Grace: 11\n2. Grace loses 6 points \u2192 Grace: 5\n3. Grace loses 2 points \u2192 Grace: 3\n4. Grace gains 2 points \u2192 Grace: 5\n5. Grace gains 2 points \u2192 Grace: 7\n6. Grace loses 2 points \u2192 Grace: 5\n7. Grace loses 5 points \u2192 Grace: 0\n8. Grace gains 5 points \u2192 Grace: 5\n9. Frank gives 3 points to Grace \u2192 Frank: 11, Grace: 8\n10. Grace gives 3 points to Frank \u2192 Frank: 14, Grace: 5\n11. Frank loses 2 points \u2192 Frank: 12\n12. Frank gains 2 points \u2192 Frank: 14\n\n14"
+    }
+  ]
+}
