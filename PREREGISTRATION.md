@@ -1,4 +1,4 @@
-# Pre-Specified Analysis Plan — CEF WMF-AM Study
+# Pre-Specified Analysis Plan — WMF-AM Study
 
 **Document type:** Frozen prospective analysis plan (GitHub-committed)
 **Note:** This is a GitHub-committed specification document, not a registry-based preregistration
@@ -8,7 +8,7 @@ provide the same guarantees as a formal registry preregistration.
 ---
 
 ## Study Title
-The Completion Fallacy: A Cumulative Arithmetic State-Tracking Probe Predicts LLM Agent Performance
+WMF-AM: Probing LLM Working Memory via Depth-Parameterized Cumulative State Tracking
 
 ## Date Frozen
 This document was committed to the repository before collection of the N=20 expansion set data.

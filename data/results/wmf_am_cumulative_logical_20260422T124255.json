@@ -1,0 +1,1234 @@
+{
+  "experiment": "wmf_am_cumulative_logical",
+  "timestamp": "20260422T124255",
+  "n_models": 3,
+  "seed": 42,
+  "depths": [
+    3,
+    5,
+    7
+  ],
+  "n_problems_per_depth_per_domain": 5,
+  "domains": [
+    "permissions",
+    "schedule",
+    "inventory"
+  ],
+  "results": [
+    {
+      "model": "ollama:qwen2.5:0.5b",
+      "domain": "permissions",
+      "k_operations": 3,
+      "trial": 0,
+      "correct_answer": "execute, read",
+      "raw_response": "no permissions",
+      "accurate": 0
+    },
+    {
+      "model": "ollama:qwen2.5:0.5b",
+      "domain": "permissions",
+      "k_operations": 3,
+      "trial": 1,
+      "correct_answer": "execute, read",
+      "raw_response": "no permissions",
+      "accurate": 0
+    },
+    {
+      "model": "ollama:qwen2.5:0.5b",
+      "domain": "permissions",
+      "k_operations": 3,
+      "trial": 2,
+      "correct_answer": "read",
+      "raw_response": "no permissions",
+      "accurate": 0
+    },
+    {
+      "model": "ollama:qwen2.5:0.5b",
+      "domain": "permissions",
+      "k_operations": 3,
+      "trial": 3,
+      "correct_answer": "execute, write",
+      "raw_response": "execute, write, read",
+      "accurate": 0
+    },
+    {
+      "model": "ollama:qwen2.5:0.5b",
+      "domain": "permissions",
+      "k_operations": 3,
+      "trial": 4,
+      "correct_answer": "read, write",
+      "raw_response": "no permissions",
+      "accurate": 0
+    },
+    {
+      "model": "ollama:qwen2.5:0.5b",
+      "domain": "permissions",
+      "k_operations": 5,
+      "trial": 0,
+      "correct_answer": "read",
+      "raw_response": "no permissions",
+      "accurate": 0
+    },
+    {
+      "model": "ollama:qwen2.5:0.5b",
+      "domain": "permissions",
+      "k_operations": 5,
+      "trial": 1,
+      "correct_answer": "admin, read",
+      "raw_response": "no permissions",
+      "accurate": 0
+    },
+    {
+      "model": "ollama:qwen2.5:0.5b",
+      "domain": "permissions",
+      "k_operations": 5,
+      "trial": 2,
+      "correct_answer": "read",
+      "raw_response": "no permissions",
+      "accurate": 0
+    },
+    {
+      "model": "ollama:qwen2.5:0.5b",
+      "domain": "permissions",
+      "k_operations": 5,
+      "trial": 3,
+      "correct_answer": "read",
+      "raw_response": "no permissions",
+      "accurate": 0
+    },
+    {
+      "model": "ollama:qwen2.5:0.5b",
+      "domain": "permissions",
+      "k_operations": 5,
+      "trial": 4,
+      "correct_answer": "admin, execute, read",
+      "raw_response": "no permissions",
+      "accurate": 0
+    },
+    {
+      "model": "ollama:qwen2.5:0.5b",
+      "domain": "permissions",
+      "k_operations": 7,
+      "trial": 0,
+      "correct_answer": "admin, execute, read",
+      "raw_response": "execute, no permissions",
+      "accurate": 0
+    },
+    {
+      "model": "ollama:qwen2.5:0.5b",
+      "domain": "permissions",
+      "k_operations": 7,
+      "trial": 1,
+      "correct_answer": "admin, execute",
+      "raw_response": "admin access",
+      "accurate": 0
+    },
+    {
+      "model": "ollama:qwen2.5:0.5b",
+      "domain": "permissions",
+      "k_operations": 7,
+      "trial": 2,
+      "correct_answer": "admin",
+      "raw_response": "no permissions",
+      "accurate": 0
+    },
+    {
+      "model": "ollama:qwen2.5:0.5b",
+      "domain": "permissions",
+      "k_operations": 7,
+      "trial": 3,
+      "correct_answer": "admin, write",
+      "raw_response": "admin, read, execute, write",
+      "accurate": 0
+    },
+    {
+      "model": "ollama:qwen2.5:0.5b",
+      "domain": "permissions",
+      "k_operations": 7,
+      "trial": 4,
+      "correct_answer": "execute",
+      "raw_response": "no permissions",
+      "accurate": 0
+    },
+    {
+      "model": "ollama:qwen2.5:0.5b",
+      "domain": "schedule",
+      "k_operations": 3,
+      "trial": 0,
+      "correct_answer": "3",
+      "raw_response": "3",
+      "accurate": 1
+    },
+    {
+      "model": "ollama:qwen2.5:0.5b",
+      "domain": "schedule",
+      "k_operations": 3,
+      "trial": 1,
+      "correct_answer": "5",
+      "raw_response": "5",
+      "accurate": 1
+    },
+    {
+      "model": "ollama:qwen2.5:0.5b",
+      "domain": "schedule",
+      "k_operations": 3,
+      "trial": 2,
+      "correct_answer": "2",
+      "raw_response": "2",
+      "accurate": 1
+    },
+    {
+      "model": "ollama:qwen2.5:0.5b",
+      "domain": "schedule",
+      "k_operations": 3,
+      "trial": 3,
+      "correct_answer": "6",
+      "raw_response": "6",
+      "accurate": 1
+    },
+    {
+      "model": "ollama:qwen2.5:0.5b",
+      "domain": "schedule",
+      "k_operations": 3,
+      "trial": 4,
+      "correct_answer": "4",
+      "raw_response": "4",
+      "accurate": 1
+    },
+    {
+      "model": "ollama:qwen2.5:0.5b",
+      "domain": "schedule",
+      "k_operations": 5,
+      "trial": 0,
+      "correct_answer": "2",
+      "raw_response": "5",
+      "accurate": 0
+    },
+    {
+      "model": "ollama:qwen2.5:0.5b",
+      "domain": "schedule",
+      "k_operations": 5,
+      "trial": 1,
+      "correct_answer": "6",
+      "raw_response": "5",
+      "accurate": 0
+    },
+    {
+      "model": "ollama:qwen2.5:0.5b",
+      "domain": "schedule",
+      "k_operations": 5,
+      "trial": 2,
+      "correct_answer": "8",
+      "raw_response": "5",
+      "accurate": 0
+    },
+    {
+      "model": "ollama:qwen2.5:0.5b",
+      "domain": "schedule",
+      "k_operations": 5,
+      "trial": 3,
+      "correct_answer": "3",
+      "raw_response": "2",
+      "accurate": 0
+    },
+    {
+      "model": "ollama:qwen2.5:0.5b",
+      "domain": "schedule",
+      "k_operations": 5,
+      "trial": 4,
+      "correct_answer": "1",
+      "raw_response": "4",
+      "accurate": 0
+    },
+    {
+      "model": "ollama:qwen2.5:0.5b",
+      "domain": "schedule",
+      "k_operations": 7,
+      "trial": 0,
+      "correct_answer": "0",
+      "raw_response": "3",
+      "accurate": 0
+    },
+    {
+      "model": "ollama:qwen2.5:0.5b",
+      "domain": "schedule",
+      "k_operations": 7,
+      "trial": 1,
+      "correct_answer": "7",
+      "raw_response": "4",
+      "accurate": 0
+    },
+    {
+      "model": "ollama:qwen2.5:0.5b",
+      "domain": "schedule",
+      "k_operations": 7,
+      "trial": 2,
+      "correct_answer": "3",
+      "raw_response": "2",
+      "accurate": 0
+    },
+    {
+      "model": "ollama:qwen2.5:0.5b",
+      "domain": "schedule",
+      "k_operations": 7,
+      "trial": 3,
+      "correct_answer": "3",
+      "raw_response": "4",
+      "accurate": 0
+    },
+    {
+      "model": "ollama:qwen2.5:0.5b",
+      "domain": "schedule",
+      "k_operations": 7,
+      "trial": 4,
+      "correct_answer": "3",
+      "raw_response": "2",
+      "accurate": 0
+    },
+    {
+      "model": "ollama:qwen2.5:0.5b",
+      "domain": "inventory",
+      "k_operations": 3,
+      "trial": 0,
+      "correct_answer": "key, potion, ring, rope, shield",
+      "raw_response": "ring, rope, potion",
+      "accurate": 0
+    },
+    {
+      "model": "ollama:qwen2.5:0.5b",
+      "domain": "inventory",
+      "k_operations": 3,
+      "trial": 1,
+      "correct_answer": "key, map",
+      "raw_response": "compass, key",
+      "accurate": 0
+    },
+    {
+      "model": "ollama:qwen2.5:0.5b",
+      "domain": "inventory",
+      "k_operations": 3,
+      "trial": 2,
+      "correct_answer": "key, potion, shield",
+      "raw_response": "key",
+      "accurate": 0
+    },
+    {
+      "model": "ollama:qwen2.5:0.5b",
+      "domain": "inventory",
+      "k_operations": 3,
+      "trial": 3,
+      "correct_answer": "torch",
+      "raw_response": "gem, key",
+      "accurate": 0
+    },
+    {
+      "model": "ollama:qwen2.5:0.5b",
+      "domain": "inventory",
+      "k_operations": 3,
+      "trial": 4,
+      "correct_answer": "compass, map, rope, shield",
+      "raw_response": "compass, map, rope",
+      "accurate": 0
+    },
+    {
+      "model": "ollama:qwen2.5:0.5b",
+      "domain": "inventory",
+      "k_operations": 5,
+      "trial": 0,
+      "correct_answer": "gem, key, map, ring",
+      "raw_response": "gem, key, ring, map",
+      "accurate": 1
+    },
+    {
+      "model": "ollama:qwen2.5:0.5b",
+      "domain": "inventory",
+      "k_operations": 5,
+      "trial": 1,
+      "correct_answer": "key, rope",
+      "raw_response": "gem, shield",
+      "accurate": 0
+    },
+    {
+      "model": "ollama:qwen2.5:0.5b",
+      "domain": "inventory",
+      "k_operations": 5,
+      "trial": 2,
+      "correct_answer": "gem, map, scroll, torch",
+      "raw_response": "gem",
+      "accurate": 0
+    },
+    {
+      "model": "ollama:qwen2.5:0.5b",
+      "domain": "inventory",
+      "k_operations": 5,
+      "trial": 3,
+      "correct_answer": "gem, key",
+      "raw_response": "gem,key,shield,map,nothing",
+      "accurate": 0
+    },
+    {
+      "model": "ollama:qwen2.5:0.5b",
+      "domain": "inventory",
+      "k_operations": 5,
+      "trial": 4,
+      "correct_answer": "compass, gem",
+      "raw_response": "compass, gem",
+      "accurate": 1
+    },
+    {
+      "model": "ollama:qwen2.5:0.5b",
+      "domain": "inventory",
+      "k_operations": 7,
+      "trial": 0,
+      "correct_answer": "compass, gem, key, ring, scroll, shield",
+      "raw_response": "compass, shield, key, scroll, gem, potion",
+      "accurate": 0
+    },
+    {
+      "model": "ollama:qwen2.5:0.5b",
+      "domain": "inventory",
+      "k_operations": 7,
+      "trial": 1,
+      "correct_answer": "compass, ring, rope",
+      "raw_response": "compass, gem, rope, ring",
+      "accurate": 0
+    },
+    {
+      "model": "ollama:qwen2.5:0.5b",
+      "domain": "inventory",
+      "k_operations": 7,
+      "trial": 2,
+      "correct_answer": "key, potion, scroll, shield",
+      "raw_response": "scroll, key",
+      "accurate": 0
+    },
+    {
+      "model": "ollama:qwen2.5:0.5b",
+      "domain": "inventory",
+      "k_operations": 7,
+      "trial": 3,
+      "correct_answer": "key, potion, ring",
+      "raw_response": "ring, potion, shield, map, torch",
+      "accurate": 0
+    },
+    {
+      "model": "ollama:qwen2.5:0.5b",
+      "domain": "inventory",
+      "k_operations": 7,
+      "trial": 4,
+      "correct_answer": "compass, gem, torch",
+      "raw_response": "gem, rope",
+      "accurate": 0
+    },
+    {
+      "model": "ollama:tinyllama:1.1b",
+      "domain": "permissions",
+      "k_operations": 3,
+      "trial": 0,
+      "correct_answer": "execute, read",
+      "raw_response": "Bob's current permissions are:\n- admin access is revoked\n- read access is revoked\n- read access is granted\n\nTherefore, Bob has no permissions.",
+      "accurate": 0
+    },
+    {
+      "model": "ollama:tinyllama:1.1b",
+      "domain": "permissions",
+      "k_operations": 3,
+      "trial": 1,
+      "correct_answer": "execute, read",
+      "raw_response": "Alice has no permissions at this time.",
+      "accurate": 0
+    },
+    {
+      "model": "ollama:tinyllama:1.1b",
+      "domain": "permissions",
+      "k_operations": 3,
+      "trial": 2,
+      "correct_answer": "read",
+      "raw_response": "Emma has no permissions at this time.",
+      "accurate": 0
+    },
+    {
+      "model": "ollama:tinyllama:1.1b",
+      "domain": "permissions",
+      "k_operations": 3,
+      "trial": 3,
+      "correct_answer": "execute, write",
+      "raw_response": "Emma has no permissions at this time.",
+      "accurate": 0
+    },
+    {
+      "model": "ollama:tinyllama:1.1b",
+      "domain": "permissions",
+      "k_operations": 3,
+      "trial": 4,
+      "correct_answer": "read, write",
+      "raw_response": "David's execute access has been revoked, and he now has write, read, and no permissions. The permissions are:\n\n- Write: David can create, edit, or delete files on the server.\n- Read: David can read files on the server.\n- No permissions: David does not have any permissions.",
+      "accurate": 0
+    },
+    {
+      "model": "ollama:tinyllama:1.1b",
+      "domain": "permissions",
+      "k_operations": 5,
+      "trial": 0,
+      "correct_answer": "read",
+      "raw_response": "Alice has no write or admin access at this time.",
+      "accurate": 0
+    },
+    {
+      "model": "ollama:tinyllama:1.1b",
+      "domain": "permissions",
+      "k_operations": 5,
+      "trial": 1,
+      "correct_answer": "admin, read",
+      "raw_response": "Yes, Bob has the following permissions:\n\n1. Read access\n2. Grant execute access to admin\n3. Revoke execute access from admin\n4. Grant admin access\n5. Revoke admin access\n6. No permissions\n\nBob's current permissions are listed in alphabetical order.",
+      "accurate": 0
+    },
+    {
+      "model": "ollama:tinyllama:1.1b",
+      "domain": "permissions",
+      "k_operations": 5,
+      "trial": 2,
+      "correct_answer": "read",
+      "raw_response": "Carol has the following permissions:\n- Execute: granted\n- Write: granted (revoked)\n- Read: granted (revoked)\n- Execute: revoked (granted)\n\nThere are no other permissions for Carol at this time.",
+      "accurate": 0
+    },
+    {
+      "model": "ollama:tinyllama:1.1b",
+      "domain": "permissions",
+      "k_operations": 5,
+      "trial": 3,
+      "correct_answer": "read",
+      "raw_response": "David's current permissions are:\n- No permissions\n\nThe above list is sorted alphabetically and separated by commas.",
+      "accurate": 0
+    },
+    {
+      "model": "ollama:tinyllama:1.1b",
+      "domain": "permissions",
+      "k_operations": 5,
+      "trial": 4,
+      "correct_answer": "admin, execute, read",
+      "raw_response": "Frank has the following permissions:\n- Execute: False\n- Read access: True\n- Write access: False\n- Admin access: False\n\nThere are no additional permissions granted or revoked for Frank.",
+      "accurate": 0
+    },
+    {
+      "model": "ollama:tinyllama:1.1b",
+      "domain": "permissions",
+      "k_operations": 7,
+      "trial": 0,
+      "correct_answer": "admin, execute, read",
+      "raw_response": "Emma has the following permissions:\n- Execute: true\n- Read access: false\n- Write access: false\n\nThere are no additional permissions granted or revoked for Emma.",
+      "accurate": 0
+    },
+    {
+      "model": "ollama:tinyllama:1.1b",
+      "domain": "permissions",
+      "k_operations": 7,
+      "trial": 1,
+      "correct_answer": "admin, execute",
+      "raw_response": "Frank's current permissions are:\n- No permissions\n\nThe permissions listed above are in alphabetical order and separated by commas. Frank has no permissions at this time.",
+      "accurate": 0
+    },
+    {
+      "model": "ollama:tinyllama:1.1b",
+      "domain": "permissions",
+      "k_operations": 7,
+      "trial": 2,
+      "correct_answer": "admin",
+      "raw_response": "Yes, Bob has the following permissions:\n- write access is revoked\n- admin access is revoked\n- execute access is revoked\n- admin access is granted\n- read access is revoked\n- admin access is granted\n\nBob's current permissions are listed in alphabetical order.",
+      "accurate": 0
+    },
+    {
+      "model": "ollama:tinyllama:1.1b",
+      "domain": "permissions",
+      "k_operations": 7,
+      "trial": 3,
+      "correct_answer": "admin, write",
+      "raw_response": "Frank has no permissions at this time.",
+      "accurate": 0
+    },
+    {
+      "model": "ollama:tinyllama:1.1b",
+      "domain": "permissions",
+      "k_operations": 7,
+      "trial": 4,
+      "correct_answer": "execute",
+      "raw_response": "Carol has no permissions at this time.",
+      "accurate": 0
+    },
+    {
+      "model": "ollama:tinyllama:1.1b",
+      "domain": "schedule",
+      "k_operations": 3,
+      "trial": 0,
+      "correct_answer": "3",
+      "raw_response": "Bob has 3 meeting(s) on his schedule, including the project sync and team lunch added to his schedule.",
+      "accurate": 1
+    },
+    {
+      "model": "ollama:tinyllama:1.1b",
+      "domain": "schedule",
+      "k_operations": 3,
+      "trial": 1,
+      "correct_answer": "5",
+      "raw_response": "Alice has 3 meeting(s) on her schedule, including the morning standup and project sync.",
+      "accurate": 0
+    },
+    {
+      "model": "ollama:tinyllama:1.1b",
+      "domain": "schedule",
+      "k_operations": 3,
+      "trial": 2,
+      "correct_answer": "2",
+      "raw_response": "Emma has 4 meetings scheduled, including the design review and team lunch.",
+      "accurate": 0
+    },
+    {
+      "model": "ollama:tinyllama:1.1b",
+      "domain": "schedule",
+      "k_operations": 3,
+      "trial": 3,
+      "correct_answer": "6",
+      "raw_response": "Emma has 6 meetings on her schedule, including the cancelled team luncheon and the client call.",
+      "accurate": 1
+    },
+    {
+      "model": "ollama:tinyllama:1.1b",
+      "domain": "schedule",
+      "k_operations": 3,
+      "trial": 4,
+      "correct_answer": "4",
+      "raw_response": "David has 2 meetings left on his schedule, including the budget review and project sync that were added to his schedule earlier.",
+      "accurate": 0
+    },
+    {
+      "model": "ollama:tinyllama:1.1b",
+      "domain": "schedule",
+      "k_operations": 5,
+      "trial": 0,
+      "correct_answer": "2",
+      "raw_response": "Alice has 4 meetings left on her schedule, including the one that was cancelled earlier.",
+      "accurate": 0
+    },
+    {
+      "model": "ollama:tinyllama:1.1b",
+      "domain": "schedule",
+      "k_operations": 5,
+      "trial": 1,
+      "correct_answer": "6",
+      "raw_response": "Bob has 6 meeting(s) on his schedule, including the ones cancelled and added.",
+      "accurate": 1
+    },
+    {
+      "model": "ollama:tinyllama:1.1b",
+      "domain": "schedule",
+      "k_operations": 5,
+      "trial": 2,
+      "correct_answer": "8",
+      "raw_response": "Carol has 6 meeting(s) on her schedule, including the cancelled project sync and the design review.",
+      "accurate": 0
+    },
+    {
+      "model": "ollama:tinyllama:1.1b",
+      "domain": "schedule",
+      "k_operations": 5,
+      "trial": 3,
+      "correct_answer": "3",
+      "raw_response": "David has 3 meeting(s) on his schedule, including the cancelled project sync and the added team luncheon.",
+      "accurate": 1
+    },
+    {
+      "model": "ollama:tinyllama:1.1b",
+      "domain": "schedule",
+      "k_operations": 5,
+      "trial": 4,
+      "correct_answer": "1",
+      "raw_response": "Frank has 5 meeting(s) on his schedule, including the cancelled meetings.",
+      "accurate": 0
+    },
+    {
+      "model": "ollama:tinyllama:1.1b",
+      "domain": "schedule",
+      "k_operations": 7,
+      "trial": 0,
+      "correct_answer": "0",
+      "raw_response": "Emma has 3 meeting(s) left on her schedule, including the one that was cancelled earlier.",
+      "accurate": 0
+    },
+    {
+      "model": "ollama:tinyllama:1.1b",
+      "domain": "schedule",
+      "k_operations": 7,
+      "trial": 1,
+      "correct_answer": "7",
+      "raw_response": "Frank has 5 meeting(s) on his schedule, including the budget review and project sync that were previously scheduled.",
+      "accurate": 0
+    },
+    {
+      "model": "ollama:tinyllama:1.1b",
+      "domain": "schedule",
+      "k_operations": 7,
+      "trial": 2,
+      "correct_answer": "3",
+      "raw_response": "Bob has 3 meetings left on his schedule, including the budget review and design review that were added to his schedule earlier.",
+      "accurate": 1
+    },
+    {
+      "model": "ollama:tinyllama:1.1b",
+      "domain": "schedule",
+      "k_operations": 7,
+      "trial": 3,
+      "correct_answer": "3",
+      "raw_response": "Frank has 5 meeting(s) on his schedule, including the cancelled ones.",
+      "accurate": 0
+    },
+    {
+      "model": "ollama:tinyllama:1.1b",
+      "domain": "schedule",
+      "k_operations": 7,
+      "trial": 4,
+      "correct_answer": "3",
+      "raw_response": "Carol has 3 meeting(s) on her schedule, including the one that was previously cancelled.",
+      "accurate": 1
+    },
+    {
+      "model": "ollama:tinyllama:1.1b",
+      "domain": "inventory",
+      "k_operations": 3,
+      "trial": 0,
+      "correct_answer": "key, potion, ring, rope, shield",
+      "raw_response": "Bob has: key, ring, shield, rope, and potion.",
+      "accurate": 0
+    },
+    {
+      "model": "ollama:tinyllama:1.1b",
+      "domain": "inventory",
+      "k_operations": 3,
+      "trial": 1,
+      "correct_answer": "key, map",
+      "raw_response": "Alice has nothing at this moment.",
+      "accurate": 0
+    },
+    {
+      "model": "ollama:tinyllama:1.1b",
+      "domain": "inventory",
+      "k_operations": 3,
+      "trial": 2,
+      "correct_answer": "key, potion, shield",
+      "raw_response": "Yes, Emma has:\n1. Key\n2. Potion\n3. Shield\n4. None\n\nOnly the items listed in alphabetical order are present.",
+      "accurate": 0
+    },
+    {
+      "model": "ollama:tinyllama:1.1b",
+      "domain": "inventory",
+      "k_operations": 3,
+      "trial": 3,
+      "correct_answer": "torch",
+      "raw_response": "Yes, Emma has:\n1. Key\n2. Torch\n3. Nothing\n\nOnly the items listed in alphabetical order are currently available to Emma.",
+      "accurate": 0
+    },
+    {
+      "model": "ollama:tinyllama:1.1b",
+      "domain": "inventory",
+      "k_operations": 3,
+      "trial": 4,
+      "correct_answer": "compass, map, rope, shield",
+      "raw_response": "David has a compass, shield, and map.",
+      "accurate": 0
+    },
+    {
+      "model": "ollama:tinyllama:1.1b",
+      "domain": "inventory",
+      "k_operations": 5,
+      "trial": 0,
+      "correct_answer": "gem, key, map, ring",
+      "raw_response": "Alice starts with: gem, key, ring\nAlice picks up the gem\nAlice drops the rope\nAlice drops the torch\nAlice drops the scroll\nAlice picks up the map\n\nOnly the items listed in alphabetical order are currently available to Alice.",
+      "accurate": 0
+    },
+    {
+      "model": "ollama:tinyllama:1.1b",
+      "domain": "inventory",
+      "k_operations": 5,
+      "trial": 1,
+      "correct_answer": "key, rope",
+      "raw_response": "Yes, Bob has:\n- Key (dropped)\n- Rope (dropped)\n- Torch (dropped)\n- Gem (dropped)\n- Shield (dropped)\n\nOnly the items that have been dropped are listed in alphabetical order.",
+      "accurate": 0
+    },
+    {
+      "model": "ollama:tinyllama:1.1b",
+      "domain": "inventory",
+      "k_operations": 5,
+      "trial": 2,
+      "correct_answer": "gem, map, scroll, torch",
+      "raw_response": "Carol has:\n1. Ring (left)\n2. Scroll (right)\n3. Torch (up)\n4. Shield (down)\n5. Gem (not yet)\n\nOnly the items listed in alphabetical order are currently available to Carol.",
+      "accurate": 0
+    },
+    {
+      "model": "ollama:tinyllama:1.1b",
+      "domain": "inventory",
+      "k_operations": 5,
+      "trial": 3,
+      "correct_answer": "gem, key",
+      "raw_response": "David currently has:\n1. Shield\n2. Key\n3. Map\n4. None\n\nOnly the items listed in alphabetical order are present.",
+      "accurate": 0
+    },
+    {
+      "model": "ollama:tinyllama:1.1b",
+      "domain": "inventory",
+      "k_operations": 5,
+      "trial": 4,
+      "correct_answer": "compass, gem",
+      "raw_response": "Frank has a compass, gem, and ring.",
+      "accurate": 0
+    },
+    {
+      "model": "ollama:tinyllama:1.1b",
+      "domain": "inventory",
+      "k_operations": 7,
+      "trial": 0,
+      "correct_answer": "compass, gem, key, ring, scroll, shield",
+      "raw_response": "Emma starts with: compass, shield, key, scroll, gem, potion.\n\nOnly the items listed in alphabetical order are currently held by Emma.",
+      "accurate": 0
+    },
+    {
+      "model": "ollama:tinyllama:1.1b",
+      "domain": "inventory",
+      "k_operations": 7,
+      "trial": 1,
+      "correct_answer": "compass, ring, rope",
+      "raw_response": "Frank has nothing at this moment.",
+      "accurate": 0
+    },
+    {
+      "model": "ollama:tinyllama:1.1b",
+      "domain": "inventory",
+      "k_operations": 7,
+      "trial": 2,
+      "correct_answer": "key, potion, scroll, shield",
+      "raw_response": "Yes, Bob has: scroll, shield, compass, key, ring, and ring.",
+      "accurate": 0
+    },
+    {
+      "model": "ollama:tinyllama:1.1b",
+      "domain": "inventory",
+      "k_operations": 7,
+      "trial": 3,
+      "correct_answer": "key, potion, ring",
+      "raw_response": "Frank has: torch, ring, potion, shield, map.",
+      "accurate": 0
+    },
+    {
+      "model": "ollama:tinyllama:1.1b",
+      "domain": "inventory",
+      "k_operations": 7,
+      "trial": 4,
+      "correct_answer": "compass, gem, torch",
+      "raw_response": "Yes, Carol has: torch, compass, shield, gem, potion, and rope.",
+      "accurate": 0
+    },
+    {
+      "model": "ollama:qwen2.5:7b",
+      "domain": "permissions",
+      "k_operations": 3,
+      "trial": 0,
+      "correct_answer": "execute, read",
+      "raw_response": "execute,no permissions",
+      "accurate": 0
+    },
+    {
+      "model": "ollama:qwen2.5:7b",
+      "domain": "permissions",
+      "k_operations": 3,
+      "trial": 1,
+      "correct_answer": "execute, read",
+      "raw_response": "read, no permissions",
+      "accurate": 0
+    },
+    {
+      "model": "ollama:qwen2.5:7b",
+      "domain": "permissions",
+      "k_operations": 3,
+      "trial": 2,
+      "correct_answer": "read",
+      "raw_response": "read,no permissions",
+      "accurate": 1
+    },
+    {
+      "model": "ollama:qwen2.5:7b",
+      "domain": "permissions",
+      "k_operations": 3,
+      "trial": 3,
+      "correct_answer": "execute, write",
+      "raw_response": "execute, write",
+      "accurate": 1
+    },
+    {
+      "model": "ollama:qwen2.5:7b",
+      "domain": "permissions",
+      "k_operations": 3,
+      "trial": 4,
+      "correct_answer": "read, write",
+      "raw_response": "read, write",
+      "accurate": 1
+    },
+    {
+      "model": "ollama:qwen2.5:7b",
+      "domain": "permissions",
+      "k_operations": 5,
+      "trial": 0,
+      "correct_answer": "read",
+      "raw_response": "read",
+      "accurate": 1
+    },
+    {
+      "model": "ollama:qwen2.5:7b",
+      "domain": "permissions",
+      "k_operations": 5,
+      "trial": 1,
+      "correct_answer": "admin, read",
+      "raw_response": "no permissions",
+      "accurate": 0
+    },
+    {
+      "model": "ollama:qwen2.5:7b",
+      "domain": "permissions",
+      "k_operations": 5,
+      "trial": 2,
+      "correct_answer": "read",
+      "raw_response": "no permissions",
+      "accurate": 0
+    },
+    {
+      "model": "ollama:qwen2.5:7b",
+      "domain": "permissions",
+      "k_operations": 5,
+      "trial": 3,
+      "correct_answer": "read",
+      "raw_response": "read",
+      "accurate": 1
+    },
+    {
+      "model": "ollama:qwen2.5:7b",
+      "domain": "permissions",
+      "k_operations": 5,
+      "trial": 4,
+      "correct_answer": "admin, execute, read",
+      "raw_response": "execute, read, admin",
+      "accurate": 1
+    },
+    {
+      "model": "ollama:qwen2.5:7b",
+      "domain": "permissions",
+      "k_operations": 7,
+      "trial": 0,
+      "correct_answer": "admin, execute, read",
+      "raw_response": "execute, read, admin",
+      "accurate": 1
+    },
+    {
+      "model": "ollama:qwen2.5:7b",
+      "domain": "permissions",
+      "k_operations": 7,
+      "trial": 1,
+      "correct_answer": "admin, execute",
+      "raw_response": "admin,execute",
+      "accurate": 1
+    },
+    {
+      "model": "ollama:qwen2.5:7b",
+      "domain": "permissions",
+      "k_operations": 7,
+      "trial": 2,
+      "correct_answer": "admin",
+      "raw_response": "admin access,no permissions",
+      "accurate": 0
+    },
+    {
+      "model": "ollama:qwen2.5:7b",
+      "domain": "permissions",
+      "k_operations": 7,
+      "trial": 3,
+      "correct_answer": "admin, write",
+      "raw_response": "write, admin",
+      "accurate": 1
+    },
+    {
+      "model": "ollama:qwen2.5:7b",
+      "domain": "permissions",
+      "k_operations": 7,
+      "trial": 4,
+      "correct_answer": "execute",
+      "raw_response": "execute permission",
+      "accurate": 0
+    },
+    {
+      "model": "ollama:qwen2.5:7b",
+      "domain": "schedule",
+      "k_operations": 3,
+      "trial": 0,
+      "correct_answer": "3",
+      "raw_response": "4",
+      "accurate": 0
+    },
+    {
+      "model": "ollama:qwen2.5:7b",
+      "domain": "schedule",
+      "k_operations": 3,
+      "trial": 1,
+      "correct_answer": "5",
+      "raw_response": "6",
+      "accurate": 0
+    },
+    {
+      "model": "ollama:qwen2.5:7b",
+      "domain": "schedule",
+      "k_operations": 3,
+      "trial": 2,
+      "correct_answer": "2",
+      "raw_response": "2",
+      "accurate": 1
+    },
+    {
+      "model": "ollama:qwen2.5:7b",
+      "domain": "schedule",
+      "k_operations": 3,
+      "trial": 3,
+      "correct_answer": "6",
+      "raw_response": "6",
+      "accurate": 1
+    },
+    {
+      "model": "ollama:qwen2.5:7b",
+      "domain": "schedule",
+      "k_operations": 3,
+      "trial": 4,
+      "correct_answer": "4",
+      "raw_response": "5",
+      "accurate": 0
+    },
+    {
+      "model": "ollama:qwen2.5:7b",
+      "domain": "schedule",
+      "k_operations": 5,
+      "trial": 0,
+      "correct_answer": "2",
+      "raw_response": "3",
+      "accurate": 0
+    },
+    {
+      "model": "ollama:qwen2.5:7b",
+      "domain": "schedule",
+      "k_operations": 5,
+      "trial": 1,
+      "correct_answer": "6",
+      "raw_response": "5",
+      "accurate": 0
+    },
+    {
+      "model": "ollama:qwen2.5:7b",
+      "domain": "schedule",
+      "k_operations": 5,
+      "trial": 2,
+      "correct_answer": "8",
+      "raw_response": "8",
+      "accurate": 1
+    },
+    {
+      "model": "ollama:qwen2.5:7b",
+      "domain": "schedule",
+      "k_operations": 5,
+      "trial": 3,
+      "correct_answer": "3",
+      "raw_response": "5",
+      "accurate": 0
+    },
+    {
+      "model": "ollama:qwen2.5:7b",
+      "domain": "schedule",
+      "k_operations": 5,
+      "trial": 4,
+      "correct_answer": "1",
+      "raw_response": "2",
+      "accurate": 0
+    },
+    {
+      "model": "ollama:qwen2.5:7b",
+      "domain": "schedule",
+      "k_operations": 7,
+      "trial": 0,
+      "correct_answer": "0",
+      "raw_response": "1",
+      "accurate": 0
+    },
+    {
+      "model": "ollama:qwen2.5:7b",
+      "domain": "schedule",
+      "k_operations": 7,
+      "trial": 1,
+      "correct_answer": "7",
+      "raw_response": "8",
+      "accurate": 0
+    },
+    {
+      "model": "ollama:qwen2.5:7b",
+      "domain": "schedule",
+      "k_operations": 7,
+      "trial": 2,
+      "correct_answer": "3",
+      "raw_response": "5",
+      "accurate": 0
+    },
+    {
+      "model": "ollama:qwen2.5:7b",
+      "domain": "schedule",
+      "k_operations": 7,
+      "trial": 3,
+      "correct_answer": "3",
+      "raw_response": "6",
+      "accurate": 0
+    },
+    {
+      "model": "ollama:qwen2.5:7b",
+      "domain": "schedule",
+      "k_operations": 7,
+      "trial": 4,
+      "correct_answer": "3",
+      "raw_response": "5",
+      "accurate": 0
+    },
+    {
+      "model": "ollama:qwen2.5:7b",
+      "domain": "inventory",
+      "k_operations": 3,
+      "trial": 0,
+      "correct_answer": "key, potion, ring, rope, shield",
+      "raw_response": "key, potion, ring, rope, shield",
+      "accurate": 1
+    },
+    {
+      "model": "ollama:qwen2.5:7b",
+      "domain": "inventory",
+      "k_operations": 3,
+      "trial": 1,
+      "correct_answer": "key, map",
+      "raw_response": "key, map",
+      "accurate": 1
+    },
+    {
+      "model": "ollama:qwen2.5:7b",
+      "domain": "inventory",
+      "k_operations": 3,
+      "trial": 2,
+      "correct_answer": "key, potion, shield",
+      "raw_response": "potion, shield",
+      "accurate": 0
+    },
+    {
+      "model": "ollama:qwen2.5:7b",
+      "domain": "inventory",
+      "k_operations": 3,
+      "trial": 3,
+      "correct_answer": "torch",
+      "raw_response": "torch",
+      "accurate": 1
+    },
+    {
+      "model": "ollama:qwen2.5:7b",
+      "domain": "inventory",
+      "k_operations": 3,
+      "trial": 4,
+      "correct_answer": "compass, map, rope, shield",
+      "raw_response": "compass, map, rope, shield",
+      "accurate": 1
+    },
+    {
+      "model": "ollama:qwen2.5:7b",
+      "domain": "inventory",
+      "k_operations": 5,
+      "trial": 0,
+      "correct_answer": "gem, key, map, ring",
+      "raw_response": "gem, map",
+      "accurate": 0
+    },
+    {
+      "model": "ollama:qwen2.5:7b",
+      "domain": "inventory",
+      "k_operations": 5,
+      "trial": 1,
+      "correct_answer": "key, rope",
+      "raw_response": "key, rope",
+      "accurate": 1
+    },
+    {
+      "model": "ollama:qwen2.5:7b",
+      "domain": "inventory",
+      "k_operations": 5,
+      "trial": 2,
+      "correct_answer": "gem, map, scroll, torch",
+      "raw_response": "gem, scroll, torch",
+      "accurate": 0
+    },
+    {
+      "model": "ollama:qwen2.5:7b",
+      "domain": "inventory",
+      "k_operations": 5,
+      "trial": 3,
+      "correct_answer": "gem, key",
+      "raw_response": "gem, key",
+      "accurate": 1
+    },
+    {
+      "model": "ollama:qwen2.5:7b",
+      "domain": "inventory",
+      "k_operations": 5,
+      "trial": 4,
+      "correct_answer": "compass, gem",
+      "raw_response": "compass, gem",
+      "accurate": 1
+    },
+    {
+      "model": "ollama:qwen2.5:7b",
+      "domain": "inventory",
+      "k_operations": 7,
+      "trial": 0,
+      "correct_answer": "compass, gem, key, ring, scroll, shield",
+      "raw_response": "compass, key, scroll, shield, gem",
+      "accurate": 0
+    },
+    {
+      "model": "ollama:qwen2.5:7b",
+      "domain": "inventory",
+      "k_operations": 7,
+      "trial": 1,
+      "correct_answer": "compass, ring, rope",
+      "raw_response": "compass, ring, rope",
+      "accurate": 1
+    },
+    {
+      "model": "ollama:qwen2.5:7b",
+      "domain": "inventory",
+      "k_operations": 7,
+      "trial": 2,
+      "correct_answer": "key, potion, scroll, shield",
+      "raw_response": "potion, scroll, shield, key",
+      "accurate": 1
+    },
+    {
+      "model": "ollama:qwen2.5:7b",
+      "domain": "inventory",
+      "k_operations": 7,
+      "trial": 3,
+      "correct_answer": "key, potion, ring",
+      "raw_response": "key, ring",
+      "accurate": 0
+    },
+    {
+      "model": "ollama:qwen2.5:7b",
+      "domain": "inventory",
+      "k_operations": 7,
+      "trial": 4,
+      "correct_answer": "compass, gem, torch",
+      "raw_response": "gem, torch, compass",
+      "accurate": 1
+    }
+  ]
+}

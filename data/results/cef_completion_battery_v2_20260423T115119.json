@@ -1,0 +1,168 @@
+{
+  "timestamp": "20260423T115119",
+  "n_models": 8,
+  "n_items": 100,
+  "battery_version": "v2",
+  "results": [
+    {
+      "model": "ollama:llama3.1:70b",
+      "score": 0.87,
+      "n_correct": 87,
+      "n_total": 100,
+      "by_domain": {
+        "factual": 0.95,
+        "math": 0.9,
+        "science": 0.9,
+        "reasoning": 0.7,
+        "language": 0.9
+      },
+      "by_difficulty": {
+        "1": 1.0,
+        "2": 0.9032,
+        "3": 0.8519,
+        "4": 0.7778,
+        "5": 0.0
+      }
+    },
+    {
+      "model": "openrouter:gpt-4o",
+      "score": 0.88,
+      "n_correct": 88,
+      "n_total": 100,
+      "by_domain": {
+        "factual": 0.95,
+        "math": 0.85,
+        "science": 0.75,
+        "reasoning": 0.85,
+        "language": 1.0
+      },
+      "by_difficulty": {
+        "1": 0.9545,
+        "2": 0.9355,
+        "3": 0.8148,
+        "4": 0.8333,
+        "5": 0.5
+      }
+    },
+    {
+      "model": "openrouter:gpt-4o-mini",
+      "score": 0.89,
+      "n_correct": 89,
+      "n_total": 100,
+      "by_domain": {
+        "factual": 0.95,
+        "math": 0.9,
+        "science": 0.75,
+        "reasoning": 0.85,
+        "language": 1.0
+      },
+      "by_difficulty": {
+        "1": 0.9545,
+        "2": 0.9355,
+        "3": 0.8519,
+        "4": 0.7778,
+        "5": 1.0
+      }
+    },
+    {
+      "model": "openrouter:claude-sonnet-4",
+      "score": 0.9,
+      "n_correct": 90,
+      "n_total": 100,
+      "by_domain": {
+        "factual": 0.95,
+        "math": 0.9,
+        "science": 0.8,
+        "reasoning": 0.9,
+        "language": 0.95
+      },
+      "by_difficulty": {
+        "1": 0.9545,
+        "2": 0.9355,
+        "3": 0.8519,
+        "4": 0.8889,
+        "5": 0.5
+      }
+    },
+    {
+      "model": "openrouter:deepseek-v3",
+      "score": 0.86,
+      "n_correct": 86,
+      "n_total": 100,
+      "by_domain": {
+        "factual": 0.95,
+        "math": 0.9,
+        "science": 0.6,
+        "reasoning": 0.95,
+        "language": 0.9
+      },
+      "by_difficulty": {
+        "1": 0.9091,
+        "2": 0.9032,
+        "3": 0.8519,
+        "4": 0.8333,
+        "5": 0.0
+      }
+    },
+    {
+      "model": "openrouter:o3-mini",
+      "score": 0.89,
+      "n_correct": 89,
+      "n_total": 100,
+      "by_domain": {
+        "factual": 0.95,
+        "math": 0.85,
+        "science": 0.9,
+        "reasoning": 0.8,
+        "language": 0.95
+      },
+      "by_difficulty": {
+        "1": 1.0,
+        "2": 0.8387,
+        "3": 0.9259,
+        "4": 0.7778,
+        "5": 1.0
+      }
+    },
+    {
+      "model": "openrouter:deepseek-r1",
+      "score": 0.91,
+      "n_correct": 91,
+      "n_total": 100,
+      "by_domain": {
+        "factual": 0.95,
+        "math": 0.95,
+        "science": 0.8,
+        "reasoning": 0.9,
+        "language": 0.95
+      },
+      "by_difficulty": {
+        "1": 0.9545,
+        "2": 0.9032,
+        "3": 0.9259,
+        "4": 0.8889,
+        "5": 0.5
+      }
+    },
+    {
+      "model": "openrouter:gemini-2.5-flash",
+      "score": 0.85,
+      "n_correct": 85,
+      "n_total": 100,
+      "by_domain": {
+        "factual": 0.95,
+        "math": 0.8,
+        "science": 0.85,
+        "reasoning": 0.75,
+        "language": 0.9
+      },
+      "by_difficulty": {
+        "1": 0.9091,
+        "2": 0.871,
+        "3": 0.8519,
+        "4": 0.7778,
+        "5": 0.5
+      }
+    }
+  ]
+}

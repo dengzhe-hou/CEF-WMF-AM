@@ -154,6 +154,10 @@ COMPLETION_BATTERY = [
 
 def check_answer(model_response: str, correct_answer: str) -> bool:
     """Flexible exact-match with common normalizations."""
+    if model_response is None:
+        return False
+    import re
+    model_response = re.sub(r"<think>.*?</think>", "", model_response, flags=re.DOTALL)
     resp = model_response.strip().lower()
     correct = correct_answer.strip().lower()
 
@@ -208,7 +212,7 @@ def run_battery(model_name: str, items: list) -> dict:
             "idx": i,
             "question": question,
             "correct_answer": answer,
-            "model_answer": response[:200],
+            "model_answer": response[:200] if response else "",
             "correct": int(is_correct),
             "domain": domain,
             "difficulty": difficulty,

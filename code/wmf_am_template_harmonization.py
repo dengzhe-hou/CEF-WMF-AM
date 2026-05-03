@@ -113,6 +113,11 @@ def run_template_condition(model_name: str, template: str, seed: int) -> dict:
             except Exception as exc:
                 print(f"    ERROR: {exc}")
                 response = ""
+            if response is None:
+                response = ""
+
+            # Strip thinking tags for reasoning models
+            response = re.sub(r"<think>.*?</think>", "", response, flags=re.DOTALL)
 
             # Extract number — for cot, take last number in response
             if template == "cot":

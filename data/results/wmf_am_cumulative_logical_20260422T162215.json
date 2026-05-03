@@ -1,0 +1,5689 @@
+{
+  "experiment": "wmf_am_cumulative_logical",
+  "timestamp": "20260422T162215",
+  "n_models": 7,
+  "seed": 42,
+  "depths": [
+    3,
+    5,
+    7
+  ],
+  "n_problems_per_depth_per_domain": 10,
+  "domains": [
+    "permissions",
+    "schedule",
+    "inventory"
+  ],
+  "results": [
+    {
+      "model": "openrouter:gpt-4o",
+      "domain": "permissions",
+      "k_operations": 3,
+      "trial": 0,
+      "correct_answer": "execute, read",
+      "raw_response": "read",
+      "accurate": 0
+    },
+    {
+      "model": "openrouter:gpt-4o",
+      "domain": "permissions",
+      "k_operations": 3,
+      "trial": 1,
+      "correct_answer": "execute, read",
+      "raw_response": "read",
+      "accurate": 0
+    },
+    {
+      "model": "openrouter:gpt-4o",
+      "domain": "permissions",
+      "k_operations": 3,
+      "trial": 2,
+      "correct_answer": "read",
+      "raw_response": "read",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:gpt-4o",
+      "domain": "permissions",
+      "k_operations": 3,
+      "trial": 3,
+      "correct_answer": "execute, write",
+      "raw_response": "execute, write",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:gpt-4o",
+      "domain": "permissions",
+      "k_operations": 3,
+      "trial": 4,
+      "correct_answer": "read, write",
+      "raw_response": "read, write",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:gpt-4o",
+      "domain": "permissions",
+      "k_operations": 3,
+      "trial": 5,
+      "correct_answer": "execute, read, write",
+      "raw_response": "execute, read, write",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:gpt-4o",
+      "domain": "permissions",
+      "k_operations": 3,
+      "trial": 6,
+      "correct_answer": "no permissions",
+      "raw_response": "no permissions",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:gpt-4o",
+      "domain": "permissions",
+      "k_operations": 3,
+      "trial": 7,
+      "correct_answer": "admin, execute",
+      "raw_response": "admin, execute",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:gpt-4o",
+      "domain": "permissions",
+      "k_operations": 3,
+      "trial": 8,
+      "correct_answer": "admin, read",
+      "raw_response": "admin, read",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:gpt-4o",
+      "domain": "permissions",
+      "k_operations": 3,
+      "trial": 9,
+      "correct_answer": "no permissions",
+      "raw_response": "no permissions",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:gpt-4o",
+      "domain": "permissions",
+      "k_operations": 5,
+      "trial": 0,
+      "correct_answer": "read",
+      "raw_response": "read",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:gpt-4o",
+      "domain": "permissions",
+      "k_operations": 5,
+      "trial": 1,
+      "correct_answer": "admin, read",
+      "raw_response": "admin, read",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:gpt-4o",
+      "domain": "permissions",
+      "k_operations": 5,
+      "trial": 2,
+      "correct_answer": "read",
+      "raw_response": "read",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:gpt-4o",
+      "domain": "permissions",
+      "k_operations": 5,
+      "trial": 3,
+      "correct_answer": "read",
+      "raw_response": "read",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:gpt-4o",
+      "domain": "permissions",
+      "k_operations": 5,
+      "trial": 4,
+      "correct_answer": "admin, execute, read",
+      "raw_response": "admin, execute, read",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:gpt-4o",
+      "domain": "permissions",
+      "k_operations": 5,
+      "trial": 5,
+      "correct_answer": "no permissions",
+      "raw_response": "no permissions",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:gpt-4o",
+      "domain": "permissions",
+      "k_operations": 5,
+      "trial": 6,
+      "correct_answer": "admin, write",
+      "raw_response": "admin, write",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:gpt-4o",
+      "domain": "permissions",
+      "k_operations": 5,
+      "trial": 7,
+      "correct_answer": "admin, read, write",
+      "raw_response": "read, write",
+      "accurate": 0
+    },
+    {
+      "model": "openrouter:gpt-4o",
+      "domain": "permissions",
+      "k_operations": 5,
+      "trial": 8,
+      "correct_answer": "execute, write",
+      "raw_response": "execute, write",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:gpt-4o",
+      "domain": "permissions",
+      "k_operations": 5,
+      "trial": 9,
+      "correct_answer": "admin, execute",
+      "raw_response": "admin, execute",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:gpt-4o",
+      "domain": "permissions",
+      "k_operations": 7,
+      "trial": 0,
+      "correct_answer": "admin, execute, read",
+      "raw_response": "admin, execute, read",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:gpt-4o",
+      "domain": "permissions",
+      "k_operations": 7,
+      "trial": 1,
+      "correct_answer": "admin, execute",
+      "raw_response": "admin, execute",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:gpt-4o",
+      "domain": "permissions",
+      "k_operations": 7,
+      "trial": 2,
+      "correct_answer": "admin",
+      "raw_response": "admin",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:gpt-4o",
+      "domain": "permissions",
+      "k_operations": 7,
+      "trial": 3,
+      "correct_answer": "admin, write",
+      "raw_response": "admin, write",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:gpt-4o",
+      "domain": "permissions",
+      "k_operations": 7,
+      "trial": 4,
+      "correct_answer": "execute",
+      "raw_response": "execute",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:gpt-4o",
+      "domain": "permissions",
+      "k_operations": 7,
+      "trial": 5,
+      "correct_answer": "read",
+      "raw_response": "read",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:gpt-4o",
+      "domain": "permissions",
+      "k_operations": 7,
+      "trial": 6,
+      "correct_answer": "admin, execute, read",
+      "raw_response": "admin, execute, read",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:gpt-4o",
+      "domain": "permissions",
+      "k_operations": 7,
+      "trial": 7,
+      "correct_answer": "execute, read, write",
+      "raw_response": "execute, read",
+      "accurate": 0
+    },
+    {
+      "model": "openrouter:gpt-4o",
+      "domain": "permissions",
+      "k_operations": 7,
+      "trial": 8,
+      "correct_answer": "admin, execute, read",
+      "raw_response": "admin, execute, read",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:gpt-4o",
+      "domain": "permissions",
+      "k_operations": 7,
+      "trial": 9,
+      "correct_answer": "admin, execute, write",
+      "raw_response": "admin, execute, write",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:gpt-4o",
+      "domain": "schedule",
+      "k_operations": 3,
+      "trial": 0,
+      "correct_answer": "3",
+      "raw_response": "3",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:gpt-4o",
+      "domain": "schedule",
+      "k_operations": 3,
+      "trial": 1,
+      "correct_answer": "5",
+      "raw_response": "6",
+      "accurate": 0
+    },
+    {
+      "model": "openrouter:gpt-4o",
+      "domain": "schedule",
+      "k_operations": 3,
+      "trial": 2,
+      "correct_answer": "2",
+      "raw_response": "1",
+      "accurate": 0
+    },
+    {
+      "model": "openrouter:gpt-4o",
+      "domain": "schedule",
+      "k_operations": 3,
+      "trial": 3,
+      "correct_answer": "6",
+      "raw_response": "5",
+      "accurate": 0
+    },
+    {
+      "model": "openrouter:gpt-4o",
+      "domain": "schedule",
+      "k_operations": 3,
+      "trial": 4,
+      "correct_answer": "4",
+      "raw_response": "4",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:gpt-4o",
+      "domain": "schedule",
+      "k_operations": 3,
+      "trial": 5,
+      "correct_answer": "4",
+      "raw_response": "4",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:gpt-4o",
+      "domain": "schedule",
+      "k_operations": 3,
+      "trial": 6,
+      "correct_answer": "4",
+      "raw_response": "4",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:gpt-4o",
+      "domain": "schedule",
+      "k_operations": 3,
+      "trial": 7,
+      "correct_answer": "4",
+      "raw_response": "5",
+      "accurate": 0
+    },
+    {
+      "model": "openrouter:gpt-4o",
+      "domain": "schedule",
+      "k_operations": 3,
+      "trial": 8,
+      "correct_answer": "6",
+      "raw_response": "6",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:gpt-4o",
+      "domain": "schedule",
+      "k_operations": 3,
+      "trial": 9,
+      "correct_answer": "4",
+      "raw_response": "4",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:gpt-4o",
+      "domain": "schedule",
+      "k_operations": 5,
+      "trial": 0,
+      "correct_answer": "2",
+      "raw_response": "3",
+      "accurate": 0
+    },
+    {
+      "model": "openrouter:gpt-4o",
+      "domain": "schedule",
+      "k_operations": 5,
+      "trial": 1,
+      "correct_answer": "6",
+      "raw_response": "5",
+      "accurate": 0
+    },
+    {
+      "model": "openrouter:gpt-4o",
+      "domain": "schedule",
+      "k_operations": 5,
+      "trial": 2,
+      "correct_answer": "8",
+      "raw_response": "9",
+      "accurate": 0
+    },
+    {
+      "model": "openrouter:gpt-4o",
+      "domain": "schedule",
+      "k_operations": 5,
+      "trial": 3,
+      "correct_answer": "3",
+      "raw_response": "3",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:gpt-4o",
+      "domain": "schedule",
+      "k_operations": 5,
+      "trial": 4,
+      "correct_answer": "1",
+      "raw_response": "2",
+      "accurate": 0
+    },
+    {
+      "model": "openrouter:gpt-4o",
+      "domain": "schedule",
+      "k_operations": 5,
+      "trial": 5,
+      "correct_answer": "0",
+      "raw_response": "1",
+      "accurate": 0
+    },
+    {
+      "model": "openrouter:gpt-4o",
+      "domain": "schedule",
+      "k_operations": 5,
+      "trial": 6,
+      "correct_answer": "0",
+      "raw_response": "1",
+      "accurate": 0
+    },
+    {
+      "model": "openrouter:gpt-4o",
+      "domain": "schedule",
+      "k_operations": 5,
+      "trial": 7,
+      "correct_answer": "2",
+      "raw_response": "2",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:gpt-4o",
+      "domain": "schedule",
+      "k_operations": 5,
+      "trial": 8,
+      "correct_answer": "6",
+      "raw_response": "5",
+      "accurate": 0
+    },
+    {
+      "model": "openrouter:gpt-4o",
+      "domain": "schedule",
+      "k_operations": 5,
+      "trial": 9,
+      "correct_answer": "8",
+      "raw_response": "8",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:gpt-4o",
+      "domain": "schedule",
+      "k_operations": 7,
+      "trial": 0,
+      "correct_answer": "0",
+      "raw_response": "1",
+      "accurate": 0
+    },
+    {
+      "model": "openrouter:gpt-4o",
+      "domain": "schedule",
+      "k_operations": 7,
+      "trial": 1,
+      "correct_answer": "7",
+      "raw_response": "6",
+      "accurate": 0
+    },
+    {
+      "model": "openrouter:gpt-4o",
+      "domain": "schedule",
+      "k_operations": 7,
+      "trial": 2,
+      "correct_answer": "3",
+      "raw_response": "5",
+      "accurate": 0
+    },
+    {
+      "model": "openrouter:gpt-4o",
+      "domain": "schedule",
+      "k_operations": 7,
+      "trial": 3,
+      "correct_answer": "3",
+      "raw_response": "3",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:gpt-4o",
+      "domain": "schedule",
+      "k_operations": 7,
+      "trial": 4,
+      "correct_answer": "3",
+      "raw_response": "3",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:gpt-4o",
+      "domain": "schedule",
+      "k_operations": 7,
+      "trial": 5,
+      "correct_answer": "0",
+      "raw_response": "0",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:gpt-4o",
+      "domain": "schedule",
+      "k_operations": 7,
+      "trial": 6,
+      "correct_answer": "5",
+      "raw_response": "4",
+      "accurate": 0
+    },
+    {
+      "model": "openrouter:gpt-4o",
+      "domain": "schedule",
+      "k_operations": 7,
+      "trial": 7,
+      "correct_answer": "1",
+      "raw_response": "2",
+      "accurate": 0
+    },
+    {
+      "model": "openrouter:gpt-4o",
+      "domain": "schedule",
+      "k_operations": 7,
+      "trial": 8,
+      "correct_answer": "3",
+      "raw_response": "3",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:gpt-4o",
+      "domain": "schedule",
+      "k_operations": 7,
+      "trial": 9,
+      "correct_answer": "5",
+      "raw_response": "4",
+      "accurate": 0
+    },
+    {
+      "model": "openrouter:gpt-4o",
+      "domain": "inventory",
+      "k_operations": 3,
+      "trial": 0,
+      "correct_answer": "key, potion, ring, rope, shield",
+      "raw_response": "key, potion, ring, rope, shield",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:gpt-4o",
+      "domain": "inventory",
+      "k_operations": 3,
+      "trial": 1,
+      "correct_answer": "key, map",
+      "raw_response": "key, map",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:gpt-4o",
+      "domain": "inventory",
+      "k_operations": 3,
+      "trial": 2,
+      "correct_answer": "key, potion, shield",
+      "raw_response": "key, potion, shield",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:gpt-4o",
+      "domain": "inventory",
+      "k_operations": 3,
+      "trial": 3,
+      "correct_answer": "torch",
+      "raw_response": "torch",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:gpt-4o",
+      "domain": "inventory",
+      "k_operations": 3,
+      "trial": 4,
+      "correct_answer": "compass, map, rope, shield",
+      "raw_response": "compass, map, rope, shield",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:gpt-4o",
+      "domain": "inventory",
+      "k_operations": 3,
+      "trial": 5,
+      "correct_answer": "key, ring",
+      "raw_response": "key, ring",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:gpt-4o",
+      "domain": "inventory",
+      "k_operations": 3,
+      "trial": 6,
+      "correct_answer": "rope, scroll",
+      "raw_response": "rope, scroll",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:gpt-4o",
+      "domain": "inventory",
+      "k_operations": 3,
+      "trial": 7,
+      "correct_answer": "compass, potion, shield",
+      "raw_response": "compass, potion, shield",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:gpt-4o",
+      "domain": "inventory",
+      "k_operations": 3,
+      "trial": 8,
+      "correct_answer": "map, rope, shield",
+      "raw_response": "map, rope, shield",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:gpt-4o",
+      "domain": "inventory",
+      "k_operations": 3,
+      "trial": 9,
+      "correct_answer": "ring",
+      "raw_response": "ring",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:gpt-4o",
+      "domain": "inventory",
+      "k_operations": 5,
+      "trial": 0,
+      "correct_answer": "gem, key, map, ring",
+      "raw_response": "gem, key, map, ring",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:gpt-4o",
+      "domain": "inventory",
+      "k_operations": 5,
+      "trial": 1,
+      "correct_answer": "key, rope",
+      "raw_response": "key, rope",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:gpt-4o",
+      "domain": "inventory",
+      "k_operations": 5,
+      "trial": 2,
+      "correct_answer": "gem, map, scroll, torch",
+      "raw_response": "gem, map, scroll, torch",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:gpt-4o",
+      "domain": "inventory",
+      "k_operations": 5,
+      "trial": 3,
+      "correct_answer": "gem, key",
+      "raw_response": "gem, key",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:gpt-4o",
+      "domain": "inventory",
+      "k_operations": 5,
+      "trial": 4,
+      "correct_answer": "compass, gem",
+      "raw_response": "compass, gem",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:gpt-4o",
+      "domain": "inventory",
+      "k_operations": 5,
+      "trial": 5,
+      "correct_answer": "nothing",
+      "raw_response": "nothing",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:gpt-4o",
+      "domain": "inventory",
+      "k_operations": 5,
+      "trial": 6,
+      "correct_answer": "compass, shield, torch",
+      "raw_response": "compass, shield, torch",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:gpt-4o",
+      "domain": "inventory",
+      "k_operations": 5,
+      "trial": 7,
+      "correct_answer": "compass, key, scroll",
+      "raw_response": "compass, key, scroll",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:gpt-4o",
+      "domain": "inventory",
+      "k_operations": 5,
+      "trial": 8,
+      "correct_answer": "gem, key, scroll, torch",
+      "raw_response": "gem, key, scroll, torch",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:gpt-4o",
+      "domain": "inventory",
+      "k_operations": 5,
+      "trial": 9,
+      "correct_answer": "torch",
+      "raw_response": "torch",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:gpt-4o",
+      "domain": "inventory",
+      "k_operations": 7,
+      "trial": 0,
+      "correct_answer": "compass, gem, key, ring, scroll, shield",
+      "raw_response": "compass, gem, key, ring, scroll, shield",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:gpt-4o",
+      "domain": "inventory",
+      "k_operations": 7,
+      "trial": 1,
+      "correct_answer": "compass, ring, rope",
+      "raw_response": "compass, ring, rope",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:gpt-4o",
+      "domain": "inventory",
+      "k_operations": 7,
+      "trial": 2,
+      "correct_answer": "key, potion, scroll, shield",
+      "raw_response": "key, potion, scroll, shield",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:gpt-4o",
+      "domain": "inventory",
+      "k_operations": 7,
+      "trial": 3,
+      "correct_answer": "key, potion, ring",
+      "raw_response": "key, potion, ring",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:gpt-4o",
+      "domain": "inventory",
+      "k_operations": 7,
+      "trial": 4,
+      "correct_answer": "compass, gem, torch",
+      "raw_response": "compass, gem, torch",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:gpt-4o",
+      "domain": "inventory",
+      "k_operations": 7,
+      "trial": 5,
+      "correct_answer": "map, potion",
+      "raw_response": "map, potion",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:gpt-4o",
+      "domain": "inventory",
+      "k_operations": 7,
+      "trial": 6,
+      "correct_answer": "compass, rope, torch",
+      "raw_response": "compass, rope, torch",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:gpt-4o",
+      "domain": "inventory",
+      "k_operations": 7,
+      "trial": 7,
+      "correct_answer": "gem, torch",
+      "raw_response": "gem, torch",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:gpt-4o",
+      "domain": "inventory",
+      "k_operations": 7,
+      "trial": 8,
+      "correct_answer": "gem, key, ring",
+      "raw_response": "gem, key, ring",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:gpt-4o",
+      "domain": "inventory",
+      "k_operations": 7,
+      "trial": 9,
+      "correct_answer": "gem, key, shield, torch",
+      "raw_response": "gem, key, shield, torch",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:gpt-4o-mini",
+      "domain": "permissions",
+      "k_operations": 3,
+      "trial": 0,
+      "correct_answer": "execute, read",
+      "raw_response": "read",
+      "accurate": 0
+    },
+    {
+      "model": "openrouter:gpt-4o-mini",
+      "domain": "permissions",
+      "k_operations": 3,
+      "trial": 1,
+      "correct_answer": "execute, read",
+      "raw_response": "execute, read",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:gpt-4o-mini",
+      "domain": "permissions",
+      "k_operations": 3,
+      "trial": 2,
+      "correct_answer": "read",
+      "raw_response": "read",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:gpt-4o-mini",
+      "domain": "permissions",
+      "k_operations": 3,
+      "trial": 3,
+      "correct_answer": "execute, write",
+      "raw_response": "execute, write",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:gpt-4o-mini",
+      "domain": "permissions",
+      "k_operations": 3,
+      "trial": 4,
+      "correct_answer": "read, write",
+      "raw_response": "read, write",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:gpt-4o-mini",
+      "domain": "permissions",
+      "k_operations": 3,
+      "trial": 5,
+      "correct_answer": "execute, read, write",
+      "raw_response": "execute, read, write",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:gpt-4o-mini",
+      "domain": "permissions",
+      "k_operations": 3,
+      "trial": 6,
+      "correct_answer": "no permissions",
+      "raw_response": "no permissions",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:gpt-4o-mini",
+      "domain": "permissions",
+      "k_operations": 3,
+      "trial": 7,
+      "correct_answer": "admin, execute",
+      "raw_response": "execute",
+      "accurate": 0
+    },
+    {
+      "model": "openrouter:gpt-4o-mini",
+      "domain": "permissions",
+      "k_operations": 3,
+      "trial": 8,
+      "correct_answer": "admin, read",
+      "raw_response": "admin, read",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:gpt-4o-mini",
+      "domain": "permissions",
+      "k_operations": 3,
+      "trial": 9,
+      "correct_answer": "no permissions",
+      "raw_response": "no permissions",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:gpt-4o-mini",
+      "domain": "permissions",
+      "k_operations": 5,
+      "trial": 0,
+      "correct_answer": "read",
+      "raw_response": "read",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:gpt-4o-mini",
+      "domain": "permissions",
+      "k_operations": 5,
+      "trial": 1,
+      "correct_answer": "admin, read",
+      "raw_response": "admin, read",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:gpt-4o-mini",
+      "domain": "permissions",
+      "k_operations": 5,
+      "trial": 2,
+      "correct_answer": "read",
+      "raw_response": "read",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:gpt-4o-mini",
+      "domain": "permissions",
+      "k_operations": 5,
+      "trial": 3,
+      "correct_answer": "read",
+      "raw_response": "read",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:gpt-4o-mini",
+      "domain": "permissions",
+      "k_operations": 5,
+      "trial": 4,
+      "correct_answer": "admin, execute, read",
+      "raw_response": "admin, execute, read",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:gpt-4o-mini",
+      "domain": "permissions",
+      "k_operations": 5,
+      "trial": 5,
+      "correct_answer": "no permissions",
+      "raw_response": "no permissions",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:gpt-4o-mini",
+      "domain": "permissions",
+      "k_operations": 5,
+      "trial": 6,
+      "correct_answer": "admin, write",
+      "raw_response": "admin, write",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:gpt-4o-mini",
+      "domain": "permissions",
+      "k_operations": 5,
+      "trial": 7,
+      "correct_answer": "admin, read, write",
+      "raw_response": "read, write",
+      "accurate": 0
+    },
+    {
+      "model": "openrouter:gpt-4o-mini",
+      "domain": "permissions",
+      "k_operations": 5,
+      "trial": 8,
+      "correct_answer": "execute, write",
+      "raw_response": "execute, write",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:gpt-4o-mini",
+      "domain": "permissions",
+      "k_operations": 5,
+      "trial": 9,
+      "correct_answer": "admin, execute",
+      "raw_response": "admin, execute",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:gpt-4o-mini",
+      "domain": "permissions",
+      "k_operations": 7,
+      "trial": 0,
+      "correct_answer": "admin, execute, read",
+      "raw_response": "admin, execute, read",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:gpt-4o-mini",
+      "domain": "permissions",
+      "k_operations": 7,
+      "trial": 1,
+      "correct_answer": "admin, execute",
+      "raw_response": "admin, execute",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:gpt-4o-mini",
+      "domain": "permissions",
+      "k_operations": 7,
+      "trial": 2,
+      "correct_answer": "admin",
+      "raw_response": "admin",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:gpt-4o-mini",
+      "domain": "permissions",
+      "k_operations": 7,
+      "trial": 3,
+      "correct_answer": "admin, write",
+      "raw_response": "admin, write",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:gpt-4o-mini",
+      "domain": "permissions",
+      "k_operations": 7,
+      "trial": 4,
+      "correct_answer": "execute",
+      "raw_response": "execute",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:gpt-4o-mini",
+      "domain": "permissions",
+      "k_operations": 7,
+      "trial": 5,
+      "correct_answer": "read",
+      "raw_response": "no permissions",
+      "accurate": 0
+    },
+    {
+      "model": "openrouter:gpt-4o-mini",
+      "domain": "permissions",
+      "k_operations": 7,
+      "trial": 6,
+      "correct_answer": "admin, execute, read",
+      "raw_response": "admin, execute, read",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:gpt-4o-mini",
+      "domain": "permissions",
+      "k_operations": 7,
+      "trial": 7,
+      "correct_answer": "execute, read, write",
+      "raw_response": "execute, read",
+      "accurate": 0
+    },
+    {
+      "model": "openrouter:gpt-4o-mini",
+      "domain": "permissions",
+      "k_operations": 7,
+      "trial": 8,
+      "correct_answer": "admin, execute, read",
+      "raw_response": "admin, execute, read",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:gpt-4o-mini",
+      "domain": "permissions",
+      "k_operations": 7,
+      "trial": 9,
+      "correct_answer": "admin, execute, write",
+      "raw_response": "execute, write",
+      "accurate": 0
+    },
+    {
+      "model": "openrouter:gpt-4o-mini",
+      "domain": "schedule",
+      "k_operations": 3,
+      "trial": 0,
+      "correct_answer": "3",
+      "raw_response": "3",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:gpt-4o-mini",
+      "domain": "schedule",
+      "k_operations": 3,
+      "trial": 1,
+      "correct_answer": "5",
+      "raw_response": "5",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:gpt-4o-mini",
+      "domain": "schedule",
+      "k_operations": 3,
+      "trial": 2,
+      "correct_answer": "2",
+      "raw_response": "2",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:gpt-4o-mini",
+      "domain": "schedule",
+      "k_operations": 3,
+      "trial": 3,
+      "correct_answer": "6",
+      "raw_response": "6",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:gpt-4o-mini",
+      "domain": "schedule",
+      "k_operations": 3,
+      "trial": 4,
+      "correct_answer": "4",
+      "raw_response": "4",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:gpt-4o-mini",
+      "domain": "schedule",
+      "k_operations": 3,
+      "trial": 5,
+      "correct_answer": "4",
+      "raw_response": "5",
+      "accurate": 0
+    },
+    {
+      "model": "openrouter:gpt-4o-mini",
+      "domain": "schedule",
+      "k_operations": 3,
+      "trial": 6,
+      "correct_answer": "4",
+      "raw_response": "5",
+      "accurate": 0
+    },
+    {
+      "model": "openrouter:gpt-4o-mini",
+      "domain": "schedule",
+      "k_operations": 3,
+      "trial": 7,
+      "correct_answer": "4",
+      "raw_response": "4",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:gpt-4o-mini",
+      "domain": "schedule",
+      "k_operations": 3,
+      "trial": 8,
+      "correct_answer": "6",
+      "raw_response": "6",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:gpt-4o-mini",
+      "domain": "schedule",
+      "k_operations": 3,
+      "trial": 9,
+      "correct_answer": "4",
+      "raw_response": "5",
+      "accurate": 0
+    },
+    {
+      "model": "openrouter:gpt-4o-mini",
+      "domain": "schedule",
+      "k_operations": 5,
+      "trial": 0,
+      "correct_answer": "2",
+      "raw_response": "3",
+      "accurate": 0
+    },
+    {
+      "model": "openrouter:gpt-4o-mini",
+      "domain": "schedule",
+      "k_operations": 5,
+      "trial": 1,
+      "correct_answer": "6",
+      "raw_response": "6",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:gpt-4o-mini",
+      "domain": "schedule",
+      "k_operations": 5,
+      "trial": 2,
+      "correct_answer": "8",
+      "raw_response": "7",
+      "accurate": 0
+    },
+    {
+      "model": "openrouter:gpt-4o-mini",
+      "domain": "schedule",
+      "k_operations": 5,
+      "trial": 3,
+      "correct_answer": "3",
+      "raw_response": "3",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:gpt-4o-mini",
+      "domain": "schedule",
+      "k_operations": 5,
+      "trial": 4,
+      "correct_answer": "1",
+      "raw_response": "3",
+      "accurate": 0
+    },
+    {
+      "model": "openrouter:gpt-4o-mini",
+      "domain": "schedule",
+      "k_operations": 5,
+      "trial": 5,
+      "correct_answer": "0",
+      "raw_response": "1",
+      "accurate": 0
+    },
+    {
+      "model": "openrouter:gpt-4o-mini",
+      "domain": "schedule",
+      "k_operations": 5,
+      "trial": 6,
+      "correct_answer": "0",
+      "raw_response": "3",
+      "accurate": 0
+    },
+    {
+      "model": "openrouter:gpt-4o-mini",
+      "domain": "schedule",
+      "k_operations": 5,
+      "trial": 7,
+      "correct_answer": "2",
+      "raw_response": "2",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:gpt-4o-mini",
+      "domain": "schedule",
+      "k_operations": 5,
+      "trial": 8,
+      "correct_answer": "6",
+      "raw_response": "4",
+      "accurate": 0
+    },
+    {
+      "model": "openrouter:gpt-4o-mini",
+      "domain": "schedule",
+      "k_operations": 5,
+      "trial": 9,
+      "correct_answer": "8",
+      "raw_response": "7",
+      "accurate": 0
+    },
+    {
+      "model": "openrouter:gpt-4o-mini",
+      "domain": "schedule",
+      "k_operations": 7,
+      "trial": 0,
+      "correct_answer": "0",
+      "raw_response": "2",
+      "accurate": 0
+    },
+    {
+      "model": "openrouter:gpt-4o-mini",
+      "domain": "schedule",
+      "k_operations": 7,
+      "trial": 1,
+      "correct_answer": "7",
+      "raw_response": "6",
+      "accurate": 0
+    },
+    {
+      "model": "openrouter:gpt-4o-mini",
+      "domain": "schedule",
+      "k_operations": 7,
+      "trial": 2,
+      "correct_answer": "3",
+      "raw_response": "3",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:gpt-4o-mini",
+      "domain": "schedule",
+      "k_operations": 7,
+      "trial": 3,
+      "correct_answer": "3",
+      "raw_response": "5",
+      "accurate": 0
+    },
+    {
+      "model": "openrouter:gpt-4o-mini",
+      "domain": "schedule",
+      "k_operations": 7,
+      "trial": 4,
+      "correct_answer": "3",
+      "raw_response": "3",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:gpt-4o-mini",
+      "domain": "schedule",
+      "k_operations": 7,
+      "trial": 5,
+      "correct_answer": "0",
+      "raw_response": "1",
+      "accurate": 0
+    },
+    {
+      "model": "openrouter:gpt-4o-mini",
+      "domain": "schedule",
+      "k_operations": 7,
+      "trial": 6,
+      "correct_answer": "5",
+      "raw_response": "3",
+      "accurate": 0
+    },
+    {
+      "model": "openrouter:gpt-4o-mini",
+      "domain": "schedule",
+      "k_operations": 7,
+      "trial": 7,
+      "correct_answer": "1",
+      "raw_response": "2",
+      "accurate": 0
+    },
+    {
+      "model": "openrouter:gpt-4o-mini",
+      "domain": "schedule",
+      "k_operations": 7,
+      "trial": 8,
+      "correct_answer": "3",
+      "raw_response": "3",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:gpt-4o-mini",
+      "domain": "schedule",
+      "k_operations": 7,
+      "trial": 9,
+      "correct_answer": "5",
+      "raw_response": "3",
+      "accurate": 0
+    },
+    {
+      "model": "openrouter:gpt-4o-mini",
+      "domain": "inventory",
+      "k_operations": 3,
+      "trial": 0,
+      "correct_answer": "key, potion, ring, rope, shield",
+      "raw_response": "key, potion, ring, rope, shield",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:gpt-4o-mini",
+      "domain": "inventory",
+      "k_operations": 3,
+      "trial": 1,
+      "correct_answer": "key, map",
+      "raw_response": "key, map",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:gpt-4o-mini",
+      "domain": "inventory",
+      "k_operations": 3,
+      "trial": 2,
+      "correct_answer": "key, potion, shield",
+      "raw_response": "key, potion, shield",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:gpt-4o-mini",
+      "domain": "inventory",
+      "k_operations": 3,
+      "trial": 3,
+      "correct_answer": "torch",
+      "raw_response": "torch",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:gpt-4o-mini",
+      "domain": "inventory",
+      "k_operations": 3,
+      "trial": 4,
+      "correct_answer": "compass, map, rope, shield",
+      "raw_response": "compass, map, rope, shield",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:gpt-4o-mini",
+      "domain": "inventory",
+      "k_operations": 3,
+      "trial": 5,
+      "correct_answer": "key, ring",
+      "raw_response": "key, ring",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:gpt-4o-mini",
+      "domain": "inventory",
+      "k_operations": 3,
+      "trial": 6,
+      "correct_answer": "rope, scroll",
+      "raw_response": "rope, scroll",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:gpt-4o-mini",
+      "domain": "inventory",
+      "k_operations": 3,
+      "trial": 7,
+      "correct_answer": "compass, potion, shield",
+      "raw_response": "compass, potion, shield",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:gpt-4o-mini",
+      "domain": "inventory",
+      "k_operations": 3,
+      "trial": 8,
+      "correct_answer": "map, rope, shield",
+      "raw_response": "map, rope, shield",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:gpt-4o-mini",
+      "domain": "inventory",
+      "k_operations": 3,
+      "trial": 9,
+      "correct_answer": "ring",
+      "raw_response": "ring",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:gpt-4o-mini",
+      "domain": "inventory",
+      "k_operations": 5,
+      "trial": 0,
+      "correct_answer": "gem, key, map, ring",
+      "raw_response": "gem, key, map, ring",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:gpt-4o-mini",
+      "domain": "inventory",
+      "k_operations": 5,
+      "trial": 1,
+      "correct_answer": "key, rope",
+      "raw_response": "key, rope",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:gpt-4o-mini",
+      "domain": "inventory",
+      "k_operations": 5,
+      "trial": 2,
+      "correct_answer": "gem, map, scroll, torch",
+      "raw_response": "gem, map, scroll, torch",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:gpt-4o-mini",
+      "domain": "inventory",
+      "k_operations": 5,
+      "trial": 3,
+      "correct_answer": "gem, key",
+      "raw_response": "gem, key",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:gpt-4o-mini",
+      "domain": "inventory",
+      "k_operations": 5,
+      "trial": 4,
+      "correct_answer": "compass, gem",
+      "raw_response": "compass, gem",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:gpt-4o-mini",
+      "domain": "inventory",
+      "k_operations": 5,
+      "trial": 5,
+      "correct_answer": "nothing",
+      "raw_response": "nothing",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:gpt-4o-mini",
+      "domain": "inventory",
+      "k_operations": 5,
+      "trial": 6,
+      "correct_answer": "compass, shield, torch",
+      "raw_response": "compass, shield, torch",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:gpt-4o-mini",
+      "domain": "inventory",
+      "k_operations": 5,
+      "trial": 7,
+      "correct_answer": "compass, key, scroll",
+      "raw_response": "compass, key, scroll",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:gpt-4o-mini",
+      "domain": "inventory",
+      "k_operations": 5,
+      "trial": 8,
+      "correct_answer": "gem, key, scroll, torch",
+      "raw_response": "gem, key, scroll, torch",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:gpt-4o-mini",
+      "domain": "inventory",
+      "k_operations": 5,
+      "trial": 9,
+      "correct_answer": "torch",
+      "raw_response": "torch",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:gpt-4o-mini",
+      "domain": "inventory",
+      "k_operations": 7,
+      "trial": 0,
+      "correct_answer": "compass, gem, key, ring, scroll, shield",
+      "raw_response": "compass, gem, key, ring, scroll, shield",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:gpt-4o-mini",
+      "domain": "inventory",
+      "k_operations": 7,
+      "trial": 1,
+      "correct_answer": "compass, ring, rope",
+      "raw_response": "compass, ring, rope",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:gpt-4o-mini",
+      "domain": "inventory",
+      "k_operations": 7,
+      "trial": 2,
+      "correct_answer": "key, potion, scroll, shield",
+      "raw_response": "key, potion, scroll, shield",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:gpt-4o-mini",
+      "domain": "inventory",
+      "k_operations": 7,
+      "trial": 3,
+      "correct_answer": "key, potion, ring",
+      "raw_response": "key, potion, ring",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:gpt-4o-mini",
+      "domain": "inventory",
+      "k_operations": 7,
+      "trial": 4,
+      "correct_answer": "compass, gem, torch",
+      "raw_response": "compass, gem, torch",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:gpt-4o-mini",
+      "domain": "inventory",
+      "k_operations": 7,
+      "trial": 5,
+      "correct_answer": "map, potion",
+      "raw_response": "map, potion",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:gpt-4o-mini",
+      "domain": "inventory",
+      "k_operations": 7,
+      "trial": 6,
+      "correct_answer": "compass, rope, torch",
+      "raw_response": "compass, rope, torch",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:gpt-4o-mini",
+      "domain": "inventory",
+      "k_operations": 7,
+      "trial": 7,
+      "correct_answer": "gem, torch",
+      "raw_response": "gem, torch",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:gpt-4o-mini",
+      "domain": "inventory",
+      "k_operations": 7,
+      "trial": 8,
+      "correct_answer": "gem, key, ring",
+      "raw_response": "gem, key, ring",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:gpt-4o-mini",
+      "domain": "inventory",
+      "k_operations": 7,
+      "trial": 9,
+      "correct_answer": "gem, key, shield, torch",
+      "raw_response": "gem, key, shield, torch",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:claude-sonnet-4",
+      "domain": "permissions",
+      "k_operations": 3,
+      "trial": 0,
+      "correct_answer": "execute, read",
+      "raw_response": "read",
+      "accurate": 0
+    },
+    {
+      "model": "openrouter:claude-sonnet-4",
+      "domain": "permissions",
+      "k_operations": 3,
+      "trial": 1,
+      "correct_answer": "execute, read",
+      "raw_response": "execute, read",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:claude-sonnet-4",
+      "domain": "permissions",
+      "k_operations": 3,
+      "trial": 2,
+      "correct_answer": "read",
+      "raw_response": "read",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:claude-sonnet-4",
+      "domain": "permissions",
+      "k_operations": 3,
+      "trial": 3,
+      "correct_answer": "execute, write",
+      "raw_response": "execute, write",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:claude-sonnet-4",
+      "domain": "permissions",
+      "k_operations": 3,
+      "trial": 4,
+      "correct_answer": "read, write",
+      "raw_response": "read, write",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:claude-sonnet-4",
+      "domain": "permissions",
+      "k_operations": 3,
+      "trial": 5,
+      "correct_answer": "execute, read, write",
+      "raw_response": "execute, read, write",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:claude-sonnet-4",
+      "domain": "permissions",
+      "k_operations": 3,
+      "trial": 6,
+      "correct_answer": "no permissions",
+      "raw_response": "no permissions",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:claude-sonnet-4",
+      "domain": "permissions",
+      "k_operations": 3,
+      "trial": 7,
+      "correct_answer": "admin, execute",
+      "raw_response": "admin, execute",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:claude-sonnet-4",
+      "domain": "permissions",
+      "k_operations": 3,
+      "trial": 8,
+      "correct_answer": "admin, read",
+      "raw_response": "admin, read",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:claude-sonnet-4",
+      "domain": "permissions",
+      "k_operations": 3,
+      "trial": 9,
+      "correct_answer": "no permissions",
+      "raw_response": "no permissions",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:claude-sonnet-4",
+      "domain": "permissions",
+      "k_operations": 5,
+      "trial": 0,
+      "correct_answer": "read",
+      "raw_response": "read",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:claude-sonnet-4",
+      "domain": "permissions",
+      "k_operations": 5,
+      "trial": 1,
+      "correct_answer": "admin, read",
+      "raw_response": "admin, read",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:claude-sonnet-4",
+      "domain": "permissions",
+      "k_operations": 5,
+      "trial": 2,
+      "correct_answer": "read",
+      "raw_response": "read",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:claude-sonnet-4",
+      "domain": "permissions",
+      "k_operations": 5,
+      "trial": 3,
+      "correct_answer": "read",
+      "raw_response": "read",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:claude-sonnet-4",
+      "domain": "permissions",
+      "k_operations": 5,
+      "trial": 4,
+      "correct_answer": "admin, execute, read",
+      "raw_response": "admin, execute, read",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:claude-sonnet-4",
+      "domain": "permissions",
+      "k_operations": 5,
+      "trial": 5,
+      "correct_answer": "no permissions",
+      "raw_response": "no permissions",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:claude-sonnet-4",
+      "domain": "permissions",
+      "k_operations": 5,
+      "trial": 6,
+      "correct_answer": "admin, write",
+      "raw_response": "admin, write",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:claude-sonnet-4",
+      "domain": "permissions",
+      "k_operations": 5,
+      "trial": 7,
+      "correct_answer": "admin, read, write",
+      "raw_response": "admin, read, write",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:claude-sonnet-4",
+      "domain": "permissions",
+      "k_operations": 5,
+      "trial": 8,
+      "correct_answer": "execute, write",
+      "raw_response": "execute, write",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:claude-sonnet-4",
+      "domain": "permissions",
+      "k_operations": 5,
+      "trial": 9,
+      "correct_answer": "admin, execute",
+      "raw_response": "admin, execute",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:claude-sonnet-4",
+      "domain": "permissions",
+      "k_operations": 7,
+      "trial": 0,
+      "correct_answer": "admin, execute, read",
+      "raw_response": "admin, execute, read",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:claude-sonnet-4",
+      "domain": "permissions",
+      "k_operations": 7,
+      "trial": 1,
+      "correct_answer": "admin, execute",
+      "raw_response": "admin, execute",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:claude-sonnet-4",
+      "domain": "permissions",
+      "k_operations": 7,
+      "trial": 2,
+      "correct_answer": "admin",
+      "raw_response": "admin",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:claude-sonnet-4",
+      "domain": "permissions",
+      "k_operations": 7,
+      "trial": 3,
+      "correct_answer": "admin, write",
+      "raw_response": "admin, write",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:claude-sonnet-4",
+      "domain": "permissions",
+      "k_operations": 7,
+      "trial": 4,
+      "correct_answer": "execute",
+      "raw_response": "execute",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:claude-sonnet-4",
+      "domain": "permissions",
+      "k_operations": 7,
+      "trial": 5,
+      "correct_answer": "read",
+      "raw_response": "read",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:claude-sonnet-4",
+      "domain": "permissions",
+      "k_operations": 7,
+      "trial": 6,
+      "correct_answer": "admin, execute, read",
+      "raw_response": "admin, execute, read",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:claude-sonnet-4",
+      "domain": "permissions",
+      "k_operations": 7,
+      "trial": 7,
+      "correct_answer": "execute, read, write",
+      "raw_response": "execute, read, write",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:claude-sonnet-4",
+      "domain": "permissions",
+      "k_operations": 7,
+      "trial": 8,
+      "correct_answer": "admin, execute, read",
+      "raw_response": "admin, execute, read",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:claude-sonnet-4",
+      "domain": "permissions",
+      "k_operations": 7,
+      "trial": 9,
+      "correct_answer": "admin, execute, write",
+      "raw_response": "admin, execute, write",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:claude-sonnet-4",
+      "domain": "schedule",
+      "k_operations": 3,
+      "trial": 0,
+      "correct_answer": "3",
+      "raw_response": "3",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:claude-sonnet-4",
+      "domain": "schedule",
+      "k_operations": 3,
+      "trial": 1,
+      "correct_answer": "5",
+      "raw_response": "6",
+      "accurate": 0
+    },
+    {
+      "model": "openrouter:claude-sonnet-4",
+      "domain": "schedule",
+      "k_operations": 3,
+      "trial": 2,
+      "correct_answer": "2",
+      "raw_response": "2",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:claude-sonnet-4",
+      "domain": "schedule",
+      "k_operations": 3,
+      "trial": 3,
+      "correct_answer": "6",
+      "raw_response": "6",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:claude-sonnet-4",
+      "domain": "schedule",
+      "k_operations": 3,
+      "trial": 4,
+      "correct_answer": "4",
+      "raw_response": "4",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:claude-sonnet-4",
+      "domain": "schedule",
+      "k_operations": 3,
+      "trial": 5,
+      "correct_answer": "4",
+      "raw_response": "4",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:claude-sonnet-4",
+      "domain": "schedule",
+      "k_operations": 3,
+      "trial": 6,
+      "correct_answer": "4",
+      "raw_response": "5",
+      "accurate": 0
+    },
+    {
+      "model": "openrouter:claude-sonnet-4",
+      "domain": "schedule",
+      "k_operations": 3,
+      "trial": 7,
+      "correct_answer": "4",
+      "raw_response": "5",
+      "accurate": 0
+    },
+    {
+      "model": "openrouter:claude-sonnet-4",
+      "domain": "schedule",
+      "k_operations": 3,
+      "trial": 8,
+      "correct_answer": "6",
+      "raw_response": "6",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:claude-sonnet-4",
+      "domain": "schedule",
+      "k_operations": 3,
+      "trial": 9,
+      "correct_answer": "4",
+      "raw_response": "5",
+      "accurate": 0
+    },
+    {
+      "model": "openrouter:claude-sonnet-4",
+      "domain": "schedule",
+      "k_operations": 5,
+      "trial": 0,
+      "correct_answer": "2",
+      "raw_response": "3",
+      "accurate": 0
+    },
+    {
+      "model": "openrouter:claude-sonnet-4",
+      "domain": "schedule",
+      "k_operations": 5,
+      "trial": 1,
+      "correct_answer": "6",
+      "raw_response": "5",
+      "accurate": 0
+    },
+    {
+      "model": "openrouter:claude-sonnet-4",
+      "domain": "schedule",
+      "k_operations": 5,
+      "trial": 2,
+      "correct_answer": "8",
+      "raw_response": "8",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:claude-sonnet-4",
+      "domain": "schedule",
+      "k_operations": 5,
+      "trial": 3,
+      "correct_answer": "3",
+      "raw_response": "4",
+      "accurate": 0
+    },
+    {
+      "model": "openrouter:claude-sonnet-4",
+      "domain": "schedule",
+      "k_operations": 5,
+      "trial": 4,
+      "correct_answer": "1",
+      "raw_response": "2",
+      "accurate": 0
+    },
+    {
+      "model": "openrouter:claude-sonnet-4",
+      "domain": "schedule",
+      "k_operations": 5,
+      "trial": 5,
+      "correct_answer": "0",
+      "raw_response": "I need to track David's meetings through each change.\n\nStarting: 3 meetings\n\nChanges:\n- Design review cancelled: 3 - 1 = 2\n- Team lunch cancelled: 2 - 1 = 1  \n- Team lunch added: 1 + 1 = 2\n- Budget review cancelled: 2 - 1 = 1\n- Client call cancelled: 1 - 1 = 0\n\n0",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:claude-sonnet-4",
+      "domain": "schedule",
+      "k_operations": 5,
+      "trial": 6,
+      "correct_answer": "0",
+      "raw_response": "1",
+      "accurate": 0
+    },
+    {
+      "model": "openrouter:claude-sonnet-4",
+      "domain": "schedule",
+      "k_operations": 5,
+      "trial": 7,
+      "correct_answer": "2",
+      "raw_response": "2",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:claude-sonnet-4",
+      "domain": "schedule",
+      "k_operations": 5,
+      "trial": 8,
+      "correct_answer": "6",
+      "raw_response": "6",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:claude-sonnet-4",
+      "domain": "schedule",
+      "k_operations": 5,
+      "trial": 9,
+      "correct_answer": "8",
+      "raw_response": "8",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:claude-sonnet-4",
+      "domain": "schedule",
+      "k_operations": 7,
+      "trial": 0,
+      "correct_answer": "0",
+      "raw_response": "I need to track Emma's meetings step by step.\n\nStarting meetings: 3\n\nChanges:\n- Project sync cancelled (appears twice, but can only cancel once if it exists)\n- Budget review added (appears twice, so +2 meetings)\n- Client call cancelled\n- Design review cancelled  \n- Team lunch cancelled\n\nSince I don't know the specific names of the original 3 meetings, I'll assume the cancellations apply to existing meetings where possible.\n\nStarting: 3 meetings\n- Cancel project sync: 3 \u2192 2 (assuming it was one o",
+      "accurate": 0
+    },
+    {
+      "model": "openrouter:claude-sonnet-4",
+      "domain": "schedule",
+      "k_operations": 7,
+      "trial": 1,
+      "correct_answer": "7",
+      "raw_response": "7",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:claude-sonnet-4",
+      "domain": "schedule",
+      "k_operations": 7,
+      "trial": 2,
+      "correct_answer": "3",
+      "raw_response": "I need to track Bob's meetings step by step.\n\nStarting: 2 meetings\n\n1. Budget review added: 2 + 1 = 3 meetings\n2. Design review cancelled: 3 - 1 = 2 meetings\n3. Morning standup added: 2 + 1 = 3 meetings\n4. Design review added: 3 + 1 = 4 meetings\n5. Team lunch cancelled: 4 - 1 = 3 meetings\n6. Design review added: 3 + 1 = 4 meetings\n7. Client call cancelled: 4 - 1 = 3 meetings\n\n3",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:claude-sonnet-4",
+      "domain": "schedule",
+      "k_operations": 7,
+      "trial": 3,
+      "correct_answer": "3",
+      "raw_response": "4",
+      "accurate": 0
+    },
+    {
+      "model": "openrouter:claude-sonnet-4",
+      "domain": "schedule",
+      "k_operations": 7,
+      "trial": 4,
+      "correct_answer": "3",
+      "raw_response": "4",
+      "accurate": 0
+    },
+    {
+      "model": "openrouter:claude-sonnet-4",
+      "domain": "schedule",
+      "k_operations": 7,
+      "trial": 5,
+      "correct_answer": "0",
+      "raw_response": "1",
+      "accurate": 0
+    },
+    {
+      "model": "openrouter:claude-sonnet-4",
+      "domain": "schedule",
+      "k_operations": 7,
+      "trial": 6,
+      "correct_answer": "5",
+      "raw_response": "4",
+      "accurate": 0
+    },
+    {
+      "model": "openrouter:claude-sonnet-4",
+      "domain": "schedule",
+      "k_operations": 7,
+      "trial": 7,
+      "correct_answer": "1",
+      "raw_response": "3",
+      "accurate": 0
+    },
+    {
+      "model": "openrouter:claude-sonnet-4",
+      "domain": "schedule",
+      "k_operations": 7,
+      "trial": 8,
+      "correct_answer": "3",
+      "raw_response": "I'll track Alice's meetings step by step:\n\nStarting: 2 meetings\n\n1. Project sync cancelled: 2 meetings (no change - she didn't have this meeting)\n2. Project sync cancelled: 2 meetings (no change - she didn't have this meeting)\n3. Morning standup added: 3 meetings\n4. Morning standup added: 3 meetings (no change - she already has this meeting)\n5. Design review added: 4 meetings\n6. Morning standup cancelled: 3 meetings\n7. Design review added: 3 meetings (no change - she already has this meeting)\n\n3",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:claude-sonnet-4",
+      "domain": "schedule",
+      "k_operations": 7,
+      "trial": 9,
+      "correct_answer": "5",
+      "raw_response": "5",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:claude-sonnet-4",
+      "domain": "inventory",
+      "k_operations": 3,
+      "trial": 0,
+      "correct_answer": "key, potion, ring, rope, shield",
+      "raw_response": "key, potion, ring, rope, shield",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:claude-sonnet-4",
+      "domain": "inventory",
+      "k_operations": 3,
+      "trial": 1,
+      "correct_answer": "key, map",
+      "raw_response": "key, map",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:claude-sonnet-4",
+      "domain": "inventory",
+      "k_operations": 3,
+      "trial": 2,
+      "correct_answer": "key, potion, shield",
+      "raw_response": "key, potion, shield",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:claude-sonnet-4",
+      "domain": "inventory",
+      "k_operations": 3,
+      "trial": 3,
+      "correct_answer": "torch",
+      "raw_response": "torch",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:claude-sonnet-4",
+      "domain": "inventory",
+      "k_operations": 3,
+      "trial": 4,
+      "correct_answer": "compass, map, rope, shield",
+      "raw_response": "compass, map, rope, shield",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:claude-sonnet-4",
+      "domain": "inventory",
+      "k_operations": 3,
+      "trial": 5,
+      "correct_answer": "key, ring",
+      "raw_response": "key, ring",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:claude-sonnet-4",
+      "domain": "inventory",
+      "k_operations": 3,
+      "trial": 6,
+      "correct_answer": "rope, scroll",
+      "raw_response": "rope, scroll",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:claude-sonnet-4",
+      "domain": "inventory",
+      "k_operations": 3,
+      "trial": 7,
+      "correct_answer": "compass, potion, shield",
+      "raw_response": "compass, potion, shield",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:claude-sonnet-4",
+      "domain": "inventory",
+      "k_operations": 3,
+      "trial": 8,
+      "correct_answer": "map, rope, shield",
+      "raw_response": "map, rope, shield",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:claude-sonnet-4",
+      "domain": "inventory",
+      "k_operations": 3,
+      "trial": 9,
+      "correct_answer": "ring",
+      "raw_response": "ring",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:claude-sonnet-4",
+      "domain": "inventory",
+      "k_operations": 5,
+      "trial": 0,
+      "correct_answer": "gem, key, map, ring",
+      "raw_response": "gem, key, map, ring",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:claude-sonnet-4",
+      "domain": "inventory",
+      "k_operations": 5,
+      "trial": 1,
+      "correct_answer": "key, rope",
+      "raw_response": "key, rope",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:claude-sonnet-4",
+      "domain": "inventory",
+      "k_operations": 5,
+      "trial": 2,
+      "correct_answer": "gem, map, scroll, torch",
+      "raw_response": "gem, map, scroll, torch",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:claude-sonnet-4",
+      "domain": "inventory",
+      "k_operations": 5,
+      "trial": 3,
+      "correct_answer": "gem, key",
+      "raw_response": "gem, key",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:claude-sonnet-4",
+      "domain": "inventory",
+      "k_operations": 5,
+      "trial": 4,
+      "correct_answer": "compass, gem",
+      "raw_response": "I need to track Frank's inventory step by step.\n\nStarting inventory: compass, gem\n\n1. \"Frank drops the key\" - Frank doesn't have a key to drop, so no change\n   Current: compass, gem\n\n2. \"Frank picks up the gem\" - Frank already has the gem, so no change\n   Current: compass, gem\n\n3. \"Frank picks up the gem\" - Frank already has the gem, so no change\n   Current: compass, gem\n\n4. \"Frank picks up the compass\" - Frank already has the compass, so no change\n   Current: compass, gem\n\n5. \"Frank drops the r",
+      "accurate": 0
+    },
+    {
+      "model": "openrouter:claude-sonnet-4",
+      "domain": "inventory",
+      "k_operations": 5,
+      "trial": 5,
+      "correct_answer": "nothing",
+      "raw_response": "nothing",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:claude-sonnet-4",
+      "domain": "inventory",
+      "k_operations": 5,
+      "trial": 6,
+      "correct_answer": "compass, shield, torch",
+      "raw_response": "compass, shield, torch",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:claude-sonnet-4",
+      "domain": "inventory",
+      "k_operations": 5,
+      "trial": 7,
+      "correct_answer": "compass, key, scroll",
+      "raw_response": "compass, key, scroll",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:claude-sonnet-4",
+      "domain": "inventory",
+      "k_operations": 5,
+      "trial": 8,
+      "correct_answer": "gem, key, scroll, torch",
+      "raw_response": "gem, key, scroll, torch",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:claude-sonnet-4",
+      "domain": "inventory",
+      "k_operations": 5,
+      "trial": 9,
+      "correct_answer": "torch",
+      "raw_response": "torch",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:claude-sonnet-4",
+      "domain": "inventory",
+      "k_operations": 7,
+      "trial": 0,
+      "correct_answer": "compass, gem, key, ring, scroll, shield",
+      "raw_response": "compass, gem, key, ring, scroll, shield",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:claude-sonnet-4",
+      "domain": "inventory",
+      "k_operations": 7,
+      "trial": 1,
+      "correct_answer": "compass, ring, rope",
+      "raw_response": "compass, ring, rope",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:claude-sonnet-4",
+      "domain": "inventory",
+      "k_operations": 7,
+      "trial": 2,
+      "correct_answer": "key, potion, scroll, shield",
+      "raw_response": "key, potion, scroll, shield",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:claude-sonnet-4",
+      "domain": "inventory",
+      "k_operations": 7,
+      "trial": 3,
+      "correct_answer": "key, potion, ring",
+      "raw_response": "key, potion, ring",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:claude-sonnet-4",
+      "domain": "inventory",
+      "k_operations": 7,
+      "trial": 4,
+      "correct_answer": "compass, gem, torch",
+      "raw_response": "compass, gem, torch",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:claude-sonnet-4",
+      "domain": "inventory",
+      "k_operations": 7,
+      "trial": 5,
+      "correct_answer": "map, potion",
+      "raw_response": "map, potion",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:claude-sonnet-4",
+      "domain": "inventory",
+      "k_operations": 7,
+      "trial": 6,
+      "correct_answer": "compass, rope, torch",
+      "raw_response": "compass, rope, torch",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:claude-sonnet-4",
+      "domain": "inventory",
+      "k_operations": 7,
+      "trial": 7,
+      "correct_answer": "gem, torch",
+      "raw_response": "gem, torch",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:claude-sonnet-4",
+      "domain": "inventory",
+      "k_operations": 7,
+      "trial": 8,
+      "correct_answer": "gem, key, ring",
+      "raw_response": "gem, key, ring",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:claude-sonnet-4",
+      "domain": "inventory",
+      "k_operations": 7,
+      "trial": 9,
+      "correct_answer": "gem, key, shield, torch",
+      "raw_response": "gem, key, shield, torch",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:deepseek-v3",
+      "domain": "permissions",
+      "k_operations": 3,
+      "trial": 0,
+      "correct_answer": "execute, read",
+      "raw_response": "execute, read",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:deepseek-v3",
+      "domain": "permissions",
+      "k_operations": 3,
+      "trial": 1,
+      "correct_answer": "execute, read",
+      "raw_response": "read",
+      "accurate": 0
+    },
+    {
+      "model": "openrouter:deepseek-v3",
+      "domain": "permissions",
+      "k_operations": 3,
+      "trial": 2,
+      "correct_answer": "read",
+      "raw_response": "read",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:deepseek-v3",
+      "domain": "permissions",
+      "k_operations": 3,
+      "trial": 3,
+      "correct_answer": "execute, write",
+      "raw_response": "execute, write",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:deepseek-v3",
+      "domain": "permissions",
+      "k_operations": 3,
+      "trial": 4,
+      "correct_answer": "read, write",
+      "raw_response": "execute, read, write",
+      "accurate": 0
+    },
+    {
+      "model": "openrouter:deepseek-v3",
+      "domain": "permissions",
+      "k_operations": 3,
+      "trial": 5,
+      "correct_answer": "execute, read, write",
+      "raw_response": "execute, read, write",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:deepseek-v3",
+      "domain": "permissions",
+      "k_operations": 3,
+      "trial": 6,
+      "correct_answer": "no permissions",
+      "raw_response": "no permissions",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:deepseek-v3",
+      "domain": "permissions",
+      "k_operations": 3,
+      "trial": 7,
+      "correct_answer": "admin, execute",
+      "raw_response": "execute",
+      "accurate": 0
+    },
+    {
+      "model": "openrouter:deepseek-v3",
+      "domain": "permissions",
+      "k_operations": 3,
+      "trial": 8,
+      "correct_answer": "admin, read",
+      "raw_response": "admin, read",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:deepseek-v3",
+      "domain": "permissions",
+      "k_operations": 3,
+      "trial": 9,
+      "correct_answer": "no permissions",
+      "raw_response": "no permissions",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:deepseek-v3",
+      "domain": "permissions",
+      "k_operations": 5,
+      "trial": 0,
+      "correct_answer": "read",
+      "raw_response": "read",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:deepseek-v3",
+      "domain": "permissions",
+      "k_operations": 5,
+      "trial": 1,
+      "correct_answer": "admin, read",
+      "raw_response": "admin, read",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:deepseek-v3",
+      "domain": "permissions",
+      "k_operations": 5,
+      "trial": 2,
+      "correct_answer": "read",
+      "raw_response": "read",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:deepseek-v3",
+      "domain": "permissions",
+      "k_operations": 5,
+      "trial": 3,
+      "correct_answer": "read",
+      "raw_response": "read",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:deepseek-v3",
+      "domain": "permissions",
+      "k_operations": 5,
+      "trial": 4,
+      "correct_answer": "admin, execute, read",
+      "raw_response": "admin, execute, read",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:deepseek-v3",
+      "domain": "permissions",
+      "k_operations": 5,
+      "trial": 5,
+      "correct_answer": "no permissions",
+      "raw_response": "no permissions",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:deepseek-v3",
+      "domain": "permissions",
+      "k_operations": 5,
+      "trial": 6,
+      "correct_answer": "admin, write",
+      "raw_response": "admin, write",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:deepseek-v3",
+      "domain": "permissions",
+      "k_operations": 5,
+      "trial": 7,
+      "correct_answer": "admin, read, write",
+      "raw_response": "read, write",
+      "accurate": 0
+    },
+    {
+      "model": "openrouter:deepseek-v3",
+      "domain": "permissions",
+      "k_operations": 5,
+      "trial": 8,
+      "correct_answer": "execute, write",
+      "raw_response": "execute, write",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:deepseek-v3",
+      "domain": "permissions",
+      "k_operations": 5,
+      "trial": 9,
+      "correct_answer": "admin, execute",
+      "raw_response": "admin, execute",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:deepseek-v3",
+      "domain": "permissions",
+      "k_operations": 7,
+      "trial": 0,
+      "correct_answer": "admin, execute, read",
+      "raw_response": "admin, execute, read",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:deepseek-v3",
+      "domain": "permissions",
+      "k_operations": 7,
+      "trial": 1,
+      "correct_answer": "admin, execute",
+      "raw_response": "admin, execute, read",
+      "accurate": 0
+    },
+    {
+      "model": "openrouter:deepseek-v3",
+      "domain": "permissions",
+      "k_operations": 7,
+      "trial": 2,
+      "correct_answer": "admin",
+      "raw_response": "admin, execute",
+      "accurate": 0
+    },
+    {
+      "model": "openrouter:deepseek-v3",
+      "domain": "permissions",
+      "k_operations": 7,
+      "trial": 3,
+      "correct_answer": "admin, write",
+      "raw_response": "admin, write",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:deepseek-v3",
+      "domain": "permissions",
+      "k_operations": 7,
+      "trial": 4,
+      "correct_answer": "execute",
+      "raw_response": "execute",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:deepseek-v3",
+      "domain": "permissions",
+      "k_operations": 7,
+      "trial": 5,
+      "correct_answer": "read",
+      "raw_response": "read",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:deepseek-v3",
+      "domain": "permissions",
+      "k_operations": 7,
+      "trial": 6,
+      "correct_answer": "admin, execute, read",
+      "raw_response": "admin access, execute access, read access",
+      "accurate": 0
+    },
+    {
+      "model": "openrouter:deepseek-v3",
+      "domain": "permissions",
+      "k_operations": 7,
+      "trial": 7,
+      "correct_answer": "execute, read, write",
+      "raw_response": "execute, read",
+      "accurate": 0
+    },
+    {
+      "model": "openrouter:deepseek-v3",
+      "domain": "permissions",
+      "k_operations": 7,
+      "trial": 8,
+      "correct_answer": "admin, execute, read",
+      "raw_response": "admin, execute, read",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:deepseek-v3",
+      "domain": "permissions",
+      "k_operations": 7,
+      "trial": 9,
+      "correct_answer": "admin, execute, write",
+      "raw_response": "admin, execute, write",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:deepseek-v3",
+      "domain": "schedule",
+      "k_operations": 3,
+      "trial": 0,
+      "correct_answer": "3",
+      "raw_response": "3",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:deepseek-v3",
+      "domain": "schedule",
+      "k_operations": 3,
+      "trial": 1,
+      "correct_answer": "5",
+      "raw_response": "Let's track the number of meetings Alice has after each change:\n\n1. Alice starts with 4 meetings.\n2. A morning standup is added: 4 + 1 = 5\n3. A project sync is added: 5 + 1 = 6\n4. The team lunch is cancelled: 6 - 1 = 5\n\nAlice has 5 meetings now.\n\n5",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:deepseek-v3",
+      "domain": "schedule",
+      "k_operations": 3,
+      "trial": 2,
+      "correct_answer": "2",
+      "raw_response": "1",
+      "accurate": 0
+    },
+    {
+      "model": "openrouter:deepseek-v3",
+      "domain": "schedule",
+      "k_operations": 3,
+      "trial": 3,
+      "correct_answer": "6",
+      "raw_response": "5",
+      "accurate": 0
+    },
+    {
+      "model": "openrouter:deepseek-v3",
+      "domain": "schedule",
+      "k_operations": 3,
+      "trial": 4,
+      "correct_answer": "4",
+      "raw_response": "3",
+      "accurate": 0
+    },
+    {
+      "model": "openrouter:deepseek-v3",
+      "domain": "schedule",
+      "k_operations": 3,
+      "trial": 5,
+      "correct_answer": "4",
+      "raw_response": "4",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:deepseek-v3",
+      "domain": "schedule",
+      "k_operations": 3,
+      "trial": 6,
+      "correct_answer": "4",
+      "raw_response": "3",
+      "accurate": 0
+    },
+    {
+      "model": "openrouter:deepseek-v3",
+      "domain": "schedule",
+      "k_operations": 3,
+      "trial": 7,
+      "correct_answer": "4",
+      "raw_response": "5",
+      "accurate": 0
+    },
+    {
+      "model": "openrouter:deepseek-v3",
+      "domain": "schedule",
+      "k_operations": 3,
+      "trial": 8,
+      "correct_answer": "6",
+      "raw_response": "5",
+      "accurate": 0
+    },
+    {
+      "model": "openrouter:deepseek-v3",
+      "domain": "schedule",
+      "k_operations": 3,
+      "trial": 9,
+      "correct_answer": "4",
+      "raw_response": "5",
+      "accurate": 0
+    },
+    {
+      "model": "openrouter:deepseek-v3",
+      "domain": "schedule",
+      "k_operations": 5,
+      "trial": 0,
+      "correct_answer": "2",
+      "raw_response": "2",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:deepseek-v3",
+      "domain": "schedule",
+      "k_operations": 5,
+      "trial": 1,
+      "correct_answer": "6",
+      "raw_response": "Let's track Bob's meetings step by step:\n\n1. Starts with 5 meetings.\n2. Client call is cancelled: subtract 1 \u2192 4 meetings.\n3. Team lunch is added: add 1 \u2192 5 meetings.\n4. Morning standup is cancelled: subtract 1 \u2192 4 meetings.\n5. Team lunch is added (but it's already there, so no change) \u2192 4 meetings.\n6. Morning standup is added: add 1 \u2192 5 meetings.\n\nFinal number of meetings: 5. \n\n5",
+      "accurate": 0
+    },
+    {
+      "model": "openrouter:deepseek-v3",
+      "domain": "schedule",
+      "k_operations": 5,
+      "trial": 2,
+      "correct_answer": "8",
+      "raw_response": "8",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:deepseek-v3",
+      "domain": "schedule",
+      "k_operations": 5,
+      "trial": 3,
+      "correct_answer": "3",
+      "raw_response": "Let's track David's meetings step by step.\n\n1. Starts the day with 2 meetings.\n   - Current meetings: 2\n\n2. The project sync is cancelled from David's schedule.\n   - Assuming one of the initial 2 meetings was the project sync, now: 1\n\n3. A team lunch is added to David's schedule.\n   - Adding a meeting: 1 + 1 = 2\n\n4. The budget review is cancelled from David's schedule.\n   - Assuming one of the current 2 meetings was the budget review, now: 1\n\n5. A project sync is added to David's schedule.\n   - ",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:deepseek-v3",
+      "domain": "schedule",
+      "k_operations": 5,
+      "trial": 4,
+      "correct_answer": "1",
+      "raw_response": "2",
+      "accurate": 0
+    },
+    {
+      "model": "openrouter:deepseek-v3",
+      "domain": "schedule",
+      "k_operations": 5,
+      "trial": 5,
+      "correct_answer": "0",
+      "raw_response": "1",
+      "accurate": 0
+    },
+    {
+      "model": "openrouter:deepseek-v3",
+      "domain": "schedule",
+      "k_operations": 5,
+      "trial": 6,
+      "correct_answer": "0",
+      "raw_response": "Let's break down Alice's schedule step by step:\n\n1. Alice starts with 3 meetings.\n2. Team lunch is cancelled (but it wasn't listed initially, so this has no effect).\n3. Design review is cancelled (removes 1).\n4. Budget review is cancelled (removes 1).\n5. A team lunch is added (adds 1).\n6. Project sync is cancelled (removes 1).\n\nCalculating:\n3 (initial) - 1 (design review) - 1 (budget review) + 1 (team lunch) - 1 (project sync) = 1 meeting remaining.\n\n1",
+      "accurate": 0
+    },
+    {
+      "model": "openrouter:deepseek-v3",
+      "domain": "schedule",
+      "k_operations": 5,
+      "trial": 7,
+      "correct_answer": "2",
+      "raw_response": "1",
+      "accurate": 0
+    },
+    {
+      "model": "openrouter:deepseek-v3",
+      "domain": "schedule",
+      "k_operations": 5,
+      "trial": 8,
+      "correct_answer": "6",
+      "raw_response": "Let's track Alice's meetings step by step:\n\n1. Alice starts with 3 meetings.\n2. Morning standup is cancelled (so now she has 2 meetings).\n3. Design review is added (now 3 meetings).\n4. Budget review is added (now 4 meetings).\n5. Budget review is added again (now 5 meetings).\n6. Morning standup is added (now 6 meetings).\n\nFinal number of meetings: 6.\n\n6",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:deepseek-v3",
+      "domain": "schedule",
+      "k_operations": 5,
+      "trial": 9,
+      "correct_answer": "8",
+      "raw_response": "Let's break this down:\n\n1. Bob starts with 5 meetings.\n2. Adds a morning standup (+1 \u2192 6)\n3. Team lunch is cancelled (-1 \u2192 5)\n4. Adds a client call (+1 \u2192 6)\n5. Adds another morning standup (+1 \u2192 7)\n6. Adds a project sync (+1 \u2192 8)\n\nThe correct answer is 8. \n\n8",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:deepseek-v3",
+      "domain": "schedule",
+      "k_operations": 7,
+      "trial": 0,
+      "correct_answer": "0",
+      "raw_response": "0",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:deepseek-v3",
+      "domain": "schedule",
+      "k_operations": 7,
+      "trial": 1,
+      "correct_answer": "7",
+      "raw_response": "8",
+      "accurate": 0
+    },
+    {
+      "model": "openrouter:deepseek-v3",
+      "domain": "schedule",
+      "k_operations": 7,
+      "trial": 2,
+      "correct_answer": "3",
+      "raw_response": "4",
+      "accurate": 0
+    },
+    {
+      "model": "openrouter:deepseek-v3",
+      "domain": "schedule",
+      "k_operations": 7,
+      "trial": 3,
+      "correct_answer": "3",
+      "raw_response": "3",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:deepseek-v3",
+      "domain": "schedule",
+      "k_operations": 7,
+      "trial": 4,
+      "correct_answer": "3",
+      "raw_response": "3",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:deepseek-v3",
+      "domain": "schedule",
+      "k_operations": 7,
+      "trial": 5,
+      "correct_answer": "0",
+      "raw_response": "0",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:deepseek-v3",
+      "domain": "schedule",
+      "k_operations": 7,
+      "trial": 6,
+      "correct_answer": "5",
+      "raw_response": "4",
+      "accurate": 0
+    },
+    {
+      "model": "openrouter:deepseek-v3",
+      "domain": "schedule",
+      "k_operations": 7,
+      "trial": 7,
+      "correct_answer": "1",
+      "raw_response": "2",
+      "accurate": 0
+    },
+    {
+      "model": "openrouter:deepseek-v3",
+      "domain": "schedule",
+      "k_operations": 7,
+      "trial": 8,
+      "correct_answer": "3",
+      "raw_response": "4",
+      "accurate": 0
+    },
+    {
+      "model": "openrouter:deepseek-v3",
+      "domain": "schedule",
+      "k_operations": 7,
+      "trial": 9,
+      "correct_answer": "5",
+      "raw_response": "Let's track Bob's meetings step by step:\n\n1. Starts with 2 meetings.\n2. Morning standup is cancelled (but since it wasn't listed before, this does nothing).\n3. Design review is added: now 3 meetings.\n4. Client call is added: now 4 meetings.\n5. Morning standup is added: now 5 meetings.\n6. Design review is cancelled: now 4 meetings.\n7. Budget review is added: now 5 meetings.\n8. Budget review is added again: now 6 meetings.\n\nFinal number: 6",
+      "accurate": 0
+    },
+    {
+      "model": "openrouter:deepseek-v3",
+      "domain": "inventory",
+      "k_operations": 3,
+      "trial": 0,
+      "correct_answer": "key, potion, ring, rope, shield",
+      "raw_response": "key, potion, ring, rope, shield",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:deepseek-v3",
+      "domain": "inventory",
+      "k_operations": 3,
+      "trial": 1,
+      "correct_answer": "key, map",
+      "raw_response": "key, map",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:deepseek-v3",
+      "domain": "inventory",
+      "k_operations": 3,
+      "trial": 2,
+      "correct_answer": "key, potion, shield",
+      "raw_response": "key, shield",
+      "accurate": 0
+    },
+    {
+      "model": "openrouter:deepseek-v3",
+      "domain": "inventory",
+      "k_operations": 3,
+      "trial": 3,
+      "correct_answer": "torch",
+      "raw_response": "torch",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:deepseek-v3",
+      "domain": "inventory",
+      "k_operations": 3,
+      "trial": 4,
+      "correct_answer": "compass, map, rope, shield",
+      "raw_response": "compass, map, rope, shield",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:deepseek-v3",
+      "domain": "inventory",
+      "k_operations": 3,
+      "trial": 5,
+      "correct_answer": "key, ring",
+      "raw_response": "key, ring",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:deepseek-v3",
+      "domain": "inventory",
+      "k_operations": 3,
+      "trial": 6,
+      "correct_answer": "rope, scroll",
+      "raw_response": "rope, scroll",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:deepseek-v3",
+      "domain": "inventory",
+      "k_operations": 3,
+      "trial": 7,
+      "correct_answer": "compass, potion, shield",
+      "raw_response": "compass, potion, shield",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:deepseek-v3",
+      "domain": "inventory",
+      "k_operations": 3,
+      "trial": 8,
+      "correct_answer": "map, rope, shield",
+      "raw_response": "map, rope, shield",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:deepseek-v3",
+      "domain": "inventory",
+      "k_operations": 3,
+      "trial": 9,
+      "correct_answer": "ring",
+      "raw_response": "ring",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:deepseek-v3",
+      "domain": "inventory",
+      "k_operations": 5,
+      "trial": 0,
+      "correct_answer": "gem, key, map, ring",
+      "raw_response": "gem, key, map, ring",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:deepseek-v3",
+      "domain": "inventory",
+      "k_operations": 5,
+      "trial": 1,
+      "correct_answer": "key, rope",
+      "raw_response": "key, rope",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:deepseek-v3",
+      "domain": "inventory",
+      "k_operations": 5,
+      "trial": 2,
+      "correct_answer": "gem, map, scroll, torch",
+      "raw_response": "gem, map, scroll, torch",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:deepseek-v3",
+      "domain": "inventory",
+      "k_operations": 5,
+      "trial": 3,
+      "correct_answer": "gem, key",
+      "raw_response": "gem, key, key",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:deepseek-v3",
+      "domain": "inventory",
+      "k_operations": 5,
+      "trial": 4,
+      "correct_answer": "compass, gem",
+      "raw_response": "compass, gem",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:deepseek-v3",
+      "domain": "inventory",
+      "k_operations": 5,
+      "trial": 5,
+      "correct_answer": "nothing",
+      "raw_response": "nothing",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:deepseek-v3",
+      "domain": "inventory",
+      "k_operations": 5,
+      "trial": 6,
+      "correct_answer": "compass, shield, torch",
+      "raw_response": "compass, shield, torch",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:deepseek-v3",
+      "domain": "inventory",
+      "k_operations": 5,
+      "trial": 7,
+      "correct_answer": "compass, key, scroll",
+      "raw_response": "compass, key, scroll",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:deepseek-v3",
+      "domain": "inventory",
+      "k_operations": 5,
+      "trial": 8,
+      "correct_answer": "gem, key, scroll, torch",
+      "raw_response": "gem, key, scroll, torch",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:deepseek-v3",
+      "domain": "inventory",
+      "k_operations": 5,
+      "trial": 9,
+      "correct_answer": "torch",
+      "raw_response": "torch",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:deepseek-v3",
+      "domain": "inventory",
+      "k_operations": 7,
+      "trial": 0,
+      "correct_answer": "compass, gem, key, ring, scroll, shield",
+      "raw_response": "compass, gem, key, ring, scroll, shield",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:deepseek-v3",
+      "domain": "inventory",
+      "k_operations": 7,
+      "trial": 1,
+      "correct_answer": "compass, ring, rope",
+      "raw_response": "compass, ring, rope",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:deepseek-v3",
+      "domain": "inventory",
+      "k_operations": 7,
+      "trial": 2,
+      "correct_answer": "key, potion, scroll, shield",
+      "raw_response": "key, potion, scroll, shield",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:deepseek-v3",
+      "domain": "inventory",
+      "k_operations": 7,
+      "trial": 3,
+      "correct_answer": "key, potion, ring",
+      "raw_response": "key, potion, ring",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:deepseek-v3",
+      "domain": "inventory",
+      "k_operations": 7,
+      "trial": 4,
+      "correct_answer": "compass, gem, torch",
+      "raw_response": "compass, gem, torch",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:deepseek-v3",
+      "domain": "inventory",
+      "k_operations": 7,
+      "trial": 5,
+      "correct_answer": "map, potion",
+      "raw_response": "map, potion",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:deepseek-v3",
+      "domain": "inventory",
+      "k_operations": 7,
+      "trial": 6,
+      "correct_answer": "compass, rope, torch",
+      "raw_response": "compass, rope, torch",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:deepseek-v3",
+      "domain": "inventory",
+      "k_operations": 7,
+      "trial": 7,
+      "correct_answer": "gem, torch",
+      "raw_response": "gem, torch",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:deepseek-v3",
+      "domain": "inventory",
+      "k_operations": 7,
+      "trial": 8,
+      "correct_answer": "gem, key, ring",
+      "raw_response": "gem, key, ring",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:deepseek-v3",
+      "domain": "inventory",
+      "k_operations": 7,
+      "trial": 9,
+      "correct_answer": "gem, key, shield, torch",
+      "raw_response": "gem, key, shield, torch",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:o3-mini",
+      "domain": "permissions",
+      "k_operations": 3,
+      "trial": 0,
+      "correct_answer": "execute, read",
+      "raw_response": "execute, read",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:o3-mini",
+      "domain": "permissions",
+      "k_operations": 3,
+      "trial": 1,
+      "correct_answer": "execute, read",
+      "raw_response": "execute, read",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:o3-mini",
+      "domain": "permissions",
+      "k_operations": 3,
+      "trial": 2,
+      "correct_answer": "read",
+      "raw_response": "read",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:o3-mini",
+      "domain": "permissions",
+      "k_operations": 3,
+      "trial": 3,
+      "correct_answer": "execute, write",
+      "raw_response": "execute, write",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:o3-mini",
+      "domain": "permissions",
+      "k_operations": 3,
+      "trial": 4,
+      "correct_answer": "read, write",
+      "raw_response": "read, write",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:o3-mini",
+      "domain": "permissions",
+      "k_operations": 3,
+      "trial": 5,
+      "correct_answer": "execute, read, write",
+      "raw_response": "execute, read, write",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:o3-mini",
+      "domain": "permissions",
+      "k_operations": 3,
+      "trial": 6,
+      "correct_answer": "no permissions",
+      "raw_response": "no permissions",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:o3-mini",
+      "domain": "permissions",
+      "k_operations": 3,
+      "trial": 7,
+      "correct_answer": "admin, execute",
+      "raw_response": "admin, execute",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:o3-mini",
+      "domain": "permissions",
+      "k_operations": 3,
+      "trial": 8,
+      "correct_answer": "admin, read",
+      "raw_response": "admin, read",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:o3-mini",
+      "domain": "permissions",
+      "k_operations": 3,
+      "trial": 9,
+      "correct_answer": "no permissions",
+      "raw_response": "no permissions",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:o3-mini",
+      "domain": "permissions",
+      "k_operations": 5,
+      "trial": 0,
+      "correct_answer": "read",
+      "raw_response": "read",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:o3-mini",
+      "domain": "permissions",
+      "k_operations": 5,
+      "trial": 1,
+      "correct_answer": "admin, read",
+      "raw_response": "admin, read",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:o3-mini",
+      "domain": "permissions",
+      "k_operations": 5,
+      "trial": 2,
+      "correct_answer": "read",
+      "raw_response": "read",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:o3-mini",
+      "domain": "permissions",
+      "k_operations": 5,
+      "trial": 3,
+      "correct_answer": "read",
+      "raw_response": "read",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:o3-mini",
+      "domain": "permissions",
+      "k_operations": 5,
+      "trial": 4,
+      "correct_answer": "admin, execute, read",
+      "raw_response": "admin, execute, read",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:o3-mini",
+      "domain": "permissions",
+      "k_operations": 5,
+      "trial": 5,
+      "correct_answer": "no permissions",
+      "raw_response": "no permissions",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:o3-mini",
+      "domain": "permissions",
+      "k_operations": 5,
+      "trial": 6,
+      "correct_answer": "admin, write",
+      "raw_response": "admin, write",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:o3-mini",
+      "domain": "permissions",
+      "k_operations": 5,
+      "trial": 7,
+      "correct_answer": "admin, read, write",
+      "raw_response": "admin, read, write",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:o3-mini",
+      "domain": "permissions",
+      "k_operations": 5,
+      "trial": 8,
+      "correct_answer": "execute, write",
+      "raw_response": "execute, write",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:o3-mini",
+      "domain": "permissions",
+      "k_operations": 5,
+      "trial": 9,
+      "correct_answer": "admin, execute",
+      "raw_response": "admin, execute",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:o3-mini",
+      "domain": "permissions",
+      "k_operations": 7,
+      "trial": 0,
+      "correct_answer": "admin, execute, read",
+      "raw_response": "admin, execute, read",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:o3-mini",
+      "domain": "permissions",
+      "k_operations": 7,
+      "trial": 1,
+      "correct_answer": "admin, execute",
+      "raw_response": "admin, execute",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:o3-mini",
+      "domain": "permissions",
+      "k_operations": 7,
+      "trial": 2,
+      "correct_answer": "admin",
+      "raw_response": "admin",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:o3-mini",
+      "domain": "permissions",
+      "k_operations": 7,
+      "trial": 3,
+      "correct_answer": "admin, write",
+      "raw_response": "admin, write",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:o3-mini",
+      "domain": "permissions",
+      "k_operations": 7,
+      "trial": 4,
+      "correct_answer": "execute",
+      "raw_response": "execute",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:o3-mini",
+      "domain": "permissions",
+      "k_operations": 7,
+      "trial": 5,
+      "correct_answer": "read",
+      "raw_response": "read",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:o3-mini",
+      "domain": "permissions",
+      "k_operations": 7,
+      "trial": 6,
+      "correct_answer": "admin, execute, read",
+      "raw_response": "admin, execute, read",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:o3-mini",
+      "domain": "permissions",
+      "k_operations": 7,
+      "trial": 7,
+      "correct_answer": "execute, read, write",
+      "raw_response": "execute, read, write",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:o3-mini",
+      "domain": "permissions",
+      "k_operations": 7,
+      "trial": 8,
+      "correct_answer": "admin, execute, read",
+      "raw_response": "admin, execute, read",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:o3-mini",
+      "domain": "permissions",
+      "k_operations": 7,
+      "trial": 9,
+      "correct_answer": "admin, execute, write",
+      "raw_response": "admin, execute, write",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:o3-mini",
+      "domain": "schedule",
+      "k_operations": 3,
+      "trial": 0,
+      "correct_answer": "3",
+      "raw_response": "3",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:o3-mini",
+      "domain": "schedule",
+      "k_operations": 3,
+      "trial": 1,
+      "correct_answer": "5",
+      "raw_response": "5",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:o3-mini",
+      "domain": "schedule",
+      "k_operations": 3,
+      "trial": 2,
+      "correct_answer": "2",
+      "raw_response": "2",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:o3-mini",
+      "domain": "schedule",
+      "k_operations": 3,
+      "trial": 3,
+      "correct_answer": "6",
+      "raw_response": "6",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:o3-mini",
+      "domain": "schedule",
+      "k_operations": 3,
+      "trial": 4,
+      "correct_answer": "4",
+      "raw_response": "4",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:o3-mini",
+      "domain": "schedule",
+      "k_operations": 3,
+      "trial": 5,
+      "correct_answer": "4",
+      "raw_response": "4",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:o3-mini",
+      "domain": "schedule",
+      "k_operations": 3,
+      "trial": 6,
+      "correct_answer": "4",
+      "raw_response": "4",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:o3-mini",
+      "domain": "schedule",
+      "k_operations": 3,
+      "trial": 7,
+      "correct_answer": "4",
+      "raw_response": "4",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:o3-mini",
+      "domain": "schedule",
+      "k_operations": 3,
+      "trial": 8,
+      "correct_answer": "6",
+      "raw_response": "6",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:o3-mini",
+      "domain": "schedule",
+      "k_operations": 3,
+      "trial": 9,
+      "correct_answer": "4",
+      "raw_response": "4",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:o3-mini",
+      "domain": "schedule",
+      "k_operations": 5,
+      "trial": 0,
+      "correct_answer": "2",
+      "raw_response": "3",
+      "accurate": 0
+    },
+    {
+      "model": "openrouter:o3-mini",
+      "domain": "schedule",
+      "k_operations": 5,
+      "trial": 1,
+      "correct_answer": "6",
+      "raw_response": "6",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:o3-mini",
+      "domain": "schedule",
+      "k_operations": 5,
+      "trial": 2,
+      "correct_answer": "8",
+      "raw_response": "8",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:o3-mini",
+      "domain": "schedule",
+      "k_operations": 5,
+      "trial": 3,
+      "correct_answer": "3",
+      "raw_response": "3",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:o3-mini",
+      "domain": "schedule",
+      "k_operations": 5,
+      "trial": 4,
+      "correct_answer": "1",
+      "raw_response": "3",
+      "accurate": 0
+    },
+    {
+      "model": "openrouter:o3-mini",
+      "domain": "schedule",
+      "k_operations": 5,
+      "trial": 5,
+      "correct_answer": "0",
+      "raw_response": "1",
+      "accurate": 0
+    },
+    {
+      "model": "openrouter:o3-mini",
+      "domain": "schedule",
+      "k_operations": 5,
+      "trial": 6,
+      "correct_answer": "0",
+      "raw_response": "1",
+      "accurate": 0
+    },
+    {
+      "model": "openrouter:o3-mini",
+      "domain": "schedule",
+      "k_operations": 5,
+      "trial": 7,
+      "correct_answer": "2",
+      "raw_response": "2",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:o3-mini",
+      "domain": "schedule",
+      "k_operations": 5,
+      "trial": 8,
+      "correct_answer": "6",
+      "raw_response": "6",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:o3-mini",
+      "domain": "schedule",
+      "k_operations": 5,
+      "trial": 9,
+      "correct_answer": "8",
+      "raw_response": "8",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:o3-mini",
+      "domain": "schedule",
+      "k_operations": 7,
+      "trial": 0,
+      "correct_answer": "0",
+      "raw_response": "",
+      "accurate": 0
+    },
+    {
+      "model": "openrouter:o3-mini",
+      "domain": "schedule",
+      "k_operations": 7,
+      "trial": 1,
+      "correct_answer": "7",
+      "raw_response": "7",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:o3-mini",
+      "domain": "schedule",
+      "k_operations": 7,
+      "trial": 2,
+      "correct_answer": "3",
+      "raw_response": "6",
+      "accurate": 0
+    },
+    {
+      "model": "openrouter:o3-mini",
+      "domain": "schedule",
+      "k_operations": 7,
+      "trial": 3,
+      "correct_answer": "3",
+      "raw_response": "4",
+      "accurate": 0
+    },
+    {
+      "model": "openrouter:o3-mini",
+      "domain": "schedule",
+      "k_operations": 7,
+      "trial": 4,
+      "correct_answer": "3",
+      "raw_response": "3",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:o3-mini",
+      "domain": "schedule",
+      "k_operations": 7,
+      "trial": 5,
+      "correct_answer": "0",
+      "raw_response": "0",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:o3-mini",
+      "domain": "schedule",
+      "k_operations": 7,
+      "trial": 6,
+      "correct_answer": "5",
+      "raw_response": "5",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:o3-mini",
+      "domain": "schedule",
+      "k_operations": 7,
+      "trial": 7,
+      "correct_answer": "1",
+      "raw_response": "1",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:o3-mini",
+      "domain": "schedule",
+      "k_operations": 7,
+      "trial": 8,
+      "correct_answer": "3",
+      "raw_response": "",
+      "accurate": 0
+    },
+    {
+      "model": "openrouter:o3-mini",
+      "domain": "schedule",
+      "k_operations": 7,
+      "trial": 9,
+      "correct_answer": "5",
+      "raw_response": "5",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:o3-mini",
+      "domain": "inventory",
+      "k_operations": 3,
+      "trial": 0,
+      "correct_answer": "key, potion, ring, rope, shield",
+      "raw_response": "key, potion, ring, rope, shield",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:o3-mini",
+      "domain": "inventory",
+      "k_operations": 3,
+      "trial": 1,
+      "correct_answer": "key, map",
+      "raw_response": "key, map",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:o3-mini",
+      "domain": "inventory",
+      "k_operations": 3,
+      "trial": 2,
+      "correct_answer": "key, potion, shield",
+      "raw_response": "key, potion, shield",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:o3-mini",
+      "domain": "inventory",
+      "k_operations": 3,
+      "trial": 3,
+      "correct_answer": "torch",
+      "raw_response": "torch",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:o3-mini",
+      "domain": "inventory",
+      "k_operations": 3,
+      "trial": 4,
+      "correct_answer": "compass, map, rope, shield",
+      "raw_response": "compass, map, rope, shield",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:o3-mini",
+      "domain": "inventory",
+      "k_operations": 3,
+      "trial": 5,
+      "correct_answer": "key, ring",
+      "raw_response": "key, ring",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:o3-mini",
+      "domain": "inventory",
+      "k_operations": 3,
+      "trial": 6,
+      "correct_answer": "rope, scroll",
+      "raw_response": "rope, scroll",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:o3-mini",
+      "domain": "inventory",
+      "k_operations": 3,
+      "trial": 7,
+      "correct_answer": "compass, potion, shield",
+      "raw_response": "compass, potion, shield",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:o3-mini",
+      "domain": "inventory",
+      "k_operations": 3,
+      "trial": 8,
+      "correct_answer": "map, rope, shield",
+      "raw_response": "map, rope, shield",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:o3-mini",
+      "domain": "inventory",
+      "k_operations": 3,
+      "trial": 9,
+      "correct_answer": "ring",
+      "raw_response": "ring",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:o3-mini",
+      "domain": "inventory",
+      "k_operations": 5,
+      "trial": 0,
+      "correct_answer": "gem, key, map, ring",
+      "raw_response": "gem, key, map, ring",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:o3-mini",
+      "domain": "inventory",
+      "k_operations": 5,
+      "trial": 1,
+      "correct_answer": "key, rope",
+      "raw_response": "key, rope",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:o3-mini",
+      "domain": "inventory",
+      "k_operations": 5,
+      "trial": 2,
+      "correct_answer": "gem, map, scroll, torch",
+      "raw_response": "gem, map, scroll, torch",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:o3-mini",
+      "domain": "inventory",
+      "k_operations": 5,
+      "trial": 3,
+      "correct_answer": "gem, key",
+      "raw_response": "gem, key",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:o3-mini",
+      "domain": "inventory",
+      "k_operations": 5,
+      "trial": 4,
+      "correct_answer": "compass, gem",
+      "raw_response": "compass, gem",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:o3-mini",
+      "domain": "inventory",
+      "k_operations": 5,
+      "trial": 5,
+      "correct_answer": "nothing",
+      "raw_response": "nothing",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:o3-mini",
+      "domain": "inventory",
+      "k_operations": 5,
+      "trial": 6,
+      "correct_answer": "compass, shield, torch",
+      "raw_response": "compass, shield, torch",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:o3-mini",
+      "domain": "inventory",
+      "k_operations": 5,
+      "trial": 7,
+      "correct_answer": "compass, key, scroll",
+      "raw_response": "compass, key, scroll",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:o3-mini",
+      "domain": "inventory",
+      "k_operations": 5,
+      "trial": 8,
+      "correct_answer": "gem, key, scroll, torch",
+      "raw_response": "gem, key, scroll, torch",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:o3-mini",
+      "domain": "inventory",
+      "k_operations": 5,
+      "trial": 9,
+      "correct_answer": "torch",
+      "raw_response": "torch",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:o3-mini",
+      "domain": "inventory",
+      "k_operations": 7,
+      "trial": 0,
+      "correct_answer": "compass, gem, key, ring, scroll, shield",
+      "raw_response": "compass, gem, key, ring, scroll, shield",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:o3-mini",
+      "domain": "inventory",
+      "k_operations": 7,
+      "trial": 1,
+      "correct_answer": "compass, ring, rope",
+      "raw_response": "compass, ring, rope",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:o3-mini",
+      "domain": "inventory",
+      "k_operations": 7,
+      "trial": 2,
+      "correct_answer": "key, potion, scroll, shield",
+      "raw_response": "key, potion, scroll, shield",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:o3-mini",
+      "domain": "inventory",
+      "k_operations": 7,
+      "trial": 3,
+      "correct_answer": "key, potion, ring",
+      "raw_response": "key, potion, ring",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:o3-mini",
+      "domain": "inventory",
+      "k_operations": 7,
+      "trial": 4,
+      "correct_answer": "compass, gem, torch",
+      "raw_response": "compass, gem, torch",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:o3-mini",
+      "domain": "inventory",
+      "k_operations": 7,
+      "trial": 5,
+      "correct_answer": "map, potion",
+      "raw_response": "map, potion",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:o3-mini",
+      "domain": "inventory",
+      "k_operations": 7,
+      "trial": 6,
+      "correct_answer": "compass, rope, torch",
+      "raw_response": "compass, rope, torch",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:o3-mini",
+      "domain": "inventory",
+      "k_operations": 7,
+      "trial": 7,
+      "correct_answer": "gem, torch",
+      "raw_response": "gem, torch",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:o3-mini",
+      "domain": "inventory",
+      "k_operations": 7,
+      "trial": 8,
+      "correct_answer": "gem, key, ring",
+      "raw_response": "gem, key, ring",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:o3-mini",
+      "domain": "inventory",
+      "k_operations": 7,
+      "trial": 9,
+      "correct_answer": "gem, key, shield, torch",
+      "raw_response": "gem, key, shield, torch",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:deepseek-r1",
+      "domain": "permissions",
+      "k_operations": 3,
+      "trial": 0,
+      "correct_answer": "execute, read",
+      "raw_response": "execute, read",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:deepseek-r1",
+      "domain": "permissions",
+      "k_operations": 3,
+      "trial": 1,
+      "correct_answer": "execute, read",
+      "raw_response": "execute, read",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:deepseek-r1",
+      "domain": "permissions",
+      "k_operations": 3,
+      "trial": 2,
+      "correct_answer": "read",
+      "raw_response": "read",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:deepseek-r1",
+      "domain": "permissions",
+      "k_operations": 3,
+      "trial": 3,
+      "correct_answer": "execute, write",
+      "raw_response": "execute, write",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:deepseek-r1",
+      "domain": "permissions",
+      "k_operations": 3,
+      "trial": 4,
+      "correct_answer": "read, write",
+      "raw_response": "read, write",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:deepseek-r1",
+      "domain": "permissions",
+      "k_operations": 3,
+      "trial": 5,
+      "correct_answer": "execute, read, write",
+      "raw_response": "execute, read, write",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:deepseek-r1",
+      "domain": "permissions",
+      "k_operations": 3,
+      "trial": 6,
+      "correct_answer": "no permissions",
+      "raw_response": "no permissions",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:deepseek-r1",
+      "domain": "permissions",
+      "k_operations": 3,
+      "trial": 7,
+      "correct_answer": "admin, execute",
+      "raw_response": "execute, read",
+      "accurate": 0
+    },
+    {
+      "model": "openrouter:deepseek-r1",
+      "domain": "permissions",
+      "k_operations": 3,
+      "trial": 8,
+      "correct_answer": "admin, read",
+      "raw_response": "admin, read",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:deepseek-r1",
+      "domain": "permissions",
+      "k_operations": 3,
+      "trial": 9,
+      "correct_answer": "no permissions",
+      "raw_response": "no permissions",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:deepseek-r1",
+      "domain": "permissions",
+      "k_operations": 5,
+      "trial": 0,
+      "correct_answer": "read",
+      "raw_response": "read",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:deepseek-r1",
+      "domain": "permissions",
+      "k_operations": 5,
+      "trial": 1,
+      "correct_answer": "admin, read",
+      "raw_response": "admin, read",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:deepseek-r1",
+      "domain": "permissions",
+      "k_operations": 5,
+      "trial": 2,
+      "correct_answer": "read",
+      "raw_response": "read",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:deepseek-r1",
+      "domain": "permissions",
+      "k_operations": 5,
+      "trial": 3,
+      "correct_answer": "read",
+      "raw_response": "read",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:deepseek-r1",
+      "domain": "permissions",
+      "k_operations": 5,
+      "trial": 4,
+      "correct_answer": "admin, execute, read",
+      "raw_response": "admin, execute, read",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:deepseek-r1",
+      "domain": "permissions",
+      "k_operations": 5,
+      "trial": 5,
+      "correct_answer": "no permissions",
+      "raw_response": "no permissions",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:deepseek-r1",
+      "domain": "permissions",
+      "k_operations": 5,
+      "trial": 6,
+      "correct_answer": "admin, write",
+      "raw_response": "admin, write",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:deepseek-r1",
+      "domain": "permissions",
+      "k_operations": 5,
+      "trial": 7,
+      "correct_answer": "admin, read, write",
+      "raw_response": "read, write",
+      "accurate": 0
+    },
+    {
+      "model": "openrouter:deepseek-r1",
+      "domain": "permissions",
+      "k_operations": 5,
+      "trial": 8,
+      "correct_answer": "execute, write",
+      "raw_response": "execute,write",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:deepseek-r1",
+      "domain": "permissions",
+      "k_operations": 5,
+      "trial": 9,
+      "correct_answer": "admin, execute",
+      "raw_response": "admin, execute",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:deepseek-r1",
+      "domain": "permissions",
+      "k_operations": 7,
+      "trial": 0,
+      "correct_answer": "admin, execute, read",
+      "raw_response": "admin, execute, read",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:deepseek-r1",
+      "domain": "permissions",
+      "k_operations": 7,
+      "trial": 1,
+      "correct_answer": "admin, execute",
+      "raw_response": "admin, execute",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:deepseek-r1",
+      "domain": "permissions",
+      "k_operations": 7,
+      "trial": 2,
+      "correct_answer": "admin",
+      "raw_response": "admin",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:deepseek-r1",
+      "domain": "permissions",
+      "k_operations": 7,
+      "trial": 3,
+      "correct_answer": "admin, write",
+      "raw_response": "admin, write",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:deepseek-r1",
+      "domain": "permissions",
+      "k_operations": 7,
+      "trial": 4,
+      "correct_answer": "execute",
+      "raw_response": "execute",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:deepseek-r1",
+      "domain": "permissions",
+      "k_operations": 7,
+      "trial": 5,
+      "correct_answer": "read",
+      "raw_response": "read",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:deepseek-r1",
+      "domain": "permissions",
+      "k_operations": 7,
+      "trial": 6,
+      "correct_answer": "admin, execute, read",
+      "raw_response": "admin, execute, read",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:deepseek-r1",
+      "domain": "permissions",
+      "k_operations": 7,
+      "trial": 7,
+      "correct_answer": "execute, read, write",
+      "raw_response": "execute, read, write",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:deepseek-r1",
+      "domain": "permissions",
+      "k_operations": 7,
+      "trial": 8,
+      "correct_answer": "admin, execute, read",
+      "raw_response": "admin, execute, read",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:deepseek-r1",
+      "domain": "permissions",
+      "k_operations": 7,
+      "trial": 9,
+      "correct_answer": "admin, execute, write",
+      "raw_response": "admin, execute, write",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:deepseek-r1",
+      "domain": "schedule",
+      "k_operations": 3,
+      "trial": 0,
+      "correct_answer": "3",
+      "raw_response": "3",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:deepseek-r1",
+      "domain": "schedule",
+      "k_operations": 3,
+      "trial": 1,
+      "correct_answer": "5",
+      "raw_response": "5",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:deepseek-r1",
+      "domain": "schedule",
+      "k_operations": 3,
+      "trial": 2,
+      "correct_answer": "2",
+      "raw_response": "1",
+      "accurate": 0
+    },
+    {
+      "model": "openrouter:deepseek-r1",
+      "domain": "schedule",
+      "k_operations": 3,
+      "trial": 3,
+      "correct_answer": "6",
+      "raw_response": "5",
+      "accurate": 0
+    },
+    {
+      "model": "openrouter:deepseek-r1",
+      "domain": "schedule",
+      "k_operations": 3,
+      "trial": 4,
+      "correct_answer": "4",
+      "raw_response": "4",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:deepseek-r1",
+      "domain": "schedule",
+      "k_operations": 3,
+      "trial": 5,
+      "correct_answer": "4",
+      "raw_response": "3",
+      "accurate": 0
+    },
+    {
+      "model": "openrouter:deepseek-r1",
+      "domain": "schedule",
+      "k_operations": 3,
+      "trial": 6,
+      "correct_answer": "4",
+      "raw_response": "4",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:deepseek-r1",
+      "domain": "schedule",
+      "k_operations": 3,
+      "trial": 7,
+      "correct_answer": "4",
+      "raw_response": "5",
+      "accurate": 0
+    },
+    {
+      "model": "openrouter:deepseek-r1",
+      "domain": "schedule",
+      "k_operations": 3,
+      "trial": 8,
+      "correct_answer": "6",
+      "raw_response": "6",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:deepseek-r1",
+      "domain": "schedule",
+      "k_operations": 3,
+      "trial": 9,
+      "correct_answer": "4",
+      "raw_response": "4",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:deepseek-r1",
+      "domain": "schedule",
+      "k_operations": 5,
+      "trial": 0,
+      "correct_answer": "2",
+      "raw_response": "3",
+      "accurate": 0
+    },
+    {
+      "model": "openrouter:deepseek-r1",
+      "domain": "schedule",
+      "k_operations": 5,
+      "trial": 1,
+      "correct_answer": "6",
+      "raw_response": "6",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:deepseek-r1",
+      "domain": "schedule",
+      "k_operations": 5,
+      "trial": 2,
+      "correct_answer": "8",
+      "raw_response": "8",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:deepseek-r1",
+      "domain": "schedule",
+      "k_operations": 5,
+      "trial": 3,
+      "correct_answer": "3",
+      "raw_response": "3",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:deepseek-r1",
+      "domain": "schedule",
+      "k_operations": 5,
+      "trial": 4,
+      "correct_answer": "1",
+      "raw_response": "3",
+      "accurate": 0
+    },
+    {
+      "model": "openrouter:deepseek-r1",
+      "domain": "schedule",
+      "k_operations": 5,
+      "trial": 5,
+      "correct_answer": "0",
+      "raw_response": "1",
+      "accurate": 0
+    },
+    {
+      "model": "openrouter:deepseek-r1",
+      "domain": "schedule",
+      "k_operations": 5,
+      "trial": 6,
+      "correct_answer": "0",
+      "raw_response": "1",
+      "accurate": 0
+    },
+    {
+      "model": "openrouter:deepseek-r1",
+      "domain": "schedule",
+      "k_operations": 5,
+      "trial": 7,
+      "correct_answer": "2",
+      "raw_response": "2",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:deepseek-r1",
+      "domain": "schedule",
+      "k_operations": 5,
+      "trial": 8,
+      "correct_answer": "6",
+      "raw_response": "6",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:deepseek-r1",
+      "domain": "schedule",
+      "k_operations": 5,
+      "trial": 9,
+      "correct_answer": "8",
+      "raw_response": "8",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:deepseek-r1",
+      "domain": "schedule",
+      "k_operations": 7,
+      "trial": 0,
+      "correct_answer": "0",
+      "raw_response": "2",
+      "accurate": 0
+    },
+    {
+      "model": "openrouter:deepseek-r1",
+      "domain": "schedule",
+      "k_operations": 7,
+      "trial": 1,
+      "correct_answer": "7",
+      "raw_response": "7",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:deepseek-r1",
+      "domain": "schedule",
+      "k_operations": 7,
+      "trial": 2,
+      "correct_answer": "3",
+      "raw_response": "4",
+      "accurate": 0
+    },
+    {
+      "model": "openrouter:deepseek-r1",
+      "domain": "schedule",
+      "k_operations": 7,
+      "trial": 3,
+      "correct_answer": "3",
+      "raw_response": "4",
+      "accurate": 0
+    },
+    {
+      "model": "openrouter:deepseek-r1",
+      "domain": "schedule",
+      "k_operations": 7,
+      "trial": 4,
+      "correct_answer": "3",
+      "raw_response": "3",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:deepseek-r1",
+      "domain": "schedule",
+      "k_operations": 7,
+      "trial": 5,
+      "correct_answer": "0",
+      "raw_response": "0",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:deepseek-r1",
+      "domain": "schedule",
+      "k_operations": 7,
+      "trial": 6,
+      "correct_answer": "5",
+      "raw_response": "5",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:deepseek-r1",
+      "domain": "schedule",
+      "k_operations": 7,
+      "trial": 7,
+      "correct_answer": "1",
+      "raw_response": "1",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:deepseek-r1",
+      "domain": "schedule",
+      "k_operations": 7,
+      "trial": 8,
+      "correct_answer": "3",
+      "raw_response": "4",
+      "accurate": 0
+    },
+    {
+      "model": "openrouter:deepseek-r1",
+      "domain": "schedule",
+      "k_operations": 7,
+      "trial": 9,
+      "correct_answer": "5",
+      "raw_response": "5",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:deepseek-r1",
+      "domain": "inventory",
+      "k_operations": 3,
+      "trial": 0,
+      "correct_answer": "key, potion, ring, rope, shield",
+      "raw_response": "key, potion, ring, rope, shield",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:deepseek-r1",
+      "domain": "inventory",
+      "k_operations": 3,
+      "trial": 1,
+      "correct_answer": "key, map",
+      "raw_response": "key, map",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:deepseek-r1",
+      "domain": "inventory",
+      "k_operations": 3,
+      "trial": 2,
+      "correct_answer": "key, potion, shield",
+      "raw_response": "key, potion, shield",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:deepseek-r1",
+      "domain": "inventory",
+      "k_operations": 3,
+      "trial": 3,
+      "correct_answer": "torch",
+      "raw_response": "torch",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:deepseek-r1",
+      "domain": "inventory",
+      "k_operations": 3,
+      "trial": 4,
+      "correct_answer": "compass, map, rope, shield",
+      "raw_response": "compass, map, rope, shield",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:deepseek-r1",
+      "domain": "inventory",
+      "k_operations": 3,
+      "trial": 5,
+      "correct_answer": "key, ring",
+      "raw_response": "key, ring",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:deepseek-r1",
+      "domain": "inventory",
+      "k_operations": 3,
+      "trial": 6,
+      "correct_answer": "rope, scroll",
+      "raw_response": "rope, scroll",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:deepseek-r1",
+      "domain": "inventory",
+      "k_operations": 3,
+      "trial": 7,
+      "correct_answer": "compass, potion, shield",
+      "raw_response": "compass, potion, shield",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:deepseek-r1",
+      "domain": "inventory",
+      "k_operations": 3,
+      "trial": 8,
+      "correct_answer": "map, rope, shield",
+      "raw_response": "map, rope, shield",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:deepseek-r1",
+      "domain": "inventory",
+      "k_operations": 3,
+      "trial": 9,
+      "correct_answer": "ring",
+      "raw_response": "ring",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:deepseek-r1",
+      "domain": "inventory",
+      "k_operations": 5,
+      "trial": 0,
+      "correct_answer": "gem, key, map, ring",
+      "raw_response": "gem, key, map, ring",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:deepseek-r1",
+      "domain": "inventory",
+      "k_operations": 5,
+      "trial": 1,
+      "correct_answer": "key, rope",
+      "raw_response": "key, rope",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:deepseek-r1",
+      "domain": "inventory",
+      "k_operations": 5,
+      "trial": 2,
+      "correct_answer": "gem, map, scroll, torch",
+      "raw_response": "gem, map, scroll, torch",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:deepseek-r1",
+      "domain": "inventory",
+      "k_operations": 5,
+      "trial": 3,
+      "correct_answer": "gem, key",
+      "raw_response": "gem, key",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:deepseek-r1",
+      "domain": "inventory",
+      "k_operations": 5,
+      "trial": 4,
+      "correct_answer": "compass, gem",
+      "raw_response": "compass, gem",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:deepseek-r1",
+      "domain": "inventory",
+      "k_operations": 5,
+      "trial": 5,
+      "correct_answer": "nothing",
+      "raw_response": "nothing",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:deepseek-r1",
+      "domain": "inventory",
+      "k_operations": 5,
+      "trial": 6,
+      "correct_answer": "compass, shield, torch",
+      "raw_response": "compass, shield, torch",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:deepseek-r1",
+      "domain": "inventory",
+      "k_operations": 5,
+      "trial": 7,
+      "correct_answer": "compass, key, scroll",
+      "raw_response": "compass, key, scroll",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:deepseek-r1",
+      "domain": "inventory",
+      "k_operations": 5,
+      "trial": 8,
+      "correct_answer": "gem, key, scroll, torch",
+      "raw_response": "gem, key, scroll, torch",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:deepseek-r1",
+      "domain": "inventory",
+      "k_operations": 5,
+      "trial": 9,
+      "correct_answer": "torch",
+      "raw_response": "torch",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:deepseek-r1",
+      "domain": "inventory",
+      "k_operations": 7,
+      "trial": 0,
+      "correct_answer": "compass, gem, key, ring, scroll, shield",
+      "raw_response": "compass, gem, key, ring, scroll, shield",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:deepseek-r1",
+      "domain": "inventory",
+      "k_operations": 7,
+      "trial": 1,
+      "correct_answer": "compass, ring, rope",
+      "raw_response": "compass, ring, rope",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:deepseek-r1",
+      "domain": "inventory",
+      "k_operations": 7,
+      "trial": 2,
+      "correct_answer": "key, potion, scroll, shield",
+      "raw_response": "key, potion, scroll, scroll, shield",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:deepseek-r1",
+      "domain": "inventory",
+      "k_operations": 7,
+      "trial": 3,
+      "correct_answer": "key, potion, ring",
+      "raw_response": "key, potion, ring",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:deepseek-r1",
+      "domain": "inventory",
+      "k_operations": 7,
+      "trial": 4,
+      "correct_answer": "compass, gem, torch",
+      "raw_response": "compass, gem, torch",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:deepseek-r1",
+      "domain": "inventory",
+      "k_operations": 7,
+      "trial": 5,
+      "correct_answer": "map, potion",
+      "raw_response": "map, potion",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:deepseek-r1",
+      "domain": "inventory",
+      "k_operations": 7,
+      "trial": 6,
+      "correct_answer": "compass, rope, torch",
+      "raw_response": "compass, rope, torch",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:deepseek-r1",
+      "domain": "inventory",
+      "k_operations": 7,
+      "trial": 7,
+      "correct_answer": "gem, torch",
+      "raw_response": "gem, torch",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:deepseek-r1",
+      "domain": "inventory",
+      "k_operations": 7,
+      "trial": 8,
+      "correct_answer": "gem, key, ring",
+      "raw_response": "gem, key, ring",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:deepseek-r1",
+      "domain": "inventory",
+      "k_operations": 7,
+      "trial": 9,
+      "correct_answer": "gem, key, shield, torch",
+      "raw_response": "gem, key, shield, torch",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:gemini-2.5-flash",
+      "domain": "permissions",
+      "k_operations": 3,
+      "trial": 0,
+      "correct_answer": "execute, read",
+      "raw_response": "read",
+      "accurate": 0
+    },
+    {
+      "model": "openrouter:gemini-2.5-flash",
+      "domain": "permissions",
+      "k_operations": 3,
+      "trial": 1,
+      "correct_answer": "execute, read",
+      "raw_response": "execute, read",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:gemini-2.5-flash",
+      "domain": "permissions",
+      "k_operations": 3,
+      "trial": 2,
+      "correct_answer": "read",
+      "raw_response": "Read",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:gemini-2.5-flash",
+      "domain": "permissions",
+      "k_operations": 3,
+      "trial": 3,
+      "correct_answer": "execute, write",
+      "raw_response": "execute, write",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:gemini-2.5-flash",
+      "domain": "permissions",
+      "k_operations": 3,
+      "trial": 4,
+      "correct_answer": "read, write",
+      "raw_response": "read, write",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:gemini-2.5-flash",
+      "domain": "permissions",
+      "k_operations": 3,
+      "trial": 5,
+      "correct_answer": "execute, read, write",
+      "raw_response": "execute, read, write",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:gemini-2.5-flash",
+      "domain": "permissions",
+      "k_operations": 3,
+      "trial": 6,
+      "correct_answer": "no permissions",
+      "raw_response": "no permissions",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:gemini-2.5-flash",
+      "domain": "permissions",
+      "k_operations": 3,
+      "trial": 7,
+      "correct_answer": "admin, execute",
+      "raw_response": "Execute",
+      "accurate": 0
+    },
+    {
+      "model": "openrouter:gemini-2.5-flash",
+      "domain": "permissions",
+      "k_operations": 3,
+      "trial": 8,
+      "correct_answer": "admin, read",
+      "raw_response": "admin, read",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:gemini-2.5-flash",
+      "domain": "permissions",
+      "k_operations": 3,
+      "trial": 9,
+      "correct_answer": "no permissions",
+      "raw_response": "no permissions",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:gemini-2.5-flash",
+      "domain": "permissions",
+      "k_operations": 5,
+      "trial": 0,
+      "correct_answer": "read",
+      "raw_response": "read",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:gemini-2.5-flash",
+      "domain": "permissions",
+      "k_operations": 5,
+      "trial": 1,
+      "correct_answer": "admin, read",
+      "raw_response": "admin,read",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:gemini-2.5-flash",
+      "domain": "permissions",
+      "k_operations": 5,
+      "trial": 2,
+      "correct_answer": "read",
+      "raw_response": "read",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:gemini-2.5-flash",
+      "domain": "permissions",
+      "k_operations": 5,
+      "trial": 3,
+      "correct_answer": "read",
+      "raw_response": "read",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:gemini-2.5-flash",
+      "domain": "permissions",
+      "k_operations": 5,
+      "trial": 4,
+      "correct_answer": "admin, execute, read",
+      "raw_response": "admin, execute, read",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:gemini-2.5-flash",
+      "domain": "permissions",
+      "k_operations": 5,
+      "trial": 5,
+      "correct_answer": "no permissions",
+      "raw_response": "no permissions",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:gemini-2.5-flash",
+      "domain": "permissions",
+      "k_operations": 5,
+      "trial": 6,
+      "correct_answer": "admin, write",
+      "raw_response": "admin, write",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:gemini-2.5-flash",
+      "domain": "permissions",
+      "k_operations": 5,
+      "trial": 7,
+      "correct_answer": "admin, read, write",
+      "raw_response": "read, write",
+      "accurate": 0
+    },
+    {
+      "model": "openrouter:gemini-2.5-flash",
+      "domain": "permissions",
+      "k_operations": 5,
+      "trial": 8,
+      "correct_answer": "execute, write",
+      "raw_response": "execute, write",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:gemini-2.5-flash",
+      "domain": "permissions",
+      "k_operations": 5,
+      "trial": 9,
+      "correct_answer": "admin, execute",
+      "raw_response": "Admin, Execute",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:gemini-2.5-flash",
+      "domain": "permissions",
+      "k_operations": 7,
+      "trial": 0,
+      "correct_answer": "admin, execute, read",
+      "raw_response": "admin, execute, read",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:gemini-2.5-flash",
+      "domain": "permissions",
+      "k_operations": 7,
+      "trial": 1,
+      "correct_answer": "admin, execute",
+      "raw_response": "Admin, Execute",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:gemini-2.5-flash",
+      "domain": "permissions",
+      "k_operations": 7,
+      "trial": 2,
+      "correct_answer": "admin",
+      "raw_response": "admin",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:gemini-2.5-flash",
+      "domain": "permissions",
+      "k_operations": 7,
+      "trial": 3,
+      "correct_answer": "admin, write",
+      "raw_response": "admin, write",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:gemini-2.5-flash",
+      "domain": "permissions",
+      "k_operations": 7,
+      "trial": 4,
+      "correct_answer": "execute",
+      "raw_response": "execute",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:gemini-2.5-flash",
+      "domain": "permissions",
+      "k_operations": 7,
+      "trial": 5,
+      "correct_answer": "read",
+      "raw_response": "no permissions",
+      "accurate": 0
+    },
+    {
+      "model": "openrouter:gemini-2.5-flash",
+      "domain": "permissions",
+      "k_operations": 7,
+      "trial": 6,
+      "correct_answer": "admin, execute, read",
+      "raw_response": "admin, execute, read",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:gemini-2.5-flash",
+      "domain": "permissions",
+      "k_operations": 7,
+      "trial": 7,
+      "correct_answer": "execute, read, write",
+      "raw_response": "execute, read",
+      "accurate": 0
+    },
+    {
+      "model": "openrouter:gemini-2.5-flash",
+      "domain": "permissions",
+      "k_operations": 7,
+      "trial": 8,
+      "correct_answer": "admin, execute, read",
+      "raw_response": "admin, execute, read",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:gemini-2.5-flash",
+      "domain": "permissions",
+      "k_operations": 7,
+      "trial": 9,
+      "correct_answer": "admin, execute, write",
+      "raw_response": "admin, execute, write",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:gemini-2.5-flash",
+      "domain": "schedule",
+      "k_operations": 3,
+      "trial": 0,
+      "correct_answer": "3",
+      "raw_response": "2",
+      "accurate": 0
+    },
+    {
+      "model": "openrouter:gemini-2.5-flash",
+      "domain": "schedule",
+      "k_operations": 3,
+      "trial": 1,
+      "correct_answer": "5",
+      "raw_response": "5",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:gemini-2.5-flash",
+      "domain": "schedule",
+      "k_operations": 3,
+      "trial": 2,
+      "correct_answer": "2",
+      "raw_response": "1",
+      "accurate": 0
+    },
+    {
+      "model": "openrouter:gemini-2.5-flash",
+      "domain": "schedule",
+      "k_operations": 3,
+      "trial": 3,
+      "correct_answer": "6",
+      "raw_response": "5",
+      "accurate": 0
+    },
+    {
+      "model": "openrouter:gemini-2.5-flash",
+      "domain": "schedule",
+      "k_operations": 3,
+      "trial": 4,
+      "correct_answer": "4",
+      "raw_response": "4",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:gemini-2.5-flash",
+      "domain": "schedule",
+      "k_operations": 3,
+      "trial": 5,
+      "correct_answer": "4",
+      "raw_response": "4",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:gemini-2.5-flash",
+      "domain": "schedule",
+      "k_operations": 3,
+      "trial": 6,
+      "correct_answer": "4",
+      "raw_response": "5",
+      "accurate": 0
+    },
+    {
+      "model": "openrouter:gemini-2.5-flash",
+      "domain": "schedule",
+      "k_operations": 3,
+      "trial": 7,
+      "correct_answer": "4",
+      "raw_response": "4",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:gemini-2.5-flash",
+      "domain": "schedule",
+      "k_operations": 3,
+      "trial": 8,
+      "correct_answer": "6",
+      "raw_response": "5",
+      "accurate": 0
+    },
+    {
+      "model": "openrouter:gemini-2.5-flash",
+      "domain": "schedule",
+      "k_operations": 3,
+      "trial": 9,
+      "correct_answer": "4",
+      "raw_response": "4",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:gemini-2.5-flash",
+      "domain": "schedule",
+      "k_operations": 5,
+      "trial": 0,
+      "correct_answer": "2",
+      "raw_response": "3",
+      "accurate": 0
+    },
+    {
+      "model": "openrouter:gemini-2.5-flash",
+      "domain": "schedule",
+      "k_operations": 5,
+      "trial": 1,
+      "correct_answer": "6",
+      "raw_response": "6",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:gemini-2.5-flash",
+      "domain": "schedule",
+      "k_operations": 5,
+      "trial": 2,
+      "correct_answer": "8",
+      "raw_response": "8",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:gemini-2.5-flash",
+      "domain": "schedule",
+      "k_operations": 5,
+      "trial": 3,
+      "correct_answer": "3",
+      "raw_response": "3",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:gemini-2.5-flash",
+      "domain": "schedule",
+      "k_operations": 5,
+      "trial": 4,
+      "correct_answer": "1",
+      "raw_response": "1",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:gemini-2.5-flash",
+      "domain": "schedule",
+      "k_operations": 5,
+      "trial": 5,
+      "correct_answer": "0",
+      "raw_response": "1",
+      "accurate": 0
+    },
+    {
+      "model": "openrouter:gemini-2.5-flash",
+      "domain": "schedule",
+      "k_operations": 5,
+      "trial": 6,
+      "correct_answer": "0",
+      "raw_response": "1",
+      "accurate": 0
+    },
+    {
+      "model": "openrouter:gemini-2.5-flash",
+      "domain": "schedule",
+      "k_operations": 5,
+      "trial": 7,
+      "correct_answer": "2",
+      "raw_response": "2",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:gemini-2.5-flash",
+      "domain": "schedule",
+      "k_operations": 5,
+      "trial": 8,
+      "correct_answer": "6",
+      "raw_response": "4",
+      "accurate": 0
+    },
+    {
+      "model": "openrouter:gemini-2.5-flash",
+      "domain": "schedule",
+      "k_operations": 5,
+      "trial": 9,
+      "correct_answer": "8",
+      "raw_response": "7",
+      "accurate": 0
+    },
+    {
+      "model": "openrouter:gemini-2.5-flash",
+      "domain": "schedule",
+      "k_operations": 7,
+      "trial": 0,
+      "correct_answer": "0",
+      "raw_response": "1",
+      "accurate": 0
+    },
+    {
+      "model": "openrouter:gemini-2.5-flash",
+      "domain": "schedule",
+      "k_operations": 7,
+      "trial": 1,
+      "correct_answer": "7",
+      "raw_response": "5",
+      "accurate": 0
+    },
+    {
+      "model": "openrouter:gemini-2.5-flash",
+      "domain": "schedule",
+      "k_operations": 7,
+      "trial": 2,
+      "correct_answer": "3",
+      "raw_response": "4",
+      "accurate": 0
+    },
+    {
+      "model": "openrouter:gemini-2.5-flash",
+      "domain": "schedule",
+      "k_operations": 7,
+      "trial": 3,
+      "correct_answer": "3",
+      "raw_response": "3",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:gemini-2.5-flash",
+      "domain": "schedule",
+      "k_operations": 7,
+      "trial": 4,
+      "correct_answer": "3",
+      "raw_response": "3",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:gemini-2.5-flash",
+      "domain": "schedule",
+      "k_operations": 7,
+      "trial": 5,
+      "correct_answer": "0",
+      "raw_response": "1",
+      "accurate": 0
+    },
+    {
+      "model": "openrouter:gemini-2.5-flash",
+      "domain": "schedule",
+      "k_operations": 7,
+      "trial": 6,
+      "correct_answer": "5",
+      "raw_response": "4",
+      "accurate": 0
+    },
+    {
+      "model": "openrouter:gemini-2.5-flash",
+      "domain": "schedule",
+      "k_operations": 7,
+      "trial": 7,
+      "correct_answer": "1",
+      "raw_response": "2",
+      "accurate": 0
+    },
+    {
+      "model": "openrouter:gemini-2.5-flash",
+      "domain": "schedule",
+      "k_operations": 7,
+      "trial": 8,
+      "correct_answer": "3",
+      "raw_response": "3",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:gemini-2.5-flash",
+      "domain": "schedule",
+      "k_operations": 7,
+      "trial": 9,
+      "correct_answer": "5",
+      "raw_response": "3",
+      "accurate": 0
+    },
+    {
+      "model": "openrouter:gemini-2.5-flash",
+      "domain": "inventory",
+      "k_operations": 3,
+      "trial": 0,
+      "correct_answer": "key, potion, ring, rope, shield",
+      "raw_response": "Key, Potion, Ring, Rope, Shield",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:gemini-2.5-flash",
+      "domain": "inventory",
+      "k_operations": 3,
+      "trial": 1,
+      "correct_answer": "key, map",
+      "raw_response": "key, map",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:gemini-2.5-flash",
+      "domain": "inventory",
+      "k_operations": 3,
+      "trial": 2,
+      "correct_answer": "key, potion, shield",
+      "raw_response": "key, potion, shield",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:gemini-2.5-flash",
+      "domain": "inventory",
+      "k_operations": 3,
+      "trial": 3,
+      "correct_answer": "torch",
+      "raw_response": "torch",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:gemini-2.5-flash",
+      "domain": "inventory",
+      "k_operations": 3,
+      "trial": 4,
+      "correct_answer": "compass, map, rope, shield",
+      "raw_response": "compass, map, rope, shield",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:gemini-2.5-flash",
+      "domain": "inventory",
+      "k_operations": 3,
+      "trial": 5,
+      "correct_answer": "key, ring",
+      "raw_response": "ring",
+      "accurate": 0
+    },
+    {
+      "model": "openrouter:gemini-2.5-flash",
+      "domain": "inventory",
+      "k_operations": 3,
+      "trial": 6,
+      "correct_answer": "rope, scroll",
+      "raw_response": "rope, scroll",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:gemini-2.5-flash",
+      "domain": "inventory",
+      "k_operations": 3,
+      "trial": 7,
+      "correct_answer": "compass, potion, shield",
+      "raw_response": "compass, potion, shield",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:gemini-2.5-flash",
+      "domain": "inventory",
+      "k_operations": 3,
+      "trial": 8,
+      "correct_answer": "map, rope, shield",
+      "raw_response": "Map, Rope, Shield",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:gemini-2.5-flash",
+      "domain": "inventory",
+      "k_operations": 3,
+      "trial": 9,
+      "correct_answer": "ring",
+      "raw_response": "ring",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:gemini-2.5-flash",
+      "domain": "inventory",
+      "k_operations": 5,
+      "trial": 0,
+      "correct_answer": "gem, key, map, ring",
+      "raw_response": "Key, Map, Ring",
+      "accurate": 0
+    },
+    {
+      "model": "openrouter:gemini-2.5-flash",
+      "domain": "inventory",
+      "k_operations": 5,
+      "trial": 1,
+      "correct_answer": "key, rope",
+      "raw_response": "key, rope",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:gemini-2.5-flash",
+      "domain": "inventory",
+      "k_operations": 5,
+      "trial": 2,
+      "correct_answer": "gem, map, scroll, torch",
+      "raw_response": "Gem, map, scroll, torch",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:gemini-2.5-flash",
+      "domain": "inventory",
+      "k_operations": 5,
+      "trial": 3,
+      "correct_answer": "gem, key",
+      "raw_response": "Gem, Key",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:gemini-2.5-flash",
+      "domain": "inventory",
+      "k_operations": 5,
+      "trial": 4,
+      "correct_answer": "compass, gem",
+      "raw_response": "compass, gem",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:gemini-2.5-flash",
+      "domain": "inventory",
+      "k_operations": 5,
+      "trial": 5,
+      "correct_answer": "nothing",
+      "raw_response": "nothing",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:gemini-2.5-flash",
+      "domain": "inventory",
+      "k_operations": 5,
+      "trial": 6,
+      "correct_answer": "compass, shield, torch",
+      "raw_response": "compass, shield, torch",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:gemini-2.5-flash",
+      "domain": "inventory",
+      "k_operations": 5,
+      "trial": 7,
+      "correct_answer": "compass, key, scroll",
+      "raw_response": "compass, key, scroll",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:gemini-2.5-flash",
+      "domain": "inventory",
+      "k_operations": 5,
+      "trial": 8,
+      "correct_answer": "gem, key, scroll, torch",
+      "raw_response": "Gem, Key, Scroll, Torch",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:gemini-2.5-flash",
+      "domain": "inventory",
+      "k_operations": 5,
+      "trial": 9,
+      "correct_answer": "torch",
+      "raw_response": "torch",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:gemini-2.5-flash",
+      "domain": "inventory",
+      "k_operations": 7,
+      "trial": 0,
+      "correct_answer": "compass, gem, key, ring, scroll, shield",
+      "raw_response": "compass, gem, key, ring, scroll, shield",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:gemini-2.5-flash",
+      "domain": "inventory",
+      "k_operations": 7,
+      "trial": 1,
+      "correct_answer": "compass, ring, rope",
+      "raw_response": "compass, ring, rope",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:gemini-2.5-flash",
+      "domain": "inventory",
+      "k_operations": 7,
+      "trial": 2,
+      "correct_answer": "key, potion, scroll, shield",
+      "raw_response": "key, potion, shield",
+      "accurate": 0
+    },
+    {
+      "model": "openrouter:gemini-2.5-flash",
+      "domain": "inventory",
+      "k_operations": 7,
+      "trial": 3,
+      "correct_answer": "key, potion, ring",
+      "raw_response": "key, potion, ring",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:gemini-2.5-flash",
+      "domain": "inventory",
+      "k_operations": 7,
+      "trial": 4,
+      "correct_answer": "compass, gem, torch",
+      "raw_response": "compass, gem, torch",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:gemini-2.5-flash",
+      "domain": "inventory",
+      "k_operations": 7,
+      "trial": 5,
+      "correct_answer": "map, potion",
+      "raw_response": "map, potion",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:gemini-2.5-flash",
+      "domain": "inventory",
+      "k_operations": 7,
+      "trial": 6,
+      "correct_answer": "compass, rope, torch",
+      "raw_response": "Compass, Rope, Torch",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:gemini-2.5-flash",
+      "domain": "inventory",
+      "k_operations": 7,
+      "trial": 7,
+      "correct_answer": "gem, torch",
+      "raw_response": "gem, torch",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:gemini-2.5-flash",
+      "domain": "inventory",
+      "k_operations": 7,
+      "trial": 8,
+      "correct_answer": "gem, key, ring",
+      "raw_response": "gem, key, ring",
+      "accurate": 1
+    },
+    {
+      "model": "openrouter:gemini-2.5-flash",
+      "domain": "inventory",
+      "k_operations": 7,
+      "trial": 9,
+      "correct_answer": "gem, key, shield, torch",
+      "raw_response": "gem, key, shield, torch",
+      "accurate": 1
+    }
+  ]
+}

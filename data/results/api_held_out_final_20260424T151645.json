@@ -1,0 +1,633 @@
+{
+  "results": [
+    {
+      "model": "openrouter:gemini-2.5-pro",
+      "timestamp": "2026-04-24T14:27:17.336486",
+      "wmf_am_score": 0.9833,
+      "by_depth": {
+        "3": 1.0,
+        "5": 1.0,
+        "7": 0.95
+      },
+      "n_trials": 60,
+      "wmf_elapsed_s": 524.1,
+      "agent_score": 0.8,
+      "n_correct": 8,
+      "n_tasks": 10,
+      "task_results": [
+        {
+          "task_id": "multi_step_calc",
+          "cef_dim": "WMF-AM",
+          "correct": false,
+          "final_answer": "70.0",
+          "n_steps": 14,
+          "errors": 0,
+          "elapsed_s": 33.5
+        },
+        {
+          "task_id": "entity_tracking",
+          "cef_dim": "WMF-AM",
+          "correct": true,
+          "final_answer": "'David'",
+          "n_steps": 7,
+          "errors": 0,
+          "elapsed_s": 23.0
+        },
+        {
+          "task_id": "sequential_search",
+          "cef_dim": "WMF-AM",
+          "correct": true,
+          "final_answer": "320",
+          "n_steps": 7,
+          "errors": 0,
+          "elapsed_s": 25.1
+        },
+        {
+          "task_id": "uncertain_lookup",
+          "cef_dim": "MCC-MA",
+          "correct": true,
+          "final_answer": "\"The capital of Australia is Canberra.\"",
+          "n_steps": 3,
+          "errors": 0,
+          "elapsed_s": 13.6
+        },
+        {
+          "task_id": "multi_source_conflict",
+          "cef_dim": "MCC-MA",
+          "correct": true,
+          "final_answer": "22.3",
+          "n_steps": 4,
+          "errors": 0,
+          "elapsed_s": 12.2
+        },
+        {
+          "task_id": "conversation_recall",
+          "cef_dim": "EMC",
+          "correct": false,
+          "final_answer": "No temple was mentioned in the conversation history.",
+          "n_steps": 2,
+          "errors": 0,
+          "elapsed_s": 12.2
+        },
+        {
+          "task_id": "source_attribution",
+          "cef_dim": "EMC",
+          "correct": true,
+          "final_answer": "\"paper_B\"",
+          "n_steps": 3,
+          "errors": 0,
+          "elapsed_s": 8.8
+        },
+        {
+          "task_id": "shopping_assistant",
+          "cef_dim": "GENERAL",
+          "correct": true,
+          "final_answer": "[\"mouse\", \"keyboard\"]",
+          "n_steps": 2,
+          "errors": 0,
+          "elapsed_s": 7.2
+        },
+        {
+          "task_id": "schedule_coordination",
+          "cef_dim": "GENERAL",
+          "correct": true,
+          "final_answer": "\"There is no time on Monday when Alice, Bob, and Carol are all busy.\"",
+          "n_steps": 5,
+          "errors": 1,
+          "elapsed_s": 23.2
+        },
+        {
+          "task_id": "data_pipeline",
+          "cef_dim": "GENERAL",
+          "correct": true,
+          "final_answer": "mean=20.0, max=30, sum=100",
+          "n_steps": 5,
+          "errors": 0,
+          "elapsed_s": 11.3
+        }
+      ],
+      "agent_elapsed_s": 170.2
+    },
+    {
+      "model": "openrouter:llama-4-maverick",
+      "timestamp": "2026-04-24T14:38:51.638954",
+      "wmf_am_score": 1.0,
+      "by_depth": {
+        "3": 1.0,
+        "5": 1.0,
+        "7": 1.0
+      },
+      "n_trials": 60,
+      "wmf_elapsed_s": 437.1,
+      "agent_score": 0.6,
+      "n_correct": 6,
+      "n_tasks": 10,
+      "task_results": [
+        {
+          "task_id": "multi_step_calc",
+          "cef_dim": "WMF-AM",
+          "correct": false,
+          "final_answer": "70",
+          "n_steps": 5,
+          "errors": 0,
+          "elapsed_s": 8.5
+        },
+        {
+          "task_id": "entity_tracking",
+          "cef_dim": "WMF-AM",
+          "correct": false,
+          "final_answer": "\"Carol\"",
+          "n_steps": 9,
+          "errors": 0,
+          "elapsed_s": 24.6
+        },
+        {
+          "task_id": "sequential_search",
+          "cef_dim": "WMF-AM",
+          "correct": true,
+          "final_answer": "320",
+          "n_steps": 7,
+          "errors": 0,
+          "elapsed_s": 15.1
+        },
+        {
+          "task_id": "uncertain_lookup",
+          "cef_dim": "MCC-MA",
+          "correct": true,
+          "final_answer": "Canberra",
+          "n_steps": 4,
+          "errors": 0,
+          "elapsed_s": 8.5
+        },
+        {
+          "task_id": "multi_source_conflict",
+          "cef_dim": "MCC-MA",
+          "correct": false,
+          "final_answer": "25.33",
+          "n_steps": 3,
+          "errors": 0,
+          "elapsed_s": 9.0
+        },
+        {
+          "task_id": "conversation_recall",
+          "cef_dim": "EMC",
+          "correct": true,
+          "final_answer": "Senso-ji",
+          "n_steps": 2,
+          "errors": 0,
+          "elapsed_s": 3.3
+        },
+        {
+          "task_id": "source_attribution",
+          "cef_dim": "EMC",
+          "correct": true,
+          "final_answer": "paper_B",
+          "n_steps": 5,
+          "errors": 0,
+          "elapsed_s": 11.6
+        },
+        {
+          "task_id": "shopping_assistant",
+          "cef_dim": "GENERAL",
+          "correct": true,
+          "final_answer": "[\"mouse\", \"keyboard\"]",
+          "n_steps": 2,
+          "errors": 0,
+          "elapsed_s": 4.5
+        },
+        {
+          "task_id": "schedule_coordination",
+          "cef_dim": "GENERAL",
+          "correct": false,
+          "final_answer": "None",
+          "n_steps": 4,
+          "errors": 0,
+          "elapsed_s": 15.4
+        },
+        {
+          "task_id": "data_pipeline",
+          "cef_dim": "GENERAL",
+          "correct": true,
+          "final_answer": "mean=20.0, max=30, sum=100",
+          "n_steps": 5,
+          "errors": 0,
+          "elapsed_s": 9.3
+        }
+      ],
+      "agent_elapsed_s": 109.7
+    },
+    {
+      "model": "openrouter:llama-4-scout",
+      "timestamp": "2026-04-24T14:47:58.519476",
+      "wmf_am_score": 0.9,
+      "by_depth": {
+        "3": 0.9,
+        "5": 0.85,
+        "7": 0.95
+      },
+      "n_trials": 60,
+      "wmf_elapsed_s": 147.1,
+      "agent_score": 0.7,
+      "n_correct": 7,
+      "n_tasks": 10,
+      "task_results": [
+        {
+          "task_id": "multi_step_calc",
+          "cef_dim": "WMF-AM",
+          "correct": false,
+          "error": "expected string or bytes-like object, got 'NoneType'"
+        },
+        {
+          "task_id": "entity_tracking",
+          "cef_dim": "WMF-AM",
+          "correct": false,
+          "error": "expected string or bytes-like object, got 'NoneType'"
+        },
+        {
+          "task_id": "sequential_search",
+          "cef_dim": "WMF-AM",
+          "correct": true,
+          "final_answer": "320",
+          "n_steps": 7,
+          "errors": 0,
+          "elapsed_s": 6.5
+        },
+        {
+          "task_id": "uncertain_lookup",
+          "cef_dim": "MCC-MA",
+          "correct": true,
+          "final_answer": "\"Canberra\"",
+          "n_steps": 4,
+          "errors": 0,
+          "elapsed_s": 2.7
+        },
+        {
+          "task_id": "multi_source_conflict",
+          "cef_dim": "MCC-MA",
+          "correct": true,
+          "final_answer": "(22 + 24 + 21) / 3",
+          "n_steps": 4,
+          "errors": 0,
+          "elapsed_s": 3.2
+        },
+        {
+          "task_id": "conversation_recall",
+          "cef_dim": "EMC",
+          "correct": true,
+          "final_answer": "'Senso-ji temple'",
+          "n_steps": 2,
+          "errors": 0,
+          "elapsed_s": 2.2
+        },
+        {
+          "task_id": "source_attribution",
+          "cef_dim": "EMC",
+          "correct": true,
+          "final_answer": "paper_B",
+          "n_steps": 3,
+          "errors": 0,
+          "elapsed_s": 2.9
+        },
+        {
+          "task_id": "shopping_assistant",
+          "cef_dim": "GENERAL",
+          "correct": true,
+          "final_answer": "[\"mouse ($29)\", \"keyboard ($79)\"]",
+          "n_steps": 3,
+          "errors": 0,
+          "elapsed_s": 2.3
+        },
+        {
+          "task_id": "schedule_coordination",
+          "cef_dim": "GENERAL",
+          "correct": false,
+          "error": "expected string or bytes-like object, got 'NoneType'"
+        },
+        {
+          "task_id": "data_pipeline",
+          "cef_dim": "GENERAL",
+          "correct": true,
+          "final_answer": "mean=20.0, max=30, sum=100",
+          "n_steps": 5,
+          "errors": 0,
+          "elapsed_s": 4.8
+        }
+      ],
+      "agent_elapsed_s": 56.3
+    },
+    {
+      "model": "openrouter:qwen3-235b",
+      "timestamp": "2026-04-24T14:51:21.956466",
+      "wmf_am_score": 1.0,
+      "by_depth": {
+        "3": 1.0,
+        "5": 1.0,
+        "7": 1.0
+      },
+      "n_trials": 60,
+      "wmf_elapsed_s": 749.7,
+      "agent_score": 0.9,
+      "n_correct": 9,
+      "n_tasks": 10,
+      "task_results": [
+        {
+          "task_id": "multi_step_calc",
+          "cef_dim": "WMF-AM",
+          "correct": false,
+          "final_answer": "70",
+          "n_steps": 5,
+          "errors": 0,
+          "elapsed_s": 25.5
+        },
+        {
+          "task_id": "entity_tracking",
+          "cef_dim": "WMF-AM",
+          "correct": true,
+          "final_answer": "David",
+          "n_steps": 10,
+          "errors": 0,
+          "elapsed_s": 62.2
+        },
+        {
+          "task_id": "sequential_search",
+          "cef_dim": "WMF-AM",
+          "correct": true,
+          "final_answer": "320",
+          "n_steps": 7,
+          "errors": 0,
+          "elapsed_s": 38.6
+        },
+        {
+          "task_id": "uncertain_lookup",
+          "cef_dim": "MCC-MA",
+          "correct": true,
+          "final_answer": "Canberra",
+          "n_steps": 3,
+          "errors": 0,
+          "elapsed_s": 9.2
+        },
+        {
+          "task_id": "multi_source_conflict",
+          "cef_dim": "MCC-MA",
+          "correct": true,
+          "final_answer": "22.33C",
+          "n_steps": 4,
+          "errors": 0,
+          "elapsed_s": 13.0
+        },
+        {
+          "task_id": "conversation_recall",
+          "cef_dim": "EMC",
+          "correct": true,
+          "final_answer": "Senso-ji",
+          "n_steps": 2,
+          "errors": 0,
+          "elapsed_s": 7.8
+        },
+        {
+          "task_id": "source_attribution",
+          "cef_dim": "EMC",
+          "correct": true,
+          "final_answer": "paper_B",
+          "n_steps": 3,
+          "errors": 0,
+          "elapsed_s": 22.9
+        },
+        {
+          "task_id": "shopping_assistant",
+          "cef_dim": "GENERAL",
+          "correct": true,
+          "final_answer": "[mouse ($29), keyboard ($79)]",
+          "n_steps": 2,
+          "errors": 0,
+          "elapsed_s": 16.1
+        },
+        {
+          "task_id": "schedule_coordination",
+          "cef_dim": "GENERAL",
+          "correct": true,
+          "final_answer": "There is no time when Alice, Bob, and Carol are all busy on Monday",
+          "n_steps": 4,
+          "errors": 0,
+          "elapsed_s": 17.2
+        },
+        {
+          "task_id": "data_pipeline",
+          "cef_dim": "GENERAL",
+          "correct": true,
+          "final_answer": "mean=20.0, max=30, sum=100",
+          "n_steps": 5,
+          "errors": 0,
+          "elapsed_s": 95.3
+        }
+      ],
+      "agent_elapsed_s": 307.6
+    },
+    {
+      "model": "openrouter:qwen3-32b",
+      "timestamp": "2026-04-24T15:08:59.256607",
+      "wmf_am_score": 1.0,
+      "by_depth": {
+        "3": 1.0,
+        "5": 1.0,
+        "7": 1.0
+      },
+      "n_trials": 60,
+      "wmf_elapsed_s": 379.5,
+      "agent_score": 0.8,
+      "n_correct": 8,
+      "n_tasks": 10,
+      "task_results": [
+        {
+          "task_id": "multi_step_calc",
+          "cef_dim": "WMF-AM",
+          "correct": false,
+          "final_answer": "70",
+          "n_steps": 2,
+          "errors": 0,
+          "elapsed_s": 6.1
+        },
+        {
+          "task_id": "entity_tracking",
+          "cef_dim": "WMF-AM",
+          "correct": true,
+          "final_answer": "David",
+          "n_steps": 13,
+          "errors": 0,
+          "elapsed_s": 26.0
+        },
+        {
+          "task_id": "sequential_search",
+          "cef_dim": "WMF-AM",
+          "correct": true,
+          "final_answer": "320",
+          "n_steps": 7,
+          "errors": 0,
+          "elapsed_s": 13.5
+        },
+        {
+          "task_id": "uncertain_lookup",
+          "cef_dim": "MCC-MA",
+          "correct": true,
+          "final_answer": "The capital of Australia is Canberra",
+          "n_steps": 2,
+          "errors": 0,
+          "elapsed_s": 4.7
+        },
+        {
+          "task_id": "multi_source_conflict",
+          "cef_dim": "MCC-MA",
+          "correct": true,
+          "final_answer": "22.33C",
+          "n_steps": 4,
+          "errors": 0,
+          "elapsed_s": 5.6
+        },
+        {
+          "task_id": "conversation_recall",
+          "cef_dim": "EMC",
+          "correct": true,
+          "final_answer": "Senso-ji",
+          "n_steps": 2,
+          "errors": 0,
+          "elapsed_s": 2.9
+        },
+        {
+          "task_id": "source_attribution",
+          "cef_dim": "EMC",
+          "correct": false,
+          "final_answer": "None of the papers (paper_A through paper_D) could be accessed - all returned \"not found\" errors",
+          "n_steps": 5,
+          "errors": 0,
+          "elapsed_s": 8.7
+        },
+        {
+          "task_id": "shopping_assistant",
+          "cef_dim": "GENERAL",
+          "correct": true,
+          "final_answer": "[\"mouse ($29)\", \"keyboard ($79)\"]",
+          "n_steps": 2,
+          "errors": 0,
+          "elapsed_s": 4.2
+        },
+        {
+          "task_id": "schedule_coordination",
+          "cef_dim": "GENERAL",
+          "correct": true,
+          "final_answer": "There is no time when Alice, Bob, and Carol are all busy on Monday. Carol has no busy times on Monday.",
+          "n_steps": 4,
+          "errors": 0,
+          "elapsed_s": 7.5
+        },
+        {
+          "task_id": "data_pipeline",
+          "cef_dim": "GENERAL",
+          "correct": true,
+          "final_answer": "mean=20.0, max=30, sum=100",
+          "n_steps": 5,
+          "errors": 0,
+          "elapsed_s": 7.3
+        }
+      ],
+      "agent_elapsed_s": 86.6
+    }
+  ],
+  "tau_analysis": {
+    "tau_n20": 0.6261,
+    "p_n20": 0.0002,
+    "tau_combined": 0.5786,
+    "p_combined": 0.0001,
+    "n_combined": 26,
+    "tau_held_out": 0.3203,
+    "p_held_out": 0.4049,
+    "n_held_out": 6
+  },
+  "study_results": {
+    "ollama:deepseek-r1:14b": {
+      "wmf_am": 0.983,
+      "agent": 0.7
+    },
+    "ollama:qwen2.5:32b": {
+      "wmf_am": 0.65,
+      "agent": 0.9
+    },
+    "ollama:qwen2.5:14b": {
+      "wmf_am": 0.467,
+      "agent": 0.9
+    },
+    "ollama:gemma2:27b": {
+      "wmf_am": 0.45,
+      "agent": 0.8
+    },
+    "ollama:qwen2.5:7b": {
+      "wmf_am": 0.35,
+      "agent": 0.9
+    },
+    "ollama:mistral:7b": {
+      "wmf_am": 0.35,
+      "agent": 0.3
+    },
+    "ollama:llama3.1:8b": {
+      "wmf_am": 0.183,
+      "agent": 0.6
+    },
+    "ollama:phi3:14b": {
+      "wmf_am": 0.267,
+      "agent": 0.2
+    },
+    "ollama:gemma2:9b": {
+      "wmf_am": 0.4,
+      "agent": 0.9
+    },
+    "ollama:qwen2.5:3b": {
+      "wmf_am": 0.2,
+      "agent": 0.4
+    },
+    "ollama:llama3.2:3b": {
+      "wmf_am": 0.133,
+      "agent": 0.3
+    },
+    "ollama:deepseek-r1:7b": {
+      "wmf_am": 0.15,
+      "agent": 0.4
+    },
+    "ollama:mixtral:8x7b": {
+      "wmf_am": 0.3,
+      "agent": 0.4
+    },
+    "ollama:command-r:35b": {
+      "wmf_am": 0.35,
+      "agent": 0.7
+    },
+    "ollama:yi:34b": {
+      "wmf_am": 0.25,
+      "agent": 0.3
+    },
+    "ollama:gemma2:2b": {
+      "wmf_am": 0.217,
+      "agent": 0.4
+    },
+    "ollama:qwen2.5:1.5b": {
+      "wmf_am": 0.117,
+      "agent": 0.3
+    },
+    "ollama:tinyllama:1.1b": {
+      "wmf_am": 0.117,
+      "agent": 0.0
+    },
+    "ollama:llama3.2:1b": {
+      "wmf_am": 0.067,
+      "agent": 0.2
+    },
+    "ollama:qwen2.5:0.5b": {
+      "wmf_am": 0.05,
+      "agent": 0.0
+    }
+  },
+  "existing_oos": {
+    "ollama:llama3.1:70b": {
+      "wmf_am": 0.5,
+      "agent": 0.7
+    }
+  }
+}

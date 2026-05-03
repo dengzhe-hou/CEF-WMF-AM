@@ -1,0 +1,164 @@
+{
+  "description": "Cumulative logical state tracking - cross-domain validation (N=28)",
+  "n_models": 28,
+  "missing_models": [],
+  "tau_arith_logical": {
+    "tau": 0.728,
+    "p": 0.0,
+    "ci_95": [
+      0.582,
+      0.846
+    ]
+  },
+  "tau_logical_agent": {
+    "tau": 0.56,
+    "p": 7.8e-05
+  },
+  "k_degradation": {
+    "3": 0.621,
+    "5": 0.513,
+    "7": 0.431
+  },
+  "per_model": {
+    "claude-sonnet-4": {
+      "logical": 0.811,
+      "arith": 1.0,
+      "agent": 0.9
+    },
+    "command-r:35b": {
+      "logical": 0.589,
+      "arith": 0.4,
+      "agent": 0.7
+    },
+    "deepseek-r1-full": {
+      "logical": 0.844,
+      "arith": 1.0,
+      "agent": 0.5
+    },
+    "deepseek-r1:14b": {
+      "logical": 0.756,
+      "arith": 0.717,
+      "agent": 0.7
+    },
+    "deepseek-r1:7b": {
+      "logical": 0.222,
+      "arith": 0.111,
+      "agent": 0.4
+    },
+    "deepseek-v3": {
+      "logical": 0.7,
+      "arith": 0.95,
+      "agent": 0.9
+    },
+    "gemini-2.5-flash": {
+      "logical": 0.722,
+      "arith": 0.767,
+      "agent": 0.8
+    },
+    "gemma2:27b": {
+      "logical": 0.767,
+      "arith": 0.592,
+      "agent": 0.8
+    },
+    "gemma2:2b": {
+      "logical": 0.256,
+      "arith": 0.217,
+      "agent": 0.4
+    },
+    "gemma2:9b": {
+      "logical": 0.644,
+      "arith": 0.356,
+      "agent": 0.9
+    },
+    "gpt-4o": {
+      "logical": 0.767,
+      "arith": 0.8,
+      "agent": 0.9
+    },
+    "gpt-4o-mini": {
+      "logical": 0.744,
+      "arith": 0.533,
+      "agent": 0.8
+    },
+    "llama3.1:70b": {
+      "logical": 0.644,
+      "arith": 0.5,
+      "agent": 0.7
+    },
+    "llama3.1:8b": {
+      "logical": 0.533,
+      "arith": 0.158,
+      "agent": 0.6
+    },
+    "llama3.2:1b": {
+      "logical": 0.222,
+      "arith": 0.067,
+      "agent": 0.2
+    },
+    "llama3.2:3b": {
+      "logical": 0.456,
+      "arith": 0.156,
+      "agent": 0.3
+    },
+    "mistral:7b": {
+      "logical": 0.367,
+      "arith": 0.367,
+      "agent": 0.3
+    },
+    "mixtral:8x7b": {
+      "logical": 0.222,
+      "arith": 0.378,
+      "agent": 0.4
+    },
+    "o3-mini": {
+      "logical": 0.911,
+      "arith": 1.0,
+      "agent": 0.9
+    },
+    "phi3:14b": {
+      "logical": 0.433,
+      "arith": 0.422,
+      "agent": 0.2
+    },
+    "qwen2.5:0.5b": {
+      "logical": 0.167,
+      "arith": 0.05,
+      "agent": 0.0
+    },
+    "qwen2.5:1.5b": {
+      "logical": 0.233,
+      "arith": 0.117,
+      "agent": 0.3
+    },
+    "qwen2.5:14b": {
+      "logical": 0.544,
+      "arith": 0.567,
+      "agent": 0.9
+    },
+    "qwen2.5:32b": {
+      "logical": 0.633,
+      "arith": 0.7,
+      "agent": 0.9
+    },
+    "qwen2.5:3b": {
+      "logical": 0.267,
+      "arith": 0.311,
+      "agent": 0.4
+    },
+    "qwen2.5:7b": {
+      "logical": 0.456,
+      "arith": 0.408,
+      "agent": 0.9
+    },
+    "tinyllama:1.1b": {
+      "logical": 0.156,
+      "arith": 0.117,
+      "agent": 0.0
+    },
+    "yi:34b": {
+      "logical": 0.544,
+      "arith": 0.267,
+      "agent": 0.3
+    }
+  }
+}

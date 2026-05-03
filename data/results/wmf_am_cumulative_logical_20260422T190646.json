@@ -1,0 +1,829 @@
+{
+  "experiment": "wmf_am_cumulative_logical",
+  "timestamp": "20260422T190646",
+  "n_models": 2,
+  "seed": 42,
+  "depths": [
+    3,
+    5,
+    7
+  ],
+  "n_problems_per_depth_per_domain": 5,
+  "domains": [
+    "permissions",
+    "schedule",
+    "inventory"
+  ],
+  "results": [
+    {
+      "model": "ollama:deepseek-r1:7b",
+      "domain": "permissions",
+      "k_operations": 3,
+      "trial": 0,
+      "correct_answer": "execute, read",
+      "raw_response": "",
+      "accurate": 0
+    },
+    {
+      "model": "ollama:deepseek-r1:7b",
+      "domain": "permissions",
+      "k_operations": 3,
+      "trial": 1,
+      "correct_answer": "execute, read",
+      "raw_response": "no permissions",
+      "accurate": 0
+    },
+    {
+      "model": "ollama:deepseek-r1:7b",
+      "domain": "permissions",
+      "k_operations": 3,
+      "trial": 2,
+      "correct_answer": "read",
+      "raw_response": "The permissions Emma currently has are:\n\nread",
+      "accurate": 0
+    },
+    {
+      "model": "ollama:deepseek-r1:7b",
+      "domain": "permissions",
+      "k_operations": 3,
+      "trial": 3,
+      "correct_answer": "execute, write",
+      "raw_response": "The permissions Emma currently has are execute and write. Listed in alphabetical order:\n\nexecute,write",
+      "accurate": 0
+    },
+    {
+      "model": "ollama:deepseek-r1:7b",
+      "domain": "permissions",
+      "k_operations": 3,
+      "trial": 4,
+      "correct_answer": "read, write",
+      "raw_response": "The permissions David currently has are read and write.\n\nRead,Write",
+      "accurate": 0
+    },
+    {
+      "model": "ollama:deepseek-r1:7b",
+      "domain": "permissions",
+      "k_operations": 5,
+      "trial": 0,
+      "correct_answer": "read",
+      "raw_response": "no permissions",
+      "accurate": 0
+    },
+    {
+      "model": "ollama:deepseek-r1:7b",
+      "domain": "permissions",
+      "k_operations": 5,
+      "trial": 1,
+      "correct_answer": "admin, read",
+      "raw_response": "Bob's current permissions are read and write.\n\nread,write",
+      "accurate": 0
+    },
+    {
+      "model": "ollama:deepseek-r1:7b",
+      "domain": "permissions",
+      "k_operations": 5,
+      "trial": 2,
+      "correct_answer": "read",
+      "raw_response": "Carol's current permissions are: read.\n\nread",
+      "accurate": 0
+    },
+    {
+      "model": "ollama:deepseek-r1:7b",
+      "domain": "permissions",
+      "k_operations": 5,
+      "trial": 3,
+      "correct_answer": "read",
+      "raw_response": "no permissions",
+      "accurate": 0
+    },
+    {
+      "model": "ollama:deepseek-r1:7b",
+      "domain": "permissions",
+      "k_operations": 5,
+      "trial": 4,
+      "correct_answer": "admin, execute, read",
+      "raw_response": "",
+      "accurate": 0
+    },
+    {
+      "model": "ollama:deepseek-r1:7b",
+      "domain": "permissions",
+      "k_operations": 7,
+      "trial": 0,
+      "correct_answer": "admin, execute, read",
+      "raw_response": "read,execute",
+      "accurate": 0
+    },
+    {
+      "model": "ollama:deepseek-r1:7b",
+      "domain": "permissions",
+      "k_operations": 7,
+      "trial": 1,
+      "correct_answer": "admin, execute",
+      "raw_response": "admin,execute,read",
+      "accurate": 0
+    },
+    {
+      "model": "ollama:deepseek-r1:7b",
+      "domain": "permissions",
+      "k_operations": 7,
+      "trial": 2,
+      "correct_answer": "admin",
+      "raw_response": "",
+      "accurate": 0
+    },
+    {
+      "model": "ollama:deepseek-r1:7b",
+      "domain": "permissions",
+      "k_operations": 7,
+      "trial": 3,
+      "correct_answer": "admin, write",
+      "raw_response": "admin,write",
+      "accurate": 1
+    },
+    {
+      "model": "ollama:deepseek-r1:7b",
+      "domain": "permissions",
+      "k_operations": 7,
+      "trial": 4,
+      "correct_answer": "execute",
+      "raw_response": "Carol's current permissions are: execute",
+      "accurate": 0
+    },
+    {
+      "model": "ollama:deepseek-r1:7b",
+      "domain": "schedule",
+      "k_operations": 3,
+      "trial": 0,
+      "correct_answer": "3",
+      "raw_response": "Bob starts with 2 meetings. Adding a project sync increases his meetings to 3. Canceling a client call reduces it back to 2.\n\nAnswer: 2",
+      "accurate": 0
+    },
+    {
+      "model": "ollama:deepseek-r1:7b",
+      "domain": "schedule",
+      "k_operations": 3,
+      "trial": 1,
+      "correct_answer": "5",
+      "raw_response": "Alice has \\boxed{6} meetings now.",
+      "accurate": 0
+    },
+    {
+      "model": "ollama:deepseek-r1:7b",
+      "domain": "schedule",
+      "k_operations": 3,
+      "trial": 2,
+      "correct_answer": "2",
+      "raw_response": "Emma initially had 3 meetings. After canceling 2 (morning standup and design review), she is left with 1 meeting. Adding the team lunch increases her total by 1, resulting in 2 meetings.\n\nThe final number of meetings Emma has now is \\boxed{2}.",
+      "accurate": 1
+    },
+    {
+      "model": "ollama:deepseek-r1:7b",
+      "domain": "schedule",
+      "k_operations": 3,
+      "trial": 3,
+      "correct_answer": "6",
+      "raw_response": "Emma has \\boxed{6} meetings now.",
+      "accurate": 1
+    },
+    {
+      "model": "ollama:deepseek-r1:7b",
+      "domain": "schedule",
+      "k_operations": 3,
+      "trial": 4,
+      "correct_answer": "4",
+      "raw_response": "David starts with 3 meetings. Adding a budget review and a project sync adds 2 more meetings, making it 5. Then, canceling the morning standup reduces it by 1, resulting in 4 meetings.\n\nThe final number of meetings is \\boxed{4}.",
+      "accurate": 1
+    },
+    {
+      "model": "ollama:deepseek-r1:7b",
+      "domain": "schedule",
+      "k_operations": 5,
+      "trial": 0,
+      "correct_answer": "2",
+      "raw_response": "Alice now has \\boxed{2} meetings.",
+      "accurate": 1
+    },
+    {
+      "model": "ollama:deepseek-r1:7b",
+      "domain": "schedule",
+      "k_operations": 5,
+      "trial": 1,
+      "correct_answer": "6",
+      "raw_response": "The final number of meetings Bob has is 6.\n\nStep-by-Step Explanation:\n\n1. **Start with 5 meetings**.\n2. **Client call canceled**: 5 - 1 = 4 meetings.\n3. **Add team lunch**: 4 + 1 = 5 meetings.\n4. **Morning standup canceled**: 5 - 1 = 4 meetings.\n5. **Add another team lunch**: 4 + 1 = 5 meetings.\n6. **Add morning standup**: 5 + 1 = 6 meetings.\n\nFinal Answer: 6",
+      "accurate": 1
+    },
+    {
+      "model": "ollama:deepseek-r1:7b",
+      "domain": "schedule",
+      "k_operations": 5,
+      "trial": 2,
+      "correct_answer": "8",
+      "raw_response": "The initial count of meetings is 5. Three additional meetings are added: two project syncs and one design review, bringing the total to 8. One more project sync is added after lunch cancellation, resulting in a total of 9 meetings.\n\nAnswer: 9",
+      "accurate": 0
+    },
+    {
+      "model": "ollama:deepseek-r1:7b",
+      "domain": "schedule",
+      "k_operations": 5,
+      "trial": 3,
+      "correct_answer": "3",
+      "raw_response": "David now has \\boxed{2} meetings.",
+      "accurate": 0
+    },
+    {
+      "model": "ollama:deepseek-r1:7b",
+      "domain": "schedule",
+      "k_operations": 5,
+      "trial": 4,
+      "correct_answer": "1",
+      "raw_response": "Frank initially had 4 meetings. After canceling three meetings (two design reviews and one morning standup) and adding a team lunch, he is left with 2 meetings.\n\nAnswer: 2",
+      "accurate": 0
+    },
+    {
+      "model": "ollama:deepseek-r1:7b",
+      "domain": "schedule",
+      "k_operations": 7,
+      "trial": 0,
+      "correct_answer": "0",
+      "raw_response": "",
+      "accurate": 0
+    },
+    {
+      "model": "ollama:deepseek-r1:7b",
+      "domain": "schedule",
+      "k_operations": 7,
+      "trial": 1,
+      "correct_answer": "7",
+      "raw_response": "Let's break down Frank's schedule step by step:\n\n1. **Initial Meetings:**  \n   Frank starts with **4 meetings**.\n\n2. **Adding Budget Reviews:**  \n   - **First budget review added:** Total meetings = 5  \n   - **Second budget review added:** Total meetings = 6  \n\n3. **Cancelling Meetings:**  \n   - **Project sync cancelled:** Total meetings = 5  \n   - **Team lunch cancelled:** Total meetings = 4  \n\n4. **Adding New Meetings:**  \n   - **Client call added:** Total meetings = 5  \n   - **Project sync ad",
+      "accurate": 0
+    },
+    {
+      "model": "ollama:deepseek-r1:7b",
+      "domain": "schedule",
+      "k_operations": 7,
+      "trial": 2,
+      "correct_answer": "3",
+      "raw_response": "Bob has \\boxed{4} meetings now.",
+      "accurate": 0
+    },
+    {
+      "model": "ollama:deepseek-r1:7b",
+      "domain": "schedule",
+      "k_operations": 7,
+      "trial": 3,
+      "correct_answer": "3",
+      "raw_response": "Let's break down the changes step by step:\n\n1. **Start with 4 meetings.**\n\n2. **Add a client call:**  \n   \\(4 + 1 = 5\\) meetings.\n\n3. **Cancel one budget review:**  \n   \\(5 - 1 = 4\\) meetings.\n\n4. **Cancel another budget review:**  \n   \\(4 - 1 = 3\\) meetings.\n\n5. **Add another client call:**  \n   \\(3 + 1 = 4\\) meetings.\n\n6. **Cancel the project sync:**  \n   \\(4 - 1 = 3\\) meetings.\n\n**Final number of meetings:**\n\n\\(\\boxed{3}\\)",
+      "accurate": 1
+    },
+    {
+      "model": "ollama:deepseek-r1:7b",
+      "domain": "schedule",
+      "k_operations": 7,
+      "trial": 4,
+      "correct_answer": "3",
+      "raw_response": "The initial count is 2 meetings.\n\nAfter canceling two meetings (project sync and design review), it becomes 0.\n\nAdding three meetings (client call, morning standup, design review) brings it to 3.\n\nFinally, canceling the morning standup leaves her with 2 meetings.\n\nAnswer: 2",
+      "accurate": 0
+    },
+    {
+      "model": "ollama:deepseek-r1:7b",
+      "domain": "inventory",
+      "k_operations": 3,
+      "trial": 0,
+      "correct_answer": "key, potion, ring, rope, shield",
+      "raw_response": "Bob currently has key, potion, ring, rope, and shield after performing all the actions mentioned.\n\nAnswer: key,potion,ring,rope,shield",
+      "accurate": 0
+    },
+    {
+      "model": "ollama:deepseek-r1:7b",
+      "domain": "inventory",
+      "k_operations": 3,
+      "trial": 1,
+      "correct_answer": "key, map",
+      "raw_response": "The items Alice currently has are key and map, listed alphabetically as requested.\n\nKey, map",
+      "accurate": 0
+    },
+    {
+      "model": "ollama:deepseek-r1:7b",
+      "domain": "inventory",
+      "k_operations": 3,
+      "trial": 2,
+      "correct_answer": "key, potion, shield",
+      "raw_response": "The items Emma currently has are: Key, Potion, Shield.\n\nKey,Potion,Shield",
+      "accurate": 0
+    },
+    {
+      "model": "ollama:deepseek-r1:7b",
+      "domain": "inventory",
+      "k_operations": 3,
+      "trial": 3,
+      "correct_answer": "torch",
+      "raw_response": "torch",
+      "accurate": 1
+    },
+    {
+      "model": "ollama:deepseek-r1:7b",
+      "domain": "inventory",
+      "k_operations": 3,
+      "trial": 4,
+      "correct_answer": "compass, map, rope, shield",
+      "raw_response": "The items David has are compass, map, rope, and shield, listed in alphabetical order as requested.\n\ncompass, map, rope, shield",
+      "accurate": 0
+    },
+    {
+      "model": "ollama:deepseek-r1:7b",
+      "domain": "inventory",
+      "k_operations": 5,
+      "trial": 0,
+      "correct_answer": "gem, key, map, ring",
+      "raw_response": "gem,key,map,ring",
+      "accurate": 1
+    },
+    {
+      "model": "ollama:deepseek-r1:7b",
+      "domain": "inventory",
+      "k_operations": 5,
+      "trial": 1,
+      "correct_answer": "key, rope",
+      "raw_response": "key, rope",
+      "accurate": 1
+    },
+    {
+      "model": "ollama:deepseek-r1:7b",
+      "domain": "inventory",
+      "k_operations": 5,
+      "trial": 2,
+      "correct_answer": "gem, map, scroll, torch",
+      "raw_response": "The items Carol has are: gem, map, scroll, torch.\n\ngem, map, scroll, torch",
+      "accurate": 0
+    },
+    {
+      "model": "ollama:deepseek-r1:7b",
+      "domain": "inventory",
+      "k_operations": 5,
+      "trial": 3,
+      "correct_answer": "gem, key",
+      "raw_response": "The items David currently has are gem and key. Listed alphabetically: \n\ngem,key",
+      "accurate": 0
+    },
+    {
+      "model": "ollama:deepseek-r1:7b",
+      "domain": "inventory",
+      "k_operations": 5,
+      "trial": 4,
+      "correct_answer": "compass, gem",
+      "raw_response": "Frank currently has a compass and a gem.\n\ncompass,gem",
+      "accurate": 0
+    },
+    {
+      "model": "ollama:deepseek-r1:7b",
+      "domain": "inventory",
+      "k_operations": 7,
+      "trial": 0,
+      "correct_answer": "compass, gem, key, ring, scroll, shield",
+      "raw_response": "",
+      "accurate": 0
+    },
+    {
+      "model": "ollama:deepseek-r1:7b",
+      "domain": "inventory",
+      "k_operations": 7,
+      "trial": 1,
+      "correct_answer": "compass, ring, rope",
+      "raw_response": "Frank has the compass, ring, and rope.\n\ncompass,ring,rope",
+      "accurate": 0
+    },
+    {
+      "model": "ollama:deepseek-r1:7b",
+      "domain": "inventory",
+      "k_operations": 7,
+      "trial": 2,
+      "correct_answer": "key, potion, scroll, shield",
+      "raw_response": "Bob has picked up the key again after dropping it. So his current items are: key, potion, scroll, shield.\n\nThe answer is:\n\nkey, potion, shield, scroll.\n\nWait, no, alphabetical order would be key (K), potion (Po), scroll (S), shield (Sh).\n\nSo final list in alphabetical order: Key, Potion, Scroll, Shield.\n\nBut wait, the initial items were Scroll and Shield. Then he picked up Potion, dropped Compass, then dropped Key, then picked up Key again. So at the end, he has Scroll, Shield, Potion, and Key.\n",
+      "accurate": 0
+    },
+    {
+      "model": "ollama:deepseek-r1:7b",
+      "domain": "inventory",
+      "k_operations": 7,
+      "trial": 3,
+      "correct_answer": "key, potion, ring",
+      "raw_response": "",
+      "accurate": 0
+    },
+    {
+      "model": "ollama:deepseek-r1:7b",
+      "domain": "inventory",
+      "k_operations": 7,
+      "trial": 4,
+      "correct_answer": "compass, gem, torch",
+      "raw_response": "The items Carol currently has are compass, gem, and torch.\n\ncompass,gem,torch",
+      "accurate": 0
+    },
+    {
+      "model": "ollama:deepseek-r1:14b",
+      "domain": "permissions",
+      "k_operations": 3,
+      "trial": 0,
+      "correct_answer": "execute, read",
+      "raw_response": "",
+      "accurate": 0
+    },
+    {
+      "model": "ollama:deepseek-r1:14b",
+      "domain": "permissions",
+      "k_operations": 3,
+      "trial": 1,
+      "correct_answer": "execute, read",
+      "raw_response": "",
+      "accurate": 0
+    },
+    {
+      "model": "ollama:deepseek-r1:14b",
+      "domain": "permissions",
+      "k_operations": 3,
+      "trial": 2,
+      "correct_answer": "read",
+      "raw_response": "read",
+      "accurate": 1
+    },
+    {
+      "model": "ollama:deepseek-r1:14b",
+      "domain": "permissions",
+      "k_operations": 3,
+      "trial": 3,
+      "correct_answer": "execute, write",
+      "raw_response": "execute,write",
+      "accurate": 1
+    },
+    {
+      "model": "ollama:deepseek-r1:14b",
+      "domain": "permissions",
+      "k_operations": 3,
+      "trial": 4,
+      "correct_answer": "read, write",
+      "raw_response": "read, write",
+      "accurate": 1
+    },
+    {
+      "model": "ollama:deepseek-r1:14b",
+      "domain": "permissions",
+      "k_operations": 5,
+      "trial": 0,
+      "correct_answer": "read",
+      "raw_response": "read",
+      "accurate": 1
+    },
+    {
+      "model": "ollama:deepseek-r1:14b",
+      "domain": "permissions",
+      "k_operations": 5,
+      "trial": 1,
+      "correct_answer": "admin, read",
+      "raw_response": "admin,read",
+      "accurate": 1
+    },
+    {
+      "model": "ollama:deepseek-r1:14b",
+      "domain": "permissions",
+      "k_operations": 5,
+      "trial": 2,
+      "correct_answer": "read",
+      "raw_response": "read",
+      "accurate": 1
+    },
+    {
+      "model": "ollama:deepseek-r1:14b",
+      "domain": "permissions",
+      "k_operations": 5,
+      "trial": 3,
+      "correct_answer": "read",
+      "raw_response": "read",
+      "accurate": 1
+    },
+    {
+      "model": "ollama:deepseek-r1:14b",
+      "domain": "permissions",
+      "k_operations": 5,
+      "trial": 4,
+      "correct_answer": "admin, execute, read",
+      "raw_response": "admin, execute, read",
+      "accurate": 1
+    },
+    {
+      "model": "ollama:deepseek-r1:14b",
+      "domain": "permissions",
+      "k_operations": 7,
+      "trial": 0,
+      "correct_answer": "admin, execute, read",
+      "raw_response": "admin, execute, read",
+      "accurate": 1
+    },
+    {
+      "model": "ollama:deepseek-r1:14b",
+      "domain": "permissions",
+      "k_operations": 7,
+      "trial": 1,
+      "correct_answer": "admin, execute",
+      "raw_response": "execute, admin",
+      "accurate": 1
+    },
+    {
+      "model": "ollama:deepseek-r1:14b",
+      "domain": "permissions",
+      "k_operations": 7,
+      "trial": 2,
+      "correct_answer": "admin",
+      "raw_response": "admin",
+      "accurate": 1
+    },
+    {
+      "model": "ollama:deepseek-r1:14b",
+      "domain": "permissions",
+      "k_operations": 7,
+      "trial": 3,
+      "correct_answer": "admin, write",
+      "raw_response": "admin, write",
+      "accurate": 1
+    },
+    {
+      "model": "ollama:deepseek-r1:14b",
+      "domain": "permissions",
+      "k_operations": 7,
+      "trial": 4,
+      "correct_answer": "execute",
+      "raw_response": "execute",
+      "accurate": 1
+    },
+    {
+      "model": "ollama:deepseek-r1:14b",
+      "domain": "schedule",
+      "k_operations": 3,
+      "trial": 0,
+      "correct_answer": "3",
+      "raw_response": "Bob starts with 2 meetings. After adding a project sync and a team lunch, he has 4 meetings. When the client call is cancelled, he loses one meeting, leaving him with 3.\n\nThe final number of meetings Bob has now is 3.\n\n**Answer:** 3",
+      "accurate": 1
+    },
+    {
+      "model": "ollama:deepseek-r1:14b",
+      "domain": "schedule",
+      "k_operations": 3,
+      "trial": 1,
+      "correct_answer": "5",
+      "raw_response": "Alice starts with 4 meetings. After adding two meetings (morning standup and project sync), she has 6. Then, after cancelling the team lunch, she is left with 5 meetings.\n\nThe final number of meetings Alice has now is 5.\n\nAnswer: 5",
+      "accurate": 1
+    },
+    {
+      "model": "ollama:deepseek-r1:14b",
+      "domain": "schedule",
+      "k_operations": 3,
+      "trial": 2,
+      "correct_answer": "2",
+      "raw_response": "2",
+      "accurate": 1
+    },
+    {
+      "model": "ollama:deepseek-r1:14b",
+      "domain": "schedule",
+      "k_operations": 3,
+      "trial": 3,
+      "correct_answer": "6",
+      "raw_response": "Emma starts with 5 meetings. After adding a team lunch and a client call, she has 7 meetings. However, one meeting (morning standup) is canceled, so she ends up with 6 meetings.\n\nThe answer is 6.",
+      "accurate": 1
+    },
+    {
+      "model": "ollama:deepseek-r1:14b",
+      "domain": "schedule",
+      "k_operations": 3,
+      "trial": 4,
+      "correct_answer": "4",
+      "raw_response": "David starts with 3 meetings. After adding two meetings and canceling one, he ends up with 4 meetings.\n\nThe answer is 4.",
+      "accurate": 1
+    },
+    {
+      "model": "ollama:deepseek-r1:14b",
+      "domain": "schedule",
+      "k_operations": 5,
+      "trial": 0,
+      "correct_answer": "2",
+      "raw_response": "After processing each event step by step:\n\n1. Start with 5 meetings.\n2. Design review cancelled: 4\n3. Project sync added: 5\n4. Team lunch cancelled: 4\n5. Another team lunch cancellation: 3 (assuming it was still on the schedule)\n6. Morning standup cancelled: 2\n\nThe final number of meetings Alice has is 2.\n\nAnswer: 2",
+      "accurate": 1
+    },
+    {
+      "model": "ollama:deepseek-r1:14b",
+      "domain": "schedule",
+      "k_operations": 5,
+      "trial": 1,
+      "correct_answer": "6",
+      "raw_response": "The final number of meetings Bob has is 6.\n\n**Step-by-Step Explanation:**\n\n1. **Initial Meetings:** Bob starts with 5 meetings.\n2. **Client Call Canceled:** Subtract 1 \u2192 4 meetings left.\n3. **Team Lunch Added:** Add 1 \u2192 5 meetings.\n4. **Morning Standup Canceled:** Subtract 1 \u2192 4 meetings.\n5. **Team Lunch Added Again:** Add 1 \u2192 5 meetings.\n6. **Morning Standup Added:** Add 1 \u2192 6 meetings.\n\n**Answer:** 6",
+      "accurate": 1
+    },
+    {
+      "model": "ollama:deepseek-r1:14b",
+      "domain": "schedule",
+      "k_operations": 5,
+      "trial": 2,
+      "correct_answer": "8",
+      "raw_response": "Carol starts with 5 meetings. Let's track each change:\n\n1. **Add project sync**: 5 + 1 = 6\n2. **Add design review**: 6 + 1 = 7\n3. **Add project sync**: 7 + 1 = 8\n4. **Cancel team lunch**: 8 - 1 = 7\n5. **Add project sync**: 7 + 1 = 8\n\n**Final number of meetings:** 8",
+      "accurate": 1
+    },
+    {
+      "model": "ollama:deepseek-r1:14b",
+      "domain": "schedule",
+      "k_operations": 5,
+      "trial": 3,
+      "correct_answer": "3",
+      "raw_response": "David starts with 2 meetings.\n\n1. Project sync cancelled \u2192 1 meeting left.\n2. Team lunch added \u2192 2 meetings.\n3. Budget review cancelled \u2192 1 meeting.\n4. Project sync added \u2192 2 meetings.\n5. Client call added \u2192 3 meetings.\n\nThe final number of meetings David has is **3**.\n\nAnswer: 3",
+      "accurate": 1
+    },
+    {
+      "model": "ollama:deepseek-r1:14b",
+      "domain": "schedule",
+      "k_operations": 5,
+      "trial": 4,
+      "correct_answer": "1",
+      "raw_response": "Frank starts with 4 meetings. After four cancellations and one addition, he ends up with 1 meeting.\n\nAnswer: 1",
+      "accurate": 1
+    },
+    {
+      "model": "ollama:deepseek-r1:14b",
+      "domain": "schedule",
+      "k_operations": 7,
+      "trial": 0,
+      "correct_answer": "0",
+      "raw_response": "",
+      "accurate": 0
+    },
+    {
+      "model": "ollama:deepseek-r1:14b",
+      "domain": "schedule",
+      "k_operations": 7,
+      "trial": 1,
+      "correct_answer": "7",
+      "raw_response": "Frank starts with 4 meetings.\n\n1. Add budget review: 5\n2. Add another budget review: 6\n3. Cancel project sync: 5\n4. Cancel team lunch: 4\n5. Add client call: 5\n6. Add project sync: 6\n7. Add design review: 7\n\nThe final number of meetings Frank has is 7.\n\n**Answer:** 7",
+      "accurate": 1
+    },
+    {
+      "model": "ollama:deepseek-r1:14b",
+      "domain": "schedule",
+      "k_operations": 7,
+      "trial": 2,
+      "correct_answer": "3",
+      "raw_response": "",
+      "accurate": 0
+    },
+    {
+      "model": "ollama:deepseek-r1:14b",
+      "domain": "schedule",
+      "k_operations": 7,
+      "trial": 3,
+      "correct_answer": "3",
+      "raw_response": "",
+      "accurate": 0
+    },
+    {
+      "model": "ollama:deepseek-r1:14b",
+      "domain": "schedule",
+      "k_operations": 7,
+      "trial": 4,
+      "correct_answer": "3",
+      "raw_response": "Carol starts with 2 meetings. After cancelling two and adding four, then cancelling one more, she has 3 meetings left.\n\nThe final number is 3.\n\n3",
+      "accurate": 1
+    },
+    {
+      "model": "ollama:deepseek-r1:14b",
+      "domain": "inventory",
+      "k_operations": 3,
+      "trial": 0,
+      "correct_answer": "key, potion, ring, rope, shield",
+      "raw_response": "key, potion, ring, rope, shield",
+      "accurate": 1
+    },
+    {
+      "model": "ollama:deepseek-r1:14b",
+      "domain": "inventory",
+      "k_operations": 3,
+      "trial": 1,
+      "correct_answer": "key, map",
+      "raw_response": "key, map",
+      "accurate": 1
+    },
+    {
+      "model": "ollama:deepseek-r1:14b",
+      "domain": "inventory",
+      "k_operations": 3,
+      "trial": 2,
+      "correct_answer": "key, potion, shield",
+      "raw_response": "",
+      "accurate": 0
+    },
+    {
+      "model": "ollama:deepseek-r1:14b",
+      "domain": "inventory",
+      "k_operations": 3,
+      "trial": 3,
+      "correct_answer": "torch",
+      "raw_response": "torch",
+      "accurate": 1
+    },
+    {
+      "model": "ollama:deepseek-r1:14b",
+      "domain": "inventory",
+      "k_operations": 3,
+      "trial": 4,
+      "correct_answer": "compass, map, rope, shield",
+      "raw_response": "compass, map, rope, shield",
+      "accurate": 1
+    },
+    {
+      "model": "ollama:deepseek-r1:14b",
+      "domain": "inventory",
+      "k_operations": 5,
+      "trial": 0,
+      "correct_answer": "gem, key, map, ring",
+      "raw_response": "gem, key, map, ring",
+      "accurate": 1
+    },
+    {
+      "model": "ollama:deepseek-r1:14b",
+      "domain": "inventory",
+      "k_operations": 5,
+      "trial": 1,
+      "correct_answer": "key, rope",
+      "raw_response": "key, rope",
+      "accurate": 1
+    },
+    {
+      "model": "ollama:deepseek-r1:14b",
+      "domain": "inventory",
+      "k_operations": 5,
+      "trial": 2,
+      "correct_answer": "gem, map, scroll, torch",
+      "raw_response": "Carol currently has: gem, map, scroll, torch.",
+      "accurate": 0
+    },
+    {
+      "model": "ollama:deepseek-r1:14b",
+      "domain": "inventory",
+      "k_operations": 5,
+      "trial": 3,
+      "correct_answer": "gem, key",
+      "raw_response": "",
+      "accurate": 0
+    },
+    {
+      "model": "ollama:deepseek-r1:14b",
+      "domain": "inventory",
+      "k_operations": 5,
+      "trial": 4,
+      "correct_answer": "compass, gem",
+      "raw_response": "compass, gem",
+      "accurate": 1
+    },
+    {
+      "model": "ollama:deepseek-r1:14b",
+      "domain": "inventory",
+      "k_operations": 7,
+      "trial": 0,
+      "correct_answer": "compass, gem, key, ring, scroll, shield",
+      "raw_response": "compass, gem, key, ring, scroll, shield",
+      "accurate": 1
+    },
+    {
+      "model": "ollama:deepseek-r1:14b",
+      "domain": "inventory",
+      "k_operations": 7,
+      "trial": 1,
+      "correct_answer": "compass, ring, rope",
+      "raw_response": "",
+      "accurate": 0
+    },
+    {
+      "model": "ollama:deepseek-r1:14b",
+      "domain": "inventory",
+      "k_operations": 7,
+      "trial": 2,
+      "correct_answer": "key, potion, scroll, shield",
+      "raw_response": "",
+      "accurate": 0
+    },
+    {
+      "model": "ollama:deepseek-r1:14b",
+      "domain": "inventory",
+      "k_operations": 7,
+      "trial": 3,
+      "correct_answer": "key, potion, ring",
+      "raw_response": "",
+      "accurate": 0
+    },
+    {
+      "model": "ollama:deepseek-r1:14b",
+      "domain": "inventory",
+      "k_operations": 7,
+      "trial": 4,
+      "correct_answer": "compass, gem, torch",
+      "raw_response": "compass, gem, torch",
+      "accurate": 1
+    }
+  ]
+}

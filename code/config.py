@@ -278,6 +278,36 @@ MODELS = {
         "temperature": 0,
         "max_tokens": 1024,
     },
+    "openrouter:gemini-2.5-pro": {
+        "provider": "openrouter",
+        "model_id": "google/gemini-2.5-pro",
+        "temperature": 0,
+        "max_tokens": 1024,
+    },
+    "openrouter:llama-4-maverick": {
+        "provider": "openrouter",
+        "model_id": "meta-llama/llama-4-maverick",
+        "temperature": 0,
+        "max_tokens": 1024,
+    },
+    "openrouter:llama-4-scout": {
+        "provider": "openrouter",
+        "model_id": "meta-llama/llama-4-scout",
+        "temperature": 0,
+        "max_tokens": 1024,
+    },
+    "openrouter:qwen3-235b": {
+        "provider": "openrouter",
+        "model_id": "qwen/qwen3.5-397b-a17b",
+        "temperature": 0,
+        "max_tokens": 1024,
+    },
+    "openrouter:qwen3-32b": {
+        "provider": "openrouter",
+        "model_id": "qwen/qwen3.5-27b",
+        "temperature": 0,
+        "max_tokens": 1024,
+    },
     # Keep direct Google API as fallback (rate limited)
     "google:gemini-2.5-flash": {
         "provider": "google",
@@ -369,7 +399,8 @@ def call_model(
             temperature=cfg["temperature"],
             max_tokens=cfg["max_tokens"],
         )
-        return response.choices[0].message.content.strip()
+        content = response.choices[0].message.content
+        return content.strip() if content else None
 
     elif provider == "anthropic":
         import anthropic
@@ -414,6 +445,7 @@ def call_model(
             temperature=cfg["temperature"],
             max_tokens=cfg["max_tokens"],
         )
-        return response.choices[0].message.content.strip()
+        content = response.choices[0].message.content
+        return content.strip() if content else None
 
     raise ValueError(f"Unknown provider: {provider}")

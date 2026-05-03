@@ -142,7 +142,10 @@ Respond with ONLY the final {domain['attribute']} (one word)."""
 
 def evaluate_response(response: str, correct: str, domain_name: str) -> int:
     """Check if response contains the correct answer (case-insensitive)."""
-    resp_clean = response.strip().lower()
+    if response is None:
+        return 0
+    import re
+    resp_clean = re.sub(r"<think>.*?</think>", "", response, flags=re.DOTALL).strip().lower()
     correct_lower = correct.lower()
 
     # Direct match
@@ -172,6 +175,8 @@ def run_nonarith_ablation(model_name: str, n_problems: int = 10,
 
                 try:
                     response = call_model(model_name, prompt)
+                    if response is None:
+                        response = ""
                 except Exception as e:
                     response = f"ERROR: {e}"
 
@@ -183,7 +188,7 @@ def run_nonarith_ablation(model_name: str, n_problems: int = 10,
                     "domain": domain_name,
                     "k_operations": k,
                     "correct_answer": correct,
-                    "raw_response": response[:500],
+                    "raw_response": response[:500] if response else "",
                     "accurate": accurate,
                     "prob_idx": prob_idx,
                     **{k2: v for k2, v in meta.items()

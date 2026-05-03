@@ -1,0 +1,2567 @@
+{
+  "metadata": {
+    "task": "WMF-AM-YOKED-CONTROL",
+    "model": "openrouter:llama-4-scout",
+    "n_problems_per_depth": 20,
+    "seed": 42,
+    "depths": [
+      2,
+      4,
+      6,
+      8,
+      12
+    ]
+  },
+  "summary": {
+    "per_depth_accuracy": {
+      "2": 0.95,
+      "4": 0.9,
+      "6": 0.9,
+      "8": 1.0,
+      "12": 0.95
+    },
+    "overall_accuracy": 0.94
+  },
+  "trials": [
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:llama-4-scout",
+      "k_operations": 2,
+      "n_ops_actual": 2,
+      "correct_answer": 12,
+      "predicted": 12,
+      "accurate": 1,
+      "query_entity": "Alice",
+      "initial_state": {
+        "Kate": 13,
+        "Bob": 12,
+        "Alice": 12
+      },
+      "operations": [
+        "Alice gains 2 points.",
+        "Alice loses 2 points."
+      ],
+      "prompt_length_chars": 352,
+      "raw_response": "12"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:llama-4-scout",
+      "k_operations": 2,
+      "n_ops_actual": 2,
+      "correct_answer": 5,
+      "predicted": 5,
+      "accurate": 1,
+      "query_entity": "Bob",
+      "initial_state": {
+        "Leo": 18,
+        "Iris": 6,
+        "Bob": 5
+      },
+      "operations": [
+        "Leo gains 4 points.",
+        "Leo loses 4 points."
+      ],
+      "prompt_length_chars": 342,
+      "raw_response": "5"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:llama-4-scout",
+      "k_operations": 2,
+      "n_ops_actual": 2,
+      "correct_answer": 11,
+      "predicted": 11,
+      "accurate": 1,
+      "query_entity": "James",
+      "initial_state": {
+        "James": 11,
+        "Alice": 18,
+        "Iris": 12
+      },
+      "operations": [
+        "Iris loses 3 points.",
+        "Iris gains 3 points."
+      ],
+      "prompt_length_chars": 352,
+      "raw_response": "11"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:llama-4-scout",
+      "k_operations": 2,
+      "n_ops_actual": 2,
+      "correct_answer": 18,
+      "predicted": 18,
+      "accurate": 1,
+      "query_entity": "Mia",
+      "initial_state": {
+        "Mia": 18,
+        "Noah": 15,
+        "Carol": 13
+      },
+      "operations": [
+        "Mia gains 6 points.",
+        "Mia loses 6 points."
+      ],
+      "prompt_length_chars": 346,
+      "raw_response": "18"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:llama-4-scout",
+      "k_operations": 2,
+      "n_ops_actual": 2,
+      "correct_answer": 13,
+      "predicted": 13,
+      "accurate": 1,
+      "query_entity": "Noah",
+      "initial_state": {
+        "Bob": 16,
+        "Grace": 16,
+        "Noah": 13
+      },
+      "operations": [
+        "Noah gains 8 points.",
+        "Noah loses 8 points."
+      ],
+      "prompt_length_chars": 349,
+      "raw_response": "13"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:llama-4-scout",
+      "k_operations": 2,
+      "n_ops_actual": 2,
+      "correct_answer": 14,
+      "predicted": 15,
+      "accurate": 0,
+      "query_entity": "Bob",
+      "initial_state": {
+        "Bob": 14,
+        "Grace": 16,
+        "Noah": 11
+      },
+      "operations": [
+        "Bob gives 3 points to Noah.",
+        "Noah gives 3 points to Bob."
+      ],
+      "prompt_length_chars": 362,
+      "raw_response": "15"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:llama-4-scout",
+      "k_operations": 2,
+      "n_ops_actual": 2,
+      "correct_answer": 12,
+      "predicted": 12,
+      "accurate": 1,
+      "query_entity": "Mia",
+      "initial_state": {
+        "Mia": 12,
+        "Emma": 8,
+        "Bob": 17
+      },
+      "operations": [
+        "Emma loses 3 points.",
+        "Emma gains 3 points."
+      ],
+      "prompt_length_chars": 345,
+      "raw_response": "12"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:llama-4-scout",
+      "k_operations": 2,
+      "n_ops_actual": 2,
+      "correct_answer": 7,
+      "predicted": 7,
+      "accurate": 1,
+      "query_entity": "Noah",
+      "initial_state": {
+        "Frank": 13,
+        "Noah": 7,
+        "David": 10
+      },
+      "operations": [
+        "David gives 1 points to Frank.",
+        "Frank gives 1 points to David."
+      ],
+      "prompt_length_chars": 370,
+      "raw_response": "7"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:llama-4-scout",
+      "k_operations": 2,
+      "n_ops_actual": 2,
+      "correct_answer": 15,
+      "predicted": 15,
+      "accurate": 1,
+      "query_entity": "Emma",
+      "initial_state": {
+        "Grace": 12,
+        "Emma": 15,
+        "Kate": 6
+      },
+      "operations": [
+        "Grace gains 6 points.",
+        "Grace loses 6 points."
+      ],
+      "prompt_length_chars": 351,
+      "raw_response": "15"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:llama-4-scout",
+      "k_operations": 2,
+      "n_ops_actual": 2,
+      "correct_answer": 15,
+      "predicted": 15,
+      "accurate": 1,
+      "query_entity": "Emma",
+      "initial_state": {
+        "Emma": 15,
+        "Bob": 11,
+        "David": 20
+      },
+      "operations": [
+        "David loses 4 points.",
+        "David gains 4 points."
+      ],
+      "prompt_length_chars": 351,
+      "raw_response": "15"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:llama-4-scout",
+      "k_operations": 2,
+      "n_ops_actual": 2,
+      "correct_answer": 17,
+      "predicted": 17,
+      "accurate": 1,
+      "query_entity": "David",
+      "initial_state": {
+        "Emma": 13,
+        "Carol": 18,
+        "David": 17
+      },
+      "operations": [
+        "Emma loses 2 points.",
+        "Emma gains 2 points."
+      ],
+      "prompt_length_chars": 352,
+      "raw_response": "17"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:llama-4-scout",
+      "k_operations": 2,
+      "n_ops_actual": 2,
+      "correct_answer": 9,
+      "predicted": 9,
+      "accurate": 1,
+      "query_entity": "Bob",
+      "initial_state": {
+        "Henry": 8,
+        "Bob": 9,
+        "Alice": 10
+      },
+      "operations": [
+        "Bob gives 2 points to Henry.",
+        "Henry gives 2 points to Bob."
+      ],
+      "prompt_length_chars": 363,
+      "raw_response": "## Step 1: Apply the first operation\nBob gives 2 points to Henry. Initially, Henry has 8 points and Bob has 9 points. After this operation, Henry will have 8 + 2 = 10 points and Bob will have 9 - 2 = 7 points. Alice still has 10 points.\n\n## 2: Apply the second operation\nHenry gives 2 points to Bob. Now, Henry has 10 points and Bob has 7 points. After this operation, Henry will have 10 - 2 = 8 points and Bob will have 7 + 2 = 9 points.\n\n## 3: Determine Bob's final points\nAfter all operations, Bob has 9 points.\n\nThe final answer is: $\\boxed{9}$"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:llama-4-scout",
+      "k_operations": 2,
+      "n_ops_actual": 2,
+      "correct_answer": 5,
+      "predicted": 5,
+      "accurate": 1,
+      "query_entity": "Henry",
+      "initial_state": {
+        "James": 13,
+        "Henry": 5,
+        "Iris": 8
+      },
+      "operations": [
+        "Iris gives 3 points to Henry.",
+        "Henry gives 3 points to Iris."
+      ],
+      "prompt_length_chars": 368,
+      "raw_response": "## Step 1: Initialize the points for each person\nJames: 13 points, Henry: 5 points, Iris: 8 points.\n\n## Step 2: Apply the first operation - Iris gives 3 points to Henry\nIris: 8 - 3 = 5 points, Henry: 5 + 3 = 8 points, James: 13 points.\nSo, James: 13, Henry: 8, Iris: 5.\n\n## 3: Apply the second operation - Henry gives 3 points to Iris\nHenry: 8 - 3 = 5 points, Iris: 5 + 3 = 8 points, James: 13 points.\nSo, James: 13, Henry: 5, Iris: 8.\n\nThe final answer is: $\\boxed{5}$"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:llama-4-scout",
+      "k_operations": 2,
+      "n_ops_actual": 2,
+      "correct_answer": 10,
+      "predicted": 10,
+      "accurate": 1,
+      "query_entity": "Bob",
+      "initial_state": {
+        "Bob": 10,
+        "Emma": 19,
+        "Grace": 5
+      },
+      "operations": [
+        "Grace gives 3 points to Emma.",
+        "Emma gives 3 points to Grace."
+      ],
+      "prompt_length_chars": 365,
+      "raw_response": "10"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:llama-4-scout",
+      "k_operations": 2,
+      "n_ops_actual": 2,
+      "correct_answer": 9,
+      "predicted": 9,
+      "accurate": 1,
+      "query_entity": "Kate",
+      "initial_state": {
+        "Iris": 14,
+        "Bob": 11,
+        "Kate": 9
+      },
+      "operations": [
+        "Iris loses 5 points.",
+        "Iris gains 5 points."
+      ],
+      "prompt_length_chars": 347,
+      "raw_response": "9"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:llama-4-scout",
+      "k_operations": 2,
+      "n_ops_actual": 2,
+      "correct_answer": 20,
+      "predicted": 20,
+      "accurate": 1,
+      "query_entity": "Alice",
+      "initial_state": {
+        "Alice": 20,
+        "James": 5,
+        "Frank": 8
+      },
+      "operations": [
+        "James loses 2 points.",
+        "James gains 2 points."
+      ],
+      "prompt_length_chars": 353,
+      "raw_response": "20"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:llama-4-scout",
+      "k_operations": 2,
+      "n_ops_actual": 2,
+      "correct_answer": 20,
+      "predicted": 20,
+      "accurate": 1,
+      "query_entity": "James",
+      "initial_state": {
+        "David": 7,
+        "James": 20,
+        "Bob": 7
+      },
+      "operations": [
+        "David gives 3 points to Bob.",
+        "Bob gives 3 points to David."
+      ],
+      "prompt_length_chars": 365,
+      "raw_response": "20"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:llama-4-scout",
+      "k_operations": 2,
+      "n_ops_actual": 2,
+      "correct_answer": 11,
+      "predicted": 11,
+      "accurate": 1,
+      "query_entity": "Emma",
+      "initial_state": {
+        "Iris": 18,
+        "Carol": 11,
+        "Emma": 11
+      },
+      "operations": [
+        "Carol gives 3 points to Emma.",
+        "Emma gives 3 points to Carol."
+      ],
+      "prompt_length_chars": 368,
+      "raw_response": "## Step 1: Determine the initial state of points for each person.\nIris has 18 points, Carol has 11 points, and Emma has 11 points.\n\n## 2: Apply the first operation - Carol gives 3 points to Emma.\nCarol now has 11 - 3 = 8 points, and Emma has 11 + 3 = 14 points. Iris still has 18 points.\n\n## 3: Apply the second operation - Emma gives 3 points to Carol.\nEmma now has 14 - 3 = 11 points, and Carol has 8 + 3 = 11 points. Iris still has 18 points.\n\n## 4: Identify the final number of points Emma has after all operations.\nEmma has 11 points.\n\nThe final answer is: $\\boxed{11}$"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:llama-4-scout",
+      "k_operations": 2,
+      "n_ops_actual": 2,
+      "correct_answer": 19,
+      "predicted": 19,
+      "accurate": 1,
+      "query_entity": "Frank",
+      "initial_state": {
+        "Frank": 19,
+        "Henry": 8,
+        "Iris": 12
+      },
+      "operations": [
+        "Frank gains 6 points.",
+        "Frank loses 6 points."
+      ],
+      "prompt_length_chars": 353,
+      "raw_response": "19"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:llama-4-scout",
+      "k_operations": 2,
+      "n_ops_actual": 2,
+      "correct_answer": 12,
+      "predicted": 12,
+      "accurate": 1,
+      "query_entity": "James",
+      "initial_state": {
+        "James": 12,
+        "Iris": 5,
+        "David": 7
+      },
+      "operations": [
+        "David gives 1 points to James.",
+        "James gives 1 points to David."
+      ],
+      "prompt_length_chars": 370,
+      "raw_response": "12"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:llama-4-scout",
+      "k_operations": 4,
+      "n_ops_actual": 4,
+      "correct_answer": 13,
+      "predicted": 13,
+      "accurate": 1,
+      "query_entity": "Frank",
+      "initial_state": {
+        "Alice": 12,
+        "Frank": 13,
+        "Bob": 20
+      },
+      "operations": [
+        "Bob gains 3 points.",
+        "Bob loses 3 points.",
+        "Bob gives 1 points to Frank.",
+        "Frank gives 1 points to Bob."
+      ],
+      "prompt_length_chars": 417,
+      "raw_response": "## Step 1: Initialize the points for each person\nAlice starts with 12 points, Frank with 13 points, and Bob with 20 points.\n\n## 2: Apply the first operation - Bob gains 3 points\nBob's points become 20 + 3 = 23 points. Alice still has 12 points, and Frank still has 13 points.\n\n## 3: Apply the second operation - Bob loses 3 points\nBob's points become 23 - 3 = 20 points. Alice still has 12 points, and Frank still has 13 points.\n\n## 4: Apply the third operation - Bob gives 1 point to Frank\nBob's points become 20 - 1 = 19 points, and Frank's points become 13 + 1 = 14 points. Alice still has 12 points.\n\n## 5: Apply the fourth operation - Frank gives 1 point to Bob\nFrank's points become 14 - 1 = 13 points, and Bob's points become 19 + 1 = 20 points. Alice still has 12 points.\n\n## 6: Determine Frank's final points\nAfter all operations, Frank has 13 points.\n\nThe final answer is: $\\boxed{13}$"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:llama-4-scout",
+      "k_operations": 4,
+      "n_ops_actual": 4,
+      "correct_answer": 18,
+      "predicted": 17,
+      "accurate": 0,
+      "query_entity": "David",
+      "initial_state": {
+        "Mia": 8,
+        "Grace": 8,
+        "David": 18
+      },
+      "operations": [
+        "Grace loses 4 points.",
+        "Grace gains 4 points.",
+        "David loses 1 points.",
+        "David gains 1 points."
+      ],
+      "prompt_length_chars": 405,
+      "raw_response": "17"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:llama-4-scout",
+      "k_operations": 4,
+      "n_ops_actual": 4,
+      "correct_answer": 6,
+      "predicted": 6,
+      "accurate": 1,
+      "query_entity": "Kate",
+      "initial_state": {
+        "Kate": 6,
+        "Noah": 17,
+        "Bob": 15
+      },
+      "operations": [
+        "Kate gains 4 points.",
+        "Kate loses 4 points.",
+        "Bob gains 8 points.",
+        "Bob loses 8 points."
+      ],
+      "prompt_length_chars": 397,
+      "raw_response": "6"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:llama-4-scout",
+      "k_operations": 4,
+      "n_ops_actual": 4,
+      "correct_answer": 19,
+      "predicted": 19,
+      "accurate": 1,
+      "query_entity": "Grace",
+      "initial_state": {
+        "Grace": 19,
+        "Carol": 12,
+        "Emma": 7
+      },
+      "operations": [
+        "Emma loses 1 points.",
+        "Emma gains 1 points.",
+        "Emma gains 9 points.",
+        "Emma loses 9 points."
+      ],
+      "prompt_length_chars": 403,
+      "raw_response": "19"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:llama-4-scout",
+      "k_operations": 4,
+      "n_ops_actual": 4,
+      "correct_answer": 10,
+      "predicted": 10,
+      "accurate": 1,
+      "query_entity": "Bob",
+      "initial_state": {
+        "Bob": 10,
+        "Mia": 18,
+        "David": 20
+      },
+      "operations": [
+        "Bob loses 4 points.",
+        "Bob gains 4 points.",
+        "Bob gains 7 points.",
+        "Bob loses 7 points."
+      ],
+      "prompt_length_chars": 395,
+      "raw_response": "## Step 1: Initial state\nBob starts with 10 points.\n\n## Step 2: Apply operation 1\nBob loses 4 points, so Bob has 10 - 4 = 6 points.\n\n## 3: Apply operation 2\nBob gains 4 points, so Bob has 6 + 4 = 10 points.\n\n## 4: Apply operation 3\nBob gains 7 points, so Bob has 10 + 7 = 17 points.\n\n## 5: Apply operation 4\nBob loses 7 points, so Bob has 17 - 7 = 10 points.\n\nThe final answer is: $\\boxed{10}$"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:llama-4-scout",
+      "k_operations": 4,
+      "n_ops_actual": 4,
+      "correct_answer": 20,
+      "predicted": 20,
+      "accurate": 1,
+      "query_entity": "Henry",
+      "initial_state": {
+        "Grace": 14,
+        "Emma": 18,
+        "Henry": 20
+      },
+      "operations": [
+        "Grace gains 5 points.",
+        "Grace loses 5 points.",
+        "Grace gains 10 points.",
+        "Grace loses 10 points."
+      ],
+      "prompt_length_chars": 410,
+      "raw_response": "20"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:llama-4-scout",
+      "k_operations": 4,
+      "n_ops_actual": 4,
+      "correct_answer": 6,
+      "predicted": 6,
+      "accurate": 1,
+      "query_entity": "Leo",
+      "initial_state": {
+        "Iris": 15,
+        "Alice": 6,
+        "Leo": 6
+      },
+      "operations": [
+        "Alice gives 1 points to Iris.",
+        "Iris gives 1 points to Alice.",
+        "Iris gives 1 points to Leo.",
+        "Leo gives 1 points to Iris."
+      ],
+      "prompt_length_chars": 430,
+      "raw_response": "## Step 1: Initial State\nThe initial state is: Iris has 15 points, Alice has 6 points, and Leo has 6 points.\n\n## 2: First Operation - Alice gives 1 point to Iris\nAfter the first operation: Iris has 15 + 1 = 16 points, Alice has 6 - 1 = 5 points, and Leo has 6 points.\n\n## 3: Second Operation - Iris gives 1 point to Alice\nAfter the second operation: Iris has 16 - 1 = 15 points, Alice has 5 + 1 = 6 points, and Leo has 6 points.\n\n## 4: Third Operation - Iris gives 1 point to Leo\nAfter the third operation: Iris has 15 - 1 = 14 points, Alice has 6 points, and Leo has 6 + 1 = 7 points.\n\n## 5: Fourth Operation - Leo gives 1 point to Iris\nAfter the fourth operation: Iris has 14 + 1 = 15 points, Alice has 6 points, and Leo has 7 - 1 = 6 points.\n\nThe final answer is: $\\boxed{6}$"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:llama-4-scout",
+      "k_operations": 4,
+      "n_ops_actual": 4,
+      "correct_answer": 12,
+      "predicted": 12,
+      "accurate": 1,
+      "query_entity": "David",
+      "initial_state": {
+        "Bob": 17,
+        "Kate": 8,
+        "David": 12
+      },
+      "operations": [
+        "David gives 3 points to Bob.",
+        "Bob gives 3 points to David.",
+        "Kate gains 10 points.",
+        "Kate loses 10 points."
+      ],
+      "prompt_length_chars": 419,
+      "raw_response": "## Step 1: Initial State\nThe initial state is given as: Bob has 17 points, Kate has 8 points, and David has 12 points.\n\n## 2: Apply Operation 1\nDavid gives 3 points to Bob. So, Bob now has 17 + 3 = 20 points, Kate still has 8 points, and David now has 12 - 3 = 9 points.\n\n## 3: Apply Operation 2\nBob gives 3 points to David. So, Bob now has 20 - 3 = 17 points, Kate still has 8 points, and David now has 9 + 3 = 12 points.\n\n## 4: Apply Operation 3\nKate gains 10 points. So, Bob still has 17 points, Kate now has 8 + 10 = 18 points, and David still has 12 points.\n\n## 5: Apply Operation 4\nKate loses 10 points. So, Bob still has 17 points, Kate now has 18 - 10 = 8 points, and David still has 12 points.\n\nThe final answer is: $\\boxed{12}$"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:llama-4-scout",
+      "k_operations": 4,
+      "n_ops_actual": 4,
+      "correct_answer": 15,
+      "predicted": 15,
+      "accurate": 1,
+      "query_entity": "Frank",
+      "initial_state": {
+        "Iris": 11,
+        "Frank": 15,
+        "Emma": 12
+      },
+      "operations": [
+        "Frank loses 2 points.",
+        "Frank gains 2 points.",
+        "Emma gives 2 points to Frank.",
+        "Frank gives 2 points to Emma."
+      ],
+      "prompt_length_chars": 423,
+      "raw_response": "## Step 1: Initial State\nIris has 11 points, Frank has 15 points, and Emma has 12 points.\n\n## Step 2: Frank loses 2 points\nFrank now has 15 - 2 = 13 points. Iris still has 11 points, and Emma still has 12 points.\n\n## 3: Frank gains 2 points\nFrank now has 13 + 2 = 15 points. Iris still has 11 points, and Emma still has 12 points.\n\n## 4: Emma gives 2 points to Frank\nFrank now has 15 + 2 = 17 points. Emma now has 12 - 2 = 10 points. Iris still has 11 points.\n\n## 5: Frank gives 2 points to Emma\nFrank now has 17 - 2 = 15 points. Emma now has 10 + 2 = 12 points. Iris still has 11 points.\n\nThe final answer is: $\\boxed{15}$"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:llama-4-scout",
+      "k_operations": 4,
+      "n_ops_actual": 4,
+      "correct_answer": 8,
+      "predicted": 9,
+      "accurate": 0,
+      "query_entity": "Bob",
+      "initial_state": {
+        "Mia": 19,
+        "Bob": 8,
+        "Alice": 7
+      },
+      "operations": [
+        "Mia gives 1 points to Bob.",
+        "Bob gives 1 points to Mia.",
+        "Mia loses 2 points.",
+        "Mia gains 2 points."
+      ],
+      "prompt_length_chars": 407,
+      "raw_response": "9"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:llama-4-scout",
+      "k_operations": 4,
+      "n_ops_actual": 4,
+      "correct_answer": 14,
+      "predicted": 14,
+      "accurate": 1,
+      "query_entity": "Emma",
+      "initial_state": {
+        "Emma": 14,
+        "Carol": 5,
+        "Henry": 14
+      },
+      "operations": [
+        "Emma gives 2 points to Henry.",
+        "Henry gives 2 points to Emma.",
+        "Emma gains 9 points.",
+        "Emma loses 9 points."
+      ],
+      "prompt_length_chars": 420,
+      "raw_response": "## Step 1: Apply the first operation\nEmma gives 2 points to Henry. Initially, Emma has 14 points and Henry has 14 points. After this operation, Emma has 14 - 2 = 12 points and Henry has 14 + 2 = 16 points. Carol still has 5 points.\n\n## 2: Apply the second operation\nHenry gives 2 points to Emma. Now, Emma has 12 + 2 = 14 points and Henry has 16 - 2 = 14 points. Carol still has 5 points.\n\n## 3: Apply the third operation\nEmma gains 9 points. Emma now has 14 + 9 = 23 points. Henry still has 14 points and Carol still has 5 points.\n\n## 4: Apply the fourth operation\nEmma loses 9 points. Emma now has 23 - 9 = 14 points. Henry still has 14 points and Carol still has 5 points.\n\nThe final answer is: $\\boxed{14}$"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:llama-4-scout",
+      "k_operations": 4,
+      "n_ops_actual": 4,
+      "correct_answer": 11,
+      "predicted": 11,
+      "accurate": 1,
+      "query_entity": "Emma",
+      "initial_state": {
+        "Emma": 11,
+        "Noah": 15,
+        "James": 11
+      },
+      "operations": [
+        "James gives 3 points to Noah.",
+        "Noah gives 3 points to James.",
+        "Noah loses 1 points.",
+        "Noah gains 1 points."
+      ],
+      "prompt_length_chars": 420,
+      "raw_response": "11"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:llama-4-scout",
+      "k_operations": 4,
+      "n_ops_actual": 4,
+      "correct_answer": 15,
+      "predicted": 15,
+      "accurate": 1,
+      "query_entity": "Emma",
+      "initial_state": {
+        "Kate": 6,
+        "Grace": 5,
+        "Emma": 15
+      },
+      "operations": [
+        "Emma gains 5 points.",
+        "Emma loses 5 points.",
+        "Emma gains 8 points.",
+        "Emma loses 8 points."
+      ],
+      "prompt_length_chars": 400,
+      "raw_response": "15"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:llama-4-scout",
+      "k_operations": 4,
+      "n_ops_actual": 4,
+      "correct_answer": 5,
+      "predicted": 5,
+      "accurate": 1,
+      "query_entity": "Leo",
+      "initial_state": {
+        "Leo": 5,
+        "Grace": 8,
+        "Iris": 7
+      },
+      "operations": [
+        "Leo gives 2 points to Iris.",
+        "Iris gives 2 points to Leo.",
+        "Iris gives 2 points to Leo.",
+        "Leo gives 2 points to Iris."
+      ],
+      "prompt_length_chars": 425,
+      "raw_response": "## Step 1: Initial State\nLeo starts with 5 points, Grace starts with 8 points, and Iris starts with 7 points.\n\n## Step 2: Operation 1 - Leo gives 2 points to Iris\nLeo now has 5 - 2 = 3 points, Iris has 7 + 2 = 9 points, and Grace still has 8 points.\n\n## 3: Operation 2 - Iris gives 2 points to Leo\nLeo now has 3 + 2 = 5 points, Iris has 9 - 2 = 7 points, and Grace still has 8 points.\n\n## 4: Operation 3 - Iris gives 2 points to Leo\nLeo now has 5 + 2 = 7 points, Iris has 7 - 2 = 5 points, and Grace still has 8 points.\n\n## 5: Operation 4 - Leo gives 2 points to Iris\nLeo now has 7 - 2 = 5 points, Iris has 5 + 2 = 7 points, and Grace still has 8 points.\n\nThe final answer is: $\\boxed{5}$"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:llama-4-scout",
+      "k_operations": 4,
+      "n_ops_actual": 4,
+      "correct_answer": 6,
+      "predicted": 6,
+      "accurate": 1,
+      "query_entity": "Alice",
+      "initial_state": {
+        "Alice": 6,
+        "Emma": 16,
+        "Frank": 11
+      },
+      "operations": [
+        "Alice gives 2 points to Frank.",
+        "Frank gives 2 points to Alice.",
+        "Emma gives 1 points to Alice.",
+        "Alice gives 1 points to Emma."
+      ],
+      "prompt_length_chars": 441,
+      "raw_response": "Step 1: Initial State\nAlice starts with 6 points, Emma with 16 points, and Frank with 11 points.\n\n## 2: First Operation - Alice gives 2 points to Frank\nAlice: 6 - 2 = 4 points, Emma: 16 points, Frank: 11 + 2 = 13 points.\n\n## 3: Second Operation - Frank gives 2 points to Alice\nAlice: 4 + 2 = 6 points, Emma: 16 points, Frank: 13 - 2 = 11 points.\n\n## 4: Third Operation - Emma gives 1 point to Alice\nAlice: 6 + 1 = 7 points, Emma: 16 - 1 = 15 points, Frank: 11 points.\n\n## 5: Fourth Operation - Alice gives 1 point to Emma\nAlice: 7 - 1 = 6 points, Emma: 15 + 1 = 16 points, Frank: 11 points.\n\nThe final answer is: $\\boxed{6}$"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:llama-4-scout",
+      "k_operations": 4,
+      "n_ops_actual": 4,
+      "correct_answer": 10,
+      "predicted": 10,
+      "accurate": 1,
+      "query_entity": "Carol",
+      "initial_state": {
+        "Mia": 18,
+        "Noah": 5,
+        "Carol": 10
+      },
+      "operations": [
+        "Noah gives 3 points to Carol.",
+        "Carol gives 3 points to Noah.",
+        "Mia gives 1 points to Noah.",
+        "Noah gives 1 points to Mia."
+      ],
+      "prompt_length_chars": 433,
+      "raw_response": "## Step 1: Initial State\nMia has 18 points, Noah has 5 points, and Carol has 10 points.\n\n## 2: Noah gives 3 points to Carol\nMia has 18 points, Noah has 5 - 3 = 2 points, and Carol has 10 + 3 = 13 points.\n\n## 3: Carol gives 3 points to Noah\nMia has 18 points, Noah has 2 + 3 = 5 points, and Carol has 13 - 3 = 10 points.\n\n## 4: Mia gives 1 point to Noah\nMia has 18 - 1 = 17 points, Noah has 5 + 1 = 6 points, and Carol has 10 points.\n\n## 5: Noah gives 1 point to Mia\nMia has 17 + 1 = 18 points, Noah has 6 - 1 = 5 points, and Carol has 10 points.\n\nThe final answer is: $\\boxed{10}$"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:llama-4-scout",
+      "k_operations": 4,
+      "n_ops_actual": 4,
+      "correct_answer": 11,
+      "predicted": 11,
+      "accurate": 1,
+      "query_entity": "Alice",
+      "initial_state": {
+        "Bob": 20,
+        "Grace": 12,
+        "Alice": 11
+      },
+      "operations": [
+        "Grace loses 3 points.",
+        "Grace gains 3 points.",
+        "Bob gains 1 points.",
+        "Bob loses 1 points."
+      ],
+      "prompt_length_chars": 403,
+      "raw_response": "11"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:llama-4-scout",
+      "k_operations": 4,
+      "n_ops_actual": 4,
+      "correct_answer": 7,
+      "predicted": 7,
+      "accurate": 1,
+      "query_entity": "Grace",
+      "initial_state": {
+        "David": 13,
+        "Grace": 7,
+        "Frank": 13
+      },
+      "operations": [
+        "Frank loses 5 points.",
+        "Frank gains 5 points.",
+        "Frank loses 5 points.",
+        "Frank gains 5 points."
+      ],
+      "prompt_length_chars": 408,
+      "raw_response": "7"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:llama-4-scout",
+      "k_operations": 4,
+      "n_ops_actual": 4,
+      "correct_answer": 13,
+      "predicted": 13,
+      "accurate": 1,
+      "query_entity": "Bob",
+      "initial_state": {
+        "Alice": 10,
+        "Bob": 13,
+        "Emma": 6
+      },
+      "operations": [
+        "Emma gains 7 points.",
+        "Emma loses 7 points.",
+        "Emma loses 3 points.",
+        "Emma gains 3 points."
+      ],
+      "prompt_length_chars": 399,
+      "raw_response": "13"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:llama-4-scout",
+      "k_operations": 4,
+      "n_ops_actual": 4,
+      "correct_answer": 13,
+      "predicted": 13,
+      "accurate": 1,
+      "query_entity": "Bob",
+      "initial_state": {
+        "James": 17,
+        "Iris": 11,
+        "Bob": 13
+      },
+      "operations": [
+        "Bob gains 7 points.",
+        "Bob loses 7 points.",
+        "Bob gains 9 points.",
+        "Bob loses 9 points."
+      ],
+      "prompt_length_chars": 396,
+      "raw_response": "## Step 1: Initial state\nThe initial state is: James: 17 points, Iris: 11 points, Bob: 13 points.\n\n## Step 2: Apply operation 1\nBob gains 7 points. So, Bob now has 13 + 7 = 20 points.\n\n## 3: Apply operation 2\nBob loses 7 points. So, Bob now has 20 - 7 = 13 points.\n\n## 4: Apply operation 3\nBob gains 9 points. So, Bob now has 13 + 9 = 22 points.\n\n## 5: Apply operation 4\nBob loses 9 points. So, Bob now has 22 - 9 = 13 points.\n\nThe final answer is: $\\boxed{13}$"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:llama-4-scout",
+      "k_operations": 6,
+      "n_ops_actual": 6,
+      "correct_answer": 18,
+      "predicted": 18,
+      "accurate": 1,
+      "query_entity": "Mia",
+      "initial_state": {
+        "Leo": 11,
+        "Noah": 16,
+        "Mia": 18
+      },
+      "operations": [
+        "Mia gains 6 points.",
+        "Mia loses 6 points.",
+        "Noah gives 3 points to Leo.",
+        "Leo gives 3 points to Noah.",
+        "Mia loses 3 points.",
+        "Mia gains 3 points."
+      ],
+      "prompt_length_chars": 460,
+      "raw_response": "18"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:llama-4-scout",
+      "k_operations": 6,
+      "n_ops_actual": 6,
+      "correct_answer": 14,
+      "predicted": 14,
+      "accurate": 1,
+      "query_entity": "Grace",
+      "initial_state": {
+        "Grace": 14,
+        "Frank": 9,
+        "Noah": 11
+      },
+      "operations": [
+        "Noah loses 4 points.",
+        "Noah gains 4 points.",
+        "Noah gives 3 points to Grace.",
+        "Grace gives 3 points to Noah.",
+        "Frank gives 3 points to Noah.",
+        "Noah gives 3 points to Frank."
+      ],
+      "prompt_length_chars": 491,
+      "raw_response": "14"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:llama-4-scout",
+      "k_operations": 6,
+      "n_ops_actual": 6,
+      "correct_answer": 19,
+      "predicted": 19,
+      "accurate": 1,
+      "query_entity": "David",
+      "initial_state": {
+        "Emma": 18,
+        "Noah": 15,
+        "David": 19
+      },
+      "operations": [
+        "Noah loses 2 points.",
+        "Noah gains 2 points.",
+        "Noah gives 3 points to Emma.",
+        "Emma gives 3 points to Noah.",
+        "Noah gains 9 points.",
+        "Noah loses 9 points."
+      ],
+      "prompt_length_chars": 471,
+      "raw_response": "19"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:llama-4-scout",
+      "k_operations": 6,
+      "n_ops_actual": 6,
+      "correct_answer": 12,
+      "predicted": 12,
+      "accurate": 1,
+      "query_entity": "James",
+      "initial_state": {
+        "Kate": 7,
+        "James": 12,
+        "Frank": 14
+      },
+      "operations": [
+        "Kate gains 3 points.",
+        "Kate loses 3 points.",
+        "Kate gains 4 points.",
+        "Kate loses 4 points.",
+        "Frank loses 1 points.",
+        "Frank gains 1 points."
+      ],
+      "prompt_length_chars": 457,
+      "raw_response": "12"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:llama-4-scout",
+      "k_operations": 6,
+      "n_ops_actual": 6,
+      "correct_answer": 20,
+      "predicted": 21,
+      "accurate": 0,
+      "query_entity": "James",
+      "initial_state": {
+        "Grace": 11,
+        "Kate": 17,
+        "James": 20
+      },
+      "operations": [
+        "Grace loses 2 points.",
+        "Grace gains 2 points.",
+        "James gives 1 points to Grace.",
+        "Grace gives 1 points to James.",
+        "Grace loses 2 points.",
+        "Grace gains 2 points."
+      ],
+      "prompt_length_chars": 480,
+      "raw_response": "21"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:llama-4-scout",
+      "k_operations": 6,
+      "n_ops_actual": 6,
+      "correct_answer": 8,
+      "predicted": 8,
+      "accurate": 1,
+      "query_entity": "Henry",
+      "initial_state": {
+        "Iris": 12,
+        "Henry": 8,
+        "Alice": 19
+      },
+      "operations": [
+        "Henry gains 9 points.",
+        "Henry loses 9 points.",
+        "Alice gives 2 points to Henry.",
+        "Henry gives 2 points to Alice.",
+        "Alice gives 3 points to Henry.",
+        "Henry gives 3 points to Alice."
+      ],
+      "prompt_length_chars": 497,
+      "raw_response": "## Step 1: Initial State\nIris has 12 points, Henry has 8 points, and Alice has 19 points.\n\n## 2: Henry gains 9 points\nHenry now has 8 + 9 = 17 points. Iris still has 12 points, and Alice still has 19 points.\n\n## 3: Henry loses 9 points\nHenry now has 17 - 9 = 8 points. Iris still has 12 points, and Alice still has 19 points.\n\n## 4: Alice gives 2 points to Henry\nHenry now has 8 + 2 = 10 points. Iris still has 12 points, and Alice now has 19 - 2 = 17 points.\n\n## 5: Henry gives 2 points to Alice\nHenry now has 10 - 2 = 8 points. Iris still has 12 points, and Alice now has 17 + 2 = 19 points.\n\n## 6: Alice gives 3 points to Henry\nHenry now has 8 + 3 = 11 points. Iris still has 12 points, and Alice now has 19 - 3 = 16 points.\n\n## 7: Henry gives 3 points to Alice\nHenry now has 11 - 3 = 8 points. Iris still has 12 points, and Alice now has 16 + 3 = 19 points.\n\nThe final answer is: $\\boxed{8}$"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:llama-4-scout",
+      "k_operations": 6,
+      "n_ops_actual": 6,
+      "correct_answer": 19,
+      "predicted": 19,
+      "accurate": 1,
+      "query_entity": "Carol",
+      "initial_state": {
+        "Carol": 19,
+        "Leo": 13,
+        "Henry": 12
+      },
+      "operations": [
+        "Leo gives 3 points to Henry.",
+        "Henry gives 3 points to Leo.",
+        "Leo gains 8 points.",
+        "Leo loses 8 points.",
+        "Henry gains 5 points.",
+        "Henry loses 5 points."
+      ],
+      "prompt_length_chars": 471,
+      "raw_response": "19"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:llama-4-scout",
+      "k_operations": 6,
+      "n_ops_actual": 6,
+      "correct_answer": 9,
+      "predicted": 9,
+      "accurate": 1,
+      "query_entity": "Frank",
+      "initial_state": {
+        "Emma": 7,
+        "Frank": 9,
+        "Mia": 9
+      },
+      "operations": [
+        "Frank gains 3 points.",
+        "Frank loses 3 points.",
+        "Emma gives 2 points to Mia.",
+        "Mia gives 2 points to Emma.",
+        "Frank loses 5 points.",
+        "Frank gains 5 points."
+      ],
+      "prompt_length_chars": 469,
+      "raw_response": "## Step 1: Initial State\nThe initial state is given as: Emma has 7 points, Frank has 9 points, and Mia has 9 points.\n\n## 2: Apply Operation 1\nFrank gains 3 points. So, Frank now has 9 + 3 = 12 points.\n\n## 3: Apply Operation 2\nFrank loses 3 points. So, Frank now has 12 - 3 = 9 points.\n\n## 4: Apply Operation 3\nEmma gives 2 points to Mia. So, Emma now has 7 - 2 = 5 points, and Mia now has 9 + 2 = 11 points. Frank's points remain unchanged at 9.\n\n## 5: Apply Operation 4\nMia gives 2 points to Emma. So, Mia now has 11 - 2 = 9 points, and Emma now has 5 + 2 = 7 points. Frank's points remain unchanged at 9.\n\n## 6: Apply Operation 5\nFrank loses 5 points. So, Frank now has 9 - 5 = 4 points.\n\n## 7: Apply Operation 6\nFrank gains 5 points. So, Frank now has 4 + 5 = 9 points.\n\nThe final answer is: $\\boxed{9}$"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:llama-4-scout",
+      "k_operations": 6,
+      "n_ops_actual": 6,
+      "correct_answer": 5,
+      "predicted": 5,
+      "accurate": 1,
+      "query_entity": "David",
+      "initial_state": {
+        "Grace": 18,
+        "Alice": 17,
+        "David": 5
+      },
+      "operations": [
+        "Alice gives 1 points to David.",
+        "David gives 1 points to Alice.",
+        "Alice loses 4 points.",
+        "Alice gains 4 points.",
+        "David loses 5 points.",
+        "David gains 5 points."
+      ],
+      "prompt_length_chars": 480,
+      "raw_response": "## Step 1: Initial State\nThe initial state is given as: Grace: 18 points, Alice: 17 points, David: 5 points.\n\n## 2: Apply Operation 1\nAlice gives 1 point to David. The new state is: Grace: 18 points, Alice: 16 points, David: 6 points.\n\n## 3: Apply Operation 2\nDavid gives 1 point to Alice. The new state is: Grace: 18 points, Alice: 17 points, David: 5 points.\n\n## 4: Apply Operation 3\nAlice loses 4 points. The new state is: Grace: 18 points, Alice: 13 points, David: 5 points.\n\n## 5: Apply Operation 4\nAlice gains 4 points. The new state is: Grace: 18 points, Alice: 17 points, David: 5 points.\n\n## 6: Apply Operation 5\nDavid loses 5 points. The new state is: Grace: 18 points, Alice: 17 points, David: 0 points.\n\n## 7: Apply Operation 6\nDavid gains 5 points. The new state is: Grace: 18 points, Alice: 17 points, David: 5 points.\n\nThe final answer is: $\\boxed{5}$"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:llama-4-scout",
+      "k_operations": 6,
+      "n_ops_actual": 6,
+      "correct_answer": 20,
+      "predicted": 23,
+      "accurate": 0,
+      "query_entity": "Noah",
+      "initial_state": {
+        "David": 13,
+        "Henry": 18,
+        "Noah": 20
+      },
+      "operations": [
+        "Henry gains 6 points.",
+        "Henry loses 6 points.",
+        "Noah gives 3 points to Henry.",
+        "Henry gives 3 points to Noah.",
+        "Henry gains 3 points.",
+        "Henry loses 3 points."
+      ],
+      "prompt_length_chars": 477,
+      "raw_response": "23"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:llama-4-scout",
+      "k_operations": 6,
+      "n_ops_actual": 6,
+      "correct_answer": 7,
+      "predicted": 7,
+      "accurate": 1,
+      "query_entity": "Alice",
+      "initial_state": {
+        "Iris": 5,
+        "Alice": 7,
+        "Grace": 18
+      },
+      "operations": [
+        "Alice gains 3 points.",
+        "Alice loses 3 points.",
+        "Alice gains 7 points.",
+        "Alice loses 7 points.",
+        "Iris loses 4 points.",
+        "Iris gains 4 points."
+      ],
+      "prompt_length_chars": 458,
+      "raw_response": "## Step 1: Determine the initial state of points for each person.\nIris has 5 points, Alice has 7 points, and Grace has 18 points.\n\n## 2: Apply the first operation - Alice gains 3 points.\nAlice now has 7 + 3 = 10 points.\n\n## 3: Apply the second operation - Alice loses 3 points.\nAlice now has 10 - 3 = 7 points.\n\n## 4: Apply the third operation - Alice gains 7 points.\nAlice now has 7 + 7 = 14 points.\n\n## 5: Apply the fourth operation - Alice loses 7 points.\nAlice now has 14 - 7 = 7 points.\n\n## 6: Apply the fifth operation - Iris loses 4 points.\nIris now has 5 - 4 = 1 point. This operation does not affect Alice.\n\n## 7: Apply the sixth operation - Iris gains 4 points.\nIris now has 1 + 4 = 5 points. This operation does not affect Alice.\n\n## 8: Determine Alice's final points after all operations.\nAlice still has 7 points.\n\nThe final answer is: $\\boxed{7}$"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:llama-4-scout",
+      "k_operations": 6,
+      "n_ops_actual": 6,
+      "correct_answer": 13,
+      "predicted": 13,
+      "accurate": 1,
+      "query_entity": "Grace",
+      "initial_state": {
+        "Frank": 13,
+        "Mia": 18,
+        "Grace": 13
+      },
+      "operations": [
+        "Mia gains 1 points.",
+        "Mia loses 1 points.",
+        "Grace gives 2 points to Frank.",
+        "Frank gives 2 points to Grace.",
+        "Grace gains 2 points.",
+        "Grace loses 2 points."
+      ],
+      "prompt_length_chars": 475,
+      "raw_response": "## Step 1: Initialize the points for each person\nFrank has 13 points, Mia has 18 points, and Grace has 13 points.\n\n## 2: Apply the first operation - Mia gains 1 point\nMia now has 18 + 1 = 19 points. Frank still has 13 points, and Grace still has 13 points.\n\n## 3: Apply the second operation - Mia loses 1 point\nMia now has 19 - 1 = 18 points. Frank still has 13 points, and Grace still has 13 points.\n\n## 4: Apply the third operation - Grace gives 2 points to Frank\nGrace now has 13 - 2 = 11 points, and Frank now has 13 + 2 = 15 points. Mia still has 18 points.\n\n## 5: Apply the fourth operation - Frank gives 2 points to Grace\nFrank now has 15 - 2 = 13 points, and Grace now has 11 + 2 = 13 points. Mia still has 18 points.\n\n## 6: Apply the fifth operation - Grace gains 2 points\nGrace now has 13 + 2 = 15 points. Frank still has 13 points, and Mia still has 18 points.\n\n## 7: Apply the sixth operation - Grace loses 2 points\nGrace now has 15 - 2 = 13 points.\n\nThe final answer is: $\\boxed{13}$"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:llama-4-scout",
+      "k_operations": 6,
+      "n_ops_actual": 6,
+      "correct_answer": 11,
+      "predicted": 11,
+      "accurate": 1,
+      "query_entity": "Mia",
+      "initial_state": {
+        "Alice": 12,
+        "Mia": 11,
+        "Noah": 5
+      },
+      "operations": [
+        "Alice gives 1 points to Noah.",
+        "Noah gives 1 points to Alice.",
+        "Noah loses 1 points.",
+        "Noah gains 1 points.",
+        "Alice gives 3 points to Mia.",
+        "Mia gives 3 points to Alice."
+      ],
+      "prompt_length_chars": 485,
+      "raw_response": "## Step 1: Initial State\nThe initial state is given as: Alice has 12 points, Mia has 11 points, and Noah has 5 points.\n\n## 2: Apply Operation 1\nAlice gives 1 point to Noah. The new state is: Alice has 11 points, Mia has 11 points, and Noah has 6 points.\n\n## 3: Apply Operation 2\nNoah gives 1 point to Alice. The new state is: Alice has 12 points, Mia has 11 points, and Noah has 5 points.\n\n## 4: Apply Operation 3\nNoah loses 1 point. The new state is: Alice has 12 points, Mia has 11 points, and Noah has 4 points.\n\n## 5: Apply Operation 4\nNoah gains 1 point. The new state is: Alice has 12 points, Mia has 11 points, and Noah has 5 points.\n\n## 6: Apply Operation 5\nAlice gives 3 points to Mia. The new state is: Alice has 9 points, Mia has 14 points, and Noah has 5 points.\n\n## 7: Apply Operation 6\nMia gives 3 points to Alice. The new state is: Alice has 12 points, Mia has 11 points, and Noah has 5 points.\n\nThe final answer is: $\\boxed{11}$"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:llama-4-scout",
+      "k_operations": 6,
+      "n_ops_actual": 6,
+      "correct_answer": 8,
+      "predicted": 8,
+      "accurate": 1,
+      "query_entity": "Mia",
+      "initial_state": {
+        "Mia": 8,
+        "Frank": 10,
+        "Carol": 14
+      },
+      "operations": [
+        "Carol gains 1 points.",
+        "Carol loses 1 points.",
+        "Carol loses 4 points.",
+        "Carol gains 4 points.",
+        "Carol loses 2 points.",
+        "Carol gains 2 points."
+      ],
+      "prompt_length_chars": 458,
+      "raw_response": "8"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:llama-4-scout",
+      "k_operations": 6,
+      "n_ops_actual": 6,
+      "correct_answer": 12,
+      "predicted": 12,
+      "accurate": 1,
+      "query_entity": "James",
+      "initial_state": {
+        "James": 12,
+        "Leo": 8,
+        "Kate": 14
+      },
+      "operations": [
+        "Kate gives 3 points to James.",
+        "James gives 3 points to Kate.",
+        "Leo gains 9 points.",
+        "Leo loses 9 points.",
+        "Kate loses 3 points.",
+        "Kate gains 3 points."
+      ],
+      "prompt_length_chars": 469,
+      "raw_response": "## Step 1: Apply the initial state\nJames: 12 points, Leo: 8 points, Kate: 14 points.\n\n## Step 2: Kate gives 3 points to James\nJames: 12 + 3 = 15 points, Leo: 8 points, Kate: 14 - 3 = 11 points.\n\n## Step 3: James gives 3 points to Kate\nJames: 15 - 3 = 12 points, Leo: 8 points, Kate: 11 + 3 = 14 points.\n\n## 4: Leo gains 9 points\nJames: 12 points, Leo: 8 + 9 = 17 points, Kate: 14 points.\n\n## 5: Leo loses 9 points\nJames: 12 points, Leo: 17 - 9 = 8 points, Kate: 14 points.\n\n## 6: Kate loses 3 points\nJames: 12 points, Leo: 8 points, Kate: 14 - 3 = 11 points.\n\n## 7: Kate gains 3 points\nJames: 12 points, Leo: 8 points, Kate: 11 + 3 = 14 points.\n\nThe final answer is: $\\boxed{12}$"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:llama-4-scout",
+      "k_operations": 6,
+      "n_ops_actual": 6,
+      "correct_answer": 20,
+      "predicted": 20,
+      "accurate": 1,
+      "query_entity": "Frank",
+      "initial_state": {
+        "Iris": 5,
+        "Kate": 18,
+        "Frank": 20
+      },
+      "operations": [
+        "Kate gains 6 points.",
+        "Kate loses 6 points.",
+        "Kate gives 2 points to Iris.",
+        "Iris gives 2 points to Kate.",
+        "Frank gains 9 points.",
+        "Frank loses 9 points."
+      ],
+      "prompt_length_chars": 472,
+      "raw_response": "20"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:llama-4-scout",
+      "k_operations": 6,
+      "n_ops_actual": 6,
+      "correct_answer": 18,
+      "predicted": 18,
+      "accurate": 1,
+      "query_entity": "Iris",
+      "initial_state": {
+        "Emma": 20,
+        "James": 19,
+        "Iris": 18
+      },
+      "operations": [
+        "Iris gives 2 points to James.",
+        "James gives 2 points to Iris.",
+        "Emma gains 5 points.",
+        "Emma loses 5 points.",
+        "Emma loses 4 points.",
+        "Emma gains 4 points."
+      ],
+      "prompt_length_chars": 472,
+      "raw_response": "## Step 1: Initial state\nThe initial state is: Emma: 20 points, James: 19 points, Iris: 18 points.\n\n## Step 2: Operation 1 - Iris gives 2 points to James\nAfter operation 1, the state becomes: Emma: 20 points, James: 21 points, Iris: 16 points.\n\n## Step 3: Operation 2 - James gives 2 points to Iris\nAfter operation 2, the state becomes: Emma: 20 points, James: 19 points, Iris: 18 points.\n\n## Step 4: Operation 3 - Emma gains 5 points\nAfter operation 3, the state becomes: Emma: 25 points, James: 19 points, Iris: 18 points.\n\n## Step 5: Operation 4 - Emma loses 5 points\nAfter operation 4, the state becomes: Emma: 20 points, James: 19 points, Iris: 18 points.\n\n## Step 6: Operation 5 - Emma loses 4 points\nAfter operation 5, the state becomes: Emma: 16 points, James: 19 points, Iris: 18 points.\n\n## Step 7: Operation 6 - Emma gains 4 points\nAfter operation 6, the state becomes: Emma: 20 points, James: 19 points, Iris: 18 points.\n\nThe final answer is: $\\boxed{18}$"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:llama-4-scout",
+      "k_operations": 6,
+      "n_ops_actual": 6,
+      "correct_answer": 20,
+      "predicted": 20,
+      "accurate": 1,
+      "query_entity": "Grace",
+      "initial_state": {
+        "James": 15,
+        "Kate": 5,
+        "Grace": 20
+      },
+      "operations": [
+        "James loses 4 points.",
+        "James gains 4 points.",
+        "Kate gains 5 points.",
+        "Kate loses 5 points.",
+        "Kate loses 5 points.",
+        "Kate gains 5 points."
+      ],
+      "prompt_length_chars": 457,
+      "raw_response": "20"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:llama-4-scout",
+      "k_operations": 6,
+      "n_ops_actual": 6,
+      "correct_answer": 11,
+      "predicted": 11,
+      "accurate": 1,
+      "query_entity": "Emma",
+      "initial_state": {
+        "Emma": 11,
+        "Iris": 7,
+        "Alice": 12
+      },
+      "operations": [
+        "Iris gives 3 points to Alice.",
+        "Alice gives 3 points to Iris.",
+        "Alice gains 8 points.",
+        "Alice loses 8 points.",
+        "Alice gives 2 points to Iris.",
+        "Iris gives 2 points to Alice."
+      ],
+      "prompt_length_chars": 491,
+      "raw_response": "11"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:llama-4-scout",
+      "k_operations": 6,
+      "n_ops_actual": 6,
+      "correct_answer": 14,
+      "predicted": 14,
+      "accurate": 1,
+      "query_entity": "David",
+      "initial_state": {
+        "Bob": 17,
+        "Emma": 12,
+        "David": 14
+      },
+      "operations": [
+        "David gives 2 points to Emma.",
+        "Emma gives 2 points to David.",
+        "David gives 2 points to Emma.",
+        "Emma gives 2 points to David.",
+        "David gives 2 points to Emma.",
+        "Emma gives 2 points to David."
+      ],
+      "prompt_length_chars": 508,
+      "raw_response": "## Step 1: Initial State\nThe initial state is: Bob: 17 points, Emma: 12 points, David: 14 points.\n\n## Step 2: Apply Operation 1\nDavid gives 2 points to Emma. The new state is: Bob: 17 points, Emma: 14 points, David: 12 points.\n\n## Step 3: Apply Operation 2\nEmma gives 2 points to David. The new state is: Bob: 17 points, Emma: 12 points, David: 14 points.\n\n## 4: Apply Operation 3\nDavid gives 2 points to Emma. The new state is: Bob: 17 points, Emma: 14 points, David: 12 points.\n\n## 5: Apply Operation 4\nEmma gives 2 points to David. The new state is: Bob: 17 points, Emma: 12 points, David: 14 points.\n\n## 6: Apply Operation 5\nDavid gives 2 points to Emma. The new state is: Bob: 17 points, Emma: 14 points, David: 12 points.\n\n## 7: Apply Operation 6\nEmma gives 2 points to David. The new state is: Bob: 17 points, Emma: 12 points, David: 14 points.\n\nThe final answer is: $\\boxed{14}$"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:llama-4-scout",
+      "k_operations": 8,
+      "n_ops_actual": 8,
+      "correct_answer": 8,
+      "predicted": 8,
+      "accurate": 1,
+      "query_entity": "Mia",
+      "initial_state": {
+        "Henry": 13,
+        "Emma": 12,
+        "Mia": 8
+      },
+      "operations": [
+        "Henry gives 1 points to Emma.",
+        "Emma gives 1 points to Henry.",
+        "Mia gives 1 points to Henry.",
+        "Henry gives 1 points to Mia.",
+        "Mia gains 8 points.",
+        "Mia loses 8 points.",
+        "Mia loses 5 points.",
+        "Mia gains 5 points."
+      ],
+      "prompt_length_chars": 533,
+      "raw_response": "## Step 1: Initial State\nThe initial state is given as: Henry has 13 points, Emma has 12 points, and Mia has 8 points.\n\n## 2: Henry gives 1 point to Emma\nAfter this operation, Henry has 13 - 1 = 12 points, Emma has 12 + 1 = 13 points, and Mia has 8 points.\n\n## 3: Emma gives 1 point to Henry\nAfter this operation, Henry has 12 + 1 = 13 points, Emma has 13 - 1 = 12 points, and Mia has 8 points.\n\n## 4: Mia gives 1 point to Henry\nAfter this operation, Henry has 13 + 1 = 14 points, Emma has 12 points, and Mia has 8 - 1 = 7 points.\n\n## 5: Henry gives 1 point to Mia\nAfter this operation, Henry has 14 - 1 = 13 points, Emma has 12 points, and Mia has 7 + 1 = 8 points.\n\n## 6: Mia gains 8 points\nAfter this operation, Henry has 13 points, Emma has 12 points, and Mia has 8 + 8 = 16 points.\n\n## 7: Mia loses 8 points\nAfter this operation, Henry has 13 points, Emma has 12 points, and Mia has 16 - 8 = 8 points.\n\n## 8: Mia loses 5 points\nAfter this operation, Henry has 13 points, Emma has 12 points, and Mia has 8 - 5 = 3 points.\n\n## 9: Mia gains 5 points\nAfter this operation, Henry has 13 points, Emma has 12 points, and Mia has 3 + 5 = 8 points.\n\nThe final answer is: $\\boxed{8}$"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:llama-4-scout",
+      "k_operations": 8,
+      "n_ops_actual": 8,
+      "correct_answer": 12,
+      "predicted": 12,
+      "accurate": 1,
+      "query_entity": "Bob",
+      "initial_state": {
+        "James": 11,
+        "Emma": 14,
+        "Bob": 12
+      },
+      "operations": [
+        "James loses 3 points.",
+        "James gains 3 points.",
+        "Bob gains 9 points.",
+        "Bob loses 9 points.",
+        "Emma gains 1 points.",
+        "Emma loses 1 points.",
+        "Bob gains 5 points.",
+        "Bob loses 5 points."
+      ],
+      "prompt_length_chars": 502,
+      "raw_response": "12"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:llama-4-scout",
+      "k_operations": 8,
+      "n_ops_actual": 8,
+      "correct_answer": 8,
+      "predicted": 8,
+      "accurate": 1,
+      "query_entity": "Carol",
+      "initial_state": {
+        "Carol": 8,
+        "Kate": 5,
+        "Henry": 14
+      },
+      "operations": [
+        "Kate loses 4 points.",
+        "Kate gains 4 points.",
+        "Carol loses 1 points.",
+        "Carol gains 1 points.",
+        "Kate loses 1 points.",
+        "Kate gains 1 points.",
+        "Kate gains 8 points.",
+        "Kate loses 8 points."
+      ],
+      "prompt_length_chars": 508,
+      "raw_response": "8"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:llama-4-scout",
+      "k_operations": 8,
+      "n_ops_actual": 8,
+      "correct_answer": 9,
+      "predicted": 9,
+      "accurate": 1,
+      "query_entity": "Kate",
+      "initial_state": {
+        "James": 6,
+        "Kate": 9,
+        "Mia": 9
+      },
+      "operations": [
+        "Kate gives 1 points to James.",
+        "James gives 1 points to Kate.",
+        "Mia gains 7 points.",
+        "Mia loses 7 points.",
+        "Mia gives 3 points to James.",
+        "James gives 3 points to Mia.",
+        "Kate loses 4 points.",
+        "Kate gains 4 points."
+      ],
+      "prompt_length_chars": 534,
+      "raw_response": "## Step 1: Initial State\nThe initial state is given as: James: 6 points, Kate: 9 points, Mia: 9 points.\n\n## Step 2: Apply Operation 1\nKate gives 1 point to James. The state becomes: James: 7 points, Kate: 8 points, Mia: 9 points.\n\n## 3: Apply Operation 2\nJames gives 1 point to Kate. The state becomes: James: 6 points, Kate: 9 points, Mia: 9 points.\n\n## 4: Apply Operation 3\nMia gains 7 points. The state becomes: James: 6 points, Kate: 9 points, Mia: 16 points.\n\n## 5: Apply Operation 4\nMia loses 7 points. The state becomes: James: 6 points, Kate: 9 points, Mia: 9 points.\n\n## 6: Apply Operation 5\nMia gives 3 points to James. The state becomes: James: 9 points, Kate: 9 points, Mia: 6 points.\n\n## 7: Apply Operation 6\nJames gives 3 points to Mia. The state becomes: James: 6 points, Kate: 9 points, Mia: 9 points.\n\n## 8: Apply Operation 7\nKate loses 4 points. The state becomes: James: 6 points, Kate: 5 points, Mia: 9 points.\n\n## 9: Apply Operation 8\nKate gains 4 points. The state becomes: James: 6 points, Kate: 9 points, Mia: 9 points.\n\nThe final answer is: $\\boxed{9}$"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:llama-4-scout",
+      "k_operations": 8,
+      "n_ops_actual": 8,
+      "correct_answer": 6,
+      "predicted": 6,
+      "accurate": 1,
+      "query_entity": "James",
+      "initial_state": {
+        "Noah": 14,
+        "James": 6,
+        "Grace": 8
+      },
+      "operations": [
+        "Grace gains 4 points.",
+        "Grace loses 4 points.",
+        "Grace loses 1 points.",
+        "Grace gains 1 points.",
+        "Noah gains 3 points.",
+        "Noah loses 3 points.",
+        "Noah gives 1 points to Grace.",
+        "Grace gives 1 points to Noah."
+      ],
+      "prompt_length_chars": 528,
+      "raw_response": "6"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:llama-4-scout",
+      "k_operations": 8,
+      "n_ops_actual": 8,
+      "correct_answer": 6,
+      "predicted": 6,
+      "accurate": 1,
+      "query_entity": "James",
+      "initial_state": {
+        "Henry": 20,
+        "Leo": 14,
+        "James": 6
+      },
+      "operations": [
+        "Leo gains 5 points.",
+        "Leo loses 5 points.",
+        "Leo gives 3 points to Henry.",
+        "Henry gives 3 points to Leo.",
+        "Leo gains 10 points.",
+        "Leo loses 10 points.",
+        "Henry gives 1 points to Leo.",
+        "Leo gives 1 points to Henry."
+      ],
+      "prompt_length_chars": 536,
+      "raw_response": "6"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:llama-4-scout",
+      "k_operations": 8,
+      "n_ops_actual": 8,
+      "correct_answer": 7,
+      "predicted": 7,
+      "accurate": 1,
+      "query_entity": "Carol",
+      "initial_state": {
+        "David": 13,
+        "Kate": 9,
+        "Carol": 7
+      },
+      "operations": [
+        "David gains 5 points.",
+        "David loses 5 points.",
+        "Carol gives 2 points to Kate.",
+        "Kate gives 2 points to Carol.",
+        "Kate gains 5 points.",
+        "Kate loses 5 points.",
+        "Kate gives 3 points to Carol.",
+        "Carol gives 3 points to Kate."
+      ],
+      "prompt_length_chars": 544,
+      "raw_response": "## Step 1: Initial state\nDavid has 13 points, Kate has 9 points, and Carol has 7 points.\n\n## Step 2: Operation 1 - David gains 5 points\nDavid now has 13 + 5 = 18 points, Kate has 9 points, and Carol has 7 points.\n\n## 3: Operation 2 - David loses 5 points\nDavid now has 18 - 5 = 13 points, Kate has 9 points, and Carol has 7 points.\n\n## 4: Operation 3 - Carol gives 2 points to Kate\nDavid has 13 points, Kate now has 9 + 2 = 11 points, and Carol now has 7 - 2 = 5 points.\n\n## 5: Operation 4 - Kate gives 2 points to Carol\nDavid has 13 points, Kate now has 11 - 2 = 9 points, and Carol now has 5 + 2 = 7 points.\n\n## 6: Operation 5 - Kate gains 5 points\nDavid has 13 points, Kate now has 9 + 5 = 14 points, and Carol has 7 points.\n\n## 7: Operation 6 - Kate loses 5 points\nDavid has 13 points, Kate now has 14 - 5 = 9 points, and Carol has 7 points.\n\n## 8: Operation 7 - Kate gives 3 points to Carol\nDavid has 13 points, Kate now has 9 - 3 = 6 points, and Carol now has 7 + 3 = 10 points.\n\n## 9: Operation 8 - Carol gives 3 points to Kate\nDavid has 13 points, Kate now has 6 + 3 = 9 points, and Carol now has 10 - 3 = 7 points.\n\nThe final answer is: $\\boxed{7}$"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:llama-4-scout",
+      "k_operations": 8,
+      "n_ops_actual": 8,
+      "correct_answer": 15,
+      "predicted": 15,
+      "accurate": 1,
+      "query_entity": "Bob",
+      "initial_state": {
+        "Henry": 6,
+        "Noah": 18,
+        "Bob": 15
+      },
+      "operations": [
+        "Noah gives 1 points to Henry.",
+        "Henry gives 1 points to Noah.",
+        "Bob gains 10 points.",
+        "Bob loses 10 points.",
+        "Henry gives 3 points to Noah.",
+        "Noah gives 3 points to Henry.",
+        "Henry gains 8 points.",
+        "Henry loses 8 points."
+      ],
+      "prompt_length_chars": 541,
+      "raw_response": "## Step 1: Initial State\nThe initial state is given as: Henry has 6 points, Noah has 18 points, and Bob has 15 points.\n\n## 2: Noah gives 1 point to Henry\nAfter this operation, Henry has 6 + 1 = 7 points, Noah has 18 - 1 = 17 points, and Bob still has 15 points.\n\n## 3: Henry gives 1 point to Noah\nNow, Henry has 7 - 1 = 6 points, Noah has 17 + 1 = 18 points, and Bob still has 15 points.\n\n## 4: Bob gains 10 points\nAfter this, Henry still has 6 points, Noah still has 18 points, and Bob has 15 + 10 = 25 points.\n\n## 5: Bob loses 10 points\nNow, Henry still has 6 points, Noah still has 18 points, and Bob has 25 - 10 = 15 points.\n\n## 6: Henry gives 3 points to Noah\nAfter this operation, Henry has 6 - 3 = 3 points, Noah has 18 + 3 = 21 points, and Bob still has 15 points.\n\n## 7: Noah gives 3 points to Henry\nNow, Henry has 3 + 3 = 6 points, Noah has 21 - 3 = 18 points, and Bob still has 15 points.\n\n## 8: Henry gains 8 points\nAfter this, Henry has 6 + 8 = 14 points, Noah still has 18 points, and Bob still has 15 points.\n\n## 9: Henry loses 8 points\nFinally, Henry has 14 - 8 = 6 points, Noah still has 18 points, and Bob still has 15 points.\n\nThe final answer is: $\\boxed{15}$"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:llama-4-scout",
+      "k_operations": 8,
+      "n_ops_actual": 8,
+      "correct_answer": 18,
+      "predicted": 18,
+      "accurate": 1,
+      "query_entity": "Henry",
+      "initial_state": {
+        "Kate": 10,
+        "Henry": 18,
+        "Emma": 20
+      },
+      "operations": [
+        "Henry gains 6 points.",
+        "Henry loses 6 points.",
+        "Henry loses 3 points.",
+        "Henry gains 3 points.",
+        "Kate gives 2 points to Emma.",
+        "Emma gives 2 points to Kate.",
+        "Emma loses 4 points.",
+        "Emma gains 4 points."
+      ],
+      "prompt_length_chars": 527,
+      "raw_response": "18"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:llama-4-scout",
+      "k_operations": 8,
+      "n_ops_actual": 8,
+      "correct_answer": 6,
+      "predicted": 6,
+      "accurate": 1,
+      "query_entity": "Kate",
+      "initial_state": {
+        "Kate": 6,
+        "Grace": 19,
+        "Iris": 7
+      },
+      "operations": [
+        "Grace loses 3 points.",
+        "Grace gains 3 points.",
+        "Grace gains 9 points.",
+        "Grace loses 9 points.",
+        "Iris gains 9 points.",
+        "Iris loses 9 points.",
+        "Grace loses 1 points.",
+        "Grace gains 1 points."
+      ],
+      "prompt_length_chars": 510,
+      "raw_response": "6"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:llama-4-scout",
+      "k_operations": 8,
+      "n_ops_actual": 8,
+      "correct_answer": 20,
+      "predicted": 20,
+      "accurate": 1,
+      "query_entity": "Iris",
+      "initial_state": {
+        "Iris": 20,
+        "Frank": 19,
+        "James": 6
+      },
+      "operations": [
+        "Frank gains 9 points.",
+        "Frank loses 9 points.",
+        "Frank gains 8 points.",
+        "Frank loses 8 points.",
+        "Frank gives 1 points to Iris.",
+        "Iris gives 1 points to Frank.",
+        "James gives 3 points to Iris.",
+        "Iris gives 3 points to James."
+      ],
+      "prompt_length_chars": 546,
+      "raw_response": "## Step 1: Initial State\nIris starts with 20 points, Frank with 19 points, and James with 6 points.\n\n## 2: Frank Gains 9 Points\nFrank now has 19 + 9 = 28 points. Iris still has 20 points, and James still has 6 points.\n\n## 3: Frank Loses 9 Points\nFrank now has 28 - 9 = 19 points. Iris still has 20 points, and James still has 6 points.\n\n## 4: Frank Gains 8 Points\nFrank now has 19 + 8 = 27 points. Iris still has 20 points, and James still has 6 points.\n\n## 5: Frank Loses 8 Points\nFrank now has 27 - 8 = 19 points. Iris still has 20 points, and James still has 6 points.\n\n## 6: Frank Gives 1 Point to Iris\nFrank now has 19 - 1 = 18 points, and Iris now has 20 + 1 = 21 points. James still has 6 points.\n\n## 7: Iris Gives 1 Point to Frank\nFrank now has 18 + 1 = 19 points, and Iris now has 21 - 1 = 20 points. James still has 6 points.\n\n## 8: James Gives 3 Points to Iris\nJames now has 6 - 3 = 3 points, and Iris now has 20 + 3 = 23 points. Frank still has 19 points.\n\n## 9: Iris Gives 3 Points to James\nIris now has 23 - 3 = 20 points, and James now has 3 + 3 = 6 points. Frank still has 19 points.\n\nThe final answer is: $\\boxed{20}$"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:llama-4-scout",
+      "k_operations": 8,
+      "n_ops_actual": 8,
+      "correct_answer": 18,
+      "predicted": 18,
+      "accurate": 1,
+      "query_entity": "Emma",
+      "initial_state": {
+        "Emma": 18,
+        "Iris": 7,
+        "Alice": 12
+      },
+      "operations": [
+        "Iris gains 2 points.",
+        "Iris loses 2 points.",
+        "Emma gives 3 points to Iris.",
+        "Iris gives 3 points to Emma.",
+        "Alice loses 3 points.",
+        "Alice gains 3 points.",
+        "Iris loses 4 points.",
+        "Iris gains 4 points."
+      ],
+      "prompt_length_chars": 523,
+      "raw_response": "## Step 1: Initialize the points for each person\nEmma starts with 18 points, Iris starts with 7 points, and Alice starts with 12 points.\n\n## Step 2: Apply the first operation - Iris gains 2 points\nIris now has 7 + 2 = 9 points. Emma still has 18 points, and Alice still has 12 points.\n\n## 3: Apply the second operation - Iris loses 2 points\nIris now has 9 - 2 = 7 points. Emma still has 18 points, and Alice still has 12 points.\n\n## 4: Apply the third operation - Emma gives 3 points to Iris\nEmma now has 18 - 3 = 15 points, and Iris now has 7 + 3 = 10 points. Alice still has 12 points.\n\n## 5: Apply the fourth operation - Iris gives 3 points to Emma\nIris now has 10 - 3 = 7 points, and Emma now has 15 + 3 = 18 points. Alice still has 12 points.\n\n## 6: Apply the fifth operation - Alice loses 3 points\nAlice now has 12 - 3 = 9 points. Emma still has 18 points, and Iris still has 7 points.\n\n## 7: Apply the sixth operation - Alice gains 3 points\nAlice now has 9 + 3 = 12 points. Emma still has 18 points, and Iris still has 7 points.\n\n## 8: Apply the seventh operation - Iris loses 4 points\nIris now has 7 - 4 = 3 points. Emma still has 18 points, and Alice still has 12 points.\n\n## 9: Apply the eighth operation - Iris gains 4 points\nIris now has 3 + 4 = 7 points. Emma still has 18 points, and Alice still has 12 points.\n\nThe final answer is: $\\boxed{18}$"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:llama-4-scout",
+      "k_operations": 8,
+      "n_ops_actual": 8,
+      "correct_answer": 11,
+      "predicted": 11,
+      "accurate": 1,
+      "query_entity": "Iris",
+      "initial_state": {
+        "Henry": 17,
+        "Iris": 11,
+        "Carol": 9
+      },
+      "operations": [
+        "Iris gains 7 points.",
+        "Iris loses 7 points.",
+        "Carol loses 3 points.",
+        "Carol gains 3 points.",
+        "Iris gains 5 points.",
+        "Iris loses 5 points.",
+        "Carol gives 1 points to Iris.",
+        "Iris gives 1 points to Carol."
+      ],
+      "prompt_length_chars": 526,
+      "raw_response": "11"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:llama-4-scout",
+      "k_operations": 8,
+      "n_ops_actual": 8,
+      "correct_answer": 19,
+      "predicted": 19,
+      "accurate": 1,
+      "query_entity": "Frank",
+      "initial_state": {
+        "Iris": 15,
+        "Henry": 17,
+        "Frank": 19
+      },
+      "operations": [
+        "Iris loses 2 points.",
+        "Iris gains 2 points.",
+        "Henry gives 2 points to Iris.",
+        "Iris gives 2 points to Henry.",
+        "Henry gains 8 points.",
+        "Henry loses 8 points.",
+        "Henry gives 3 points to Frank.",
+        "Frank gives 3 points to Henry."
+      ],
+      "prompt_length_chars": 548,
+      "raw_response": "19"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:llama-4-scout",
+      "k_operations": 8,
+      "n_ops_actual": 8,
+      "correct_answer": 15,
+      "predicted": 15,
+      "accurate": 1,
+      "query_entity": "Henry",
+      "initial_state": {
+        "Carol": 9,
+        "Henry": 15,
+        "Alice": 8
+      },
+      "operations": [
+        "Carol loses 5 points.",
+        "Carol gains 5 points.",
+        "Carol loses 2 points.",
+        "Carol gains 2 points.",
+        "Alice loses 2 points.",
+        "Alice gains 2 points.",
+        "Henry gains 5 points.",
+        "Henry loses 5 points."
+      ],
+      "prompt_length_chars": 515,
+      "raw_response": "15"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:llama-4-scout",
+      "k_operations": 8,
+      "n_ops_actual": 8,
+      "correct_answer": 17,
+      "predicted": 17,
+      "accurate": 1,
+      "query_entity": "Grace",
+      "initial_state": {
+        "James": 7,
+        "Leo": 15,
+        "Grace": 17
+      },
+      "operations": [
+        "Grace loses 4 points.",
+        "Grace gains 4 points.",
+        "James gives 1 points to Grace.",
+        "Grace gives 1 points to James.",
+        "Grace gives 1 points to Leo.",
+        "Leo gives 1 points to Grace.",
+        "James gives 1 points to Leo.",
+        "Leo gives 1 points to James."
+      ],
+      "prompt_length_chars": 560,
+      "raw_response": "## Step 1: Initial State\nThe initial state is: James = 7 points, Leo = 15 points, Grace = 17 points.\n\n## 2: Grace loses 4 points\nAfter operation 1, Grace has 17 - 4 = 13 points. The state is: James = 7, Leo = 15, Grace = 13.\n\n## 3: Grace gains 4 points\nAfter operation 2, Grace has 13 + 4 = 17 points. The state is: James = 7, Leo = 15, Grace = 17.\n\n## 4: James gives 1 point to Grace\nAfter operation 3, Grace has 17 + 1 = 18 points, and James has 7 - 1 = 6 points. The state is: James = 6, Leo = 15, Grace = 18.\n\n## 5: Grace gives 1 point to James\nAfter operation 4, Grace has 18 - 1 = 17 points, and James has 6 + 1 = 7 points. The state is: James = 7, Leo = 15, Grace = 17.\n\n## 6: Grace gives 1 point to Leo\nAfter operation 5, Grace has 17 - 1 = 16 points, and Leo has 15 + 1 = 16 points. The state is: James = 7, Leo = 16, Grace = 16.\n\n## 7: Leo gives 1 point to Grace\nAfter operation 6, Grace has 16 + 1 = 17 points, and Leo has 16 - 1 = 15 points. The state is: James = 7, Leo = 15, Grace = 17.\n\n## 8: James gives 1 point to Leo\nAfter operation 7, James has 7 - 1 = 6 points, and Leo has 15 + 1 = 16 points. The state is: James = 6, Leo = 16, Grace = 17.\n\n## 9: Leo gives 1 point to James\nAfter operation 8, Leo has 16 - 1 = 15 points, and James has 6 + 1 = 7 points. The state is: James = 7, Leo = 15, Grace = 17.\n\nThe final answer is: $\\boxed{17}$"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:llama-4-scout",
+      "k_operations": 8,
+      "n_ops_actual": 8,
+      "correct_answer": 10,
+      "predicted": 10,
+      "accurate": 1,
+      "query_entity": "Leo",
+      "initial_state": {
+        "Leo": 10,
+        "Bob": 14,
+        "Henry": 5
+      },
+      "operations": [
+        "Bob gains 1 points.",
+        "Bob loses 1 points.",
+        "Bob loses 3 points.",
+        "Bob gains 3 points.",
+        "Leo loses 2 points.",
+        "Leo gains 2 points.",
+        "Bob gives 1 points to Leo.",
+        "Leo gives 1 points to Bob."
+      ],
+      "prompt_length_chars": 508,
+      "raw_response": "## Step 1: Initialize the points for each person\nLeo starts with 10 points, Bob with 14 points, and Henry with 5 points.\n\n## 2: Apply the first operation - Bob gains 1 point\nBob now has 14 + 1 = 15 points, Leo has 10 points, and Henry has 5 points.\n\n## 3: Apply the second operation - Bob loses 1 point\nBob now has 15 - 1 = 14 points, Leo has 10 points, and Henry has 5 points.\n\n## 4: Apply the third operation - Bob loses 3 points\nBob now has 14 - 3 = 11 points, Leo has 10 points, and Henry has 5 points.\n\n## 5: Apply the fourth operation - Bob gains 3 points\nBob now has 11 + 3 = 14 points, Leo has 10 points, and Henry has 5 points.\n\n## 6: Apply the fifth operation - Leo loses 2 points\nLeo now has 10 - 2 = 8 points, Bob has 14 points, and Henry has 5 points.\n\n## 7: Apply the sixth operation - Leo gains 2 points\nLeo now has 8 + 2 = 10 points, Bob has 14 points, and Henry has 5 points.\n\n## 8: Apply the seventh operation - Bob gives 1 point to Leo\nBob now has 14 - 1 = 13 points, Leo has 10 + 1 = 11 points, and Henry has 5 points.\n\n## 9: Apply the eighth operation - Leo gives 1 point to Bob\nBob now has 13 + 1 = 14 points, Leo has 11 - 1 = 10 points, and Henry has 5 points.\n\nThe final answer is: $\\boxed{10}$"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:llama-4-scout",
+      "k_operations": 8,
+      "n_ops_actual": 8,
+      "correct_answer": 20,
+      "predicted": 20,
+      "accurate": 1,
+      "query_entity": "James",
+      "initial_state": {
+        "Bob": 12,
+        "James": 20,
+        "Grace": 9
+      },
+      "operations": [
+        "James gains 5 points.",
+        "James loses 5 points.",
+        "James loses 1 points.",
+        "James gains 1 points.",
+        "James loses 5 points.",
+        "James gains 5 points.",
+        "Bob gains 8 points.",
+        "Bob loses 8 points."
+      ],
+      "prompt_length_chars": 510,
+      "raw_response": "20"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:llama-4-scout",
+      "k_operations": 8,
+      "n_ops_actual": 8,
+      "correct_answer": 19,
+      "predicted": 19,
+      "accurate": 1,
+      "query_entity": "Kate",
+      "initial_state": {
+        "James": 18,
+        "Emma": 13,
+        "Kate": 19
+      },
+      "operations": [
+        "James loses 4 points.",
+        "James gains 4 points.",
+        "James loses 2 points.",
+        "James gains 2 points.",
+        "Kate loses 3 points.",
+        "Kate gains 3 points.",
+        "Emma gives 1 points to Kate.",
+        "Kate gives 1 points to Emma."
+      ],
+      "prompt_length_chars": 526,
+      "raw_response": "19"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:llama-4-scout",
+      "k_operations": 8,
+      "n_ops_actual": 8,
+      "correct_answer": 20,
+      "predicted": 20,
+      "accurate": 1,
+      "query_entity": "Emma",
+      "initial_state": {
+        "Grace": 6,
+        "Emma": 20,
+        "Alice": 14
+      },
+      "operations": [
+        "Alice gains 6 points.",
+        "Alice loses 6 points.",
+        "Alice gains 4 points.",
+        "Alice loses 4 points.",
+        "Emma gives 3 points to Grace.",
+        "Grace gives 3 points to Emma.",
+        "Alice gains 1 points.",
+        "Alice loses 1 points."
+      ],
+      "prompt_length_chars": 530,
+      "raw_response": "20"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:llama-4-scout",
+      "k_operations": 12,
+      "n_ops_actual": 12,
+      "correct_answer": 7,
+      "predicted": 7,
+      "accurate": 1,
+      "query_entity": "Alice",
+      "initial_state": {
+        "Mia": 16,
+        "Henry": 9,
+        "Alice": 7
+      },
+      "operations": [
+        "Henry loses 4 points.",
+        "Henry gains 4 points.",
+        "Mia gains 3 points.",
+        "Mia loses 3 points.",
+        "Henry gives 1 points to Alice.",
+        "Alice gives 1 points to Henry.",
+        "Henry loses 3 points.",
+        "Henry gains 3 points.",
+        "Henry gives 2 points to Mia.",
+        "Mia gives 2 points to Henry.",
+        "Mia gains 4 points.",
+        "Mia loses 4 points."
+      ],
+      "prompt_length_chars": 648,
+      "raw_response": "## Step 1: Initial State\nMia: 16 points, Henry: 9 points, Alice: 7 points.\n\n## Step 2: Apply Operation 1\nHenry loses 4 points: Mia: 16 points, Henry: 5 points, Alice: 7 points.\n\n## Step 3: Apply Operation 2\nHenry gains 4 points: Mia: 16 points, Henry: 9 points, Alice: 7 points.\n\n## Step 4: Apply Operation 3\nMia gains 3 points: Mia: 19 points, Henry: 9 points, Alice: 7 points.\n\n## Step 5: Apply Operation 4\nMia loses 3 points: Mia: 16 points, Henry: 9 points, Alice: 7 points.\n\n## Step 6: Apply Operation 5\nHenry gives 1 point to Alice: Mia: 16 points, Henry: 8 points, Alice: 8 points.\n\n## Step 7: Apply Operation 6\nAlice gives 1 point to Henry: Mia: 16 points, Henry: 9 points, Alice: 7 points.\n\n## Step 8: Apply Operation 7\nHenry loses 3 points: Mia: 16 points, Henry: 6 points, Alice: 7 points.\n\n## 9: Apply Operation 8\nHenry gains 3 points: Mia: 16 points, Henry: 9 points, Alice: 7 points.\n\n## 10: Apply Operation 9\nHenry gives 2 points to Mia: Mia: 18 points, Henry: 7 points, Alice: 7 points.\n\n## 11: Apply Operation 10\nMia gives 2 points to Henry: Mia: 16 points, Henry: 9 points, Alice: 7 points.\n\n## 12: Apply Operation 11\nMia gains 4 points: Mia: 20 points, Henry: 9 points, Alice: 7 points.\n\n## 13: Apply Operation 12\nMia loses 4 points: Mia: 16 points, Henry: 9 points, Alice: 7 points.\n\nThe final answer is: $\\boxed{7}$"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:llama-4-scout",
+      "k_operations": 12,
+      "n_ops_actual": 12,
+      "correct_answer": 17,
+      "predicted": 17,
+      "accurate": 1,
+      "query_entity": "Grace",
+      "initial_state": {
+        "Leo": 16,
+        "Kate": 7,
+        "Grace": 17
+      },
+      "operations": [
+        "Kate gains 9 points.",
+        "Kate loses 9 points.",
+        "Kate gains 6 points.",
+        "Kate loses 6 points.",
+        "Grace gives 3 points to Kate.",
+        "Kate gives 3 points to Grace.",
+        "Grace loses 3 points.",
+        "Grace gains 3 points.",
+        "Grace gains 4 points.",
+        "Grace loses 4 points.",
+        "Leo loses 5 points.",
+        "Leo gains 5 points."
+      ],
+      "prompt_length_chars": 632,
+      "raw_response": "## Step 1: Initial State\nThe initial state is given as: Leo = 16 points, Kate = 7 points, Grace = 17 points.\n\n## 2: Kate gains 9 points\nKate's new score is 7 + 9 = 16 points. The state is now: Leo = 16, Kate = 16, Grace = 17.\n\n## 3: Kate loses 9 points\nKate's new score is 16 - 9 = 7 points. The state is now: Leo = 16, Kate = 7, Grace = 17.\n\n## 4: Kate gains 6 points\nKate's new score is 7 + 6 = 13 points. The state is now: Leo = 16, Kate = 13, Grace = 17.\n\n## 5: Kate loses 6 points\nKate's new score is 13 - 6 = 7 points. The state is now: Leo = 16, Kate = 7, Grace = 17.\n\n## 6: Grace gives 3 points to Kate\nGrace's new score is 17 - 3 = 14 points, Kate's new score is 7 + 3 = 10 points. The state is now: Leo = 16, Kate = 10, Grace = 14.\n\n## 7: Kate gives 3 points to Grace\nKate's new score is 10 - 3 = 7 points, Grace's new score is 14 + 3 = 17 points. The state is now: Leo = 16, Kate = 7, Grace = 17.\n\n## 8: Grace loses 3 points\nGrace's new score is 17 - 3 = 14 points. The state is now: Leo = 16, Kate = 7, Grace = 14.\n\n## 9: Grace gains 3 points\nGrace's new score is 14 + 3 = 17 points. The state is now: Leo = 16, Kate = 7, Grace = 17.\n\n## 10: Grace gains 4 points\nGrace's new score is 17 + 4 = 21 points. The state is now: Leo = 16, Kate = 7, Grace = 21.\n\n## 11: Grace loses 4 points\nGrace's new score is 21 - 4 = 17 points. The state is now: Leo = 16, Kate = 7, Grace = 17.\n\n## 12: Leo loses 5 points\nLeo's new score is 16 - 5 = 11 points. The state is now: Leo = 11, Kate = 7, Grace = 17.\n\n## 13: Leo gains 5 points\nLeo's new score is 11 + 5 = 16 points. The state is now: Leo = 16, Kate = 7, Grace = 17.\n\nThe final answer is: $\\boxed{17}$"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:llama-4-scout",
+      "k_operations": 12,
+      "n_ops_actual": 12,
+      "correct_answer": 14,
+      "predicted": 14,
+      "accurate": 1,
+      "query_entity": "David",
+      "initial_state": {
+        "Frank": 7,
+        "James": 19,
+        "David": 14
+      },
+      "operations": [
+        "James gives 1 points to Frank.",
+        "Frank gives 1 points to James.",
+        "Frank gains 5 points.",
+        "Frank loses 5 points.",
+        "Frank loses 1 points.",
+        "Frank gains 1 points.",
+        "David gains 3 points.",
+        "David loses 3 points.",
+        "James loses 3 points.",
+        "James gains 3 points.",
+        "David gives 3 points to James.",
+        "James gives 3 points to David."
+      ],
+      "prompt_length_chars": 663,
+      "raw_response": "## Step 1: Initialize the points for each person\nFrank starts with 7 points, James with 19 points, and David with 14 points.\n\n## 2: Apply operation 1 - James gives 1 point to Frank\nFrank now has 7 + 1 = 8 points, James has 19 - 1 = 18 points, and David still has 14 points.\n\n## 3: Apply operation 2 - Frank gives 1 point to James\nFrank now has 8 - 1 = 7 points, James has 18 + 1 = 19 points, and David still has 14 points.\n\n## 4: Apply operation 3 - Frank gains 5 points\nFrank now has 7 + 5 = 12 points, James still has 19 points, and David still has 14 points.\n\n## 5: Apply operation 4 - Frank loses 5 points\nFrank now has 12 - 5 = 7 points, James still has 19 points, and David still has 14 points.\n\n## 6: Apply operation 5 - Frank loses 1 point\nFrank now has 7 - 1 = 6 points, James still has 19 points, and David still has 14 points.\n\n## 7: Apply operation 6 - Frank gains 1 point\nFrank now has 6 + 1 = 7 points, James still has 19 points, and David still has 14 points.\n\n## 8: Apply operation 7 - David gains 3 points\nFrank still has 7 points, James still has 19 points, and David now has 14 + 3 = 17 points.\n\n## 9: Apply operation 8 - David loses 3 points\nFrank still has 7 points, James still has 19 points, and David now has 17 - 3 = 14 points.\n\n## 10: Apply operation 9 - James loses 3 points\nFrank still has 7 points, James now has 19 - 3 = 16 points, and David still has 14 points.\n\n## 11: Apply operation 10 - James gains 3 points\nFrank still has 7 points, James now has 16 + 3 = 19 points, and David still has 14 points.\n\n## 12: Apply operation 11 - David gives 3 points to James\nFrank still has 7 points, James now has 19 + 3 = 22 points, and David now has 14 - 3 = 11 points.\n\n## 13: Apply operation 12 - James gives 3 points to David\nFrank still has 7 points, James now has 22 - 3 = 19 points, and David now has 11 + 3 = 14 points.\n\nThe final answer is: $\\boxed{14}$"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:llama-4-scout",
+      "k_operations": 12,
+      "n_ops_actual": 12,
+      "correct_answer": 18,
+      "predicted": 19,
+      "accurate": 0,
+      "query_entity": "Grace",
+      "initial_state": {
+        "Leo": 8,
+        "Carol": 20,
+        "Grace": 18
+      },
+      "operations": [
+        "Leo loses 3 points.",
+        "Leo gains 3 points.",
+        "Carol gains 8 points.",
+        "Carol loses 8 points.",
+        "Carol gains 2 points.",
+        "Carol loses 2 points.",
+        "Carol gives 1 points to Grace.",
+        "Grace gives 1 points to Carol.",
+        "Carol loses 2 points.",
+        "Carol gains 2 points.",
+        "Carol gains 2 points.",
+        "Carol loses 2 points."
+      ],
+      "prompt_length_chars": 639,
+      "raw_response": "19"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:llama-4-scout",
+      "k_operations": 12,
+      "n_ops_actual": 12,
+      "correct_answer": 5,
+      "predicted": 5,
+      "accurate": 1,
+      "query_entity": "David",
+      "initial_state": {
+        "David": 5,
+        "Kate": 6,
+        "Mia": 15
+      },
+      "operations": [
+        "David gains 10 points.",
+        "David loses 10 points.",
+        "David gains 9 points.",
+        "David loses 9 points.",
+        "Mia gains 4 points.",
+        "Mia loses 4 points.",
+        "Kate gains 3 points.",
+        "Kate loses 3 points.",
+        "David gives 1 points to Kate.",
+        "Kate gives 1 points to David.",
+        "Mia gains 5 points.",
+        "Mia loses 5 points."
+      ],
+      "prompt_length_chars": 631,
+      "raw_response": "5"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:llama-4-scout",
+      "k_operations": 12,
+      "n_ops_actual": 12,
+      "correct_answer": 9,
+      "predicted": 9,
+      "accurate": 1,
+      "query_entity": "Bob",
+      "initial_state": {
+        "Bob": 9,
+        "Kate": 5,
+        "Alice": 16
+      },
+      "operations": [
+        "Alice gains 6 points.",
+        "Alice loses 6 points.",
+        "Bob gains 5 points.",
+        "Bob loses 5 points.",
+        "Bob gains 7 points.",
+        "Bob loses 7 points.",
+        "Bob gives 2 points to Alice.",
+        "Alice gives 2 points to Bob.",
+        "Kate loses 5 points.",
+        "Kate gains 5 points.",
+        "Bob gives 3 points to Kate.",
+        "Kate gives 3 points to Bob."
+      ],
+      "prompt_length_chars": 637,
+      "raw_response": "## Step 1: Initialize the points for each person\nBob starts with 9 points, Kate with 5 points, and Alice with 16 points.\n\n## 2: Apply operation 1 - Alice gains 6 points\nAlice now has 16 + 6 = 22 points. Bob and Kate's points remain the same.\n\n## 3: Apply operation 2 - Alice loses 6 points\nAlice now has 22 - 6 = 16 points. Bob and Kate's points remain the same.\n\n## 4: Apply operation 3 - Bob gains 5 points\nBob now has 9 + 5 = 14 points. Kate and Alice's points remain the same.\n\n## 5: Apply operation 4 - Bob loses 5 points\nBob now has 14 - 5 = 9 points. Kate and Alice's points remain the same.\n\n## 6: Apply operation 5 - Bob gains 7 points\nBob now has 9 + 7 = 16 points. Kate and Alice's points remain the same.\n\n## 7: Apply operation 6 - Bob loses 7 points\nBob now has 16 - 7 = 9 points. Kate and Alice's points remain the same.\n\n## 8: Apply operation 7 - Bob gives 2 points to Alice\nBob now has 9 - 2 = 7 points, and Alice now has 16 + 2 = 18 points. Kate's points remain the same.\n\n## 9: Apply operation 8 - Alice gives 2 points to Bob\nBob now has 7 + 2 = 9 points, and Alice now has 18 - 2 = 16 points. Kate's points remain the same.\n\n## 10: Apply operation 9 - Kate loses 5 points\nKate now has 5 - 5 = 0 points. Bob and Alice's points remain the same.\n\n## 11: Apply operation 10 - Kate gains 5 points\nKate now has 0 + 5 = 5 points. Bob and Alice's points remain the same.\n\n## 12: Apply operation 11 - Bob gives 3 points to Kate\nBob now has 9 - 3 = 6 points, and Kate now has 5 + 3 = 8 points. Alice's points remain the same.\n\n## 13: Apply operation 12 - Kate gives 3 points to Bob\nBob now has 6 + 3 = 9 points, and Kate now has 8 - 3 = 5 points. Alice's points remain the same.\n\nThe final answer is: $\\boxed{9}$"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:llama-4-scout",
+      "k_operations": 12,
+      "n_ops_actual": 12,
+      "correct_answer": 5,
+      "predicted": 5,
+      "accurate": 1,
+      "query_entity": "Leo",
+      "initial_state": {
+        "James": 14,
+        "Alice": 19,
+        "Leo": 5
+      },
+      "operations": [
+        "Alice gains 7 points.",
+        "Alice loses 7 points.",
+        "Leo loses 1 points.",
+        "Leo gains 1 points.",
+        "Leo loses 4 points.",
+        "Leo gains 4 points.",
+        "James gains 6 points.",
+        "James loses 6 points.",
+        "James gives 1 points to Leo.",
+        "Leo gives 1 points to James.",
+        "Leo loses 5 points.",
+        "Leo gains 5 points."
+      ],
+      "prompt_length_chars": 625,
+      "raw_response": "## Step 1: Initialize the points for each person\nJames starts with 14 points, Alice starts with 19 points, and Leo starts with 5 points.\n\n## 2: Apply operation 1 - Alice gains 7 points\nAlice now has 19 + 7 = 26 points, James still has 14 points, and Leo still has 5 points.\n\n## 3: Apply operation 2 - Alice loses 7 points\nAlice now has 26 - 7 = 19 points, James still has 14 points, and Leo still has 5 points.\n\n## 4: Apply operation 3 - Leo loses 1 point\nJames still has 14 points, Alice still has 19 points, and Leo now has 5 - 1 = 4 points.\n\n## 5: Apply operation 4 - Leo gains 1 point\nJames still has 14 points, Alice still has 19 points, and Leo now has 4 + 1 = 5 points.\n\n## 6: Apply operation 5 - Leo loses 4 points\nJames still has 14 points, Alice still has 19 points, and Leo now has 5 - 4 = 1 point.\n\n## 7: Apply operation 6 - Leo gains 4 points\nJames still has 14 points, Alice still has 19 points, and Leo now has 1 + 4 = 5 points.\n\n## 8: Apply operation 7 - James gains 6 points\nJames now has 14 + 6 = 20 points, Alice still has 19 points, and Leo still has 5 points.\n\n## 9: Apply operation 8 - James loses 6 points\nJames now has 20 - 6 = 14 points, Alice still has 19 points, and Leo still has 5 points.\n\n## 10: Apply operation 9 - James gives 1 point to Leo\nJames now has 14 - 1 = 13 points, Alice still has 19 points, and Leo now has 5 + 1 = 6 points.\n\n## 11: Apply operation 10 - Leo gives 1 point to James\nJames now has 13 + 1 = 14 points, Alice still has 19 points, and Leo now has 6 - 1 = 5 points.\n\n## 12: Apply operation 11 - Leo loses 5 points\nJames still has 14 points, Alice still has 19 points, and Leo now has 5 - 5 = 0 points.\n\n## 13: Apply operation 12 - Leo gains 5 points\nJames still has 14 points, Alice still has 19 points, and Leo now has 0 + 5 = 5 points.\n\nThe final answer is: $\\boxed{5}$"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:llama-4-scout",
+      "k_operations": 12,
+      "n_ops_actual": 12,
+      "correct_answer": 18,
+      "predicted": 18,
+      "accurate": 1,
+      "query_entity": "Grace",
+      "initial_state": {
+        "Leo": 14,
+        "Frank": 19,
+        "Grace": 18
+      },
+      "operations": [
+        "Grace gains 2 points.",
+        "Grace loses 2 points.",
+        "Grace gives 2 points to Leo.",
+        "Leo gives 2 points to Grace.",
+        "Leo loses 4 points.",
+        "Leo gains 4 points.",
+        "Frank loses 4 points.",
+        "Frank gains 4 points.",
+        "Grace loses 1 points.",
+        "Grace gains 1 points.",
+        "Frank loses 3 points.",
+        "Frank gains 3 points."
+      ],
+      "prompt_length_chars": 636,
+      "raw_response": "18"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:llama-4-scout",
+      "k_operations": 12,
+      "n_ops_actual": 12,
+      "correct_answer": 7,
+      "predicted": 7,
+      "accurate": 1,
+      "query_entity": "Carol",
+      "initial_state": {
+        "Emma": 20,
+        "Frank": 7,
+        "Carol": 7
+      },
+      "operations": [
+        "Emma gains 7 points.",
+        "Emma loses 7 points.",
+        "Carol gains 6 points.",
+        "Carol loses 6 points.",
+        "Carol gains 1 points.",
+        "Carol loses 1 points.",
+        "Carol gives 3 points to Frank.",
+        "Frank gives 3 points to Carol.",
+        "Frank gains 6 points.",
+        "Frank loses 6 points.",
+        "Frank gives 2 points to Emma.",
+        "Emma gives 2 points to Frank."
+      ],
+      "prompt_length_chars": 657,
+      "raw_response": "## Step 1: Initial State\nThe initial state is given as: Emma has 20 points, Frank has 7 points, and Carol has 7 points.\n\n## 2: Emma gains 7 points\nEmma now has 20 + 7 = 27 points, Frank has 7 points, and Carol has 7 points.\n\n## 3: Emma loses 7 points\nEmma now has 27 - 7 = 20 points, Frank has 7 points, and Carol has 7 points.\n\n## 4: Carol gains 6 points\nEmma has 20 points, Frank has 7 points, and Carol now has 7 + 6 = 13 points.\n\n## 5: Carol loses 6 points\nEmma has 20 points, Frank has 7 points, and Carol now has 13 - 6 = 7 points.\n\n## 6: Carol gains 1 point\nEmma has 20 points, Frank has 7 points, and Carol now has 7 + 1 = 8 points.\n\n## 7: Carol loses 1 point\nEmma has 20 points, Frank has 7 points, and Carol now has 8 - 1 = 7 points.\n\n## 8: Carol gives 3 points to Frank\nEmma has 20 points, Frank now has 7 + 3 = 10 points, and Carol now has 7 - 3 = 4 points.\n\n## 9: Frank gives 3 points to Carol\nEmma has 20 points, Frank now has 10 - 3 = 7 points, and Carol now has 4 + 3 = 7 points.\n\n## 10: Frank gains 6 points\nEmma has 20 points, Frank now has 7 + 6 = 13 points, and Carol has 7 points.\n\n## 11: Frank loses 6 points\nEmma has 20 points, Frank now has 13 - 6 = 7 points, and Carol has 7 points.\n\n## 12: Frank gives 2 points to Emma\nEmma now has 20 + 2 = 22 points, Frank now has 7 - 2 = 5 points, and Carol has 7 points.\n\n## 13: Emma gives 2 points to Frank\nEmma now has 22 - 2 = 20 points, Frank now has 5 + 2 = 7 points, and Carol has 7 points.\n\nThe final answer is: $\\boxed{7}$"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:llama-4-scout",
+      "k_operations": 12,
+      "n_ops_actual": 12,
+      "correct_answer": 9,
+      "predicted": 9,
+      "accurate": 1,
+      "query_entity": "Frank",
+      "initial_state": {
+        "Emma": 11,
+        "Frank": 9,
+        "Bob": 20
+      },
+      "operations": [
+        "Emma gains 6 points.",
+        "Emma loses 6 points.",
+        "Frank gives 2 points to Emma.",
+        "Emma gives 2 points to Frank.",
+        "Emma gives 3 points to Frank.",
+        "Frank gives 3 points to Emma.",
+        "Bob gives 3 points to Emma.",
+        "Emma gives 3 points to Bob.",
+        "Bob gives 1 points to Frank.",
+        "Frank gives 1 points to Bob.",
+        "Frank gains 5 points.",
+        "Frank loses 5 points."
+      ],
+      "prompt_length_chars": 680,
+      "raw_response": "## Step 1: Initial state\nEmma: 11 points, Frank: 9 points, Bob: 20 points.\n\n## Step 2: Operation 1 - Emma gains 6 points\nEmma: 11 + 6 = 17 points, Frank: 9 points, Bob: 20 points.\n\n## Step 3: Operation 2 - Emma loses 6 points\nEmma: 17 - 6 = 11 points, Frank: 9 points, Bob: 20 points.\n\n## Step 4: Operation 3 - Frank gives 2 points to Emma\nEmma: 11 + 2 = 13 points, Frank: 9 - 2 = 7 points, Bob: 20 points.\n\n## Step 5: Operation 4 - Emma gives 2 points to Frank\nEmma: 13 - 2 = 11 points, Frank: 7 + 2 = 9 points, Bob: 20 points.\n\n## Step 6: Operation 5 - Emma gives 3 points to Frank\nEmma: 11 - 3 = 8 points, Frank: 9 + 3 = 12 points, Bob: 20 points.\n\n## Step 7: Operation 6 - Frank gives 3 points to Emma\nEmma: 8 + 3 = 11 points, Frank: 12 - 3 = 9 points, Bob: 20 points.\n\n## Step 8: Operation 7 - Bob gives 3 points to Emma\nEmma: 11 + 3 = 14 points, Frank: 9 points, Bob: 20 - 3 = 17 points.\n\n## Step 9: Operation 8 - Emma gives 3 points to Bob\nEmma: 14 - 3 = 11 points, Frank: 9 points, Bob: 17 + 3 = 20 points.\n\n## 10: Operation 9 - Bob gives 1 point to Frank\nEmma: 11 points, Frank: 9 + 1 = 10 points, Bob: 20 - 1 = 19 points.\n\n## 11: Operation 10 - Frank gives 1 point to Bob\nEmma: 11 points, Frank: 10 - 1 = 9 points, Bob: 19 + 1 = 20 points.\n\n## 12: Operation 11 - Frank gains 5 points\nEmma: 11 points, Frank: 9 + 5 = 14 points, Bob: 20 points.\n\n## 13: Operation 12 - Frank loses 5 points\nEmma: 11 points, Frank: 14 - 5 = 9 points, Bob: 20 points.\n\nThe final answer is: $\\boxed{9}$"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:llama-4-scout",
+      "k_operations": 12,
+      "n_ops_actual": 12,
+      "correct_answer": 9,
+      "predicted": 9,
+      "accurate": 1,
+      "query_entity": "Frank",
+      "initial_state": {
+        "Frank": 9,
+        "Alice": 17,
+        "Carol": 7
+      },
+      "operations": [
+        "Carol gains 1 points.",
+        "Carol loses 1 points.",
+        "Carol gains 9 points.",
+        "Carol loses 9 points.",
+        "Alice gains 7 points.",
+        "Alice loses 7 points.",
+        "Alice loses 2 points.",
+        "Alice gains 2 points.",
+        "Alice loses 3 points.",
+        "Alice gains 3 points.",
+        "Carol gives 1 points to Frank.",
+        "Frank gives 1 points to Carol."
+      ],
+      "prompt_length_chars": 644,
+      "raw_response": "## Step 1: Initialize the points for each person\nFrank starts with 9 points, Alice with 17 points, and Carol with 7 points.\n\n## 2: Apply the first operation - Carol gains 1 point\nFrank: 9 points, Alice: 17 points, Carol: 8 points.\n\n## 3: Apply the second operation - Carol loses 1 point\nFrank: 9 points, Alice: 17 points, Carol: 7 points.\n\n## 4: Apply the third operation - Carol gains 9 points\nFrank: 9 points, Alice: 17 points, Carol: 16 points.\n\n## 5: Apply the fourth operation - Carol loses 9 points\nFrank: 9 points, Alice: 17 points, Carol: 7 points.\n\n## 6: Apply the fifth operation - Alice gains 7 points\nFrank: 9 points, Alice: 24 points, Carol: 7 points.\n\n## 7: Apply the sixth operation - Alice loses 7 points\nFrank: 9 points, Alice: 17 points, Carol: 7 points.\n\n## 8: Apply the seventh operation - Alice loses 2 points\nFrank: 9 points, Alice: 15 points, Carol: 7 points.\n\n## 9: Apply the eighth operation - Alice gains 2 points\nFrank: 9 points, Alice: 17 points, Carol: 7 points.\n\n## 10: Apply the ninth operation - Alice loses 3 points\nFrank: 9 points, Alice: 14 points, Carol: 7 points.\n\n## 11: Apply the tenth operation - Alice gains 3 points\nFrank: 9 points, Alice: 17 points, Carol: 7 points.\n\n## 12: Apply the eleventh operation - Carol gives 1 point to Frank\nFrank: 10 points, Alice: 17 points, Carol: 6 points.\n\n## 13: Apply the twelfth operation - Frank gives 1 point to Carol\nFrank: 9 points, Alice: 17 points, Carol: 7 points.\n\nThe final answer is: $\\boxed{9}$"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:llama-4-scout",
+      "k_operations": 12,
+      "n_ops_actual": 12,
+      "correct_answer": 6,
+      "predicted": 6,
+      "accurate": 1,
+      "query_entity": "Carol",
+      "initial_state": {
+        "Carol": 6,
+        "Mia": 7,
+        "James": 13
+      },
+      "operations": [
+        "James loses 4 points.",
+        "James gains 4 points.",
+        "James loses 4 points.",
+        "James gains 4 points.",
+        "Mia loses 2 points.",
+        "Mia gains 2 points.",
+        "Carol gives 2 points to Mia.",
+        "Mia gives 2 points to Carol.",
+        "Mia gains 10 points.",
+        "Mia loses 10 points.",
+        "James loses 3 points.",
+        "James gains 3 points."
+      ],
+      "prompt_length_chars": 632,
+      "raw_response": "## Step 1: Initialize the points for each person\nCarol starts with 6 points, Mia starts with 7 points, and James starts with 13 points.\n\n## 2: Apply the first operation - James loses 4 points\nCarol: 6 points, Mia: 7 points, James: 13 - 4 = 9 points.\n\n## 3: Apply the second operation - James gains 4 points\nCarol: 6 points, Mia: 7 points, James: 9 + 4 = 13 points.\n\n## 4: Apply the third operation - James loses 4 points\nCarol: 6 points, Mia: 7 points, James: 13 - 4 = 9 points.\n\n## 5: Apply the fourth operation - James gains 4 points\nCarol: 6 points, Mia: 7 points, James: 9 + 4 = 13 points.\n\n## 6: Apply the fifth operation - Mia loses 2 points\nCarol: 6 points, Mia: 7 - 2 = 5 points, James: 13 points.\n\n## 7: Apply the sixth operation - Mia gains 2 points\nCarol: 6 points, Mia: 5 + 2 = 7 points, James: 13 points.\n\n## 8: Apply the seventh operation - Carol gives 2 points to Mia\nCarol: 6 - 2 = 4 points, Mia: 7 + 2 = 9 points, James: 13 points.\n\n## 9: Apply the eighth operation - Mia gives 2 points to Carol\nCarol: 4 + 2 = 6 points, Mia: 9 - 2 = 7 points, James: 13 points.\n\n## 10: Apply the ninth operation - Mia gains 10 points\nCarol: 6 points, Mia: 7 + 10 = 17 points, James: 13 points.\n\n## 11: Apply the tenth operation - Mia loses 10 points\nCarol: 6 points, Mia: 17 - 10 = 7 points, James: 13 points.\n\n## 12: Apply the eleventh operation - James loses 3 points\nCarol: 6 points, Mia: 7 points, James: 13 - 3 = 10 points.\n\n## 13: Apply the twelfth operation - James gains 3 points\nCarol: 6 points, Mia: 7 points, James: 10 + 3 = 13 points.\n\nThe final answer is: $\\boxed{6"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:llama-4-scout",
+      "k_operations": 12,
+      "n_ops_actual": 12,
+      "correct_answer": 5,
+      "predicted": 5,
+      "accurate": 1,
+      "query_entity": "Grace",
+      "initial_state": {
+        "David": 6,
+        "Grace": 5,
+        "James": 11
+      },
+      "operations": [
+        "David loses 2 points.",
+        "David gains 2 points.",
+        "Grace loses 3 points.",
+        "Grace gains 3 points.",
+        "David gains 8 points.",
+        "David loses 8 points.",
+        "Grace gives 1 points to David.",
+        "David gives 1 points to Grace.",
+        "James loses 2 points.",
+        "James gains 2 points.",
+        "James gives 1 points to Grace.",
+        "Grace gives 1 points to James."
+      ],
+      "prompt_length_chars": 662,
+      "raw_response": "5"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:llama-4-scout",
+      "k_operations": 12,
+      "n_ops_actual": 12,
+      "correct_answer": 18,
+      "predicted": 18,
+      "accurate": 1,
+      "query_entity": "Noah",
+      "initial_state": {
+        "Noah": 18,
+        "Leo": 5,
+        "Alice": 19
+      },
+      "operations": [
+        "Leo gains 10 points.",
+        "Leo loses 10 points.",
+        "Alice loses 4 points.",
+        "Alice gains 4 points.",
+        "Alice gives 2 points to Leo.",
+        "Leo gives 2 points to Alice.",
+        "Leo gains 1 points.",
+        "Leo loses 1 points.",
+        "Noah loses 5 points.",
+        "Noah gains 5 points.",
+        "Alice loses 3 points.",
+        "Alice gains 3 points."
+      ],
+      "prompt_length_chars": 629,
+      "raw_response": "18"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:llama-4-scout",
+      "k_operations": 12,
+      "n_ops_actual": 12,
+      "correct_answer": 17,
+      "predicted": 17,
+      "accurate": 1,
+      "query_entity": "Bob",
+      "initial_state": {
+        "Grace": 18,
+        "Bob": 17,
+        "David": 7
+      },
+      "operations": [
+        "Bob loses 3 points.",
+        "Bob gains 3 points.",
+        "Bob gains 3 points.",
+        "Bob loses 3 points.",
+        "David gains 2 points.",
+        "David loses 2 points.",
+        "David gives 2 points to Grace.",
+        "Grace gives 2 points to David.",
+        "David loses 2 points.",
+        "David gains 2 points.",
+        "Grace gains 3 points.",
+        "Grace loses 3 points."
+      ],
+      "prompt_length_chars": 633,
+      "raw_response": "17"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:llama-4-scout",
+      "k_operations": 12,
+      "n_ops_actual": 12,
+      "correct_answer": 9,
+      "predicted": 9,
+      "accurate": 1,
+      "query_entity": "David",
+      "initial_state": {
+        "David": 9,
+        "Carol": 7,
+        "James": 10
+      },
+      "operations": [
+        "Carol gives 3 points to James.",
+        "James gives 3 points to Carol.",
+        "Carol gives 3 points to James.",
+        "James gives 3 points to Carol.",
+        "David loses 4 points.",
+        "David gains 4 points.",
+        "Carol gains 8 points.",
+        "Carol loses 8 points.",
+        "Carol gives 3 points to James.",
+        "James gives 3 points to Carol.",
+        "Carol gains 9 points.",
+        "Carol loses 9 points."
+      ],
+      "prompt_length_chars": 680,
+      "raw_response": "9"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:llama-4-scout",
+      "k_operations": 12,
+      "n_ops_actual": 12,
+      "correct_answer": 16,
+      "predicted": 16,
+      "accurate": 1,
+      "query_entity": "Mia",
+      "initial_state": {
+        "Emma": 6,
+        "Henry": 6,
+        "Mia": 16
+      },
+      "operations": [
+        "Emma loses 1 points.",
+        "Emma gains 1 points.",
+        "Mia gives 2 points to Henry.",
+        "Henry gives 2 points to Mia.",
+        "Mia gives 2 points to Emma.",
+        "Emma gives 2 points to Mia.",
+        "Mia gives 2 points to Emma.",
+        "Emma gives 2 points to Mia.",
+        "Henry gives 1 points to Emma.",
+        "Emma gives 1 points to Henry.",
+        "Emma loses 3 points.",
+        "Emma gains 3 points."
+      ],
+      "prompt_length_chars": 671,
+      "raw_response": "## Step 1: Initialize the points for each person\nEmma has 6 points, Henry has 6 points, and Mia has 16 points.\n\n## 2: Apply the first operation - Emma loses 1 point\nEmma now has 5 points, Henry has 6 points, and Mia has 16 points.\n\n## 3: Apply the second operation - Emma gains 1 point\nEmma now has 6 points, Henry has 6 points, and Mia has 16 points.\n\n## 4: Apply the third operation - Mia gives 2 points to Henry\nEmma has 6 points, Henry has 8 points, and Mia has 14 points.\n\n## 5: Apply the fourth operation - Henry gives 2 points to Mia\nEmma has 6 points, Henry has 6 points, and Mia has 16 points.\n\n## 6: Apply the fifth operation - Mia gives 2 points to Emma\nEmma has 8 points, Henry has 6 points, and Mia has 14 points.\n\n## 7: Apply the sixth operation - Emma gives 2 points to Mia\nEmma has 6 points, Henry has 6 points, and Mia has 16 points.\n\n## 8: Apply the seventh operation - Mia gives 2 points to Emma\nEmma has 8 points, Henry has 6 points, and Mia has 14 points.\n\n## 9: Apply the eighth operation - Emma gives 2 points to Mia\nEmma has 6 points, Henry has 6 points, and Mia has 16 points.\n\n## 10: Apply the ninth operation - Henry gives 1 point to Emma\nEmma has 7 points, Henry has 5 points, and Mia has 16 points.\n\n## 11: Apply the tenth operation - Emma gives 1 point to Henry\nEmma has 6 points, Henry has 6 points, and Mia has 16 points.\n\n## 12: Apply the eleventh operation - Emma loses 3 points\nEmma has 3 points, Henry has 6 points, and Mia has 16 points.\n\n## 13: Apply the twelfth operation - Emma gains 3 points\nEmma has 6 points, Henry has 6 points, and Mia has 16 points.\n\nThe final answer is: $\\boxed{16}$"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:llama-4-scout",
+      "k_operations": 12,
+      "n_ops_actual": 12,
+      "correct_answer": 12,
+      "predicted": 12,
+      "accurate": 1,
+      "query_entity": "Kate",
+      "initial_state": {
+        "Bob": 10,
+        "Iris": 6,
+        "Kate": 12
+      },
+      "operations": [
+        "Iris gives 3 points to Kate.",
+        "Kate gives 3 points to Iris.",
+        "Kate gives 2 points to Bob.",
+        "Bob gives 2 points to Kate.",
+        "Iris loses 4 points.",
+        "Iris gains 4 points.",
+        "Iris loses 5 points.",
+        "Iris gains 5 points.",
+        "Kate gains 6 points.",
+        "Kate loses 6 points.",
+        "Iris gains 2 points.",
+        "Iris loses 2 points."
+      ],
+      "prompt_length_chars": 640,
+      "raw_response": "## Step 1: Initial State\nThe initial state is: Bob = 10 points, Iris = 6 points, Kate = 12 points.\n\n## 2: Iris gives 3 points to Kate\nIris = 6 - 3 = 3 points, Kate = 12 + 3 = 15 points, Bob = 10 points.\n\n## 3: Kate gives 3 points to Iris\nIris = 3 + 3 = 6 points, Kate = 15 - 3 = 12 points, Bob = 10 points.\n\n## 4: Kate gives 2 points to Bob\nKate = 12 - 2 = 10 points, Bob = 10 + 2 = 12 points, Iris = 6 points.\n\n## 5: Bob gives 2 points to Kate\nBob = 12 - 2 = 10 points, Kate = 10 + 2 = 12 points, Iris = 6 points.\n\n## 6: Iris loses 4 points\nIris = 6 - 4 = 2 points, Kate = 12 points, Bob = 10 points.\n\n## 7: Iris gains 4 points\nIris = 2 + 4 = 6 points, Kate = 12 points, Bob = 10 points.\n\n## 8: Iris loses 5 points\nIris = 6 - 5 = 1 point, Kate = 12 points, Bob = 10 points.\n\n## 9: Iris gains 5 points\nIris = 1 + 5 = 6 points, Kate = 12 points, Bob = 10 points.\n\n## 10: Kate gains 6 points\nKate = 12 + 6 = 18 points, Iris = 6 points, Bob = 10 points.\n\n## 11: Kate loses 6 points\nKate = 18 - 6 = 12 points, Iris = 6 points, Bob = 10 points.\n\n## 12: Iris gains 2 points\nIris = 6 + 2 = 8 points, Kate = 12 points, Bob = 10 points.\n\n## 13: Iris loses 2 points\nIris = 8 - 2 = 6 points, Kate = 12 points, Bob = 10 points.\n\nThe final answer is: $\\boxed{12}$"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:llama-4-scout",
+      "k_operations": 12,
+      "n_ops_actual": 12,
+      "correct_answer": 15,
+      "predicted": 15,
+      "accurate": 1,
+      "query_entity": "Emma",
+      "initial_state": {
+        "Kate": 13,
+        "Grace": 9,
+        "Emma": 15
+      },
+      "operations": [
+        "Emma gains 3 points.",
+        "Emma loses 3 points.",
+        "Grace loses 4 points.",
+        "Grace gains 4 points.",
+        "Emma gains 2 points.",
+        "Emma loses 2 points.",
+        "Emma loses 4 points.",
+        "Emma gains 4 points.",
+        "Grace gives 3 points to Kate.",
+        "Kate gives 3 points to Grace.",
+        "Emma gives 3 points to Kate.",
+        "Kate gives 3 points to Emma."
+      ],
+      "prompt_length_chars": 648,
+      "raw_response": "## Step 1: Initial State\nKate: 13 points, Grace: 9 points, Emma: 15 points.\n\n## Step 2: Operation 1 - Emma gains 3 points\nKate: 13 points, Grace: 9 points, Emma: 15 + 3 = 18 points.\n\n## 3: Operation 2 - Emma loses 3 points\nKate: 13 points, Grace: 9 points, Emma: 18 - 3 = 15 points.\n\n## 4: Operation 3 - Grace loses 4 points\nKate: 13 points, Grace: 9 - 4 = 5 points, Emma: 15 points.\n\n## 5: Operation 4 - Grace gains 4 points\nKate: 13 points, Grace: 5 + 4 = 9 points, Emma: 15 points.\n\n## 6: Operation 5 - Emma gains 2 points\nKate: 13 points, Grace: 9 points, Emma: 15 + 2 = 17 points.\n\n## 7: Operation 6 - Emma loses 2 points\nKate: 13 points, Grace: 9 points, Emma: 17 - 2 = 15 points.\n\n## 8: Operation 7 - Emma loses 4 points\nKate: 13 points, Grace: 9 points, Emma: 15 - 4 = 11 points.\n\n## 9: Operation 8 - Emma gains 4 points\nKate: 13 points, Grace: 9 points, Emma: 11 + 4 = 15 points.\n\n## 10: Operation 9 - Grace gives 3 points to Kate\nKate: 13 + 3 = 16 points, Grace: 9 - 3 = 6 points, Emma: 15 points.\n\n## 11: Operation 10 - Kate gives 3 points to Grace\nKate: 16 - 3 = 13 points, Grace: 6 + 3 = 9 points, Emma: 15 points.\n\n## 12: Operation 11 - Emma gives 3 points to Kate\nKate: 13 + 3 = 16 points, Grace: 9 points, Emma: 15 - 3 = 12 points.\n\n## 13: Operation 12 - Kate gives 3 points to Emma\nKate: 16 - 3 = 13 points, Grace: 9 points, Emma: 12 + 3 = 15 points.\n\nThe final answer is: $\\boxed{15}$"
+    },
+    {
+      "sub_dim": "WMF-AM-YOKED-CONTROL",
+      "model": "openrouter:llama-4-scout",
+      "k_operations": 12,
+      "n_ops_actual": 12,
+      "correct_answer": 14,
+      "predicted": 14,
+      "accurate": 1,
+      "query_entity": "Frank",
+      "initial_state": {
+        "Grace": 5,
+        "Iris": 16,
+        "Frank": 14
+      },
+      "operations": [
+        "Grace gains 6 points.",
+        "Grace loses 6 points.",
+        "Grace loses 2 points.",
+        "Grace gains 2 points.",
+        "Grace gains 2 points.",
+        "Grace loses 2 points.",
+        "Grace loses 5 points.",
+        "Grace gains 5 points.",
+        "Frank gives 3 points to Grace.",
+        "Grace gives 3 points to Frank.",
+        "Frank loses 2 points.",
+        "Frank gains 2 points."
+      ],
+      "prompt_length_chars": 644,
+      "raw_response": "Step 1: Initialize the points for each person\nGrace has 5 points, Iris has 16 points, and Frank has 14 points.\n\n## 2: Apply operation 1 - Grace gains 6 points\nGrace now has 5 + 6 = 11 points. Iris still has 16 points, and Frank still has 14 points.\n\n## 3: Apply operation 2 - Grace loses 6 points\nGrace now has 11 - 6 = 5 points. Iris still has 16 points, and Frank still has 14 points.\n\n## 4: Apply operation 3 - Grace loses 2 points\nGrace now has 5 - 2 = 3 points. Iris still has 16 points, and Frank still has 14 points.\n\n## 5: Apply operation 4 - Grace gains 2 points\nGrace now has 3 + 2 = 5 points. Iris still has 16 points, and Frank still has 14 points.\n\n## 6: Apply operation 5 - Grace gains 2 points\nGrace now has 5 + 2 = 7 points. Iris still has 16 points, and Frank still has 14 points.\n\n## 7: Apply operation 6 - Grace loses 2 points\nGrace now has 7 - 2 = 5 points. Iris still has 16 points, and Frank still has 14 points.\n\n## 8: Apply operation 7 - Grace loses 5 points\nGrace now has 5 - 5 = 0 points. Iris still has 16 points, and Frank still has 14 points.\n\n## 9: Apply operation 8 - Grace gains 5 points\nGrace now has 0 + 5 = 5 points. Iris still has 16 points, and Frank still has 14 points.\n\n## 10: Apply operation 9 - Frank gives 3 points to Grace\nGrace now has 5 + 3 = 8 points. Frank now has 14 - 3 = 11 points. Iris still has 16 points.\n\n## 11: Apply operation 10 - Grace gives 3 points to Frank\nGrace now has 8 - 3 = 5 points. Frank now has 11 + 3 = 14 points. Iris still has 16 points.\n\n## 12: Apply operation 11 - Frank loses 2 points\nFrank now has 14 - 2 = 12 points. Grace still has 5 points, and Iris still has 16 points.\n\n## 13: Apply operation 12 - Frank gains 2 points\nFrank now has 12 + 2 = 14 points. Grace still has 5 points, and Iris still has 16 points.\n\nThe final answer is: $\\boxed{14}$"
+    }
+  ]
+}

@@ -60,12 +60,26 @@ def run_seed(model_name: str, seed: int) -> dict:
 
             try:
                 response = call_model(model_name, prompt)
+                if response is None:
+                    response = ""
             except Exception as exc:
                 print(f"    ERROR: {exc}")
                 response = ""
 
-            nums = re.findall(r"\d+", response)
-            predicted = int(nums[0]) if nums else -1
+            # Strip thinking tags for reasoning models
+            clean = re.sub(r"<think>.*?</think>", "", response, flags=re.DOTALL)
+            # Smart number extraction: boxed > Answer > last number
+            boxed = re.findall(r'\\boxed\{(-?\d+)\}', clean)
+            answer_m = re.findall(r'(?:\*\*)?[Aa]nswer(?:\*\*)?[:\s]+(-?\d+)', clean)
+            nums = re.findall(r"-?\d+", clean)
+            if boxed:
+                predicted = int(boxed[-1])
+            elif answer_m:
+                predicted = int(answer_m[-1])
+            elif nums:
+                predicted = int(nums[-1])
+            else:
+                predicted = -1
             accurate = int(predicted == correct)
 
             by_depth[k].append(accurate)

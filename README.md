@@ -1,6 +1,4 @@
-# WMF-AM: Cumulative Arithmetic State Tracking Probe
-
-**Beyond Completion: Probing Cumulative Arithmetic State Tracking to Predict LLM Agent Performance**
+# WMF-AM: Probing LLM Working Memory via Depth-Parameterized Cumulative State Tracking
 
 ## Overview
 
@@ -8,8 +6,9 @@ WMF-AM is a calibrated no-scratchpad probe of cumulative arithmetic state tracki
 
 **Key features:**
 - **K-calibrated difficulty**: Adjustable depth parameter K maintains discriminability across the full capability spectrum (0.5B to frontier models)
-- **Construct isolation**: Three ablation controls (K=1, non-arithmetic ceiling, yoked cancellation) isolate cumulative arithmetic tracking as the difficulty source
+- **Construct isolation**: Four ablation controls (K=1, non-arithmetic ceiling, yoked cancellation, prompt paraphrase) isolate cumulative arithmetic tracking as the difficulty source
 - **Downstream prediction**: WMF-AM is associated with agent performance on a 10-task deterministic battery (τ=0.595, p<0.001, N=28)
+- **Cross-domain extension**: Non-arithmetic cumulative probes (permissions, schedule, inventory) show strong rank consistency (τ=0.728, N=28)
 - **Extended K-sweep**: K=3 to 100 reveals sigmoid-cliff collapse dynamics with model-specific critical depths
 - **Load-shift intervention**: History removal diagnostic separates models that internalize state from those that rely on external context
 
@@ -101,21 +100,22 @@ python code/analysis/gen_neurips_figures.py
 
 ## Models Evaluated (N=28)
 
-**Open-weight (20 models, 13 families):** Qwen 2.5 (0.5B–32B), Llama 3.x (1B–70B), Gemma 2 (2B–27B), DeepSeek-R1 distill (7B/14B), Mistral 7B, Mixtral 8×7B, Phi-3 14B, Command-R 35B, Yi 34B, TinyLlama 1.1B
+**Open-weight (21 models, 12 families):** Qwen 2.5 (0.5B–32B), Llama 3.x (1B–70B), Gemma 2 (2B–27B), DeepSeek-R1 distill (7B/14B), Mistral 7B, Mixtral 8×7B, Phi-3 14B, Command-R 35B, Yi 34B, TinyLlama 1.1B
 
-**Closed API (8 models):** GPT-4o, GPT-4o-mini, o3-mini (LRM), Claude Sonnet 4, Gemini 2.5 Flash, DeepSeek-V3, DeepSeek-R1 full (LRM)
+**Closed API (7 models):** GPT-4o, GPT-4o-mini, o3-mini (LRM), Claude Sonnet 4, Gemini 2.5 Flash, DeepSeek-V3, DeepSeek-R1 full (LRM)
 
 ## Key Results
 
 | Analysis | N | Key Statistic |
 |----------|---|--------------|
-| WMF-AM → Agent | 28 | τ=0.595, CI [0.377, 0.783] |
-| Partial τ(WMF-AM \| MMLU) | 28 | 0.284 (p=0.039) |
-| K=1 control | 27 | 25/27 ceiling |
-| Non-arithmetic | 27 | mean 0.98 |
-| Yoked cancellation | 27 | τ≈0 |
-| K-sweep K_crit | 28 | 0.5–55.3 (does NOT predict agent) |
-| Load-shift | 28 | mean Δ=−0.30 |
+| WMF-AM → Agent | 28 | τ=0.595, CI [0.374, 0.785] |
+| Partial τ(WMF-AM \| MMLU) | 28 | 0.302 (p=0.029) |
+| Cross-domain (non-arith) | 28 | τ=0.728 |
+| K=1 control | 28 | 22/28 ceiling |
+| Non-arithmetic | 28 | mean 0.92 |
+| Yoked cancellation | 28 | τ=0.381 |
+| K-sweep K_crit | 28 | 1.3–55.3 (does NOT predict agent) |
+| Load-shift | 28 | mean Δ=0.30 |
 
 ## License
 

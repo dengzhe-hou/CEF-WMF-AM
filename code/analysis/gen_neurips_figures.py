@@ -129,7 +129,42 @@ def fig1_k_curves():
 # FIGURE 2: WMF-AM vs Agent Scatter (N=28)
 # ═══════════════════════════════════════════════════════════════════
 def fig2_scatter():
-    fig, ax = plt.subplots(1, 1, figsize=(7, 5.5))
+    from adjustText import adjust_text
+
+    # Short display names for all models
+    SHORT_NAMES = {
+        "claude-sonnet-4": "Claude",
+        "o3-mini": "o3-mini",
+        "deepseek-v3": "V3",
+        "gpt-4o": "GPT-4o",
+        "gpt-4o-mini": "4o-mini",
+        "gemini-2.5-flash": "Gemini",
+        "deepseek-r1-full": "R1-full",
+        "deepseek-r1:14b": "R1:14b",
+        "deepseek-r1:7b": "R1:7b",
+        "qwen2.5:32b": "Qwen:32b",
+        "qwen2.5:14b": "Qwen:14b",
+        "qwen2.5:7b": "Qwen:7b",
+        "qwen2.5:3b": "Qwen:3b",
+        "qwen2.5:1.5b": "Qwen:1.5b",
+        "qwen2.5:0.5b": "Qwen:0.5b",
+        "gemma2:27b": "Gemma:27b",
+        "gemma2:9b": "Gemma:9b",
+        "gemma2:2b": "Gemma:2b",
+        "llama3.1:70b": "Llama:70b",
+        "llama3.1:8b": "Llama:8b",
+        "llama3.2:3b": "Llama:3b",
+        "llama3.2:1b": "Llama:1b",
+        "mixtral:8x7b": "Mixtral",
+        "mistral:7b": "Mistral:7b",
+        "command-r:35b": "CmdR:35b",
+        "phi3:14b": "Phi3:14b",
+        "yi:34b": "Yi:34b",
+        "tinyllama:1.1b": "TinyLlama",
+    }
+
+    fig, ax = plt.subplots(1, 1, figsize=(8, 6))
+    texts = []
 
     for r in rows:
         wmf = r["wmf_am_mean"]
@@ -144,19 +179,18 @@ def fig2_scatter():
         size = 80 if "LRM" in mtype else 50
         edge = "black" if r["source"] == "api" else "none"
 
-        ax.scatter(wmf, agent, c=color, marker=marker, s=size,
+        # Slight jitter for overlapping points (claude-sonnet-4 & o3-mini both at 1.0, 0.9)
+        jitter_x, jitter_y = 0, 0
+        if r["model"] == "claude-sonnet-4":
+            jitter_x, jitter_y = -0.015, 0.015
+        elif r["model"] == "o3-mini":
+            jitter_x, jitter_y = 0.015, -0.015
+
+        ax.scatter(wmf + jitter_x, agent + jitter_y, c=color, marker=marker, s=size,
                    edgecolors=edge, linewidths=1.5, zorder=3)
 
-        # Label notable models
-        label = r["model"]
-        if any(x in label for x in ["o3-mini", "deepseek-r1-full", "claude", "gpt-4o",
-                                      "deepseek-v3", "gemini", "tinyllama", "qwen2.5:0.5b"]):
-            short = label.replace("deepseek-r1-full", "R1-full").replace("claude-sonnet-4", "Claude")
-            short = short.replace("gpt-4o-mini", "4o-mini").replace("gpt-4o", "GPT-4o")
-            short = short.replace("gemini-2.5-flash", "Gemini").replace("deepseek-v3", "V3")
-            short = short.replace("tinyllama:1.1b", "TinyLlama").replace("qwen2.5:0.5b", "Q0.5B")
-            ax.annotate(short, (wmf, agent), fontsize=7, alpha=0.8,
-                        xytext=(5, 5), textcoords="offset points")
+        short = SHORT_NAMES.get(r["model"], r["model"])
+        texts.append(ax.text(wmf + jitter_x, agent + jitter_y, short, fontsize=6, alpha=0.8))
 
     # Correlation line
     from scipy import stats
@@ -184,9 +218,15 @@ def fig2_scatter():
                     markeredgecolor="black", markersize=8, label="API model (black edge)"),
     ]
     ax.legend(handles=handles, fontsize=9, loc="lower right")
-    ax.set_xlim(-0.05, 1.1)
-    ax.set_ylim(-0.05, 1.0)
+    ax.set_xlim(-0.05, 1.15)
+    ax.set_ylim(-0.08, 1.05)
     ax.grid(True, alpha=0.2)
+
+    adjust_text(texts, ax=ax, arrowprops=dict(arrowstyle="-", color="gray",
+                alpha=0.4, lw=0.5, shrinkA=3, shrinkB=3),
+                force_text=(1.2, 1.2), force_points=(2.5, 2.5),
+                expand=(1.6, 1.6), ensure_inside_axes=True,
+                min_arrow_len=5)
 
     plt.tight_layout()
     save(fig, "fig_wmfam_vs_agent_n28")
@@ -197,12 +237,43 @@ def fig2_scatter():
 # FIGURE 3: Load-Shift Intervention
 # ═══════════════════════════════════════════════════════════════════
 def fig3_load_shift():
+    # Short display names (single-line)
+    LS_NAMES = {
+        "claude-sonnet-4": "Claude",
+        "o3-mini": "o3-mini",
+        "deepseek-v3": "V3",
+        "gpt-4o": "GPT-4o",
+        "gpt-4o-mini": "4o-mini",
+        "gemini-2.5-flash": "Gemini",
+        "deepseek-r1-full": "R1-full",
+        "deepseek-r1:14b": "R1:14b",
+        "deepseek-r1:7b": "R1:7b",
+        "qwen2.5:32b": "Qwen:32b",
+        "qwen2.5:14b": "Qwen:14b",
+        "qwen2.5:7b": "Qwen:7b",
+        "qwen2.5:3b": "Qwen:3b",
+        "qwen2.5:1.5b": "Qwen:1.5b",
+        "qwen2.5:0.5b": "Qwen:0.5b",
+        "gemma2:27b": "Gemma:27b",
+        "gemma2:9b": "Gemma:9b",
+        "gemma2:2b": "Gemma:2b",
+        "llama3.1:70b": "Llama:70b",
+        "llama3.1:8b": "Llama:8b",
+        "llama3.2:3b": "Llama:3b",
+        "llama3.2:1b": "Llama:1b",
+        "mixtral:8x7b": "Mixtral",
+        "mistral:7b": "Mistral:7b",
+        "command-r:35b": "CmdR:35b",
+        "phi3:14b": "Phi3:14b",
+        "yi:34b": "Yi:34b",
+        "tinyllama:1.1b": "TinyLlama",
+    }
+
     # Only models with load-shift data
     ls_rows = [r for r in rows if r["supported_agent"] and r["unsupported_agent"]]
-    # Add GPT-4o-mini from sanity test
     ls_models = sorted(ls_rows, key=lambda r: -float(r["supported_agent"]))
 
-    fig, ax = plt.subplots(1, 1, figsize=(9, 5))
+    fig, ax = plt.subplots(1, 1, figsize=(14, 5.5))
 
     names = []
     sup_scores = []
@@ -210,13 +281,7 @@ def fig3_load_shift():
     colors_bar = []
 
     for r in ls_models:
-        short = r["model"].replace("gpt-4o-mini", "GPT-4o-mini").replace("gpt-4o", "GPT-4o")
-        short = short.replace("claude-sonnet-4", "Claude\nSonnet 4")
-        short = short.replace("deepseek-v3", "DeepSeek\nV3")
-        short = short.replace("gemini-2.5-flash", "Gemini\n2.5 Flash")
-        short = short.replace("o3-mini", "o3-mini\n(LRM)")
-        short = short.replace("deepseek-r1", "DeepSeek\nR1 (LRM)")
-        names.append(short)
+        names.append(LS_NAMES.get(r["model"], r["model"]))
         sup_scores.append(float(r["supported_agent"]))
         unsup_scores.append(float(r["unsupported_agent"]))
         colors_bar.append(COLORS.get(r["type"], "#999"))
@@ -224,28 +289,35 @@ def fig3_load_shift():
     x = np.arange(len(names))
     width = 0.35
 
-    bars1 = ax.bar(x - width/2, sup_scores, width, label="Supported (full history)",
-                   color=[c for c in colors_bar], alpha=0.8, edgecolor="white")
-    bars2 = ax.bar(x + width/2, unsup_scores, width, label="Unsupported (last turn only)",
-                   color=[c for c in colors_bar], alpha=0.35, edgecolor="white",
-                   hatch="//")
+    import matplotlib.colors as mcolors
+    def lighten(hex_color, amount=0.6):
+        rgb = mcolors.to_rgb(hex_color)
+        return tuple(c + (1 - c) * amount for c in rgb)
 
-    # Delta labels
+    light_colors = [lighten(c) for c in colors_bar]
+
+    bars1 = ax.bar(x - width/2, sup_scores, width, label="Supported (full history)",
+                   color=colors_bar, edgecolor="white", linewidth=0.8)
+    bars2 = ax.bar(x + width/2, unsup_scores, width, label="Unsupported (last turn only)",
+                   color=light_colors, edgecolor=[c for c in colors_bar], linewidth=1.2)
+
+    # Delta labels on top of bars
     for i, (s, u) in enumerate(zip(sup_scores, unsup_scores)):
         delta = s - u
         if delta > 0.01:
-            ax.annotate(f"Δ={delta:+.1f}", (i, max(s, u) + 0.03),
-                        ha="center", fontsize=8, fontweight="bold",
-                        color="red" if delta > 0.3 else "gray")
+            ax.text(i, max(s, u) + 0.02, f"Δ{delta:+.1f}",
+                    ha="center", va="bottom", fontsize=7, fontweight="bold",
+                    color="red" if delta > 0.3 else "gray")
         else:
-            ax.annotate("Δ=0.0", (i, max(s, u) + 0.03),
-                        ha="center", fontsize=8, fontweight="bold", color="green")
+            ax.text(i, max(s, u) + 0.02, "Δ0.0",
+                    ha="center", va="bottom", fontsize=7, fontweight="bold",
+                    color="green")
 
     ax.set_ylabel("Agent Battery Score", fontsize=11)
     ax.set_title("Load-Shift Intervention: History Removal Effect on Agent Performance",
                  fontsize=11, fontweight="bold")
     ax.set_xticks(x)
-    ax.set_xticklabels(names, fontsize=8)
+    ax.set_xticklabels(names, fontsize=8, rotation=45, ha="right")
     ax.legend(fontsize=9)
     ax.set_ylim(0, 1.15)
     ax.grid(True, alpha=0.2, axis="y")
@@ -269,23 +341,22 @@ def fig4_kcrit():
         if not kcrit or not agent or not r2:
             continue
         kcrit, agent, r2 = float(kcrit), float(agent), float(r2)
-        if r2 < 0.5 or kcrit < 0:
-            continue
 
         color = COLORS.get(r["type"], "#999")
         marker = MARKERS.get(r["type"], "o")
-        ax1.scatter(kcrit, agent, c=color, marker=marker, s=60,
+        alpha = 1.0 if r2 > 0.5 and kcrit > 0 else 0.3
+        ax1.scatter(abs(kcrit), agent, c=color, marker=marker, s=60,
+                    alpha=alpha,
                     edgecolors="black" if r["source"] == "api" else "none",
                     linewidths=1, zorder=3)
 
     from scipy import stats
-    kc_valid = [(float(r["K_crit"]), float(r["agent_score"]))
-                for r in rows if r["K_crit"] and r["agent_score"] and r["sigmoid_R2"]
-                and float(r["sigmoid_R2"]) > 0.5 and float(r["K_crit"]) > 0]
-    if kc_valid:
-        kc, ab = zip(*kc_valid)
+    kc_all = [(float(r["K_crit"]), float(r["agent_score"]))
+              for r in rows if r["K_crit"] and r["agent_score"]]
+    if kc_all:
+        kc, ab = zip(*kc_all)
         tau_kc, p_kc = stats.kendalltau(kc, ab)
-        ax1.set_title(f"K_crit vs Agent Score (τ={tau_kc:.3f}, p={p_kc:.3f}, n.s.)",
+        ax1.set_title(f"K_crit vs Agent Score (τ={tau_kc:.3f}, p={p_kc:.2f}, N={len(kc_all)})",
                       fontsize=10, fontweight="bold")
     ax1.set_xlabel("K_crit (50% accuracy breakpoint)")
     ax1.set_ylabel("Agent Battery Score")
@@ -295,8 +366,7 @@ def fig4_kcrit():
     # Right: K_crit histogram by type
     for mtype, color in COLORS.items():
         kcrits = [float(r["K_crit"]) for r in rows
-                  if r["type"] == mtype and r["K_crit"] and r["sigmoid_R2"]
-                  and float(r["sigmoid_R2"]) > 0.5 and float(r["K_crit"]) > 0]
+                  if r["type"] == mtype and r["K_crit"]]
         if kcrits:
             ax2.hist(kcrits, bins=10, alpha=0.6, color=color, label=f"{mtype} (N={len(kcrits)})",
                      edgecolor="white")

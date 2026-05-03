@@ -1,0 +1,772 @@
+{
+  "generated": "2026-04-21T16:52:52.081496",
+  "n_models": 28,
+  "models": [
+    "claude-sonnet-4",
+    "command-r:35b",
+    "deepseek-r1-full",
+    "deepseek-r1:14b",
+    "deepseek-r1:7b",
+    "deepseek-v3",
+    "gemini-2.5-flash",
+    "gemma2:27b",
+    "gemma2:2b",
+    "gemma2:9b",
+    "gpt-4o",
+    "gpt-4o-mini",
+    "llama3.1:70b",
+    "llama3.1:8b",
+    "llama3.2:1b",
+    "llama3.2:3b",
+    "mistral:7b",
+    "mixtral:8x7b",
+    "o3-mini",
+    "phi3:14b",
+    "qwen2.5:0.5b",
+    "qwen2.5:1.5b",
+    "qwen2.5:14b",
+    "qwen2.5:32b",
+    "qwen2.5:3b",
+    "qwen2.5:7b",
+    "tinyllama:1.1b",
+    "yi:34b"
+  ],
+  "per_model": {
+    "claude-sonnet-4": {
+      "type": "API",
+      "family": "Anthropic",
+      "wmf_am": 1.0,
+      "agent": 0.9,
+      "mmlu": 1.0,
+      "gsm8k": 1.0,
+      "nonarith": 1.0,
+      "yoked": 0.6,
+      "k1_control": 0.33,
+      "loadshift_supported": 0.9,
+      "loadshift_unsupported": 0.4,
+      "loadshift_delta": 0.5
+    },
+    "command-r:35b": {
+      "type": "Ollama",
+      "family": "Cohere",
+      "wmf_am": 0.4,
+      "agent": 0.7,
+      "mmlu": 0.97,
+      "gsm8k": 0.94,
+      "nonarith": 1.0,
+      "yoked": 0.67,
+      "k1_control": 0.99,
+      "loadshift_supported": 0.5,
+      "loadshift_unsupported": 0.2,
+      "loadshift_delta": 0.3
+    },
+    "deepseek-r1-full": {
+      "type": "LRM",
+      "family": "DeepSeek",
+      "wmf_am": 1.0,
+      "agent": 0.4,
+      "mmlu": 1.0,
+      "gsm8k": 1.0,
+      "nonarith": 0.9889,
+      "yoked": null,
+      "k1_control": null,
+      "loadshift_supported": 0.6,
+      "loadshift_unsupported": 0.2,
+      "loadshift_delta": 0.4
+    },
+    "deepseek-r1:14b": {
+      "type": "Ollama",
+      "family": "DeepSeek",
+      "wmf_am": 0.9833,
+      "agent": 0.7,
+      "mmlu": 0.98,
+      "gsm8k": 0.98,
+      "nonarith": 1.0,
+      "yoked": 0.81,
+      "k1_control": 0.84,
+      "loadshift_supported": 0.4,
+      "loadshift_unsupported": 0.4,
+      "loadshift_delta": 0.0
+    },
+    "deepseek-r1:7b": {
+      "type": "Ollama",
+      "family": "DeepSeek",
+      "wmf_am": 0.1111,
+      "agent": 0.4,
+      "mmlu": 0.92,
+      "gsm8k": 0.98,
+      "nonarith": 0.9778,
+      "yoked": 0.45,
+      "k1_control": 0.68,
+      "loadshift_supported": 0.2,
+      "loadshift_unsupported": 0.1,
+      "loadshift_delta": 0.1
+    },
+    "deepseek-v3": {
+      "type": "API",
+      "family": "DeepSeek",
+      "wmf_am": 0.95,
+      "agent": 0.9,
+      "mmlu": 1.0,
+      "gsm8k": 1.0,
+      "nonarith": 0.9889,
+      "yoked": 0.72,
+      "k1_control": 0.62,
+      "loadshift_supported": 0.9,
+      "loadshift_unsupported": 0.4,
+      "loadshift_delta": 0.5
+    },
+    "gemini-2.5-flash": {
+      "type": "API",
+      "family": "Google",
+      "wmf_am": 0.7667,
+      "agent": 0.8,
+      "mmlu": 0.99,
+      "gsm8k": 1.0,
+      "nonarith": 1.0,
+      "yoked": 0.98,
+      "k1_control": 0.99,
+      "loadshift_supported": 0.8,
+      "loadshift_unsupported": 0.3,
+      "loadshift_delta": 0.5
+    },
+    "gemma2:27b": {
+      "type": "Ollama",
+      "family": "Gemma",
+      "wmf_am": 0.45,
+      "agent": 0.8,
+      "mmlu": 0.99,
+      "gsm8k": 1.0,
+      "nonarith": 1.0,
+      "yoked": 0.62,
+      "k1_control": 1.0,
+      "loadshift_supported": 0.8,
+      "loadshift_unsupported": 0.3,
+      "loadshift_delta": 0.5
+    },
+    "gemma2:2b": {
+      "type": "Ollama",
+      "family": "Gemma",
+      "wmf_am": 0.2166,
+      "agent": 0.4,
+      "mmlu": 0.93,
+      "gsm8k": 0.86,
+      "nonarith": 0.9556,
+      "yoked": 0.47,
+      "k1_control": 0.91,
+      "loadshift_supported": 0.3,
+      "loadshift_unsupported": 0.1,
+      "loadshift_delta": 0.2
+    },
+    "gemma2:9b": {
+      "type": "Ollama",
+      "family": "Gemma",
+      "wmf_am": 0.3556,
+      "agent": 0.9,
+      "mmlu": 1.0,
+      "gsm8k": 0.96,
+      "nonarith": 1.0,
+      "yoked": 0.61,
+      "k1_control": 1.0,
+      "loadshift_supported": 0.7,
+      "loadshift_unsupported": 0.1,
+      "loadshift_delta": 0.6
+    },
+    "gpt-4o": {
+      "type": "API",
+      "family": "OpenAI",
+      "wmf_am": 0.8,
+      "agent": 0.9,
+      "mmlu": 1.0,
+      "gsm8k": 1.0,
+      "nonarith": 1.0,
+      "yoked": 0.99,
+      "k1_control": 1.0,
+      "loadshift_supported": 0.9,
+      "loadshift_unsupported": 0.3,
+      "loadshift_delta": 0.6
+    },
+    "gpt-4o-mini": {
+      "type": "API",
+      "family": "OpenAI",
+      "wmf_am": 0.5333,
+      "agent": 0.8,
+      "mmlu": 0.99,
+      "gsm8k": 1.0,
+      "nonarith": 1.0,
+      "yoked": 0.89,
+      "k1_control": 1.0,
+      "loadshift_supported": 0.8,
+      "loadshift_unsupported": 0.2,
+      "loadshift_delta": 0.6
+    },
+    "llama3.1:70b": {
+      "type": "Ollama",
+      "family": "Llama",
+      "wmf_am": 0.4667,
+      "agent": 0.7,
+      "mmlu": 0.99,
+      "gsm8k": 1.0,
+      "nonarith": 1.0,
+      "yoked": 0.88,
+      "k1_control": 1.0,
+      "loadshift_supported": 0.7,
+      "loadshift_unsupported": 0.1,
+      "loadshift_delta": 0.6
+    },
+    "llama3.1:8b": {
+      "type": "Ollama",
+      "family": "Llama",
+      "wmf_am": 0.1833,
+      "agent": 0.6,
+      "mmlu": 0.96,
+      "gsm8k": 0.92,
+      "nonarith": 1.0,
+      "yoked": 0.34,
+      "k1_control": 0.87,
+      "loadshift_supported": 0.5,
+      "loadshift_unsupported": 0.0,
+      "loadshift_delta": 0.5
+    },
+    "llama3.2:1b": {
+      "type": "Ollama",
+      "family": "Llama",
+      "wmf_am": 0.0666,
+      "agent": 0.2,
+      "mmlu": 0.79,
+      "gsm8k": 0.72,
+      "nonarith": 0.5,
+      "yoked": 0.75,
+      "k1_control": 0.52,
+      "loadshift_supported": 0.2,
+      "loadshift_unsupported": 0.1,
+      "loadshift_delta": 0.1
+    },
+    "llama3.2:3b": {
+      "type": "Ollama",
+      "family": "Llama",
+      "wmf_am": 0.1556,
+      "agent": 0.3,
+      "mmlu": 0.96,
+      "gsm8k": 0.9,
+      "nonarith": 0.9778,
+      "yoked": 0.35,
+      "k1_control": 0.65,
+      "loadshift_supported": 0.4,
+      "loadshift_unsupported": 0.0,
+      "loadshift_delta": 0.4
+    },
+    "mistral:7b": {
+      "type": "Ollama",
+      "family": "Mistral",
+      "wmf_am": 0.35,
+      "agent": 0.3,
+      "mmlu": 0.94,
+      "gsm8k": 0.88,
+      "nonarith": 0.9556,
+      "yoked": 0.55,
+      "k1_control": 0.99,
+      "loadshift_supported": 0.0,
+      "loadshift_unsupported": 0.0,
+      "loadshift_delta": 0.0
+    },
+    "mixtral:8x7b": {
+      "type": "Ollama",
+      "family": "Mistral",
+      "wmf_am": 0.3778,
+      "agent": 0.4,
+      "mmlu": 0.76,
+      "gsm8k": 0.84,
+      "nonarith": 1.0,
+      "yoked": 0.86,
+      "k1_control": 1.0,
+      "loadshift_supported": 0.3,
+      "loadshift_unsupported": 0.1,
+      "loadshift_delta": 0.2
+    },
+    "o3-mini": {
+      "type": "LRM",
+      "family": "OpenAI",
+      "wmf_am": 1.0,
+      "agent": 0.9,
+      "mmlu": 1.0,
+      "gsm8k": 1.0,
+      "nonarith": 1.0,
+      "yoked": 1.0,
+      "k1_control": 1.0,
+      "loadshift_supported": 0.6,
+      "loadshift_unsupported": 0.6,
+      "loadshift_delta": 0.0
+    },
+    "phi3:14b": {
+      "type": "Ollama",
+      "family": "Phi",
+      "wmf_am": 0.4222,
+      "agent": 0.2,
+      "mmlu": 0.99,
+      "gsm8k": 0.96,
+      "nonarith": 0.9111,
+      "yoked": 0.79,
+      "k1_control": 0.96,
+      "loadshift_supported": 0.0,
+      "loadshift_unsupported": 0.0,
+      "loadshift_delta": 0.0
+    },
+    "qwen2.5:0.5b": {
+      "type": "Ollama",
+      "family": "Qwen",
+      "wmf_am": 0.05,
+      "agent": 0.0,
+      "mmlu": 0.54,
+      "gsm8k": 0.74,
+      "nonarith": 0.5556,
+      "yoked": 0.11,
+      "k1_control": 0.32,
+      "loadshift_supported": 0.1,
+      "loadshift_unsupported": 0.1,
+      "loadshift_delta": 0.0
+    },
+    "qwen2.5:1.5b": {
+      "type": "Ollama",
+      "family": "Qwen",
+      "wmf_am": 0.1167,
+      "agent": 0.3,
+      "mmlu": 0.95,
+      "gsm8k": 0.84,
+      "nonarith": 0.8444,
+      "yoked": 0.5,
+      "k1_control": 0.49,
+      "loadshift_supported": 0.3,
+      "loadshift_unsupported": 0.2,
+      "loadshift_delta": 0.1
+    },
+    "qwen2.5:14b": {
+      "type": "Ollama",
+      "family": "Qwen",
+      "wmf_am": 0.4667,
+      "agent": 0.9,
+      "mmlu": 1.0,
+      "gsm8k": 0.98,
+      "nonarith": 1.0,
+      "yoked": 0.71,
+      "k1_control": 1.0,
+      "loadshift_supported": 0.9,
+      "loadshift_unsupported": 0.5,
+      "loadshift_delta": 0.4
+    },
+    "qwen2.5:32b": {
+      "type": "Ollama",
+      "family": "Qwen",
+      "wmf_am": 0.65,
+      "agent": 0.9,
+      "mmlu": 1.0,
+      "gsm8k": 0.98,
+      "nonarith": 1.0,
+      "yoked": 1.0,
+      "k1_control": 1.0,
+      "loadshift_supported": 0.9,
+      "loadshift_unsupported": 0.4,
+      "loadshift_delta": 0.5
+    },
+    "qwen2.5:3b": {
+      "type": "Ollama",
+      "family": "Qwen",
+      "wmf_am": 0.3111,
+      "agent": 0.4,
+      "mmlu": 0.98,
+      "gsm8k": 0.94,
+      "nonarith": 0.9444,
+      "yoked": 0.49,
+      "k1_control": 0.85,
+      "loadshift_supported": 0.5,
+      "loadshift_unsupported": 0.3,
+      "loadshift_delta": 0.2
+    },
+    "qwen2.5:7b": {
+      "type": "Ollama",
+      "family": "Qwen",
+      "wmf_am": 0.35,
+      "agent": 0.9,
+      "mmlu": 1.0,
+      "gsm8k": 0.94,
+      "nonarith": 0.9778,
+      "yoked": 0.77,
+      "k1_control": 0.99,
+      "loadshift_supported": 0.7,
+      "loadshift_unsupported": 0.2,
+      "loadshift_delta": 0.5
+    },
+    "tinyllama:1.1b": {
+      "type": "Ollama",
+      "family": "TinyLlama",
+      "wmf_am": 0.1167,
+      "agent": 0.0,
+      "mmlu": 0.09,
+      "gsm8k": 0.26,
+      "nonarith": 0.3,
+      "yoked": 0.06,
+      "k1_control": 0.13,
+      "loadshift_supported": 0.0,
+      "loadshift_unsupported": 0.0,
+      "loadshift_delta": 0.0
+    },
+    "yi:34b": {
+      "type": "Ollama",
+      "family": "Yi",
+      "wmf_am": 0.2667,
+      "agent": 0.3,
+      "mmlu": 1.0,
+      "gsm8k": 0.88,
+      "nonarith": 1.0,
+      "yoked": 0.63,
+      "k1_control": 0.97,
+      "loadshift_supported": 0.4,
+      "loadshift_unsupported": 0.2,
+      "loadshift_delta": 0.2
+    }
+  },
+  "statistics": {
+    "wmf_am_vs_agent": {
+      "tau": 0.554,
+      "p": 9.8e-05,
+      "n": 28,
+      "ci_95": [
+        0.319,
+        0.755
+      ],
+      "models": [
+        "claude-sonnet-4",
+        "command-r:35b",
+        "deepseek-r1-full",
+        "deepseek-r1:14b",
+        "deepseek-r1:7b",
+        "deepseek-v3",
+        "gemini-2.5-flash",
+        "gemma2:27b",
+        "gemma2:2b",
+        "gemma2:9b",
+        "gpt-4o",
+        "gpt-4o-mini",
+        "llama3.1:70b",
+        "llama3.1:8b",
+        "llama3.2:1b",
+        "llama3.2:3b",
+        "mistral:7b",
+        "mixtral:8x7b",
+        "o3-mini",
+        "phi3:14b",
+        "qwen2.5:0.5b",
+        "qwen2.5:1.5b",
+        "qwen2.5:14b",
+        "qwen2.5:32b",
+        "qwen2.5:3b",
+        "qwen2.5:7b",
+        "tinyllama:1.1b",
+        "yi:34b"
+      ]
+    },
+    "mmlu_vs_agent": {
+      "tau": 0.68,
+      "p": 5e-06,
+      "n": 28
+    },
+    "gsm8k_vs_agent": {
+      "tau": 0.595,
+      "p": 6e-05,
+      "n": 28
+    },
+    "partial_tau_wmf_agent_given_oc": {
+      "tau": 0.338,
+      "p": 0.0338,
+      "n": 21,
+      "note": "partial tau(WMF-AM, Agent | MMLU) on Ollama subset"
+    },
+    "partial_tau_wmf_agent_given_mmlu_full": {
+      "tau": 0.269,
+      "p": 0.0519,
+      "n": 28
+    },
+    "yoked_vs_agent": {
+      "tau": 0.415,
+      "p": 0.0041,
+      "n": 27
+    },
+    "template_bare_vs_chat": {
+      "tau": 0.631,
+      "p": 0.0,
+      "n": 28
+    },
+    "k1_control": {
+      "n_models": 27,
+      "n_ceiling_095": 15,
+      "mean": 0.819
+    },
+    "nonarith_ceiling": {
+      "n_models": 28,
+      "mean": 0.924,
+      "range": [
+        0.3,
+        1.0
+      ]
+    },
+    "mmlu_ceiling": {
+      "pct_at_095": 75,
+      "n": 28
+    },
+    "kcrit_vs_agent": {
+      "tau": 0.16,
+      "p": 0.2591,
+      "n": 28
+    },
+    "kcrit_vs_agent_no_r1": {
+      "tau": 0.163,
+      "p": 0.2595,
+      "n": 27
+    },
+    "kcrit_range": {
+      "min": 0.1,
+      "max": 77.6
+    },
+    "loadshift": {
+      "n_models": 28,
+      "mean_delta": 0.3,
+      "sd_delta": 0.23
+    },
+    "loadshift_delta_vs_supported": {
+      "tau": 0.679,
+      "p": 0.0,
+      "n": 28
+    },
+    "leave_one_task_out": {
+      "conversation_recall": 0.42,
+      "data_pipeline": 0.421,
+      "entity_tracking": 0.393,
+      "multi_source_conflict": 0.407,
+      "multi_step_calc": 0.496,
+      "schedule_coordination": 0.378,
+      "sequential_search": 0.439,
+      "shopping_assistant": 0.437,
+      "source_attribution": 0.425,
+      "uncertain_lookup": 0.448
+    },
+    "wmf_vs_agent_st": {
+      "tau": 0.27,
+      "p": 0.0767,
+      "n": 27
+    },
+    "wmf_vs_agent_nst": {
+      "tau": 0.494,
+      "p": 0.0006,
+      "n": 27
+    }
+  },
+  "ksweep_fits": {
+    "claude-sonnet-4": {
+      "a": 1.4988975279882537,
+      "alpha": 0.10912241216130175,
+      "K_crit": 60.93524521353578,
+      "offset": -0.4999999986820827,
+      "R2": 0.980841665521037
+    },
+    "command-r:35b": {
+      "a": 0.1000000000084765,
+      "alpha": 4.120990198554442,
+      "K_crit": 14.99999999301045,
+      "offset": 0.050000000158096226,
+      "R2": 0.6153846145483561
+    },
+    "deepseek-r1-full": {
+      "a": 1.0161015667561262,
+      "alpha": 0.012428217191841742,
+      "K_crit": 0.1000000006415444,
+      "offset": 0.49999999999998695,
+      "R2": 0.6984156316305833
+    },
+    "deepseek-r1:14b": {
+      "a": 0.7709052843488513,
+      "alpha": 0.1811706687827114,
+      "K_crit": 15.365993369587747,
+      "offset": -0.018469371542190874,
+      "R2": 0.98387214022627
+    },
+    "deepseek-r1:7b": {
+      "a": 0.584079864624205,
+      "alpha": 0.5526081789566314,
+      "K_crit": 17.664177056719794,
+      "offset": 0.024505810348800245,
+      "R2": 0.9958963042114575
+    },
+    "deepseek-v3": {
+      "a": 0.8046340022101082,
+      "alpha": 0.1056689043177995,
+      "K_crit": 32.216532344220965,
+      "offset": 0.24410370760334643,
+      "R2": 0.9958198745401942
+    },
+    "gemini-2.5-flash": {
+      "a": 1.9999999999999998,
+      "alpha": 0.20969340471629397,
+      "K_crit": 2.07562285844392,
+      "offset": 0.06545232243746019,
+      "R2": 0.9724162137292695
+    },
+    "gemma2:27b": {
+      "a": 0.9730343005842256,
+      "alpha": 3.3438024548610286,
+      "K_crit": 9.460383718969794,
+      "offset": 0.06249999943408682,
+      "R2": 0.6874999463442537
+    },
+    "gemma2:2b": {
+      "a": 0.0999999999009625,
+      "alpha": 4.999999992253801,
+      "K_crit": 20.00000000415512,
+      "offset": -9.651059237169572e-12,
+      "R2": 0.6666666666796303
+    },
+    "gemma2:9b": {
+      "a": 0.8372239328883031,
+      "alpha": 1.5073578826295102,
+      "K_crit": 8.171473190974108,
+      "offset": 0.049992922857145676,
+      "R2": 0.2857141968615603
+    },
+    "gpt-4o": {
+      "a": 1.9999999999999998,
+      "alpha": 0.24500067144314516,
+      "K_crit": 2.0103088036446843,
+      "offset": 0.07662589099868114,
+      "R2": 0.9727582276867485
+    },
+    "gpt-4o-mini": {
+      "a": 1.7625106372198618,
+      "alpha": 0.22370001684189583,
+      "K_crit": 0.10000000000000009,
+      "offset": 0.07956518561738538,
+      "R2": 0.9272667603224607
+    },
+    "llama3.1:70b": {
+      "a": 0.2666666601460707,
+      "alpha": 1.5640125097232846,
+      "K_crit": 31.730838267094267,
+      "offset": 0.09999999979954378,
+      "R2": 0.8258706359998207
+    },
+    "llama3.1:8b": {
+      "a": 0.11666670226486016,
+      "alpha": 4.746172821020808,
+      "K_crit": 17.617790632189713,
+      "offset": 0.03333312604729872,
+      "R2": 0.429819577249535
+    },
+    "llama3.2:1b": {
+      "a": 0.10000000257940311,
+      "alpha": 3.388834111539998,
+      "K_crit": 14.999999993077271,
+      "offset": -6.382188096040023e-10,
+      "R2": 0.9999999999999974
+    },
+    "llama3.2:3b": {
+      "a": 0.17503414065505837,
+      "alpha": 2.3580789086528515,
+      "K_crit": 1.9902289241656876,
+      "offset": 0.0500000025540556,
+      "R2": -1.08725557446121e-08
+    },
+    "mistral:7b": {
+      "a": 0.38451078465901345,
+      "alpha": 2.0560132593548195,
+      "K_crit": 4.017918156336197,
+      "offset": 0.049999959546768245,
+      "R2": -3.8685676884142595e-10
+    },
+    "mixtral:8x7b": {
+      "a": 0.09122081156359502,
+      "alpha": 0.193820266308891,
+      "K_crit": 30.658984826545954,
+      "offset": -0.001640840152342641,
+      "R2": 0.4597234182121407
+    },
+    "o3-mini": {
+      "a": 1.0061690437936242,
+      "alpha": 0.25065770713002283,
+      "K_crit": 32.44108582079341,
+      "offset": -0.003944601871310446,
+      "R2": 0.9998443406077558
+    },
+    "phi3:14b": {
+      "a": 0.35000000197543457,
+      "alpha": 3.849008884710802,
+      "K_crit": 15.074740360115822,
+      "offset": 0.04999999961492414,
+      "R2": 0.9532710261230359
+    },
+    "qwen2.5:0.5b": {
+      "a": 0.03643880473841754,
+      "alpha": 4.35725083657392,
+      "K_crit": 0.5124555738677112,
+      "offset": 0.05000000000003263,
+      "R2": 2.0000012757037666e-10
+    },
+    "qwen2.5:1.5b": {
+      "a": 0.09166684795519488,
+      "alpha": 4.820797288819663,
+      "K_crit": 17.471373583843814,
+      "offset": 0.0333332904186084,
+      "R2": 0.7756362763318846
+    },
+    "qwen2.5:14b": {
+      "a": 0.785061526845798,
+      "alpha": 0.031079332895268305,
+      "K_crit": 77.61085114930773,
+      "offset": -0.49999999999998895,
+      "R2": 0.9464398036443625
+    },
+    "qwen2.5:32b": {
+      "a": 0.11666673451185194,
+      "alpha": 3.225252345749011,
+      "K_crit": 14.444493870742901,
+      "offset": 0.03333333444660987,
+      "R2": 0.8611111001905339
+    },
+    "qwen2.5:3b": {
+      "a": 0.0833333335004211,
+      "alpha": 1.7949921234625905,
+      "K_crit": 30.22579902581259,
+      "offset": -2.0826337117772084e-10,
+      "R2": 0.7619047562830965
+    },
+    "qwen2.5:7b": {
+      "a": 0.4127238014529621,
+      "alpha": 0.11218696883514512,
+      "K_crit": 0.10000000000000007,
+      "offset": 0.04540328635983035,
+      "R2": 0.93853794120737
+    },
+    "tinyllama:1.1b": {
+      "a": 0.8939202389703444,
+      "alpha": 2.9342797741596414,
+      "K_crit": 8.933841572733083,
+      "offset": 0.012499997620529233,
+      "R2": 0.37499986153561427
+    },
+    "yi:34b": {
+      "a": 0.048162392518392216,
+      "alpha": 4.452688391238606,
+      "K_crit": 0.6114908634307041,
+      "offset": 0.03000000000000058,
+      "R2": 3.33333360913457e-10
+    }
+  },
+  "data_sources": {
+    "wmf_am": "cef_wmf_multiseed.json + expansion + nexp + api_held_out_final",
+    "agent": "cef_agent_validation_all.json + api_held_out",
+    "baseline": "baseline_api.json + baseline_ollama.json",
+    "ksweep": "extended_k_20260413T180649.json + extended_k_20260413T030646.json",
+    "loadshift": "load_shift_ollama_all.json + load_shift_ollama_full.json + load_shift_api_full.json",
+    "nonarith": "wmf_am_nonarith_*.json (all files)",
+    "yoked": "wmf_am_yoked_control_*.json (all files)",
+    "template": "wmf_am_template_harmonization_*.json (all files)",
+    "k1_control": "wmf_am_control_*.json (all files)"
+  }
+}

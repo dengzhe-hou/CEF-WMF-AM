@@ -163,18 +163,37 @@ def build_last_op_problem(domain_name: str, numeric_range: str, rng: random.Rand
 
 
 def parse_number(response: str) -> int | None:
-    """Extract an integer from the model's response."""
-    resp = response.strip()
+    """Extract an integer from the model's response.
+
+    Priority: \boxed{N} > **Answer:** N > #### N > last number in response.
+    Reasoning models output thinking chains first, so first-number extraction
+    often grabs a problem-statement number instead of the answer.
+    """
+    if response is None:
+        return None
+    resp = re.sub(r"<think>.*?</think>", "", response, flags=re.DOTALL).strip()
     # Remove $ or other currency symbols
     resp = re.sub(r'[\$,]', '', resp)
-    # Try exact integer match at start
-    m = re.match(r'^-?\d+', resp)
+    # Priority 1: \boxed{N}
+    boxed = re.findall(r'\\boxed\{(-?\d+)\}', resp)
+    if boxed:
+        return int(boxed[-1])
+    # Priority 2: **Answer:** N or Answer: N
+    answer_match = re.findall(r'(?:\*\*)?[Aa]nswer(?:\*\*)?[:\s]+(-?\d+)', resp)
+    if answer_match:
+        return int(answer_match[-1])
+    # Priority 3: #### N (GSM8K style)
+    hash_match = re.findall(r'####\s*(-?\d+)', resp)
+    if hash_match:
+        return int(hash_match[-1])
+    # Priority 4: if response is just a number
+    m = re.match(r'^-?\d+$', resp)
     if m:
         return int(m.group())
-    # Search for any integer in response
+    # Priority 5: last number in response (not first — avoids grabbing problem numbers)
     nums = re.findall(r'-?\d+', resp)
     if nums:
-        return int(nums[0])
+        return int(nums[-1])
     return None
 
 
@@ -198,6 +217,8 @@ def run_last_op_probe(model_name: str, n_problems: int = 10,
 
                 try:
                     response = call_model(model_name, prompt)
+                    if response is None:
+                        response = ""
                 except Exception as e:
                     response = f"ERROR: {e}"
 
@@ -211,7 +232,7 @@ def run_last_op_probe(model_name: str, n_problems: int = 10,
                     "k_operations": 1,
                     "prob_idx": prob_idx,
                     "correct_answer": correct,
-                    "raw_response": response[:300],
+                    "raw_response": response[:300] if response else "",
                     "parsed_answer": parse_number(response),
                     "accurate": accurate,
                     **{k: v for k, v in meta.items()

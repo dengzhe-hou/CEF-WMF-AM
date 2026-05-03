@@ -166,10 +166,14 @@ def run_paraphrase_ablation(model_name: str, n_problems: int = 10,
 
                 try:
                     response = call_model(model_name, prompt)
+                    if response is None:
+                        response = ""
                 except Exception as e:
                     response = f"ERROR: {e}"
 
-                nums = re.findall(r"-?\d+", response)
+                # Strip thinking tags for reasoning models
+                clean = re.sub(r"<think>.*?</think>", "", response, flags=re.DOTALL)
+                nums = re.findall(r"-?\d+", clean)
                 predicted = int(nums[0]) if nums else -9999
                 accurate = int(predicted == data["correct_answer"])
 
