@@ -43,5 +43,8 @@ overleaf/
 # Internal refinement logs
 refine-logs/
 
+# Submission metadata (contains venue info)
+croissant.json
+
 # Temporary files
 /tmp/
